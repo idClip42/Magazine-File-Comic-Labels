@@ -8,3 +8,4 @@
     - [ ] Make them nicer
     - [ ] Fix the awkward fade
     - [ ] Configure ability to add multiple groups of issues
+    - [ ] Can we color the logos using luminance?
