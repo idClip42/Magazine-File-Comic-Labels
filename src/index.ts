@@ -1,15 +1,18 @@
 import fs from 'fs';
 import path from 'path';
 import { CSS_TEXT } from "./css";
+import CONFIG from "./../config.json";
+import { BuildLabelHTML } from './label';
 
 function generateHTML(): string {
-  const body = `
-    <div class="label">
-      <h1>Hello, Comic World!</h1>
-    </div>
-  `;
+    let body = '';
+    for (const [seriesName, seriesData] of Object.entries(CONFIG.series)) {
+        for (const box of seriesData.boxes) {
+            body += BuildLabelHTML(seriesName, seriesData.volume, box);
+        }
+    }
 
-  return `<!DOCTYPE html>
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,11 +26,11 @@ function generateHTML(): string {
 }
 
 function writeHTMLFile(outputPath: string) {
-  const html = generateHTML();
-  if(!fs.existsSync(path.dirname(outputPath)))
-    fs.mkdirSync(path.dirname(outputPath));
-  fs.writeFileSync(outputPath, html, 'utf-8');
-  console.log(`✅ HTML written to: ${outputPath}`);
+    const html = generateHTML();
+    if (!fs.existsSync(path.dirname(outputPath)))
+        fs.mkdirSync(path.dirname(outputPath));
+    fs.writeFileSync(outputPath, html, 'utf-8');
+    console.log(`✅ HTML written to: ${outputPath}`);
 }
 
 // Run the script
