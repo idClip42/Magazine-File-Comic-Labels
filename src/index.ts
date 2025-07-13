@@ -8,7 +8,7 @@ function generateHTML(): string {
     let body = '';
     for (const [seriesName, seriesData] of Object.entries(Config.series)) {
         for (const box of seriesData.boxes) {
-            body += BuildLabelHTML(seriesName, seriesData.color, seriesData.volume, box);
+            body += BuildLabelHTML(seriesData, box);
         }
     }
 

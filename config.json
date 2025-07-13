@@ -7,8 +7,9 @@
             "textboxMinHeightInches": 1
         }
     },
-    "series": {
-        "Fantastic Four": {
+    "series": [
+        {
+            "name": "Fantastic Four",
             "color": "#3366cc",
             "volume": "Vol. 1",
             "boxes": [
@@ -23,7 +24,8 @@
                 }
             ]
         },
-        "New Mutants": {
+        {
+            "name": "New Mutants",
             "color": "#ffcc00",
             "volume": "Vol. 1",
             "boxes": [
@@ -35,5 +37,5 @@
                 }
             ]
         }
-    }
+    ]
 }

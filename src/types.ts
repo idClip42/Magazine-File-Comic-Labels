@@ -18,6 +18,7 @@ export type BoxConfig = {
 }
 
 export type SeriesConfig = {
+  name: string;
   color: string; // Hex or named CSS color
   volume?: string;
   boxes: BoxConfig[];
@@ -25,7 +26,5 @@ export type SeriesConfig = {
 
 export type LabelConfig = {
   format: FormatConfig;
-  series: {
-    [seriesName: string]: SeriesConfig;
-  };
+  series: SeriesConfig[];
 }
