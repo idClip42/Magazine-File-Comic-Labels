@@ -10,7 +10,7 @@ export type FormatConfig = {
 }
 
 export type BoxConfig = {
-  overrideName?: string;
+  subseriesName?: string;
   issues: string;
   coverArt: string; // Can be local path or full URL
   scale?: number;

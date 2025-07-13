@@ -14,7 +14,7 @@
             "volume": "Vol. 1",
             "boxes": [
                 {
-                    "overrideName": "Fantastic Four",
+                    "subseriesName": "Fantastic Four",
                     "issues": "1–10",
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Fantastic_Four_Vol_1_1.jpg"
                 },
