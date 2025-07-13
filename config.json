@@ -3,7 +3,7 @@
         "dimensions": {
             "labelWidthInches": 4,
             "labelHeightInches": 8,
-            "pagePaddingInches": 0.5,
+            "pagePaddingInches": 0.25,
             "fadeHeightInches": 6
         }
     },
