@@ -60,8 +60,6 @@ export const CSS_TEXT = `
 
       .title-logo {
         width: 50%;
-        mix-blend-mode: luminosity;
-        
         filter: grayscale(1) contrast(100) brightness(1);
         mix-blend-mode: multiply;
       }
