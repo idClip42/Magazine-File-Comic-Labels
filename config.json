@@ -3,8 +3,11 @@
         "dimensions": {
             "labelWidthInches": 4,
             "labelHeightInches": 8,
-            "pagePaddingInches": 0.25,
-            "textboxMinHeightInches": 1
+            "textboxMinHeightInches": 1,
+            "pageSizeXInches": 8.5,
+            "pageSizeYInches": 11,
+            "pageMarginXInches": 0.25,
+            "pageMarginYInches": 0.5
         }
     },
     "series": [

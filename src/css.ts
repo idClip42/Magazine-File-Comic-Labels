@@ -3,13 +3,19 @@ const DIM = Config.format.dimensions;
 
 export const CSS_TEXT = `
     <style>
+      @page{
+        size: ${DIM.pageSizeXInches}in ${DIM.pageSizeYInches}in;
+        margin: ${DIM.pageMarginYInches}in ${DIM.pageMarginXInches}in;
+      }
+
       body {
         font-family: sans-serif;
-        padding: ${DIM.pagePaddingInches}in;
         display: flex;
         flex-wrap: wrap;
-        gap: 0.25in;
+        gap: 0;
         column-gap: 0;
+        margin: 0;
+        padding: 0;
       }
 
       .label {

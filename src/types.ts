@@ -1,8 +1,11 @@
 export type DimensionsConfig = {
   labelWidthInches: number;
   labelHeightInches: number;
-  pagePaddingInches: number;
   textboxMinHeightInches: number;
+  pageSizeXInches: number,
+  pageSizeYInches: number
+  pageMarginXInches: number,
+  pageMarginYInches: number
 }
 
 export type FormatConfig = {
