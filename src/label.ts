@@ -6,7 +6,7 @@ export function BuildLabelHTML(seriesName: string, volume: string | undefined, b
   const issues = box.issues;
 
   return `
-    <div class="label">
+    <div class="label" style="background-image: url('${box.coverArt}')">
       <div class="label-content">
         <div class="title">${title}</div>
         ${volumeText}

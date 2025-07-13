@@ -15,11 +15,11 @@
                 {
                     "overrideName": "Fantastic Four",
                     "issues": "1–10",
-                    "coverArt": "covers/ff1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Fantastic_Four_Vol_1_1.jpg"
                 },
                 {
                     "issues": "11–20",
-                    "coverArt": "https://example.com/ff11.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Fantastic_Four_Vol_1_11.jpg"
                 }
             ]
         },
@@ -29,7 +29,7 @@
             "boxes": [
                 {
                     "issues": "1–25",
-                    "coverArt": "covers/nm1.jpg",
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
                     "scale": 1.1,
                     "offsetX": -20
                 }

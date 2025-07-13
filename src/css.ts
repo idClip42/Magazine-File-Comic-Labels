@@ -24,6 +24,8 @@ export const CSS_TEXT = `
         padding: 0.5in 0.25in;
         box-sizing: border-box;
         margin: 0px;
+        background-size: cover;
+        background-position-x: 50%;
       }
 
       .label-content {
