@@ -21,7 +21,7 @@ export const CSS_TEXT = `
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        padding: 0.5in 0.25in;
+        padding: 0;
         box-sizing: border-box;
         margin: 0px;
         background-size: cover;
@@ -31,6 +31,9 @@ export const CSS_TEXT = `
       .label-content {
         text-align: center;
         width: 100%;
+        background-color: white;
+        padding: 0.5in;
+        min-height: ${DIM.textboxMinHeightInches}in
       }
 
       .title {

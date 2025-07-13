@@ -2,7 +2,7 @@ export type DimensionsConfig = {
   labelWidthInches: number;
   labelHeightInches: number;
   pagePaddingInches: number;
-  fadeHeightInches: number;
+  textboxMinHeightInches: number;
 }
 
 export type FormatConfig = {

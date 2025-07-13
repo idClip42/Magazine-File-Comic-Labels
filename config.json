@@ -4,7 +4,7 @@
             "labelWidthInches": 4,
             "labelHeightInches": 8,
             "pagePaddingInches": 0.25,
-            "fadeHeightInches": 6
+            "textboxMinHeightInches": 1
         }
     },
     "series": {
