@@ -22,6 +22,7 @@ export type BoxConfig = {
 
 export type SeriesConfig = {
   name: string;
+  logo?: string;
   color: string; // Hex or named CSS color
   volume?: number;
   boxes: BoxConfig[];

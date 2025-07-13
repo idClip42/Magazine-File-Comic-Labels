@@ -47,7 +47,7 @@ export const CSS_TEXT = `
         box-shadow: 0 -0.25in 0.15in white;
         -moz-box-shadow: 0 -0.25in 0.15in white;
         -webkit-box-shadow: 0 -0.25in 0.15in white;
-        padding: 0.5in;
+        padding: 0.1in;
         min-height: ${DIM.textboxMinHeightInches}in;
         opacity: 100%;
         z-index: 10;
@@ -56,6 +56,14 @@ export const CSS_TEXT = `
       .title {
         font-size: 1.2em;
         font-weight: bold;
+      }
+
+      .title-logo {
+        width: 50%;
+        mix-blend-mode: luminosity;
+        
+        filter: grayscale(1) contrast(100) brightness(1);
+        mix-blend-mode: multiply;
       }
 
       .volume {

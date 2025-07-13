@@ -3,7 +3,7 @@
         "dimensions": {
             "labelWidthInches": 4,
             "labelHeightInches": 8,
-            "textboxMinHeightInches": 1,
+            "textboxMinHeightInches": 1.5,
             "pageSizeXInches": 8.5,
             "pageSizeYInches": 11,
             "pageMarginXInches": 0.25,
@@ -13,6 +13,7 @@
     "series": [
         {
             "name": "Fantastic Four",
+            "logo": "https://vectorseek.com/wp-content/uploads/2023/11/Fantastic-Four-Classic-Logo-Vector.svg-.png",
             "color": "#3366cc",
             "volume": 1,
             "boxes": [
@@ -22,6 +23,7 @@
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Fantastic_Four_Vol_1_1.jpg"
                 },
                 {
+                    "subseriesName": "Fantastic Four",
                     "issues": { "start": 11, "end": 20 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Fantastic_Four_Vol_1_11.jpg"
                 }
@@ -29,10 +31,12 @@
         },
         {
             "name": "New Mutants",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png/revision/latest?cb=20211014200626",
             "color": "#ffcc00",
             "volume": 1,
             "boxes": [
                 {
+                    "subseriesName": "New Mutants",
                     "issues": { "start": 1, "end": 25 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
                     "scale": 1.1,
