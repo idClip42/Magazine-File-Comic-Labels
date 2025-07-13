@@ -15,11 +15,11 @@
             "boxes": [
                 {
                     "subseriesName": "Fantastic Four",
-                    "issues": "1–10",
+                    "issues": { "start": 1, "end": 10 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Fantastic_Four_Vol_1_1.jpg"
                 },
                 {
-                    "issues": "11–20",
+                    "issues": { "start": 11, "end": 20 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Fantastic_Four_Vol_1_11.jpg"
                 }
             ]
@@ -30,7 +30,7 @@
             "volume": 1,
             "boxes": [
                 {
-                    "issues": "1–25",
+                    "issues": { "start": 1, "end": 25 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
                     "scale": 1.1,
                     "offsetX": -20

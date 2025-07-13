@@ -11,7 +11,7 @@ export type FormatConfig = {
 
 export type BoxConfig = {
   subseriesName?: string;
-  issues: string;
+  issues: { start: number; end: number; };
   coverArt: string; // Can be local path or full URL
   scale?: number;
   offsetX?: number;
