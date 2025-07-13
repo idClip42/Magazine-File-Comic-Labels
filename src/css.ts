@@ -6,10 +6,10 @@ export const CSS_TEXT = `
       body {
         font-family: sans-serif;
         padding: ${DIM.pagePaddingInches}in;
-        background: #f5f5f5;
         display: flex;
         flex-wrap: wrap;
         gap: 0.25in;
+        column-gap: 0;
       }
 
       .label {
@@ -17,13 +17,13 @@ export const CSS_TEXT = `
         height: ${DIM.labelHeightInches}in;
         background: white;
         border: 1px solid #ccc;
-        box-shadow: 0 0 0.1in rgba(0,0,0,0.2);
         page-break-inside: avoid;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         padding: 0.5in 0.25in;
         box-sizing: border-box;
+        margin: 0px;
       }
 
       .label-content {
