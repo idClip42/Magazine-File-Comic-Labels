@@ -3,7 +3,7 @@ import { BoxConfig, SeriesConfig } from './types';
 export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
   const title = series.name;
   const subseriesTitle = box.subseriesName ? `<div class="subseries-name">${box.subseriesName}</div>` : '';
-  const volumeText = series.volume ? `<div class="volume">${series.volume}</div>` : '';
+  const volumeText = series.volume ? `<div class="volume">Vol. ${series.volume}</div>` : '';
   const issues = box.issues;
 
   return `

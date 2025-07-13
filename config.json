@@ -11,7 +11,7 @@
         {
             "name": "Fantastic Four",
             "color": "#3366cc",
-            "volume": "Vol. 1",
+            "volume": 1,
             "boxes": [
                 {
                     "subseriesName": "Fantastic Four",
@@ -27,7 +27,7 @@
         {
             "name": "New Mutants",
             "color": "#ffcc00",
-            "volume": "Vol. 1",
+            "volume": 1,
             "boxes": [
                 {
                     "issues": "1–25",
