@@ -15,7 +15,6 @@ export const CSS_TEXT = `
       .label {
         width: ${DIM.labelWidthInches}in;
         height: ${DIM.labelHeightInches}in;
-        background: white;
         border: 1px solid #ccc;
         page-break-inside: avoid;
         display: flex;
@@ -24,16 +23,28 @@ export const CSS_TEXT = `
         padding: 0;
         box-sizing: border-box;
         margin: 0px;
-        background-size: cover;
-        background-position-x: 50%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .label-image {
+        height: 100%;
+        position: absolute;
+        opacity: 50%;
+        mix-blend-mode: luminosity;
       }
 
       .label-content {
         text-align: center;
         width: 100%;
         background-color: white;
+        box-shadow: 0 -0.25in 0.15in white;
+        -moz-box-shadow: 0 -0.25in 0.15in white;
+        -webkit-box-shadow: 0 -0.25in 0.15in white;
         padding: 0.5in;
-        min-height: ${DIM.textboxMinHeightInches}in
+        min-height: ${DIM.textboxMinHeightInches}in;
+        opacity: 100%;
+        z-index: 10;
       }
 
       .title {
