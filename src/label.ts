@@ -8,6 +8,7 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
 
   return `
     <div class="label" style="background-color: ${series.color};">
+      <img src="${box.coverArt}" class="label-image">
       <div class="label-content">
         <div class="title">${title}</div>
         <div>
@@ -16,7 +17,6 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
         </div>
         ${issues}
       </div>
-      <img src="${box.coverArt}" class="label-image">
     </div>
   `;
 }
