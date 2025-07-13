@@ -1,0 +1,24 @@
+{
+  "name": "magazinefilecomiclabels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idClip42/Magazine-File-Comic-Labels.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idClip42/Magazine-File-Comic-Labels/issues"
+  },
+  "homepage": "https://github.com/idClip42/Magazine-File-Comic-Labels#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
