@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { CSS_TEXT } from "./css";
-import CONFIG from "./../config.json";
 import { BuildLabelHTML } from './label';
+import { Config } from './config';
 
 function generateHTML(): string {
     let body = '';
-    for (const [seriesName, seriesData] of Object.entries(CONFIG.series)) {
+    for (const [seriesName, seriesData] of Object.entries(Config.series)) {
         for (const box of seriesData.boxes) {
             body += BuildLabelHTML(seriesName, seriesData.color, seriesData.volume, box);
         }

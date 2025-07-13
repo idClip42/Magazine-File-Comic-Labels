@@ -1,5 +1,5 @@
-import CONFIG from "./../config.json";
-const DIM = CONFIG.format.dimensions;
+import { Config } from "./config";
+const DIM = Config.format.dimensions;
 
 export const CSS_TEXT = `
     <style>
