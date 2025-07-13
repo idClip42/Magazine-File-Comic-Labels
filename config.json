@@ -1,0 +1,39 @@
+{
+    "format": {
+        "dimensions": {
+            "labelWidthInches": 4,
+            "labelHeightInches": 8,
+            "pagePaddingInches": 0.5,
+            "fadeHeightInches": 6
+        }
+    },
+    "series": {
+        "Fantastic Four": {
+            "color": "#3366cc",
+            "volume": "Vol. 1",
+            "boxes": [
+                {
+                    "overrideName": "Fantastic Four",
+                    "issues": "1–10",
+                    "coverArt": "covers/ff1.jpg"
+                },
+                {
+                    "issues": "11–20",
+                    "coverArt": "https://example.com/ff11.jpg"
+                }
+            ]
+        },
+        "New Mutants": {
+            "color": "#ffcc00",
+            "volume": "Vol. 1",
+            "boxes": [
+                {
+                    "issues": "1–25",
+                    "coverArt": "covers/nm1.jpg",
+                    "scale": 1.1,
+                    "offsetX": -20
+                }
+            ]
+        }
+    }
+}
