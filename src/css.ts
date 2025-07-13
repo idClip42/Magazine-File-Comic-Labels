@@ -56,12 +56,14 @@ export const CSS_TEXT = `
       .title {
         font-size: 1.2em;
         font-weight: bold;
+        margin: auto;
       }
 
       .title-logo {
-        width: 50%;
-        filter: grayscale(1) contrast(100) brightness(1);
-        mix-blend-mode: multiply;
+        width: 100%;
+        background-color: white;
+        mix-blend-mode: luminosity;
+        display: block;
       }
 
       .volume {
