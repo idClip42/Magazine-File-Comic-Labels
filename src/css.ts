@@ -66,6 +66,10 @@ export const CSS_TEXT = `
         display: block;
       }
 
+      .label-text {
+        margin: 0.25in;
+      }
+
       .subseries-name {
         font-weight: bold;
         font-size: 1.2em;

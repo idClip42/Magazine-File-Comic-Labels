@@ -15,11 +15,15 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
         <div class="title" style="${titleStyle}">
           ${title}
         </div>
-        <div>
-          ${subseriesTitle}
-          ${volumeText}
+        <div class="label-text">
+          <div>
+            ${subseriesTitle}
+            ${volumeText}
+          </div>
+          <div>
+            ${issues}
+          </div>
         </div>
-        ${issues}
       </div>
     </div>
   `;
