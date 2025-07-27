@@ -43,14 +43,25 @@ export const CSS_TEXT = `
       .label-content {
         text-align: center;
         width: 100%;
-        background-color: white;
-        box-shadow: 0 -0.25in 0.15in white;
-        -moz-box-shadow: 0 -0.25in 0.15in white;
-        -webkit-box-shadow: 0 -0.25in 0.15in white;
-        padding: 0.1in;
-        min-height: ${DIM.textboxMinHeightInches}in;
         opacity: 100%;
         z-index: 10;
+        display: block;
+      }
+
+      .label-fade-block {
+        height: 0.5in;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: block;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+      }
+
+      .label-content-content {
+        padding: 0.1in;
+        background-color: white;
+        min-height: ${DIM.textboxMinHeightInches}in;
       }
 
       .title {

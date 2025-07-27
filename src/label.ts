@@ -12,16 +12,19 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
     <div class="label" style="background-color: ${series.color};">
       <img src="${box.coverArt}" class="label-image">
       <div class="label-content">
-        <div class="title" style="${titleStyle}">
-          ${title}
-        </div>
-        <div class="label-text">
-          <div>
-            ${subseriesTitle}
-            ${volumeText}
+        <div class="label-fade-block"></div>
+        <div class="label-content-content">
+          <div class="title" style="${titleStyle}">
+            ${title}
           </div>
-          <div>
-            ${issues}
+          <div class="label-text">
+            <div>
+              ${subseriesTitle}
+              ${volumeText}
+            </div>
+            <div>
+              ${issues}
+            </div>
           </div>
         </div>
       </div>
