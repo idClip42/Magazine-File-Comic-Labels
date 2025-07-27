@@ -96,5 +96,10 @@ export const CSS_TEXT = `
         font-size: 1em;
         margin-top: 0.2em;
       }
+
+      .years {
+        font-size: .8em;
+        font-style: italic;
+      }
     </style>
 `;

@@ -20,11 +20,13 @@
                 {
                     "subseriesName": "Fantastic Four",
                     "issues": { "start": 1, "end": 10 },
+                    "years": { "start": 1961, "end": 1963 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Fantastic_Four_Vol_1_1.jpg"
                 },
                 {
                     "subseriesName": "Fantastic Four",
                     "issues": { "start": 11, "end": 20 },
+                    "years": { "start": 1964, "end": 1964 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Fantastic_Four_Vol_1_11.jpg"
                 }
             ]
@@ -38,6 +40,7 @@
                 {
                     "subseriesName": "New Mutants",
                     "issues": { "start": 1, "end": 25 },
+                    "years": { "start": 1982, "end": 1983 },
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
                     "scale": 1.1,
                     "offsetX": -20

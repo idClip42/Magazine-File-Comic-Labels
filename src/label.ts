@@ -6,7 +6,14 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
   const titleStyle = series.logo ? `background-color: ${series.color}; width: 50%;` : '';
   const subseriesTitle = box.subseriesName ? `<span class="subseries-name">${box.subseriesName}</span>` : '';
   const volumeText = series.volume ? `<span class="volume">(Vol. ${series.volume})</span>` : '';
-  const issues = `<div class="issues">${box.issues.start}-${box.issues.end}</div>`;
+  const issues = box.issues ? `<div class="issues">${box.issues.start}-${box.issues.end}</div>` : "";
+  const years = (()=>{
+    if(!box.years) return "";
+    const text = (box.years.start === box.years.end) ?
+      box.years.start :
+      `${box.years.start} - ${box.years.end}`;
+    return `<div class="years">${text}</div>`;
+  })();
 
   return `
     <div class="label" style="background-color: ${series.color};">
@@ -24,6 +31,9 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
             </div>
             <div>
               ${issues}
+            </div>
+            <div>
+              ${years}
             </div>
           </div>
         </div>
