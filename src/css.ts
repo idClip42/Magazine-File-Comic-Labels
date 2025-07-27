@@ -9,7 +9,7 @@ export const CSS_TEXT = `
       }
 
       body {
-        font-family: sans-serif;
+        font-family: futura;
         display: flex;
         flex-wrap: wrap;
         gap: 0;
@@ -66,8 +66,14 @@ export const CSS_TEXT = `
         display: block;
       }
 
+      .subseries-name {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
       .volume {
-        font-size: 1em;
+        font-size: .8em;
+        font-style: italic;
         margin: 0.1em 0;
       }
 
