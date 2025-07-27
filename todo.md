@@ -9,3 +9,5 @@
     - [ ] Fix the awkward fade
     - [ ] Configure ability to add multiple groups of issues
     - [ ] Can we color the logos using luminance?
+- [ ] Label contents
+    - [ ] Years, at the very least
