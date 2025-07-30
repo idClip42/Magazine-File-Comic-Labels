@@ -31,7 +31,6 @@
                 {
                     "subseries": [{
                         "name": "Fantastic Four",
-                        "volume": 1,
                         "issues": { "start": 1, "end": 25 },
                         "years": { "start": 1961, "end": 1964 }
                     }],
@@ -156,6 +155,22 @@
                         "years": { "start": 1993, "end": 1995 }
                     }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/bd/Fantastic_Four_Vol_1_388.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Fantastic Four",
+                            "issues": { "start": 401, "end": 416 },
+                            "years": { "start": 1995, "end": 1996 }
+                        },
+                        {
+                            "name": "Fantastic Four",
+                            "volume": 2,
+                            "issues": { "start": 1, "end": 13 },
+                            "years": { "start": 1996, "end": 1997 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/Fantastic_Four_Vol_2_1.jpg"
                 }
             ]
         },
