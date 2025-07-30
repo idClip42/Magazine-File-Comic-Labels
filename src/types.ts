@@ -18,8 +18,6 @@ export type BoxConfig = {
   issues?: { start: number; end: number; };
   years?: { start: number, end: number; };
   coverArt: string; // Can be local path or full URL
-  scale?: number;
-  offsetX?: number;
 }
 
 export type SeriesConfig = {
