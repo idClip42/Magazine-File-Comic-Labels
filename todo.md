@@ -9,3 +9,5 @@
     - [ ] Fix the awkward fade
     - [ ] Configure ability to add multiple groups of issues
     - [ ] Can we color the logos using luminance?
+- [ ] Label content
+    - [ ] Add little circles or something for marking off which things I do and do not have.
