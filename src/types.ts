@@ -13,12 +13,16 @@ export type FormatConfig = {
 }
 
 export type BoxConfig = {
-  subseriesName?: string;
+  subseries: SubseriesInfo[];
+  coverArt: string; // Can be local path or full URL
+}
+
+export type SubseriesInfo = {
+  name?: string;
   volume?: number;
   issues?: { start: number; end: number; };
   years?: { start: number, end: number; };
-  coverArt: string; // Can be local path or full URL
-}
+};
 
 export type SeriesConfig = {
   name: string;

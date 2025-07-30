@@ -17,108 +17,144 @@
             "color": "#3366cc",
             "boxes": [
                 {
-                    "subseriesName": "Fantastic Four Annual",
+                    "subseries": [{
+                        "name": "Fantastic Four Annual"
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/78/Fantastic_Four_Annual_Vol_1_2.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four Annual",
+                    "subseries": [{
+                        "name": "Fantastic Four Annual"
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Fantastic_Four_Annual_Vol_1_32.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "volume": 1,
-                    "issues": { "start": 1, "end": 25 },
-                    "years": { "start": 1961, "end": 1964 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "volume": 1,
+                        "issues": { "start": 1, "end": 25 },
+                        "years": { "start": 1961, "end": 1964 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/Fantastic_Four_Vol_1_3.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 26, "end": 50 },
-                    "years": { "start": 1964, "end": 1966 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 26, "end": 50 },
+                        "years": { "start": 1964, "end": 1966 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_49.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 51, "end": 75 },
-                    "years": { "start": 1966, "end": 1968 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 51, "end": 75 },
+                        "years": { "start": 1966, "end": 1968 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Fantastic_Four_Vol_1_60.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 76, "end": 100 },
-                    "years": { "start": 1968, "end": 1970 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 76, "end": 100 },
+                        "years": { "start": 1968, "end": 1970 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Fantastic_Four_Vol_1_100.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 101, "end": 125 },
-                    "years": { "start": 1970, "end": 1972 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 101, "end": 125 },
+                        "years": { "start": 1970, "end": 1972 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Fantastic_Four_Vol_1_122.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 126, "end": 150 },
-                    "years": { "start": 1972, "end": 1974 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 126, "end": 150 },
+                        "years": { "start": 1972, "end": 1974 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_141.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 151, "end": 175 },
-                    "years": { "start": 1974, "end": 1976 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 151, "end": 175 },
+                        "years": { "start": 1974, "end": 1976 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Fantastic_Four_Vol_1_167.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 176, "end": 200 },
-                    "years": { "start": 1976, "end": 1978 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 176, "end": 200 },
+                        "years": { "start": 1976, "end": 1978 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e1/Fantastic_Four_Vol_1_197.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 201, "end": 225 },
-                    "years": { "start": 1978, "end": 1980 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 201, "end": 225 },
+                        "years": { "start": 1978, "end": 1980 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/Fantastic_Four_Vol_1_220.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 226, "end": 250 },
-                    "years": { "start": 1980, "end": 1982 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 226, "end": 250 },
+                        "years": { "start": 1980, "end": 1982 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Fantastic_Four_Vol_1_232.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 251, "end": 275 },
-                    "years": { "start": 1982, "end": 1984 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 251, "end": 275 },
+                        "years": { "start": 1982, "end": 1984 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Fantastic_Four_Vol_1_262.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 276, "end": 300 },
-                    "years": { "start": 1984, "end": 1986 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 276, "end": 300 },
+                        "years": { "start": 1984, "end": 1986 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Fantastic_Four_Vol_1_281.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 301, "end": 325 },
-                    "years": { "start": 1987, "end": 1988 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 301, "end": 325 },
+                        "years": { "start": 1987, "end": 1988 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Fantastic_Four_Vol_1_316.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 326, "end": 350 },
-                    "years": { "start": 1989, "end": 1991 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 326, "end": 350 },
+                        "years": { "start": 1989, "end": 1991 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_Vol_1_338.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 351, "end": 375 },
-                    "years": { "start": 1991, "end": 1993 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 351, "end": 375 },
+                        "years": { "start": 1991, "end": 1993 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/79/Fantastic_Four_Vol_1_352.jpg"
                 },
                 {
-                    "subseriesName": "Fantastic Four",
-                    "issues": { "start": 376, "end": 400 },
-                    "years": { "start": 1993, "end": 1995 },
+                    "subseries": [{
+                        "name": "Fantastic Four",
+                        "issues": { "start": 376, "end": 400 },
+                        "years": { "start": 1993, "end": 1995 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/bd/Fantastic_Four_Vol_1_388.jpg"
                 }
             ]
@@ -130,9 +166,11 @@
             "volume": 1,
             "boxes": [
                 {
-                    "subseriesName": "New Mutants",
-                    "issues": { "start": 1, "end": 25 },
-                    "years": { "start": 1982, "end": 1983 },
+                    "subseries": [{
+                        "name": "New Mutants",
+                        "issues": { "start": 1, "end": 25 },
+                        "years": { "start": 1982, "end": 1983 }
+                    }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg"
                 }
             ]
