@@ -5,8 +5,8 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
   const title = series.logo ? `<img src="${series.logo}" class="title-logo">` : series.name;
   const titleStyle = series.logo ? `background-color: ${series.color}; width: 50%;` : '';
   const subseriesTitle = box.subseriesName ? `<span class="subseries-name">${box.subseriesName}</span>` : '';
-  const volumeText = series.volume ? `<span class="volume">(Vol. ${series.volume})</span>` : '';
-  const issues = box.issues ? `<div class="issues">${box.issues.start}-${box.issues.end}</div>` : "";
+  const volumeText = box.volume ? `<span class="volume">(Vol. ${box.volume})</span>` : '';
+  const issues = box.issues ? `<div class="issues">#${box.issues.start} - ${box.issues.end}</div>` : "";
   const years = (()=>{
     if(!box.years) return "";
     const text = (box.years.start === box.years.end) ?

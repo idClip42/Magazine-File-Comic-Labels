@@ -14,6 +14,7 @@ export type FormatConfig = {
 
 export type BoxConfig = {
   subseriesName?: string;
+  volume?: number;
   issues?: { start: number; end: number; };
   years?: { start: number, end: number; };
   coverArt: string; // Can be local path or full URL
@@ -25,7 +26,6 @@ export type SeriesConfig = {
   name: string;
   logo?: string;
   color: string; // Hex or named CSS color
-  volume?: number;
   boxes: BoxConfig[];
 }
 
