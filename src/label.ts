@@ -17,11 +17,7 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
       return `<div class="years">${text}</div>`;
     })();
     return `
-          <div>
-            <div class="title" style="${titleStyle}">
-              ${title}
-            </div>
-            <div class="label-text">
+            <div>
               <div>
                 ${subseriesTitle}
                 ${volumeText}
@@ -31,7 +27,6 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
                 ${years}
               </div>
             </div>
-          </div>
     `.trim();
   });
 
@@ -41,7 +36,12 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
       <div class="label-content">
         <div class="label-fade-block"></div>
         <div class="label-content-content">
-          ${subseriesHtmlBlocks.join("\n")}
+          <div class="title" style="${titleStyle}">
+            ${title}
+          </div>
+          <div class="label-text">
+            ${subseriesHtmlBlocks.join("\n")}
+          </div>
         </div>
       </div>
     </div>
