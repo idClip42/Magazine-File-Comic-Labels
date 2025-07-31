@@ -938,7 +938,7 @@
                     "subseries": [{
                         "name": "Official Handbook of the Marvel Universe"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Official_Handbook_of_the_Marvel_Universe_Vol_2_8.jpg"
                 }
             ]
         },
@@ -953,7 +953,7 @@
                         "issues": { "start": 1, "end": 31 },
                         "years": { "start": 1986, "end": 1988 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://storage.googleapis.com/hipcomic/p/b45353ad4a75ca648e5bd859220a47b0-800.jpg"
                 }
             ]
         },
@@ -966,7 +966,7 @@
                     "subseries": [{
                         "name": "Superman"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg"
                 }
             ]
         },
@@ -979,13 +979,13 @@
                     "subseries": [{
                         "name": "She-Hulk"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "She-Hulk"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg"
                 }
             ]
         },
@@ -998,7 +998,7 @@
                     "subseries": [{
                         "name": "Batman"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg"
                 }
             ]
         },
@@ -1011,7 +1011,7 @@
                     "subseries": [{
                         "name": "Wolverine"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg"
                 }
             ]
         },
@@ -1024,7 +1024,7 @@
                     "subseries": [{
                         "name": "Dr. Strange"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg"
                 }
             ]
         },
@@ -1037,7 +1037,7 @@
                     "subseries": [{
                         "name": "Iron Man"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Iron_Man_Vol_1_300.jpg"
                 }
             ]
         },
@@ -1050,7 +1050,7 @@
                     "subseries": [{
                         "name": "Daredevil"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg"
                 }
             ]
         },
@@ -1062,10 +1062,11 @@
                 {
                     "subseries": [{
                         "name": "Fatale",
-                        "issues": { "start": 1, "end": 24 }
+                        "issues": { "start": 1, "end": 24 },
+                        "years": { "start": 2012, "end": 2014 }
 
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://www.previewsworld.com/SiteImage/MainImage/STK464251"
                 }
             ]
         },
@@ -1078,7 +1079,7 @@
                     "subseries": [{
                         "name": "The New Teen Titans"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg"
                 }
             ]
         },
