@@ -15,6 +15,11 @@ export type FormatConfig = {
 export type BoxConfig = {
   subseries: SubseriesInfo[];
   coverArt: string; // Can be local path or full URL
+  coverArtTransform?: {
+    top?: number;
+    left?: number;
+    zoom?: number;
+  };
 }
 
 export type SubseriesInfo = {

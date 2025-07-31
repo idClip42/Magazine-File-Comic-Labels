@@ -5,6 +5,21 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
   const title = series.logo ? `<img src="${series.logo}" class="title-logo">` : series.name;
   const titleStyle = series.logo ? `background-color: ${series.color}; width: 50%;` : '';
 
+  const imgStyle = (()=>{
+    if(!box.coverArtTransform)
+      return "";
+    let style = "";
+
+    if(box.coverArtTransform.top)
+      style += `top: ${box.coverArtTransform.top}in; `
+    if(box.coverArtTransform.left)
+      style += `left: ${box.coverArtTransform.left}in; `
+    if(box.coverArtTransform.zoom)
+      style += `height: ${100 * box.coverArtTransform.zoom}%`
+
+    return style;
+  })();
+
   const subseriesHtmlBlocks = box.subseries.map(subseries => {
     const subseriesTitle = subseries.name ? `<span class="subseries-name">${subseries.name}</span>` : '';
     const volumeText = subseries.volume ? `<span class="volume">(Vol. ${subseries.volume})</span>` : '';
@@ -38,7 +53,7 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
 
   return `
     <div class="label" style="background-color: ${series.color};">
-      <img src="${box.coverArt}" class="label-image">
+      <img src="${box.coverArt}" class="label-image" style="${imgStyle}">
       <div class="label-content">
         <div class="label-fade-block"></div>
         <div class="label-content-content">

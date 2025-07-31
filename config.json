@@ -20,13 +20,23 @@
                     "subseries": [{
                         "name": "Fantastic Four Annual"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/78/Fantastic_Four_Annual_Vol_1_2.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/78/Fantastic_Four_Annual_Vol_1_2.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "Fantastic Four Annual"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Fantastic_Four_Annual_Vol_1_32.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Fantastic_Four_Annual_Vol_1_32.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -34,7 +44,12 @@
                         "issues": { "start": 1, "end": 25 },
                         "years": { "start": 1961, "end": 1964 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/Fantastic_Four_Vol_1_3.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/Fantastic_Four_Vol_1_3.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -42,7 +57,12 @@
                         "issues": { "start": 26, "end": 50 },
                         "years": { "start": 1964, "end": 1966 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_49.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_49.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -50,7 +70,12 @@
                         "issues": { "start": 51, "end": 75 },
                         "years": { "start": 1966, "end": 1968 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Fantastic_Four_Vol_1_60.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Fantastic_Four_Vol_1_60.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -58,7 +83,12 @@
                         "issues": { "start": 201, "end": 225 },
                         "years": { "start": 1978, "end": 1980 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/Fantastic_Four_Vol_1_220.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/Fantastic_Four_Vol_1_220.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -66,7 +96,12 @@
                         "issues": { "start": 226, "end": 250 },
                         "years": { "start": 1980, "end": 1982 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Fantastic_Four_Vol_1_232.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Fantastic_Four_Vol_1_232.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -74,7 +109,12 @@
                         "issues": { "start": 251, "end": 275 },
                         "years": { "start": 1982, "end": 1984 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Fantastic_Four_Vol_1_262.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Fantastic_Four_Vol_1_262.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -82,7 +122,12 @@
                         "issues": { "start": 276, "end": 300 },
                         "years": { "start": 1984, "end": 1986 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Fantastic_Four_Vol_1_281.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Fantastic_Four_Vol_1_281.jpg",
+                    "coverArtTransform": {
+                        "top": -2,
+                        "left": -1,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -90,7 +135,12 @@
                         "issues": { "start": 301, "end": 325 },
                         "years": { "start": 1987, "end": 1988 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Fantastic_Four_Vol_1_316.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Fantastic_Four_Vol_1_316.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -98,7 +148,12 @@
                         "issues": { "start": 326, "end": 350 },
                         "years": { "start": 1989, "end": 1991 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_Vol_1_338.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_Vol_1_338.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -106,7 +161,12 @@
                         "issues": { "start": 351, "end": 375 },
                         "years": { "start": 1991, "end": 1993 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/79/Fantastic_Four_Vol_1_352.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/79/Fantastic_Four_Vol_1_352.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -114,7 +174,12 @@
                         "issues": { "start": 376, "end": 400 },
                         "years": { "start": 1993, "end": 1995 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/bd/Fantastic_Four_Vol_1_388.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/bd/Fantastic_Four_Vol_1_388.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -130,7 +195,12 @@
                             "years": { "start": 1996, "end": 1997 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/Fantastic_Four_Vol_2_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/Fantastic_Four_Vol_2_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -139,7 +209,12 @@
                         "issues": { "start": 1, "end": 25 },
                         "years": { "start": 1997, "end": 1999 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Fantastic_Four_Vol_3_3.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Fantastic_Four_Vol_3_3.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -148,7 +223,12 @@
                         "issues": { "start": 26, "end": 50 },
                         "years": { "start": 1999, "end": 2001 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Fantastic_Four_Vol_3_44.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Fantastic_Four_Vol_3_44.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -156,7 +236,12 @@
                         "issues": { "start": 500, "end": 525 },
                         "years": { "start": 2003, "end": 2005 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Fantastic_Four_Vol_1_511.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Fantastic_Four_Vol_1_511.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -164,7 +249,12 @@
                         "issues": { "start": 526, "end": 550 },
                         "years": { "start": 2005, "end": 2007 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3a/Fantastic_Four_Vol_1_530.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3a/Fantastic_Four_Vol_1_530.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -179,7 +269,12 @@
                             "years": { "start": 2005, "end": 2005 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Ultimate_Fantastic_Four_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Ultimate_Fantastic_Four_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -197,13 +292,23 @@
                             "name": "Ultimate Fantastic Four Misc."
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "Fantastic Four Reprints"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -211,7 +316,12 @@
                         "issues": { "start": 1, "end": 30 },
                         "years": { "start": 2004, "end": 2006 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/4_Vol_1_5.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/4_Vol_1_5.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -226,7 +336,12 @@
                             "years": { "start": 2018, "end": 2019 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -234,7 +349,12 @@
                         "issues": { "start": 1, "end": 36 },
                         "years": { "start": 1983, "end": 1986 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -254,7 +374,12 @@
                             "years": { "start": 1986, "end": 1987 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Official_Marvel_Index_to_Fantastic_Four_Vol_1_2.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Official_Marvel_Index_to_Fantastic_Four_Vol_1_2.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -291,7 +416,12 @@
                             "years": { "start": 1999, "end": 2000 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Fantastic_Four_Unlimited_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Fantastic_Four_Unlimited_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -312,7 +442,12 @@
                             "years": { "start": 2001, "end": 2002 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -358,7 +493,12 @@
                             "years": { "start": 2006, "end": 2006 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_First_Family_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_First_Family_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -392,7 +532,12 @@
                             "years": { "start": 2010, "end": 2010 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/Marvel_1602_Fantastick_Four_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/Marvel_1602_Fantastick_Four_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -422,7 +567,12 @@
                             "years": { "start": 2021, "end": 2021 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Invisible_Woman_Vol_1_3.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Invisible_Woman_Vol_1_3.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -453,19 +603,34 @@
                             "years": { "start": 2025, "end": 2025 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "Fantastic Four One-Shots"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "Fantastic Four One-Shots"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -480,7 +645,12 @@
                         "issues": { "start": 76, "end": 100 },
                         "years": { "start": 1968, "end": 1970 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Fantastic_Four_Vol_1_100.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Fantastic_Four_Vol_1_100.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -495,7 +665,12 @@
                         "issues": { "start": 101, "end": 125 },
                         "years": { "start": 1970, "end": 1972 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Fantastic_Four_Vol_1_122.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Fantastic_Four_Vol_1_122.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -503,7 +678,12 @@
                         "issues": { "start": 126, "end": 150 },
                         "years": { "start": 1972, "end": 1974 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_141.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_141.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -518,7 +698,12 @@
                         "issues": { "start": 151, "end": 175 },
                         "years": { "start": 1974, "end": 1976 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Fantastic_Four_Vol_1_167.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Fantastic_Four_Vol_1_167.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -526,7 +711,12 @@
                         "issues": { "start": 176, "end": 200 },
                         "years": { "start": 1976, "end": 1978 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e1/Fantastic_Four_Vol_1_197.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e1/Fantastic_Four_Vol_1_197.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -546,7 +736,12 @@
                             "years": { "start": 2011, "end": 2011 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Fantastic_Four_Vol_1_579.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Fantastic_Four_Vol_1_579.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -561,7 +756,12 @@
                             "years": { "start": 2011, "end": 2012 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/FF_Vol_1_12.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/FF_Vol_1_12.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -577,7 +777,12 @@
                         "issues": { "start": 51, "end": 70 },
                         "years": { "start": 2002, "end": 2003 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/61/Fantastic_Four_Vol_3_62.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/61/Fantastic_Four_Vol_3_62.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -592,7 +797,12 @@
                         "issues": { "start": 551, "end": 575 },
                         "years": { "start": 2007, "end": 2010 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Fantastic_Four_Vol_1_564.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Fantastic_Four_Vol_1_564.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -616,7 +826,12 @@
                             "years": { "start": 2012, "end": 2014 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3c/Fantastic_Four_Vol_4_5.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3c/Fantastic_Four_Vol_4_5.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -645,7 +860,12 @@
                             "years": { "start": 2018, "end": 2019 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c9/Fantastic_Four_Vol_5_14.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c9/Fantastic_Four_Vol_5_14.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -661,7 +881,12 @@
                         "issues": { "start": 7, "end": 28 },
                         "years": { "start": 2019, "end": 2021 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Fantastic_Four_Vol_6_25.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Fantastic_Four_Vol_6_25.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -670,7 +895,12 @@
                         "issues": { "start": 29, "end": 48 },
                         "years": { "start": 2021, "end": 2022 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Fantastic_Four_Vol_6_48.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Fantastic_Four_Vol_6_48.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -686,7 +916,12 @@
                         "issues": { "start": 1, "end": 13 },
                         "years": { "start": 2022, "end": 2023 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c3/Fantastic_Four_Vol_7_1_Cover_A.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c3/Fantastic_Four_Vol_7_1_Cover_A.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -695,7 +930,12 @@
                         "issues": { "start": 14, "end": 33 },
                         "years": { "start": 2023, "end": 2025 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/66/Fantastic_Four_Vol_7_19.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/66/Fantastic_Four_Vol_7_19.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -710,7 +950,12 @@
                         "issues": { "start": 1, "end": 25 },
                         "years": { "start": 1982, "end": 1983 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -718,7 +963,12 @@
                         "issues": { "start": 26, "end": 50 },
                         "years": { "start": 1984, "end": 1986 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/New_Mutants_Vol_1_26.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/New_Mutants_Vol_1_26.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -726,7 +976,12 @@
                         "issues": { "start": 51, "end": 75 },
                         "years": { "start": 1987, "end": 1989 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/New_Mutants_Vol_1_61.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/New_Mutants_Vol_1_61.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -734,7 +989,12 @@
                         "issues": { "start": 76, "end": 100 },
                         "years": { "start": 1989, "end": 1991 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/New_Mutants_Vol_1_78.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/New_Mutants_Vol_1_78.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -747,7 +1007,12 @@
                             "name": "New Mutants Misc."
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/New_Mutants_Annual_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/New_Mutants_Annual_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -761,7 +1026,12 @@
                             "name": "New Mutants Misc."
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/New_Mutants_Vol_4_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/New_Mutants_Vol_4_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -783,7 +1053,12 @@
                             "years": { "start": 2015, "end": 2016 }
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -798,7 +1073,12 @@
                         "issues": { "start": 129, "end": 162 },
                         "years": { "start": 1979, "end": 1982 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/X-Men_Vol_1_131.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/X-Men_Vol_1_131.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -806,7 +1086,12 @@
                         "issues": { "start": 163, "end": 187 },
                         "years": { "start": 1982, "end": 1984 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Uncanny_X-Men_Vol_1_168.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Uncanny_X-Men_Vol_1_168.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -819,13 +1104,23 @@
                             "name": "Uncanny X-Men Annual"
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/0e/Uncanny_X-Men_Vol_1_200.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/0e/Uncanny_X-Men_Vol_1_200.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "X-Men Misc."
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Nightcrawler_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Nightcrawler_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -840,13 +1135,23 @@
                         "issues": { "start": 1, "end": 34 },
                         "years": { "start": 1983, "end": 1986 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "Indiana Jones (Dark Horse)"
                     }],
-                    "coverArt": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg"
+                    "coverArt": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -859,7 +1164,12 @@
                     "subseries": [{
                         "name": "The League of Extraordinary Gentlemen"
                     }],
-                    "coverArt": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg"
+                    "coverArt": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -874,7 +1184,12 @@
                         "issues": { "start": 1, "end": 25 },
                         "years": { "start": 1988, "end": 1990 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Excalibur_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Excalibur_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -882,7 +1197,12 @@
                         "issues": { "start": 26, "end": 50 },
                         "years": { "start": 1990, "end": 1992 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Excalibur_Vol_1_32.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Excalibur_Vol_1_32.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -890,7 +1210,12 @@
                         "issues": { "start": 51, "end": 75 },
                         "years": { "start": 1992, "end": 1994 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3e/Excalibur_Vol_1_66.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3e/Excalibur_Vol_1_66.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [
@@ -903,7 +1228,12 @@
                             "name": "Excalibur Misc."
                         }
                     ],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -916,7 +1246,12 @@
                     "subseries": [{
                         "name": "Black Cat"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Black_Cat_Vol_2_5.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Black_Cat_Vol_2_5.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -929,7 +1264,12 @@
                     "subseries": [{
                         "name": "Marvel Team-Up"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b0/Marvel_Team-Up_Vol_1_74.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b0/Marvel_Team-Up_Vol_1_74.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -942,7 +1282,12 @@
                     "subseries": [{
                         "name": "What If...?"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/What_If%3F_Vol_1_36.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/What_If%3F_Vol_1_36.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -957,7 +1302,12 @@
                         "issues": { "start": 1, "end": 28 },
                         "years": { "start": 2003, "end": 2006 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -965,7 +1315,12 @@
                         "issues": { "start": 29, "end": 55 },
                         "years": { "start": 2006, "end": 2008 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/teentitans/images/7/7b/GraduationDay.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/teentitans/images/7/7b/GraduationDay.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -980,7 +1335,12 @@
                         "issues": { "start": 1, "end": 28 },
                         "years": { "start": 1998, "end": 2001 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/b/b9/Young_Justice_6.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/b/b9/Young_Justice_6.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
@@ -988,7 +1348,12 @@
                         "issues": { "start": 29, "end": 55 },
                         "years": { "start": 2001, "end": 2003 }
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Young_Justice_Vol_1_54.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Young_Justice_Vol_1_54.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1001,7 +1366,12 @@
                     "subseries": [{
                         "name": "Official Handbook of the Marvel Universe"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Official_Handbook_of_the_Marvel_Universe_Vol_2_8.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Official_Handbook_of_the_Marvel_Universe_Vol_2_8.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1016,7 +1386,12 @@
                         "issues": { "start": 1, "end": 31 },
                         "years": { "start": 1986, "end": 1988 }
                     }],
-                    "coverArt": "https://storage.googleapis.com/hipcomic/p/b45353ad4a75ca648e5bd859220a47b0-800.jpg"
+                    "coverArt": "https://storage.googleapis.com/hipcomic/p/b45353ad4a75ca648e5bd859220a47b0-800.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1029,7 +1404,12 @@
                     "subseries": [{
                         "name": "Superman"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1042,13 +1422,23 @@
                     "subseries": [{
                         "name": "She-Hulk"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 },
                 {
                     "subseries": [{
                         "name": "She-Hulk"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1061,7 +1451,12 @@
                     "subseries": [{
                         "name": "Batman"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1074,7 +1469,12 @@
                     "subseries": [{
                         "name": "Wolverine"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1087,7 +1487,12 @@
                     "subseries": [{
                         "name": "Dr. Strange"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1100,7 +1505,12 @@
                     "subseries": [{
                         "name": "Iron Man"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Iron_Man_Vol_1_300.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Iron_Man_Vol_1_300.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1113,7 +1523,12 @@
                     "subseries": [{
                         "name": "Daredevil"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1129,7 +1544,12 @@
                         "years": { "start": 2012, "end": 2014 }
 
                     }],
-                    "coverArt": "https://www.previewsworld.com/SiteImage/MainImage/STK464251"
+                    "coverArt": "https://www.previewsworld.com/SiteImage/MainImage/STK464251",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
@@ -1142,7 +1562,12 @@
                     "subseries": [{
                         "name": "The New Teen Titans"
                     }],
-                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg"
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": 0,
+                        "left": 0,
+                        "zoom": 1
+                    }
                 }
             ]
         },
