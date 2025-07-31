@@ -14,7 +14,7 @@
         {
             "name": "Fantastic Four",
             "logo": "https://vectorseek.com/wp-content/uploads/2023/11/Fantastic-Four-Classic-Logo-Vector.svg-.png",
-            "color": "#3366cc",
+            "color": "#2E64FE",
             "boxes": [
                 {
                     "subseries": [{
@@ -639,7 +639,7 @@
         {
             "name": "New Mutants",
             "logo": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png/revision/latest?cb=20211014200626",
-            "color": "#ffcc00",
+            "color": "#FFD700",
             "boxes": [
                 {
                     "subseries": [{
@@ -692,7 +692,7 @@
         {
             "name": "Secret Wars",
             "logo": "",
-            "color": "ffffff",
+            "color": "#C1121F",
             "boxes": [
                 {
                     "subseries": [
@@ -710,7 +710,7 @@
         {
             "name": "X-Men",
             "logo": "",
-            "color": "ffffff",
+            "color": "#FF9F1C",
             "boxes": [
                 {
                     "subseries": [{
@@ -749,7 +749,7 @@
         {
             "name": "Indiana Jones",
             "logo": "",
-            "color": "ffffff",
+            "color": "#8B5E3C",
             "boxes": [
                 {
                     "subseries": [{
@@ -769,7 +769,7 @@
         {
             "name": "The League of Extraordinary Gentlemen",
             "logo": "",
-            "color": "ffffff",
+            "color": "#6B2737",
             "boxes": [
                 {
                     "subseries": [{
@@ -782,7 +782,7 @@
         {
             "name": "Excalibur",
             "logo": "",
-            "color": "ffffff",
+            "color": "#7F3FBF",
             "boxes": [
                 {
                     "subseries": [{
@@ -822,7 +822,7 @@
         {
             "name": "Black Cat",
             "logo": "",
-            "color": "ffffff",
+            "color": "#2C2C2C",
             "boxes": [
                 {
                     "subseries": [{
@@ -835,7 +835,7 @@
         {
             "name": "Marvel Team-Up",
             "logo": "",
-            "color": "ffffff",
+            "color": "#2A9D8F",
             "boxes": [
                 {
                     "subseries": [{
@@ -848,7 +848,7 @@
         {
             "name": "What If...?",
             "logo": "",
-            "color": "ffffff",
+            "color": "#E9407A",
             "boxes": [
                 {
                     "subseries": [{
@@ -861,7 +861,7 @@
         {
             "name": "Teen Titans Go",
             "logo": "",
-            "color": "ffffff",
+            "color": "#00CFFF",
             "boxes": [
                 {
                     "subseries": [{
@@ -882,7 +882,7 @@
         {
             "name": "Young Justice",
             "logo": "",
-            "color": "ffffff",
+            "color": "#1E6091",
             "boxes": [
                 {
                     "subseries": [{
@@ -903,7 +903,7 @@
         {
             "name": "Official Handbook of the Marvel Universe",
             "logo": "",
-            "color": "ffffff",
+            "color": "#B0B0B0",
             "boxes": [
                 {
                     "subseries": [{
@@ -916,7 +916,7 @@
         {
             "name": "Jonny Quest",
             "logo": "",
-            "color": "ffffff",
+            "color": "#C49E62",
             "boxes": [
                 {
                     "subseries": [{
@@ -931,7 +931,7 @@
         {
             "name": "Superman",
             "logo": "",
-            "color": "ffffff",
+            "color": "#D62828",
             "boxes": [
                 {
                     "subseries": [{
@@ -944,7 +944,7 @@
         {
             "name": "She-Hulk",
             "logo": "",
-            "color": "ffffff",
+            "color": "#3FA34D",
             "boxes": [
                 {
                     "subseries": [{
@@ -963,7 +963,7 @@
         {
             "name": "Batman",
             "logo": "",
-            "color": "ffffff",
+            "color": "#3A3A3A",
             "boxes": [
                 {
                     "subseries": [{
@@ -976,7 +976,7 @@
         {
             "name": "Wolverine",
             "logo": "",
-            "color": "ffffff",
+            "color": "#E1AD01",
             "boxes": [
                 {
                     "subseries": [{
@@ -989,7 +989,7 @@
         {
             "name": "Dr. Strange",
             "logo": "",
-            "color": "ffffff",
+            "color": "#5E3A87",
             "boxes": [
                 {
                     "subseries": [{
@@ -1002,7 +1002,7 @@
         {
             "name": "Iron Man",
             "logo": "",
-            "color": "ffffff",
+            "color": "#B22222",
             "boxes": [
                 {
                     "subseries": [{
@@ -1015,7 +1015,7 @@
         {
             "name": "Daredevil",
             "logo": "",
-            "color": "ffffff",
+            "color": "#990000",
             "boxes": [
                 {
                     "subseries": [{
@@ -1028,7 +1028,7 @@
         {
             "name": "Fatale",
             "logo": "",
-            "color": "ffffff",
+            "color": "#6E0B14",
             "boxes": [
                 {
                     "subseries": [{
@@ -1043,7 +1043,7 @@
         {
             "name": "The New Teen Titans",
             "logo": "",
-            "color": "ffffff",
+            "color": "#FF6F00",
             "boxes": [
                 {
                     "subseries": [{
@@ -1051,6 +1051,34 @@
                     }],
                     "coverArt": ""
                 }
+            ]
+        },
+        {
+            "name": "Spider-Man",
+            "logo": "",
+            "color": "#B32428",
+            "boxes": [
+            ]
+        },
+        {
+            "name": "Army of Darkness",
+            "logo": "",
+            "color": "#5A4632",
+            "boxes": [
+            ]
+        },
+        {
+            "name": "007",
+            "logo": "",
+            "color": "#4B5054",
+            "boxes": [
+            ]
+        },
+        {
+            "name": "Alien",
+            "logo": "",
+            "color": "#7FFF00",
+            "boxes": [
             ]
         }
     ]
