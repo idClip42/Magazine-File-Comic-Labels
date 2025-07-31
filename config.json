@@ -691,7 +691,7 @@
         },
         {
             "name": "Secret Wars",
-            "logo": "",
+            "logo": "https://shlocko.wordpress.com/wp-content/uploads/2023/03/secret_wars_logo.webp",
             "color": "#C1121F",
             "boxes": [
                 {
@@ -709,7 +709,7 @@
         },
         {
             "name": "X-Men",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/6/65/Uncanny-X-Men%281981-1994%29.png/revision/latest?cb=20211017202358",
             "color": "#FF9F1C",
             "boxes": [
                 {
@@ -748,7 +748,7 @@
         },
         {
             "name": "Indiana Jones",
-            "logo": "",
+            "logo": "https://img1.picmix.com/output/stamp/normal/8/4/2/3/663248_18130.png",
             "color": "#8B5E3C",
             "boxes": [
                 {
@@ -768,7 +768,7 @@
         },
         {
             "name": "The League of Extraordinary Gentlemen",
-            "logo": "",
+            "logo": "https://stripinfo.be/images/images/380000/383004.jpg",
             "color": "#6B2737",
             "boxes": [
                 {
@@ -781,7 +781,7 @@
         },
         {
             "name": "Excalibur",
-            "logo": "",
+            "logo": "https://preview.redd.it/vlbt7ddegk481.jpg?width=640&crop=smart&auto=webp&s=b1f37fb217e15dfa85262cf5d1396ca78ba9d6a0",
             "color": "#7F3FBF",
             "boxes": [
                 {
@@ -821,7 +821,7 @@
         },
         {
             "name": "Black Cat",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png/revision/latest?cb=20201222004427",
             "color": "#2C2C2C",
             "boxes": [
                 {
@@ -834,7 +834,7 @@
         },
         {
             "name": "Marvel Team-Up",
-            "logo": "",
+            "logo": "https://www.wymann.info/comics/graphics/MarvelTeamUpLogo.gif",
             "color": "#2A9D8F",
             "boxes": [
                 {
@@ -846,8 +846,8 @@
             ]
         },
         {
-            "name": "What If...?",
-            "logo": "",
+            "name": "What If?",
+            "logo": "./../imgs/logos/whatif.jpg",
             "color": "#E9407A",
             "boxes": [
                 {
@@ -860,7 +860,7 @@
         },
         {
             "name": "Teen Titans Go",
-            "logo": "",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/960px-Teen_Titans_-_logo_%28English%29.png",
             "color": "#00CFFF",
             "boxes": [
                 {
@@ -881,7 +881,7 @@
         },
         {
             "name": "Young Justice",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg/revision/latest?cb=20140701122048",
             "color": "#1E6091",
             "boxes": [
                 {
@@ -902,7 +902,7 @@
         },
         {
             "name": "Official Handbook of the Marvel Universe",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png/revision/latest?cb=20211017214609",
             "color": "#B0B0B0",
             "boxes": [
                 {
@@ -915,7 +915,7 @@
         },
         {
             "name": "Jonny Quest",
-            "logo": "",
+            "logo": "./../imgs/logos/quest.jpg",
             "color": "#C49E62",
             "boxes": [
                 {
@@ -930,7 +930,7 @@
         },
         {
             "name": "Superman",
-            "logo": "",
+            "logo": "https://iesjv.wordpress.com/wp-content/uploads/2015/09/superman-logo.png",
             "color": "#D62828",
             "boxes": [
                 {
@@ -943,7 +943,7 @@
         },
         {
             "name": "She-Hulk",
-            "logo": "",
+            "logo": "https://www.clipartmax.com/png/middle/363-3634083_she-hulk-clipart-hulk-logo-sensational-she-hulk-by-john-byrne-%5Bbook%5D.png",
             "color": "#3FA34D",
             "boxes": [
                 {
@@ -962,7 +962,7 @@
         },
         {
             "name": "Batman",
-            "logo": "",
+            "logo": "https://comicbooksandcats.com/wp-content/uploads/2014/10/batman-66-logo.png",
             "color": "#3A3A3A",
             "boxes": [
                 {
@@ -975,7 +975,7 @@
         },
         {
             "name": "Wolverine",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png/revision/latest?cb=20210914171247",
             "color": "#E1AD01",
             "boxes": [
                 {
@@ -988,7 +988,7 @@
         },
         {
             "name": "Dr. Strange",
-            "logo": "",
+            "logo": "https://i.pinimg.com/1200x/d1/39/5e/d1395ecf36f5ac19d1a923e810df2c44.jpg",
             "color": "#5E3A87",
             "boxes": [
                 {
@@ -1001,7 +1001,7 @@
         },
         {
             "name": "Iron Man",
-            "logo": "",
+            "logo": "https://www.wymann.info/comics/graphics/IronMan1970sLogo.gif",
             "color": "#B22222",
             "boxes": [
                 {
@@ -1014,7 +1014,7 @@
         },
         {
             "name": "Daredevil",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png/revision/latest?cb=20221206181516",
             "color": "#990000",
             "boxes": [
                 {
@@ -1027,7 +1027,7 @@
         },
         {
             "name": "Fatale",
-            "logo": "",
+            "logo": "./../imgs/logos/fatale.png",
             "color": "#6E0B14",
             "boxes": [
                 {
@@ -1042,7 +1042,7 @@
         },
         {
             "name": "The New Teen Titans",
-            "logo": "",
+            "logo": "https://13thdimension.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-24-at-8.44.20-PM.png",
             "color": "#FF6F00",
             "boxes": [
                 {
@@ -1055,28 +1055,28 @@
         },
         {
             "name": "Spider-Man",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png/revision/latest/scale-to-width-down/284?cb=20211207040905",
             "color": "#B32428",
             "boxes": [
             ]
         },
         {
             "name": "Army of Darkness",
-            "logo": "",
+            "logo": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png/revision/latest?cb=20151025004423",
             "color": "#5A4632",
             "boxes": [
             ]
         },
         {
             "name": "007",
-            "logo": "",
+            "logo": "https://logos-world.net/wp-content/uploads/2023/06/007-Logo.png",
             "color": "#4B5054",
             "boxes": [
             ]
         },
         {
-            "name": "Alien",
-            "logo": "",
+            "name": "Aliens",
+            "logo": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png",
             "color": "#7FFF00",
             "boxes": [
             ]
