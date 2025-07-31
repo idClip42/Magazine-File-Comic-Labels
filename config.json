@@ -631,6 +631,17 @@
                         "left": -0.9,
                         "zoom": 0.85
                     }
+                },
+                {
+                    "subseries": [{
+                        "name": "Fantastic Four Current Reading"
+                    }],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Marvels_Comics_Fantastic_Four_Vol_1_1.jpg",
+                    "coverArtTransform": {
+                        "top": -1.3,
+                        "left": -0.7,
+                        "zoom": 0.87
+                    }
                 }
             ]
         },
@@ -1581,8 +1592,19 @@
         {
             "name": "Army of Darkness",
             "logo": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png",
-            "color": "#5A4632",
+            "color": "#40325a",
             "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Army of Darkness"
+                    }],
+                    "coverArt": "http://marqueeposter.com/wp-content/uploads/2015/12/75-army-of-darkness-signed-art-print-us-1-sheet-1992-01.jpg",
+                    "coverArtTransform": {
+                        "top": -1.8,
+                        "left": -2,
+                        "zoom": 1
+                    }
+                }
             ]
         },
         {
@@ -1595,8 +1617,57 @@
         {
             "name": "Aliens",
             "logo": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png",
-            "color": "#7FFF00",
+            "color": "#0f4451",
             "boxes": [
+                {
+                    "subseries": [
+                        {
+                            "name": "Aliens",
+                            "issues": { "start": 1, "end": 6 },
+                            "years": { "start": 1989, "end": 1989 }
+                        },
+                        {
+                            "name": "Aliens",
+                            "volume": 2,
+                            "issues": { "start": 1, "end": 4 },
+                            "years": { "start": 1990, "end": 1990 }
+                        },
+                        {
+                            "name": "Aliens: Earth War",
+                            "issues": { "start": 1, "end": 4 },
+                            "years": { "start": 1991, "end": 1991 }
+                        },
+                        {
+                            "name": "Aliens: Newt's Tale",
+                            "issues": { "start": 1, "end": 2 },
+                            "years": { "start": 1992, "end": 1992 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/avp/images/5/57/Aliens1.jpg/revision/latest?cb=20200703150739",
+                    "coverArtTransform": {
+                        "top": -2.5,
+                        "left": -1,
+                        "zoom": 1.4
+                    }
+                }
+            ]
+        },
+        {
+            "name": "The Shadow",
+            "logo": "./../imgs/logos/shadow.jpg",
+            "color": "#3a0000",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "The Shadow"
+                    }],
+                    "coverArt": "https://s3.amazonaws.com/comicgeeks/comics/covers/large-6863199.jpg?1745469299",
+                    "coverArtTransform": {
+                        "top": -1.2,
+                        "left": -1,
+                        "zoom": 0.87
+                    }
+                }
             ]
         }
     ]
