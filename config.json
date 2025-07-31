@@ -638,7 +638,7 @@
         },
         {
             "name": "New Mutants",
-            "logo": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png/revision/latest?cb=20211014200626",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png",
             "color": "#FFD700",
             "boxes": [
                 {
@@ -652,40 +652,53 @@
                 {
                     "subseries": [{
                         "name": "New Mutants",
-                        "issues": { "start": 26, "end": 50 }
+                        "issues": { "start": 26, "end": 50 },
+                        "years": { "start": 1984, "end": 1986 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/New_Mutants_Vol_1_26.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "New Mutants",
-                        "issues": { "start": 51, "end": 75 }
+                        "issues": { "start": 51, "end": 75 },
+                        "years": { "start": 1987, "end": 1989 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/New_Mutants_Vol_1_61.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "New Mutants",
-                        "issues": { "start": 76, "end": 100 }
+                        "issues": { "start": 76, "end": 100 },
+                        "years": { "start": 1989, "end": 1991 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/New_Mutants_Vol_1_78.jpg"
                 },
                 {
                     "subseries": [
                         {
-                            "name": "New Mutants Annual"
+                            "name": "New Mutants Annual",
+                            "issues": { "start": 1, "end": 7 },
+                            "years": { "start": 1984, "end": 1991 }
                         },
                         {
                             "name": "New Mutants Misc."
                         }
                     ],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/New_Mutants_Annual_Vol_1_1.jpg"
                 },
                 {
-                    "subseries": [{
-                        "name": "New Mutants Misc."
-                    }],
-                    "coverArt": ""
+                    "subseries": [
+                        {
+                            "name": "New Mutants",
+                            "volume": 4,
+                            "issues": { "start": 1, "end": 33 },
+                            "years": { "start": 2020, "end": 2023 }
+                        },
+                        {
+                            "name": "New Mutants Misc."
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/New_Mutants_Vol_4_1.jpg"
                 }
             ]
         },
@@ -697,52 +710,59 @@
                 {
                     "subseries": [
                         {
-                            "name": "Secret Wars"
+                            "name": "Marvel Super Heroes Secret Wars",
+                            "issues": { "start": 1, "end": 12 },
+                            "years": { "start": 1984, "end": 1985 }
                         },
                         {
-                            "name": "Secret Wars"
+                            "name": "Secret Wars",
+                            "issues": { "start": 1, "end": 9 },
+                            "years": { "start": 2015, "end": 2016 }
                         }
                     ],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg"
                 }
             ]
         },
         {
             "name": "X-Men",
-            "logo": "https://static.wikia.nocookie.net/logocomics/images/6/65/Uncanny-X-Men%281981-1994%29.png/revision/latest?cb=20211017202358",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/6/65/Uncanny-X-Men%281981-1994%29.png",
             "color": "#FF9F1C",
             "boxes": [
                 {
                     "subseries": [{
                         "name": "Uncanny X-Men",
-                        "issues": { "start": 129, "end": 162 }
+                        "issues": { "start": 129, "end": 162 },
+                        "years": { "start": 1979, "end": 1982 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/X-Men_Vol_1_131.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "Uncanny X-Men",
-                        "issues": { "start": 163, "end": 187 }
+                        "issues": { "start": 163, "end": 187 },
+                        "years": { "start": 1982, "end": 1984 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Uncanny_X-Men_Vol_1_168.jpg"
                 },
                 {
                     "subseries": [
                         {
                             "name": "Uncanny X-Men",
-                            "issues": { "start": 188, "end": 200 }
+                            "issues": { "start": 188, "end": 200 },
+                            "years": { "start": 1984, "end": 1985 }
                         },
                         {
                             "name": "Uncanny X-Men Annual"
                         }
                     ],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/0e/Uncanny_X-Men_Vol_1_200.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "X-Men Misc."
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Nightcrawler_Vol_1_1.jpg"
                 }
             ]
         },
@@ -754,15 +774,16 @@
                 {
                     "subseries": [{
                         "name": "The Further Adventures of Indiana Jones",
-                        "issues": { "start": 1, "end": 34 }
+                        "issues": { "start": 1, "end": 34 },
+                        "years": { "start": 1983, "end": 1986 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "Indiana Jones (Dark Horse)"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg"
                 }
             ]
         },
@@ -775,7 +796,7 @@
                     "subseries": [{
                         "name": "The League of Extraordinary Gentlemen"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg"
                 }
             ]
         },
@@ -787,48 +808,52 @@
                 {
                     "subseries": [{
                         "name": "Excalibur",
-                        "issues": { "start": 1, "end": 25 }
+                        "issues": { "start": 1, "end": 25 },
+                        "years": { "start": 1988, "end": 1990 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Excalibur_Vol_1_1.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "Excalibur",
-                        "issues": { "start": 26, "end": 50 }
+                        "issues": { "start": 26, "end": 50 },
+                        "years": { "start": 1990, "end": 1992 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Excalibur_Vol_1_32.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "Excalibur",
-                        "issues": { "start": 51, "end": 75 }
+                        "issues": { "start": 51, "end": 75 },
+                        "years": { "start": 1992, "end": 1994 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/3/3e/Excalibur_Vol_1_66.jpg"
                 },
                 {
                     "subseries": [
                         {
                             "name": "Excalibur",
-                            "issues": { "start": 76, "end": 125 }
+                            "issues": { "start": 76, "end": 125 },
+                            "years": { "start": 1994, "end": 1998 }
                         },
                         {
                             "name": "Excalibur Misc."
                         }
                     ],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg"
                 }
             ]
         },
         {
             "name": "Black Cat",
-            "logo": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png/revision/latest?cb=20201222004427",
+            "logo": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png",
             "color": "#2C2C2C",
             "boxes": [
                 {
                     "subseries": [{
                         "name": "Black Cat"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Black_Cat_Vol_2_5.jpg"
                 }
             ]
         },
@@ -841,7 +866,7 @@
                     "subseries": [{
                         "name": "Marvel Team-Up"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/b0/Marvel_Team-Up_Vol_1_74.jpg"
                 }
             ]
         },
@@ -854,7 +879,7 @@
                     "subseries": [{
                         "name": "What If...?"
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/What_If%3F_Vol_1_36.jpg"
                 }
             ]
         },
@@ -866,43 +891,47 @@
                 {
                     "subseries": [{
                         "name": "Teen Titans Go",
-                        "issues": { "start": 1, "end": 28 }
+                        "issues": { "start": 1, "end": 28 },
+                        "years": { "start": 2003, "end": 2006 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "Teen Titans Go",
-                        "issues": { "start": 29, "end": 55 }
+                        "issues": { "start": 29, "end": 55 },
+                        "years": { "start": 2006, "end": 2008 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/teentitans/images/7/7b/GraduationDay.jpg"
                 }
             ]
         },
         {
             "name": "Young Justice",
-            "logo": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg/revision/latest?cb=20140701122048",
+            "logo": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg",
             "color": "#1E6091",
             "boxes": [
                 {
                     "subseries": [{
                         "name": "Young Justice",
-                        "issues": { "start": 1, "end": 28 }
+                        "issues": { "start": 1, "end": 28 },
+                        "years": { "start": 1998, "end": 2001 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/b/b9/Young_Justice_6.jpg"
                 },
                 {
                     "subseries": [{
                         "name": "Young Justice",
-                        "issues": { "start": 29, "end": 55 }
+                        "issues": { "start": 29, "end": 55 },
+                        "years": { "start": 2001, "end": 2003 }
                     }],
-                    "coverArt": ""
+                    "coverArt": "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Young_Justice_Vol_1_54.jpg"
                 }
             ]
         },
         {
             "name": "Official Handbook of the Marvel Universe",
-            "logo": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png/revision/latest?cb=20211017214609",
+            "logo": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png",
             "color": "#B0B0B0",
             "boxes": [
                 {
@@ -943,7 +972,7 @@
         },
         {
             "name": "She-Hulk",
-            "logo": "https://www.clipartmax.com/png/middle/363-3634083_she-hulk-clipart-hulk-logo-sensational-she-hulk-by-john-byrne-%5Bbook%5D.png",
+            "logo": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Sensational_She-Hulk_Vol_2_Logo.png",
             "color": "#3FA34D",
             "boxes": [
                 {
@@ -975,7 +1004,7 @@
         },
         {
             "name": "Wolverine",
-            "logo": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png/revision/latest?cb=20210914171247",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png",
             "color": "#E1AD01",
             "boxes": [
                 {
@@ -1014,7 +1043,7 @@
         },
         {
             "name": "Daredevil",
-            "logo": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png/revision/latest?cb=20221206181516",
+            "logo": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png",
             "color": "#990000",
             "boxes": [
                 {
@@ -1055,14 +1084,14 @@
         },
         {
             "name": "Spider-Man",
-            "logo": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png/revision/latest/scale-to-width-down/284?cb=20211207040905",
+            "logo": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png",
             "color": "#B32428",
             "boxes": [
             ]
         },
         {
             "name": "Army of Darkness",
-            "logo": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png/revision/latest?cb=20151025004423",
+            "logo": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png",
             "color": "#5A4632",
             "boxes": [
             ]
