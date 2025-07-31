@@ -365,6 +365,201 @@
                         }
                     ],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg"
+                },
+                {
+                    "subseries": [{
+                        "name": "Fantastic Four Reprints"
+                    }],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg"
+                },
+                {
+                    "subseries": [{
+                        "name": "Marvel Knights 4",
+                        "issues": { "start": 1, "end": 30 },
+                        "years": { "start": 2004, "end": 2006 }
+                    }],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/4_Vol_1_5.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Marvel Two-In-One",
+                            "years": { "start": 1974, "end": 1983 }
+                        },
+                        {
+                            "name": "Marvel Two-In-One",
+                            "volume": 2,
+                            "issues": { "start": 1, "end": 12 },
+                            "years": { "start": 2018, "end": 2019 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg"
+                },
+                {
+                    "subseries": [{
+                        "name": "The Thing",
+                        "issues": { "start": 1, "end": 36 },
+                        "years": { "start": 1983, "end": 1986 }
+                    }],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Giant-Size Fantastic Four",
+                            "issues": { "start": 1, "end": 6 },
+                            "years": { "start": 1974, "end": 1975 }
+                        },
+                        {
+                            "name": "Official Marvel Index to Fantastic Four",
+                            "issues": { "start": 1, "end": 12 },
+                            "years": { "start": 1985, "end": 1987 }
+                        },
+                        {
+                            "name": "Fantastic Four vs. the X-Men",
+                            "issues": { "start": 1, "end": 4 },
+                            "years": { "start": 1986, "end": 1987 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Official_Marvel_Index_to_Fantastic_Four_Vol_1_2.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "The Adventures of The Thing",
+                            "years": { "start": 1992, "end": 1992 }
+                        },
+                        {
+                            "name": "Fantastic Four Unlimited",
+                            "years": { "start": 1993, "end": 1995 }
+                        },
+                        {
+                            "name": "Marvel Action Hour Fantastic Four",
+                            "years": { "start": 1994, "end": 1995 }
+                        },
+                        {
+                            "name": "Fantastic Force",
+                            "years": { "start": 1994, "end": 1996 }
+                        },
+                        {
+                            "name": "Fantastic Four: Unplugged",
+                            "years": { "start": 1995, "end": 1996 }
+                        },
+                        {
+                            "name": "Fantastic Four 2099",
+                            "years": { "start": 1996, "end": 1996 }
+                        },
+                        {
+                            "name": "Fantastic Four: Fireworks",
+                            "years": { "start": 1999, "end": 1999 }
+                        },
+                        {
+                            "name": "Domination Factor: Fantastic Four",
+                            "years": { "start": 1999, "end": 2000 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Fantastic_Four_Unlimited_Vol_1_1.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Before the Fantastic Four",
+                            "years": { "start": 2000, "end": 2001 }
+                        },
+                        {
+                            "name": "Big Town",
+                            "years": { "start": 2000, "end": 2001 }
+                        },
+                        {
+                            "name": "Fantastic Four: World's Greatest Comics Magazine",
+                            "years": { "start": 2001, "end": 2002 }
+                        },
+                        {
+                            "name": "Fantastic Four: 1 2 3 4",
+                            "years": { "start": 2001, "end": 2002 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "The Thing: Freakshow",
+                            "years": { "start": 2002, "end": 2002 }
+                        },
+                        {
+                            "name": "Startling Stories: The Thing - Night Falls on Yancy Street",
+                            "years": { "start": 2003, "end": 2003 }
+                        },
+                        {
+                            "name": "Fantastic Four - Unstable Molecules",
+                            "years": { "start": 2003, "end": 2003 }
+                        },
+                        {
+                            "name": "Fantastic Four: Foes",
+                            "years": { "start": 2005, "end": 2005 }
+                        },
+                        {
+                            "name": "X-Men / Fantastic Four",
+                            "years": { "start": 2005, "end": 2005 }
+                        },
+                        {
+                            "name": "Marvel Age Fantastic Four",
+                            "years": { "start": 2004, "end": 2005 }
+                        },
+                        {
+                            "name": "Fantastic Four: First Family",
+                            "years": { "start": 2006, "end": 2006 }
+                        },
+                        {
+                            "name": "Franklin Richards: Son of a Genius",
+                            "years": { "start": 2005, "end": 2005 }
+                        },
+                        {
+                            "name": "Marvel Adventures Fantastic Four",
+                            "years": { "start": 2005, "end": 2009 }
+                        },
+                        {
+                            "name": "The Thing",
+                            "volume": 2,
+                            "years": { "start": 2006, "end": 2006 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_First_Family_Vol_1_1.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Marvel 1602: Fantastick Four",
+                            "years": { "start": 2006, "end": 2007 }
+                        },
+                        {
+                            "name": "Fantastic Four: The End",
+                            "years": { "start": 2007, "end": 2007 }
+                        },
+                        {
+                            "name": "Spider-Man and the Fantastic Four",
+                            "years": { "start": 2007, "end": 2007 }
+                        },
+                        {
+                            "name": "Secret Invasion: Fantastic Four",
+                            "years": { "start": 2008, "end": 2008 }
+                        },
+                        {
+                            "name": "Fantastic Force",
+                            "volume": 2,
+                            "years": { "start": 2009, "end": 2009 }
+                        },
+                        {
+                            "name": "Dark Reign: Fantastic Four",
+                            "years": { "start": 2009, "end": 2009 }
+                        },
+                        {
+                            "name": "Spider-Man/Fantastic Four",
+                            "years": { "start": 2010, "end": 2010 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/Marvel_1602_Fantastick_Four_Vol_1_1.jpg"
                 }
             ]
         },
