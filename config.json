@@ -361,7 +361,7 @@
                             "years": { "start": 2006, "end": 2006 }
                         },
                         {
-                            "name": "Miscellanous"
+                            "name": "Ultimate Fantastic Four Misc."
                         }
                     ],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg"
@@ -560,6 +560,79 @@
                         }
                     ],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/Marvel_1602_Fantastick_Four_Vol_1_1.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Fantastic Four: Grand Design",
+                            "years": { "start": 2019, "end": 2020 }
+                        },
+                        {
+                            "name": "Future Foundation",
+                            "years": { "start": 2019, "end": 2020 }
+                        },
+                        {
+                            "name": "Invisible Woman",
+                            "years": { "start": 2019, "end": 2020 }
+                        },
+                        {
+                            "name": "X-Men / Fantastic Four",
+                            "volume": 2,
+                            "years": { "start": 2020, "end": 2020 }
+                        },
+                        {
+                            "name": "Fantastic Four: Antithesis",
+                            "years": { "start": 2020, "end": 2021 }
+                        },
+                        {
+                            "name": "Empyre",
+                            "years": { "start": 2021, "end": 2021 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Invisible_Woman_Vol_1_3.jpg"
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Fantastic Four: Life Story",
+                            "years": { "start": 2021, "end": 2022 }
+                        },
+                        {
+                            "name": "The Thing",
+                            "volume": 3,
+                            "years": { "start": 2022, "end": 2022 }
+                        },
+                        {
+                            "name": "New Fantastic Four",
+                            "years": { "start": 2022, "end": 2022 }
+                        },
+                        {
+                            "name": "Clobberin' Time",
+                            "years": { "start": 2023, "end": 2023 }
+                        },
+                        {
+                            "name": "The Thing",
+                            "volume": 4,
+                            "years": { "start": 2025, "end": 2025 }
+                        },
+                        {
+                            "name": "Fantastic Four Fanfare",
+                            "years": { "start": 2025, "end": 2025 }
+                        }
+                    ],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg"
+                },
+                {
+                    "subseries": [{
+                        "name": "Fantastic Four One-Shots"
+                    }],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg"
+                },
+                {
+                    "subseries": [{
+                        "name": "Fantastic Four One-Shots"
+                    }],
+                    "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg"
                 }
             ]
         },
@@ -567,7 +640,6 @@
             "name": "New Mutants",
             "logo": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png/revision/latest?cb=20211014200626",
             "color": "#ffcc00",
-            "volume": 1,
             "boxes": [
                 {
                     "subseries": [{
@@ -576,6 +648,408 @@
                         "years": { "start": 1982, "end": 1983 }
                     }],
                     "coverArt": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg"
+                },
+                {
+                    "subseries": [{
+                        "name": "New Mutants",
+                        "issues": { "start": 26, "end": 50 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "New Mutants",
+                        "issues": { "start": 51, "end": 75 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "New Mutants",
+                        "issues": { "start": 76, "end": 100 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "New Mutants Annual"
+                        },
+                        {
+                            "name": "New Mutants Misc."
+                        }
+                    ],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "New Mutants Misc."
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Secret Wars",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [
+                        {
+                            "name": "Secret Wars"
+                        },
+                        {
+                            "name": "Secret Wars"
+                        }
+                    ],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "X-Men",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Uncanny X-Men",
+                        "issues": { "start": 129, "end": 162 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "Uncanny X-Men",
+                        "issues": { "start": 163, "end": 187 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Uncanny X-Men",
+                            "issues": { "start": 188, "end": 200 }
+                        },
+                        {
+                            "name": "Uncanny X-Men Annual"
+                        }
+                    ],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "X-Men Misc."
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Indiana Jones",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "The Further Adventures of Indiana Jones",
+                        "issues": { "start": 1, "end": 34 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "Indiana Jones (Dark Horse)"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "The League of Extraordinary Gentlemen",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "The League of Extraordinary Gentlemen"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Excalibur",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Excalibur",
+                        "issues": { "start": 1, "end": 25 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "Excalibur",
+                        "issues": { "start": 26, "end": 50 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "Excalibur",
+                        "issues": { "start": 51, "end": 75 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [
+                        {
+                            "name": "Excalibur",
+                            "issues": { "start": 76, "end": 125 }
+                        },
+                        {
+                            "name": "Excalibur Misc."
+                        }
+                    ],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Black Cat",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Black Cat"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Marvel Team-Up",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Marvel Team-Up"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "What If...?",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "What If...?"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Teen Titans Go",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Teen Titans Go",
+                        "issues": { "start": 1, "end": 28 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "Teen Titans Go",
+                        "issues": { "start": 29, "end": 55 }
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Young Justice",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Young Justice",
+                        "issues": { "start": 1, "end": 28 }
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "Young Justice",
+                        "issues": { "start": 29, "end": 55 }
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Official Handbook of the Marvel Universe",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Official Handbook of the Marvel Universe"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Jonny Quest",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Jonny Quest (Comico)",
+                        "issues": { "start": 1, "end": 31 },
+                        "years": { "start": 1986, "end": 1988 }
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Superman",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Superman"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "She-Hulk",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "She-Hulk"
+                    }],
+                    "coverArt": ""
+                },
+                {
+                    "subseries": [{
+                        "name": "She-Hulk"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Batman",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Batman"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Wolverine",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Wolverine"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Dr. Strange",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Dr. Strange"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Iron Man",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Iron Man"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Daredevil",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Daredevil"
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "Fatale",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "Fatale",
+                        "issues": { "start": 1, "end": 24 }
+
+                    }],
+                    "coverArt": ""
+                }
+            ]
+        },
+        {
+            "name": "The New Teen Titans",
+            "logo": "",
+            "color": "ffffff",
+            "boxes": [
+                {
+                    "subseries": [{
+                        "name": "The New Teen Titans"
+                    }],
+                    "coverArt": ""
                 }
             ]
         }
