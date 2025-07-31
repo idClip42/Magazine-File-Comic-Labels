@@ -10,11 +10,11 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
       return "";
     let style = "";
 
-    if(box.coverArtTransform.top)
+    if(box.coverArtTransform.top !== undefined)
       style += `top: ${box.coverArtTransform.top}in; `
-    if(box.coverArtTransform.left)
+    if(box.coverArtTransform.left !== undefined)
       style += `left: ${box.coverArtTransform.left}in; `
-    if(box.coverArtTransform.zoom)
+    if(box.coverArtTransform.zoom !== undefined)
       style += `height: ${100 * box.coverArtTransform.zoom}%`
 
     return style;
