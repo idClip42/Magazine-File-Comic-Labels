@@ -8,13 +8,19 @@ export function BuildLabelHTML(series:SeriesConfig, box: BoxConfig): string {
   const subseriesHtmlBlocks = box.subseries.map(subseries => {
     const subseriesTitle = subseries.name ? `<span class="subseries-name">${subseries.name}</span>` : '';
     const volumeText = subseries.volume ? `<span class="volume">(Vol. ${subseries.volume})</span>` : '';
-    const issues = subseries.issues ? `<span class="issues">#${subseries.issues.start} - ${subseries.issues.end}</span>` : "";
+    const issues = (()=>{
+      if(!subseries.issues) return "";
+      const text = (subseries.issues.start === subseries.issues.end) ?
+        subseries.issues.start :
+        `${subseries.issues.start} - ${subseries.issues.end}`;
+      return `<span class="issues">#${text}</span>`;
+    })();
     const years = (()=>{
       if(!subseries.years) return "";
       const text = (subseries.years.start === subseries.years.end) ?
         subseries.years.start :
         `${subseries.years.start} - ${subseries.years.end}`;
-      return `<div class="years">${text}</div>`;
+      return `<span class="years">${text}</span>`;
     })();
     return `
             <div>
