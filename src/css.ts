@@ -95,6 +95,7 @@ export const CSS_TEXT = `
       .issues {
         font-size: 1em;
         margin-top: 0.2em;
+        white-space: nowrap;
       }
 
       .years {
