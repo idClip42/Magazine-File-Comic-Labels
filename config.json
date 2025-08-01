@@ -6,7 +6,7 @@
             "textboxMinHeightInches": 2.25,
             "pageSizeXInches": 8.5,
             "pageSizeYInches": 11,
-            "pageMarginXInches": 0.25,
+            "pageMarginXInches": 0.375,
             "pageMarginYInches": 0.5
         }
     },
