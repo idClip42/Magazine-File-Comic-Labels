@@ -60,9 +60,18 @@ function renderContents(label: LabelConfig): string {
 
 function labelYears(label: LabelConfig): string {
   const yearRanges = label.contents
-    .map((content) => formatRange(content.years))
-    .filter(Boolean);
-  return [...new Set(yearRanges)].join(" · ");
+    .map((content) => content.years)
+    .filter((years): years is [number, number] => years !== undefined);
+
+  if (yearRanges.length === 0) return "";
+
+  if (layout.years.display === "condensed-range") {
+    const firstYear = yearRanges[0][0];
+    const lastYear = yearRanges[yearRanges.length - 1][1];
+    return formatRange([firstYear, lastYear]);
+  }
+
+  return [...new Set(yearRanges.map((years) => formatRange(years)))].join(" · ");
 }
 
 export function renderLabel(label: LabelConfig): string {

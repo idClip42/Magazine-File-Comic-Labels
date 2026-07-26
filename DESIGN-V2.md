@@ -55,7 +55,7 @@ Every label follows the same architecture:
 
 1. A thin category-color rule runs across the complete vinyl piece, including the physical overwrap, as the consistent header.
 2. A prominent, horizontal white **identity band** runs across that same full width just above the finger hole. Thin category-color rules border its top and bottom.
-3. The identity band contains the very large logo and a large full year range. The logo should use roughly 90–95% of its available width when the mark permits.
+3. The identity band contains the very large logo and a large full year range. The logo should use roughly 90–95% of its available width when the mark permits. In the current `condensed-range` mode, boxes with several dated contents show one range from the first start year through the last end year in the label’s configured order, rather than a noisy list of separate spans; `separate-ranges` remains an available layout option.
 4. Artwork continues beneath the identity band and around the finger hole.
 5. The finger hole is a deliberate divider, not an obstruction: identity is above it; catalog information is below it.
 6. A smaller, separately bordered white **metadata band** below the hole contains only necessary issue ranges, contained-series names, and optional short notes. It also runs across the complete vinyl width.

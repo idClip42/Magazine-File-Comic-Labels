@@ -63,6 +63,9 @@ export type LayoutConfig = {
     metadataSizeInches: number;
     bandGapInches: number;
   };
+  years: {
+    display: "condensed-range" | "separate-ranges";
+  };
   showCutGuide: boolean;
 };
 
