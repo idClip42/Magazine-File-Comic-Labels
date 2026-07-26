@@ -53,22 +53,24 @@ White is not blank background. It is an architectural material, alongside the wh
 
 Every label follows the same architecture:
 
-1. A thin category-color rule near the top is the consistent header.
-2. A prominent, horizontal white **identity band** sits in the upper-middle portion. Thin category-color rules border its top and bottom.
+1. A thin category-color rule runs across the complete vinyl piece, including the physical overwrap, as the consistent header.
+2. A prominent, horizontal white **identity band** runs across that same full width just above the finger hole. Thin category-color rules border its top and bottom.
 3. The identity band contains the very large logo and a large full year range. The logo should use roughly 90–95% of its available width when the mark permits.
 4. Artwork continues beneath the identity band and around the finger hole.
 5. The finger hole is a deliberate divider, not an obstruction: identity is above it; catalog information is below it.
-6. A smaller, separately bordered white **metadata band** below the hole contains only necessary issue ranges, contained-series names, and optional short notes.
-7. White bands are framed by the artwork at the vertical and lower edges; they do not turn the side into an edge-to-edge white card.
+6. A smaller, separately bordered white **metadata band** below the hole contains only necessary issue ranges, contained-series names, and optional short notes. It also runs across the complete vinyl width.
+7. The fixed-height bands line up identically across all boxes, producing deliberate horizontal flow on a shelf. Artwork remains the field between and around those bands rather than turning the whole side into an edge-to-edge white card.
 
 Horizontal structure is intentional: shelves are experienced horizontally, and repeated aligned bands make a row feel like one designed product.
 
 ### Physical format and finish
 
 - Magazine file face: **3.875 × 11.75 in**.
-- The centered half-circle finger hole lies approximately 1.5–2.5 in from the bottom and is about 1.75 in wide at its widest point.
+- The centered finger hole is a downward-facing perfect half circle: its flat edge is on top and its curve is below. It lies approximately 1.5–2.5 in from the bottom and is about 1.75 in wide at its widest point.
 - The label covers the entire face. Artwork intentionally runs through the hole area; after application, that area is cut out.
 - The metadata band occupies the lower region beneath the finger hole.
+
+The layout configuration contains an intentionally undersized graphical cut guide (initially 90% of the nominal hole diameter). The physical IKEA-file opening is the final cutting reference; the smaller guide prevents imperfect box manufacturing or placement from exposing important white-band content.
 
 The preferred finish is professionally printed **matte adhesive vinyl**, replacing office paper and spray adhesive. It should be cleaner, more durable, easier to apply, and closer to a manufactured product. A full-height label requires a vendor/material workflow that supports the custom face plus approximately 0.125 in overwrap on each intended edge; V1’s US Letter layout is no longer the physical output constraint.
 
@@ -88,7 +90,9 @@ reference image → crop → contrast/threshold → trace to SVG → brief clean
 
 The result should retain geometry and recognition while removing gradients, glows, shadows, textures, JPEG artifacts, and incidental lighting. Use the minimum number of flat fills—normally one, occasionally two—needed for the logo to remain itself. Do not add universal drop shadows; an optional shared CSS stroke/outline can be tested for readability before it becomes a rule.
 
-SVG owns the logo geometry and one/two semantic fills. CSS owns shared presentation: color tokens, scale, placement, and any approved outline. The renderer should inline SVGs (rather than treat them only as `<img>` files) so these styles can be applied programmatically.
+SVG owns the logo geometry and one/two semantic fills. CSS owns shared presentation: color tokens, scale, placement, and any approved outline. The renderer inlines local SVGs (rather than treating them only as `<img>` files) so these styles can be applied programmatically; existing remote PNG/JPEG logos remain raster fallbacks during migration.
+
+For the pipeline, use `data-logo-fill="primary"` and, when needed, `data-logo-fill="secondary"` on the relevant SVG paths/groups. The category-logo configuration then supplies the corresponding colors—by default the category color for primary and white for secondary—without redrawing or modifying the individual label.
 
 ## Configuration model
 
@@ -96,7 +100,7 @@ Split the collection into two human-editable catalog files plus one global produ
 
 ```
 config/
-  layout.json       # physical size, hole guide, bands, type, output/print defaults
+  layout.json       # physical size, hole guide, fixed bands, art treatment, typography
   categories.json   # category identity, color, named logo variants and logo options
   labels.json       # one ordered record per physical magazine file
 ```
@@ -133,7 +137,7 @@ config/
 }
 ```
 
-Crop coordinates use a normalized focal point plus scale instead of printed-inch `top`/`left` offsets. This is easier to understand and survives layout changes.
+Crop coordinates use a normalized focal point plus scale instead of printed-inch `top`/`left` offsets. This is easier to understand and survives layout changes. The shared design dials—overwrap, header/rule thickness, band positions and exact heights, hole geometry/guide scale, artwork saturation/contrast/brightness/tint/blend mode, and type sizes—live in `layout.json`. A category may override the shared artwork treatment only when there is a deliberate reason.
 
 ## Local asset library
 

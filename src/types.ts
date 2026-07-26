@@ -1,42 +1,75 @@
-export type DimensionsConfig = {
-  labelWidthInches: number;
-  labelHeightInches: number;
-  textboxMinHeightInches: number;
-  pageSizeXInches: number,
-  pageSizeYInches: number
-  pageMarginXInches: number,
-  pageMarginYInches: number
-}
+export type Range = [number, number];
 
-export type FormatConfig = {
-  dimensions: DimensionsConfig;
-}
-
-export type BoxConfig = {
-  subseries: SubseriesInfo[];
-  coverArt: string; // Can be local path or full URL
-  coverArtTransform?: {
-    top?: number;
-    left?: number;
-    zoom?: number;
-  };
-}
-
-export type SubseriesInfo = {
-  name?: string;
-  volume?: number;
-  issues?: { start: number; end: number; };
-  years?: { start: number, end: number; };
+export type LegacyCrop = {
+  topInches?: number;
+  leftInches?: number;
+  zoom?: number;
 };
 
-export type SeriesConfig = {
+export type ArtCrop = {
+  focus: { x: number; y: number };
+  scale: number;
+  legacy?: LegacyCrop;
+};
+
+export type LabelContent = {
+  name?: string;
+  volume?: number;
+  issues?: Range;
+  years?: Range;
+};
+
+export type CategoryLogo = {
+  asset: string;
+  colors?: 1 | 2;
+  maxWidthPercent?: number;
+  fills?: {
+    primary?: "category" | string;
+    secondary?: "white" | "category" | string;
+  };
+};
+
+export type Category = {
   name: string;
-  logo?: string;
-  color: string; // Hex or named CSS color
-  boxes: BoxConfig[];
-}
+  color: string;
+  logos: Record<string, CategoryLogo>;
+  artTreatment?: Partial<ArtTreatment>;
+};
+
+export type CategoriesConfig = Record<string, Category>;
 
 export type LabelConfig = {
-  format: FormatConfig;
-  series: SeriesConfig[];
-}
+  id: string;
+  category: string;
+  logo: string;
+  art: {
+    asset: string;
+    crop: ArtCrop;
+  };
+  contents: LabelContent[];
+};
+
+export type LayoutConfig = {
+  localAssetRoot: string;
+  face: { widthInches: number; heightInches: number };
+  overwrapInches: number;
+  topRuleHeightInches: number;
+  artTreatment: ArtTreatment;
+  identityBand: { topInches: number; heightInches: number };
+  fingerHole: { diameterInches: number; topInches: number; guideScale: number };
+  metadataBand: { topInches: number; heightInches: number };
+  typography: {
+    yearsSizeInches: number;
+    metadataSizeInches: number;
+    bandGapInches: number;
+  };
+  showCutGuide: boolean;
+};
+
+export type ArtTreatment = {
+  saturation: number;
+  contrast: number;
+  brightness: number;
+  tintOpacity: number;
+  tintBlendMode: "color" | "multiply" | "overlay" | "soft-light";
+};

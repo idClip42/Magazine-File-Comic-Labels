@@ -1,0 +1,35 @@
+{
+  "localAssetRoot": "imgs",
+  "face": {
+    "widthInches": 3.875,
+    "heightInches": 11.75
+  },
+  "overwrapInches": 0.125,
+  "topRuleHeightInches": 0.06,
+  "artTreatment": {
+    "saturation": 0.32,
+    "contrast": 1.06,
+    "brightness": 1,
+    "tintOpacity": 0.48,
+    "tintBlendMode": "color"
+  },
+  "identityBand": {
+    "topInches": 7.25,
+    "heightInches": 1.9
+  },
+  "fingerHole": {
+    "diameterInches": 1.75,
+    "topInches": 9.25,
+    "guideScale": 0.9
+  },
+  "metadataBand": {
+    "topInches": 10.25,
+    "heightInches": 1.15
+  },
+  "typography": {
+    "yearsSizeInches": 0.29,
+    "metadataSizeInches": 0.13,
+    "bandGapInches": 0.045
+  },
+  "showCutGuide": true
+}

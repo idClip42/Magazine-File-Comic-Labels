@@ -1,0 +1,281 @@
+{
+  "fantastic-four": {
+    "name": "Fantastic Four",
+    "color": "#78a9ff",
+    "logos": {
+      "1970": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_3.png"
+      },
+      "classic": {
+        "asset": "https://vectorseek.com/wp-content/uploads/2023/11/Fantastic-Four-Classic-Logo-Vector.svg-.png"
+      },
+      "early-1970s": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Fantastic_Four_logo_4.png"
+      },
+      "late-1970s": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Fantastic_Four_logo_5.png"
+      },
+      "early-waid": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_7.png"
+      },
+      "millar": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/2/29/Fantastic_Four_logo_8.png"
+      },
+      "fraction": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/5/5d/Fantastic_Four_logo_9.png"
+      },
+      "robinson": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/3/3e/Fantastic_Four_logo_X.png"
+      },
+      "slott": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/6/6e/F4_2018.png"
+      },
+      "north-ross": {
+        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Fantastic_Four_%282023%29_logo.png"
+      }
+    }
+  },
+  "new-mutants": {
+    "name": "New Mutants",
+    "color": "#FFD700",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png"
+      }
+    }
+  },
+  "secret-wars": {
+    "name": "Secret Wars",
+    "color": "#C1121F",
+    "logos": {
+      "default": {
+        "asset": "https://shlocko.wordpress.com/wp-content/uploads/2023/03/secret_wars_logo.webp"
+      }
+    }
+  },
+  "x-men": {
+    "name": "X-Men",
+    "color": "#FF9F1C",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/logocomics/images/6/65/Uncanny-X-Men%281981-1994%29.png"
+      }
+    }
+  },
+  "indiana-jones": {
+    "name": "Indiana Jones",
+    "color": "#a4571d",
+    "logos": {
+      "default": {
+        "asset": "https://img1.picmix.com/output/stamp/normal/8/4/2/3/663248_18130.png"
+      }
+    }
+  },
+  "the-league-of-extraordinary-gentlemen": {
+    "name": "The League of Extraordinary Gentlemen",
+    "color": "#ee869e",
+    "logos": {
+      "default": {
+        "asset": "https://stripinfo.be/images/images/380000/383004.jpg"
+      }
+    }
+  },
+  "excalibur": {
+    "name": "Excalibur",
+    "color": "#7F3FBF",
+    "logos": {
+      "default": {
+        "asset": "https://preview.redd.it/vlbt7ddegk481.jpg?width=640&crop=smart&auto=webp&s=b1f37fb217e15dfa85262cf5d1396ca78ba9d6a0"
+      }
+    }
+  },
+  "black-cat": {
+    "name": "Black Cat",
+    "color": "#201861",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png"
+      }
+    }
+  },
+  "marvel-team-up": {
+    "name": "Marvel Team-Up",
+    "color": "#913927",
+    "logos": {
+      "default": {
+        "asset": "https://www.wymann.info/comics/graphics/MarvelTeamUpLogo.gif"
+      }
+    }
+  },
+  "what-if": {
+    "name": "What If?",
+    "color": "#e984a4",
+    "logos": {
+      "default": {
+        "asset": "logos/whatif.jpg"
+      }
+    }
+  },
+  "teen-titans-go": {
+    "name": "Teen Titans Go",
+    "color": "#91d9bd",
+    "logos": {
+      "default": {
+        "asset": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/960px-Teen_Titans_-_logo_%28English%29.png"
+      }
+    }
+  },
+  "young-justice": {
+    "name": "Young Justice",
+    "color": "#fffda2",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg"
+      }
+    }
+  },
+  "official-handbook-of-the-marvel-universe": {
+    "name": "Official Handbook of the Marvel Universe",
+    "color": "#B0B0B0",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png"
+      }
+    }
+  },
+  "jonny-quest": {
+    "name": "Jonny Quest",
+    "color": "#d5a253",
+    "logos": {
+      "default": {
+        "asset": "logos/quest.jpg"
+      }
+    }
+  },
+  "superman": {
+    "name": "Superman",
+    "color": "#D62828",
+    "logos": {
+      "default": {
+        "asset": "https://iesjv.wordpress.com/wp-content/uploads/2015/09/superman-logo.png"
+      }
+    }
+  },
+  "she-hulk": {
+    "name": "She-Hulk",
+    "color": "#3FA34D",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Sensational_She-Hulk_Vol_2_Logo.png"
+      }
+    }
+  },
+  "batman": {
+    "name": "Batman",
+    "color": "#0019b7",
+    "logos": {
+      "default": {
+        "asset": "https://comicbooksandcats.com/wp-content/uploads/2014/10/batman-66-logo.png"
+      }
+    }
+  },
+  "wolverine": {
+    "name": "Wolverine",
+    "color": "#E1AD01",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png"
+      }
+    }
+  },
+  "dr-strange": {
+    "name": "Dr. Strange",
+    "color": "#5E3A87",
+    "logos": {
+      "default": {
+        "asset": "https://i.pinimg.com/1200x/d1/39/5e/d1395ecf36f5ac19d1a923e810df2c44.jpg"
+      }
+    }
+  },
+  "iron-man": {
+    "name": "Iron Man",
+    "color": "#dc2020",
+    "logos": {
+      "default": {
+        "asset": "https://www.wymann.info/comics/graphics/IronMan1970sLogo.gif"
+      }
+    }
+  },
+  "daredevil": {
+    "name": "Daredevil",
+    "color": "#5e0000",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png"
+      }
+    }
+  },
+  "fatale": {
+    "name": "Fatale",
+    "color": "#742e34",
+    "logos": {
+      "default": {
+        "asset": "logos/fatale.png"
+      }
+    }
+  },
+  "the-new-teen-titans": {
+    "name": "The New Teen Titans",
+    "color": "#cbc13f",
+    "logos": {
+      "default": {
+        "asset": "https://13thdimension.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-24-at-8.44.20-PM.png"
+      }
+    }
+  },
+  "spider-man": {
+    "name": "Spider-Man",
+    "color": "#B32428",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png"
+      }
+    }
+  },
+  "army-of-darkness": {
+    "name": "Army of Darkness",
+    "color": "#40325a",
+    "logos": {
+      "default": {
+        "asset": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png"
+      }
+    }
+  },
+  "007": {
+    "name": "007",
+    "color": "#4B5054",
+    "logos": {
+      "default": {
+        "asset": "https://logos-world.net/wp-content/uploads/2023/06/007-Logo.png"
+      }
+    }
+  },
+  "aliens": {
+    "name": "Aliens",
+    "color": "#0f4451",
+    "logos": {
+      "default": {
+        "asset": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png"
+      }
+    }
+  },
+  "the-shadow": {
+    "name": "The Shadow",
+    "color": "#3a0000",
+    "logos": {
+      "default": {
+        "asset": "logos/shadow.jpg"
+      }
+    }
+  }
+}

@@ -1,38 +1,18 @@
-import fs from 'fs';
-import path from 'path';
-import { CSS_TEXT } from "./css";
-import { BuildLabelHTML } from './label';
-import { Config } from './config';
+import fs from "node:fs";
+import path from "node:path";
+import { auditAssets } from "./audit";
+import { categories, labels, layout } from "./config";
+import { renderDocument } from "./render";
 
-function generateHTML(): string {
-    let body = '';
-    for (const [seriesName, seriesData] of Object.entries(Config.series)) {
-        for (const box of seriesData.boxes) {
-            body += BuildLabelHTML(seriesData, box);
-        }
-    }
+const outputDirectory = path.join(process.cwd(), "dist", "v2");
+fs.mkdirSync(outputDirectory, { recursive: true });
 
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Comic Labels</title>
-  ${CSS_TEXT}
-</head>
-<body>
-  ${body}
-</body>
-</html>`;
+const outputPath = path.join(outputDirectory, "index.html");
+fs.writeFileSync(outputPath, renderDocument(labels), "utf8");
+console.log(`V2 HTML written to: ${outputPath}`);
+console.log(`Rendered ${labels.length} labels.`);
+
+const missingAssets = auditAssets(layout, categories, labels);
+if (missingAssets.length > 0) {
+  console.warn(`${missingAssets.length} local asset(s) are currently unavailable. Run npm run audit:assets for details.`);
 }
-
-function writeHTMLFile(outputPath: string) {
-    const html = generateHTML();
-    if (!fs.existsSync(path.dirname(outputPath)))
-        fs.mkdirSync(path.dirname(outputPath));
-    fs.writeFileSync(outputPath, html, 'utf-8');
-    console.log(`✅ HTML written to: ${outputPath}`);
-}
-
-// Run the script
-const outputFile = path.join(__dirname, '..', 'dist', 'index.html');
-writeHTMLFile(outputFile);
