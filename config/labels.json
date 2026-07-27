@@ -1940,8 +1940,8 @@
   },
   {
     "id": "new-mutants-001",
-    "category": "new-mutants",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "new-mutants",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
       "crop": {
@@ -1973,8 +1973,8 @@
   },
   {
     "id": "new-mutants-002",
-    "category": "new-mutants",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "new-mutants",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/New_Mutants_Vol_1_26.jpg",
       "crop": {
@@ -2006,8 +2006,8 @@
   },
   {
     "id": "new-mutants-003",
-    "category": "new-mutants",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "new-mutants",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/New_Mutants_Vol_1_61.jpg",
       "crop": {
@@ -2039,8 +2039,8 @@
   },
   {
     "id": "new-mutants-004",
-    "category": "new-mutants",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "new-mutants",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/New_Mutants_Vol_1_78.jpg",
       "crop": {
@@ -2072,8 +2072,8 @@
   },
   {
     "id": "new-mutants-005",
-    "category": "new-mutants",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "new-mutants",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/New_Mutants_Annual_Vol_1_1.jpg",
       "crop": {
@@ -2108,8 +2108,8 @@
   },
   {
     "id": "new-mutants-006",
-    "category": "new-mutants",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "new-mutants",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/New_Mutants_Vol_4_1.jpg",
       "crop": {
@@ -2145,8 +2145,8 @@
   },
   {
     "id": "secret-wars-001",
-    "category": "secret-wars",
-    "logo": "default",
+    "category": "marvel-specials",
+    "logo": "secret-wars",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg",
       "crop": {
@@ -2189,8 +2189,8 @@
   },
   {
     "id": "x-men-001",
-    "category": "x-men",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "x-men",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/X-Men_Vol_1_131.jpg",
       "crop": {
@@ -2222,8 +2222,8 @@
   },
   {
     "id": "x-men-002",
-    "category": "x-men",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "x-men",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Uncanny_X-Men_Vol_1_168.jpg",
       "crop": {
@@ -2255,8 +2255,8 @@
   },
   {
     "id": "x-men-003",
-    "category": "x-men",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "x-men",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/0e/Uncanny_X-Men_Vol_1_200.jpg",
       "crop": {
@@ -2291,8 +2291,8 @@
   },
   {
     "id": "x-men-004",
-    "category": "x-men",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "x-men",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Nightcrawler_Vol_1_1.jpg",
       "crop": {
@@ -2316,8 +2316,8 @@
   },
   {
     "id": "indiana-jones-001",
-    "category": "indiana-jones",
-    "logo": "default",
+    "category": "adventure-pulp",
+    "logo": "indiana-jones",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg",
       "crop": {
@@ -2349,8 +2349,8 @@
   },
   {
     "id": "indiana-jones-002",
-    "category": "indiana-jones",
-    "logo": "default",
+    "category": "adventure-pulp",
+    "logo": "indiana-jones",
     "art": {
       "asset": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
       "crop": {
@@ -2374,8 +2374,8 @@
   },
   {
     "id": "the-league-of-extraordinary-gentlemen-001",
-    "category": "the-league-of-extraordinary-gentlemen",
-    "logo": "default",
+    "category": "adventure-pulp",
+    "logo": "the-league-of-extraordinary-gentlemen",
     "art": {
       "asset": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg",
       "crop": {
@@ -2399,8 +2399,8 @@
   },
   {
     "id": "excalibur-001",
-    "category": "excalibur",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "excalibur",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Excalibur_Vol_1_1.jpg",
       "crop": {
@@ -2432,8 +2432,8 @@
   },
   {
     "id": "excalibur-002",
-    "category": "excalibur",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "excalibur",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Excalibur_Vol_1_32.jpg",
       "crop": {
@@ -2465,8 +2465,8 @@
   },
   {
     "id": "excalibur-003",
-    "category": "excalibur",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "excalibur",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/3/3e/Excalibur_Vol_1_66.jpg",
       "crop": {
@@ -2498,8 +2498,8 @@
   },
   {
     "id": "excalibur-004",
-    "category": "excalibur",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "excalibur",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg",
       "crop": {
@@ -2534,8 +2534,8 @@
   },
   {
     "id": "black-cat-001",
-    "category": "black-cat",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "black-cat",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Black_Cat_Vol_2_5.jpg",
       "crop": {
@@ -2559,8 +2559,8 @@
   },
   {
     "id": "marvel-team-up-001",
-    "category": "marvel-team-up",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "marvel-team-up",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/b0/Marvel_Team-Up_Vol_1_74.jpg",
       "crop": {
@@ -2584,8 +2584,8 @@
   },
   {
     "id": "what-if-001",
-    "category": "what-if",
-    "logo": "default",
+    "category": "marvel-specials",
+    "logo": "what-if",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/What_If%3F_Vol_1_36.jpg",
       "crop": {
@@ -2609,8 +2609,8 @@
   },
   {
     "id": "teen-titans-go-001",
-    "category": "teen-titans-go",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "teen-titans-go",
     "art": {
       "asset": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg",
       "crop": {
@@ -2642,8 +2642,8 @@
   },
   {
     "id": "teen-titans-go-002",
-    "category": "teen-titans-go",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "teen-titans-go",
     "art": {
       "asset": "https://static.wikia.nocookie.net/teentitans/images/7/7b/GraduationDay.jpg",
       "crop": {
@@ -2675,8 +2675,8 @@
   },
   {
     "id": "young-justice-001",
-    "category": "young-justice",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "young-justice",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marvel_dc/images/b/b9/Young_Justice_6.jpg",
       "crop": {
@@ -2708,8 +2708,8 @@
   },
   {
     "id": "young-justice-002",
-    "category": "young-justice",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "young-justice",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Young_Justice_Vol_1_54.jpg",
       "crop": {
@@ -2741,8 +2741,8 @@
   },
   {
     "id": "official-handbook-of-the-marvel-universe-001",
-    "category": "official-handbook-of-the-marvel-universe",
-    "logo": "default",
+    "category": "marvel-specials",
+    "logo": "official-handbook-of-the-marvel-universe",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Official_Handbook_of_the_Marvel_Universe_Vol_2_8.jpg",
       "crop": {
@@ -2766,8 +2766,8 @@
   },
   {
     "id": "jonny-quest-001",
-    "category": "jonny-quest",
-    "logo": "default",
+    "category": "adventure-pulp",
+    "logo": "jonny-quest",
     "art": {
       "asset": "https://storage.googleapis.com/hipcomic/p/b45353ad4a75ca648e5bd859220a47b0-800.jpg",
       "crop": {
@@ -2799,8 +2799,8 @@
   },
   {
     "id": "superman-001",
-    "category": "superman",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "superman",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg",
       "crop": {
@@ -2824,8 +2824,8 @@
   },
   {
     "id": "she-hulk-001",
-    "category": "she-hulk",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "she-hulk",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg",
       "crop": {
@@ -2849,8 +2849,8 @@
   },
   {
     "id": "she-hulk-002",
-    "category": "she-hulk",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "she-hulk",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
       "crop": {
@@ -2874,8 +2874,8 @@
   },
   {
     "id": "batman-001",
-    "category": "batman",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "batman",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
       "crop": {
@@ -2899,8 +2899,8 @@
   },
   {
     "id": "wolverine-001",
-    "category": "wolverine",
-    "logo": "default",
+    "category": "x-family",
+    "logo": "wolverine",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg",
       "crop": {
@@ -2924,8 +2924,8 @@
   },
   {
     "id": "dr-strange-001",
-    "category": "dr-strange",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "dr-strange",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg",
       "crop": {
@@ -2949,8 +2949,8 @@
   },
   {
     "id": "iron-man-001",
-    "category": "iron-man",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "iron-man",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Iron_Man_Vol_1_300.jpg",
       "crop": {
@@ -2974,8 +2974,8 @@
   },
   {
     "id": "daredevil-001",
-    "category": "daredevil",
-    "logo": "default",
+    "category": "marvel-characters",
+    "logo": "daredevil",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
       "crop": {
@@ -2999,8 +2999,8 @@
   },
   {
     "id": "fatale-001",
-    "category": "fatale",
-    "logo": "default",
+    "category": "horror-dark-fantasy",
+    "logo": "fatale",
     "art": {
       "asset": "https://www.previewsworld.com/SiteImage/MainImage/STK464251",
       "crop": {
@@ -3032,8 +3032,8 @@
   },
   {
     "id": "the-new-teen-titans-001",
-    "category": "the-new-teen-titans",
-    "logo": "default",
+    "category": "dc-universe",
+    "logo": "the-new-teen-titans",
     "art": {
       "asset": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg",
       "crop": {
@@ -3057,8 +3057,8 @@
   },
   {
     "id": "army-of-darkness-001",
-    "category": "army-of-darkness",
-    "logo": "default",
+    "category": "horror-dark-fantasy",
+    "logo": "army-of-darkness",
     "art": {
       "asset": "http://marqueeposter.com/wp-content/uploads/2015/12/75-army-of-darkness-signed-art-print-us-1-sheet-1992-01.jpg",
       "crop": {
@@ -3082,8 +3082,8 @@
   },
   {
     "id": "aliens-001",
-    "category": "aliens",
-    "logo": "default",
+    "category": "horror-dark-fantasy",
+    "logo": "aliens",
     "art": {
       "asset": "https://static.wikia.nocookie.net/avp/images/5/57/Aliens1.jpg/revision/latest?cb=20200703150739",
       "crop": {
@@ -3149,8 +3149,8 @@
   },
   {
     "id": "the-shadow-001",
-    "category": "the-shadow",
-    "logo": "default",
+    "category": "adventure-pulp",
+    "logo": "the-shadow",
     "art": {
       "asset": "https://s3.amazonaws.com/comicgeeks/comics/covers/large-6863199.jpg?1745469299",
       "crop": {
