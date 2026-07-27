@@ -7,7 +7,7 @@
         "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_3.png"
       },
       "classic": {
-        "asset": "https://vectorseek.com/wp-content/uploads/2023/11/Fantastic-Four-Classic-Logo-Vector.svg-.png"
+        "asset": "logos/ff-logo-1960s.svg"
       },
       "early-1970s": {
         "asset": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Fantastic_Four_logo_4.png"
@@ -58,7 +58,7 @@
     "color": "#FF9F1C",
     "logos": {
       "default": {
-        "asset": "https://static.wikia.nocookie.net/logocomics/images/6/65/Uncanny-X-Men%281981-1994%29.png"
+        "asset": "logos/xmen-logo.svg"
       }
     }
   },

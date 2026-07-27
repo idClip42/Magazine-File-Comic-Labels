@@ -92,7 +92,7 @@ The result should retain geometry and recognition while removing gradients, glow
 
 SVG owns the logo geometry and one/two semantic fills. CSS owns shared presentation: color tokens, scale, placement, and any approved outline. The renderer inlines local SVGs (rather than treating them only as `<img>` files) so these styles can be applied programmatically; existing remote PNG/JPEG logos remain raster fallbacks during migration.
 
-For the pipeline, use `data-logo-fill="primary"` and, when needed, `data-logo-fill="secondary"` on the relevant SVG paths/groups. The category-logo configuration then supplies the corresponding colors—by default the category color for primary and white for secondary—without redrawing or modifying the individual label.
+SVG source files use a deliberately constrained preparation rule: one black fill, or black plus gray. During the build, the preparation step reads untouched source SVGs, assigns the lower-luminance fill to `primary` and the higher-luminance fill to `secondary`, then writes a normalized SVG with `data-logo-fill` attributes into `dist/`. It rejects SVGs with more than two supported fill colors. The renderer inlines that generated SVG and maps primary to the category color and secondary to a globally configurable, desaturated `category-muted` version of that color. A globally configurable, optional black non-scaling outline separates adjacent colored logo shapes and preserves fine lettering. Its configured width also provides matching safe padding around inline SVGs, preventing a source SVG’s original bounds from clipping the outline. This removes per-logo color mapping from the catalog while keeping the source SVGs untouched and reviewable.
 
 ## Configuration model
 

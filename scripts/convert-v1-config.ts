@@ -49,7 +49,11 @@ function normalizeAsset(asset: string): string {
 function writeJson(fileName: string, value: unknown): void {
   const configDirectory = path.join(process.cwd(), "config");
   fs.mkdirSync(configDirectory, { recursive: true });
-  fs.writeFileSync(path.join(configDirectory, fileName), `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  const outputPath = path.join(configDirectory, fileName);
+  if (fs.existsSync(outputPath) && !process.argv.includes("--force")) {
+    throw new Error(`${fileName} already exists. Preserve manual V2 edits by default; rerun with --force only to replace it from V1.`);
+  }
+  fs.writeFileSync(outputPath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
 const legacyPath = path.join(process.cwd(), "legacy", "v1", "config.json");

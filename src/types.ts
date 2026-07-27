@@ -21,12 +21,7 @@ export type LabelContent = {
 
 export type CategoryLogo = {
   asset: string;
-  colors?: 1 | 2;
   maxWidthPercent?: number;
-  fills?: {
-    primary?: "category" | string;
-    secondary?: "white" | "category" | string;
-  };
 };
 
 export type Category = {
@@ -65,6 +60,15 @@ export type LayoutConfig = {
   };
   years: {
     display: "condensed-range" | "separate-ranges";
+  };
+  logoPalette: {
+    mutedSaturationMultiplier: number;
+  };
+  logoOutline: {
+    enabled: boolean;
+    color: string;
+    widthPixels: number;
+    lineJoin: "round" | "miter" | "bevel";
   };
   showCutGuide: boolean;
 };

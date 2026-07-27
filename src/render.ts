@@ -1,6 +1,6 @@
-import fs from "node:fs";
-import path from "node:path";
 import { categories, layout } from "./config";
+import { deriveMutedCategoryColor } from "./color";
+import { PreparedLogos } from "./logo-prep";
 import { Category, CategoryLogo, LabelConfig } from "./types";
 
 function escapeHtml(value: string | number): string {
@@ -23,27 +23,14 @@ function assetUrl(asset: string): string {
   return `../../${layout.localAssetRoot}/${asset}`;
 }
 
-function resolveLogoFill(value: string | undefined, categoryColor: string, fallback: string): string {
-  if (!value) return fallback;
-  if (value === "category") return categoryColor;
-  if (value === "white") return "#ffffff";
-  return value;
-}
-
-function readLocalSvg(asset: string): string | undefined {
-  if (/^https?:\/\//i.test(asset) || !asset.toLowerCase().endsWith(".svg")) return undefined;
-  const filePath = path.join(process.cwd(), layout.localAssetRoot, asset);
-  return fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : undefined;
-}
-
-function renderLogo(category: Category, logo: CategoryLogo): string {
-  const svg = readLocalSvg(logo.asset);
+function renderLogo(categoryId: string, logoId: string, category: Category, logo: CategoryLogo, preparedLogos: PreparedLogos): string {
+  const svg = preparedLogos.get(`${categoryId}/${logoId}`);
   if (!svg) {
     return `<img class="logo raster-logo" src="${escapeHtml(assetUrl(logo.asset))}" alt="${escapeHtml(category.name)} logo">`;
   }
 
-  const primary = resolveLogoFill(logo.fills?.primary, category.color, category.color);
-  const secondary = resolveLogoFill(logo.fills?.secondary, category.color, "#ffffff");
+  const primary = category.color;
+  const secondary = deriveMutedCategoryColor(category.color, layout.logoPalette.mutedSaturationMultiplier);
   return `<div class="logo inline-logo" role="img" aria-label="${escapeHtml(category.name)} logo" style="--logo-primary:${escapeHtml(primary)}; --logo-secondary:${escapeHtml(secondary)};">${svg}</div>`;
 }
 
@@ -74,7 +61,7 @@ function labelYears(label: LabelConfig): string {
   return [...new Set(yearRanges.map((years) => formatRange(years)))].join(" · ");
 }
 
-export function renderLabel(label: LabelConfig): string {
+export function renderLabel(label: LabelConfig, preparedLogos: PreparedLogos): string {
   const category = categories[label.category];
   if (!category) throw new Error(`Label ${label.id} references unknown category ${label.category}.`);
 
@@ -92,7 +79,7 @@ export function renderLabel(label: LabelConfig): string {
       <div class="artwork-tint" aria-hidden="true"></div>
       <div class="top-rule" aria-hidden="true"></div>
       <section class="identity-band">
-        ${renderLogo(category, logo)}
+        ${renderLogo(label.category, label.logo, category, logo, preparedLogos)}
         <div class="years">${escapeHtml(labelYears(label))}</div>
       </section>
       <div class="finger-hole-guide" aria-hidden="true"></div>
@@ -102,7 +89,7 @@ export function renderLabel(label: LabelConfig): string {
     </article>`;
 }
 
-export function renderDocument(labels: LabelConfig[]): string {
+export function renderDocument(labels: LabelConfig[], preparedLogos: PreparedLogos): string {
   const totalWidth = layout.face.widthInches + layout.overwrapInches * 2;
   const totalHeight = layout.face.heightInches + layout.overwrapInches * 2;
   const identityTop = layout.overwrapInches + layout.identityBand.topInches;
@@ -134,6 +121,9 @@ export function renderDocument(labels: LabelConfig[]): string {
     --years-size:${layout.typography.yearsSizeInches}in;
     --metadata-size:${layout.typography.metadataSizeInches}in;
     --band-gap:${layout.typography.bandGapInches}in;
+    --logo-outline-color:${layout.logoOutline.color};
+    --logo-outline-width:${layout.logoOutline.enabled ? `${layout.logoOutline.widthPixels}px` : "0"};
+    --logo-outline-linejoin:${layout.logoOutline.lineJoin};
     --cut-guide-display:${layout.showCutGuide ? "block" : "none"};`;
 
   return `<!doctype html>
@@ -159,10 +149,11 @@ export function renderDocument(labels: LabelConfig[]): string {
     .identity-band { top: var(--identity-top); height: var(--identity-height); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--band-gap); }
     .logo { display: block; max-width: var(--logo-max-width); }
     .raster-logo { max-height: calc(var(--identity-height) - 0.62in); object-fit: contain; }
-    .inline-logo { width: var(--logo-max-width); height: calc(var(--identity-height) - 0.62in); color: var(--logo-primary); }
-    .inline-logo svg { display: block; width: 100%; height: 100%; }
-    .inline-logo [data-logo-fill="primary"] { fill: var(--logo-primary); stroke: var(--logo-primary); }
-    .inline-logo [data-logo-fill="secondary"] { fill: var(--logo-secondary); stroke: var(--logo-secondary); }
+    .inline-logo { width: var(--logo-max-width); height: calc(var(--identity-height) - 0.62in); padding: var(--logo-outline-width); color: var(--logo-primary); }
+    .inline-logo svg { display: block; width: 100%; height: 100%; overflow: visible; }
+    .inline-logo [data-logo-fill="primary"] { fill: var(--logo-primary) !important; }
+    .inline-logo [data-logo-fill="secondary"] { fill: var(--logo-secondary) !important; }
+    .inline-logo [data-logo-fill] { stroke: var(--logo-outline-color) !important; stroke-width: var(--logo-outline-width) !important; stroke-linejoin: var(--logo-outline-linejoin); vector-effect: non-scaling-stroke; paint-order: stroke fill; }
     .years { color: #111; font-weight: 800; font-size: var(--years-size); letter-spacing: 0.02em; line-height: 1; }
     .metadata-band { top: var(--metadata-top); height: var(--metadata-height); display: flex; flex-direction: column; justify-content: center; gap: var(--band-gap); padding: 0.08in 0.11in; }
     .content-row { color: #171717; font-size: var(--metadata-size); line-height: 1.05; }
@@ -175,7 +166,7 @@ export function renderDocument(labels: LabelConfig[]): string {
   </style>
 </head>
 <body>
-${labels.map(renderLabel).join("\n")}
+${labels.map((label) => renderLabel(label, preparedLogos)).join("\n")}
 </body>
 </html>`;
 }

@@ -1,5 +1,5 @@
 {
-    "localAssetRoot": "imgs",
+    "localAssetRoot": ".",
     "face": {
         "widthInches": 3.875,
         "heightInches": 11.75
@@ -15,7 +15,7 @@
     },
     "identityBand": {
         "topInches": 7.25,
-        "heightInches": 2.3
+        "heightInches": 1.9
     },
     "fingerHole": {
         "diameterInches": 1.75,
@@ -33,6 +33,15 @@
     },
     "years": {
         "display": "condensed-range"
+    },
+    "logoPalette": {
+        "mutedSaturationMultiplier": 0.35
+    },
+    "logoOutline": {
+        "enabled": true,
+        "color": "#000000",
+        "widthPixels": 3,
+        "lineJoin": "round"
     },
     "showCutGuide": true
 }
