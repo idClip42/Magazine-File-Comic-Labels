@@ -100,8 +100,9 @@ export function renderLabel(
     const treatment = { ...layout.artTreatment, ...category.artTreatment };
 
     return `
-    <article class="label" style="--category-color:${escapeHtml(category.color)}; --art-image:url('${escapeHtml(assetUrl(label.art.asset))}'); --art-position:${cropPosition}; --logo-max-width:${logoWidth}%; --art-saturation:${treatment.saturation}; --art-contrast:${treatment.contrast}; --art-brightness:${treatment.brightness}; --tint-opacity:${treatment.tintOpacity}; --tint-blend:${treatment.tintBlendMode};" data-label-id="${escapeHtml(label.id)}">
-      <div class="artwork" aria-hidden="true"></div>
+    <div class="label-editor">
+    <article class="label" style="--category-color:${escapeHtml(category.color)}; --art-image:url('${escapeHtml(assetUrl(label.art.asset))}'); --art-position:${cropPosition}; --art-zoom:${crop.scale}; --logo-max-width:${logoWidth}%; --art-saturation:${treatment.saturation}; --art-contrast:${treatment.contrast}; --art-brightness:${treatment.brightness}; --tint-opacity:${treatment.tintOpacity}; --tint-blend:${treatment.tintBlendMode};" data-label-id="${escapeHtml(label.id)}">
+      <div class="artwork" aria-hidden="true"><div class="artwork-image"></div></div>
       <div class="artwork-tint" aria-hidden="true"></div>
       <div class="top-rule" aria-hidden="true"></div>
       <section class="identity-band">
@@ -112,7 +113,15 @@ export function renderLabel(
       <section class="metadata-band">
         ${renderContents(label)}
       </section>
-    </article>`;
+    </article>
+    <section class="crop-controls" aria-label="Crop controls for ${escapeHtml(label.id)}">
+      <div class="crop-controls-title">${escapeHtml(label.id)} crop</div>
+      <label>Focus X <input type="range" min="0" max="1" step="0.01" value="${crop.focus.x}" data-crop-field="x"><input type="number" min="0" max="1" step="0.01" value="${crop.focus.x}" data-crop-number="x"></label>
+      <label>Focus Y <input type="range" min="0" max="1" step="0.01" value="${crop.focus.y}" data-crop-field="y"><input type="number" min="0" max="1" step="0.01" value="${crop.focus.y}" data-crop-number="y"></label>
+      <label>Zoom <input type="range" min="0.5" max="5" step="0.01" value="${crop.scale}" data-crop-field="zoom"><input type="number" min="0.5" max="5" step="0.01" value="${crop.scale}" data-crop-number="zoom"></label>
+      <div class="crop-config"><input type="text" readonly aria-label="Updated crop configuration" data-crop-config><button type="button" data-copy-crop>Copy</button></div>
+    </section>
+    </div>`;
 }
 
 export function renderDocument(
@@ -175,7 +184,8 @@ export function renderDocument(
       isolation: isolate; background: var(--category-color); break-after: page; page-break-after: always;
     }
     .artwork, .artwork-tint { position: absolute; inset: 0; }
-    .artwork { background-image: var(--art-image); background-position: var(--art-position); background-size: cover; filter: saturate(var(--art-saturation)) contrast(var(--art-contrast)) brightness(var(--art-brightness)); }
+    .artwork { overflow: hidden; }
+    .artwork-image { position: absolute; inset: 0; background-image: var(--art-image); background-position: var(--art-position); background-size: cover; filter: saturate(var(--art-saturation)) contrast(var(--art-contrast)) brightness(var(--art-brightness)); transform: scale(var(--art-zoom)); transform-origin: var(--art-position); }
     .artwork-tint { background: var(--category-color); opacity: var(--tint-opacity); mix-blend-mode: var(--tint-blend); }
     .top-rule { position: absolute; top: 0; left: 0; right: 0; height: var(--top-rule-height); background: var(--category-color); z-index: 2; }
     .identity-band, .metadata-band { position: absolute; left: 0; right: 0; background: white; border-top: var(--top-rule-height) solid var(--category-color); border-bottom: var(--top-rule-height) solid var(--category-color); z-index: 2; text-align: center; }
@@ -194,12 +204,49 @@ export function renderDocument(
     .content-volume, .content-issues { margin-left: 0.08in; white-space: nowrap; }
     .content-volume { font-style: italic; }
     .finger-hole-guide { display: var(--cut-guide-display); position: absolute; width: var(--hole-width); height: var(--hole-height); left: 50%; top: var(--hole-top); transform: translateX(-50%); border: 0.015in dashed rgba(255,255,255,0.75); border-top: 0; border-radius: 0 0 50% 50% / 0 0 100% 100%; z-index: 3; pointer-events: none; }
-    @media screen { body { padding: 0.4in; display: flex; flex-wrap: wrap; gap: 0.3in; } .label { box-shadow: 0 0.08in 0.25in rgba(0,0,0,0.38); } }
-    @media print { body { background: transparent; padding: 0; } .label:last-child { break-after: auto; page-break-after: auto; } }
+    .crop-controls { width: var(--total-width); padding: 0.12in; background: #f5f5f5; color: #111; font-size: 13px; box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
+    .crop-controls-title { margin-bottom: 0.07in; font-weight: 700; }
+    .crop-controls label { display: grid; grid-template-columns: 0.6in 1fr 0.65in; align-items: center; gap: 0.08in; margin-top: 0.05in; }
+    .crop-controls input[type="number"] { width: 100%; }
+    .crop-config { display: flex; gap: 0.08in; margin-top: 0.09in; }
+    .crop-config input { flex: 1; min-width: 0; font-family: Consolas, monospace; font-size: 11px; }
+    .crop-config button { cursor: pointer; }
+    @media screen { body { padding: 0.4in; display: flex; flex-wrap: wrap; gap: 0.3in; align-items: flex-start; } .label { box-shadow: 0 0.08in 0.25in rgba(0,0,0,0.38); } }
+    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls { display: none; } }
   </style>
 </head>
 <body>
 ${labels.map(label => renderLabel(label, preparedLogos)).join("\n")}
+<script>
+  document.querySelectorAll('.label-editor').forEach(editor => {
+    const label = editor.querySelector('.label');
+    const controls = editor.querySelector('.crop-controls');
+    const fields = { x: controls.querySelector('[data-crop-field="x"]'), y: controls.querySelector('[data-crop-field="y"]'), zoom: controls.querySelector('[data-crop-field="zoom"]') };
+    const numbers = { x: controls.querySelector('[data-crop-number="x"]'), y: controls.querySelector('[data-crop-number="y"]'), zoom: controls.querySelector('[data-crop-number="zoom"]') };
+    const config = controls.querySelector('[data-crop-config]');
+    const copyButton = controls.querySelector('[data-copy-crop]');
+    const update = (name, value) => {
+      const number = Number(value);
+      if (!Number.isFinite(number)) return;
+      fields[name].value = String(number);
+      numbers[name].value = String(number);
+      if (name === 'x' || name === 'y') label.style.setProperty('--art-position', (Number(fields.x.value) * 100) + '% ' + (Number(fields.y.value) * 100) + '%');
+      if (name === 'zoom') label.style.setProperty('--art-zoom', String(number));
+      config.value = '"crop": { "focus": { "x": ' + fields.x.value + ', "y": ' + fields.y.value + ' }, "scale": ' + fields.zoom.value + ' }';
+    };
+    Object.keys(fields).forEach(name => {
+      fields[name].addEventListener('input', event => update(name, event.target.value));
+      numbers[name].addEventListener('input', event => update(name, event.target.value));
+      update(name, fields[name].value);
+    });
+    copyButton.addEventListener('click', async () => {
+      config.select();
+      try { await navigator.clipboard.writeText(config.value); } catch { document.execCommand('copy'); }
+      copyButton.textContent = 'Copied';
+      setTimeout(() => { copyButton.textContent = 'Copy'; }, 1200);
+    });
+  });
+</script>
 </body>
 </html>`;
 }
