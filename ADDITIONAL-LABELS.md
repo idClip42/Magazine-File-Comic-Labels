@@ -19,14 +19,14 @@ The Spider-Man labels are entirely new: despite the existing collection, they di
 
 ## Planned expansions of existing categories
 
-| Category | Current boxes | Planned boxes | Additional labels |
-| --- | ---: | ---: | ---: |
-| Indiana Jones | 2 | 4 | 2 |
-| Batman | 1 | 2 | 1 |
-| Daredevil | 1 | 2 | 1 |
-| Aliens | 1 | 2 | 1 |
-| Army of Darkness | 1 | 2 | 1 |
-| Young Justice | 2 | 3 | 1 |
+| Category         | Current boxes | Planned boxes | Additional labels |
+| ---------------- | ------------: | ------------: | ----------------: |
+| Indiana Jones    |             2 |             4 |                 2 |
+| Batman           |             1 |             2 |                 1 |
+| Daredevil        |             1 |             2 |                 1 |
+| Aliens           |             1 |             2 |                 1 |
+| Army of Darkness |             1 |             2 |                 1 |
+| Young Justice    |             2 |             3 |                 1 |
 
 Notes:
 
