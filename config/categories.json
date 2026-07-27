@@ -70,16 +70,16 @@
                 "asset": "logos/ds-logo.svg"
             },
             "iron-man": {
-                "asset": "https://www.wymann.info/comics/graphics/IronMan1970sLogo.gif"
+                "asset": "logos/im-logo.svg"
             },
             "daredevil": {
-                "asset": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png"
+                "asset": "logos/dd-logo.svg"
             },
             "amazing-spider-man": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Amazing+Spider-Man"
+                "asset": "logos/asm-logo.svg"
             },
             "spider-man": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png"
+                "asset": "logos/sm-logo.svg"
             },
             "ultimate": {
                 "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate"
