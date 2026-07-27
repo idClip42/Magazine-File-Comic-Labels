@@ -185,6 +185,15 @@ The current decision is to **redesign and render every configured label**, not s
 - Whether detailed multi-title lists stay on labels or are reduced to issue/year ranges with detailed cataloging kept elsewhere.
 - Whether V2 later expands beyond front labels to divider cards, inventory views, reverse labels, or QR codes.
 
+## Collection expansion queue
+
+The V2 catalog is intentionally not final. Additions and redivision should use the new `labels.json` model once the relevant comics and assets are ready:
+
+- **Fantastic Four:** add at least one physical box for the most recently cataloged Fantastic Four material.
+- **Uncanny X-Men:** inspect and read through the current unprocessed stack, then add roughly three physical boxes and choose sensible divisions across the broader c. #125–300 run. The current holdings include #131, #132, #137–200, and a substantial portion of #200–300; the eventual label boundaries should follow the actual read/cataloged collection rather than be guessed now.
+
+Color-family decisions and the new-box metadata can be made together after the logo, art, and vinyl work has settled.
+
 ## Guiding principles
 
 Consistency over per-label decoration; readability over exhaustive metadata; flexibility through generation; longevity for future additions; and historical respect through recognizable era-specific logos. The outcome should feel like a long-lived archival product, not craft labels glued onto boxes.
