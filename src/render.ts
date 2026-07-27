@@ -1,79 +1,105 @@
-import { categories, layout } from "./config";
 import { deriveMutedCategoryColor } from "./color";
+import { categories, layout } from "./config";
 import { PreparedLogos } from "./logo-prep";
 import { Category, CategoryLogo, LabelConfig } from "./types";
 
 function escapeHtml(value: string | number): string {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
 }
 
 function formatRange(range?: [number, number], prefix = ""): string {
-  if (!range) return "";
-  const [start, end] = range;
-  return start === end ? `${prefix}${start}` : `${prefix}${start}–${end}`;
+    if (!range) return "";
+    const [start, end] = range;
+    return start === end ? `${prefix}${start}` : `${prefix}${start}–${end}`;
 }
 
 function assetUrl(asset: string): string {
-  if (/^https?:\/\//i.test(asset)) return asset;
-  return `../../${layout.localAssetRoot}/${asset}`;
+    if (/^https?:\/\//i.test(asset)) return asset;
+    return `../../${layout.localAssetRoot}/${asset}`;
 }
 
-function renderLogo(categoryId: string, logoId: string, category: Category, logo: CategoryLogo, preparedLogos: PreparedLogos): string {
-  const svg = preparedLogos.get(`${categoryId}/${logoId}`);
-  if (!svg) {
-    return `<img class="logo raster-logo" src="${escapeHtml(assetUrl(logo.asset))}" alt="${escapeHtml(category.name)} logo">`;
-  }
+function renderLogo(
+    categoryId: string,
+    logoId: string,
+    category: Category,
+    logo: CategoryLogo,
+    preparedLogos: PreparedLogos,
+): string {
+    const svg = preparedLogos.get(`${categoryId}/${logoId}`);
+    if (!svg) {
+        return `<img class="logo raster-logo" src="${escapeHtml(assetUrl(logo.asset))}" alt="${escapeHtml(category.name)} logo">`;
+    }
 
-  const primary = category.color;
-  const secondary = deriveMutedCategoryColor(category.color, layout.logoPalette.mutedSaturationMultiplier);
-  return `<div class="logo inline-logo" role="img" aria-label="${escapeHtml(category.name)} logo" style="--logo-primary:${escapeHtml(primary)}; --logo-secondary:${escapeHtml(secondary)};">${svg}</div>`;
+    const primary = category.color;
+    const secondary = deriveMutedCategoryColor(
+        category.color,
+        layout.logoPalette.mutedSaturationMultiplier,
+    );
+    return `<div class="logo inline-logo" role="img" aria-label="${escapeHtml(category.name)} logo" style="--logo-primary:${escapeHtml(primary)}; --logo-secondary:${escapeHtml(secondary)};">${svg}</div>`;
 }
 
 function renderContents(label: LabelConfig): string {
-  return label.contents
-    .map((content) => {
-      const name = content.name ? `<span class="content-name">${escapeHtml(content.name)}</span>` : "";
-      const volume = content.volume ? `<span class="content-volume">Vol. ${content.volume}</span>` : "";
-      const issues = content.issues ? `<span class="content-issues">${escapeHtml(formatRange(content.issues, "#"))}</span>` : "";
-      return `<div class="content-row">${name}${volume}${issues}</div>`;
-    })
-    .join("");
+    return label.contents
+        .map(content => {
+            const name = content.name
+                ? `<span class="content-name">${escapeHtml(content.name)}</span>`
+                : "";
+            const volume = content.volume
+                ? `<span class="content-volume">Vol. ${content.volume}</span>`
+                : "";
+            const issues = content.issues
+                ? `<span class="content-issues">${escapeHtml(formatRange(content.issues, "#"))}</span>`
+                : "";
+            return `<div class="content-row">${name}${volume}${issues}</div>`;
+        })
+        .join("");
 }
 
 function labelYears(label: LabelConfig): string {
-  const yearRanges = label.contents
-    .map((content) => content.years)
-    .filter((years): years is [number, number] => years !== undefined);
+    const yearRanges = label.contents
+        .map(content => content.years)
+        .filter((years): years is [number, number] => years !== undefined);
 
-  if (yearRanges.length === 0) return "";
+    if (yearRanges.length === 0) return "";
 
-  if (layout.years.display === "condensed-range") {
-    const firstYear = yearRanges[0][0];
-    const lastYear = yearRanges[yearRanges.length - 1][1];
-    return formatRange([firstYear, lastYear]);
-  }
+    if (layout.years.display === "condensed-range") {
+        const firstYear = yearRanges[0][0];
+        const lastYear = yearRanges[yearRanges.length - 1][1];
+        return formatRange([firstYear, lastYear]);
+    }
 
-  return [...new Set(yearRanges.map((years) => formatRange(years)))].join(" · ");
+    return [...new Set(yearRanges.map(years => formatRange(years)))].join(
+        " · ",
+    );
 }
 
-export function renderLabel(label: LabelConfig, preparedLogos: PreparedLogos): string {
-  const category = categories[label.category];
-  if (!category) throw new Error(`Label ${label.id} references unknown category ${label.category}.`);
+export function renderLabel(
+    label: LabelConfig,
+    preparedLogos: PreparedLogos,
+): string {
+    const category = categories[label.category];
+    if (!category)
+        throw new Error(
+            `Label ${label.id} references unknown category ${label.category}.`,
+        );
 
-  const logo = category.logos[label.logo];
-  if (!logo) throw new Error(`Label ${label.id} references unknown logo ${label.category}/${label.logo}.`);
+    const logo = category.logos[label.logo];
+    if (!logo)
+        throw new Error(
+            `Label ${label.id} references unknown logo ${label.category}/${label.logo}.`,
+        );
 
-  const crop = label.art.crop;
-  const cropPosition = `${crop.focus.x * 100}% ${crop.focus.y * 100}%`;
-  const logoWidth = logo.maxWidthPercent ?? 94;
-  const treatment = { ...layout.artTreatment, ...category.artTreatment };
+    const crop = label.art.crop;
+    const cropPosition = `${crop.focus.x * 100}% ${crop.focus.y * 100}%`;
+    const logoWidth = logo.maxWidthPercent ?? 94;
+    const treatment = { ...layout.artTreatment, ...category.artTreatment };
 
-  return `
+    return `
     <article class="label" style="--category-color:${escapeHtml(category.color)}; --art-image:url('${escapeHtml(assetUrl(label.art.asset))}'); --art-position:${cropPosition}; --logo-max-width:${logoWidth}%; --art-saturation:${treatment.saturation}; --art-contrast:${treatment.contrast}; --art-brightness:${treatment.brightness}; --tint-opacity:${treatment.tintOpacity}; --tint-blend:${treatment.tintBlendMode};" data-label-id="${escapeHtml(label.id)}">
       <div class="artwork" aria-hidden="true"></div>
       <div class="artwork-tint" aria-hidden="true"></div>
@@ -89,17 +115,24 @@ export function renderLabel(label: LabelConfig, preparedLogos: PreparedLogos): s
     </article>`;
 }
 
-export function renderDocument(labels: LabelConfig[], preparedLogos: PreparedLogos): string {
-  const totalWidth = layout.face.widthInches + layout.overwrapInches * 2;
-  const totalHeight = layout.face.heightInches + layout.overwrapInches * 2;
-  const identityTop = layout.overwrapInches + layout.identityBand.topInches;
-  const metadataTop = layout.overwrapInches + layout.metadataBand.topInches;
-  const holeHeight = layout.fingerHole.diameterInches / 2;
-  const guideWidth = layout.fingerHole.diameterInches * layout.fingerHole.guideScale;
-  const guideHeight = holeHeight * layout.fingerHole.guideScale;
-  const holeTop = layout.overwrapInches + layout.fingerHole.topInches + (holeHeight - guideHeight) / 2;
+export function renderDocument(
+    labels: LabelConfig[],
+    preparedLogos: PreparedLogos,
+): string {
+    const totalWidth = layout.face.widthInches + layout.overwrapInches * 2;
+    const totalHeight = layout.face.heightInches + layout.overwrapInches * 2;
+    const identityTop = layout.overwrapInches + layout.identityBand.topInches;
+    const metadataTop = layout.overwrapInches + layout.metadataBand.topInches;
+    const holeHeight = layout.fingerHole.diameterInches / 2;
+    const guideWidth =
+        layout.fingerHole.diameterInches * layout.fingerHole.guideScale;
+    const guideHeight = holeHeight * layout.fingerHole.guideScale;
+    const holeTop =
+        layout.overwrapInches +
+        layout.fingerHole.topInches +
+        (holeHeight - guideHeight) / 2;
 
-  const cssVariables = `
+    const cssVariables = `
     --face-width:${layout.face.widthInches}in;
     --face-height:${layout.face.heightInches}in;
     --overwrap:${layout.overwrapInches}in;
@@ -126,7 +159,7 @@ export function renderDocument(labels: LabelConfig[], preparedLogos: PreparedLog
     --logo-outline-linejoin:${layout.logoOutline.lineJoin};
     --cut-guide-display:${layout.showCutGuide ? "block" : "none"};`;
 
-  return `<!doctype html>
+    return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -166,7 +199,7 @@ export function renderDocument(labels: LabelConfig[], preparedLogos: PreparedLog
   </style>
 </head>
 <body>
-${labels.map((label) => renderLabel(label, preparedLogos)).join("\n")}
+${labels.map(label => renderLabel(label, preparedLogos)).join("\n")}
 </body>
 </html>`;
 }

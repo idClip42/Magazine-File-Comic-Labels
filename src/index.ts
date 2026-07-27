@@ -17,5 +17,7 @@ console.log(`Prepared ${preparedLogos.size} local SVG logo variant(s).`);
 
 const missingAssets = auditAssets(layout, categories, labels);
 if (missingAssets.length > 0) {
-  console.warn(`${missingAssets.length} local asset(s) are currently unavailable. Run npm run audit:assets for details.`);
+    console.warn(
+        `${missingAssets.length} local asset(s) are currently unavailable. Run npm run audit:assets for details.`,
+    );
 }

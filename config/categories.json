@@ -1,182 +1,182 @@
 {
-  "fantastic-four": {
-    "name": "Fantastic Four",
-    "color": "#78A9FF",
-    "logos": {
-      "1970": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_3.png"
-      },
-      "classic": {
-        "asset": "logos/ff-logo-1960s.svg"
-      },
-      "early-1970s": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Fantastic_Four_logo_4.png"
-      },
-      "late-1970s": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Fantastic_Four_logo_5.png"
-      },
-      "early-waid": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_7.png"
-      },
-      "millar": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/2/29/Fantastic_Four_logo_8.png"
-      },
-      "fraction": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/5/5d/Fantastic_Four_logo_9.png"
-      },
-      "robinson": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/3/3e/Fantastic_Four_logo_X.png"
-      },
-      "slott": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/6/6e/F4_2018.png"
-      },
-      "north-ross": {
-        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Fantastic_Four_%282023%29_logo.png"
-      }
+    "fantastic-four": {
+        "name": "Fantastic Four",
+        "color": "#78A9FF",
+        "logos": {
+            "1970": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_3.png"
+            },
+            "classic": {
+                "asset": "logos/ff-logo-1960s.svg"
+            },
+            "early-1970s": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Fantastic_Four_logo_4.png"
+            },
+            "late-1970s": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Fantastic_Four_logo_5.png"
+            },
+            "early-waid": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_7.png"
+            },
+            "millar": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/2/29/Fantastic_Four_logo_8.png"
+            },
+            "fraction": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/5/5d/Fantastic_Four_logo_9.png"
+            },
+            "robinson": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/3/3e/Fantastic_Four_logo_X.png"
+            },
+            "slott": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/6/6e/F4_2018.png"
+            },
+            "north-ross": {
+                "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Fantastic_Four_%282023%29_logo.png"
+            }
+        }
+    },
+    "x-family": {
+        "name": "X-family",
+        "color": "#D99B22",
+        "logos": {
+            "new-mutants": {
+                "asset": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png"
+            },
+            "x-men": {
+                "asset": "logos/xmen-logo.svg"
+            },
+            "excalibur": {
+                "asset": "https://preview.redd.it/vlbt7ddegk481.jpg?width=640&crop=smart&auto=webp&s=b1f37fb217e15dfa85262cf5d1396ca78ba9d6a0"
+            },
+            "wolverine": {
+                "asset": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png"
+            }
+        }
+    },
+    "marvel-characters": {
+        "name": "Marvel characters",
+        "color": "#B32A32",
+        "logos": {
+            "black-cat": {
+                "asset": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png"
+            },
+            "marvel-team-up": {
+                "asset": "https://www.wymann.info/comics/graphics/MarvelTeamUpLogo.gif"
+            },
+            "she-hulk": {
+                "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Sensational_She-Hulk_Vol_2_Logo.png"
+            },
+            "dr-strange": {
+                "asset": "https://i.pinimg.com/1200x/d1/39/5e/d1395ecf36f5ac19d1a923e810df2c44.jpg"
+            },
+            "iron-man": {
+                "asset": "https://www.wymann.info/comics/graphics/IronMan1970sLogo.gif"
+            },
+            "daredevil": {
+                "asset": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png"
+            },
+            "spider-man": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png"
+            },
+            "ultimate": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate"
+            },
+            "ultimate-spider-man": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate+Spider-Man"
+            },
+            "ultimates": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimates"
+            },
+            "jessica-jones": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Jessica+Jones"
+            },
+            "amazing-spider-man": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Amazing+Spider-Man"
+            },
+            "spider-man-various": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Various+Series"
+            },
+            "spider-man-minis": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Minis"
+            }
+        }
+    },
+    "marvel-specials": {
+        "name": "Marvel specials",
+        "color": "#C65E32",
+        "logos": {
+            "secret-wars": {
+                "asset": "https://shlocko.wordpress.com/wp-content/uploads/2023/03/secret_wars_logo.webp"
+            },
+            "what-if": {
+                "asset": "logos/whatif.jpg"
+            },
+            "official-handbook-of-the-marvel-universe": {
+                "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png"
+            }
+        }
+    },
+    "dc-universe": {
+        "name": "DC Universe",
+        "color": "#315A9B",
+        "logos": {
+            "teen-titans-go": {
+                "asset": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/960px-Teen_Titans_-_logo_%28English%29.png"
+            },
+            "young-justice": {
+                "asset": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg"
+            },
+            "superman": {
+                "asset": "https://iesjv.wordpress.com/wp-content/uploads/2015/09/superman-logo.png"
+            },
+            "batman": {
+                "asset": "https://comicbooksandcats.com/wp-content/uploads/2014/10/batman-66-logo.png"
+            },
+            "the-new-teen-titans": {
+                "asset": "https://13thdimension.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-24-at-8.44.20-PM.png"
+            }
+        }
+    },
+    "adventure-pulp": {
+        "name": "Adventure & pulp",
+        "color": "#9A6536",
+        "logos": {
+            "indiana-jones": {
+                "asset": "https://img1.picmix.com/output/stamp/normal/8/4/2/3/663248_18130.png"
+            },
+            "the-league-of-extraordinary-gentlemen": {
+                "asset": "https://stripinfo.be/images/images/380000/383004.jpg"
+            },
+            "jonny-quest": {
+                "asset": "logos/quest.jpg"
+            },
+            "007": {
+                "asset": "https://logos-world.net/wp-content/uploads/2023/06/007-Logo.png"
+            },
+            "the-shadow": {
+                "asset": "logos/shadow.jpg"
+            }
+        }
+    },
+    "horror-dark-fantasy": {
+        "name": "Horror & dark fantasy",
+        "color": "#4D3D59",
+        "logos": {
+            "fatale": {
+                "asset": "logos/fatale.png"
+            },
+            "army-of-darkness": {
+                "asset": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png"
+            },
+            "aliens": {
+                "asset": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png"
+            },
+            "fables": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Fables"
+            },
+            "universal-monsters": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Universal+Monsters"
+            }
+        }
     }
-  },
-  "x-family": {
-    "name": "X-family",
-    "color": "#D99B22",
-    "logos": {
-      "new-mutants": {
-        "asset": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png"
-      },
-      "x-men": {
-        "asset": "logos/xmen-logo.svg"
-      },
-      "excalibur": {
-        "asset": "https://preview.redd.it/vlbt7ddegk481.jpg?width=640&crop=smart&auto=webp&s=b1f37fb217e15dfa85262cf5d1396ca78ba9d6a0"
-      },
-      "wolverine": {
-        "asset": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png"
-      }
-    }
-  },
-  "marvel-characters": {
-    "name": "Marvel characters",
-    "color": "#B32A32",
-    "logos": {
-      "black-cat": {
-        "asset": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png"
-      },
-      "marvel-team-up": {
-        "asset": "https://www.wymann.info/comics/graphics/MarvelTeamUpLogo.gif"
-      },
-      "she-hulk": {
-        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Sensational_She-Hulk_Vol_2_Logo.png"
-      },
-      "dr-strange": {
-        "asset": "https://i.pinimg.com/1200x/d1/39/5e/d1395ecf36f5ac19d1a923e810df2c44.jpg"
-      },
-      "iron-man": {
-        "asset": "https://www.wymann.info/comics/graphics/IronMan1970sLogo.gif"
-      },
-      "daredevil": {
-        "asset": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png"
-      },
-      "spider-man": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png"
-      },
-      "ultimate": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate"
-      },
-      "ultimate-spider-man": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate+Spider-Man"
-      },
-      "ultimates": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimates"
-      },
-      "jessica-jones": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Jessica+Jones"
-      },
-      "amazing-spider-man": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Amazing+Spider-Man"
-      },
-      "spider-man-various": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Various+Series"
-      },
-      "spider-man-minis": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Minis"
-      }
-    }
-  },
-  "marvel-specials": {
-    "name": "Marvel specials",
-    "color": "#C65E32",
-    "logos": {
-      "secret-wars": {
-        "asset": "https://shlocko.wordpress.com/wp-content/uploads/2023/03/secret_wars_logo.webp"
-      },
-      "what-if": {
-        "asset": "logos/whatif.jpg"
-      },
-      "official-handbook-of-the-marvel-universe": {
-        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png"
-      }
-    }
-  },
-  "dc-universe": {
-    "name": "DC Universe",
-    "color": "#315A9B",
-    "logos": {
-      "teen-titans-go": {
-        "asset": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/960px-Teen_Titans_-_logo_%28English%29.png"
-      },
-      "young-justice": {
-        "asset": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg"
-      },
-      "superman": {
-        "asset": "https://iesjv.wordpress.com/wp-content/uploads/2015/09/superman-logo.png"
-      },
-      "batman": {
-        "asset": "https://comicbooksandcats.com/wp-content/uploads/2014/10/batman-66-logo.png"
-      },
-      "the-new-teen-titans": {
-        "asset": "https://13thdimension.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-24-at-8.44.20-PM.png"
-      }
-    }
-  },
-  "adventure-pulp": {
-    "name": "Adventure & pulp",
-    "color": "#9A6536",
-    "logos": {
-      "indiana-jones": {
-        "asset": "https://img1.picmix.com/output/stamp/normal/8/4/2/3/663248_18130.png"
-      },
-      "the-league-of-extraordinary-gentlemen": {
-        "asset": "https://stripinfo.be/images/images/380000/383004.jpg"
-      },
-      "jonny-quest": {
-        "asset": "logos/quest.jpg"
-      },
-      "007": {
-        "asset": "https://logos-world.net/wp-content/uploads/2023/06/007-Logo.png"
-      },
-      "the-shadow": {
-        "asset": "logos/shadow.jpg"
-      }
-    }
-  },
-  "horror-dark-fantasy": {
-    "name": "Horror & dark fantasy",
-    "color": "#4D3D59",
-    "logos": {
-      "fatale": {
-        "asset": "logos/fatale.png"
-      },
-      "army-of-darkness": {
-        "asset": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png"
-      },
-      "aliens": {
-        "asset": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png"
-      },
-      "fables": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Fables"
-      },
-      "universal-monsters": {
-        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Universal+Monsters"
-      }
-    }
-  }
 }
