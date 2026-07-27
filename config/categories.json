@@ -40,16 +40,16 @@
         "color": "#D99B22",
         "logos": {
             "new-mutants": {
-                "asset": "https://static.wikia.nocookie.net/logocomics/images/f/ff/New-Mutants%281983-1985%29.png"
+                "asset": "logos/nm-logo.svg"
             },
             "x-men": {
                 "asset": "logos/xmen-logo.svg"
             },
             "excalibur": {
-                "asset": "https://preview.redd.it/vlbt7ddegk481.jpg?width=640&crop=smart&auto=webp&s=b1f37fb217e15dfa85262cf5d1396ca78ba9d6a0"
+                "asset": "logos/excalibur-logo.svg"
             },
             "wolverine": {
-                "asset": "https://static.wikia.nocookie.net/logocomics/images/2/22/Wolverine%281982%29.png"
+                "asset": "logos/wolverine-logo.svg"
             }
         }
     },
@@ -58,10 +58,10 @@
         "color": "#B32A32",
         "logos": {
             "black-cat": {
-                "asset": "https://static.wikia.nocookie.net/fictionalcrossover/images/f/f6/Black_cat_%28marvel%29_logo.png"
+                "asset": "logos/bc-logo.svg"
             },
             "marvel-team-up": {
-                "asset": "https://www.wymann.info/comics/graphics/MarvelTeamUpLogo.gif"
+                "asset": "logos/mtu-logo.svg"
             },
             "she-hulk": {
                 "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Sensational_She-Hulk_Vol_2_Logo.png"
