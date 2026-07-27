@@ -184,6 +184,7 @@ The current decision is to **redesign and render every configured label**, not s
 - Matte-vinyl vendor, substrate, proof process, which edges receive the 0.125 in physical overwrap, the vendor’s separate print-bleed requirement, and how the finger-hole cutout will be executed after application.
 - Whether detailed multi-title lists stay on labels or are reduced to issue/year ranges with detailed cataloging kept elsewhere.
 - Whether V2 later expands beyond front labels to divider cards, inventory views, reverse labels, or QR codes.
+- We also need to print one or two full size tests, just to makes sure everything lines up
 
 ## Collection expansion queue
 
