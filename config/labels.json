@@ -2144,50 +2144,6 @@
     ]
   },
   {
-    "id": "secret-wars-001",
-    "category": "marvel-specials",
-    "logo": "secret-wars",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -3,
-          "leftInches": -1.5,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Marvel Super Heroes Secret Wars",
-        "issues": [
-          1,
-          12
-        ],
-        "years": [
-          1984,
-          1985
-        ]
-      },
-      {
-        "name": "Secret Wars",
-        "issues": [
-          1,
-          9
-        ],
-        "years": [
-          2015,
-          2016
-        ]
-      }
-    ]
-  },
-  {
     "id": "x-men-001",
     "category": "x-family",
     "logo": "x-men",
@@ -2311,89 +2267,6 @@
     "contents": [
       {
         "name": "X-Men Misc."
-      }
-    ]
-  },
-  {
-    "id": "indiana-jones-001",
-    "category": "adventure-pulp",
-    "logo": "indiana-jones",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 0.95,
-        "legacy": {
-          "topInches": -2,
-          "leftInches": -1,
-          "zoom": 0.95
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "The Further Adventures of Indiana Jones",
-        "issues": [
-          1,
-          34
-        ],
-        "years": [
-          1983,
-          1986
-        ]
-      }
-    ]
-  },
-  {
-    "id": "indiana-jones-002",
-    "category": "adventure-pulp",
-    "logo": "indiana-jones",
-    "art": {
-      "asset": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -2,
-          "leftInches": -1,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Indiana Jones (Dark Horse)"
-      }
-    ]
-  },
-  {
-    "id": "the-league-of-extraordinary-gentlemen-001",
-    "category": "adventure-pulp",
-    "logo": "the-league-of-extraordinary-gentlemen",
-    "art": {
-      "asset": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1.29,
-        "legacy": {
-          "topInches": -4,
-          "leftInches": -1.5,
-          "zoom": 1.29
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "The League of Extraordinary Gentlemen"
       }
     ]
   },
@@ -2533,6 +2406,31 @@
     ]
   },
   {
+    "id": "wolverine-001",
+    "category": "x-family",
+    "logo": "wolverine",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -1.5,
+          "leftInches": -1,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Wolverine"
+      }
+    ]
+  },
+  {
     "id": "black-cat-001",
     "category": "marvel-characters",
     "logo": "black-cat",
@@ -2583,6 +2481,175 @@
     ]
   },
   {
+    "id": "she-hulk-001",
+    "category": "marvel-characters",
+    "logo": "she-hulk",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -1.5,
+          "leftInches": -1.2,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "She-Hulk"
+      }
+    ]
+  },
+  {
+    "id": "she-hulk-002",
+    "category": "marvel-characters",
+    "logo": "she-hulk",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 0.75,
+        "legacy": {
+          "topInches": 0,
+          "leftInches": -0.6,
+          "zoom": 0.75
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "She-Hulk"
+      }
+    ]
+  },
+  {
+    "id": "dr-strange-001",
+    "category": "marvel-characters",
+    "logo": "dr-strange",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -2,
+          "leftInches": -1,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Dr. Strange"
+      }
+    ]
+  },
+  {
+    "id": "iron-man-001",
+    "category": "marvel-characters",
+    "logo": "iron-man",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Iron_Man_Vol_1_300.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -2,
+          "leftInches": -1,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Iron Man"
+      }
+    ]
+  },
+  {
+    "id": "daredevil-001",
+    "category": "marvel-characters",
+    "logo": "daredevil",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -1.5,
+          "leftInches": -1,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Daredevil"
+      }
+    ]
+  },
+  {
+    "id": "secret-wars-001",
+    "category": "marvel-specials",
+    "logo": "secret-wars",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -3,
+          "leftInches": -1.5,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Marvel Super Heroes Secret Wars",
+        "issues": [
+          1,
+          12
+        ],
+        "years": [
+          1984,
+          1985
+        ]
+      },
+      {
+        "name": "Secret Wars",
+        "issues": [
+          1,
+          9
+        ],
+        "years": [
+          2015,
+          2016
+        ]
+      }
+    ]
+  },
+  {
     "id": "what-if-001",
     "category": "marvel-specials",
     "logo": "what-if",
@@ -2604,6 +2671,31 @@
     "contents": [
       {
         "name": "What If...?"
+      }
+    ]
+  },
+  {
+    "id": "official-handbook-of-the-marvel-universe-001",
+    "category": "marvel-specials",
+    "logo": "official-handbook-of-the-marvel-universe",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Official_Handbook_of_the_Marvel_Universe_Vol_2_8.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1,
+        "legacy": {
+          "topInches": -2,
+          "leftInches": -1,
+          "zoom": 1
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Official Handbook of the Marvel Universe"
       }
     ]
   },
@@ -2740,11 +2832,119 @@
     ]
   },
   {
-    "id": "official-handbook-of-the-marvel-universe-001",
-    "category": "marvel-specials",
-    "logo": "official-handbook-of-the-marvel-universe",
+    "id": "superman-001",
+    "category": "dc-universe",
+    "logo": "superman",
     "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Official_Handbook_of_the_Marvel_Universe_Vol_2_8.jpg",
+      "asset": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1.07,
+        "legacy": {
+          "topInches": -2.75,
+          "leftInches": -1,
+          "zoom": 1.07
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Superman"
+      }
+    ]
+  },
+  {
+    "id": "batman-001",
+    "category": "dc-universe",
+    "logo": "batman",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1.11,
+        "legacy": {
+          "topInches": -3,
+          "leftInches": -2.5,
+          "zoom": 1.11
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Batman"
+      }
+    ]
+  },
+  {
+    "id": "the-new-teen-titans-001",
+    "category": "dc-universe",
+    "logo": "the-new-teen-titans",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 0.87,
+        "legacy": {
+          "topInches": -1.25,
+          "leftInches": -0.9,
+          "zoom": 0.87
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "The New Teen Titans"
+      }
+    ]
+  },
+  {
+    "id": "indiana-jones-001",
+    "category": "adventure-pulp",
+    "logo": "indiana-jones",
+    "art": {
+      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 0.95,
+        "legacy": {
+          "topInches": -2,
+          "leftInches": -1,
+          "zoom": 0.95
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "The Further Adventures of Indiana Jones",
+        "issues": [
+          1,
+          34
+        ],
+        "years": [
+          1983,
+          1986
+        ]
+      }
+    ]
+  },
+  {
+    "id": "indiana-jones-002",
+    "category": "adventure-pulp",
+    "logo": "indiana-jones",
+    "art": {
+      "asset": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
       "crop": {
         "focus": {
           "x": 0.5,
@@ -2760,7 +2960,32 @@
     },
     "contents": [
       {
-        "name": "Official Handbook of the Marvel Universe"
+        "name": "Indiana Jones (Dark Horse)"
+      }
+    ]
+  },
+  {
+    "id": "the-league-of-extraordinary-gentlemen-001",
+    "category": "adventure-pulp",
+    "logo": "the-league-of-extraordinary-gentlemen",
+    "art": {
+      "asset": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1.29,
+        "legacy": {
+          "topInches": -4,
+          "leftInches": -1.5,
+          "zoom": 1.29
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "The League of Extraordinary Gentlemen"
       }
     ]
   },
@@ -2798,202 +3023,27 @@
     ]
   },
   {
-    "id": "superman-001",
-    "category": "dc-universe",
-    "logo": "superman",
+    "id": "the-shadow-001",
+    "category": "adventure-pulp",
+    "logo": "the-shadow",
     "art": {
-      "asset": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg",
+      "asset": "https://s3.amazonaws.com/comicgeeks/comics/covers/large-6863199.jpg?1745469299",
       "crop": {
         "focus": {
           "x": 0.5,
           "y": 0.5
         },
-        "scale": 1.07,
+        "scale": 0.87,
         "legacy": {
-          "topInches": -2.75,
+          "topInches": -1.2,
           "leftInches": -1,
-          "zoom": 1.07
+          "zoom": 0.87
         }
       }
     },
     "contents": [
       {
-        "name": "Superman"
-      }
-    ]
-  },
-  {
-    "id": "she-hulk-001",
-    "category": "marvel-characters",
-    "logo": "she-hulk",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -1.5,
-          "leftInches": -1.2,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "She-Hulk"
-      }
-    ]
-  },
-  {
-    "id": "she-hulk-002",
-    "category": "marvel-characters",
-    "logo": "she-hulk",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 0.75,
-        "legacy": {
-          "topInches": 0,
-          "leftInches": -0.6,
-          "zoom": 0.75
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "She-Hulk"
-      }
-    ]
-  },
-  {
-    "id": "batman-001",
-    "category": "dc-universe",
-    "logo": "batman",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1.11,
-        "legacy": {
-          "topInches": -3,
-          "leftInches": -2.5,
-          "zoom": 1.11
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Batman"
-      }
-    ]
-  },
-  {
-    "id": "wolverine-001",
-    "category": "x-family",
-    "logo": "wolverine",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -1.5,
-          "leftInches": -1,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Wolverine"
-      }
-    ]
-  },
-  {
-    "id": "dr-strange-001",
-    "category": "marvel-characters",
-    "logo": "dr-strange",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -2,
-          "leftInches": -1,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Dr. Strange"
-      }
-    ]
-  },
-  {
-    "id": "iron-man-001",
-    "category": "marvel-characters",
-    "logo": "iron-man",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Iron_Man_Vol_1_300.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -2,
-          "leftInches": -1,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Iron Man"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-001",
-    "category": "marvel-characters",
-    "logo": "daredevil",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 1,
-        "legacy": {
-          "topInches": -1.5,
-          "leftInches": -1,
-          "zoom": 1
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "Daredevil"
+        "name": "The Shadow"
       }
     ]
   },
@@ -3027,31 +3077,6 @@
           2012,
           2014
         ]
-      }
-    ]
-  },
-  {
-    "id": "the-new-teen-titans-001",
-    "category": "dc-universe",
-    "logo": "the-new-teen-titans",
-    "art": {
-      "asset": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 0.87,
-        "legacy": {
-          "topInches": -1.25,
-          "leftInches": -0.9,
-          "zoom": 0.87
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "The New Teen Titans"
       }
     ]
   },
@@ -3144,31 +3169,6 @@
           1992,
           1992
         ]
-      }
-    ]
-  },
-  {
-    "id": "the-shadow-001",
-    "category": "adventure-pulp",
-    "logo": "the-shadow",
-    "art": {
-      "asset": "https://s3.amazonaws.com/comicgeeks/comics/covers/large-6863199.jpg?1745469299",
-      "crop": {
-        "focus": {
-          "x": 0.5,
-          "y": 0.5
-        },
-        "scale": 0.87,
-        "legacy": {
-          "topInches": -1.2,
-          "leftInches": -1,
-          "zoom": 0.87
-        }
-      }
-    },
-    "contents": [
-      {
-        "name": "The Shadow"
       }
     ]
   }
