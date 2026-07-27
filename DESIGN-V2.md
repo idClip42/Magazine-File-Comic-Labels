@@ -191,6 +191,8 @@ The V2 catalog is intentionally not final. Additions and redivision should use t
 
 - **Fantastic Four:** add at least one physical box for the most recently cataloged Fantastic Four material.
 - **Uncanny X-Men:** inspect and read through the current unprocessed stack, then add roughly three physical boxes and choose sensible divisions across the broader c. #125–300 run. The current holdings include #131, #132, #137–200, and a substantial portion of #200–300; the eventual label boundaries should follow the actual read/cataloged collection rather than be guessed now.
+- All the other new boxes that don't have labels yet.
+- Look for other existing boxes that are too tightly packed and separate them out into multiple boxes. (I suspect the FF miniseries boxes may be a candidate here.)
 
 Color-family decisions and the new-box metadata can be made together after the logo, art, and vinyl work has settled.
 
