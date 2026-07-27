@@ -64,16 +64,19 @@
                 "asset": "logos/mtu-logo.svg"
             },
             "she-hulk": {
-                "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Sensational_She-Hulk_Vol_2_Logo.png"
+                "asset": "logos/sh-logo.svg"
             },
             "dr-strange": {
-                "asset": "https://i.pinimg.com/1200x/d1/39/5e/d1395ecf36f5ac19d1a923e810df2c44.jpg"
+                "asset": "logos/ds-logo.svg"
             },
             "iron-man": {
                 "asset": "https://www.wymann.info/comics/graphics/IronMan1970sLogo.gif"
             },
             "daredevil": {
                 "asset": "https://static.wikia.nocookie.net/logocomics/images/c/c2/Daredevil%281964-1970%29.png"
+            },
+            "amazing-spider-man": {
+                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Amazing+Spider-Man"
             },
             "spider-man": {
                 "asset": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png"
@@ -89,15 +92,6 @@
             },
             "jessica-jones": {
                 "asset": "https://placehold.co/1200x400/ffffff/111111?text=Jessica+Jones"
-            },
-            "amazing-spider-man": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Amazing+Spider-Man"
-            },
-            "spider-man-various": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Various+Series"
-            },
-            "spider-man-minis": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Minis"
             }
         }
     },

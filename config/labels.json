@@ -2193,7 +2193,7 @@
     {
         "id": "spider-man-various-series-001",
         "category": "marvel-characters",
-        "logo": "spider-man-various",
+        "logo": "spider-man",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Various+Series",
             "crop": {
@@ -2213,7 +2213,7 @@
     {
         "id": "spider-man-minis-001",
         "category": "marvel-characters",
-        "logo": "spider-man-minis",
+        "logo": "spider-man",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Minis",
             "crop": {
