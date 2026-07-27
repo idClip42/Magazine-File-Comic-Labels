@@ -3,35 +3,35 @@
         "name": "Fantastic Four",
         "color": "#78A9FF",
         "logos": {
-            "1970": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_3.png"
-            },
             "classic": {
                 "asset": "logos/ff-logo-1960s.svg"
             },
+            "1970": {
+                "asset": "logos/ff-logo-1970.svg"
+            },
             "early-1970s": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Fantastic_Four_logo_4.png"
+                "asset": "logos/ff-logo-1970s-early.svg"
             },
             "late-1970s": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Fantastic_Four_logo_5.png"
+                "asset": "logos/ff-logo-1970s-late.svg"
             },
             "early-waid": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Fantastic_Four_logo_7.png"
+                "asset": "logos/ff-logo-waid.svg"
             },
             "millar": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/2/29/Fantastic_Four_logo_8.png"
+                "asset": "logos/ff-logo-millar.svg"
             },
             "fraction": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/5/5d/Fantastic_Four_logo_9.png"
+                "asset": "logos/ff-logo-fraction.svg"
             },
             "robinson": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/3/3e/Fantastic_Four_logo_X.png"
+                "asset": "logos/ff-logo-robinson.svg"
             },
             "slott": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/6/6e/F4_2018.png"
+                "asset": "logos/ff-logo-slott.svg"
             },
             "north-ross": {
-                "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Fantastic_Four_%282023%29_logo.png"
+                "asset": "logos/ff-logo-north.svg"
             }
         }
     },
