@@ -77,6 +77,27 @@
       },
       "spider-man": {
         "asset": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Spiderman1994.png"
+      },
+      "ultimate": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate"
+      },
+      "ultimate-spider-man": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate+Spider-Man"
+      },
+      "ultimates": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimates"
+      },
+      "jessica-jones": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Jessica+Jones"
+      },
+      "amazing-spider-man": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Amazing+Spider-Man"
+      },
+      "spider-man-various": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Various+Series"
+      },
+      "spider-man-minis": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Spider-Man+Minis"
       }
     }
   },
@@ -149,6 +170,12 @@
       },
       "aliens": {
         "asset": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png"
+      },
+      "fables": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Fables"
+      },
+      "universal-monsters": {
+        "asset": "https://placehold.co/1200x400/ffffff/111111?text=Universal+Monsters"
       }
     }
   }

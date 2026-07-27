@@ -1689,6 +1689,26 @@
     ]
   },
   {
+    "id": "fantastic-four-050",
+    "category": "fantastic-four",
+    "logo": "north-ross",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fantastic+Four+Latest+Comics",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Fantastic Four Latest Comics"
+      }
+    ]
+  },
+  {
     "id": "new-mutants-001",
     "category": "x-family",
     "logo": "new-mutants",
@@ -1894,6 +1914,31 @@
     ]
   },
   {
+    "id": "x-men-annual",
+    "category": "x-family",
+    "logo": "x-men",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men+Annual",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 0.84,
+        "legacy": {
+          "topInches": -1,
+          "leftInches": -0.45,
+          "zoom": 0.84
+        }
+      }
+    },
+    "contents": [
+      {
+        "name": "Uncanny X-Men Annual"
+      }
+    ]
+  },
+  {
     "id": "x-men-001",
     "category": "x-family",
     "logo": "x-men",
@@ -1989,14 +2034,91 @@
           1984,
           1985
         ]
-      },
-      {
-        "name": "Uncanny X-Men Annual"
       }
     ]
   },
   {
     "id": "x-men-004",
+    "category": "x-family",
+    "logo": "x-men",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Uncanny X-Men"
+      }
+    ]
+  },
+  {
+    "id": "x-men-005",
+    "category": "x-family",
+    "logo": "x-men",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Uncanny X-Men"
+      }
+    ]
+  },
+  {
+    "id": "x-men-006",
+    "category": "x-family",
+    "logo": "x-men",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Uncanny X-Men"
+      }
+    ]
+  },
+  {
+    "id": "x-men-007",
+    "category": "x-family",
+    "logo": "x-men",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Uncanny X-Men"
+      }
+    ]
+  },
+  {
+    "id": "x-men-misc",
     "category": "x-family",
     "logo": "x-men",
     "art": {
@@ -2356,6 +2478,166 @@
     ]
   },
   {
+    "id": "ultimate-001",
+    "category": "marvel-characters",
+    "logo": "ultimate",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Ultimate",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Ultimate Universe"
+      }
+    ]
+  },
+  {
+    "id": "ultimate-spider-man-001",
+    "category": "marvel-characters",
+    "logo": "ultimate-spider-man",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Ultimate+Spider-Man",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Ultimate Spider-Man"
+      }
+    ]
+  },
+  {
+    "id": "ultimates-001",
+    "category": "marvel-characters",
+    "logo": "ultimates",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Ultimates",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Ultimates"
+      }
+    ]
+  },
+  {
+    "id": "jessica-jones-001",
+    "category": "marvel-characters",
+    "logo": "jessica-jones",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Jessica+Jones",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Jessica Jones"
+      }
+    ]
+  },
+  {
+    "id": "amazing-spider-man-001",
+    "category": "marvel-characters",
+    "logo": "amazing-spider-man",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Amazing+Spider-Man",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Amazing Spider-Man"
+      }
+    ]
+  },
+  {
+    "id": "spider-man-various-series-001",
+    "category": "marvel-characters",
+    "logo": "spider-man-various",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Various+Series",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Spider-Man (Various Series)"
+      }
+    ]
+  },
+  {
+    "id": "spider-man-minis-001",
+    "category": "marvel-characters",
+    "logo": "spider-man-minis",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Minis",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Spider-Man Minis"
+      }
+    ]
+  },
+  {
+    "id": "daredevil-002",
+    "category": "marvel-characters",
+    "logo": "daredevil",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Daredevil"
+      }
+    ]
+  },
+  {
     "id": "secret-wars-001",
     "category": "marvel-specials",
     "logo": "secret-wars",
@@ -2582,6 +2864,26 @@
     ]
   },
   {
+    "id": "young-justice-003",
+    "category": "dc-universe",
+    "logo": "young-justice",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Young+Justice",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Young Justice"
+      }
+    ]
+  },
+  {
     "id": "superman-001",
     "category": "dc-universe",
     "logo": "superman",
@@ -2623,6 +2925,26 @@
           "leftInches": -2.5,
           "zoom": 1.11
         }
+      }
+    },
+    "contents": [
+      {
+        "name": "Batman"
+      }
+    ]
+  },
+  {
+    "id": "batman-002",
+    "category": "dc-universe",
+    "logo": "batman",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Batman",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
       }
     },
     "contents": [
@@ -2694,6 +3016,26 @@
     "category": "adventure-pulp",
     "logo": "indiana-jones",
     "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Indy+Marvel",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "The Further Adventures of Indiana Jones"
+      }
+    ]
+  },
+  {
+    "id": "indiana-jones-003",
+    "category": "adventure-pulp",
+    "logo": "indiana-jones",
+    "art": {
       "asset": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
       "crop": {
         "focus": {
@@ -2711,6 +3053,26 @@
     "contents": [
       {
         "name": "Indiana Jones (Dark Horse)"
+      }
+    ]
+  },
+  {
+    "id": "indiana-jones-004",
+    "category": "adventure-pulp",
+    "logo": "indiana-jones",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Indy+DH",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Indy (Dark Horse)"
       }
     ]
   },
@@ -2798,6 +3160,26 @@
     ]
   },
   {
+    "id": "007-001",
+    "category": "adventure-pulp",
+    "logo": "007",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=007",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "007"
+      }
+    ]
+  },
+  {
     "id": "fatale-001",
     "category": "horror-dark-fantasy",
     "logo": "fatale",
@@ -2847,6 +3229,26 @@
           "leftInches": -2,
           "zoom": 1
         }
+      }
+    },
+    "contents": [
+      {
+        "name": "Army of Darkness"
+      }
+    ]
+  },
+  {
+    "id": "army-of-darkness-002",
+    "category": "horror-dark-fantasy",
+    "logo": "army-of-darkness",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Army+of+Darkness+2",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
       }
     },
     "contents": [
@@ -2919,6 +3321,66 @@
           1992,
           1992
         ]
+      }
+    ]
+  },
+  {
+    "id": "aliens-002",
+    "category": "horror-dark-fantasy",
+    "logo": "aliens",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Aliens",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Aliens"
+      }
+    ]
+  },
+  {
+    "id": "fables-001",
+    "category": "horror-dark-fantasy",
+    "logo": "fables",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fables",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Fables"
+      }
+    ]
+  },
+  {
+    "id": "universal-monsters-001",
+    "category": "horror-dark-fantasy",
+    "logo": "universal-monsters",
+    "art": {
+      "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Universal+Monsters",
+      "crop": {
+        "focus": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "scale": 1
+      }
+    },
+    "contents": [
+      {
+        "name": "Universal Monsters"
       }
     ]
   }
