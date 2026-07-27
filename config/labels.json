@@ -890,58 +890,9 @@
     },
     "contents": [
       {
-        "name": "The Adventures of The Thing",
+        "name": "Miniseries",
         "years": [
           1992,
-          1992
-        ]
-      },
-      {
-        "name": "Fantastic Four Unlimited",
-        "years": [
-          1993,
-          1995
-        ]
-      },
-      {
-        "name": "Marvel Action Hour Fantastic Four",
-        "years": [
-          1994,
-          1995
-        ]
-      },
-      {
-        "name": "Fantastic Force",
-        "years": [
-          1994,
-          1996
-        ]
-      },
-      {
-        "name": "Fantastic Four: Unplugged",
-        "years": [
-          1995,
-          1996
-        ]
-      },
-      {
-        "name": "Fantastic Four 2099",
-        "years": [
-          1996,
-          1996
-        ]
-      },
-      {
-        "name": "Fantastic Four: Fireworks",
-        "years": [
-          1999,
-          1999
-        ]
-      },
-      {
-        "name": "Domination Factor: Fantastic Four",
-        "years": [
-          1999,
           2000
         ]
       }
@@ -968,30 +919,9 @@
     },
     "contents": [
       {
-        "name": "Before the Fantastic Four",
+        "name": "Miniseries",
         "years": [
           2000,
-          2001
-        ]
-      },
-      {
-        "name": "Big Town",
-        "years": [
-          2000,
-          2001
-        ]
-      },
-      {
-        "name": "Fantastic Four: World's Greatest Comics Magazine",
-        "years": [
-          2001,
-          2002
-        ]
-      },
-      {
-        "name": "Fantastic Four: 1 2 3 4",
-        "years": [
-          2001,
           2002
         ]
       }
@@ -1018,74 +948,10 @@
     },
     "contents": [
       {
-        "name": "The Thing: Freakshow",
+        "name": "Miniseries",
         "years": [
           2002,
-          2002
-        ]
-      },
-      {
-        "name": "Startling Stories: The Thing - Night Falls on Yancy Street",
-        "years": [
-          2003,
-          2003
-        ]
-      },
-      {
-        "name": "Fantastic Four - Unstable Molecules",
-        "years": [
-          2003,
-          2003
-        ]
-      },
-      {
-        "name": "Fantastic Four: Foes",
-        "years": [
-          2005,
-          2005
-        ]
-      },
-      {
-        "name": "X-Men / Fantastic Four",
-        "years": [
-          2005,
-          2005
-        ]
-      },
-      {
-        "name": "Marvel Age Fantastic Four",
-        "years": [
-          2004,
-          2005
-        ]
-      },
-      {
-        "name": "Fantastic Four: First Family",
-        "years": [
-          2006,
-          2006
-        ]
-      },
-      {
-        "name": "Franklin Richards: Son of a Genius",
-        "years": [
-          2005,
-          2005
-        ]
-      },
-      {
-        "name": "Marvel Adventures Fantastic Four",
-        "years": [
-          2005,
           2009
-        ]
-      },
-      {
-        "name": "The Thing",
-        "volume": 2,
-        "years": [
-          2006,
-          2006
         ]
       }
     ]
@@ -1111,52 +977,9 @@
     },
     "contents": [
       {
-        "name": "Marvel 1602: Fantastick Four",
+        "name": "Miniseries",
         "years": [
           2006,
-          2007
-        ]
-      },
-      {
-        "name": "Fantastic Four: The End",
-        "years": [
-          2007,
-          2007
-        ]
-      },
-      {
-        "name": "Spider-Man and the Fantastic Four",
-        "years": [
-          2007,
-          2007
-        ]
-      },
-      {
-        "name": "Secret Invasion: Fantastic Four",
-        "years": [
-          2008,
-          2008
-        ]
-      },
-      {
-        "name": "Fantastic Force",
-        "volume": 2,
-        "years": [
-          2009,
-          2009
-        ]
-      },
-      {
-        "name": "Dark Reign: Fantastic Four",
-        "years": [
-          2009,
-          2009
-        ]
-      },
-      {
-        "name": "Spider-Man/Fantastic Four",
-        "years": [
-          2010,
           2010
         ]
       }
@@ -1183,45 +1006,9 @@
     },
     "contents": [
       {
-        "name": "Fantastic Four: Grand Design",
+        "name": "Miniseries",
         "years": [
           2019,
-          2020
-        ]
-      },
-      {
-        "name": "Future Foundation",
-        "years": [
-          2019,
-          2020
-        ]
-      },
-      {
-        "name": "Invisible Woman",
-        "years": [
-          2019,
-          2020
-        ]
-      },
-      {
-        "name": "X-Men / Fantastic Four",
-        "volume": 2,
-        "years": [
-          2020,
-          2020
-        ]
-      },
-      {
-        "name": "Fantastic Four: Antithesis",
-        "years": [
-          2020,
-          2021
-        ]
-      },
-      {
-        "name": "Empyre",
-        "years": [
-          2021,
           2021
         ]
       }
@@ -1248,46 +1035,9 @@
     },
     "contents": [
       {
-        "name": "Fantastic Four: Life Story",
+        "name": "Miniseries",
         "years": [
           2021,
-          2022
-        ]
-      },
-      {
-        "name": "The Thing",
-        "volume": 3,
-        "years": [
-          2022,
-          2022
-        ]
-      },
-      {
-        "name": "New Fantastic Four",
-        "years": [
-          2022,
-          2022
-        ]
-      },
-      {
-        "name": "Clobberin' Time",
-        "years": [
-          2023,
-          2023
-        ]
-      },
-      {
-        "name": "The Thing",
-        "volume": 4,
-        "years": [
-          2025,
-          2025
-        ]
-      },
-      {
-        "name": "Fantastic Four Fanfare",
-        "years": [
-          2025,
           2025
         ]
       }
