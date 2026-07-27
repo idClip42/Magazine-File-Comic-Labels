@@ -2091,6 +2091,26 @@
         ]
     },
     {
+        "id": "daredevil-002",
+        "category": "marvel-characters",
+        "logo": "daredevil",
+        "art": {
+            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1
+            }
+        },
+        "contents": [
+            {
+                "name": "Daredevil"
+            }
+        ]
+    },
+    {
         "id": "ultimate-001",
         "category": "marvel-characters",
         "logo": "ultimate",
@@ -2227,26 +2247,6 @@
         "contents": [
             {
                 "name": "Spider-Man Minis"
-            }
-        ]
-    },
-    {
-        "id": "daredevil-002",
-        "category": "marvel-characters",
-        "logo": "daredevil",
-        "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
-            "crop": {
-                "focus": {
-                    "x": 0.5,
-                    "y": 0.5
-                },
-                "scale": 1
-            }
-        },
-        "contents": [
-            {
-                "name": "Daredevil"
             }
         ]
     },
