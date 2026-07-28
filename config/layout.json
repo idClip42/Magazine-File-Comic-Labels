@@ -38,7 +38,7 @@
         "mutedSaturationMultiplier": 0.35
     },
     "logoOutline": {
-        "enabled": true,
+        "enabled": false,
         "color": "#000000",
         "widthPixels": 3,
         "lineJoin": "round"
