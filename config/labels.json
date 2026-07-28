@@ -7,10 +7,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/78/Fantastic_Four_Annual_Vol_1_2.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.48,
+                    "y": 0.68
                 },
-                "scale": 1.1,
+                "scale": 2.47,
                 "legacy": {
                     "topInches": -3,
                     "leftInches": -0.25,
@@ -57,10 +57,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/Fantastic_Four_Vol_1_3.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.55,
+                    "y": 0.58
                 },
-                "scale": 0.77,
+                "scale": 5,
                 "legacy": {
                     "topInches": -0.4,
                     "leftInches": -0.9,

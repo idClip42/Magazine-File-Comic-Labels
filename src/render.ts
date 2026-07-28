@@ -211,21 +211,43 @@ export function renderDocument(
     .crop-config { display: flex; gap: 0.08in; margin-top: 0.09in; }
     .crop-config input { flex: 1; min-width: 0; font-family: Consolas, monospace; font-size: 11px; }
     .crop-config button { cursor: pointer; }
+    .save-crops-bar { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; align-items: center; gap: 10px; max-width: min(520px, calc(100vw - 32px)); padding: 10px 12px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); font-size: 13px; }
+    .save-crops-bar button { cursor: pointer; white-space: nowrap; }
+    .save-crops-bar button:disabled { cursor: default; }
     @media screen { body { padding: 0.4in; display: flex; flex-wrap: wrap; gap: 0.3in; align-items: flex-start; } .label { box-shadow: 0 0.08in 0.25in rgba(0,0,0,0.38); } }
-    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls { display: none; } }
+    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls, .save-crops-bar { display: none; } }
   </style>
 </head>
 <body>
+<div class="save-crops-bar" aria-live="polite">
+  <button type="button" data-save-all-crops disabled>Save all crop changes</button>
+  <span data-save-crops-status>Start the local editor with <code>npm start</code> to save to config/labels.json.</span>
+</div>
 ${labels.map(label => renderLabel(label, preparedLogos)).join("\n")}
 <script>
+  const pendingCrops = new Map();
+  const saveButton = document.querySelector('[data-save-all-crops]');
+  const saveStatus = document.querySelector('[data-save-crops-status]');
+  const isLocalEditor = location.protocol === 'http:' || location.protocol === 'https:';
+  const updateSaveControls = () => {
+    saveButton.disabled = !isLocalEditor || pendingCrops.size === 0;
+    if (!isLocalEditor) {
+      saveStatus.textContent = 'Start the local editor with npm start to save to config/labels.json.';
+    } else if (pendingCrops.size > 0) {
+      saveStatus.textContent = pendingCrops.size + ' crop change' + (pendingCrops.size === 1 ? '' : 's') + ' ready to save.';
+    } else {
+      saveStatus.textContent = 'All crop changes are saved.';
+    }
+  };
   document.querySelectorAll('.label-editor').forEach(editor => {
     const label = editor.querySelector('.label');
+    const labelId = label.dataset.labelId;
     const controls = editor.querySelector('.crop-controls');
     const fields = { x: controls.querySelector('[data-crop-field="x"]'), y: controls.querySelector('[data-crop-field="y"]'), zoom: controls.querySelector('[data-crop-field="zoom"]') };
     const numbers = { x: controls.querySelector('[data-crop-number="x"]'), y: controls.querySelector('[data-crop-number="y"]'), zoom: controls.querySelector('[data-crop-number="zoom"]') };
     const config = controls.querySelector('[data-crop-config]');
     const copyButton = controls.querySelector('[data-copy-crop]');
-    const update = (name, value) => {
+    const update = (name, value, markDirty = true) => {
       const number = Number(value);
       if (!Number.isFinite(number)) return;
       fields[name].value = String(number);
@@ -233,11 +255,15 @@ ${labels.map(label => renderLabel(label, preparedLogos)).join("\n")}
       if (name === 'x' || name === 'y') label.style.setProperty('--art-position', (Number(fields.x.value) * 100) + '% ' + (Number(fields.y.value) * 100) + '%');
       if (name === 'zoom') label.style.setProperty('--art-zoom', String(number));
       config.value = '"crop": { "focus": { "x": ' + fields.x.value + ', "y": ' + fields.y.value + ' }, "scale": ' + fields.zoom.value + ' }';
+      if (markDirty) {
+        pendingCrops.set(labelId, { focus: { x: Number(fields.x.value), y: Number(fields.y.value) }, scale: Number(fields.zoom.value) });
+        updateSaveControls();
+      }
     };
     Object.keys(fields).forEach(name => {
       fields[name].addEventListener('input', event => update(name, event.target.value));
       numbers[name].addEventListener('input', event => update(name, event.target.value));
-      update(name, fields[name].value);
+      update(name, fields[name].value, false);
     });
     copyButton.addEventListener('click', async () => {
       config.select();
@@ -246,6 +272,27 @@ ${labels.map(label => renderLabel(label, preparedLogos)).join("\n")}
       setTimeout(() => { copyButton.textContent = 'Copy'; }, 1200);
     });
   });
+  saveButton.addEventListener('click', async () => {
+    if (pendingCrops.size === 0) return;
+    saveButton.disabled = true;
+    saveStatus.textContent = 'Saving crop changes…';
+    try {
+      const response = await fetch('/api/crops', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ crops: Object.fromEntries(pendingCrops) }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Unable to save crop changes.');
+      pendingCrops.clear();
+      updateSaveControls();
+      saveStatus.textContent = 'Saved ' + result.saved + ' crop change' + (result.saved === 1 ? '' : 's') + ' to config/labels.json.';
+    } catch (error) {
+      saveStatus.textContent = 'Save failed: ' + error.message;
+      saveButton.disabled = !isLocalEditor || pendingCrops.size === 0;
+    }
+  });
+  updateSaveControls();
 </script>
 </body>
 </html>`;
