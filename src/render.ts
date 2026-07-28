@@ -120,7 +120,6 @@ export function renderLabel(
       <label>Focus X <input type="range" min="0" max="1" step="0.01" value="${crop.focus.x}" data-crop-field="x"><input type="number" min="0" max="1" step="0.01" value="${crop.focus.x}" data-crop-number="x"></label>
       <label>Focus Y <input type="range" min="0" max="1" step="0.01" value="${crop.focus.y}" data-crop-field="y"><input type="number" min="0" max="1" step="0.01" value="${crop.focus.y}" data-crop-number="y"></label>
       <label>Zoom <input type="range" min="0.5" max="5" step="0.01" value="${crop.scale}" data-crop-field="zoom"><input type="number" min="0.5" max="5" step="0.01" value="${crop.scale}" data-crop-number="zoom"></label>
-      <div class="crop-config"><input type="text" readonly aria-label="Updated crop configuration" data-crop-config><button type="button" data-copy-crop>Copy</button></div>
     </section>
     </div>`;
 }
@@ -211,9 +210,6 @@ export function renderDocument(
     .crop-controls-title { margin-bottom: 0.07in; font-weight: 700; }
     .crop-controls label { display: grid; grid-template-columns: 0.6in 1fr 0.65in; align-items: center; gap: 0.08in; margin-top: 0.05in; }
     .crop-controls input[type="number"] { width: 100%; }
-    .crop-config { display: flex; gap: 0.08in; margin-top: 0.09in; }
-    .crop-config input { flex: 1; min-width: 0; font-family: Consolas, monospace; font-size: 11px; }
-    .crop-config button { cursor: pointer; }
     .save-crops-bar { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; align-items: center; gap: 10px; max-width: min(520px, calc(100vw - 32px)); padding: 10px 12px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); font-size: 13px; }
     .save-crops-bar button { cursor: pointer; white-space: nowrap; }
     .save-crops-bar button:disabled { cursor: default; }
@@ -248,8 +244,6 @@ ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(lab
     const controls = editor.querySelector('.crop-controls');
     const fields = { x: controls.querySelector('[data-crop-field="x"]'), y: controls.querySelector('[data-crop-field="y"]'), zoom: controls.querySelector('[data-crop-field="zoom"]') };
     const numbers = { x: controls.querySelector('[data-crop-number="x"]'), y: controls.querySelector('[data-crop-number="y"]'), zoom: controls.querySelector('[data-crop-number="zoom"]') };
-    const config = controls.querySelector('[data-crop-config]');
-    const copyButton = controls.querySelector('[data-copy-crop]');
     const update = (name, value, markDirty = true) => {
       const number = Number(value);
       if (!Number.isFinite(number)) return;
@@ -257,7 +251,6 @@ ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(lab
       numbers[name].value = String(number);
       if (name === 'x' || name === 'y') label.style.setProperty('--art-position', (Number(fields.x.value) * 100) + '% ' + (Number(fields.y.value) * 100) + '%');
       if (name === 'zoom') label.style.setProperty('--art-zoom', String(number));
-      config.value = '"crop": { "focus": { "x": ' + fields.x.value + ', "y": ' + fields.y.value + ' }, "scale": ' + fields.zoom.value + ' }';
       if (markDirty) {
         pendingCrops.set(labelId, { focus: { x: Number(fields.x.value), y: Number(fields.y.value) }, scale: Number(fields.zoom.value) });
         updateSaveControls();
@@ -267,12 +260,6 @@ ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(lab
       fields[name].addEventListener('input', event => update(name, event.target.value));
       numbers[name].addEventListener('input', event => update(name, event.target.value));
       update(name, fields[name].value, false);
-    });
-    copyButton.addEventListener('click', async () => {
-      config.select();
-      try { await navigator.clipboard.writeText(config.value); } catch { document.execCommand('copy'); }
-      copyButton.textContent = 'Copied';
-      setTimeout(() => { copyButton.textContent = 'Copy'; }, 1200);
     });
   });
   saveButton.addEventListener('click', async () => {
