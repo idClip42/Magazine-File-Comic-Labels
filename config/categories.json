@@ -82,16 +82,16 @@
                 "asset": "logos/sm-logo.svg"
             },
             "ultimate": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate"
+                "asset": "logos/ultimate-universe-logo.svg"
             },
             "ultimate-spider-man": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimate+Spider-Man"
+                "asset": "logos/usm-logo.svg"
             },
             "ultimates": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Ultimates"
+                "asset": "logos/ultimates-logo.svg"
             },
             "jessica-jones": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Jessica+Jones"
+                "asset": "logos/jj-logo.svg"
             }
         }
     },
