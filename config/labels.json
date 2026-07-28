@@ -7,10 +7,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/Fantastic_Four_Vol_1_3.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.55,
-                    "y": 0.58
+                    "x": 0.9523,
+                    "y": 0.6078
                 },
-                "scale": 5,
+                "scale": 3.693,
                 "legacy": {
                     "topInches": -0.4,
                     "leftInches": -0.9,
@@ -34,10 +34,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_49.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.7184,
+                    "y": 1
                 },
-                "scale": 0.91,
+                "scale": 3.493,
                 "legacy": {
                     "topInches": -1.75,
                     "leftInches": -0.25,
@@ -61,10 +61,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Fantastic_Four_Vol_1_60.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.9505,
+                    "y": 0.401
                 },
-                "scale": 0.95,
+                "scale": 2.746,
                 "legacy": {
                     "topInches": -1.9,
                     "leftInches": -0.5,
@@ -88,10 +88,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Fantastic_Four_Vol_1_100.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6904,
+                    "y": 0.2762
                 },
-                "scale": 1.53,
+                "scale": 2.11,
                 "legacy": {
                     "topInches": -7,
                     "leftInches": -2.5,
@@ -115,10 +115,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Fantastic_Four_Vol_1_122.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.3883,
+                    "y": 0.4225
                 },
-                "scale": 1.47,
+                "scale": 2.978,
                 "legacy": {
                     "topInches": -3.5,
                     "leftInches": -1,
@@ -169,10 +169,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Fantastic_Four_Vol_1_167.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.0323,
+                    "y": 0.9883
                 },
-                "scale": 1.7,
+                "scale": 2.249,
                 "legacy": {
                     "topInches": -8.5,
                     "leftInches": 0,
@@ -196,10 +196,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e1/Fantastic_Four_Vol_1_197.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.2374,
+                    "y": 1
                 },
-                "scale": 0.95,
+                "scale": 1.321,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -0.7,
@@ -223,10 +223,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/Fantastic_Four_Vol_1_220.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.9243,
+                    "y": 0.9101
                 },
-                "scale": 0.92,
+                "scale": 1.492,
                 "legacy": {
                     "topInches": -1,
                     "leftInches": -0.5,
@@ -250,10 +250,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Fantastic_Four_Vol_1_232.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.9349,
+                    "y": 0.5498
                 },
-                "scale": 0.8,
+                "scale": 1.907,
                 "legacy": {
                     "topInches": -0.5,
                     "leftInches": -0.4,
@@ -388,7 +388,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.96,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1.75,
                     "leftInches": -1.75,
@@ -442,7 +442,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.93,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1.5,
                     "leftInches": -1,
@@ -640,7 +640,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.91,
+                "scale": 1,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -0.5,
@@ -959,7 +959,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.92,
+                "scale": 1,
                 "legacy": {
                     "topInches": -0.4,
                     "leftInches": -1.2,
@@ -984,7 +984,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.77,
+                "scale": 1,
                 "legacy": {
                     "topInches": -0.5,
                     "leftInches": -0.85,
@@ -1183,7 +1183,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.86,
+                "scale": 1,
                 "legacy": {
                     "topInches": -2.25,
                     "leftInches": -0.9,
@@ -1209,7 +1209,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.86,
+                "scale": 1,
                 "legacy": {
                     "topInches": 0,
                     "leftInches": -0.5,
@@ -1235,7 +1235,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.7,
+                "scale": 1,
                 "legacy": {
                     "topInches": -0.6,
                     "leftInches": 0,
@@ -1261,7 +1261,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.9,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1,
                     "leftInches": -1.075,
@@ -1355,7 +1355,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.94,
+                "scale": 1,
                 "legacy": {
                     "topInches": -0.75,
                     "leftInches": -0.9,
@@ -1430,7 +1430,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.75,
+                "scale": 1,
                 "legacy": {
                     "topInches": -0.2,
                     "leftInches": -0.3,
@@ -1568,7 +1568,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.85,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1,
                     "leftInches": -0.7,
@@ -1599,7 +1599,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.84,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1,
                     "leftInches": -0.45,
@@ -1678,7 +1678,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.84,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1,
                     "leftInches": -0.45,
@@ -1785,7 +1785,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.91,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1.5,
                     "leftInches": -1,
@@ -1810,7 +1810,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.95,
+                "scale": 1,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1,
@@ -2156,7 +2156,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.75,
+                "scale": 1,
                 "legacy": {
                     "topInches": 0,
                     "leftInches": -0.6,
@@ -2322,7 +2322,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.74,
+                "scale": 1,
                 "legacy": {
                     "topInches": 0,
                     "leftInches": -0.25,
@@ -2452,7 +2452,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.87,
+                "scale": 1,
                 "legacy": {
                     "topInches": -1.25,
                     "leftInches": -0.9,
@@ -2650,7 +2650,7 @@
                     "x": 0.5,
                     "y": 0.5
                 },
-                "scale": 0.95,
+                "scale": 1,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1,

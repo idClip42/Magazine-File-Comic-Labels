@@ -4,6 +4,7 @@ import path from "node:path";
 import chalk from "chalk";
 import { categories, labels, layout } from "./config";
 import { buildEditorConfig } from "./editor-config";
+import { CROP_SCALE_MAX, CROP_SCALE_MIN } from "./crop";
 import { prepareLogos } from "./logo-prep";
 import { ArtCrop, ArtTreatment, LabelConfig, LayoutConfig } from "./types";
 
@@ -75,7 +76,7 @@ function isCropUpdate(value: unknown): value is CropUpdate {
         && Number.isFinite(crop.scale)
         && crop.focus.x >= 0 && crop.focus.x <= 1
         && crop.focus.y >= 0 && crop.focus.y <= 1
-        && crop.scale >= 0.5 && crop.scale <= 5;
+        && crop.scale >= CROP_SCALE_MIN && crop.scale <= CROP_SCALE_MAX;
 }
 
 function isIdentityBandHeight(value: unknown): value is number {

@@ -23,6 +23,18 @@ function copyCrop(crop: CropUpdate): CropUpdate {
     };
 }
 
+function cropsForConfig(config: EditorConfig): Record<string, CropUpdate> {
+    return Object.fromEntries(
+        config.labels.map(label => [label.id, copyCrop(label.art.crop)]),
+    );
+}
+
+function cropsMatch(left: CropUpdate, right: CropUpdate): boolean {
+    return left.focus.x === right.focus.x
+        && left.focus.y === right.focus.y
+        && left.scale === right.scale;
+}
+
 export const useCatalogStore = defineStore("catalog", () => {
     const config = ref<EditorConfig | undefined>(
         window.__COMIC_LABELS_CONFIG__
@@ -30,6 +42,9 @@ export const useCatalogStore = defineStore("catalog", () => {
             : undefined,
     );
     const view = ref<ViewMode>("editor");
+    const savedCrops = ref<Record<string, CropUpdate>>(
+        config.value ? cropsForConfig(config.value) : {},
+    );
     const pendingCrops = ref<Record<string, CropUpdate>>({});
     const pendingLayout = ref<LayoutUpdate>({});
     const saveState = ref<SaveState>("idle");
@@ -46,6 +61,9 @@ export const useCatalogStore = defineStore("catalog", () => {
 
     function setConfig(nextConfig: EditorConfig): void {
         config.value = cloneConfig(nextConfig);
+        savedCrops.value = cropsForConfig(config.value);
+        pendingCrops.value = {};
+        pendingLayout.value = {};
     }
 
     async function refreshFromServer(): Promise<void> {
@@ -61,9 +79,26 @@ export const useCatalogStore = defineStore("catalog", () => {
 
     function updateCrop(id: string, crop: CropUpdate): void {
         const label = labelForId(id);
-        label.art.crop = { ...label.art.crop, ...copyCrop(crop) };
-        pendingCrops.value = { ...pendingCrops.value, [id]: copyCrop(crop) };
+        const nextCrop = copyCrop(crop);
+        label.art.crop = { ...label.art.crop, ...nextCrop };
+        const savedCrop = savedCrops.value[id];
+        if (savedCrop && cropsMatch(nextCrop, savedCrop)) {
+            const { [id]: _discarded, ...remainingCrops } = pendingCrops.value;
+            pendingCrops.value = remainingCrops;
+        } else {
+            pendingCrops.value = { ...pendingCrops.value, [id]: nextCrop };
+        }
         saveState.value = "idle";
+    }
+
+    function revertCrop(id: string): void {
+        const savedCrop = savedCrops.value[id];
+        if (savedCrop) updateCrop(id, savedCrop);
+    }
+
+    function isCropSaved(id: string): boolean {
+        const savedCrop = savedCrops.value[id];
+        return savedCrop ? cropsMatch(labelForId(id).art.crop, savedCrop) : true;
     }
 
     function updateLayout(update: LayoutUpdate): void {
@@ -121,6 +156,14 @@ export const useCatalogStore = defineStore("catalog", () => {
 
             const savedCount = (result.saved?.crops ?? 0)
                 + (result.saved?.layout ?? 0);
+            if (updates.crops) {
+                savedCrops.value = {
+                    ...savedCrops.value,
+                    ...Object.fromEntries(
+                        Object.entries(updates.crops).map(([id, crop]) => [id, copyCrop(crop)]),
+                    ),
+                };
+            }
             pendingCrops.value = {};
             pendingLayout.value = {};
             saveState.value = "saved";
@@ -144,6 +187,8 @@ export const useCatalogStore = defineStore("catalog", () => {
         saveChanges,
         saveStatus,
         updateCrop,
+        revertCrop,
+        isCropSaved,
         updateLayout,
     };
 });

@@ -65,13 +65,20 @@ body {
 .artwork-image {
   position: absolute;
   inset: 0;
-  background-image: var(--art-image);
-  background-position: var(--art-position);
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--art-position);
   filter: saturate(var(--art-saturation)) contrast(var(--art-contrast)) brightness(var(--art-brightness));
   transform: scale(var(--art-zoom));
   transform-origin: var(--art-position);
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
+
+.label.crop-is-interactive { cursor: grab; }
+.label.crop-is-panning { cursor: grabbing; user-select: none; }
 
 .artwork-tint {
   background: var(--category-color);
@@ -198,6 +205,10 @@ body {
 
 .crop-controls {
   width: var(--total-width);
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.12in;
   padding: 0.12in;
   background: #f5f5f5;
   color: #111;
@@ -206,19 +217,14 @@ body {
 }
 
 .crop-controls-title {
-  margin-bottom: 0.07in;
   font-weight: 700;
 }
 
-.crop-controls label {
-  display: grid;
-  grid-template-columns: 0.6in 1fr 0.65in;
-  align-items: center;
-  gap: 0.08in;
-  margin-top: 0.05in;
-}
+.crop-controls-help { margin-top: 0.025in; color: #555; }
 
-.crop-controls input[type="number"] { width: 100%; }
+.crop-controls output { font-variant-numeric: tabular-nums; font-weight: 700; }
+.crop-controls button { cursor: pointer; }
+.crop-controls button:disabled { cursor: default; }
 
 .global-controls {
   position: fixed;
