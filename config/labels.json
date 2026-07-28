@@ -385,10 +385,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/79/Fantastic_Four_Vol_1_352.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6645,
+                    "y": 0.3798
                 },
-                "scale": 1,
+                "scale": 1.996,
                 "legacy": {
                     "topInches": -1.75,
                     "leftInches": -1.75,
@@ -863,10 +863,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/66/Fantastic_Four_Vol_7_19.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.2238,
+                    "y": 0.6021
                 },
-                "scale": 1,
+                "scale": 1.845,
                 "legacy": {
                     "topInches": -2.5,
                     "leftInches": -0.25,
@@ -1206,10 +1206,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Invisible_Woman_Vol_1_3.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.4558,
+                    "y": 0.128
                 },
-                "scale": 1,
+                "scale": 2.671,
                 "legacy": {
                     "topInches": 0,
                     "leftInches": -0.5,
@@ -1352,10 +1352,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5137,
+                    "y": 0.1708
                 },
-                "scale": 1,
+                "scale": 1.866,
                 "legacy": {
                     "topInches": -0.75,
                     "leftInches": -0.9,
@@ -1427,10 +1427,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/New_Mutants_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.204,
+                    "y": 1
                 },
-                "scale": 1,
+                "scale": 1.933,
                 "legacy": {
                     "topInches": -0.2,
                     "leftInches": -0.3,
@@ -2499,10 +2499,10 @@
             "asset": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.2611,
+                    "y": 0.5816
                 },
-                "scale": 1,
+                "scale": 2.608,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1.3,
@@ -2526,10 +2526,10 @@
             "asset": "https://static.wikia.nocookie.net/teentitans/images/7/7b/GraduationDay.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.4814,
+                    "y": 0.3264
                 },
-                "scale": 1,
+                "scale": 2.258,
                 "legacy": {
                     "topInches": -1.75,
                     "leftInches": -1.1,
@@ -2553,10 +2553,10 @@
             "asset": "https://static.wikia.nocookie.net/marvel_dc/images/b/b9/Young_Justice_6.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.3749,
+                    "y": 0.8042
                 },
-                "scale": 1,
+                "scale": 2.858,
                 "legacy": {
                     "topInches": -1.4,
                     "leftInches": -1.1,
@@ -2580,10 +2580,10 @@
             "asset": "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Young_Justice_Vol_1_54.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5586,
+                    "y": 1
                 },
-                "scale": 1,
+                "scale": 1.721,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1.1,
@@ -2647,10 +2647,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5309,
+                    "y": 0.8654
                 },
-                "scale": 1,
+                "scale": 1.862,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1,
