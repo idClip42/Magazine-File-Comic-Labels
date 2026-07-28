@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
+import chalk from "chalk";
 import { categories, labels, layout } from "./config";
 import { prepareLogos } from "./logo-prep";
 import { renderDocument } from "./render";
@@ -86,7 +87,7 @@ async function preloadRemoteImages(): Promise<void> {
     let nextIndex = 0;
     let completed = 0;
 
-    console.log(`Preloading ${assets.length} remote art image(s)…`);
+    console.log(chalk.cyan(`Preloading ${assets.length} remote art image(s)…`));
 
     const worker = async () => {
         while (nextIndex < assets.length) {
@@ -101,11 +102,11 @@ async function preloadRemoteImages(): Promise<void> {
                 const elapsedMilliseconds = performance.now() - startedAt;
                 if (elapsedMilliseconds >= slowPreloadThresholdMilliseconds) {
                     const outcome = imageCache.has(asset) ? "cached" : "failed";
-                    console.log(`Slow art preload (${outcome}, ${(elapsedMilliseconds / 1000).toFixed(1)}s): ${asset}`);
+                    console.log(chalk.yellow(`Slow art preload (${outcome}, ${(elapsedMilliseconds / 1000).toFixed(1)}s): ${asset}`));
                 }
                 completed += 1;
                 if (completed % preloadProgressInterval === 0 || completed === assets.length) {
-                    console.log(`Art preload: ${completed}/${assets.length} complete (${imageCache.size} cached, ${failures.length} failed).`);
+                    console.log(chalk.blue(`Art preload: ${completed}/${assets.length} complete (${imageCache.size} cached, ${failures.length} failed).`));
                 }
             }
         }
@@ -114,11 +115,12 @@ async function preloadRemoteImages(): Promise<void> {
     await Promise.all(Array.from({ length: Math.min(preloadConcurrency, assets.length) }, worker));
     const megabytes = [...imageCache.values()].reduce((total, image) => total + image.body.length, 0) / 1024 / 1024;
     const elapsedSeconds = (performance.now() - preloadStartedAt) / 1000;
-    console.log(`Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${megabytes.toFixed(1)} MB in memory) in ${elapsedSeconds.toFixed(1)}s.`);
+    const summary = `Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${megabytes.toFixed(1)} MB in memory) in ${elapsedSeconds.toFixed(1)}s.`;
+    console.log(failures.length > 0 ? chalk.yellow(summary) : chalk.green(summary));
     if (failures.length > 0) {
         const examples = failures.slice(0, 3).join("; ");
         const remainder = failures.length > 3 ? ` (${failures.length - 3} more)` : "";
-        console.warn(`Could not preload ${failures.length} art image(s): ${examples}${remainder}`);
+        console.warn(chalk.red(`Could not preload ${failures.length} art image(s): ${examples}${remainder}`));
     }
 }
 
@@ -227,11 +229,11 @@ const server = http.createServer((request, response) => {
 async function start(): Promise<void> {
     await preloadRemoteImages();
     server.listen(port, host, () => {
-        console.log(`Crop editor available at http://${host}:${port}`);
+        console.log(chalk.green.bold(`Crop editor available at http://${host}:${port}`));
     });
 }
 
 void start().catch(error => {
-    console.error(error);
+    console.error(chalk.red(error));
     process.exitCode = 1;
 });
