@@ -4,6 +4,7 @@ import type { EditorConfig, LabelConfig } from "../../../src/types";
 import {
     type CropUpdate,
     type EditorUpdates,
+    type LayoutUpdate,
     isLiveEditor,
     requestLiveConfig,
     type ViewMode,
@@ -30,7 +31,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     );
     const view = ref<ViewMode>("editor");
     const pendingCrops = ref<Record<string, CropUpdate>>({});
-    const pendingIdentityBandHeight = ref<number | undefined>();
+    const pendingLayout = ref<LayoutUpdate>({});
     const isAdjustingIdentityBand = ref(false);
     const saveState = ref<SaveState>("idle");
     const saveMessage = ref("");
@@ -41,7 +42,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     const isSaveAvailable = computed(() => isLiveEditor());
     const pendingChangeCount = computed(() =>
         Object.keys(pendingCrops.value).length
-        + (pendingIdentityBandHeight.value === undefined ? 0 : 1),
+        + Object.keys(pendingLayout.value).length,
     );
     const hasPendingChanges = computed(() => pendingChangeCount.value > 0);
 
@@ -67,10 +68,20 @@ export const useCatalogStore = defineStore("catalog", () => {
         saveState.value = "idle";
     }
 
-    function updateIdentityBandHeight(height: number): void {
-        if (!config.value || !Number.isFinite(height)) return;
-        config.value.layout.identityBand.heightInches = height;
-        pendingIdentityBandHeight.value = height;
+    function updateLayout(update: LayoutUpdate): void {
+        if (!config.value) return;
+        const layout = config.value.layout;
+        if (update.artTreatment) layout.artTreatment = { ...update.artTreatment };
+        if (update.identityBandHeightInches !== undefined) {
+            layout.identityBand.heightInches = update.identityBandHeightInches;
+        }
+        if (update.metadataBandHeightInches !== undefined) {
+            layout.metadataBand.heightInches = update.metadataBandHeightInches;
+        }
+        if (update.typography) layout.typography = { ...update.typography };
+        if (update.logoPalette) layout.logoPalette = { ...update.logoPalette };
+        if (update.logoOutline) layout.logoOutline = { ...update.logoOutline };
+        pendingLayout.value = { ...pendingLayout.value, ...structuredClone(update) };
         saveState.value = "idle";
     }
 
@@ -113,12 +124,10 @@ export const useCatalogStore = defineStore("catalog", () => {
 
         const updates: EditorUpdates = {
             crops: pendingCrops.value,
-            identityBandHeightInches: pendingIdentityBandHeight.value,
+            layout: pendingLayout.value,
         };
         if (Object.keys(updates.crops ?? {}).length === 0) delete updates.crops;
-        if (updates.identityBandHeightInches === undefined) {
-            delete updates.identityBandHeightInches;
-        }
+        if (Object.keys(updates.layout ?? {}).length === 0) delete updates.layout;
 
         saveState.value = "saving";
         try {
@@ -129,14 +138,14 @@ export const useCatalogStore = defineStore("catalog", () => {
             });
             const result = await response.json() as {
                 error?: string;
-                saved?: { crops: number; identityBand: boolean };
+                saved?: { crops: number; layout: number };
             };
             if (!response.ok) throw new Error(result.error ?? "Unable to save configuration changes.");
 
             const savedCount = (result.saved?.crops ?? 0)
-                + (result.saved?.identityBand ? 1 : 0);
+                + (result.saved?.layout ?? 0);
             pendingCrops.value = {};
-            pendingIdentityBandHeight.value = undefined;
+            pendingLayout.value = {};
             saveState.value = "saved";
             saveMessage.value = `Saved ${savedCount} change${savedCount === 1 ? "" : "s"} to configuration.`;
         } catch (error) {
@@ -159,7 +168,7 @@ export const useCatalogStore = defineStore("catalog", () => {
         saveChanges,
         saveStatus,
         updateCrop,
-        updateIdentityBandHeight,
+        updateLayout,
         beginIdentityBandAdjustment,
         endIdentityBandAdjustment,
     };

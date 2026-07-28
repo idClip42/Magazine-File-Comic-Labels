@@ -1,12 +1,27 @@
-import type { EditorConfig, LabelConfig, LayoutConfig } from "../../src/types";
+import type {
+    ArtTreatment,
+    EditorConfig,
+    LabelConfig,
+    LayoutConfig,
+} from "../../src/types";
 
 export type ViewMode = "editor" | "shelves";
 
 export type CropUpdate = Pick<LabelConfig["art"]["crop"], "focus" | "scale">;
 
+/** The deliberately limited shared-layout settings editable from the browser. */
+export type LayoutUpdate = {
+    artTreatment?: ArtTreatment;
+    identityBandHeightInches?: number;
+    metadataBandHeightInches?: number;
+    typography?: LayoutConfig["typography"];
+    logoPalette?: LayoutConfig["logoPalette"];
+    logoOutline?: LayoutConfig["logoOutline"];
+};
+
 export type EditorUpdates = {
     crops?: Record<string, CropUpdate>;
-    identityBandHeightInches?: number;
+    layout?: LayoutUpdate;
 };
 
 export function staticAssetUrl(layout: LayoutConfig, asset: string): string {

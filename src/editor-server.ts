@@ -5,7 +5,7 @@ import chalk from "chalk";
 import { categories, labels, layout } from "./config";
 import { buildEditorConfig } from "./editor-config";
 import { prepareLogos } from "./logo-prep";
-import { ArtCrop, LabelConfig } from "./types";
+import { ArtCrop, ArtTreatment, LabelConfig, LayoutConfig } from "./types";
 
 const host = "127.0.0.1";
 const port = Number(process.env.CROP_EDITOR_PORT ?? 4173);
@@ -36,9 +36,18 @@ const applicationTypes: Record<string, string> = {
 };
 
 type CropUpdate = Pick<ArtCrop, "focus" | "scale">;
+type LayoutUpdate = {
+    artTreatment?: ArtTreatment;
+    identityBandHeightInches?: number;
+    metadataBandHeightInches?: number;
+    typography?: LayoutConfig["typography"];
+    logoPalette?: LayoutConfig["logoPalette"];
+    logoOutline?: LayoutConfig["logoOutline"];
+};
+
 type EditorUpdates = {
     crops?: Record<string, CropUpdate>;
-    identityBandHeightInches?: number;
+    layout?: LayoutUpdate;
 };
 type CachedImage = { body: Buffer; contentType: string };
 
@@ -72,6 +81,83 @@ function isCropUpdate(value: unknown): value is CropUpdate {
 function isIdentityBandHeight(value: unknown): value is number {
     return typeof value === "number" && Number.isFinite(value)
         && value >= 0.5 && value <= 3.5;
+}
+
+function isMetadataBandHeight(value: unknown): value is number {
+    return typeof value === "number" && Number.isFinite(value)
+        && value >= 0.5 && value <= 2;
+}
+
+function isArtTreatment(value: unknown): value is ArtTreatment {
+    if (!value || typeof value !== "object") return false;
+    const treatment = value as ArtTreatment;
+    return Number.isFinite(treatment.saturation) && treatment.saturation >= 0 && treatment.saturation <= 1
+        && Number.isFinite(treatment.contrast) && treatment.contrast >= 0.5 && treatment.contrast <= 1.5
+        && Number.isFinite(treatment.brightness) && treatment.brightness >= 0.5 && treatment.brightness <= 1.5
+        && Number.isFinite(treatment.tintOpacity) && treatment.tintOpacity >= 0 && treatment.tintOpacity <= 1
+        && ["color", "multiply", "overlay", "soft-light"].includes(treatment.tintBlendMode);
+}
+
+function isTypography(value: unknown): value is LayoutConfig["typography"] {
+    if (!value || typeof value !== "object") return false;
+    const typography = value as LayoutConfig["typography"];
+    return Number.isFinite(typography.yearsSizeInches) && typography.yearsSizeInches >= 0.15 && typography.yearsSizeInches <= 0.5
+        && Number.isFinite(typography.metadataSizeInches) && typography.metadataSizeInches >= 0.08 && typography.metadataSizeInches <= 0.25
+        && Number.isFinite(typography.bandGapInches) && typography.bandGapInches >= 0 && typography.bandGapInches <= 0.15;
+}
+
+function isLogoPalette(value: unknown): value is LayoutConfig["logoPalette"] {
+    return !!value && typeof value === "object"
+        && Number.isFinite((value as LayoutConfig["logoPalette"]).mutedSaturationMultiplier)
+        && (value as LayoutConfig["logoPalette"]).mutedSaturationMultiplier >= 0
+        && (value as LayoutConfig["logoPalette"]).mutedSaturationMultiplier <= 1;
+}
+
+function isLogoOutline(value: unknown): value is LayoutConfig["logoOutline"] {
+    if (!value || typeof value !== "object") return false;
+    const outline = value as LayoutConfig["logoOutline"];
+    return typeof outline.enabled === "boolean"
+        && /^#[0-9a-f]{6}$/i.test(outline.color)
+        && Number.isInteger(outline.widthPixels) && outline.widthPixels >= 0 && outline.widthPixels <= 6
+        && ["round", "miter", "bevel"].includes(outline.lineJoin);
+}
+
+function validateLayoutUpdate(update: LayoutUpdate): void {
+    if (!update || typeof update !== "object" || Array.isArray(update)) {
+        throw new Error("Expected layout changes to be an object.");
+    }
+    const allowedFields = new Set([
+        "artTreatment",
+        "identityBandHeightInches",
+        "metadataBandHeightInches",
+        "typography",
+        "logoPalette",
+        "logoOutline",
+    ]);
+    if (Object.keys(update).some(key => !allowedFields.has(key))) {
+        throw new Error("The requested layout setting cannot be edited here.");
+    }
+    if (Object.keys(update).length === 0) {
+        throw new Error("Expected at least one layout change.");
+    }
+    if (update.artTreatment !== undefined && !isArtTreatment(update.artTreatment)) {
+        throw new Error("Art-treatment values are outside their allowed ranges.");
+    }
+    if (update.identityBandHeightInches !== undefined && !isIdentityBandHeight(update.identityBandHeightInches)) {
+        throw new Error("Identity-band height must be between 0.5 and 3.5 inches.");
+    }
+    if (update.metadataBandHeightInches !== undefined && !isMetadataBandHeight(update.metadataBandHeightInches)) {
+        throw new Error("Metadata-band height must be between 0.5 and 2 inches.");
+    }
+    if (update.typography !== undefined && !isTypography(update.typography)) {
+        throw new Error("Typography values are outside their allowed ranges.");
+    }
+    if (update.logoPalette !== undefined && !isLogoPalette(update.logoPalette)) {
+        throw new Error("Muted-logo saturation must be between 0 and 1.");
+    }
+    if (update.logoOutline !== undefined && !isLogoOutline(update.logoOutline)) {
+        throw new Error("Logo-outline values are outside their allowed ranges.");
+    }
 }
 
 function formatLabels(configuredLabels: LabelConfig[], lineEnding: string): string {
@@ -214,12 +300,10 @@ function serveLocalImage(request: http.IncomingMessage, response: http.ServerRes
     return true;
 }
 
-function saveChanges(updates: EditorUpdates): { crops: number; identityBand: boolean } {
+function saveChanges(updates: EditorUpdates): { crops: number; layout: number } {
     const crops = updates.crops ?? {};
-    if (updates.identityBandHeightInches !== undefined
-        && !isIdentityBandHeight(updates.identityBandHeightInches)) {
-        throw new Error("Identity-band height must be between 0.5 and 3.5 inches.");
-    }
+    const layoutUpdate = updates.layout;
+    if (layoutUpdate) validateLayoutUpdate(layoutUpdate);
 
     for (const [id, crop] of Object.entries(crops)) {
         if (!labelById.has(id)) throw new Error(`Unknown label ID: ${id}`);
@@ -241,8 +325,17 @@ function saveChanges(updates: EditorUpdates): { crops: number; identityBand: boo
         fs.writeFileSync(labelsPath, formatLabels(labels, lineEnding), "utf8");
     }
 
-    if (updates.identityBandHeightInches !== undefined) {
-        layout.identityBand.heightInches = updates.identityBandHeightInches;
+    if (layoutUpdate) {
+        if (layoutUpdate.artTreatment) layout.artTreatment = layoutUpdate.artTreatment;
+        if (layoutUpdate.identityBandHeightInches !== undefined) {
+            layout.identityBand.heightInches = layoutUpdate.identityBandHeightInches;
+        }
+        if (layoutUpdate.metadataBandHeightInches !== undefined) {
+            layout.metadataBand.heightInches = layoutUpdate.metadataBandHeightInches;
+        }
+        if (layoutUpdate.typography) layout.typography = layoutUpdate.typography;
+        if (layoutUpdate.logoPalette) layout.logoPalette = layoutUpdate.logoPalette;
+        if (layoutUpdate.logoOutline) layout.logoOutline = layoutUpdate.logoOutline;
         const layoutSource = fs.readFileSync(layoutPath, "utf8");
         const layoutLineEnding = layoutSource.includes("\r\n") ? "\r\n" : "\n";
         fs.writeFileSync(
@@ -254,7 +347,7 @@ function saveChanges(updates: EditorUpdates): { crops: number; identityBand: boo
 
     return {
         crops: Object.keys(crops).length,
-        identityBand: updates.identityBandHeightInches !== undefined,
+        layout: layoutUpdate ? Object.keys(layoutUpdate).length : 0,
     };
 }
 
@@ -296,7 +389,11 @@ const server = http.createServer((request, response) => {
                 && (typeof payload.crops !== "object" || Array.isArray(payload.crops))) {
                 throw new Error("Expected crops to be an object.");
             }
-            if (payload.crops === undefined && payload.identityBandHeightInches === undefined) {
+            if (payload.layout !== undefined
+                && (typeof payload.layout !== "object" || Array.isArray(payload.layout))) {
+                throw new Error("Expected layout changes to be an object.");
+            }
+            if (payload.crops === undefined && payload.layout === undefined) {
                 throw new Error("Expected at least one editor change.");
             }
             sendJson(response, 200, { saved: saveChanges(payload) });
