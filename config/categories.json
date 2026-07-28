@@ -100,13 +100,13 @@
         "color": "#C65E32",
         "logos": {
             "secret-wars": {
-                "asset": "https://shlocko.wordpress.com/wp-content/uploads/2023/03/secret_wars_logo.webp"
+                "asset": "logos/sw-logo.svg"
             },
             "what-if": {
-                "asset": "logos/whatif.jpg"
+                "asset": "logos/what-if-logo.svg"
             },
             "official-handbook-of-the-marvel-universe": {
-                "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Official_Handbook_of_the_Marvel_Universe_Vol_1_Logo.png"
+                "asset": "logos/handbook-logo.svg"
             }
         }
     },
