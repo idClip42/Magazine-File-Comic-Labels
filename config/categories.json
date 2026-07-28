@@ -136,19 +136,19 @@
         "color": "#9A6536",
         "logos": {
             "indiana-jones": {
-                "asset": "https://img1.picmix.com/output/stamp/normal/8/4/2/3/663248_18130.png"
+                "asset": "logos/indy-logo.svg"
             },
             "the-league-of-extraordinary-gentlemen": {
-                "asset": "https://stripinfo.be/images/images/380000/383004.jpg"
+                "asset": "logos/lxg-logo.svg"
             },
             "jonny-quest": {
-                "asset": "logos/quest.jpg"
+                "asset": "logos/quest-logo.svg"
             },
             "007": {
-                "asset": "https://logos-world.net/wp-content/uploads/2023/06/007-Logo.png"
+                "asset": "logos/007-logo.svg"
             },
             "the-shadow": {
-                "asset": "logos/shadow.jpg"
+                "asset": "logos/shadow-logo.svg"
             }
         }
     },
