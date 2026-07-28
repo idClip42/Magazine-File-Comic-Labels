@@ -10,6 +10,7 @@ import { ArtCrop, LabelConfig } from "./types";
 const host = "127.0.0.1";
 const port = Number(process.env.CROP_EDITOR_PORT ?? 4173);
 const labelsPath = path.join(process.cwd(), "config", "labels.json");
+const layoutPath = path.join(process.cwd(), "config", "layout.json");
 const outputDirectory = path.join(process.cwd(), "dist", "v2");
 const maxRequestBytes = 1024 * 1024;
 const preloadConcurrency = 12;
@@ -26,6 +27,10 @@ const imageTypes: Record<string, string> = {
 };
 
 type CropUpdate = Pick<ArtCrop, "focus" | "scale">;
+type EditorUpdates = {
+    crops?: Record<string, CropUpdate>;
+    identityBandHeightInches?: number;
+};
 type CachedImage = { body: Buffer; contentType: string };
 
 const labelById = new Map(labels.map(label => [label.id, label]));
@@ -53,6 +58,11 @@ function isCropUpdate(value: unknown): value is CropUpdate {
         && crop.focus.x >= 0 && crop.focus.x <= 1
         && crop.focus.y >= 0 && crop.focus.y <= 1
         && crop.scale >= 0.5 && crop.scale <= 5;
+}
+
+function isIdentityBandHeight(value: unknown): value is number {
+    return typeof value === "number" && Number.isFinite(value)
+        && value >= 0.5 && value <= 3.5;
 }
 
 function formatLabels(configuredLabels: LabelConfig[], lineEnding: string): string {
@@ -172,7 +182,13 @@ function serveLocalImage(request: http.IncomingMessage, response: http.ServerRes
     return true;
 }
 
-function saveCrops(crops: Record<string, CropUpdate>): number {
+function saveChanges(updates: EditorUpdates): { crops: number; identityBand: boolean } {
+    const crops = updates.crops ?? {};
+    if (updates.identityBandHeightInches !== undefined
+        && !isIdentityBandHeight(updates.identityBandHeightInches)) {
+        throw new Error("Identity-band height must be between 0.5 and 3.5 inches.");
+    }
+
     for (const [id, crop] of Object.entries(crops)) {
         if (!labelById.has(id)) throw new Error(`Unknown label ID: ${id}`);
         if (!isCropUpdate(crop)) throw new Error(`Invalid crop values for ${id}`);
@@ -187,10 +203,27 @@ function saveCrops(crops: Record<string, CropUpdate>): number {
         };
     }
 
-    const source = fs.readFileSync(labelsPath, "utf8");
-    const lineEnding = source.includes("\r\n") ? "\r\n" : "\n";
-    fs.writeFileSync(labelsPath, formatLabels(labels, lineEnding), "utf8");
-    return Object.keys(crops).length;
+    if (Object.keys(crops).length > 0) {
+        const source = fs.readFileSync(labelsPath, "utf8");
+        const lineEnding = source.includes("\r\n") ? "\r\n" : "\n";
+        fs.writeFileSync(labelsPath, formatLabels(labels, lineEnding), "utf8");
+    }
+
+    if (updates.identityBandHeightInches !== undefined) {
+        layout.identityBand.heightInches = updates.identityBandHeightInches;
+        const layoutSource = fs.readFileSync(layoutPath, "utf8");
+        const layoutLineEnding = layoutSource.includes("\r\n") ? "\r\n" : "\n";
+        fs.writeFileSync(
+            layoutPath,
+            `${JSON.stringify(layout, null, 4)}${layoutLineEnding}`,
+            "utf8",
+        );
+    }
+
+    return {
+        crops: Object.keys(crops).length,
+        identityBand: updates.identityBandHeightInches !== undefined,
+    };
 }
 
 const server = http.createServer((request, response) => {
@@ -202,7 +235,7 @@ const server = http.createServer((request, response) => {
 
     if (serveArtwork(request, response) || serveLocalImage(request, response)) return;
 
-    if (request.method !== "PUT" || request.url !== "/api/crops") {
+    if (request.method !== "PUT" || request.url !== "/api/edits") {
         sendJson(response, 404, { error: "Not found." });
         return;
     }
@@ -215,11 +248,15 @@ const server = http.createServer((request, response) => {
     });
     request.on("end", () => {
         try {
-            const payload = JSON.parse(body) as { crops?: unknown };
-            if (!payload.crops || typeof payload.crops !== "object" || Array.isArray(payload.crops)) {
-                throw new Error("Expected a crops object.");
+            const payload = JSON.parse(body) as EditorUpdates;
+            if (payload.crops !== undefined
+                && (typeof payload.crops !== "object" || Array.isArray(payload.crops))) {
+                throw new Error("Expected crops to be an object.");
             }
-            sendJson(response, 200, { saved: saveCrops(payload.crops as Record<string, CropUpdate>) });
+            if (payload.crops === undefined && payload.identityBandHeightInches === undefined) {
+                throw new Error("Expected at least one editor change.");
+            }
+            sendJson(response, 200, { saved: saveChanges(payload) });
         } catch (error) {
             sendJson(response, 400, { error: error instanceof Error ? error.message : "Invalid request." });
         }

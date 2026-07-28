@@ -257,6 +257,8 @@ export function renderDocument(
     .save-crops-bar { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; align-items: center; gap: 10px; max-width: min(520px, calc(100vw - 32px)); padding: 10px 12px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); font-size: 13px; }
     .save-crops-bar button { cursor: pointer; white-space: nowrap; }
     .save-crops-bar button:disabled { cursor: default; }
+    .identity-band-height-control { display: grid; grid-template-columns: auto minmax(90px, 1fr) auto; align-items: center; gap: 6px; min-width: 230px; }
+    .identity-band-height-control output { min-width: 3.3em; font-variant-numeric: tabular-nums; }
     .view-switcher { position: fixed; top: 16px; right: 16px; z-index: 11; display: flex; gap: 4px; padding: 4px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
     .view-switcher button { padding: 7px 10px; border: 0; border-radius: 4px; background: transparent; cursor: pointer; font: inherit; }
     .view-switcher button[aria-pressed="true"] { background: #222; color: #fff; }
@@ -282,26 +284,42 @@ export function renderDocument(
   <button type="button" data-view="shelves" aria-pressed="false">Shelf overview</button>
 </nav>
 <div class="save-crops-bar" aria-live="polite">
-  <button type="button" data-save-all-crops disabled>Save all crop changes</button>
-  <span data-save-crops-status>Start the local editor with <code>npm start</code> to save to config/labels.json.</span>
+  <label class="identity-band-height-control">Identity height <input type="range" min="0.5" max="3.5" step="0.01" value="${layout.identityBand.heightInches}" data-identity-band-height><output data-identity-band-height-output>${layout.identityBand.heightInches.toFixed(2)}″</output></label>
+  <button type="button" data-save-all-changes disabled>Save changes</button>
+  <span data-save-status>Start the local editor with <code>npm start</code> to save configuration changes.</span>
 </div>
 ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(label))).join("\n")}
 ${renderShelfView(labels, preparedLogos, artworkUrlForLabel)}
 <script>
   const pendingCrops = new Map();
-  const saveButton = document.querySelector('[data-save-all-crops]');
-  const saveStatus = document.querySelector('[data-save-crops-status]');
+  let pendingIdentityBandHeight;
+  const saveButton = document.querySelector('[data-save-all-changes]');
+  const saveStatus = document.querySelector('[data-save-status]');
+  const identityBandHeightInput = document.querySelector('[data-identity-band-height]');
+  const identityBandHeightOutput = document.querySelector('[data-identity-band-height-output]');
+  const identityBandBottom = ${layout.identityBand.bottomInches};
+  const overwrap = ${layout.overwrapInches};
   const isLocalEditor = location.protocol === 'http:' || location.protocol === 'https:';
   const updateSaveControls = () => {
-    saveButton.disabled = !isLocalEditor || pendingCrops.size === 0;
+    const pendingCount = pendingCrops.size + (pendingIdentityBandHeight === undefined ? 0 : 1);
+    saveButton.disabled = !isLocalEditor || pendingCount === 0;
     if (!isLocalEditor) {
-      saveStatus.textContent = 'Start the local editor with npm start to save to config/labels.json.';
-    } else if (pendingCrops.size > 0) {
-      saveStatus.textContent = pendingCrops.size + ' crop change' + (pendingCrops.size === 1 ? '' : 's') + ' ready to save.';
+      saveStatus.textContent = 'Start the local editor with npm start to save configuration changes.';
+    } else if (pendingCount > 0) {
+      saveStatus.textContent = pendingCount + ' change' + (pendingCount === 1 ? '' : 's') + ' ready to save.';
     } else {
-      saveStatus.textContent = 'All crop changes are saved.';
+      saveStatus.textContent = 'All changes are saved.';
     }
   };
+  identityBandHeightInput.addEventListener('input', event => {
+    const height = Number(event.target.value);
+    if (!Number.isFinite(height)) return;
+    document.documentElement.style.setProperty('--identity-height', height + 'in');
+    document.documentElement.style.setProperty('--identity-top', (overwrap + identityBandBottom - height) + 'in');
+    identityBandHeightOutput.value = height.toFixed(2) + '″';
+    pendingIdentityBandHeight = height;
+    updateSaveControls();
+  });
   document.querySelectorAll('.crop-controls').forEach(controls => {
     const editor = controls.closest('.label-editor');
     const label = editor.querySelector('.label');
@@ -328,23 +346,25 @@ ${renderShelfView(labels, preparedLogos, artworkUrlForLabel)}
     });
   });
   saveButton.addEventListener('click', async () => {
-    if (pendingCrops.size === 0) return;
+    if (pendingCrops.size === 0 && pendingIdentityBandHeight === undefined) return;
     saveButton.disabled = true;
-    saveStatus.textContent = 'Saving crop changes…';
+    saveStatus.textContent = 'Saving changes…';
     try {
-      const response = await fetch('/api/crops', {
+      const response = await fetch('/api/edits', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ crops: Object.fromEntries(pendingCrops) }),
+        body: JSON.stringify({ crops: Object.fromEntries(pendingCrops), identityBandHeightInches: pendingIdentityBandHeight }),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || 'Unable to save crop changes.');
       pendingCrops.clear();
+      pendingIdentityBandHeight = undefined;
       updateSaveControls();
-      saveStatus.textContent = 'Saved ' + result.saved + ' crop change' + (result.saved === 1 ? '' : 's') + ' to config/labels.json.';
+      const savedCount = result.saved.crops + (result.saved.identityBand ? 1 : 0);
+      saveStatus.textContent = 'Saved ' + savedCount + ' change' + (savedCount === 1 ? '' : 's') + ' to configuration.';
     } catch (error) {
       saveStatus.textContent = 'Save failed: ' + error.message;
-      saveButton.disabled = !isLocalEditor || pendingCrops.size === 0;
+      saveButton.disabled = !isLocalEditor || (pendingCrops.size === 0 && pendingIdentityBandHeight === undefined);
     }
   });
   const updateShelfLabelScale = () => {
