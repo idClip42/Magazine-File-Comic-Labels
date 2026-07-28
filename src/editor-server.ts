@@ -12,6 +12,7 @@ const labelsPath = path.join(process.cwd(), "config", "labels.json");
 const outputDirectory = path.join(process.cwd(), "dist", "v2");
 const maxRequestBytes = 1024 * 1024;
 const preloadConcurrency = 6;
+const preloadProgressInterval = 10;
 const imageTypes: Record<string, string> = {
     ".avif": "image/avif",
     ".gif": "image/gif",
@@ -81,6 +82,7 @@ async function preloadRemoteImages(): Promise<void> {
     const assets = [...new Set(labels.map(label => label.art.asset).filter(isRemoteImage))];
     const failures: string[] = [];
     let nextIndex = 0;
+    let completed = 0;
 
     console.log(`Preloading ${assets.length} remote art image(s)…`);
 
@@ -92,6 +94,11 @@ async function preloadRemoteImages(): Promise<void> {
             } catch (error) {
                 const message = error instanceof Error ? error.message : "Unknown error";
                 failures.push(`${asset} (${message})`);
+            } finally {
+                completed += 1;
+                if (completed % preloadProgressInterval === 0 || completed === assets.length) {
+                    console.log(`Art preload: ${completed}/${assets.length} complete (${imageCache.size} cached, ${failures.length} failed).`);
+                }
             }
         }
     };
@@ -99,7 +106,11 @@ async function preloadRemoteImages(): Promise<void> {
     await Promise.all(Array.from({ length: Math.min(preloadConcurrency, assets.length) }, worker));
     const megabytes = [...imageCache.values()].reduce((total, image) => total + image.body.length, 0) / 1024 / 1024;
     console.log(`Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${megabytes.toFixed(1)} MB in memory).`);
-    for (const failure of failures) console.warn(`Could not preload art: ${failure}`);
+    if (failures.length > 0) {
+        const examples = failures.slice(0, 3).join("; ");
+        const remainder = failures.length > 3 ? ` (${failures.length - 3} more)` : "";
+        console.warn(`Could not preload ${failures.length} art image(s): ${examples}${remainder}`);
+    }
 }
 
 function serveArtwork(request: http.IncomingMessage, response: http.ServerResponse): boolean {
