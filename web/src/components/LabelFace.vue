@@ -25,19 +25,6 @@ const preparedLogo = computed(() =>
     catalog.config?.preparedLogos[`${props.label.category}/${props.label.logo}`],
 );
 
-const logoViewBox = computed(() => {
-    const viewBox = preparedLogo.value?.match(/\bviewBox\s*=\s*(["'])([^"']+)\1/i)?.[2];
-    const values = viewBox?.trim().split(/\s+/).map(Number);
-    if (!values || values.length !== 4 || !values.every(Number.isFinite)) {
-        return { value: "0 0 3 1", x: 0, y: 0, width: 3, height: 1 };
-    }
-
-    const [x, y, width, height] = values;
-    return width > 0 && height > 0
-        ? { value: viewBox!, x, y, width, height }
-        : { value: "0 0 3 1", x: 0, y: 0, width: 3, height: 1 };
-});
-
 const artTreatment = computed(() => ({
     ...catalog.layout!.artTreatment,
     ...category.value.artTreatment,
@@ -103,17 +90,6 @@ const years = computed(() => {
         :src="rasterLogoUrl"
         :alt="`${category.name} logo`"
       />
-      <div class="logo logo-proxy inline-logo" aria-hidden="true">
-        <svg :viewBox="logoViewBox.value" preserveAspectRatio="xMidYMid meet">
-          <rect
-            :x="logoViewBox.x"
-            :y="logoViewBox.y"
-            :width="logoViewBox.width"
-            :height="logoViewBox.height"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
       <div
         v-if="years || catalog.layout?.years.reserveSpaceWhenEmpty"
         class="years"

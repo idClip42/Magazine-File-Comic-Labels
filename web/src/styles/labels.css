@@ -111,25 +111,6 @@ body {
   gap: var(--band-gap);
 }
 
-/*
- * A height drag needs only the shelf-level hierarchy: category color, band
- * position, years, and logo footprint. Suppress the expensive art/filter/SVG
- * layers until the gesture settles, then paint the full labels again.
- */
-.identity-band-adjusting .artwork,
-.identity-band-adjusting .artwork-tint,
-.identity-band-adjusting .top-rule,
-.identity-band-adjusting .finger-hole-guide,
-.identity-band-adjusting .metadata-band { display: none; }
-
-.identity-band .logo-proxy { display: none; }
-
-.identity-band-adjusting .identity-band .logo:not(.logo-proxy) { display: none; }
-
-.identity-band-adjusting .identity-band .logo-proxy {
-  display: block;
-}
-
 .logo {
   display: block;
   max-width: var(--logo-max-width);

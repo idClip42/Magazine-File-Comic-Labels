@@ -24,16 +24,9 @@ void catalog.refreshFromServer();
 </script>
 
 <template>
-  <main
-    v-if="catalog.config"
-    class="app"
-    :class="[
-      `${catalog.view}-view`,
-      { 'identity-band-adjusting': catalog.isAdjustingIdentityBand },
-    ]"
-  >
+  <main v-if="catalog.config" class="app" :class="`${catalog.view}-view`">
     <ViewSwitcher />
-    <GlobalControls />
+    <GlobalControls v-if="catalog.view === 'editor'" />
 
     <section class="label-grid" aria-label="Comic magazine-file labels">
       <LabelEditor v-for="label in catalog.labels" :key="label.id" :label="label" />

@@ -32,10 +32,8 @@ export const useCatalogStore = defineStore("catalog", () => {
     const view = ref<ViewMode>("editor");
     const pendingCrops = ref<Record<string, CropUpdate>>({});
     const pendingLayout = ref<LayoutUpdate>({});
-    const isAdjustingIdentityBand = ref(false);
     const saveState = ref<SaveState>("idle");
     const saveMessage = ref("");
-    let identityLogoRestoreFrame: number | undefined;
 
     const labels = computed(() => config.value?.labels ?? []);
     const layout = computed(() => config.value?.layout);
@@ -83,27 +81,6 @@ export const useCatalogStore = defineStore("catalog", () => {
         if (update.logoOutline) layout.logoOutline = { ...update.logoOutline };
         pendingLayout.value = { ...pendingLayout.value, ...structuredClone(update) };
         saveState.value = "idle";
-    }
-
-    /**
-     * Resizing the identity band invalidates every inline SVG in the shelf
-     * overview. Keep their inexpensive layout proxy visible during a drag and
-     * let the browser repaint the real logos only after it settles.
-     */
-    function beginIdentityBandAdjustment(): void {
-        if (identityLogoRestoreFrame !== undefined) {
-            window.cancelAnimationFrame(identityLogoRestoreFrame);
-            identityLogoRestoreFrame = undefined;
-        }
-        isAdjustingIdentityBand.value = true;
-    }
-
-    function endIdentityBandAdjustment(): void {
-        if (!isAdjustingIdentityBand.value || identityLogoRestoreFrame !== undefined) return;
-        identityLogoRestoreFrame = window.requestAnimationFrame(() => {
-            isAdjustingIdentityBand.value = false;
-            identityLogoRestoreFrame = undefined;
-        });
     }
 
     function saveStatus(): string {
@@ -160,7 +137,6 @@ export const useCatalogStore = defineStore("catalog", () => {
         labels,
         layout,
         view,
-        isAdjustingIdentityBand,
         isSaveAvailable,
         pendingChangeCount,
         hasPendingChanges,
@@ -169,7 +145,5 @@ export const useCatalogStore = defineStore("catalog", () => {
         saveStatus,
         updateCrop,
         updateLayout,
-        beginIdentityBandAdjustment,
-        endIdentityBandAdjustment,
     };
 });
