@@ -59,7 +59,7 @@ function updateLogoOutline(field: keyof LayoutConfig["logoOutline"], event: Even
 
 <template>
   <aside class="global-controls" aria-label="Global label controls" aria-live="polite">
-    <details open>
+    <details>
       <summary>Artwork treatment</summary>
       <label>
         Saturation
@@ -92,7 +92,7 @@ function updateLogoOutline(field: keyof LayoutConfig["logoOutline"], event: Even
       </label>
     </details>
 
-    <details open>
+    <details>
       <summary>Bands</summary>
       <label>
         Identity height
