@@ -13,6 +13,7 @@ const outputDirectory = path.join(process.cwd(), "dist", "v2");
 const maxRequestBytes = 1024 * 1024;
 const preloadConcurrency = 6;
 const preloadProgressInterval = 10;
+const slowPreloadThresholdMilliseconds = 2_000;
 const imageTypes: Record<string, string> = {
     ".avif": "image/avif",
     ".gif": "image/gif",
@@ -89,12 +90,18 @@ async function preloadRemoteImages(): Promise<void> {
     const worker = async () => {
         while (nextIndex < assets.length) {
             const asset = assets[nextIndex++];
+            const startedAt = performance.now();
             try {
                 await cacheRemoteImage(asset);
             } catch (error) {
                 const message = error instanceof Error ? error.message : "Unknown error";
                 failures.push(`${asset} (${message})`);
             } finally {
+                const elapsedMilliseconds = performance.now() - startedAt;
+                if (elapsedMilliseconds >= slowPreloadThresholdMilliseconds) {
+                    const outcome = imageCache.has(asset) ? "cached" : "failed";
+                    console.log(`Slow art preload (${outcome}, ${(elapsedMilliseconds / 1000).toFixed(1)}s): ${asset}`);
+                }
                 completed += 1;
                 if (completed % preloadProgressInterval === 0 || completed === assets.length) {
                     console.log(`Art preload: ${completed}/${assets.length} complete (${imageCache.size} cached, ${failures.length} failed).`);
