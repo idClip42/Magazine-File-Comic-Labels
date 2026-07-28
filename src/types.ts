@@ -50,7 +50,7 @@ export type LayoutConfig = {
     overwrapInches: number;
     topRuleHeightInches: number;
     artTreatment: ArtTreatment;
-    identityBand: { topInches: number; heightInches: number };
+    identityBand: { bottomInches: number; heightInches: number };
     fingerHole: {
         diameterInches: number;
         topInches: number;

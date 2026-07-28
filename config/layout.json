@@ -14,7 +14,7 @@
         "tintBlendMode": "color"
     },
     "identityBand": {
-        "topInches": 7.25,
+        "bottomInches": 9.15,
         "heightInches": 1.9
     },
     "fingerHole": {

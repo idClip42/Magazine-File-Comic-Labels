@@ -171,7 +171,10 @@ export function renderDocument(
 ): string {
     const totalWidth = layout.face.widthInches + layout.overwrapInches * 2;
     const totalHeight = layout.face.heightInches + layout.overwrapInches * 2;
-    const identityTop = layout.overwrapInches + layout.identityBand.topInches;
+    const identityTop =
+        layout.overwrapInches +
+        layout.identityBand.bottomInches -
+        layout.identityBand.heightInches;
     const metadataTop = layout.overwrapInches + layout.metadataBand.topInches;
     const holeHeight = layout.fingerHole.diameterInches / 2;
     const guideWidth =
