@@ -80,6 +80,7 @@ async function cacheRemoteImage(asset: string): Promise<void> {
 }
 
 async function preloadRemoteImages(): Promise<void> {
+    const preloadStartedAt = performance.now();
     const assets = [...new Set(labels.map(label => label.art.asset).filter(isRemoteImage))];
     const failures: string[] = [];
     let nextIndex = 0;
@@ -112,7 +113,8 @@ async function preloadRemoteImages(): Promise<void> {
 
     await Promise.all(Array.from({ length: Math.min(preloadConcurrency, assets.length) }, worker));
     const megabytes = [...imageCache.values()].reduce((total, image) => total + image.body.length, 0) / 1024 / 1024;
-    console.log(`Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${megabytes.toFixed(1)} MB in memory).`);
+    const elapsedSeconds = (performance.now() - preloadStartedAt) / 1000;
+    console.log(`Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${megabytes.toFixed(1)} MB in memory) in ${elapsedSeconds.toFixed(1)}s.`);
     if (failures.length > 0) {
         const examples = failures.slice(0, 3).join("; ");
         const remainder = failures.length > 3 ? ` (${failures.length - 3} more)` : "";
