@@ -257,7 +257,7 @@ export function renderDocument(
     .shelf-label-slot { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
     .shelf-label-slot .label-editor { width: var(--total-width); }
     .shelf-label-slot .label { transform: scale(var(--shelf-label-scale, 0.1)); transform-origin: top left; box-shadow: none; }
-    .shelf-spare-space { flex: 0 0 6.67%; background: rgba(255,255,255,0.88); }
+    .shelf-spare-space { flex: 0 0 6.67%; }
     body.shelf-overview { background: #a5a5a5; }
     body.shelf-overview > .label-editor, body.shelf-overview > .save-crops-bar { display: none; }
     body.shelf-overview .shelf-view { display: block; }
