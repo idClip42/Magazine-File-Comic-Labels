@@ -1119,7 +1119,7 @@
     {
         "id": "fantastic-four-050",
         "category": "fantastic-four",
-        "logo": "north-ross",
+        "logo": "current-2025",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fantastic+Four+Latest+Comics",
             "crop": {
@@ -1133,6 +1133,26 @@
         "contents": [
             {
                 "name": "Fantastic Four Latest Comics"
+            }
+        ]
+    },
+    {
+        "id": "fantastic-four-movie-tie-ins-001",
+        "category": "fantastic-four",
+        "logo": "movie-tie-ins",
+        "art": {
+            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fantastic+Four+Movie+Tie-Ins",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1
+            }
+        },
+        "contents": [
+            {
+                "name": "Fantastic Four Movie Tie-Ins"
             }
         ]
     },
@@ -1214,7 +1234,7 @@
     {
         "id": "fantastic-four-023",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "marvel-two-in-one",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg",
             "crop": {
@@ -1256,7 +1276,7 @@
     {
         "id": "fantastic-four-024",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "thing",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg",
             "crop": {
@@ -1519,7 +1539,7 @@
     {
         "id": "fantastic-four-022",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "marvel-knights-4",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/4_Vol_1_5.jpg",
             "crop": {
@@ -1546,6 +1566,97 @@
                     2004,
                     2006
                 ]
+            }
+        ]
+    },
+    {
+        "id": "fantastic-four-019",
+        "category": "fantastic-four",
+        "logo": "ultimate-fantastic-four",
+        "art": {
+            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Ultimate_Fantastic_Four_Vol_1_1.jpg",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1.06,
+                "legacy": {
+                    "topInches": -2.25,
+                    "leftInches": -2,
+                    "zoom": 1.06
+                }
+            }
+        },
+        "contents": [
+            {
+                "name": "Ultimate Fantastic Four",
+                "issues": [
+                    1,
+                    35
+                ],
+                "years": [
+                    2004,
+                    2006
+                ]
+            },
+            {
+                "name": "Ultimate Fantastic Four Annual",
+                "issues": [
+                    1,
+                    1
+                ],
+                "years": [
+                    2005,
+                    2005
+                ]
+            }
+        ]
+    },
+    {
+        "id": "fantastic-four-020",
+        "category": "fantastic-four",
+        "logo": "ultimate-fantastic-four",
+        "art": {
+            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1.2,
+                "legacy": {
+                    "topInches": -2.5,
+                    "leftInches": -1.75,
+                    "zoom": 1.2
+                }
+            }
+        },
+        "contents": [
+            {
+                "name": "Ultimate Fantastic Four",
+                "issues": [
+                    36,
+                    60
+                ],
+                "years": [
+                    2006,
+                    2009
+                ]
+            },
+            {
+                "name": "Ultimate Fantastic Four Annual",
+                "issues": [
+                    2,
+                    2
+                ],
+                "years": [
+                    2006,
+                    2006
+                ]
+            },
+            {
+                "name": "Ultimate Fantastic Four Misc."
             }
         ]
     },
@@ -1661,7 +1772,7 @@
     {
         "id": "new-mutants-002",
         "category": "x-family",
-        "logo": "new-mutants",
+        "logo": "new-mutants-second-logo",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/New_Mutants_Vol_1_26.jpg",
             "crop": {
@@ -1694,7 +1805,7 @@
     {
         "id": "new-mutants-003",
         "category": "x-family",
-        "logo": "new-mutants",
+        "logo": "new-mutants-second-logo",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/New_Mutants_Vol_1_61.jpg",
             "crop": {
@@ -1727,7 +1838,7 @@
     {
         "id": "new-mutants-004",
         "category": "x-family",
-        "logo": "new-mutants",
+        "logo": "new-mutants-second-logo",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/New_Mutants_Vol_1_78.jpg",
             "crop": {
@@ -1796,7 +1907,7 @@
     {
         "id": "new-mutants-006",
         "category": "x-family",
-        "logo": "new-mutants",
+        "logo": "new-mutants-modern",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/New_Mutants_Vol_4_1.jpg",
             "crop": {
@@ -2130,7 +2241,7 @@
     {
         "id": "excalibur-003",
         "category": "x-family",
-        "logo": "excalibur",
+        "logo": "excalibur-late",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/3/3e/Excalibur_Vol_1_66.jpg",
             "crop": {
@@ -2164,7 +2275,7 @@
     {
         "id": "excalibur-004",
         "category": "x-family",
-        "logo": "excalibur",
+        "logo": "excalibur-late",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg",
             "crop": {
@@ -2270,7 +2381,7 @@
     {
         "id": "daredevil-001",
         "category": "marvel-characters",
-        "logo": "daredevil",
+        "logo": "daredevil-modern",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
             "crop": {
@@ -2295,7 +2406,7 @@
     {
         "id": "daredevil-002",
         "category": "marvel-characters",
-        "logo": "daredevil",
+        "logo": "daredevil-classic",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
             "crop": {
@@ -2436,7 +2547,7 @@
     {
         "id": "she-hulk-002",
         "category": "marvel-characters",
-        "logo": "she-hulk",
+        "logo": "she-hulk-modern",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
             "crop": {
@@ -2711,98 +2822,6 @@
         ]
     },
     {
-        "id": "fantastic-four-019",
-        "category": "marvel-specials",
-        "logo": "ultimate",
-        "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Ultimate_Fantastic_Four_Vol_1_1.jpg",
-            "crop": {
-                "focus": {
-                    "x": 0.5,
-                    "y": 0.5
-                },
-                "scale": 1.06,
-                "legacy": {
-                    "topInches": -2.25,
-                    "leftInches": -2,
-                    "zoom": 1.06
-                }
-            }
-        },
-        "contents": [
-            {
-                "name": "Ultimate Fantastic Four",
-                "issues": [
-                    1,
-                    35
-                ],
-                "years": [
-                    2004,
-                    2006
-                ]
-            },
-            {
-                "name": "Ultimate Fantastic Four Annual",
-                "issues": [
-                    1,
-                    1
-                ],
-                "years": [
-                    2005,
-                    2005
-                ]
-            }
-        ]
-    },
-    {
-        "id": "fantastic-four-020",
-        "category": "marvel-specials",
-        "logo": "ultimate",
-        "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg",
-            "crop": {
-                "focus": {
-                    "x": 0.5,
-                    "y": 0.5
-                },
-                "scale": 1.2,
-                "legacy": {
-                    "topInches": -2.5,
-                    "leftInches": -1.75,
-                    "zoom": 1.2
-                }
-            }
-        },
-        "contents": [
-            {
-                "name": "Ultimate Fantastic Four",
-                "issues": [
-                    36,
-                    60
-                ],
-                "years": [
-                    2006,
-                    2009
-                ]
-            },
-            {
-                "name": "Ultimate Fantastic Four Annual",
-                "issues": [
-                    2,
-                    2
-                ],
-                "years": [
-                    2006,
-                    2006
-                ]
-            },
-            {
-                "name": "Ultimate Fantastic Four Misc."
-            }
-        ]
-    }
-    ,
-    {
         "id": "batman-001",
         "category": "dc-universe",
         "logo": "batman",
@@ -2830,7 +2849,7 @@
     {
         "id": "batman-002",
         "category": "dc-universe",
-        "logo": "batman",
+        "logo": "batman-modern",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Batman",
             "crop": {

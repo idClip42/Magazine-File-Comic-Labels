@@ -32,6 +32,24 @@
             },
             "north-ross": {
                 "asset": "logos/ff-logo-north.svg"
+            },
+            "ultimate-fantastic-four": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Ultimate+Fantastic+Four+logo+needed"
+            },
+            "marvel-knights-4": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Marvel+Knights+4+logo+needed"
+            },
+            "thing": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=The+Thing+logo+needed"
+            },
+            "marvel-two-in-one": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Marvel+Two-In-One+logo+needed"
+            },
+            "current-2025": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=2025+Fantastic+Four+logo+needed"
+            },
+            "movie-tie-ins": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Fantastic+Four+Movie+Tie-Ins+logo+needed"
             }
         }
     },
@@ -42,11 +60,20 @@
             "new-mutants": {
                 "asset": "logos/nm-logo.svg"
             },
+            "new-mutants-modern": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+New+Mutants+logo+needed"
+            },
+            "new-mutants-second-logo": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Second+New+Mutants+logo+needed"
+            },
             "x-men": {
                 "asset": "logos/xmen-logo.svg"
             },
             "excalibur": {
                 "asset": "logos/excalibur-logo.svg"
+            },
+            "excalibur-late": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Later+Excalibur+logo+needed"
             },
             "wolverine": {
                 "asset": "logos/wolverine-logo.svg"
@@ -74,6 +101,15 @@
             },
             "daredevil": {
                 "asset": "logos/dd-logo.svg"
+            },
+            "daredevil-classic": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Classic+Daredevil+logo+needed"
+            },
+            "daredevil-modern": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+Daredevil+logo+needed"
+            },
+            "she-hulk-modern": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+She-Hulk+logo+needed"
             },
             "amazing-spider-man": {
                 "asset": "logos/asm-logo.svg"
@@ -131,6 +167,9 @@
             },
             "batman": {
                 "asset": "logos/batman-logo.svg"
+            },
+            "batman-modern": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+Batman+logo+needed"
             },
             "the-new-teen-titans": {
                 "asset": "logos/ntt-logo.svg"
