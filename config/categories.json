@@ -81,15 +81,6 @@
             "spider-man": {
                 "asset": "logos/sm-logo.svg"
             },
-            "ultimate": {
-                "asset": "logos/ultimate-universe-logo.svg"
-            },
-            "ultimate-spider-man": {
-                "asset": "logos/usm-logo.svg"
-            },
-            "ultimates": {
-                "asset": "logos/ultimates-logo.svg"
-            },
             "jessica-jones": {
                 "asset": "logos/jj-logo.svg"
             }
@@ -99,6 +90,15 @@
         "name": "Marvel specials",
         "color": "#C65E32",
         "logos": {
+            "ultimate": {
+                "asset": "logos/ultimate-universe-logo.svg"
+            },
+            "ultimate-spider-man": {
+                "asset": "logos/usm-logo.svg"
+            },
+            "ultimates": {
+                "asset": "logos/ultimates-logo.svg"
+            },
             "secret-wars": {
                 "asset": "logos/sw-logo.svg"
             },

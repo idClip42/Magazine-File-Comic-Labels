@@ -2112,7 +2112,7 @@
     },
     {
         "id": "ultimate-001",
-        "category": "marvel-characters",
+        "category": "marvel-specials",
         "logo": "ultimate",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Ultimate",
@@ -2132,7 +2132,7 @@
     },
     {
         "id": "ultimate-spider-man-001",
-        "category": "marvel-characters",
+        "category": "marvel-specials",
         "logo": "ultimate-spider-man",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Ultimate+Spider-Man",
@@ -2152,7 +2152,7 @@
     },
     {
         "id": "ultimates-001",
-        "category": "marvel-characters",
+        "category": "marvel-specials",
         "logo": "ultimates",
         "art": {
             "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Ultimates",
