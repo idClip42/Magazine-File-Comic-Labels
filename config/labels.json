@@ -2333,6 +2333,50 @@
         ]
     },
     {
+        "id": "marvel-fanfare-001",
+        "category": "marvel-specials",
+        "logo": "marvel-fanfare",
+        "art": {
+            "asset": "https://marvel.fandom.com/wiki/Special:FilePath/Marvel_Fanfare_Vol_1_1.jpg",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1
+            }
+        },
+        "contents": [
+            {
+                "name": "Marvel Fanfare",
+                "issues": [1, 60],
+                "years": [1982, 1992]
+            }
+        ]
+    },
+    {
+        "id": "earth-x-001",
+        "category": "marvel-specials",
+        "logo": "earth-x",
+        "art": {
+            "asset": "https://marvel.fandom.com/wiki/Special:FilePath/Earth_X_Vol_1_0.jpg",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1
+            }
+        },
+        "contents": [
+            {
+                "name": "Earth X",
+                "issues": [0, 12],
+                "years": [1999, 2000]
+            }
+        ]
+    },
+    {
         "id": "teen-titans-go-001",
         "category": "dc-universe",
         "logo": "teen-titans-go",

@@ -107,6 +107,12 @@
             },
             "official-handbook-of-the-marvel-universe": {
                 "asset": "logos/handbook-logo.svg"
+            },
+            "marvel-fanfare": {
+                "asset": "logos/marvel-fanfare-logo.svg"
+            },
+            "earth-x": {
+                "asset": "logos/earth-x-logo.svg"
             }
         }
     },
