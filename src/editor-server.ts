@@ -3,8 +3,8 @@ import http from "node:http";
 import path from "node:path";
 import chalk from "chalk";
 import { categories, labels, layout } from "./config";
+import { buildEditorConfig } from "./editor-config";
 import { prepareLogos } from "./logo-prep";
-import { renderDocument } from "./render";
 import { ArtCrop, LabelConfig } from "./types";
 
 const host = "127.0.0.1";
@@ -24,6 +24,15 @@ const imageTypes: Record<string, string> = {
     ".png": "image/png",
     ".svg": "image/svg+xml",
     ".webp": "image/webp",
+};
+const applicationTypes: Record<string, string> = {
+    ".css": "text/css; charset=utf-8",
+    ".html": "text/html; charset=utf-8",
+    ".js": "text/javascript; charset=utf-8",
+    ".json": "application/json; charset=utf-8",
+    ".map": "application/json; charset=utf-8",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2",
 };
 
 type CropUpdate = Pick<ArtCrop, "focus" | "scale">;
@@ -166,6 +175,29 @@ function serveArtwork(request: http.IncomingMessage, response: http.ServerRespon
     return true;
 }
 
+/** Serves the single compiled Vue application and its Vite-generated assets. */
+function serveApplicationFile(request: http.IncomingMessage, response: http.ServerResponse): boolean {
+    if (request.method !== "GET" || !request.url) return false;
+
+    const pathname = new URL(request.url, `http://${host}:${port}`).pathname;
+    const requestedPath = pathname === "/" ? "index.html" : pathname.slice(1);
+    const filePath = path.resolve(outputDirectory, requestedPath);
+    if (!filePath.startsWith(`${outputDirectory}${path.sep}`) || !fs.existsSync(filePath)) {
+        return false;
+    }
+
+    const extension = path.extname(filePath).toLowerCase();
+    const contentType = applicationTypes[extension] ?? imageTypeForPath(filePath);
+    if (!contentType) return false;
+
+    response.writeHead(200, {
+        "Content-Type": contentType,
+        "Cache-Control": "no-store",
+    });
+    fs.createReadStream(filePath).pipe(response);
+    return true;
+}
+
 function serveLocalImage(request: http.IncomingMessage, response: http.ServerResponse): boolean {
     if (request.method !== "GET" || !request.url) return false;
     const pathname = new URL(request.url, `http://${host}:${port}`).pathname;
@@ -227,13 +259,24 @@ function saveChanges(updates: EditorUpdates): { crops: number; identityBand: boo
 }
 
 const server = http.createServer((request, response) => {
-    if (request.method === "GET" && (request.url === "/" || request.url === "/index.html")) {
-        response.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
-        response.end(renderDocument(labels, preparedLogos, label => `/art/${encodeURIComponent(label.id)}`));
+    if (request.method === "GET" && request.url === "/api/config") {
+        sendJson(
+            response,
+            200,
+            buildEditorConfig(
+                layout,
+                categories,
+                labels,
+                preparedLogos,
+                label => `/art/${encodeURIComponent(label.id)}`,
+            ),
+        );
         return;
     }
 
-    if (serveArtwork(request, response) || serveLocalImage(request, response)) return;
+    if (serveArtwork(request, response)
+        || serveApplicationFile(request, response)
+        || serveLocalImage(request, response)) return;
 
     if (request.method !== "PUT" || request.url !== "/api/edits") {
         sendJson(response, 404, { error: "Not found." });

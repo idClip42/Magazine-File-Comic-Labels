@@ -85,3 +85,12 @@ export type ArtTreatment = {
     tintOpacity: number;
     tintBlendMode: "color" | "multiply" | "overlay" | "soft-light";
 };
+
+/** The complete configuration snapshot the Vue editor receives from the build or local server. */
+export type EditorConfig = {
+    layout: LayoutConfig;
+    categories: CategoriesConfig;
+    labels: LabelConfig[];
+    preparedLogos: Record<string, string>;
+    artworkUrls: Record<string, string>;
+};

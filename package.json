@@ -5,20 +5,27 @@
   "description": "A static generator for vinyl comic magazine-file labels.",
   "scripts": {
     "audit:assets": "ts-node src/audit-cli.ts",
-    "build": "tsc && node dist/src/index.js",
+    "build": "npm run build:server && npm run build:app && node dist/src/index.js",
+    "build:app": "vite build",
+    "build:server": "tsc",
     "convert:v1": "ts-node scripts/convert-v1-config.ts",
     "convert:v1:force": "ts-node scripts/convert-v1-config.ts --force",
     "prepare:logos": "ts-node src/logo-prep-cli.ts",
     "serve": "node dist/src/editor-server.js",
     "start": "npm run build && npm run serve",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit && vue-tsc --noEmit -p tsconfig.app.json"
   },
   "devDependencies": {
     "@types/node": "^24.0.13",
+    "@vitejs/plugin-vue": "^6.0.8",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^8.1.5",
+    "vue-tsc": "^3.3.8"
   },
   "dependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "pinia": "^4.0.2",
+    "vue": "^3.5.40"
   }
 }
