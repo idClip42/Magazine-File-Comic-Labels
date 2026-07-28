@@ -21,14 +21,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    1,
-                    25
-                ],
-                "years": [
-                    1961,
-                    1964
-                ]
+                "issues": [1, 25],
+                "years": [1961, 1964]
             }
         ]
     },
@@ -54,14 +48,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    26,
-                    50
-                ],
-                "years": [
-                    1964,
-                    1966
-                ]
+                "issues": [26, 50],
+                "years": [1964, 1966]
             }
         ]
     },
@@ -87,14 +75,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    51,
-                    75
-                ],
-                "years": [
-                    1966,
-                    1968
-                ]
+                "issues": [51, 75],
+                "years": [1966, 1968]
             }
         ]
     },
@@ -120,14 +102,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    76,
-                    100
-                ],
-                "years": [
-                    1968,
-                    1970
-                ]
+                "issues": [76, 100],
+                "years": [1968, 1970]
             }
         ]
     },
@@ -153,14 +129,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    101,
-                    125
-                ],
-                "years": [
-                    1970,
-                    1972
-                ]
+                "issues": [101, 125],
+                "years": [1970, 1972]
             }
         ]
     },
@@ -186,18 +156,11 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    126,
-                    150
-                ],
-                "years": [
-                    1972,
-                    1974
-                ]
+                "issues": [126, 150],
+                "years": [1972, 1974]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-038",
         "category": "fantastic-four",
@@ -220,14 +183,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    151,
-                    175
-                ],
-                "years": [
-                    1974,
-                    1976
-                ]
+                "issues": [151, 175],
+                "years": [1974, 1976]
             }
         ]
     },
@@ -253,14 +210,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    176,
-                    200
-                ],
-                "years": [
-                    1976,
-                    1978
-                ]
+                "issues": [176, 200],
+                "years": [1976, 1978]
             }
         ]
     },
@@ -286,14 +237,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    201,
-                    225
-                ],
-                "years": [
-                    1978,
-                    1980
-                ]
+                "issues": [201, 225],
+                "years": [1978, 1980]
             }
         ]
     },
@@ -319,14 +264,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    226,
-                    250
-                ],
-                "years": [
-                    1980,
-                    1982
-                ]
+                "issues": [226, 250],
+                "years": [1980, 1982]
             }
         ]
     },
@@ -338,10 +277,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Fantastic_Four_Vol_1_262.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.48,
+                    "y": 0.36
                 },
-                "scale": 1,
+                "scale": 1.81,
                 "legacy": {
                     "topInches": -1.5,
                     "leftInches": -1,
@@ -352,14 +291,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    251,
-                    275
-                ],
-                "years": [
-                    1982,
-                    1984
-                ]
+                "issues": [251, 275],
+                "years": [1982, 1984]
             }
         ]
     },
@@ -371,10 +304,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Fantastic_Four_Vol_1_281.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.46,
+                    "y": 0.47
                 },
-                "scale": 1,
+                "scale": 1.96,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1,
@@ -385,18 +318,11 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    276,
-                    300
-                ],
-                "years": [
-                    1984,
-                    1986
-                ]
+                "issues": [276, 300],
+                "years": [1984, 1986]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-010",
         "category": "fantastic-four",
@@ -419,14 +345,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    301,
-                    325
-                ],
-                "years": [
-                    1987,
-                    1988
-                ]
+                "issues": [301, 325],
+                "years": [1987, 1988]
             }
         ]
     },
@@ -452,14 +372,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    326,
-                    350
-                ],
-                "years": [
-                    1989,
-                    1991
-                ]
+                "issues": [326, 350],
+                "years": [1989, 1991]
             }
         ]
     },
@@ -485,14 +399,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    351,
-                    375
-                ],
-                "years": [
-                    1991,
-                    1993
-                ]
+                "issues": [351, 375],
+                "years": [1991, 1993]
             }
         ]
     },
@@ -518,14 +426,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    376,
-                    400
-                ],
-                "years": [
-                    1993,
-                    1995
-                ]
+                "issues": [376, 400],
+                "years": [1993, 1995]
             }
         ]
     },
@@ -551,26 +453,14 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    401,
-                    416
-                ],
-                "years": [
-                    1995,
-                    1996
-                ]
+                "issues": [401, 416],
+                "years": [1995, 1996]
             },
             {
                 "name": "Fantastic Four",
                 "volume": 2,
-                "issues": [
-                    1,
-                    13
-                ],
-                "years": [
-                    1996,
-                    1997
-                ]
+                "issues": [1, 13],
+                "years": [1996, 1997]
             }
         ]
     },
@@ -597,18 +487,11 @@
             {
                 "name": "Fantastic Four",
                 "volume": 3,
-                "issues": [
-                    1,
-                    25
-                ],
-                "years": [
-                    1997,
-                    1999
-                ]
+                "issues": [1, 25],
+                "years": [1997, 1999]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-016",
         "category": "fantastic-four",
@@ -632,14 +515,8 @@
             {
                 "name": "Fantastic Four",
                 "volume": 3,
-                "issues": [
-                    26,
-                    50
-                ],
-                "years": [
-                    1999,
-                    2001
-                ]
+                "issues": [26, 50],
+                "years": [1999, 2001]
             }
         ]
     },
@@ -666,14 +543,8 @@
             {
                 "name": "Fantastic Four",
                 "volume": 3,
-                "issues": [
-                    51,
-                    70
-                ],
-                "years": [
-                    2002,
-                    2003
-                ]
+                "issues": [51, 70],
+                "years": [2002, 2003]
             }
         ]
     },
@@ -699,14 +570,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    500,
-                    525
-                ],
-                "years": [
-                    2003,
-                    2005
-                ]
+                "issues": [500, 525],
+                "years": [2003, 2005]
             }
         ]
     },
@@ -732,14 +597,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    526,
-                    550
-                ],
-                "years": [
-                    2005,
-                    2007
-                ]
+                "issues": [526, 550],
+                "years": [2005, 2007]
             }
         ]
     },
@@ -765,14 +624,8 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    551,
-                    575
-                ],
-                "years": [
-                    2007,
-                    2010
-                ]
+                "issues": [551, 575],
+                "years": [2007, 2010]
             }
         ]
     },
@@ -798,40 +651,21 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    576,
-                    588
-                ],
-                "years": [
-                    2010,
-                    2011
-                ]
+                "issues": [576, 588],
+                "years": [2010, 2011]
             },
             {
                 "name": "FF",
-                "issues": [
-                    1,
-                    11
-                ],
-                "years": [
-                    2011,
-                    2011
-                ]
+                "issues": [1, 11],
+                "years": [2011, 2011]
             },
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    600,
-                    600
-                ],
-                "years": [
-                    2011,
-                    2011
-                ]
+                "issues": [600, 600],
+                "years": [2011, 2011]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-041",
         "category": "fantastic-four",
@@ -854,25 +688,13 @@
         "contents": [
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    601,
-                    611
-                ],
-                "years": [
-                    2011,
-                    2012
-                ]
+                "issues": [601, 611],
+                "years": [2011, 2012]
             },
             {
                 "name": "FF",
-                "issues": [
-                    12,
-                    23
-                ],
-                "years": [
-                    2011,
-                    2012
-                ]
+                "issues": [12, 23],
+                "years": [2011, 2012]
             }
         ]
     },
@@ -899,26 +721,14 @@
             {
                 "name": "Fantastic Four",
                 "volume": 4,
-                "issues": [
-                    1,
-                    16
-                ],
-                "years": [
-                    2012,
-                    2014
-                ]
+                "issues": [1, 16],
+                "years": [2012, 2014]
             },
             {
                 "name": "FF",
                 "volume": 2,
-                "issues": [
-                    1,
-                    16
-                ],
-                "years": [
-                    2012,
-                    2014
-                ]
+                "issues": [1, 16],
+                "years": [2012, 2014]
             }
         ]
     },
@@ -945,37 +755,19 @@
             {
                 "name": "Fantastic Four",
                 "volume": 5,
-                "issues": [
-                    1,
-                    14
-                ],
-                "years": [
-                    2014,
-                    2015
-                ]
+                "issues": [1, 14],
+                "years": [2014, 2015]
             },
             {
                 "name": "Fantastic Four",
-                "issues": [
-                    642,
-                    645
-                ],
-                "years": [
-                    2015,
-                    2015
-                ]
+                "issues": [642, 645],
+                "years": [2015, 2015]
             },
             {
                 "name": "Fantastic Four",
                 "volume": 6,
-                "issues": [
-                    1,
-                    6
-                ],
-                "years": [
-                    2018,
-                    2019
-                ]
+                "issues": [1, 6],
+                "years": [2018, 2019]
             }
         ]
     },
@@ -1002,14 +794,8 @@
             {
                 "name": "Fantastic Four",
                 "volume": 6,
-                "issues": [
-                    7,
-                    28
-                ],
-                "years": [
-                    2019,
-                    2021
-                ]
+                "issues": [7, 28],
+                "years": [2019, 2021]
             }
         ]
     },
@@ -1036,14 +822,8 @@
             {
                 "name": "Fantastic Four",
                 "volume": 6,
-                "issues": [
-                    29,
-                    48
-                ],
-                "years": [
-                    2021,
-                    2022
-                ]
+                "issues": [29, 48],
+                "years": [2021, 2022]
             }
         ]
     },
@@ -1070,18 +850,11 @@
             {
                 "name": "Fantastic Four",
                 "volume": 7,
-                "issues": [
-                    1,
-                    13
-                ],
-                "years": [
-                    2022,
-                    2023
-                ]
+                "issues": [1, 13],
+                "years": [2022, 2023]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-049",
         "category": "fantastic-four",
@@ -1105,14 +878,8 @@
             {
                 "name": "Fantastic Four",
                 "volume": 7,
-                "issues": [
-                    14,
-                    33
-                ],
-                "years": [
-                    2023,
-                    2025
-                ]
+                "issues": [14, 33],
+                "years": [2023, 2025]
             }
         ]
     },
@@ -1253,26 +1020,16 @@
         "contents": [
             {
                 "name": "Marvel Two-In-One",
-                "years": [
-                    1974,
-                    1983
-                ]
+                "years": [1974, 1983]
             },
             {
                 "name": "Marvel Two-In-One",
                 "volume": 2,
-                "issues": [
-                    1,
-                    12
-                ],
-                "years": [
-                    2018,
-                    2019
-                ]
+                "issues": [1, 12],
+                "years": [2018, 2019]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-024",
         "category": "fantastic-four",
@@ -1295,14 +1052,8 @@
         "contents": [
             {
                 "name": "The Thing",
-                "issues": [
-                    1,
-                    36
-                ],
-                "years": [
-                    1983,
-                    1986
-                ]
+                "issues": [1, 36],
+                "years": [1983, 1986]
             }
         ]
     },
@@ -1328,36 +1079,18 @@
         "contents": [
             {
                 "name": "Giant-Size Fantastic Four",
-                "issues": [
-                    1,
-                    6
-                ],
-                "years": [
-                    1974,
-                    1975
-                ]
+                "issues": [1, 6],
+                "years": [1974, 1975]
             },
             {
                 "name": "Official Marvel Index to Fantastic Four",
-                "issues": [
-                    1,
-                    12
-                ],
-                "years": [
-                    1985,
-                    1987
-                ]
+                "issues": [1, 12],
+                "years": [1985, 1987]
             },
             {
                 "name": "Fantastic Four vs. the X-Men",
-                "issues": [
-                    1,
-                    4
-                ],
-                "years": [
-                    1986,
-                    1987
-                ]
+                "issues": [1, 4],
+                "years": [1986, 1987]
             }
         ]
     },
@@ -1383,10 +1116,7 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [
-                    1992,
-                    2000
-                ]
+                "years": [1992, 2000]
             }
         ]
     },
@@ -1412,10 +1142,7 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [
-                    2000,
-                    2002
-                ]
+                "years": [2000, 2002]
             }
         ]
     },
@@ -1441,10 +1168,7 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [
-                    2002,
-                    2009
-                ]
+                "years": [2002, 2009]
             }
         ]
     },
@@ -1470,14 +1194,10 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [
-                    2006,
-                    2010
-                ]
+                "years": [2006, 2010]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "fantastic-four-030",
         "category": "fantastic-four",
@@ -1500,10 +1220,7 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [
-                    2019,
-                    2021
-                ]
+                "years": [2019, 2021]
             }
         ]
     },
@@ -1529,10 +1246,7 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [
-                    2021,
-                    2025
-                ]
+                "years": [2021, 2025]
             }
         ]
     },
@@ -1558,14 +1272,8 @@
         "contents": [
             {
                 "name": "Marvel Knights 4",
-                "issues": [
-                    1,
-                    30
-                ],
-                "years": [
-                    2004,
-                    2006
-                ]
+                "issues": [1, 30],
+                "years": [2004, 2006]
             }
         ]
     },
@@ -1591,25 +1299,13 @@
         "contents": [
             {
                 "name": "Ultimate Fantastic Four",
-                "issues": [
-                    1,
-                    35
-                ],
-                "years": [
-                    2004,
-                    2006
-                ]
+                "issues": [1, 35],
+                "years": [2004, 2006]
             },
             {
                 "name": "Ultimate Fantastic Four Annual",
-                "issues": [
-                    1,
-                    1
-                ],
-                "years": [
-                    2005,
-                    2005
-                ]
+                "issues": [1, 1],
+                "years": [2005, 2005]
             }
         ]
     },
@@ -1635,25 +1331,13 @@
         "contents": [
             {
                 "name": "Ultimate Fantastic Four",
-                "issues": [
-                    36,
-                    60
-                ],
-                "years": [
-                    2006,
-                    2009
-                ]
+                "issues": [36, 60],
+                "years": [2006, 2009]
             },
             {
                 "name": "Ultimate Fantastic Four Annual",
-                "issues": [
-                    2,
-                    2
-                ],
-                "years": [
-                    2006,
-                    2006
-                ]
+                "issues": [2, 2],
+                "years": [2006, 2006]
             },
             {
                 "name": "Ultimate Fantastic Four Misc."
@@ -1734,8 +1418,7 @@
                 "name": "Fantastic Four Current Reading"
             }
         ]
-    }
-    ,
+    },
     {
         "id": "new-mutants-001",
         "category": "x-family",
@@ -1758,14 +1441,8 @@
         "contents": [
             {
                 "name": "New Mutants",
-                "issues": [
-                    1,
-                    25
-                ],
-                "years": [
-                    1982,
-                    1983
-                ]
+                "issues": [1, 25],
+                "years": [1982, 1983]
             }
         ]
     },
@@ -1791,14 +1468,8 @@
         "contents": [
             {
                 "name": "New Mutants",
-                "issues": [
-                    26,
-                    50
-                ],
-                "years": [
-                    1984,
-                    1986
-                ]
+                "issues": [26, 50],
+                "years": [1984, 1986]
             }
         ]
     },
@@ -1824,14 +1495,8 @@
         "contents": [
             {
                 "name": "New Mutants",
-                "issues": [
-                    51,
-                    75
-                ],
-                "years": [
-                    1987,
-                    1989
-                ]
+                "issues": [51, 75],
+                "years": [1987, 1989]
             }
         ]
     },
@@ -1857,14 +1522,8 @@
         "contents": [
             {
                 "name": "New Mutants",
-                "issues": [
-                    76,
-                    100
-                ],
-                "years": [
-                    1989,
-                    1991
-                ]
+                "issues": [76, 100],
+                "years": [1989, 1991]
             }
         ]
     },
@@ -1890,14 +1549,8 @@
         "contents": [
             {
                 "name": "New Mutants Annual",
-                "issues": [
-                    1,
-                    7
-                ],
-                "years": [
-                    1984,
-                    1991
-                ]
+                "issues": [1, 7],
+                "years": [1984, 1991]
             },
             {
                 "name": "New Mutants Misc."
@@ -1927,21 +1580,14 @@
             {
                 "name": "New Mutants",
                 "volume": 4,
-                "issues": [
-                    1,
-                    33
-                ],
-                "years": [
-                    2020,
-                    2023
-                ]
+                "issues": [1, 33],
+                "years": [2020, 2023]
             },
             {
                 "name": "New Mutants Misc."
             }
         ]
-    }
-    ,
+    },
     {
         "id": "x-men-annual",
         "category": "x-family",
@@ -1989,14 +1635,8 @@
         "contents": [
             {
                 "name": "Uncanny X-Men",
-                "issues": [
-                    129,
-                    162
-                ],
-                "years": [
-                    1979,
-                    1982
-                ]
+                "issues": [129, 162],
+                "years": [1979, 1982]
             }
         ]
     },
@@ -2022,14 +1662,8 @@
         "contents": [
             {
                 "name": "Uncanny X-Men",
-                "issues": [
-                    163,
-                    187
-                ],
-                "years": [
-                    1982,
-                    1984
-                ]
+                "issues": [163, 187],
+                "years": [1982, 1984]
             }
         ]
     },
@@ -2055,14 +1689,8 @@
         "contents": [
             {
                 "name": "Uncanny X-Men",
-                "issues": [
-                    188,
-                    200
-                ],
-                "years": [
-                    1984,
-                    1985
-                ]
+                "issues": [188, 200],
+                "years": [1984, 1985]
             }
         ]
     },
@@ -2105,8 +1733,7 @@
                 "name": "Uncanny X-Men"
             }
         ]
-    }
-    ,
+    },
     {
         "id": "x-men-006",
         "category": "x-family",
@@ -2194,14 +1821,8 @@
         "contents": [
             {
                 "name": "Excalibur",
-                "issues": [
-                    1,
-                    25
-                ],
-                "years": [
-                    1988,
-                    1990
-                ]
+                "issues": [1, 25],
+                "years": [1988, 1990]
             }
         ]
     },
@@ -2227,14 +1848,8 @@
         "contents": [
             {
                 "name": "Excalibur",
-                "issues": [
-                    26,
-                    50
-                ],
-                "years": [
-                    1990,
-                    1992
-                ]
+                "issues": [26, 50],
+                "years": [1990, 1992]
             }
         ]
     },
@@ -2260,18 +1875,11 @@
         "contents": [
             {
                 "name": "Excalibur",
-                "issues": [
-                    51,
-                    75
-                ],
-                "years": [
-                    1992,
-                    1994
-                ]
+                "issues": [51, 75],
+                "years": [1992, 1994]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "excalibur-004",
         "category": "x-family",
@@ -2294,14 +1902,8 @@
         "contents": [
             {
                 "name": "Excalibur",
-                "issues": [
-                    76,
-                    125
-                ],
-                "years": [
-                    1994,
-                    1998
-                ]
+                "issues": [76, 125],
+                "years": [1994, 1998]
             },
             {
                 "name": "Excalibur Misc."
@@ -2422,8 +2024,7 @@
                 "name": "Daredevil"
             }
         ]
-    }
-    ,
+    },
     {
         "id": "dr-strange-001",
         "category": "marvel-characters",
@@ -2568,8 +2169,7 @@
                 "name": "She-Hulk"
             }
         ]
-    }
-    ,
+    },
     {
         "id": "spider-man-various-series-001",
         "category": "marvel-characters",
@@ -2627,14 +2227,8 @@
         "contents": [
             {
                 "name": "Earth X",
-                "issues": [
-                    0,
-                    12
-                ],
-                "years": [
-                    1999,
-                    2000
-                ]
+                "issues": [0, 12],
+                "years": [1999, 2000]
             }
         ]
     },
@@ -2680,14 +2274,8 @@
         "contents": [
             {
                 "name": "Marvel Fanfare",
-                "issues": [
-                    1,
-                    60
-                ],
-                "years": [
-                    1982,
-                    1992
-                ]
+                "issues": [1, 60],
+                "years": [1982, 1992]
             }
         ]
     },
@@ -2713,29 +2301,16 @@
         "contents": [
             {
                 "name": "Marvel Super Heroes Secret Wars",
-                "issues": [
-                    1,
-                    12
-                ],
-                "years": [
-                    1984,
-                    1985
-                ]
+                "issues": [1, 12],
+                "years": [1984, 1985]
             },
             {
                 "name": "Secret Wars",
-                "issues": [
-                    1,
-                    9
-                ],
-                "years": [
-                    2015,
-                    2016
-                ]
+                "issues": [1, 9],
+                "years": [2015, 2016]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "what-if-001",
         "category": "marvel-specials",
@@ -2938,14 +2513,8 @@
         "contents": [
             {
                 "name": "Teen Titans Go",
-                "issues": [
-                    1,
-                    28
-                ],
-                "years": [
-                    2003,
-                    2006
-                ]
+                "issues": [1, 28],
+                "years": [2003, 2006]
             }
         ]
     },
@@ -2971,18 +2540,11 @@
         "contents": [
             {
                 "name": "Teen Titans Go",
-                "issues": [
-                    29,
-                    55
-                ],
-                "years": [
-                    2006,
-                    2008
-                ]
+                "issues": [29, 55],
+                "years": [2006, 2008]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "young-justice-001",
         "category": "dc-universe",
@@ -3005,14 +2567,8 @@
         "contents": [
             {
                 "name": "Young Justice",
-                "issues": [
-                    1,
-                    28
-                ],
-                "years": [
-                    1998,
-                    2001
-                ]
+                "issues": [1, 28],
+                "years": [1998, 2001]
             }
         ]
     },
@@ -3038,14 +2594,8 @@
         "contents": [
             {
                 "name": "Young Justice",
-                "issues": [
-                    29,
-                    55
-                ],
-                "years": [
-                    2001,
-                    2003
-                ]
+                "issues": [29, 55],
+                "years": [2001, 2003]
             }
         ]
     },
@@ -3111,14 +2661,8 @@
         "contents": [
             {
                 "name": "The Further Adventures of Indiana Jones",
-                "issues": [
-                    1,
-                    34
-                ],
-                "years": [
-                    1983,
-                    1986
-                ]
+                "issues": [1, 34],
+                "years": [1983, 1986]
             }
         ]
     },
@@ -3141,8 +2685,7 @@
                 "name": "The Further Adventures of Indiana Jones"
             }
         ]
-    }
-    ,
+    },
     {
         "id": "indiana-jones-003",
         "category": "adventure-pulp",
@@ -3210,14 +2753,8 @@
         "contents": [
             {
                 "name": "Jonny Quest (Comico)",
-                "issues": [
-                    1,
-                    31
-                ],
-                "years": [
-                    1986,
-                    1988
-                ]
+                "issues": [1, 31],
+                "years": [1986, 1988]
             }
         ]
     },
@@ -3293,52 +2830,27 @@
         "contents": [
             {
                 "name": "Aliens",
-                "issues": [
-                    1,
-                    6
-                ],
-                "years": [
-                    1989,
-                    1989
-                ]
+                "issues": [1, 6],
+                "years": [1989, 1989]
             },
             {
                 "name": "Aliens",
                 "volume": 2,
-                "issues": [
-                    1,
-                    4
-                ],
-                "years": [
-                    1990,
-                    1990
-                ]
+                "issues": [1, 4],
+                "years": [1990, 1990]
             },
             {
                 "name": "Aliens: Earth War",
-                "issues": [
-                    1,
-                    4
-                ],
-                "years": [
-                    1991,
-                    1991
-                ]
+                "issues": [1, 4],
+                "years": [1991, 1991]
             },
             {
                 "name": "Aliens: Newt's Tale",
-                "issues": [
-                    1,
-                    2
-                ],
-                "years": [
-                    1992,
-                    1992
-                ]
+                "issues": [1, 2],
+                "years": [1992, 1992]
             }
         ]
-    }
-    ,
+    },
     {
         "id": "aliens-002",
         "category": "horror-dark-fantasy",
@@ -3426,14 +2938,8 @@
         "contents": [
             {
                 "name": "Fatale",
-                "issues": [
-                    1,
-                    24
-                ],
-                "years": [
-                    2012,
-                    2014
-                ]
+                "issues": [1, 24],
+                "years": [2012, 2014]
             }
         ]
     },
