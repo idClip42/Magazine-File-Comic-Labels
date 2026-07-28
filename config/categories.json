@@ -99,14 +99,11 @@
             "iron-man": {
                 "asset": "logos/im-logo.svg"
             },
-            "daredevil": {
-                "asset": "logos/dd-logo.svg"
-            },
             "daredevil-classic": {
                 "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Classic+Daredevil+logo+needed"
             },
             "daredevil-modern": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+Daredevil+logo+needed"
+                "asset": "logos/dd-logo.svg"
             },
             "she-hulk-modern": {
                 "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+She-Hulk+logo+needed"
