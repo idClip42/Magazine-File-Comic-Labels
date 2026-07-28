@@ -157,19 +157,19 @@
         "color": "#4D3D59",
         "logos": {
             "fatale": {
-                "asset": "logos/fatale.png"
+                "asset": "logos/fatale-logo.svg"
             },
             "army-of-darkness": {
-                "asset": "https://static.wikia.nocookie.net/logopedia/images/8/81/Army-of-darkness-movie-logo.png"
+                "asset": "logos/aod-logo.svg"
             },
             "aliens": {
-                "asset": "https://image.tmdb.org/t/p/original/8VjEUUn7MS61ZzeeQTuo0otOCWC.png"
+                "asset": "logos/aliens-logo.svg"
             },
             "fables": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Fables"
+                "asset": "logos/fables-logo.svg"
             },
             "universal-monsters": {
-                "asset": "https://placehold.co/1200x400/ffffff/111111?text=Universal+Monsters"
+                "asset": "logos/universal-logo.svg"
             }
         }
     }
