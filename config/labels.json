@@ -142,10 +142,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Fantastic_Four_Vol_1_141.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.76,
+                    "y": 0.78
                 },
-                "scale": 1.06,
+                "scale": 2.23,
                 "legacy": {
                     "topInches": -3,
                     "leftInches": -2.6,
