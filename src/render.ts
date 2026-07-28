@@ -254,9 +254,9 @@ export function renderDocument(
     .crop-controls-title { margin-bottom: 0.07in; font-weight: 700; }
     .crop-controls label { display: grid; grid-template-columns: 0.6in 1fr 0.65in; align-items: center; gap: 0.08in; margin-top: 0.05in; }
     .crop-controls input[type="number"] { width: 100%; }
-    .save-crops-bar { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; align-items: center; gap: 10px; max-width: min(520px, calc(100vw - 32px)); padding: 10px 12px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); font-size: 13px; }
-    .save-crops-bar button { cursor: pointer; white-space: nowrap; }
-    .save-crops-bar button:disabled { cursor: default; }
+    .global-controls { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; flex-direction: column; align-items: stretch; gap: 10px; width: min(300px, calc(100vw - 32px)); padding: 10px 12px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); font-size: 13px; }
+    .global-controls button { cursor: pointer; white-space: nowrap; }
+    .global-controls button:disabled { cursor: default; }
     .identity-band-height-control { display: grid; grid-template-columns: auto minmax(90px, 1fr) auto; align-items: center; gap: 6px; min-width: 230px; }
     .identity-band-height-control output { min-width: 3.3em; font-variant-numeric: tabular-nums; }
     .view-switcher { position: fixed; top: 16px; right: 16px; z-index: 11; display: flex; gap: 4px; padding: 4px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
@@ -272,10 +272,10 @@ export function renderDocument(
     .shelf-label-slot .label { transform: scale(var(--shelf-label-scale, 0.1)); transform-origin: top left; box-shadow: none; }
     .shelf-spare-space { flex: 0 0 6.67%; }
     body.shelf-overview { background: #a5a5a5; }
-    body.shelf-overview > .label-editor, body.shelf-overview > .save-crops-bar { display: none; }
+    body.shelf-overview > .label-editor { display: none; }
     body.shelf-overview .shelf-view { display: block; }
     @media screen { body { padding: 0.4in; display: flex; flex-wrap: wrap; gap: 0.3in; align-items: flex-start; } .label { box-shadow: 0 0.08in 0.25in rgba(0,0,0,0.38); } body.shelf-overview { display: block; padding: 0; } }
-    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls, .save-crops-bar, .view-switcher, .shelf-view { display: none; } }
+    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls, .global-controls, .view-switcher, .shelf-view { display: none; } }
   </style>
 </head>
 <body>
@@ -283,11 +283,11 @@ export function renderDocument(
   <button type="button" data-view="editor" aria-pressed="true">Edit labels</button>
   <button type="button" data-view="shelves" aria-pressed="false">Shelf overview</button>
 </nav>
-<div class="save-crops-bar" aria-live="polite">
+<aside class="global-controls" aria-label="Global label controls" aria-live="polite">
   <label class="identity-band-height-control">Identity height <input type="range" min="0.5" max="3.5" step="0.01" value="${layout.identityBand.heightInches}" data-identity-band-height><output data-identity-band-height-output>${layout.identityBand.heightInches.toFixed(2)}″</output></label>
   <button type="button" data-save-all-changes disabled>Save changes</button>
   <span data-save-status>Start the local editor with <code>npm start</code> to save configuration changes.</span>
-</div>
+</aside>
 ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(label))).join("\n")}
 ${renderShelfView(labels, preparedLogos, artworkUrlForLabel)}
 <script>
