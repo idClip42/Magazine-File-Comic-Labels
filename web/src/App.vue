@@ -24,7 +24,14 @@ void catalog.refreshFromServer();
 </script>
 
 <template>
-  <main v-if="catalog.config" class="app" :class="`${catalog.view}-view`">
+  <main
+    v-if="catalog.config"
+    class="app"
+    :class="[
+      `${catalog.view}-view`,
+      { 'identity-band-adjusting': catalog.isAdjustingIdentityBand },
+    ]"
+  >
     <ViewSwitcher />
     <GlobalControls />
 

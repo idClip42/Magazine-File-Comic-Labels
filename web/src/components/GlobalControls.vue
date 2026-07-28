@@ -1,13 +1,47 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
+import { identityBandCssVariables } from "../layout-css";
 import { useCatalogStore } from "../stores/catalog";
 
 const catalog = useCatalogStore();
-const identityHeight = computed(() => catalog.layout?.identityBand.heightInches ?? 0);
+const previewIdentityHeight = ref<number | undefined>();
+const identityHeight = computed(() =>
+    previewIdentityHeight.value ?? catalog.layout?.identityBand.heightInches ?? 0,
+);
+let previewFrame: number | undefined;
+
+function applyPreview(): void {
+    previewFrame = undefined;
+    const layout = catalog.layout;
+    const height = previewIdentityHeight.value;
+    if (!layout || height === undefined) return;
+
+    for (const [name, value] of Object.entries(identityBandCssVariables(layout, height))) {
+        document.documentElement.style.setProperty(name, value);
+    }
+}
 
 function updateIdentityHeight(event: Event): void {
     const height = Number((event.target as HTMLInputElement).value);
-    if (Number.isFinite(height)) catalog.updateIdentityBandHeight(height);
+    if (!Number.isFinite(height)) return;
+
+    catalog.beginIdentityBandAdjustment();
+    previewIdentityHeight.value = height;
+    if (previewFrame === undefined) previewFrame = window.requestAnimationFrame(applyPreview);
+}
+
+function finishIdentityHeightAdjustment(): void {
+    if (previewFrame !== undefined) {
+        window.cancelAnimationFrame(previewFrame);
+        applyPreview();
+    }
+
+    const height = previewIdentityHeight.value;
+    if (height !== undefined) {
+        catalog.updateIdentityBandHeight(height);
+        previewIdentityHeight.value = undefined;
+    }
+    catalog.endIdentityBandAdjustment();
 }
 </script>
 
@@ -22,6 +56,12 @@ function updateIdentityHeight(event: Event): void {
         step="0.01"
         :value="identityHeight"
         @input="updateIdentityHeight"
+        @pointerdown="catalog.beginIdentityBandAdjustment"
+        @pointerup="finishIdentityHeightAdjustment"
+        @pointercancel="finishIdentityHeightAdjustment"
+        @lostpointercapture="finishIdentityHeightAdjustment"
+        @change="finishIdentityHeightAdjustment"
+        @blur="finishIdentityHeightAdjustment"
       />
       <output>{{ identityHeight.toFixed(2) }}″</output>
     </label>
