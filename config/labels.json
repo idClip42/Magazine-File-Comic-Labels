@@ -893,10 +893,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.41,
+                    "y": 0.32
                 },
-                "scale": 0.85,
+                "scale": 5,
                 "legacy": {
                     "topInches": -1.1,
                     "leftInches": -0.9,
@@ -918,10 +918,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Marvels_Comics_Fantastic_Four_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6,
+                    "y": 1
                 },
-                "scale": 0.87,
+                "scale": 2.05,
                 "legacy": {
                     "topInches": -1.3,
                     "leftInches": -0.7,
@@ -1601,10 +1601,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/X-Men_Vol_1_131.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6,
+                    "y": 0.32
                 },
-                "scale": 1,
+                "scale": 1.04,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1.5,
@@ -2654,10 +2654,10 @@
             "asset": "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.45,
+                    "y": 0.52
                 },
-                "scale": 1,
+                "scale": 2.82,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1,
@@ -2699,10 +2699,10 @@
             "asset": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584558170i/40996661.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.44,
+                    "y": 0.67
                 },
-                "scale": 1.29,
+                "scale": 4.31,
                 "legacy": {
                     "topInches": -4,
                     "leftInches": -1.5,
@@ -2752,9 +2752,9 @@
             "crop": {
                 "focus": {
                     "x": 0.5,
-                    "y": 0.5
+                    "y": 0.38
                 },
-                "scale": 0.87,
+                "scale": 2.52,
                 "legacy": {
                     "topInches": -1.2,
                     "leftInches": -1,
@@ -2823,10 +2823,10 @@
             "asset": "http://marqueeposter.com/wp-content/uploads/2015/12/75-army-of-darkness-signed-art-print-us-1-sheet-1992-01.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.92,
+                    "y": 0.6
                 },
-                "scale": 1,
+                "scale": 1.87,
                 "legacy": {
                     "topInches": -1.8,
                     "leftInches": -2,
@@ -2868,10 +2868,10 @@
             "asset": "https://static.wikia.nocookie.net/avp/images/5/57/Aliens1.jpg/revision/latest?cb=20200703150739",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.17,
+                    "y": 0.53
                 },
-                "scale": 1.4,
+                "scale": 1.96,
                 "legacy": {
                     "topInches": -2.5,
                     "leftInches": -1,

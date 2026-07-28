@@ -81,6 +81,7 @@ function labelYears(label: LabelConfig): string {
 export function renderLabel(
     label: LabelConfig,
     preparedLogos: PreparedLogos,
+    artworkUrl = assetUrl(label.art.asset),
 ): string {
     const category = categories[label.category];
     if (!category)
@@ -101,7 +102,7 @@ export function renderLabel(
 
     return `
     <div class="label-editor">
-    <article class="label" style="--category-color:${escapeHtml(category.color)}; --art-image:url('${escapeHtml(assetUrl(label.art.asset))}'); --art-position:${cropPosition}; --art-zoom:${crop.scale}; --logo-max-width:${logoWidth}%; --art-saturation:${treatment.saturation}; --art-contrast:${treatment.contrast}; --art-brightness:${treatment.brightness}; --tint-opacity:${treatment.tintOpacity}; --tint-blend:${treatment.tintBlendMode};" data-label-id="${escapeHtml(label.id)}">
+    <article class="label" style="--category-color:${escapeHtml(category.color)}; --art-image:url('${escapeHtml(artworkUrl)}'); --art-position:${cropPosition}; --art-zoom:${crop.scale}; --logo-max-width:${logoWidth}%; --art-saturation:${treatment.saturation}; --art-contrast:${treatment.contrast}; --art-brightness:${treatment.brightness}; --tint-opacity:${treatment.tintOpacity}; --tint-blend:${treatment.tintBlendMode};" data-label-id="${escapeHtml(label.id)}">
       <div class="artwork" aria-hidden="true"><div class="artwork-image"></div></div>
       <div class="artwork-tint" aria-hidden="true"></div>
       <div class="top-rule" aria-hidden="true"></div>
@@ -127,6 +128,7 @@ export function renderLabel(
 export function renderDocument(
     labels: LabelConfig[],
     preparedLogos: PreparedLogos,
+    artworkUrlForLabel?: (label: LabelConfig) => string,
 ): string {
     const totalWidth = layout.face.widthInches + layout.overwrapInches * 2;
     const totalHeight = layout.face.heightInches + layout.overwrapInches * 2;
@@ -173,6 +175,7 @@ export function renderDocument(
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <title>Comic magazine file labels — V2</title>
   <style>
     :root { ${cssVariables} }
@@ -223,7 +226,7 @@ export function renderDocument(
   <button type="button" data-save-all-crops disabled>Save all crop changes</button>
   <span data-save-crops-status>Start the local editor with <code>npm start</code> to save to config/labels.json.</span>
 </div>
-${labels.map(label => renderLabel(label, preparedLogos)).join("\n")}
+${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(label))).join("\n")}
 <script>
   const pendingCrops = new Map();
   const saveButton = document.querySelector('[data-save-all-crops]');
