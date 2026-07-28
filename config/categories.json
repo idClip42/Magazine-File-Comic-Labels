@@ -115,19 +115,19 @@
         "color": "#315A9B",
         "logos": {
             "teen-titans-go": {
-                "asset": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/960px-Teen_Titans_-_logo_%28English%29.png"
+                "asset": "logos/tt-logo.svg"
             },
             "young-justice": {
-                "asset": "https://static.wikia.nocookie.net/headhuntersholosuite/images/1/1c/Young_Justice_logo_02.jpg"
+                "asset": "logos/yj-logo.svg"
             },
             "superman": {
-                "asset": "https://iesjv.wordpress.com/wp-content/uploads/2015/09/superman-logo.png"
+                "asset": "logos/superman-logo.svg"
             },
             "batman": {
-                "asset": "https://comicbooksandcats.com/wp-content/uploads/2014/10/batman-66-logo.png"
+                "asset": "logos/batman-logo.svg"
             },
             "the-new-teen-titans": {
-                "asset": "https://13thdimension.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-24-at-8.44.20-PM.png"
+                "asset": "logos/ntt-logo.svg"
             }
         }
     },
