@@ -124,6 +124,39 @@ export function renderLabel(
     </div>`;
 }
 
+function renderShelfView(
+    labels: LabelConfig[],
+    preparedLogos: PreparedLogos,
+    artworkUrlForLabel?: (label: LabelConfig) => string,
+): string {
+    const labelsPerShelf = 7;
+    const shelvesPerBookcase = 6;
+    const labelsPerBookcase = labelsPerShelf * shelvesPerBookcase;
+    const bookcases: string[] = [];
+
+    for (let start = 0; start < labels.length; start += labelsPerBookcase) {
+        const shelves: string[] = [];
+        for (let shelf = 0; shelf < shelvesPerBookcase; shelf += 1) {
+            const shelfLabels = labels.slice(
+                start + shelf * labelsPerShelf,
+                start + (shelf + 1) * labelsPerShelf,
+            );
+            shelves.push(`
+              <div class="bookshelf-row">
+                <div class="shelf-labels">
+                  ${shelfLabels
+                      .map(label => `<div class="shelf-label-slot">${renderLabel(label, preparedLogos, artworkUrlForLabel?.(label)).replace(/<section class="crop-controls"[\s\S]*?<\/section>/, "")}</div>`)
+                      .join("\n")}
+                </div>
+                <div class="shelf-spare-space" aria-hidden="true"></div>
+              </div>`);
+        }
+        bookcases.push(`<section class="bookcase" aria-label="Bookcase ${bookcases.length + 1}">${shelves.join("\n")}</section>`);
+    }
+
+    return `<section class="shelf-view" aria-label="Bookshelf overview"><div class="bookcase-wall">${bookcases.join("\n")}</div></section>`;
+}
+
 export function renderDocument(
     labels: LabelConfig[],
     preparedLogos: PreparedLogos,
@@ -213,16 +246,36 @@ export function renderDocument(
     .save-crops-bar { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; align-items: center; gap: 10px; max-width: min(520px, calc(100vw - 32px)); padding: 10px 12px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); font-size: 13px; }
     .save-crops-bar button { cursor: pointer; white-space: nowrap; }
     .save-crops-bar button:disabled { cursor: default; }
-    @media screen { body { padding: 0.4in; display: flex; flex-wrap: wrap; gap: 0.3in; align-items: flex-start; } .label { box-shadow: 0 0.08in 0.25in rgba(0,0,0,0.38); } }
-    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls, .save-crops-bar { display: none; } }
+    .view-switcher { position: fixed; top: 16px; right: 16px; z-index: 11; display: flex; gap: 4px; padding: 4px; background: rgba(255,255,255,0.96); border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+    .view-switcher button { padding: 7px 10px; border: 0; border-radius: 4px; background: transparent; cursor: pointer; font: inherit; }
+    .view-switcher button[aria-pressed="true"] { background: #222; color: #fff; }
+    .shelf-view { display: none; min-height: 100vh; padding: 28px; }
+    .bookcase-wall { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; max-width: 1500px; margin: 0 auto; align-items: start; }
+    .bookcase { aspect-ratio: 29.1 / 72; display: grid; grid-template-rows: repeat(6, minmax(0, 1fr)); padding: 7px; gap: 5px; background: #fff; box-shadow: 0 7px 18px rgba(0,0,0,0.32), inset 0 0 0 2px #e8e8e8; }
+    .bookshelf-row { display: flex; min-width: 0; min-height: 0; overflow: hidden; padding: 2px 3px 5px; background: linear-gradient(#f8f8f8 0 76%, #d6d6d6 76% 100%); box-shadow: inset 0 -1px 0 #a9a9a9; }
+    .shelf-labels { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); flex: 1 1 auto; min-width: 0; min-height: 0; }
+    .shelf-label-slot { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+    .shelf-label-slot .label-editor { width: var(--total-width); }
+    .shelf-label-slot .label { transform: scale(var(--shelf-label-scale, 0.1)); transform-origin: top left; box-shadow: none; }
+    .shelf-spare-space { flex: 0 0 6.67%; background: rgba(255,255,255,0.88); }
+    body.shelf-overview { background: #a5a5a5; }
+    body.shelf-overview > .label-editor, body.shelf-overview > .save-crops-bar { display: none; }
+    body.shelf-overview .shelf-view { display: block; }
+    @media screen { body { padding: 0.4in; display: flex; flex-wrap: wrap; gap: 0.3in; align-items: flex-start; } .label { box-shadow: 0 0.08in 0.25in rgba(0,0,0,0.38); } body.shelf-overview { display: block; padding: 0; } }
+    @media print { body { background: transparent; padding: 0; } .label { break-after: auto; page-break-after: auto; } .label-editor { break-after: page; page-break-after: always; } .label-editor:last-child { break-after: auto; page-break-after: auto; } .crop-controls, .save-crops-bar, .view-switcher, .shelf-view { display: none; } }
   </style>
 </head>
 <body>
+<nav class="view-switcher" aria-label="Label views">
+  <button type="button" data-view="editor" aria-pressed="true">Edit labels</button>
+  <button type="button" data-view="shelves" aria-pressed="false">Shelf overview</button>
+</nav>
 <div class="save-crops-bar" aria-live="polite">
   <button type="button" data-save-all-crops disabled>Save all crop changes</button>
   <span data-save-crops-status>Start the local editor with <code>npm start</code> to save to config/labels.json.</span>
 </div>
 ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(label))).join("\n")}
+${renderShelfView(labels, preparedLogos, artworkUrlForLabel)}
 <script>
   const pendingCrops = new Map();
   const saveButton = document.querySelector('[data-save-all-crops]');
@@ -238,10 +291,10 @@ ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(lab
       saveStatus.textContent = 'All crop changes are saved.';
     }
   };
-  document.querySelectorAll('.label-editor').forEach(editor => {
+  document.querySelectorAll('.crop-controls').forEach(controls => {
+    const editor = controls.closest('.label-editor');
     const label = editor.querySelector('.label');
     const labelId = label.dataset.labelId;
-    const controls = editor.querySelector('.crop-controls');
     const fields = { x: controls.querySelector('[data-crop-field="x"]'), y: controls.querySelector('[data-crop-field="y"]'), zoom: controls.querySelector('[data-crop-field="zoom"]') };
     const numbers = { x: controls.querySelector('[data-crop-number="x"]'), y: controls.querySelector('[data-crop-number="y"]'), zoom: controls.querySelector('[data-crop-number="zoom"]') };
     const update = (name, value, markDirty = true) => {
@@ -249,8 +302,9 @@ ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(lab
       if (!Number.isFinite(number)) return;
       fields[name].value = String(number);
       numbers[name].value = String(number);
-      if (name === 'x' || name === 'y') label.style.setProperty('--art-position', (Number(fields.x.value) * 100) + '% ' + (Number(fields.y.value) * 100) + '%');
-      if (name === 'zoom') label.style.setProperty('--art-zoom', String(number));
+      const matchingLabels = document.querySelectorAll('.label[data-label-id="' + labelId + '"]');
+      if (name === 'x' || name === 'y') matchingLabels.forEach(item => item.style.setProperty('--art-position', (Number(fields.x.value) * 100) + '% ' + (Number(fields.y.value) * 100) + '%'));
+      if (name === 'zoom') matchingLabels.forEach(item => item.style.setProperty('--art-zoom', String(number)));
       if (markDirty) {
         pendingCrops.set(labelId, { focus: { x: Number(fields.x.value), y: Number(fields.y.value) }, scale: Number(fields.zoom.value) });
         updateSaveControls();
@@ -282,6 +336,24 @@ ${labels.map(label => renderLabel(label, preparedLogos, artworkUrlForLabel?.(lab
       saveButton.disabled = !isLocalEditor || pendingCrops.size === 0;
     }
   });
+  const updateShelfLabelScale = () => {
+    document.querySelectorAll('.shelf-label-slot').forEach(slot => {
+      const label = slot.querySelector('.label');
+      if (!label || !slot.clientWidth || !label.offsetWidth) return;
+      const scale = slot.clientWidth / label.offsetWidth;
+      slot.style.setProperty('--shelf-label-scale', String(scale));
+    });
+  };
+  document.querySelectorAll('[data-view]').forEach(button => {
+    button.addEventListener('click', () => {
+      const shelfView = button.dataset.view === 'shelves';
+      document.body.classList.toggle('shelf-overview', shelfView);
+      document.querySelectorAll('[data-view]').forEach(control => control.setAttribute('aria-pressed', String(control === button)));
+      if (shelfView) requestAnimationFrame(updateShelfLabelScale);
+    });
+  });
+  window.addEventListener('resize', updateShelfLabelScale);
+  updateShelfLabelScale();
   updateSaveControls();
 </script>
 </body>
