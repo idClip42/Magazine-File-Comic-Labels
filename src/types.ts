@@ -64,6 +64,7 @@ export type LayoutConfig = {
     };
     years: {
         display: "condensed-range" | "separate-ranges";
+        reserveSpaceWhenEmpty: boolean;
     };
     logoPalette: {
         mutedSaturationMultiplier: number;

@@ -78,6 +78,13 @@ function labelYears(label: LabelConfig): string {
     );
 }
 
+function renderYears(label: LabelConfig): string {
+    const years = labelYears(label);
+    if (!years && !layout.years.reserveSpaceWhenEmpty) return "";
+
+    return `<div class="years">${escapeHtml(years)}</div>`;
+}
+
 export function renderLabel(
     label: LabelConfig,
     preparedLogos: PreparedLogos,
@@ -108,7 +115,7 @@ export function renderLabel(
       <div class="top-rule" aria-hidden="true"></div>
       <section class="identity-band">
         ${renderLogo(label.category, label.logo, category, logo, preparedLogos)}
-        <div class="years">${escapeHtml(labelYears(label))}</div>
+        ${renderYears(label)}
       </section>
       <div class="finger-hole-guide" aria-hidden="true"></div>
       <section class="metadata-band">
@@ -233,6 +240,7 @@ export function renderDocument(
     .inline-logo [data-logo-fill="secondary"] { fill: var(--logo-secondary) !important; }
     .inline-logo [data-logo-fill] { stroke: var(--logo-outline-color) !important; stroke-width: var(--logo-outline-width) !important; stroke-linejoin: var(--logo-outline-linejoin); vector-effect: non-scaling-stroke; paint-order: stroke fill; }
     .years { color: #111; font-weight: 800; font-size: var(--years-size); letter-spacing: 0.02em; line-height: 1; }
+    .years:empty { min-height: var(--years-size); }
     .metadata-band { top: var(--metadata-top); height: var(--metadata-height); display: flex; flex-direction: column; justify-content: center; gap: var(--band-gap); padding: 0.08in 0.11in; }
     .content-row { color: #171717; font-size: var(--metadata-size); line-height: 1.05; }
     .content-name { font-weight: 800; }

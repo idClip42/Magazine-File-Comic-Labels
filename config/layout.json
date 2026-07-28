@@ -32,7 +32,8 @@
         "bandGapInches": 0.045
     },
     "years": {
-        "display": "condensed-range"
+        "display": "condensed-range",
+        "reserveSpaceWhenEmpty": true
     },
     "logoPalette": {
         "mutedSaturationMultiplier": 0.35
