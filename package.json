@@ -5,6 +5,7 @@
   "description": "A static generator for vinyl comic magazine-file labels.",
   "scripts": {
     "audit:assets": "ts-node src/audit-cli.ts",
+    "apply:harvested-covers": "ts-node src/apply-harvested-covers-cli.ts",
     "build": "npm run build:server && npm run build:app && node dist/src/index.js",
     "build:app": "vite build",
     "build:server": "tsc",
@@ -12,6 +13,7 @@
     "convert:v1:force": "ts-node scripts/convert-v1-config.ts --force",
     "harvest:marvel-pages": "ts-node src/marvel-issue-pages-cli.ts",
     "harvest:marvel-covers": "ts-node src/marvel-cover-urls-cli.ts",
+    "normalize:harvested-covers": "ts-node src/normalize-harvested-cover-urls-cli.ts",
     "prepare:logos": "ts-node src/logo-prep-cli.ts",
     "serve": "node dist/src/editor-server.js",
     "start": "npm run build && npm run serve",

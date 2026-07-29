@@ -86,7 +86,9 @@ function canonicalUrl(value: string): string | undefined {
 function cleanVariant(sourceImageUrl: string): string | undefined {
   const source = new URL(sourceImageUrl);
   if (!/\/portrait_uncanny\.(?:jpe?g|png|webp)$/i.test(source.pathname)) return undefined;
-  source.pathname = source.pathname.replace(/portrait_uncanny\.(jpe?g|png|webp)$/i, "clean.$1");
+  // Marvel's clean rendition is JPEG even when the page's responsive preview
+  // is WebP. The CDN serves the same asset path as clean.jpg.
+  source.pathname = source.pathname.replace(/portrait_uncanny\.(jpe?g|png|webp)$/i, "clean.jpg");
   return source.toString();
 }
 

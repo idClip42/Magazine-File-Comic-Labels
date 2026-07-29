@@ -81,11 +81,10 @@ need the same review and confirmation process.
   `Invoke-WebRequest` still received CloudFront 403 for the same page.
 - The page HTML exposes the primary cover as a
   `cdn.marvel.com/.../portrait_uncanny.webp` URL. Replacing only that final
-  filename with `clean.webp` preserves the exact CDN asset path and yielded a
-  clean counterpart for every harvested page. This is an observed page-asset
-  relationship, not an ID or slug inference. Preserve the extension: current
-  page markup used WebP, while older research and configured candidates may
-  use JPEG.
+  filename with `clean.jpg` preserves the exact CDN asset path and yielded a
+  clean counterpart for every harvested page. The page preview uses WebP, but
+  the clean CDN rendition is JPEG. This is an observed page-asset relationship,
+  not an ID or slug inference.
 - Use `npm run harvest:marvel-covers` for the repeatable cover pass. It is
   deliberately serialized, records every success in
   `docs/MARVEL-COVER-URLS.json`, skips those successes on later runs, and

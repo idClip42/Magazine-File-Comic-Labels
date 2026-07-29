@@ -30,7 +30,7 @@ npm run harvest:marvel-covers
 The collector makes one browser-headered Node request at a time, defaults to a
 500 ms delay, persists successes in `MARVEL-COVER-URLS.json`, and skips them on
 later runs. It records the source `portrait_uncanny` URL plus its same-path
-`clean` counterpart while preserving the extension. It stops after three
+`clean.jpg` counterpart. It stops after three
 consecutive 403/429 responses; do not replace it with a parallel scraper.
 
 This is the full browser-assisted handoff list for every active, bounded Marvel
