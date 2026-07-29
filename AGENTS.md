@@ -22,14 +22,23 @@ config/
   labels.json       Ordered records for each physical file (the primary catalog)
 logos/              Committed, constrained SVG source logos for V2
 src/
-  index.ts          Build entry point; writes `dist/v2/index.html`
-  render.ts         HTML/CSS generator and browser crop-control script
+  index.ts          Embeds the catalog/configuration in the built Vue app
   config.ts         Loads the three JSON configuration files from the repo root
   types.ts          V2 configuration contract
   color.ts          Category-color and muted-logo-color helpers
   logo-prep.ts      Inlines/prepares local SVGs and writes a logo manifest
   audit.ts          Checks only referenced local assets
+  crop.ts           Shared crop limits and precision helpers
+  editor-config.ts  Creates browser configuration snapshots and asset URLs
+  editor-server.ts  Local editor/API server; saves approved crop/layout changes
   *-cli.ts          Small command-line entry points
+web/
+  index.html         Vite entry document with the configuration placeholder
+  src/App.vue        Vue application shell
+  src/components/    Label face, crop controls, global controls, and shelf view
+  src/stores/        Editable in-browser catalog state and save handling
+  src/styles/        Screen and print CSS for the labels
+vite.config.ts       Vite configuration; builds `web/` into `dist/v2/`
 scripts/
   convert-v1-config.ts  One-time V1-to-V2 migration utility
 legacy/v1/          Preserved V1 generator/configuration; do not treat as active
@@ -49,23 +58,31 @@ personal asset library unless explicitly asked.
 Run commands from the repository root:
 
 ```powershell
-npm run typecheck       # TypeScript checks only
+npm run typecheck       # TypeScript and Vue type checks
 npm run audit:assets    # Report missing referenced local files
-npm run build           # Compile, prepare SVGs, and generate dist/v2/index.html
-npm start               # Alias for the full build
+npm run build           # Compile, build Vue, prepare SVGs, and embed the catalog in dist/v2/
+npm run serve           # Serve an existing build and allow edits to be saved
+npm start               # Build, then start the local editor at http://127.0.0.1:4173
 npm run prepare:logos   # Prepare/logo-audit SVGs without generating the document
 ```
 
-Open `dist/v2/index.html` in a browser to inspect the labels. It includes crop
-sliders and numeric inputs; the Copy button produces the replacement `crop`
-JSON fragment for the matching record in `config/labels.json`. Crop controls
-are deliberately excluded in print media.
+`npm run build` produces a self-contained preview at `dist/v2/index.html`; it
+uses an embedded configuration snapshot and does not save edits. For crop or
+shared-layout editing, use `npm start`, then open the printed local URL. The
+server preloads remote artwork, supplies it to the editor, and the **Save
+changes** control writes crop changes to `config/labels.json` and permitted
+shared layout changes to `config/layout.json`. Rebuild after saving before
+handing off or printing. The app has both an editor view and a shelf overview;
+interactive controls are excluded from print media.
 
-Always run `npm run typecheck` after TypeScript changes. Run `npm run build`
-after changes to layout, rendering, logos, category definitions, or labels; it
-also catches SVG-preparation failures. Run `npm run audit:assets` whenever an
-asset path changes. The current catalog deliberately references remote artwork,
-so a clean audit only means any referenced *local* files exist.
+Always run `npm run typecheck` after TypeScript, Vue, or CSS-adjacent component
+changes. Run `npm run build` after changes to layout, application rendering,
+logos, category definitions, or labels; it also catches Vite and
+SVG-preparation failures. Run `npm run audit:assets` whenever an asset path
+changes. The current catalog deliberately references remote artwork, so a clean
+audit only means any referenced *local* files exist. Build and audit do not
+perform full catalog-schema validation; inspect JSON edits carefully and rely on
+typecheck/build plus the editor proof.
 
 ## V2 configuration model
 
@@ -73,9 +90,11 @@ Keep catalog data separate from rendering code. Preserve the ordering of
 `labels.json`: it is the intended label/print order.
 
 - `layout.json` controls the physical 3.875 x 11.75-inch face, 0.125-inch
-  overwrap, finger-hole guide, fixed bands, type sizes, artwork treatment,
-  logo palette/outline, and print/screen behavior. Make shared visual changes
-  here rather than adding label-specific CSS.
+  overwrap, top rule, finger-hole guide, fixed bands, type sizes, years mode,
+  artwork treatment, logo palette/outline, and cut-guide visibility. Make
+  shared visual changes here rather than adding label-specific CSS. The local
+  editor can save only the deliberately exposed subset: art treatment,
+  identity/metadata band heights, typography, and logo presentation.
 - `categories.json` holds the seven shelf-level families: Fantastic Four,
   X-family, Marvel characters, Marvel specials, DC Universe, adventure & pulp,
   and horror & dark fantasy. A category declares one hex color, named logo
@@ -136,11 +155,13 @@ intentional and documented.
    editing; catalog changes are collection decisions, not generated data.
 2. For a new physical file, add one ordered label record, reuse or add a named
    logo variant, choose its color family, and supply a focused crop.
-3. Build and inspect the affected label in `dist/v2/index.html`; use the crop
-   controls to refine the focal point/scale, then copy the value back into the
-   source JSON.
-4. Run typecheck, a build, and the local-asset audit. Review generated output
-   at print size before approving physical-production changes.
+3. Run `npm start` and inspect the affected label in the local editor. Refine
+   the focal point/scale, make any intentional shared-layout adjustment, and
+   use **Save changes**. Review the resulting JSON diff; the server rewrites
+   the full relevant JSON file and is not a substitute for catalog review.
+4. Stop the editor, then run typecheck, a fresh build, and the local-asset
+   audit. Review generated output at print size before approving
+   physical-production changes.
 
 The migration scripts are intentionally conservative. `npm run convert:v1`
 will refuse to overwrite existing V2 catalog files; use its `:force` variant
@@ -149,8 +170,9 @@ V1 data and discard manual V2 catalog edits.
 
 ## Scope and conventions
 
-- This is intentionally dependency-light: TypeScript plus `ts-node`; avoid
-  adding a web framework or server for ordinary label work.
+- This is intentionally small: TypeScript/`ts-node` for the build and local
+  API, with Vue, Pinia, and Vite for the editor. Avoid adding another framework
+  or server for ordinary label work.
 - There is no automated test suite. Typechecking, asset audit, build success,
   and browser/print proofing are the required checks.
 - Do not edit generated `dist/` files as source. Do not modify `legacy/v1/`
