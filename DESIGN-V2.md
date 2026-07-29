@@ -1,7 +1,7 @@
 # Comic Magazine File Label System V2
 
 **Status:** consolidated design brief for discussion  
-**Updated:** 2026-07-26  
+**Updated:** 2026-07-29
 **Supersedes:** the earlier partial V2 proposal, now revised against the complete prior design discussion and current decisions.
 
 ## Goal
@@ -46,6 +46,7 @@ White is not blank background. It is an architectural material, alongside the wh
 - Art fills the complete physical label and bleeds to its edges. The intended vinyl label should extend approximately 0.125 in past the visible file-face on its left and right edges, wrapping around those sides so the result reads as a complete manufactured covering rather than a rectangular sticker placed on cardboard. Its height remains the file-face height.
 - Prefer a dramatically cropped interior panel or splash image when it gives a single strong subject, iconic pose, memorable moment, or clearer silhouette. This avoids the competing logos, word balloons, cover copy, price boxes, and other visual noise common to comic covers.
 - Use a cover when it is especially iconic or artistically significant. Consistency comes from the shared treatment and design language, not from always using covers or always using interior art.
+- **Current sourcing concession:** high-resolution interior-panel art is not reliably available for the collection at present. Until it is, use focused close-ups of cover art as the normal practical source, choosing crops with a strong subject and minimal cover-copy distraction. This is a temporary availability constraint, not a change to the preference for strong interior panels or splashes when suitable high-resolution sources can be obtained.
 - Do not use complete monochrome. Reduce saturation and apply the category color tint while preserving enough tonal range and original color for the artwork to remain recognizable.
 - Halftone, threshold, line-art, and fade treatments are rejected as default system rules: they risk becoming the visual subject themselves.
 
