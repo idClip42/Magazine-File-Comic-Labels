@@ -6,8 +6,13 @@
         "art": {
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5aa96523e19d7/clean.jpg",
             "options": [
-                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5aa96523e19d7/clean.jpg",
-                "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Fantastic_Four_Vol_1_12.jpg/revision/latest?cb=20250913164540"
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/d0/536d72ee76127/clean.jpg",
+                "https://static.wikia.nocookie.net/marvelcomicsdatabase/images/0/01/Fantastic_Four_Vol_1_4.png/revision/latest?cb=20190318200116",
+                "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Fantastic_Four_Vol_1_5.jpg",
+                "https://static.wikia.nocookie.net/marveldatabase/images/a/ad/Fantastic_Four_Vol_1_8.jpg/revision/latest?cb=20050929003650",
+                "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/Fantastic_Four_Vol_1_9.jpg/revision/latest?cb=20250620155335",
+                "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Fantastic_Four_Vol_1_12.jpg/revision/latest?cb=20250913164540",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5aa96523e19d7/clean.jpg"
             ],
             "crop": {
                 "focus": {
