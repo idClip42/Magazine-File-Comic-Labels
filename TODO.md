@@ -13,11 +13,14 @@
   - Maybe small little (probably labeled) buttons along the bottom to make it easier to bounce between covers
     - Maybe reset the zoom and pan every time we switch images, also.
   - I imagine it'd be similar for New Mutants, X-Men, Excalibur... Further Adventures of Indiana Jones...
+    - Basically any Marvel comic where I've established a clear series.
+  - The Marvel wikia is also a source for cover art, and I've occasionally found cover art there that's bigger than what the official marvel website has, so that's an option for searching too I guess.
 - [ ] I'd love to figure out a way to prevent myself from accidentally zooming a pic in or out when I just want to scroll the screen
     - I'm not sure there is one though?
     - I like the fact that I can just quickly and freely adjust the images...
     - ...but maybe that's not necessary
     - Maybe it's worth having a "selection" interaction with a thing before I can start editing it.
     - But I don't know. Enjoying how quickly I can adjust each one.
+      - So maybe we forget this for now.
 - [ ] Worth noting in the docs - I had wanted to start picking out individual panel art, but I'm finding it suddenly very difficult to get at hi res versions of these comics on pirate websites, so I think we're stuck with close-ups on covers.
 - [ ] Two labels should never have the same art, but if they do, in the UI, if I go to move the second one, it moves the first instead, which is bug behavior.
