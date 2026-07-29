@@ -1,0 +1,26 @@
+{
+  "description": "Second-pass Marvel cover harvest. Each entry is an explicit numbered run from the catalog; annuals, miscellany, Marvel Fanfare, and What If are intentionally omitted.",
+  "runs": [
+    { "id": "ff-legacy-401-416", "labelId": "fantastic-four-014", "seriesId": 2121, "issues": [401, 416] },
+    { "id": "ff-1996-1-13", "labelId": "fantastic-four-014", "seriesId": 2123, "issues": [1, 13] },
+    { "id": "ff-legacy-576-588", "labelId": "fantastic-four-040", "seriesId": 421, "issues": [576, 588] },
+    { "id": "ff-2011-1-11", "labelId": "fantastic-four-040", "seriesId": 13440, "issues": [1, 11] },
+    { "id": "ff-legacy-600", "labelId": "fantastic-four-040", "seriesId": 421, "issues": [600, 600] },
+    { "id": "ff-legacy-601-611", "labelId": "fantastic-four-041", "seriesId": 421, "issues": [601, 611] },
+    { "id": "ff-2011-12-23", "labelId": "fantastic-four-041", "seriesId": 13440, "issues": [12, 23] },
+    { "id": "ff-2012-1-16", "labelId": "fantastic-four-044", "seriesId": 16557, "issues": [1, 16] },
+    { "id": "ff-title-2012-1-16", "labelId": "fantastic-four-044", "seriesId": 16561, "issues": [1, 16] },
+    { "id": "ff-2014-1-14", "labelId": "fantastic-four-045", "seriesId": 18700, "issues": [1, 14] },
+    { "id": "ff-2014-642-645", "labelId": "fantastic-four-045", "seriesId": 18700, "issues": [642, 645] },
+    { "id": "ff-2018-1-6", "labelId": "fantastic-four-045", "seriesId": 24554, "issues": [1, 6] },
+    { "id": "marvel-2-in-one-2017-1-12", "labelId": "fantastic-four-023", "seriesId": 23771, "issues": [1, 12] },
+    { "id": "thing-1983-1-36", "labelId": "fantastic-four-024", "seriesId": 3667, "issues": [1, 36] },
+    { "id": "marvel-knights-4-1-30", "labelId": "fantastic-four-022", "seriesId": 725, "issues": [1, 30] },
+    { "id": "ultimate-ff-1-35", "labelId": "fantastic-four-019", "seriesId": 702, "issues": [1, 35] },
+    { "id": "ultimate-ff-36-60", "labelId": "fantastic-four-020", "seriesId": 702, "issues": [36, 60] },
+    { "id": "new-mutants-2019-1-33", "labelId": "new-mutants-006", "seriesId": 27557, "issues": [1, 33] },
+    { "id": "excalibur-1988-76-125", "labelId": "excalibur-004", "seriesId": 2011, "issues": [76, 125] },
+    { "id": "secret-wars-1984-1-12", "labelId": "secret-wars-001", "seriesId": 2063, "issues": [1, 12] },
+    { "id": "secret-wars-2015-1-9", "labelId": "secret-wars-001", "seriesId": 19648, "issues": [1, 9] }
+  ]
+}

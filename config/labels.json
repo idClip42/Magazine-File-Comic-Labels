@@ -880,7 +880,38 @@
                     "leftInches": -1,
                     "zoom": 0.93
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/Fantastic_Four_Vol_2_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/537a5e622f7a0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/00/55f0a39e98606/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/50ae3588aa62f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/f0/50ae36037fa54/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/50ae36d15551a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/52618127cccf7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/00/5261821931f12/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/03/521266e173b18/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/50ae3a202ffe9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/50ae2153a6b86/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/d0/50ae26ca3bee6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/50b45cd18f966/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/60/50ae291b22314/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/30/5212671811961/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/00/50ae2c19633ed/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/40/5ac7dbbcd54d7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/4bc35f203e25e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/80/4bc351c25a730/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/4bc335d96d819/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/b0/4bc335d3eab52/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/f0/4bc335ceb8206/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/4bc35d9c27f40/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/4bc35f2f572c4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/4bc38282eb551/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/4bc35f3f26792/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/4bc335c97d007/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/4bc35f444834b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/90/4bc35f498cafb/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1224,7 +1255,7 @@
         "category": "fantastic-four",
         "logo": "late-1970s",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Fantastic_Four_Vol_1_579.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/51db2cbb9ef67/clean.jpg",
             "crop": {
                 "focus": {
                     "x": 0.5,
@@ -1236,7 +1267,34 @@
                     "leftInches": -0.5,
                     "zoom": 0.91
                 }
-            }
+            },
+            "options": [
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/51db2cd16e956/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/b0/51db2cd00ea78/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/d0/51db2cc18d3b6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/51db2cbb9ef67/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/f0/51db31d705491/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/5ad8c416528b8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/c0/5ad8df8a6f505/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/70/5ad8ea01b2f0c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/50/5ad8f25f0f6c0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/20/5ad9fb0c8b0d5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/5ada05d386392/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/c0/5ada1371ca196/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/90/5ada2dff10a81/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/d0/5ad0de1a029f6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/51f68be0b365a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/51f68bd303790/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/51f68bc07b1ca/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/00/51f68bb1f3412/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/20/5ad1051a44986/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/50/5ad10a055632c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/70/5ad10fead7ff8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/00/5ad1145b25fe6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/4e8626ba91a54/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/a0/4f7de154b962b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/57e976329adaf/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1273,7 +1331,33 @@
                     "leftInches": -0.75,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/0/02/FF_Vol_1_12.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/60/51dc1b51ab390/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/20/51dc1b58c4571/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/80/51dc1b442b14f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/56bcad8b08e57/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/d0/56c600eb91160/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/51dc1c8692f28/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/51dc1c7c0d748/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/40/51dc1e5fadd9c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/00/51dc1c950c81d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/51dc1c76c6eed/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/a0/51dc1c677ec93/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/51f68cfb59341/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/40/51f68ced1e4ab/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/60/51f68ce553796/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/60/51f68cd654a40/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/5ad60e88504ca/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/00/4f9ad00302567/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/51f68de7f14e7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/10/51f68dda99ba8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/51f68dd003c44/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/51f68dc239205/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/51f68db70d1b9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/51f68da85f9b4/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1305,7 +1389,42 @@
                     "leftInches": -1.5,
                     "zoom": 1.15
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Fantastic_Four_Vol_4_4.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/51646f52a1a48/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5b2cf366f380e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/5b2cfee8f1f29/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/60/5b2d0135360e1/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/5b2d0dd22666b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/5b2d112776200/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/5b2d167aecf8e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/10/5b2d1c2093566/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/5b2d21c4127a8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/0/03/51d71a2149057/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/51f6b5ec19556/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/522647ff4d29a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/524f053b7d25e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/b0/5280f99f8dfe6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/70/52a76a4179fda/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/d0/52cc4d3632dd1/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/03/5164713e1f567/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/5c3678cb230dd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/80/50c253cc04eb4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/b0/511d10911011a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/f0/5150a0829cc45/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/20/515f1f6db5bbd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/40/5182d16cc8dbd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/51c9c77123a09/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/80/51d71c77a4357/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/51e595ddb5201/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/521267f2cae8e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/40/5232213fb43aa/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/30/525c0d5a7dd5e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/5284f7dde94a6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/90/523320a425b29/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/52d6f0d66b686/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1339,7 +1458,34 @@
                     "leftInches": -2,
                     "zoom": 1.18
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/c/c9/Fantastic_Four_Vol_5_14.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/00/5a553b29671a0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/10/5314f10b8457b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/e0/534ee336189b7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/53693796a0a60/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/10/5374f2a799cc5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/03/5399d24275b18/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/53b2d5e4855a3/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/40/53dfcca374dbf/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/53f615ed64e01/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/60/54077e984c9f2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/03/5434210589c9f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/543ec60a07776/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/10/54627ef918047/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/d0/5485c265775ba/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/f0/54b5532c84140/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/d0/54e501135a1e8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/04/54f9fe7f8cbe8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/60/553688a083105/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/f0/5b62111e4af6f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/5b9016e1df624/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/5be371766f20b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/5bf4776dbd387/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/a0/5c1aa35534e3b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/00/5c379556a57d3/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1700,7 +1846,22 @@
                     "leftInches": -1.9,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/80/5a31724fe300b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/5a61108cae74c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/5a7b3e7e33bf6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/c0/5aa06409a45e2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/00/5abd660a7c91b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/20/5b05c1859c5ab/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/20/5b2c11de5e475/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5b50fc5c489b0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/5b7ed61c3e2b0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/5b9ff7cc7c53a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/40/5bd207b20bac5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/d0/5bf477574b2a8/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1732,7 +1893,46 @@
                     "leftInches": -0.75,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/5c87da1bae84f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/90/5c40abcf8f9b7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/5c87d9f002a92/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/e0/5c87d9fdb0d8a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/d0/5c87da0d65719/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/e0/5c87d9e103ef5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/5c87d9d217d66/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/20/5c87d9968ede8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/80/5c87d9b3af779/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/80/5c40b19b54022/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/f0/5c87d9c597864/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/d0/5c87d96460a5b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/e0/5c87d956d1eac/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/b0/5c87d8f98590b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/60/5c87d8e914717/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/90/5c87d8d991bc9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/00/5c87d88a4ea09/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/c0/5c87d908030f6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/5c40c9c54960f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/40/5c87d9168eee1/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/90/5c87d946f257f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/f0/5c87d939e38e9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/5e28b0f610b32/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/f0/63195e120045e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/63195e120793e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/00/5e42c85023d06/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/50/63195e128e15a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/00/63195e12a2e07/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/63195defd1cee/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/b0/5c87d92827d87/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/50/63195defa5797/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/d0/63195defa4c7f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/e0/63195defa58e3/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/63195defc0237/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/03/63195e1158f19/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/60/63195e11e57d1/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1967,7 +2167,40 @@
                     "leftInches": -1.075,
                     "zoom": 0.9
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/4_Vol_1_5.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/5841c1f921b0c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5841c1ff8563c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/40/5ae0b4e30bc50/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5ae0c89c7a155/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5841c25d8f47b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/20/5841c27f49be9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/10/5841c23aa85eb/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/90/5ae0eab13a565/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/f0/5ae0f13c71635/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/5841c2fadfec6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/f0/5841bf75ebb69/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/5841c31f01da8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/f0/5841c33e2dacd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/c0/5841c3315b530/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/60/5841c31130bbd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/d0/5841c2dd9b7fe/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/90/5841c3593e6d0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/5841c2f29b82d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/5841bfa08620b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/d0/5841c36ddba30/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/b0/55ccb7566eb7b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5841c34bbc8e5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/10/5841bfca87757/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/c0/5841bf5da9c74/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/5841bf7ab705c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/5841bf92482cb/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/70/5841bfb293ae6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/5841bf39e218b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/70/5841bf4e708ac/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/5841beecae19e/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1994,7 +2227,45 @@
                     "leftInches": -2,
                     "zoom": 1.06
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Ultimate_Fantastic_Four_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/90/5a907027b2e79/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/c0/5a907d2924e74/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5a941d71c8fb4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/b0/5a941ed0ebada/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/10/5a942a9e8cf6e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/80/5a94337e9ff94/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/d0/5a943f24c2858/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/e0/5a9449ee31393/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/50/5a94621dee5ad/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/70/5a946d53ec3db/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/5a9042dc646b2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/00/5a9419cce66fe/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/50/5a942049b533e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/5a94257b25acd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/60/5a942a7f2a6cf/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/10/5a943505d25a4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/5a943b6d52ac5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5a9450fdb4792/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/5a945a6383fe5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5a9461b3d56fa/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/50/5a946be953667/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/5a947084e170c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/5a9476f64d4e0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/5a947f744be57/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/00/5a94863c6390f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/5a96bb1b15743/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/5a96c52b2780d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/5a96ca952e560/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/b0/5a96cf82abd29/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/e0/5a96d88b5ce23/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/80/5a95b8736775f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5a95bd6d1b482/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/00/5a95cb0c1d860/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/c0/5a95d002775f8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/20/5a95d059b0126/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -2026,7 +2297,35 @@
                     "leftInches": -1.75,
                     "zoom": 1.2
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/f0/5a96bc3169e57/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/70/5a96c62a2c9d3/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/a0/5809146673071/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/a0/5a96e057118e4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/00/5a96ff69414b4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/5a970f2b93806/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/10/019db5829125/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/5a9712397f816/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/5a9719dbe70ae/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/03/5a980852263b2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/d0/5a980bc8a467f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/60/5a98174b7f210/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/5a982055ef772/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/5a982ad1550b8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/40/5a98358287722/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/10/5a985183ef6cd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/10/5a98598c5b144/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/f0/5a9ecaf4eed95/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/5a9ed65734b1d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/90/5a9ee61e1edf3/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/5a9eeeb76701c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/5a9ef8d2f17cc/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/00/5a9f0185c0405/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/5aa153324d687/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/b0/5aa15feec1b1f/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -2359,7 +2658,43 @@
                     "leftInches": -0.7,
                     "zoom": 0.85
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/0/0a/New_Mutants_Vol_4_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/5db841cf8eec1/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/d0/5dc9db95c6064/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/40/5de549937fddb/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/f0/5defb251e4205/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/5e0a66482fa4c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/90/5e28909cd1352/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/c0/5e28a3c311c3e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/5e4c360e1661c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/5e58357cdeab2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/30/5e86539d207e7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5f282a83af75a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/00/5f3d36d9238ee/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/c0/5f3ee0c3d48f7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/a0/5fcfb889b8673/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/6009ea19f09f6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/0/03/6030362506c9d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/00/60771787cfc7a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/60/60afe2dabf20b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/e0/60cd0f67f3aab/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/a0/60fad37bac789/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/00/612e8ddbd5006/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/e0/614b3fbab7f3b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/d0/619e6367579e7/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/b0/620155876881a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/a0/627bf79e2fbc0/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/62b9e1026e6c5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/62d0457edf341/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/d0/62f3c67d27d8b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/70/630506bb88bff/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/70/631b359334294/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/6352e5c1ece43/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/e0/637e3e841cdf6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/30/639a7a3bbbfbf/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -2962,7 +3297,60 @@
                     "leftInches": -0.7,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/10/66c4c2f98f4be/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/20/66c4c2fa2cefb/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/30/5defc4740bafc/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/5defc4996a211/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/c0/5defc4a387d09/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/66c4c2fa6d5dc/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/e0/5caf57bac407a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/03/5d1242264c179/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/5d124338154ee/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/5d124a48085cc/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/60/5d124e7198968/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/f0/5d126c1b08e3f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/20/5d126cf72be15/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/5d1279bd5a622/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/f0/5d127b424e63a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/10/5d1282b9b8aca/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/5d136b0da81ee/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/30/5d13796897b0e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/30/5d137dfc0a7c6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/70/5d138230b1d0e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/03/5d1387270a093/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/60/5d13890dead7b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/55affc7c324ff/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/60/5d138ed4b38ea/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5d1390da68c96/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/00/55b0017fe1186/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/55b001dd68f58/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/03/55b002a499585/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/03/62194685cd671/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/62194685ca6a6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/60/62194685c85ff/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/60/62194685c959b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/d0/62194685c6fca/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/03/621946a08477e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/00/621946a0d62ae/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/621946a0e93bd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/03/621946a1849a9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/621946a1b548a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/10/621946a1b9a0f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/621946beb4b74/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/656503cc51b39/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/656503cc4d91a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/656503cc577c5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/20/656503cc518b2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/656503cc56257/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/80/656503e5a59bc/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/656503e76f38b/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/656503e7883ea/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/03/656503e7c2647/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/656503e81aa73/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3381,7 +3769,31 @@
                     "leftInches": -1.5,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_Super_Heroes_Secret_Wars_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/b0/51dee6dd91671/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5756da47dab15/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/5756e01f25797/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/b0/5756ec889543f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5756f101dda9f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/5756fce0db4fa/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/575712d2628de/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/03/5757174e3255d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/57581b0e17cb5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/f0/51dee63a1cf60/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/30/57581c9ff0718/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/a0/57581d5d4260f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/70/5cb736a3cdd49/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/5cb737237a2de/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/03/5cb7377845092/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/a0/5cb73456184e4/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/5cb736208d76d/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/5cb73a17a642c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/30/5cb73c66beb33/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/564ce8a2d5cde/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/569040820cfb9/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3782,7 +4194,7 @@
         "category": "adventure-pulp",
         "logo": "indiana-jones",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Further_Adventures_of_Indiana_Jones_Vol_1_20.jpg",
+            "asset": "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/1-1.jpg",
             "crop": {
                 "focus": {
                     "x": 0.5309,
@@ -3794,7 +4206,25 @@
                     "leftInches": -1,
                     "zoom": 0.95
                 }
-            }
+            },
+            "options": [
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/1-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/2-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/3-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/4-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/5-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/7-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/8-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/9-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/10-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/11-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/12-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/13-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/14-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/15-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/16-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/17-1.jpg"
+            ]
         },
         "contents": [
             {
@@ -3809,14 +4239,33 @@
         "category": "adventure-pulp",
         "logo": "indiana-jones",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Indy+Marvel",
+            "asset": "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/18-1.jpg",
             "crop": {
                 "focus": {
                     "x": 0.5,
                     "y": 0.5
                 },
                 "scale": 1
-            }
+            },
+            "options": [
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/18-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/19-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/20-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/21-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/22-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/23-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/24-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/25-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/26-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/27-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/28-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/29-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/30-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/31-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/32-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/33-1.jpg",
+                "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/34-1.jpg"
+            ]
         },
         "contents": [
             {
