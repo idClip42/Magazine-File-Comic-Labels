@@ -43,7 +43,7 @@ White is not blank background. It is an architectural material, alongside the wh
 ### Artwork
 
 - One bold image per box; no collages. The image choice should reduce visual noise while giving each box a strong, distinct graphic identity.
-- Art fills the complete physical label and bleeds to its edges. The intended vinyl label should extend approximately 0.125 in past the visible file-face edges and wrap over them, so the result reads as a complete manufactured covering rather than a rectangular sticker placed on cardboard.
+- Art fills the complete physical label and bleeds to its edges. The intended vinyl label should extend approximately 0.125 in past the visible file-face on its left and right edges, wrapping around those sides so the result reads as a complete manufactured covering rather than a rectangular sticker placed on cardboard. Its height remains the file-face height.
 - Prefer a dramatically cropped interior panel or splash image when it gives a single strong subject, iconic pose, memorable moment, or clearer silhouette. This avoids the competing logos, word balloons, cover copy, price boxes, and other visual noise common to comic covers.
 - Use a cover when it is especially iconic or artistically significant. Consistency comes from the shared treatment and design language, not from always using covers or always using interior art.
 - Do not use complete monochrome. Reduce saturation and apply the category color tint while preserving enough tonal range and original color for the artwork to remain recognizable.
@@ -67,7 +67,7 @@ Horizontal structure is intentional: shelves are experienced horizontally, and r
 
 - Magazine file face: **3.875 × 11.75 in**.
 - The centered finger hole is a downward-facing perfect half circle: its flat edge is on top and its curve is below. It lies approximately 1.5–2.5 in from the bottom and is about 1.75 in wide at its widest point.
-- The label covers the entire face. Artwork intentionally runs through the hole area; after application, that area is cut out.
+- The label covers the entire face and extends 0.125 in on the left and right only, for a final physical size of **4.125 × 11.75 in**. Artwork intentionally runs through the hole area; after application, that area is cut out.
 - The metadata band occupies the lower region beneath the finger hole.
 
 The layout configuration contains an intentionally undersized graphical cut guide (initially 90% of the nominal hole diameter). The physical IKEA-file opening is the final cutting reference; the smaller guide prevents imperfect box manufacturing or placement from exposing important white-band content.

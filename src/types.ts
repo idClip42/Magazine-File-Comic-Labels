@@ -47,6 +47,7 @@ export type LabelConfig = {
 export type LayoutConfig = {
     localAssetRoot: string;
     face: { widthInches: number; heightInches: number };
+    /** Physical material that wraps around the left and right file edges. */
     overwrapInches: number;
     topRuleHeightInches: number;
     artTreatment: ArtTreatment;

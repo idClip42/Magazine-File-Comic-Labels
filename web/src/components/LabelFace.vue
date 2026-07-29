@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, type CSSProperties } from "vue";
+import { computed, onBeforeUnmount, ref, type CSSProperties } from "vue";
 import { deriveMutedCategoryColor } from "../../../src/color";
 import {
     clamp,
@@ -28,6 +28,27 @@ type PanState = {
 
 const imageMetrics = ref<ImageMetrics>();
 const panState = ref<PanState>();
+const cropGuidesActive = ref(false);
+let cropGuideTimeout: ReturnType<typeof setTimeout> | undefined;
+
+function showCropGuides(linger = false): void {
+    cropGuidesActive.value = true;
+    if (cropGuideTimeout !== undefined) clearTimeout(cropGuideTimeout);
+    if (linger) {
+        cropGuideTimeout = setTimeout(() => {
+            cropGuidesActive.value = false;
+            cropGuideTimeout = undefined;
+        }, 700);
+    }
+}
+
+function hideCropGuides(): void {
+    if (cropGuideTimeout !== undefined) clearTimeout(cropGuideTimeout);
+    cropGuideTimeout = undefined;
+    cropGuidesActive.value = false;
+}
+
+onBeforeUnmount(hideCropGuides);
 
 const category = computed(() => {
     const value = catalog.config?.categories[props.label.category];
@@ -57,7 +78,7 @@ const artworkUrl = computed(() =>
 const frameAspectRatio = computed(() => {
     const layout = catalog.layout!;
     const width = layout.face.widthInches + layout.overwrapInches * 2;
-    const height = layout.face.heightInches + layout.overwrapInches * 2;
+    const height = layout.face.heightInches;
     return width / height;
 });
 
@@ -175,6 +196,7 @@ function startPan(event: PointerEvent): void {
     if (catalog.view !== "editor" || event.button !== 0 || !event.isPrimary || !coverSize.value) return;
     const label = event.currentTarget as HTMLElement;
     event.preventDefault();
+    showCropGuides();
     label.setPointerCapture(event.pointerId);
     panState.value = {
         pointerId: event.pointerId,
@@ -217,6 +239,7 @@ function endPan(event: PointerEvent): void {
     const label = event.currentTarget as HTMLElement;
     if (label.hasPointerCapture(event.pointerId)) label.releasePointerCapture(event.pointerId);
     panState.value = undefined;
+    hideCropGuides();
 }
 
 function focusAnchoredAtPointer(
@@ -246,6 +269,7 @@ function wheelZoom(event: WheelEvent): void {
     if (!baseSize) return;
 
     event.preventDefault();
+    showCropGuides(true);
     const label = event.currentTarget as HTMLElement;
     const bounds = label.getBoundingClientRect();
     const unit = event.deltaMode === WheelEvent.DOM_DELTA_LINE
@@ -290,6 +314,7 @@ function wheelZoom(event: WheelEvent): void {
     :class="{
       'crop-is-interactive': catalog.view === 'editor',
       'crop-is-panning': panState,
+      'crop-guides-active': cropGuidesActive,
     }"
     :style="artStyle"
     :data-label-id="label.id"
@@ -310,6 +335,7 @@ function wheelZoom(event: WheelEvent): void {
     </div>
     <div class="artwork-tint" aria-hidden="true" />
     <div class="top-rule" aria-hidden="true" />
+    <div class="crop-boundary-guide" aria-hidden="true" />
 
     <section class="identity-band" :style="logoStyle">
       <div

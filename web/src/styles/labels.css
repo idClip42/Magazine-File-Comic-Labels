@@ -3,15 +3,15 @@
   --face-height: 11.75in;
   --overwrap: 0.125in;
   --total-width: 4.125in;
-  --total-height: 12in;
+  --total-height: 11.75in;
   --top-rule-height: 0.06in;
-  --identity-top: 7.375in;
+  --identity-top: 7.25in;
   --identity-height: 1.9in;
-  --metadata-top: 10.375in;
+  --metadata-top: 10.25in;
   --metadata-height: 1.15in;
   --hole-width: 1.575in;
   --hole-height: 0.7875in;
-  --hole-top: 9.60625in;
+  --hole-top: 9.29375in;
   --years-size: 0.29in;
   --metadata-size: 0.13in;
   --band-gap: 0.045in;
@@ -79,6 +79,25 @@ body {
 
 .label.crop-is-interactive { cursor: grab; }
 .label.crop-is-panning { cursor: grabbing; user-select: none; }
+
+/* Shown only while changing a crop: the shaded sides are vinyl that wraps
+   around the file, and the outlined rectangle is the visible front face. */
+.crop-boundary-guide {
+  position: absolute;
+  top: 0;
+  right: var(--overwrap);
+  bottom: 0;
+  left: var(--overwrap);
+  z-index: 4;
+  border: 2px dashed rgba(255, 255, 255, 0.94);
+  outline: 1px solid rgba(0, 0, 0, 0.72);
+  box-shadow: 0 0 0 999px rgba(0, 0, 0, 0.34);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease-out;
+}
+
+.label.crop-guides-active .crop-boundary-guide { opacity: 1; }
 
 .artwork-tint {
   background: var(--category-color);
