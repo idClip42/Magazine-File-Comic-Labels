@@ -10,6 +10,7 @@ type HarvestedCover = {
     issue: string;
     status: string;
     cleanImageUrl?: string;
+    sourceImageUrl?: string;
 };
 
 type CoverInventory = { entries?: HarvestedCover[] };
@@ -51,6 +52,14 @@ function normalizeMarvelJpegUrl(value: string): string {
     }
 }
 
+function issueFromLegacyAsset(asset: string, covers: HarvestedCover[]): string | undefined {
+    const direct = covers.find(cover => cover.cleanImageUrl === asset || cover.sourceImageUrl === asset);
+    if (direct) return direct.issue;
+    const issue = asset.match(/vol(?:ume)?[_-]?\d+[_-](\d+)(?:[_./?]|$)/i)?.[1]
+        ?? asset.match(/(?:issue|_)(\d+)(?:[_./?]|$)/i)?.[1];
+    return issue && covers.some(cover => cover.issue === issue) ? issue : undefined;
+}
+
 function main(): void {
     const args = process.argv.slice(2);
     if (args.includes("--help")) usage();
@@ -61,9 +70,10 @@ function main(): void {
     const labels = JSON.parse(original) as LabelConfig[];
     const inventory = JSON.parse(fs.readFileSync(coversPath, "utf8")) as CoverInventory;
     if (!Array.isArray(inventory.entries)) throw new Error(`${coversPath} does not contain an entries array.`);
+    const coverEntries = inventory.entries;
 
     const coversByLabel = new Map<string, string[]>();
-    for (const cover of inventory.entries) {
+    for (const cover of coverEntries) {
         if (cover.status !== "found") continue;
         if (!isCleanMarvelUrl(cover.cleanImageUrl)) {
             throw new Error(`Invalid clean Marvel URL for ${cover.labelId} #${cover.issue}.`);
@@ -80,24 +90,30 @@ function main(): void {
 
     let additions = 0;
     let touchedLabels = 0;
+    let directOrIssueSelections = 0;
+    let fallbackSelections = 0;
     for (const label of labels) {
         const harvested = coversByLabel.get(label.id);
         if (!harvested) continue;
-        const originalOptions = label.art.options ?? [];
-        const options = [...new Set(originalOptions.map(normalizeMarvelJpegUrl))];
-        const optionsChanged = options.length !== originalOptions.length
-            || options.some((url, index) => url !== originalOptions[index]);
-        const known = new Set(options);
-        const missing = harvested.filter(url => !known.has(url));
-        const replacementAsset = normalizeMarvelJpegUrl(label.art.asset);
-        if (!missing.length && replacementAsset === label.art.asset && !optionsChanged) continue;
-        label.art.asset = replacementAsset;
-        label.art.options = [...options, ...missing];
-        additions += missing.length;
+        const labelCovers = coverEntries.filter(entry => entry.labelId === label.id && entry.status === "found");
+        const selectedIssue = issueFromLegacyAsset(normalizeMarvelJpegUrl(label.art.asset), labelCovers);
+        const selected = harvested.find(url => {
+            const cover = labelCovers.find(entry => entry.cleanImageUrl === url);
+            return cover?.issue === selectedIssue;
+        }) ?? harvested[0];
+        if (selectedIssue) directOrIssueSelections += 1;
+        else fallbackSelections += 1;
+        const unchanged = label.art.options?.length === harvested.length
+            && label.art.options.every((url, index) => url === harvested[index])
+            && label.art.asset === selected;
+        if (unchanged) continue;
+        label.art.asset = selected;
+        label.art.options = harvested;
+        additions += harvested.length;
         touchedLabels += 1;
     }
 
-    console.log(`${write ? "Applying" : "Would apply"} ${additions} harvested clean cover URL(s) across ${touchedLabels} label(s).`);
+    console.log(`${write ? "Applying" : "Would apply"} exact harvested option lists for ${touchedLabels} label(s) (${additions} URL(s)); selected covers: ${directOrIssueSelections} matched by URL/issue, ${fallbackSelections} first-issue fallback.`);
     if (write) fs.writeFileSync(labelsPath, formatLabels(labels, lineEnding), "utf8");
 }
 

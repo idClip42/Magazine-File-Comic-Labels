@@ -112,10 +112,11 @@ them in ignored cache directories.
   headers, and stops after three consecutive 403/429 responses. Keep these
   safeguards; do not parallelize the page fetcher.
 - `npm run apply:harvested-covers -- --write` mechanically adds the harvested
-  `clean.jpg` URLs to each corresponding label's `art.options`, preserving
-  issue order and existing non-harvested candidates. It also normalizes any
-  prior Marvel WebP option to JPEG. Run it only when deliberately refreshing
-  the catalog from the validated cover inventory.
+  `clean.jpg` URLs as the exact `art.options` list for each harvested label,
+  preserving harvest issue order and removing superseded candidates. It keeps
+  a selected cover when it can match its legacy issue number; placeholders
+  fall back to the first harvested issue. Run it only when deliberately
+  refreshing the catalog from the validated cover inventory.
 - The local editor persists downloaded remote images under ignored
   `dist/artwork-cache/`. On a cache miss it fetches Marvel CDN images one at a
   time at a 500 ms cadence and stops after repeated blocks; non-Marvel images
