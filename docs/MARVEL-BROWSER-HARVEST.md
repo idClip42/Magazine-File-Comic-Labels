@@ -1,5 +1,23 @@
 # Marvel Browser Harvest Queue
 
+## Batch issue-page discovery
+
+The handoff queue can also be resolved in batches without scraping a search
+engine's HTML. By default, the collector uses the free Marvel Metadata API's
+series index, which records canonical `marvel.com/comics/issue/...` URLs; it
+writes a restartable review inventory under ignored `artwork-cache/`. It does
+not alter this queue or select cover art.
+
+```powershell
+npm run harvest:marvel-pages -- --label fantastic-four-003 --limit 25
+```
+
+Review `found` URLs before copying them back into **Official Marvel page URL**.
+`not-found` and `error` entries remain deliberate human-review cases. The
+optional `--provider serper` route uses the exact Google discovery query in the
+queue when a `SERPER_API_KEY` is available. A later run resumes the previous
+inventory; use `--refresh` to redo previously found entries.
+
 This is the full browser-assisted handoff list for every active, bounded Marvel
 issue in `ARTWORK-RESEARCH.md`. It intentionally does **not** invent Marvel
 issue-page IDs: where the exact official page is already known, it is linked;
