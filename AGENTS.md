@@ -42,11 +42,12 @@ vite.config.ts       Vite configuration; builds `web/` into `dist/v2/`
 scripts/
   convert-v1-config.ts  One-time V1-to-V2 migration utility
 legacy/v1/          Preserved V1 generator/configuration; do not treat as active
-DESIGN-V2.md        Authoritative design rationale and physical-production brief
-LABEL-INVENTORY.md  Snapshot of the original 89-label inventory
-ADDITIONAL-LABELS.md Planned additions/splits still to be cataloged
-COLOR-CATEGORY-PROPOSAL.md  Rationale for the seven V2 color families
-TODO.md             Short current working notes
+docs/
+  DESIGN-V2.md        Authoritative design rationale and physical-production brief
+  LABEL-INVENTORY.md  Snapshot of the original 89-label inventory
+  ADDITIONAL-LABELS.md Planned additions/splits still to be cataloged
+  COLOR-CATEGORY-PROPOSAL.md  Rationale for the seven V2 color families
+  ARTWORK-RESEARCH.md Active Marvel cover-art research guide and checklist
 ```
 
 `dist/`, `imgs/`, and `assets/` are ignored working/output directories. Do not
@@ -129,14 +130,14 @@ markup is inlined into the generated HTML and colored with CSS. SVGs with no
 supported fills or more than two fail the build. Remote and non-SVG logo assets
 are rendered as raster fallbacks.
 
-When adding a logo, use the documented workflow in `DESIGN-V2.md`: clean it to
+When adding a logo, use the documented workflow in `docs/DESIGN-V2.md`: clean it to
 simple, recognizable geometry with one or two flat fills. Do not add gradients,
 textures, shadows, or per-logo presentation hacks unless the design decision is
 intentional and documented.
 
 ## Design and print constraints
 
-- Treat `DESIGN-V2.md` as the governing design brief; retain the shared layout
+- Treat `docs/DESIGN-V2.md` as the governing design brief; retain the shared layout
   and hierarchy unless the task explicitly changes the system.
 - The 0.125-inch overwrap is physical material that folds around the file; it
   is not a printer-bleed setting. Confirm any additional vendor bleed against
