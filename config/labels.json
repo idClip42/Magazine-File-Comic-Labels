@@ -1256,10 +1256,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.7078,
+                    "y": 0.2889
                 },
-                "scale": 1,
+                "scale": 3.858,
                 "legacy": {
                     "topInches": -0.6,
                     "leftInches": 0,
@@ -1275,17 +1275,17 @@
         ]
     },
     {
-        "id": "fantastic-four-031",
+        "id": "fantastic-four-034",
         "category": "fantastic-four",
         "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.0621,
-                    "y": 0.1424
+                    "x": 0.0948,
+                    "y": 0.1369
                 },
-                "scale": 3.331,
+                "scale": 4.171,
                 "legacy": {
                     "topInches": -0.6,
                     "leftInches": 0,
