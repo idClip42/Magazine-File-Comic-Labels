@@ -23,4 +23,4 @@
   - But I don't know. Enjoying how quickly I can adjust each one.
     - So maybe we forget this for now.
 - [x] Worth noting in the docs - I had wanted to start picking out individual panel art, but I'm finding it suddenly very difficult to get at hi res versions of these comics on pirate websites, so I think we're stuck with close-ups on covers.
-- [ ] Two labels should never have the same art, but if they do, in the UI, if I go to move the second one, it moves the first instead, which is bug behavior.
+- [x] Two labels should never have the same art, but if they do, in the UI, if I go to move the second one, it moves the first instead, which is bug behavior.
