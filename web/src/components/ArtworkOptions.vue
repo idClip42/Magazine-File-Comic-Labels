@@ -12,6 +12,18 @@ const options = computed(() => {
         ? configured
         : [props.label.art.asset, ...configured];
 });
+
+const optionLabels = computed(() => {
+    const issues = props.label.contents.flatMap(content => {
+        if (!content.issues) return [];
+        const [start, end] = content.issues;
+        return Array.from({ length: end - start + 1 }, (_, offset) => start + offset);
+    });
+
+    return issues.length === options.value.length
+        ? issues.map(String)
+        : options.value.map((_, index) => String(index + 1));
+});
 </script>
 
 <template>
@@ -22,19 +34,21 @@ const options = computed(() => {
   >
     <span class="artwork-options-title">Cover</span>
     <div class="artwork-options-list">
-      <button
+      <label
         v-for="(asset, index) in options"
         :key="asset"
         class="artwork-option"
-        :class="{ selected: asset === label.art.asset }"
-        type="button"
-        :aria-label="`Select cover option ${index + 1}`"
-        :aria-pressed="asset === label.art.asset"
-        @click="catalog.selectArtwork(label.id, asset)"
+        :title="`Select cover ${optionLabels[index]}`"
       >
-        <img :src="catalog.artworkUrl(asset)" :alt="`Cover option ${index + 1}`" loading="lazy" />
-        <span>{{ index + 1 }}</span>
-      </button>
+        <input
+          type="radio"
+          :name="`artwork-option-${label.id}`"
+          :checked="asset === label.art.asset"
+          :aria-label="`Select cover ${optionLabels[index]}`"
+          @change="catalog.selectArtwork(label.id, asset)"
+        />
+        <span>{{ optionLabels[index] }}</span>
+      </label>
     </div>
   </section>
 </template>

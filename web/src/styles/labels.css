@@ -261,43 +261,23 @@ body {
 .artwork-options-title { font-weight: 700; }
 
 .artwork-options-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(6, 38px);
+  column-gap: 8px;
+  row-gap: 6px;
 }
 
 .artwork-option {
-  position: relative;
-  width: 32px;
-  height: 44px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 3px;
   padding: 0;
-  border: 2px solid transparent;
-  background: #ccc;
   cursor: pointer;
+  user-select: none;
 }
 
-.artwork-option.selected { border-color: #111; }
-
-.artwork-option img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.artwork-option span {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 14px;
-  padding: 1px 3px;
-  background: rgba(0, 0, 0, 0.78);
-  color: #fff;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1.1;
-}
+.artwork-option input { display: block; margin: 0; cursor: pointer; }
+.artwork-option span { font-variant-numeric: tabular-nums; }
 
 .global-controls {
   position: fixed;
