@@ -11,6 +11,7 @@
     "convert:v1": "ts-node scripts/convert-v1-config.ts",
     "convert:v1:force": "ts-node scripts/convert-v1-config.ts --force",
     "harvest:marvel-pages": "ts-node src/marvel-issue-pages-cli.ts",
+    "harvest:marvel-covers": "ts-node src/marvel-cover-urls-cli.ts",
     "prepare:logos": "ts-node src/logo-prep-cli.ts",
     "serve": "node dist/src/editor-server.js",
     "start": "npm run build && npm run serve",

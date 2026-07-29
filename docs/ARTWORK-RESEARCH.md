@@ -73,6 +73,25 @@ need the same review and confirmation process.
   browser, but direct command-line requests to Marvel returned CloudFront 403
   responses during this pass. Do not treat a command-line 403 as evidence that
   the issue page or cover is absent.
+- A later full harvest showed that the 403 was request-client-specific, not a
+  general page-rate limit. The Node collector successfully fetched all 1,025
+  available official issue pages in one serialized run at a 500 ms cadence,
+  with no 403 or 429 responses. It sent ordinary browser-like `Accept`,
+  `Accept-Language`, and `User-Agent` headers; PowerShell's
+  `Invoke-WebRequest` still received CloudFront 403 for the same page.
+- The page HTML exposes the primary cover as a
+  `cdn.marvel.com/.../portrait_uncanny.webp` URL. Replacing only that final
+  filename with `clean.webp` preserves the exact CDN asset path and yielded a
+  clean counterpart for every harvested page. This is an observed page-asset
+  relationship, not an ID or slug inference. Preserve the extension: current
+  page markup used WebP, while older research and configured candidates may
+  use JPEG.
+- Use `npm run harvest:marvel-covers` for the repeatable cover pass. It is
+  deliberately serialized, records every success in
+  `docs/MARVEL-COVER-URLS.json`, skips those successes on later runs, and
+  stops after three consecutive 403 or 429 responses. Do not parallelize the
+  page fetches or lower its 500 ms minimum delay without a fresh, controlled
+  rate-limit check.
 - Marvel Database's `Special:FilePath` URLs and MediaWiki API were blocked by
   a Cloudflare challenge in command-line requests. Direct
   `static.wikia.nocookie.net` image URLs are more useful once their exact path
@@ -112,6 +131,10 @@ need the same review and confirmation process.
   editor state, and saving persists only the selected asset and its crop.
 - The local editor preloads configured remote candidates into its ignored disk
   cache. A failed remote URL should be replaced rather than relied on.
+- Official-page cover harvesting is practical with the resumable Node
+  collector. Treat 500 ms as the currently demonstrated safe serialized
+  cadence, not a permanent Marvel service guarantee; keep the stop-on-block
+  behavior intact.
 
 ## Active bounded Marvel checklist
 
