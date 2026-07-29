@@ -50,6 +50,12 @@
             },
             "movie-tie-ins": {
                 "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Fantastic+Four+Movie+Tie-Ins+logo+needed"
+            },
+            "marvels-greatest-comics": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Marvels+Greatest+Comics+logo+needed"
+            },
+            "miniseries-generic": {
+                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Minisereis+logos+needed"
             }
         }
     },

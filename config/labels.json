@@ -899,7 +899,10 @@
         },
         "contents": [
             {
-                "name": "Fantastic Four Latest Comics"
+                "name": "Fantastic Four",
+                "volume": 8,
+                "issues": [1, 18],
+                "years": [2025, 2026]
             }
         ]
     },
@@ -919,7 +922,8 @@
         },
         "contents": [
             {
-                "name": "Fantastic Four Movie Tie-Ins"
+                "name": "Fantastic Four Movie Tie-Ins",
+                "years": [2005, 2026]
             }
         ]
     },
@@ -944,7 +948,8 @@
         },
         "contents": [
             {
-                "name": "Fantastic Four Annual"
+                "name": "Fantastic Four Annual",
+                "years": [1963, 1984]
             }
         ]
     },
@@ -969,14 +974,15 @@
         },
         "contents": [
             {
-                "name": "Fantastic Four Annual"
+                "name": "Fantastic Four Annual",
+                "years": [1985, 2023]
             }
         ]
     },
     {
         "id": "fantastic-four-021",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "marvels-greatest-comics",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg",
             "crop": {
@@ -1060,7 +1066,7 @@
     {
         "id": "fantastic-four-025",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Official_Marvel_Index_to_Fantastic_Four_Vol_1_2.jpg",
             "crop": {
@@ -1078,26 +1084,15 @@
         },
         "contents": [
             {
-                "name": "Giant-Size Fantastic Four",
-                "issues": [1, 6],
-                "years": [1974, 1975]
-            },
-            {
-                "name": "Official Marvel Index to Fantastic Four",
-                "issues": [1, 12],
-                "years": [1985, 1987]
-            },
-            {
-                "name": "Fantastic Four vs. the X-Men",
-                "issues": [1, 4],
-                "years": [1986, 1987]
+                "name": "Miniseries",
+                "years": [1974, 1987]
             }
         ]
     },
     {
         "id": "fantastic-four-026",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Fantastic_Four_Unlimited_Vol_1_1.jpg",
             "crop": {
@@ -1123,7 +1118,7 @@
     {
         "id": "fantastic-four-027",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg",
             "crop": {
@@ -1149,7 +1144,7 @@
     {
         "id": "fantastic-four-028",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_First_Family_Vol_1_1.jpg",
             "crop": {
@@ -1175,7 +1170,7 @@
     {
         "id": "fantastic-four-029",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/Marvel_1602_Fantastick_Four_Vol_1_1.jpg",
             "crop": {
@@ -1201,7 +1196,7 @@
     {
         "id": "fantastic-four-030",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Invisible_Woman_Vol_1_3.jpg",
             "crop": {
@@ -1227,7 +1222,7 @@
     {
         "id": "fantastic-four-031",
         "category": "fantastic-four",
-        "logo": "classic",
+        "logo": "miniseries-generic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
             "crop": {
@@ -1247,6 +1242,32 @@
             {
                 "name": "Miniseries",
                 "years": [2021, 2025]
+            }
+        ]
+    },
+    {
+        "id": "fantastic-four-031",
+        "category": "fantastic-four",
+        "logo": "miniseries-generic",
+        "art": {
+            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
+            "crop": {
+                "focus": {
+                    "x": 0.5,
+                    "y": 0.5
+                },
+                "scale": 1,
+                "legacy": {
+                    "topInches": -0.6,
+                    "leftInches": 0,
+                    "zoom": 0.7
+                }
+            }
+        },
+        "contents": [
+            {
+                "name": "Miniseries",
+                "years": [2026, 2026]
             }
         ]
     },
@@ -1365,7 +1386,8 @@
         },
         "contents": [
             {
-                "name": "Fantastic Four One-Shots"
+                "name": "Fantastic Four One-Shots",
+                "years": [1974, 2011]
             }
         ]
     },
@@ -1390,32 +1412,8 @@
         },
         "contents": [
             {
-                "name": "Fantastic Four One-Shots"
-            }
-        ]
-    },
-    {
-        "id": "fantastic-four-034",
-        "category": "fantastic-four",
-        "logo": "classic",
-        "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Marvels_Comics_Fantastic_Four_Vol_1_1.jpg",
-            "crop": {
-                "focus": {
-                    "x": 0.6,
-                    "y": 1
-                },
-                "scale": 2.05,
-                "legacy": {
-                    "topInches": -1.3,
-                    "leftInches": -0.7,
-                    "zoom": 0.87
-                }
-            }
-        },
-        "contents": [
-            {
-                "name": "Fantastic Four Current Reading"
+                "name": "Fantastic Four One-Shots",
+                "years": [2021, 2025]
             }
         ]
     },
@@ -1609,7 +1607,8 @@
         },
         "contents": [
             {
-                "name": "Uncanny X-Men Annual"
+                "name": "X-Men Annual",
+                "years": [1970, 1991]
             }
         ]
     },
@@ -1618,7 +1617,7 @@
         "category": "x-family",
         "logo": "x-men",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/X-Men_Vol_1_131.jpg",
+            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
             "crop": {
                 "focus": {
                     "x": 0.6,
@@ -1635,8 +1634,8 @@
         "contents": [
             {
                 "name": "Uncanny X-Men",
-                "issues": [129, 162],
-                "years": [1979, 1982]
+                "issues": [126, 150],
+                "years": [1979, 1981]
             }
         ]
     },
@@ -1645,7 +1644,7 @@
         "category": "x-family",
         "logo": "x-men",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Uncanny_X-Men_Vol_1_168.jpg",
+            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
             "crop": {
                 "focus": {
                     "x": 0.5,
@@ -1662,8 +1661,8 @@
         "contents": [
             {
                 "name": "Uncanny X-Men",
-                "issues": [163, 187],
-                "years": [1982, 1984]
+                "issues": [151, 175],
+                "years": [1981, 1983]
             }
         ]
     },
@@ -1672,7 +1671,7 @@
         "category": "x-family",
         "logo": "x-men",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/0e/Uncanny_X-Men_Vol_1_200.jpg",
+            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Uncanny+X-Men",
             "crop": {
                 "focus": {
                     "x": 0.5,
@@ -1689,8 +1688,8 @@
         "contents": [
             {
                 "name": "Uncanny X-Men",
-                "issues": [188, 200],
-                "years": [1984, 1985]
+                "issues": [176, 200],
+                "years": [1983, 1985]
             }
         ]
     },
@@ -1710,7 +1709,9 @@
         },
         "contents": [
             {
-                "name": "Uncanny X-Men"
+                "name": "Uncanny X-Men",
+                "issues": [201, 225],
+                "years": [1985, 1987]
             }
         ]
     },
@@ -1730,7 +1731,9 @@
         },
         "contents": [
             {
-                "name": "Uncanny X-Men"
+                "name": "Uncanny X-Men",
+                "issues": [226, 250],
+                "years": [1987, 1989]
             }
         ]
     },
@@ -1750,7 +1753,9 @@
         },
         "contents": [
             {
-                "name": "Uncanny X-Men"
+                "name": "Uncanny X-Men",
+                "issues": [251, 275],
+                "years": [1989, 1991]
             }
         ]
     },
@@ -1770,7 +1775,9 @@
         },
         "contents": [
             {
-                "name": "Uncanny X-Men"
+                "name": "Uncanny X-Men",
+                "issues": [276, 300],
+                "years": [1991, 1993]
             }
         ]
     },
@@ -1795,7 +1802,8 @@
         },
         "contents": [
             {
-                "name": "X-Men Misc."
+                "name": "X-Men Misc.",
+                "years": [1982, 1990]
             }
         ]
     },
@@ -1931,7 +1939,8 @@
         },
         "contents": [
             {
-                "name": "Wolverine"
+                "name": "Wolverine",
+                "years": [1988, 1990]
             }
         ]
     },
@@ -1951,7 +1960,8 @@
         },
         "contents": [
             {
-                "name": "Amazing Spider-Man"
+                "name": "Amazing Spider-Man",
+                "years": [1962, 2025]
             }
         ]
     },
@@ -1976,7 +1986,8 @@
         },
         "contents": [
             {
-                "name": "Black Cat"
+                "name": "Black Cat",
+                "years": [1994, 2026]
             }
         ]
     },
@@ -2001,7 +2012,8 @@
         },
         "contents": [
             {
-                "name": "Daredevil"
+                "name": "Daredevil",
+                "years": [2003, 2023]
             }
         ]
     },
@@ -2021,7 +2033,8 @@
         },
         "contents": [
             {
-                "name": "Daredevil"
+                "name": "Daredevil",
+                "years": [1964, 2001]
             }
         ]
     },
@@ -2046,7 +2059,8 @@
         },
         "contents": [
             {
-                "name": "Dr. Strange"
+                "name": "Dr. Strange",
+                "years": [1982, 2024]
             }
         ]
     },
@@ -2071,7 +2085,8 @@
         },
         "contents": [
             {
-                "name": "Iron Man"
+                "name": "Iron Man",
+                "years": [1981, 2023]
             }
         ]
     },
@@ -2091,7 +2106,8 @@
         },
         "contents": [
             {
-                "name": "Jessica Jones"
+                "name": "Jessica Jones",
+                "years": [2001, 2026]
             }
         ]
     },
@@ -2116,7 +2132,8 @@
         },
         "contents": [
             {
-                "name": "Marvel Team-Up"
+                "name": "Marvel Team-Up",
+                "years": [1972, 1985]
             }
         ]
     },
@@ -2141,7 +2158,8 @@
         },
         "contents": [
             {
-                "name": "She-Hulk"
+                "name": "She-Hulk",
+                "years": [1980, 1993]
             }
         ]
     },
@@ -2166,7 +2184,8 @@
         },
         "contents": [
             {
-                "name": "She-Hulk"
+                "name": "She-Hulk",
+                "years": [2020, 2025]
             }
         ]
     },
@@ -2186,7 +2205,8 @@
         },
         "contents": [
             {
-                "name": "Spider-Man (Various Series)"
+                "name": "Spider-Man (Various Series)",
+                "years": [1974, 1993]
             }
         ]
     },
@@ -2206,7 +2226,8 @@
         },
         "contents": [
             {
-                "name": "Spider-Man Minis"
+                "name": "Spider-Man Minis",
+                "years": [2002, 2021]
             }
         ]
     },
@@ -2253,7 +2274,8 @@
         },
         "contents": [
             {
-                "name": "Official Handbook of the Marvel Universe"
+                "name": "Official Handbook of the Marvel Universe",
+                "years": [1985, 1987]
             }
         ]
     },
@@ -2332,7 +2354,8 @@
         },
         "contents": [
             {
-                "name": "What If...?"
+                "name": "What If?",
+                "years": [1977, 1998]
             }
         ]
     },
@@ -2352,7 +2375,8 @@
         },
         "contents": [
             {
-                "name": "Ultimate Universe"
+                "name": "Ultimate Universe",
+                "years": [2023, 2026]
             }
         ]
     },
@@ -2372,7 +2396,9 @@
         },
         "contents": [
             {
-                "name": "Ultimate Spider-Man"
+                "name": "Ultimate Spider-Man",
+                "issues": [1, 24],
+                "years": [2024, 2026]
             }
         ]
     },
@@ -2392,7 +2418,9 @@
         },
         "contents": [
             {
-                "name": "Ultimates"
+                "name": "Ultimates",
+                "issues": [1, 24],
+                "years": [2024, 2026]
             }
         ]
     },
@@ -2462,7 +2490,8 @@
         },
         "contents": [
             {
-                "name": "The New Teen Titans"
+                "name": "The New Teen Titans",
+                "years": [1980, 1988]
             }
         ]
     },
@@ -2567,8 +2596,8 @@
         "contents": [
             {
                 "name": "Young Justice",
-                "issues": [1, 28],
-                "years": [1998, 2001]
+                "issues": [1, 22],
+                "years": [1998, 2000]
             }
         ]
     },
@@ -2594,8 +2623,8 @@
         "contents": [
             {
                 "name": "Young Justice",
-                "issues": [29, 55],
-                "years": [2001, 2003]
+                "issues": [23, 46],
+                "years": [2000, 2002]
             }
         ]
     },
@@ -2615,7 +2644,12 @@
         },
         "contents": [
             {
-                "name": "Young Justice"
+                "name": "Young Justice",
+                "issues": [23, 55],
+                "years": [2002, 2003]
+            },
+            {
+                "name": "Young Justice Misc."
             }
         ]
     },
@@ -2661,8 +2695,8 @@
         "contents": [
             {
                 "name": "The Further Adventures of Indiana Jones",
-                "issues": [1, 34],
-                "years": [1983, 1986]
+                "issues": [1, 17],
+                "years": [1983, 1984]
             }
         ]
     },
@@ -2682,7 +2716,9 @@
         },
         "contents": [
             {
-                "name": "The Further Adventures of Indiana Jones"
+                "name": "The Further Adventures of Indiana Jones",
+                "issues": [18, 34],
+                "years": [1984, 1985]
             }
         ]
     },
@@ -2707,7 +2743,8 @@
         },
         "contents": [
             {
-                "name": "Indiana Jones (Dark Horse)"
+                "name": "Indiana Jones (Dark Horse)",
+                "years": [1991, 1994]
             }
         ]
     },
@@ -2727,7 +2764,8 @@
         },
         "contents": [
             {
-                "name": "Indy (Dark Horse)"
+                "name": "Indiana Jones (Dark Horse)",
+                "years": [1994, 2008]
             }
         ]
     },
@@ -2779,7 +2817,8 @@
         },
         "contents": [
             {
-                "name": "The League of Extraordinary Gentlemen"
+                "name": "The League of Extraordinary Gentlemen",
+                "years": [1999, 2019]
             }
         ]
     },
@@ -2830,24 +2869,7 @@
         "contents": [
             {
                 "name": "Aliens",
-                "issues": [1, 6],
-                "years": [1989, 1989]
-            },
-            {
-                "name": "Aliens",
-                "volume": 2,
-                "issues": [1, 4],
-                "years": [1990, 1990]
-            },
-            {
-                "name": "Aliens: Earth War",
-                "issues": [1, 4],
-                "years": [1991, 1991]
-            },
-            {
-                "name": "Aliens: Newt's Tale",
-                "issues": [1, 2],
-                "years": [1992, 1992]
+                "years": [1989, 1992]
             }
         ]
     },
@@ -2867,7 +2889,8 @@
         },
         "contents": [
             {
-                "name": "Aliens"
+                "name": "Aliens",
+                "years": [1993, 2024]
             }
         ]
     },
@@ -2979,7 +3002,8 @@
         },
         "contents": [
             {
-                "name": "Universal Monsters"
+                "name": "Universal Monsters",
+                "years": [2023, 2026]
             }
         ]
     }
