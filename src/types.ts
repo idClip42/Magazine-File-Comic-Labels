@@ -39,6 +39,8 @@ export type LabelConfig = {
     logo: string;
     art: {
         asset: string;
+        /** Optional, ordered alternatives shown only in the local crop editor. */
+        options?: string[];
         crop: ArtCrop;
     };
     contents: LabelContent[];
@@ -93,5 +95,6 @@ export type EditorConfig = {
     categories: CategoriesConfig;
     labels: LabelConfig[];
     preparedLogos: Record<string, string>;
+    /** Maps each configured artwork asset to the browser URL that serves it. */
     artworkUrls: Record<string, string>;
 };

@@ -2,6 +2,7 @@ import { computed, ref } from "vue";
 import { defineStore } from "pinia";
 import type { EditorConfig, LabelConfig } from "../../../src/types";
 import {
+    type ArtUpdate,
     type CropUpdate,
     type EditorUpdates,
     type LayoutUpdate,
@@ -23,9 +24,13 @@ function copyCrop(crop: CropUpdate): CropUpdate {
     };
 }
 
-function cropsForConfig(config: EditorConfig): Record<string, CropUpdate> {
+function artForLabel(label: LabelConfig): ArtUpdate {
+    return { asset: label.art.asset, crop: copyCrop(label.art.crop) };
+}
+
+function artsForConfig(config: EditorConfig): Record<string, ArtUpdate> {
     return Object.fromEntries(
-        config.labels.map(label => [label.id, copyCrop(label.art.crop)]),
+        config.labels.map(label => [label.id, artForLabel(label)]),
     );
 }
 
@@ -35,6 +40,10 @@ function cropsMatch(left: CropUpdate, right: CropUpdate): boolean {
         && left.scale === right.scale;
 }
 
+function artsMatch(left: ArtUpdate, right: ArtUpdate): boolean {
+    return left.asset === right.asset && cropsMatch(left.crop, right.crop);
+}
+
 export const useCatalogStore = defineStore("catalog", () => {
     const config = ref<EditorConfig | undefined>(
         window.__COMIC_LABELS_CONFIG__
@@ -42,10 +51,11 @@ export const useCatalogStore = defineStore("catalog", () => {
             : undefined,
     );
     const view = ref<ViewMode>("editor");
-    const savedCrops = ref<Record<string, CropUpdate>>(
-        config.value ? cropsForConfig(config.value) : {},
+    const savedArts = ref<Record<string, ArtUpdate>>(
+        config.value ? artsForConfig(config.value) : {},
     );
-    const pendingCrops = ref<Record<string, CropUpdate>>({});
+    const pendingArts = ref<Record<string, ArtUpdate>>({});
+    const sessionCrops = ref<Record<string, CropUpdate>>({});
     const pendingLayout = ref<LayoutUpdate>({});
     const saveState = ref<SaveState>("idle");
     const saveMessage = ref("");
@@ -54,15 +64,16 @@ export const useCatalogStore = defineStore("catalog", () => {
     const layout = computed(() => config.value?.layout);
     const isSaveAvailable = computed(() => isLiveEditor());
     const pendingChangeCount = computed(() =>
-        Object.keys(pendingCrops.value).length
+        Object.keys(pendingArts.value).length
         + Object.keys(pendingLayout.value).length,
     );
     const hasPendingChanges = computed(() => pendingChangeCount.value > 0);
 
     function setConfig(nextConfig: EditorConfig): void {
         config.value = cloneConfig(nextConfig);
-        savedCrops.value = cropsForConfig(config.value);
-        pendingCrops.value = {};
+        savedArts.value = artsForConfig(config.value);
+        pendingArts.value = {};
+        sessionCrops.value = {};
         pendingLayout.value = {};
     }
 
@@ -81,24 +92,53 @@ export const useCatalogStore = defineStore("catalog", () => {
         const label = labelForId(id);
         const nextCrop = copyCrop(crop);
         label.art.crop = { ...label.art.crop, ...nextCrop };
-        const savedCrop = savedCrops.value[id];
-        if (savedCrop && cropsMatch(nextCrop, savedCrop)) {
-            const { [id]: _discarded, ...remainingCrops } = pendingCrops.value;
-            pendingCrops.value = remainingCrops;
+        sessionCrops.value = {
+            ...sessionCrops.value,
+            [`${id}\u0000${label.art.asset}`]: nextCrop,
+        };
+        const currentArt = artForLabel(label);
+        const savedArt = savedArts.value[id];
+        if (savedArt && artsMatch(currentArt, savedArt)) {
+            const { [id]: _discarded, ...remainingArts } = pendingArts.value;
+            pendingArts.value = remainingArts;
         } else {
-            pendingCrops.value = { ...pendingCrops.value, [id]: nextCrop };
+            pendingArts.value = { ...pendingArts.value, [id]: currentArt };
         }
         saveState.value = "idle";
     }
 
+    function selectArtwork(id: string, asset: string): void {
+        const label = labelForId(id);
+        if (asset === label.art.asset) return;
+        const candidates = label.art.options ?? [];
+        if (!candidates.includes(asset)) throw new Error(`Unknown artwork option for ${id}`);
+
+        const currentCrop = copyCrop(label.art.crop);
+        const nextCrop = sessionCrops.value[`${id}\u0000${asset}`]
+            ?? { focus: { x: 0.5, y: 0.5 }, scale: 1 };
+        sessionCrops.value = {
+            ...sessionCrops.value,
+            [`${id}\u0000${label.art.asset}`]: currentCrop,
+        };
+        label.art.asset = asset;
+        updateCrop(id, nextCrop);
+    }
+
     function revertCrop(id: string): void {
-        const savedCrop = savedCrops.value[id];
-        if (savedCrop) updateCrop(id, savedCrop);
+        const savedArt = savedArts.value[id];
+        const label = labelForId(id);
+        if (!savedArt) return;
+        label.art.asset = savedArt.asset;
+        updateCrop(id, savedArt.crop);
     }
 
     function isCropSaved(id: string): boolean {
-        const savedCrop = savedCrops.value[id];
-        return savedCrop ? cropsMatch(labelForId(id).art.crop, savedCrop) : true;
+        const savedArt = savedArts.value[id];
+        return savedArt ? artsMatch(artForLabel(labelForId(id)), savedArt) : true;
+    }
+
+    function artworkUrl(asset: string): string {
+        return config.value?.artworkUrls[asset] ?? asset;
     }
 
     function updateLayout(update: LayoutUpdate): void {
@@ -135,10 +175,10 @@ export const useCatalogStore = defineStore("catalog", () => {
         if (!hasPendingChanges.value || !isSaveAvailable.value) return;
 
         const updates: EditorUpdates = {
-            crops: pendingCrops.value,
+            arts: pendingArts.value,
             layout: pendingLayout.value,
         };
-        if (Object.keys(updates.crops ?? {}).length === 0) delete updates.crops;
+        if (Object.keys(updates.arts ?? {}).length === 0) delete updates.arts;
         if (Object.keys(updates.layout ?? {}).length === 0) delete updates.layout;
 
         saveState.value = "saving";
@@ -150,21 +190,24 @@ export const useCatalogStore = defineStore("catalog", () => {
             });
             const result = await response.json() as {
                 error?: string;
-                saved?: { crops: number; layout: number };
+                saved?: { arts: number; layout: number };
             };
             if (!response.ok) throw new Error(result.error ?? "Unable to save configuration changes.");
 
-            const savedCount = (result.saved?.crops ?? 0)
+            const savedCount = (result.saved?.arts ?? 0)
                 + (result.saved?.layout ?? 0);
-            if (updates.crops) {
-                savedCrops.value = {
-                    ...savedCrops.value,
+            if (updates.arts) {
+                savedArts.value = {
+                    ...savedArts.value,
                     ...Object.fromEntries(
-                        Object.entries(updates.crops).map(([id, crop]) => [id, copyCrop(crop)]),
+                        Object.entries(updates.arts).map(([id, art]) => [id, {
+                            asset: art.asset,
+                            crop: copyCrop(art.crop),
+                        }]),
                     ),
                 };
             }
-            pendingCrops.value = {};
+            pendingArts.value = {};
             pendingLayout.value = {};
             saveState.value = "saved";
             saveMessage.value = `Saved ${savedCount} change${savedCount === 1 ? "" : "s"} to configuration.`;
@@ -187,8 +230,10 @@ export const useCatalogStore = defineStore("catalog", () => {
         saveChanges,
         saveStatus,
         updateCrop,
+        selectArtwork,
         revertCrop,
         isCropSaved,
+        artworkUrl,
         updateLayout,
     };
 });

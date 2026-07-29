@@ -9,6 +9,11 @@ export type ViewMode = "editor" | "shelves";
 
 export type CropUpdate = Pick<LabelConfig["art"]["crop"], "focus" | "scale">;
 
+export type ArtUpdate = {
+    asset: string;
+    crop: CropUpdate;
+};
+
 /** The deliberately limited shared-layout settings editable from the browser. */
 export type LayoutUpdate = {
     artTreatment?: ArtTreatment;
@@ -20,7 +25,7 @@ export type LayoutUpdate = {
 };
 
 export type EditorUpdates = {
-    crops?: Record<string, CropUpdate>;
+    arts?: Record<string, ArtUpdate>;
     layout?: LayoutUpdate;
 };
 

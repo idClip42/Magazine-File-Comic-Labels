@@ -13,7 +13,7 @@ const zoom = computed(() => `${Math.round(props.label.art.crop.scale * 100)}%`);
   <section class="crop-controls" :aria-label="`Crop controls for ${label.id}`">
     <div>
       <div class="crop-controls-title">Crop</div>
-      <div class="crop-controls-help">Drag artwork to pan · Scroll to zoom</div>
+      <div class="crop-controls-help">Left/middle drag to pan · Ctrl/Cmd + scroll to zoom</div>
     </div>
     <output :aria-label="`Zoom ${zoom}`">{{ zoom }}</output>
     <button

@@ -24,16 +24,19 @@ export function buildEditorConfig(
     categories: CategoriesConfig,
     labels: LabelConfig[],
     preparedLogos: PreparedLogos,
-    artworkUrlForLabel: (label: LabelConfig) => string = label =>
-        staticAssetUrl(layout, label.art.asset),
+    artworkUrlForAsset: (asset: string) => string = asset => staticAssetUrl(layout, asset),
 ): EditorConfig {
+    const artworkAssets = [...new Set(labels.flatMap(label => [
+        label.art.asset,
+        ...(label.art.options ?? []),
+    ]))];
     return {
         layout,
         categories,
         labels,
         preparedLogos: Object.fromEntries(preparedLogos),
         artworkUrls: Object.fromEntries(
-            labels.map(label => [label.id, artworkUrlForLabel(label)]),
+            artworkAssets.map(asset => [asset, artworkUrlForAsset(asset)]),
         ),
     };
 }

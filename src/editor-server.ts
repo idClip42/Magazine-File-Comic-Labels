@@ -42,6 +42,10 @@ const applicationTypes: Record<string, string> = {
 };
 
 type CropUpdate = Pick<ArtCrop, "focus" | "scale">;
+type ArtUpdate = {
+    asset: string;
+    crop: CropUpdate;
+};
 type LayoutUpdate = {
     artTreatment?: ArtTreatment;
     identityBandHeightInches?: number;
@@ -52,7 +56,7 @@ type LayoutUpdate = {
 };
 
 type EditorUpdates = {
-    crops?: Record<string, CropUpdate>;
+    arts?: Record<string, ArtUpdate>;
     layout?: LayoutUpdate;
 };
 type CachedImage = { body: Buffer; contentType: string };
@@ -65,6 +69,10 @@ type ArtworkCacheEntry = {
 type ArtworkCacheIndex = Record<string, ArtworkCacheEntry>;
 
 const labelById = new Map(labels.map(label => [label.id, label]));
+const configuredArtworkAssets = new Set(labels.flatMap(label => [
+    label.art.asset,
+    ...(label.art.options ?? []),
+]));
 const imageCache = new Map<string, CachedImage>();
 const preparedLogos = prepareLogos(layout, categories, outputDirectory);
 
@@ -181,6 +189,12 @@ function isCropUpdate(value: unknown): value is CropUpdate {
         && crop.scale >= CROP_SCALE_MIN && crop.scale <= CROP_SCALE_MAX;
 }
 
+function isArtUpdate(value: unknown): value is ArtUpdate {
+    return !!value && typeof value === "object"
+        && typeof (value as ArtUpdate).asset === "string"
+        && isCropUpdate((value as ArtUpdate).crop);
+}
+
 function isIdentityBandHeight(value: unknown): value is number {
     return typeof value === "number" && Number.isFinite(value)
         && value >= 0.5 && value <= 3.5;
@@ -292,7 +306,7 @@ async function downloadRemoteImage(asset: string): Promise<void> {
 
 async function preloadRemoteImages(): Promise<void> {
     const preloadStartedAt = performance.now();
-    const assets = [...new Set(labels.map(label => label.art.asset).filter(isRemoteImage))];
+    const assets = [...configuredArtworkAssets].filter(isRemoteImage);
     const failures: string[] = [];
     let downloads = 0;
     let nextIndex = 0;
@@ -351,15 +365,14 @@ async function preloadRemoteImages(): Promise<void> {
 
 function serveArtwork(request: http.IncomingMessage, response: http.ServerResponse): boolean {
     if (request.method !== "GET" || !request.url?.startsWith("/art/")) return false;
-    const id = decodeURIComponent(request.url.slice("/art/".length).split("?", 1)[0]);
-    const label = labelById.get(id);
-    if (!label) {
-        sendJson(response, 404, { error: "Unknown label." });
+    const asset = decodeURIComponent(request.url.slice("/art/".length).split("?", 1)[0]);
+    if (!configuredArtworkAssets.has(asset)) {
+        sendJson(response, 404, { error: "Unknown artwork." });
         return true;
     }
 
-    if (isRemoteImage(label.art.asset)) {
-        const image = imageCache.get(label.art.asset);
+    if (isRemoteImage(asset)) {
+        const image = imageCache.get(asset);
         if (!image) {
             sendJson(response, 503, { error: "Artwork was not available when the editor started." });
             return true;
@@ -370,7 +383,7 @@ function serveArtwork(request: http.IncomingMessage, response: http.ServerRespon
     }
 
     const projectRoot = process.cwd();
-    const filePath = path.resolve(projectRoot, layout.localAssetRoot, label.art.asset);
+    const filePath = path.resolve(projectRoot, layout.localAssetRoot, asset);
     const contentType = imageTypeForPath(filePath);
     if (!contentType || !filePath.startsWith(`${projectRoot}${path.sep}`) || !fs.existsSync(filePath)) {
         sendJson(response, 404, { error: "Local artwork is unavailable." });
@@ -420,26 +433,32 @@ function serveLocalImage(request: http.IncomingMessage, response: http.ServerRes
     return true;
 }
 
-function saveChanges(updates: EditorUpdates): { crops: number; layout: number } {
-    const crops = updates.crops ?? {};
+function saveChanges(updates: EditorUpdates): { arts: number; layout: number } {
+    const arts = updates.arts ?? {};
     const layoutUpdate = updates.layout;
     if (layoutUpdate) validateLayoutUpdate(layoutUpdate);
 
-    for (const [id, crop] of Object.entries(crops)) {
+    for (const [id, art] of Object.entries(arts)) {
         if (!labelById.has(id)) throw new Error(`Unknown label ID: ${id}`);
-        if (!isCropUpdate(crop)) throw new Error(`Invalid crop values for ${id}`);
+        if (!isArtUpdate(art)) throw new Error(`Invalid artwork values for ${id}`);
+        const label = labelById.get(id)!;
+        const candidates = label.art.options ?? [];
+        if (art.asset !== label.art.asset && !candidates.includes(art.asset)) {
+            throw new Error(`Artwork is not a configured option for ${id}`);
+        }
     }
 
-    for (const [id, crop] of Object.entries(crops)) {
+    for (const [id, art] of Object.entries(arts)) {
         const label = labelById.get(id)!;
+        label.art.asset = art.asset;
         label.art.crop = {
             ...label.art.crop,
-            focus: { x: crop.focus.x, y: crop.focus.y },
-            scale: crop.scale,
+            focus: { x: art.crop.focus.x, y: art.crop.focus.y },
+            scale: art.crop.scale,
         };
     }
 
-    if (Object.keys(crops).length > 0) {
+    if (Object.keys(arts).length > 0) {
         const source = fs.readFileSync(labelsPath, "utf8");
         const lineEnding = source.includes("\r\n") ? "\r\n" : "\n";
         fs.writeFileSync(labelsPath, formatLabels(labels, lineEnding), "utf8");
@@ -466,7 +485,7 @@ function saveChanges(updates: EditorUpdates): { crops: number; layout: number } 
     }
 
     return {
-        crops: Object.keys(crops).length,
+        arts: Object.keys(arts).length,
         layout: layoutUpdate ? Object.keys(layoutUpdate).length : 0,
     };
 }
@@ -481,7 +500,7 @@ const server = http.createServer((request, response) => {
                 categories,
                 labels,
                 preparedLogos,
-                label => `/art/${encodeURIComponent(label.id)}`,
+                asset => `/art/${encodeURIComponent(asset)}`,
             ),
         );
         return;
@@ -505,15 +524,15 @@ const server = http.createServer((request, response) => {
     request.on("end", () => {
         try {
             const payload = JSON.parse(body) as EditorUpdates;
-            if (payload.crops !== undefined
-                && (typeof payload.crops !== "object" || Array.isArray(payload.crops))) {
-                throw new Error("Expected crops to be an object.");
+            if (payload.arts !== undefined
+                && (typeof payload.arts !== "object" || Array.isArray(payload.arts))) {
+                throw new Error("Expected artwork changes to be an object.");
             }
             if (payload.layout !== undefined
                 && (typeof payload.layout !== "object" || Array.isArray(payload.layout))) {
                 throw new Error("Expected layout changes to be an object.");
             }
-            if (payload.crops === undefined && payload.layout === undefined) {
+            if (payload.arts === undefined && payload.layout === undefined) {
                 throw new Error("Expected at least one editor change.");
             }
             sendJson(response, 200, { saved: saveChanges(payload) });

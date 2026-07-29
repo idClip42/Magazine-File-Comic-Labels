@@ -72,7 +72,7 @@ const artTreatment = computed(() => ({
 }));
 
 const artworkUrl = computed(() =>
-    catalog.config?.artworkUrls[props.label.id] ?? "",
+    catalog.artworkUrl(props.label.art.asset),
 );
 
 const frameAspectRatio = computed(() => {
@@ -193,7 +193,7 @@ function focusAfterPan(
 }
 
 function startPan(event: PointerEvent): void {
-    if (catalog.view !== "editor" || event.button !== 0 || !event.isPrimary || !coverSize.value) return;
+    if (catalog.view !== "editor" || (event.button !== 0 && event.button !== 1) || !event.isPrimary || !coverSize.value) return;
     const label = event.currentTarget as HTMLElement;
     event.preventDefault();
     showCropGuides();
@@ -264,7 +264,7 @@ function focusAnchoredAtPointer(
 }
 
 function wheelZoom(event: WheelEvent): void {
-    if (catalog.view !== "editor") return;
+    if (catalog.view !== "editor" || (!event.ctrlKey && !event.metaKey)) return;
     const baseSize = coverSize.value;
     if (!baseSize) return;
 
