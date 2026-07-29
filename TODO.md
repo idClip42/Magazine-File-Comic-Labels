@@ -1,0 +1,23 @@
+# TODO
+
+- [ ] We actually do need edge/bleed guides to help position the art
+- [ ] Maybe save copies of all pulled images locally in a cache in the dist folder
+  - With an index JSON of all of them
+    - So that we don't have to redownload them every time
+  - And if a website disappears, the image doesn't necessarily
+  - Do this before auto-filling image options
+    - To minimize time spent on that.
+- [ ] Ability to have multiple options for a label, and cycle through them in the UI
+  - Would it be a bridge too far to ask Codex to supply the links to the official marvel image files? To look at the pattern for the "clean.jpg" pics and find all of them?
+    - If I google "Marvel Fantastic Four" and then the issue number, one of the first results is the official marvel page for it, which seems like the way to the hi res image.
+  - Maybe small little (probably labeled) buttons along the bottom to make it easier to bounce between covers
+    - Maybe reset the zoom and pan every time we switch images, also.
+  - I imagine it'd be similar for New Mutants, X-Men, Excalibur... Further Adventures of Indiana Jones...
+- [ ] I'd love to figure out a way to prevent myself from accidentally zooming a pic in or out when I just want to scroll the screen
+    - I'm not sure there is one though?
+    - I like the fact that I can just quickly and freely adjust the images...
+    - ...but maybe that's not necessary
+    - Maybe it's worth having a "selection" interaction with a thing before I can start editing it.
+    - But I don't know. Enjoying how quickly I can adjust each one.
+- [ ] Worth noting in the docs - I had wanted to start picking out individual panel art, but I'm finding it suddenly very difficult to get at hi res versions of these comics on pirate websites, so I think we're stuck with close-ups on covers.
+- [ ] Two labels should never have the same art, but if they do, in the UI, if I go to move the second one, it moves the first instead, which is bug behavior.
