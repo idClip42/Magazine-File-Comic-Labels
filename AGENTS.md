@@ -48,6 +48,9 @@ docs/
   ADDITIONAL-LABELS.md Planned additions/splits still to be cataloged
   COLOR-CATEGORY-PROPOSAL.md  Rationale for the seven V2 color families
   ARTWORK-RESEARCH.md Active Marvel cover-art research guide and checklist
+  MARVEL-BROWSER-HARVEST.md Browser handoff queue and batch-harvest notes
+  MARVEL-ISSUE-PAGES.json Machine-readable official Marvel issue-page inventory
+  MARVEL-COVER-URLS.json Machine-readable Marvel cover and clean-image inventory
 ```
 
 `dist/`, `imgs/`, and `assets/` are ignored working/output directories. Do not
@@ -65,6 +68,9 @@ npm run build           # Compile, build Vue, prepare SVGs, and embed the catalo
 npm run serve           # Serve an existing build and allow edits to be saved
 npm start               # Build, then start the local editor at http://127.0.0.1:4173
 npm run prepare:logos   # Prepare/logo-audit SVGs without generating the document
+npm run harvest:marvel-pages  # Refresh the official Marvel issue-page inventory
+npm run harvest:marvel-covers # Resume the official-page-to-cover harvest
+npm run apply:harvested-covers -- --write # Merge harvested clean URLs into label options
 ```
 
 `npm run build` produces a self-contained preview at `dist/v2/index.html`; it
@@ -84,6 +90,37 @@ changes. The current catalog deliberately references remote artwork, so a clean
 audit only means any referenced *local* files exist. Build and audit do not
 perform full catalog-schema validation; inspect JSON edits carefully and rely on
 typecheck/build plus the editor proof.
+
+## Marvel cover-harvest workflow
+
+The current Marvel research inventory covers 1,025 official issue pages. Treat
+the generated JSON files in `docs/` as durable, machine-readable research data:
+each cover record includes its physical `labelId`, issue, official page, source
+cover URL, and clean-image URL. They are intentionally committed; do not put
+them in ignored cache directories.
+
+- Use `docs/MARVEL-ISSUE-PAGES.json` to identify official issue pages, then
+  `docs/MARVEL-COVER-URLS.json` for page-derived cover assets. Records with
+  `status: "found"` are usable; unresolved issues are intentionally absent
+  from the cover inventory rather than guessed.
+- Marvel page markup supplies a `portrait_uncanny.webp` preview, but the
+  usable clean CDN rendition is the same path ending in `clean.jpg`. **All
+  Marvel CDN URLs stored in research data or `config/labels.json` must end in
+  `.jpg`**, including source URLs. Do not reintroduce WebP URLs or infer IDs.
+- `npm run harvest:marvel-covers` is resumable: it skips successful records,
+  serializes Marvel page requests at no faster than 500 ms, uses browser-like
+  headers, and stops after three consecutive 403/429 responses. Keep these
+  safeguards; do not parallelize the page fetcher.
+- `npm run apply:harvested-covers -- --write` mechanically adds the harvested
+  `clean.jpg` URLs to each corresponding label's `art.options`, preserving
+  issue order and existing non-harvested candidates. It also normalizes any
+  prior Marvel WebP option to JPEG. Run it only when deliberately refreshing
+  the catalog from the validated cover inventory.
+- The local editor persists downloaded remote images under ignored
+  `dist/artwork-cache/`. On a cache miss it fetches Marvel CDN images one at a
+  time at a 500 ms cadence and stops after repeated blocks; non-Marvel images
+  retain parallel preloading. The persistent cache means ordinary editor starts
+  should download only newly introduced remote candidates.
 
 ## V2 configuration model
 
