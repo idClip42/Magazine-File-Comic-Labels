@@ -1,12 +1,9 @@
 # TODO
 
 - [x] We actually do need edge/bleed guides to help position the art
-- [ ] Maybe save copies of all pulled images locally in a cache in the dist folder
-  - With an index JSON of all of them
-    - So that we don't have to redownload them every time
-  - And if a website disappears, the image doesn't necessarily
-  - Do this before auto-filling image options
-    - To minimize time spent on that.
+- [x] Save pulled remote artwork in `dist/artwork-cache/`, indexed by source URL
+  - The crop editor loads cached files into memory on later starts and downloads only cache misses.
+  - The cache is deliberately gitignored with `dist/`; delete `dist/artwork-cache/` to refresh remote artwork.
 - [ ] Ability to have multiple options for a label, and cycle through them in the UI
   - Would it be a bridge too far to ask Codex to supply the links to the official marvel image files? To look at the pattern for the "clean.jpg" pics and find all of them?
     - If I google "Marvel Fantastic Four" and then the issue number, one of the first results is the official marvel page for it, which seems like the way to the hi res image.

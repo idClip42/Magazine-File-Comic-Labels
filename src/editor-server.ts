@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
+import crypto from "node:crypto";
 import chalk from "chalk";
 import { categories, labels, layout } from "./config";
 import { buildEditorConfig } from "./editor-config";
@@ -13,6 +14,10 @@ const port = Number(process.env.CROP_EDITOR_PORT ?? 4173);
 const labelsPath = path.join(process.cwd(), "config", "labels.json");
 const layoutPath = path.join(process.cwd(), "config", "layout.json");
 const outputDirectory = path.join(process.cwd(), "dist", "v2");
+const artworkCacheDirectory = path.join(process.cwd(), "dist", "artwork-cache");
+const artworkCacheImagesDirectory = path.join(artworkCacheDirectory, "images");
+const artworkCacheIndexPath = path.join(artworkCacheDirectory, "index.json");
+const artworkCacheFormat = "source-format-v1";
 const maxRequestBytes = 1024 * 1024;
 const preloadConcurrency = 12;
 const preloadProgressInterval = 10;
@@ -51,10 +56,51 @@ type EditorUpdates = {
     layout?: LayoutUpdate;
 };
 type CachedImage = { body: Buffer; contentType: string };
+type ArtworkCacheEntry = {
+    contentType: string;
+    file: string;
+    format: string;
+    source: string;
+};
+type ArtworkCacheIndex = Record<string, ArtworkCacheEntry>;
 
 const labelById = new Map(labels.map(label => [label.id, label]));
 const imageCache = new Map<string, CachedImage>();
 const preparedLogos = prepareLogos(layout, categories, outputDirectory);
+
+function isArtworkCacheEntry(value: unknown): value is ArtworkCacheEntry {
+    return !!value
+        && typeof value === "object"
+        && !Array.isArray(value)
+        && typeof (value as ArtworkCacheEntry).source === "string"
+        && typeof (value as ArtworkCacheEntry).file === "string"
+        && typeof (value as ArtworkCacheEntry).format === "string"
+        && typeof (value as ArtworkCacheEntry).contentType === "string";
+}
+
+function readArtworkCacheIndex(): ArtworkCacheIndex {
+    try {
+        const parsed: unknown = JSON.parse(fs.readFileSync(artworkCacheIndexPath, "utf8"));
+        if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+        return Object.fromEntries(
+            Object.entries(parsed).filter(([, entry]) => isArtworkCacheEntry(entry)),
+        ) as ArtworkCacheIndex;
+    } catch (error) {
+        if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
+            console.warn(chalk.yellow(`Ignoring unreadable artwork cache index: ${error instanceof Error ? error.message : "Unknown error"}`));
+        }
+        return {};
+    }
+}
+
+const artworkCacheIndex = readArtworkCacheIndex();
+
+function writeArtworkCacheIndex(): void {
+    fs.mkdirSync(artworkCacheDirectory, { recursive: true });
+    const temporaryPath = `${artworkCacheIndexPath}.tmp`;
+    fs.writeFileSync(temporaryPath, `${JSON.stringify(artworkCacheIndex, null, 2)}\n`, "utf8");
+    fs.renameSync(temporaryPath, artworkCacheIndexPath);
+}
 
 function sendJson(response: http.ServerResponse, status: number, body: object): void {
     response.writeHead(status, { "Content-Type": "application/json; charset=utf-8" });
@@ -67,6 +113,62 @@ function imageTypeForPath(filePath: string): string | undefined {
 
 function isRemoteImage(asset: string): boolean {
     return /^https?:\/\//i.test(asset);
+}
+
+function extensionForImage(contentType: string, asset: string): string {
+    const extensionForType: Record<string, string> = {
+        "image/avif": ".avif",
+        "image/gif": ".gif",
+        "image/jpeg": ".jpg",
+        "image/png": ".png",
+        "image/svg+xml": ".svg",
+        "image/webp": ".webp",
+    };
+    const sourceExtension = path.extname(new URL(asset).pathname).toLowerCase();
+    return extensionForType[contentType] ?? (sourceExtension || ".img");
+}
+
+function cachedArtworkPath(entry: ArtworkCacheEntry): string | undefined {
+    const filePath = path.resolve(artworkCacheDirectory, entry.file);
+    return filePath.startsWith(`${artworkCacheDirectory}${path.sep}`) ? filePath : undefined;
+}
+
+async function loadArtworkFromDiskCache(asset: string): Promise<boolean> {
+    const entry = artworkCacheIndex[asset];
+    if (!entry || entry.source !== asset || entry.format !== artworkCacheFormat) return false;
+    const filePath = cachedArtworkPath(entry);
+    if (!filePath) return false;
+    try {
+        imageCache.set(asset, {
+            body: await fs.promises.readFile(filePath),
+            contentType: entry.contentType,
+        });
+        return true;
+    } catch (error) {
+        if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
+            console.warn(chalk.yellow(`Could not read cached artwork for ${asset}: ${error instanceof Error ? error.message : "Unknown error"}`));
+        }
+        return false;
+    }
+}
+
+function saveArtworkToDiskCache(asset: string, image: CachedImage): void {
+    fs.mkdirSync(artworkCacheImagesDirectory, { recursive: true });
+    const digest = crypto.createHash("sha256").update(asset).digest("hex");
+    const file = `images/${digest}${extensionForImage(image.contentType, asset)}`;
+    const previousPath = artworkCacheIndex[asset] && cachedArtworkPath(artworkCacheIndex[asset]);
+    const filePath = path.join(artworkCacheDirectory, file);
+    fs.writeFileSync(filePath, image.body);
+    artworkCacheIndex[asset] = {
+        source: asset,
+        file,
+        contentType: image.contentType,
+        format: artworkCacheFormat,
+    };
+    writeArtworkCacheIndex();
+    if (previousPath && previousPath !== filePath && fs.existsSync(previousPath)) {
+        fs.unlinkSync(previousPath);
+    }
 }
 
 function isCropUpdate(value: unknown): value is CropUpdate {
@@ -170,9 +272,9 @@ function formatLabels(configuredLabels: LabelConfig[], lineEnding: string): stri
     return `${compactRanges}${lineEnding}`;
 }
 
-async function cacheRemoteImage(asset: string): Promise<void> {
+async function downloadRemoteImage(asset: string): Promise<void> {
     const response = await fetch(asset, {
-        headers: { Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8" },
+        headers: { Accept: "image/jpeg,image/png,image/gif,image/svg+xml,*/*;q=0.8" },
         signal: AbortSignal.timeout(30_000),
     });
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
@@ -180,27 +282,44 @@ async function cacheRemoteImage(asset: string): Promise<void> {
     const contentType = response.headers.get("content-type")?.split(";", 1)[0]
         ?? imageTypeForPath(asset)
         ?? "application/octet-stream";
-    imageCache.set(asset, {
+    const image = {
         body: Buffer.from(await response.arrayBuffer()),
         contentType,
-    });
+    };
+    imageCache.set(asset, image);
+    saveArtworkToDiskCache(asset, image);
 }
 
 async function preloadRemoteImages(): Promise<void> {
     const preloadStartedAt = performance.now();
     const assets = [...new Set(labels.map(label => label.art.asset).filter(isRemoteImage))];
     const failures: string[] = [];
+    let downloads = 0;
     let nextIndex = 0;
     let completed = 0;
+
+    const diskLoadResults = await Promise.all(assets.map(async asset => ({
+        asset,
+        loaded: await loadArtworkFromDiskCache(asset),
+    })));
+    const assetsToDownload = diskLoadResults
+        .filter(result => !result.loaded)
+        .map(result => result.asset);
+    const diskCacheHits = assets.length - assetsToDownload.length;
+
+    if (diskCacheHits > 0) {
+        console.log(chalk.blue(`Art disk cache: ${diskCacheHits}/${assets.length} loaded concurrently.`));
+    }
 
     console.log(chalk.cyan(`Preloading ${assets.length} remote art image(s)…`));
 
     const worker = async () => {
-        while (nextIndex < assets.length) {
-            const asset = assets[nextIndex++];
+        while (nextIndex < assetsToDownload.length) {
+            const asset = assetsToDownload[nextIndex++];
             const startedAt = performance.now();
             try {
-                await cacheRemoteImage(asset);
+                await downloadRemoteImage(asset);
+                downloads += 1;
             } catch (error) {
                 const message = error instanceof Error ? error.message : "Unknown error";
                 failures.push(`${asset} (${message})`);
@@ -208,20 +327,20 @@ async function preloadRemoteImages(): Promise<void> {
                 const elapsedMilliseconds = performance.now() - startedAt;
                 if (elapsedMilliseconds >= slowPreloadThresholdMilliseconds) {
                     const outcome = imageCache.has(asset) ? "cached" : "failed";
-                    console.log(chalk.yellow(`Slow art preload (${outcome}, ${(elapsedMilliseconds / 1000).toFixed(1)}s): ${asset}`));
+                    console.log(chalk.yellow(`Slow art download (${outcome}, ${(elapsedMilliseconds / 1000).toFixed(1)}s): ${asset}`));
                 }
                 completed += 1;
-                if (completed % preloadProgressInterval === 0 || completed === assets.length) {
-                    console.log(chalk.blue(`Art preload: ${completed}/${assets.length} complete (${imageCache.size} cached, ${failures.length} failed).`));
+                if (completed % preloadProgressInterval === 0 || completed === assetsToDownload.length) {
+                    console.log(chalk.blue(`Art download: ${completed}/${assetsToDownload.length} complete (${downloads} cached, ${failures.length} failed).`));
                 }
             }
         }
     };
 
-    await Promise.all(Array.from({ length: Math.min(preloadConcurrency, assets.length) }, worker));
+    await Promise.all(Array.from({ length: Math.min(preloadConcurrency, assetsToDownload.length) }, worker));
     const megabytes = [...imageCache.values()].reduce((total, image) => total + image.body.length, 0) / 1024 / 1024;
     const elapsedSeconds = (performance.now() - preloadStartedAt) / 1000;
-    const summary = `Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${megabytes.toFixed(1)} MB in memory) in ${elapsedSeconds.toFixed(1)}s.`;
+    const summary = `Preloaded ${imageCache.size}/${assets.length} remote art image(s) (${diskCacheHits} from disk, ${downloads} downloaded; ${megabytes.toFixed(1)} MB in memory) in ${elapsedSeconds.toFixed(1)}s.`;
     console.log(failures.length > 0 ? chalk.yellow(summary) : chalk.green(summary));
     if (failures.length > 0) {
         const examples = failures.slice(0, 3).join("; ");
