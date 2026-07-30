@@ -3231,13 +3231,13 @@
         "category": "x-family",
         "logo": "excalibur-late",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/66c4c2db07994/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/5d0b89b79f61f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.2598,
-                    "y": 0.3885
+                    "x": 0.5726,
+                    "y": 0.2329
                 },
-                "scale": 1.94,
+                "scale": 3.856,
                 "legacy": {
                     "topInches": -1,
                     "leftInches": -1,
