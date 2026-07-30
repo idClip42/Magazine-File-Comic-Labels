@@ -14,8 +14,6 @@
     "build": "npm run build:server && npm run cache:migrate && npm run build:app && node dist/src/build/index.js",
     "build:app": "vite build",
     "build:server": "tsc",
-    "convert:v1": "ts-node scripts/convert-v1-config.ts",
-    "convert:v1:force": "ts-node scripts/convert-v1-config.ts --force",
     "harvest:marvel-pages": "ts-node src/tools/research/marvel/harvest-issue-pages.ts --out docs/research/marvel/MARVEL-ISSUE-PAGES.json",
     "harvest:marvel-covers": "ts-node src/tools/research/marvel/harvest-covers.ts",
     "harvest:ultimate-marvel-covers": "ts-node src/tools/research/marvel/harvest-additional-covers.ts --pages docs/research/marvel/MARVEL-ULTIMATE-ISSUE-PAGES.json --out docs/research/marvel/MARVEL-ULTIMATE-COVER-URLS.json",

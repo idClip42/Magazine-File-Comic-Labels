@@ -1,6 +1,6 @@
 # Comic Magazine-File Labels
 
-V2 generates full-height, print-ready matte-vinyl front labels for IKEA-style comic magazine files. The active source lives at the repository root; `legacy/v1/` is a read-only historical archive.
+V2 generates full-height, print-ready matte-vinyl front labels for IKEA-style comic magazine files.
 
 ## Start here
 
@@ -27,7 +27,6 @@ docs/design/         Governing design and physical-production brief
 docs/planning/       Deliberate future additions and collection splits
 docs/history/        Historical snapshots; not the current catalog
 docs/research/       Durable Marvel and non-Marvel cover-research inventories
-legacy/v1/           Preserved first generator
 ```
 
 `config/labels.json` order is the intended label and print order. Keep its changes intentional and do not bulk regenerate it from V1.

@@ -9,9 +9,8 @@ layout: color-tinted artwork, a white identity band above the finger hole, and
 a white metadata band below it. The priority at shelf distance is color family,
 logo, and years; issue and collection details are secondary.
 
-The root project is **V2**, the active implementation. `legacy/v1/` is a
-read-only historical archive of the first generator and is useful as a source
-of provenance, but should not be extended for normal V2 work.
+The root project is **V2**, the active implementation. Earlier generator
+revisions are retained only in Git history.
 
 ## Repository map
 
@@ -33,9 +32,6 @@ web/
   src/stores/        Editable in-browser catalog state and save handling
   src/styles/        Screen and print CSS for the labels
 vite.config.ts       Vite configuration; builds `web/` into `dist/v2/`
-scripts/
-  convert-v1-config.ts  One-time V1-to-V2 migration utility
-legacy/v1/          Preserved V1 generator/configuration; do not treat as active
 docs/
   design/             Governing V2 design and physical-production brief
   history/            Historical snapshots and superseded proposals, including the original 89-label inventory
@@ -203,10 +199,9 @@ intentional and documented.
    audit. Review generated output at print size before approving
    physical-production changes.
 
-The migration scripts are intentionally conservative. `npm run convert:v1`
-will refuse to overwrite existing V2 catalog files; use its `:force` variant
-only when the explicit goal is to regenerate the V2 catalog from the archived
-V1 data and discard manual V2 catalog edits.
+There is no supported V1-to-V2 regeneration path. The V2 catalog is the
+authoritative collection record; inspect Git history only when historical
+provenance is needed.
 
 ## Scope and conventions
 
@@ -216,7 +211,6 @@ V1 data and discard manual V2 catalog edits.
 - The small `node:test` suite covers core serialization, validation, and crop
   helpers. Typechecking, asset audit, build success, and browser/print proofing
   remain required checks.
-- Do not edit generated `dist/` files as source. Do not modify `legacy/v1/`
-  unless the task specifically concerns the archive or migration behavior.
+- Do not edit generated `dist/` files as source.
 - Treat catalog edits as intentional collection decisions; avoid bulk
   regeneration unless the user explicitly requests it.

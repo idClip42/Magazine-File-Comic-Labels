@@ -15,7 +15,7 @@ The design unit is the **shelf**, not an isolated label. The desired reaction is
 V1 is a compact static generator:
 
 - `config.json` contains the physical format and collection data: 37 series records, 89 physical labels, and 145 content/subseries entries.
-- `legacy/v1/src/index.ts` writes `legacy/v1/dist/index.html`; `legacy/v1/src/label.ts` emits each label as an HTML string; `legacy/v1/src/css.ts` embeds print CSS.
+- The predecessor generated labels as static HTML strings; its source is retained in Git history only.
 - Each V1 label is 3.875 × 9.25 in and uses a color-tinted cover image, logo, and bottom white information panel.
 
 V1 proved the useful idea: labels can be generated rather than individually designed. Its weaknesses are durability (office paper and spray adhesive), repeated configuration, remote/mixed assets, and a visual hierarchy in which art, logo, years, and metadata all compete.
