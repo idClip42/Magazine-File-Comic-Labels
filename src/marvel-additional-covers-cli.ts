@@ -39,16 +39,20 @@ async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const refresh = args.includes("--refresh");
   const limitIndex = args.indexOf("--limit");
+  const pagesIndex = args.indexOf("--pages");
+  const outputIndex = args.indexOf("--out");
   const limit = limitIndex === -1 ? Number.POSITIVE_INFINITY : Number(args[limitIndex + 1]);
-  if (args.some((arg, index) => arg !== "--refresh" && arg !== "--limit" && index !== limitIndex + 1) || !Number.isInteger(limit) || limit < 1) throw new Error("Usage: npm run harvest:additional-marvel-covers [-- --limit <number>] [--refresh]");
-  const pages = JSON.parse(fs.readFileSync(PAGES_PATH, "utf8")) as { entries?: PageEntry[] };
-  if (!Array.isArray(pages.entries)) throw new Error(`${PAGES_PATH} does not contain entries.`);
-  const previous = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, "utf8")) as { entries?: CoverEntry[] } : {};
+  if (args.some((arg, index) => arg !== "--refresh" && arg !== "--limit" && arg !== "--pages" && arg !== "--out" && index !== limitIndex + 1 && index !== pagesIndex + 1 && index !== outputIndex + 1) || !Number.isInteger(limit) || limit < 1 || (pagesIndex >= 0 && !args[pagesIndex + 1]) || (outputIndex >= 0 && !args[outputIndex + 1])) throw new Error("Usage: npm run harvest:additional-marvel-covers [-- --pages <path>] [--out <path>] [--limit <number>] [--refresh]");
+  const pagesPath = pagesIndex >= 0 ? args[pagesIndex + 1] : PAGES_PATH;
+  const outputPath = outputIndex >= 0 ? args[outputIndex + 1] : OUTPUT_PATH;
+  const pages = JSON.parse(fs.readFileSync(pagesPath, "utf8")) as { entries?: PageEntry[] };
+  if (!Array.isArray(pages.entries)) throw new Error(`${pagesPath} does not contain entries.`);
+  const previous = fs.existsSync(outputPath) ? JSON.parse(fs.readFileSync(outputPath, "utf8")) as { entries?: CoverEntry[] } : {};
   const byKey = new Map((previous.entries ?? []).map(entry => [keyFor(entry), entry]));
   const eligible = pages.entries.filter(entry => entry.status === "found" && entry.officialPage);
   const persist = (stoppedForBlocking: boolean): void => {
     const entries = eligible.map(page => byKey.get(keyFor(page)) ?? { ...page, status: "pending" as const });
-    fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify({ generatedAt: new Date().toISOString(), source: PAGES_PATH, requestDelayMs: DELAY_MS, stoppedForBlocking, entries }, null, 2)}\n`);
+    fs.writeFileSync(outputPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), source: pagesPath, requestDelayMs: DELAY_MS, stoppedForBlocking, entries }, null, 2)}\n`);
   };
   let attempts = 0, consecutiveBlocks = 0, stoppedForBlocking = false;
   for (const page of eligible) {
@@ -68,9 +72,9 @@ async function main(): Promise<void> {
     } catch (error) { byKey.set(keyFor(page), { ...page, status: "fetch-error", extractedAt: new Date().toISOString(), error: error instanceof Error ? error.message : String(error) }); persist(stoppedForBlocking); }
   }
   const entries = eligible.map(page => byKey.get(keyFor(page)) ?? { ...page, status: "pending" as const });
-  const inventory = { generatedAt: new Date().toISOString(), source: PAGES_PATH, requestDelayMs: DELAY_MS, stoppedForBlocking, entries };
-  fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(inventory, null, 2)}\n`);
+  const inventory = { generatedAt: new Date().toISOString(), source: pagesPath, requestDelayMs: DELAY_MS, stoppedForBlocking, entries };
+  fs.writeFileSync(outputPath, `${JSON.stringify(inventory, null, 2)}\n`);
   const counts = entries.reduce<Record<string, number>>((total, entry) => ({ ...total, [entry.status]: (total[entry.status] ?? 0) + 1 }), {});
-  console.log(`Wrote ${OUTPUT_PATH}: ${JSON.stringify(counts)}${stoppedForBlocking ? " (stopped after repeated blocking)" : ""}`);
+  console.log(`Wrote ${outputPath}: ${JSON.stringify(counts)}${stoppedForBlocking ? " (stopped after repeated blocking)" : ""}`);
 }
 main().catch(error => { console.error(error instanceof Error ? error.message : error); process.exitCode = 1; });
