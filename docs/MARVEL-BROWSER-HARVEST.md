@@ -5,7 +5,7 @@
 The handoff queue can also be resolved in batches without scraping a search
 engine's HTML. By default, the collector uses the free Marvel Metadata API's
 series index, which records canonical `marvel.com/comics/issue/...` URLs; it
-writes a restartable review inventory under ignored `artwork-cache/`. It does
+writes the durable review inventory to `docs/research/marvel/MARVEL-ISSUE-PAGES.json`. It does
 not alter this queue or select cover art.
 
 ```powershell
@@ -20,7 +20,7 @@ inventory; use `--refresh` to redo previously found entries.
 
 ## Batch cover discovery
 
-Once [MARVEL-ISSUE-PAGES.json](MARVEL-ISSUE-PAGES.json) has entries with
+Once [MARVEL-ISSUE-PAGES.json](research/marvel/MARVEL-ISSUE-PAGES.json) has entries with
 `status: "found"`, collect their page-exposed main covers with:
 
 ```powershell
@@ -28,7 +28,7 @@ npm run harvest:marvel-covers
 ```
 
 The collector makes one browser-headered Node request at a time, defaults to a
-500 ms delay, persists successes in `MARVEL-COVER-URLS.json`, and skips them on
+500 ms delay, persists successes in `research/marvel/MARVEL-COVER-URLS.json`, and skips them on
 later runs. It records the source `portrait_uncanny` URL plus its same-path
 `clean.jpg` counterpart. It stops after three
 consecutive 403/429 responses; do not replace it with a parallel scraper.

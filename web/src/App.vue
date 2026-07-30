@@ -2,10 +2,10 @@
 import { watch } from "vue";
 import { layoutCssVariables } from "./layout-css";
 import { useCatalogStore } from "./stores/catalog";
-import GlobalControls from "./components/GlobalControls.vue";
-import LabelEditor from "./components/LabelEditor.vue";
-import ShelfOverview from "./components/ShelfOverview.vue";
-import ViewSwitcher from "./components/ViewSwitcher.vue";
+import GlobalControls from "./features/editor/GlobalControls.vue";
+import LabelEditor from "./features/labels/LabelEditor.vue";
+import ShelfOverview from "./features/shelf/ShelfOverview.vue";
+import ViewSwitcher from "./features/navigation/ViewSwitcher.vue";
 
 const catalog = useCatalogStore();
 

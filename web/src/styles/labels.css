@@ -1,8 +1,8 @@
 :root {
   --face-width: 3.875in;
   --face-height: 11.75in;
-  --overwrap: 0.125in;
-  --total-width: 4.125in;
+  --overwrap: 0.5in;
+  --total-width: 4.875in;
   --total-height: 11.75in;
   --top-rule-height: 0.06in;
   --identity-top: 7.25in;
@@ -77,7 +77,7 @@ body {
   pointer-events: none;
 }
 
-.label.crop-is-interactive { cursor: grab; }
+.label.crop-is-interactive { cursor: grab; touch-action: none; }
 .label.crop-is-panning { cursor: grabbing; user-select: none; }
 
 /* Shown only while changing a crop: the shaded sides are vinyl that wraps

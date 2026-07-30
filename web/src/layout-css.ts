@@ -1,4 +1,4 @@
-import type { LayoutConfig } from "../../src/types";
+import type { LayoutConfig } from "../../src/core/types";
 
 /** Produces the physical layout variables consumed by the print CSS. */
 export function layoutCssVariables(layout: LayoutConfig): Record<string, string> {

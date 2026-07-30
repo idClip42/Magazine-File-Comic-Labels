@@ -1,15 +1,14 @@
 import { computed, ref } from "vue";
 import { defineStore } from "pinia";
-import type { EditorConfig, LabelConfig } from "../../../src/types";
+import type { EditorConfig, LabelConfig } from "../../../src/core/types";
 import {
-    type ArtUpdate,
-    type CropUpdate,
     type EditorUpdates,
     type LayoutUpdate,
     isLiveEditor,
     requestLiveConfig,
     type ViewMode,
 } from "../config";
+import type { ArtUpdate, CropUpdate } from "../../../src/core/editor-updates";
 
 type SaveState = "idle" | "saving" | "saved" | "error";
 

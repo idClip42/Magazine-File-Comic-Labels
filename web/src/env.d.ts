@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
-import type { EditorConfig } from "../../src/types";
+import type { EditorConfig } from "../../src/core/types";
 
 declare global {
     interface Window {

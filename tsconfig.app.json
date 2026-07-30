@@ -10,8 +10,7 @@
     "include": [
         "web/src/**/*.ts",
         "web/src/**/*.vue",
-        "src/color.ts",
-        "src/types.ts",
+        "src/core/**/*.ts",
         "vite.config.ts"
     ]
 }

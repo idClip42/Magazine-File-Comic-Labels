@@ -7,6 +7,6 @@ export default defineConfig({
     plugins: [vue()],
     build: {
         outDir: "../dist/v2",
-        emptyOutDir: false,
+        emptyOutDir: true,
     },
 });

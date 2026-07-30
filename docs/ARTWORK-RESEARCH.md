@@ -87,7 +87,7 @@ need the same review and confirmation process.
   not an ID or slug inference.
 - Use `npm run harvest:marvel-covers` for the repeatable cover pass. It is
   deliberately serialized, records every success in
-  `docs/MARVEL-COVER-URLS.json`, skips those successes on later runs, and
+  `docs/research/marvel/MARVEL-COVER-URLS.json`, skips those successes on later runs, and
   stops after three consecutive 403 or 429 responses. Do not parallelize the
   page fetches or lower its 500 ms minimum delay without a fresh, controlled
   rate-limit check.
