@@ -1,0 +1,21 @@
+{
+  "source": "HipComic public listing pages",
+  "targets": [
+    { "labelId": "teen-titans-go-001", "series": "Teen Titans Go! (2004)", "queryTitle": "Teen Titans Go 2004", "issues": [1, 28] },
+    { "labelId": "teen-titans-go-002", "series": "Teen Titans Go! (2004)", "queryTitle": "Teen Titans Go 2004", "issues": [29, 55] },
+    { "labelId": "young-justice-001", "series": "Young Justice (1998)", "queryTitle": "Young Justice 1998", "issues": [1, 22] },
+    { "labelId": "young-justice-002", "series": "Young Justice (1998)", "queryTitle": "Young Justice 1998", "issues": [23, 46] },
+    { "labelId": "jonny-quest-001", "series": "Jonny Quest (1986)", "queryTitle": "Jonny Quest 1986", "issues": [1, 31] },
+    { "labelId": "fatale-001", "series": "Fatale (2012)", "queryTitle": "Fatale 2012 Image Comics", "issues": [1, 24] },
+    { "labelId": "indiana-jones-003", "series": "Indiana Jones and the Fate of Atlantis", "queryTitle": "Indiana Jones Fate Atlantis", "issues": [1, 4] },
+    { "labelId": "indiana-jones-003", "series": "The Young Indiana Jones Chronicles", "queryTitle": "Young Indiana Jones Chronicles 1992", "issues": [1, 12] },
+    { "labelId": "indiana-jones-003", "series": "Indiana Jones: Thunder in the Orient", "queryTitle": "Indiana Jones Thunder Orient", "issues": [1, 6] },
+    { "labelId": "indiana-jones-003", "series": "Indiana Jones and the Golden Fleece", "queryTitle": "Indiana Jones Golden Fleece", "issues": [1, 2] },
+    { "labelId": "indiana-jones-003", "series": "Indiana Jones and the Arms of Gold", "queryTitle": "Indiana Jones Arms of Gold", "issues": [1, 4] },
+    { "labelId": "indiana-jones-004", "series": "Indiana Jones and the Iron Phoenix", "queryTitle": "Indiana Jones Iron Phoenix", "issues": [1, 4] },
+    { "labelId": "indiana-jones-004", "series": "Indiana Jones and the Spear of Destiny", "queryTitle": "Indiana Jones Spear Destiny", "issues": [1, 4] },
+    { "labelId": "indiana-jones-004", "series": "Indiana Jones and the Sargasso Pirates", "queryTitle": "Indiana Jones Sargasso Pirates", "issues": [1, 4] },
+    { "labelId": "indiana-jones-004", "series": "Indiana Jones and the Kingdom of the Crystal Skull", "queryTitle": "Indiana Jones Kingdom Crystal Skull", "issues": [1, 2] },
+    { "labelId": "indiana-jones-004", "series": "Indiana Jones and the Tomb of the Gods", "queryTitle": "Indiana Jones Tomb Gods", "issues": [1, 4] }
+  ]
+}

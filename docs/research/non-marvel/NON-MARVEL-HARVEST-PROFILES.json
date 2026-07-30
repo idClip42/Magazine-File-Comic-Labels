@@ -1,0 +1,34 @@
+{
+  "profiles": [
+    {
+      "id": "young-justice-coverbrowser",
+      "kind": "direct-image",
+      "labelIds": ["young-justice-001", "young-justice-002", "young-justice-003"],
+      "extend": { "labelId": "young-justice-003", "series": "Young Justice (1998)", "issues": [47, 55] },
+      "imageUrlTemplate": "https://www.coverbrowser.com/image/young-justice/{issue}-1.jpg",
+      "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
+      "source": "CoverBrowser direct issue image"
+    },
+    {
+      "id": "teen-titans-go-fandom",
+      "kind": "fandom-api",
+      "labelPrefix": "teen-titans-go-",
+      "apiUrl": "https://dc.fandom.com/api.php",
+      "pageTemplate": "Teen_Titans_Go!_Vol_1_{issue}",
+      "coverPattern": "https:\\/\\/static\\.wikia\\.nocookie\\.net\\/[^\"' ]+Teen_Titans_Go(?:!|%21|&#33;)[^\"' ]+\\/revision\\/latest\\?cb=\\d+",
+      "excludePattern": "Textless|scale-to-width",
+      "replace": { "&#33;": "%21" },
+      "source": "DC Fandom API cover metadata"
+    },
+    {
+      "id": "jonny-quest-fandom",
+      "kind": "fandom-api",
+      "labelIds": ["jonny-quest-001"],
+      "apiUrl": "https://jonnyquest.fandom.com/api.php",
+      "pageTemplate": "Jonny Quest (Comico) issue {issue}",
+      "coverPattern": "https:\\/\\/static\\.wikia\\.nocookie\\.net\\/[^\"' ]+\\/revision\\/latest\\?cb=\\d+",
+      "excludePattern": "Textless|Wraparound|scale-to-width",
+      "source": "Jonny Quest Fandom API cover metadata"
+    }
+  ]
+}

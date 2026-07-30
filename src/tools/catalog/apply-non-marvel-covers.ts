@@ -2,9 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { LabelConfig } from "../../core/types";
 import { writeCatalogJson } from "../../core/catalog-json";
+import { nonMarvelResearchPaths } from "../research/shared/paths";
 
 const labelsPath = path.join(process.cwd(), "config", "labels.json");
-const coversPath = path.join(process.cwd(), "docs", "research", "non-marvel", "NON-MARVEL-COVER-URLS.json");
+const coversPath = nonMarvelResearchPaths.covers;
 type Cover = { labelId: string; issue: string; status: string; imageUrl?: string };
 function main(): void {
   const write = process.argv.slice(2).includes("--write"); if (process.argv.slice(2).some(arg => arg !== "--write")) throw new Error("Usage: npm run apply:non-marvel-covers -- [--write]");

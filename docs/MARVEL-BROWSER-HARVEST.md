@@ -1,37 +1,29 @@
 # Marvel Browser Harvest Queue
 
-## Batch issue-page discovery
+## Unified harvest
 
-The handoff queue can also be resolved in batches without scraping a search
-engine's HTML. By default, the collector uses the free Marvel Metadata API's
-series index, which records canonical `marvel.com/comics/issue/...` URLs; it
-writes the durable review inventory to `docs/research/marvel/MARVEL-ISSUE-PAGES.json`. It does
-not alter this queue or select cover art.
+The handoff queue is one input to the unified Marvel harvest. The one command
+resolves official issue pages, then immediately extracts their covers. By
+default, page discovery uses the free Marvel Metadata API's series index and
+writes resumable checkpoints to `docs/research/marvel/MARVEL-ISSUE-PAGES.json`
+and `docs/research/marvel/MARVEL-COVER-URLS.json`. It does not alter this queue
+or select cover art.
 
 ```powershell
-npm run harvest:marvel-pages -- --label fantastic-four-003 --limit 25
+npm run harvest:marvel -- --label fantastic-four-003 --limit 25
 ```
 
 Review `found` URLs before copying them back into **Official Marvel page URL**.
 `not-found` and `error` entries remain deliberate human-review cases. The
 optional `--provider serper` route uses the exact Google discovery query in the
-queue when a `SERPER_API_KEY` is available. A later run resumes the previous
-inventory; use `--refresh` to redo previously found entries.
+queue when a `SERPER_API_KEY` is available. A later run resumes both
+checkpoints; use `--refresh` to redo previously found pages and covers.
 
-## Batch cover discovery
-
-Once [MARVEL-ISSUE-PAGES.json](research/marvel/MARVEL-ISSUE-PAGES.json) has entries with
-`status: "found"`, collect their page-exposed main covers with:
-
-```powershell
-npm run harvest:marvel-covers
-```
-
-The collector makes one browser-headered Node request at a time, defaults to a
-500 ms delay, persists successes in `research/marvel/MARVEL-COVER-URLS.json`, and skips them on
-later runs. It records the source `portrait_uncanny` URL plus its same-path
-`clean.jpg` counterpart. It stops after three
-consecutive 403/429 responses; do not replace it with a parallel scraper.
+Cover requests use browser-like Node headers, are serialized with a 500 ms
+minimum delay, and stop after three consecutive 403/429 responses. Successful
+page-exposed `portrait_uncanny` URLs and their same-path `clean.jpg`
+counterparts are persisted together with the associated target. Do not replace
+this with a parallel scraper.
 
 This is the full browser-assisted handoff list for every active, bounded Marvel
 issue in `ARTWORK-RESEARCH.md`. It intentionally does **not** invent Marvel

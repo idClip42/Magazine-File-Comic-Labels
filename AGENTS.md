@@ -24,7 +24,7 @@ src/
   core/             Shared contracts, configuration I/O, validation, assets, crop, and color helpers
   build/            Vite-preview configuration embedding and SVG-logo preparation
   editor-server/    Local editor HTTP server, cache, artwork preload, edits, and static serving
-  tools/            Audits, catalog updates, research harvests, and one-time migrations
+  tools/            Audits, catalog updates, reusable research pipeline stages, and migrations
 web/
   index.html         Vite entry document with the configuration placeholder
   src/App.vue        Vue application shell
@@ -37,7 +37,7 @@ docs/
   history/            Historical snapshots and superseded proposals, including the original 89-label inventory
   planning/           Planned additions and splits still to be cataloged
   research/
-    marvel/           Durable Marvel issue-page, cover, and run inventories
+    marvel/           Durable Marvel issue-page and cover inventories
     non-marvel/       Durable non-Marvel cover inventories
   ARTWORK-RESEARCH.md Active Marvel cover-art research guide and checklist
   MARVEL-BROWSER-HARVEST.md Browser handoff queue and batch-harvest notes
@@ -55,15 +55,16 @@ Run commands from the repository root:
 ```powershell
 npm run typecheck       # TypeScript and Vue type checks
 npm run validate:catalog # Cross-file catalog validation
+npm run validate:research # Research inventory and manifest validation
 npm run audit:assets    # Report missing referenced local files
-npm run check           # Typecheck, core tests, validate, and asset audit
+npm run check           # Typecheck, core tests, catalog/research validation, and asset audit
 npm run build           # Compile, build Vue, prepare SVGs, and embed the catalog in dist/v2/
 npm run serve           # Serve an existing build and allow edits to be saved
 npm start               # Build, then start the local editor at http://127.0.0.1:4173
 npm run prepare:logos   # Prepare/logo-audit SVGs without generating the document
 npm run cache:migrate   # Move a legacy dist/artwork-cache to .cache/artwork without downloading
-npm run harvest:marvel-pages  # Refresh the official Marvel issue-page inventory
-npm run harvest:marvel-covers # Resume the official-page-to-cover harvest
+npm run harvest:marvel -- --limit 25 # Resolve pages and harvest covers in one resumable pipeline
+npm run harvest:non-marvel-profile -- --profile jonny-quest-fandom # Run a named non-Marvel source profile
 npm run apply:harvested-covers -- --write # Merge harvested clean URLs into label options
 ```
 
@@ -80,31 +81,44 @@ Always run `npm run typecheck` after TypeScript, Vue, or CSS-adjacent component
 changes. Run `npm run build` after changes to layout, application rendering,
 logos, category definitions, or labels; it also catches Vite and
 SVG-preparation failures. Run `npm run validate:catalog` after catalog edits
-and `npm run audit:assets` whenever an asset path changes. The current catalog
+and `npm run audit:assets` whenever an asset path changes. Run
+`npm run validate:research` after changing a research manifest or inventory. The current catalog
 deliberately references remote artwork, so a clean audit only means any
 referenced *local* files exist. Validate/typecheck/build plus the editor proof
 are required checks for catalog work.
 
 ## Marvel cover-harvest workflow
 
-The current Marvel research inventory covers 1,025 official issue pages. Treat
+The current Marvel research inventory covers 1,576 configured targets. Treat
 the generated JSON files in `docs/research/` as durable, machine-readable research data:
 each cover record includes its physical `labelId`, issue, official page, source
 cover URL, and clean-image URL. They are intentionally committed; do not put
 them in ignored cache directories.
 
-- Use `docs/research/marvel/MARVEL-ISSUE-PAGES.json` to identify official issue pages, then
-  `docs/research/marvel/MARVEL-COVER-URLS.json` for page-derived cover assets. Records with
+- `src/tools/research/marvel/harvest-plan.json` is the single Marvel research
+  plan. It contains the existing handoff queue's Metadata API mappings plus
+  every explicit run. Add a new bounded run there instead of creating a batch,
+  a profile, or a script. One `npm run harvest:marvel` invocation resolves
+  official pages and immediately continues to their covers.
+- `docs/research/marvel/MARVEL-ISSUE-PAGES.json` and
+  `docs/research/marvel/MARVEL-COVER-URLS.json` are durable checkpoints inside
+  that single pipeline. Records with
   `status: "found"` are usable; unresolved issues are intentionally absent
   from the cover inventory rather than guessed.
 - Marvel page markup supplies a `portrait_uncanny.webp` preview, but the
   usable clean CDN rendition is the same path ending in `clean.jpg`. **All
   Marvel CDN URLs stored in research data or `config/labels.json` must end in
   `.jpg`**, including source URLs. Do not reintroduce WebP URLs or infer IDs.
-- `npm run harvest:marvel-covers` is resumable: it skips successful records,
-  serializes Marvel page requests at no faster than 500 ms, uses browser-like
-  headers, and stops after three consecutive 403/429 responses. Keep these
-  safeguards; do not parallelize the page fetcher.
+- The unified pipeline is resumable: it skips successful page and cover
+  records, serializes official Marvel cover-page requests at no faster than
+  500 ms, uses browser-like headers, and stops after three consecutive
+  403/429 responses. Keep these safeguards; do not parallelize the cover
+  fetcher.
+- Non-Marvel targets and source-specific parsing profiles live in
+  `docs/research/non-marvel/`. Use the generic HipComic stage or
+  `npm run harvest:non-marvel-profile -- --profile <name>` rather than adding
+  a new standalone host script. Keep each source's rate limits and blocking
+  behavior conservative.
 - `npm run apply:harvested-covers -- --write` mechanically adds the harvested
   `clean.jpg` URLs as the exact `art.options` list for each harvested label,
   preserving harvest issue order and removing superseded candidates. It keeps

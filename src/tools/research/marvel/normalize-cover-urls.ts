@@ -1,8 +1,9 @@
 import fs from "node:fs";
-import path from "node:path";
 import { normalizeMarvelJpegUrl } from "../../../core/assets";
+import { writeResearchJson } from "../shared/inventory";
+import { marvelHarvestPaths } from "./plan";
 
-const coversPath = path.join(process.cwd(), "docs", "research", "marvel", "MARVEL-COVER-URLS.json");
+const coversPath = marvelHarvestPaths.covers;
 
 type CoverEntry = { cleanImageUrl?: string; sourceImageUrl?: string; status: string };
 type CoverInventory = { entries?: CoverEntry[] };
@@ -21,5 +22,5 @@ for (const entry of inventory.entries) {
         updated += 1;
     }
 }
-fs.writeFileSync(coversPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
+writeResearchJson(coversPath, inventory);
 console.log(`Normalized ${updated} harvested Marvel CDN URL(s) to .jpg.`);

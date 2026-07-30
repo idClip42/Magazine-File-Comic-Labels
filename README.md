@@ -7,7 +7,7 @@ V2 generates full-height, print-ready matte-vinyl front labels for IKEA-style co
 ```powershell
 npm install
 npm start                 # Build, preserve/migrate the artwork cache, and open the local editor
-npm run check             # TypeScript/Vue checks, core tests, catalog validation, and local-asset audit
+npm run check             # TypeScript/Vue checks, core tests, catalog/research validation, and local-asset audit
 npm run build             # Produce the self-contained preview in dist/v2/
 ```
 
@@ -29,7 +29,7 @@ docs/history/        Historical snapshots; not the current catalog
 docs/research/       Durable Marvel and non-Marvel cover-research inventories
 ```
 
-`config/labels.json` order is the intended label and print order. Keep its changes intentional and do not bulk regenerate it from V1.
+`config/labels.json` order is the intended label and print order. Keep its changes intentional.
 
 ## Artwork cache
 

@@ -85,12 +85,11 @@ need the same review and confirmation process.
   clean counterpart for every harvested page. The page preview uses WebP, but
   the clean CDN rendition is JPEG. This is an observed page-asset relationship,
   not an ID or slug inference.
-- Use `npm run harvest:marvel-covers` for the repeatable cover pass. It is
-  deliberately serialized, records every success in
-  `docs/research/marvel/MARVEL-COVER-URLS.json`, skips those successes on later runs, and
-  stops after three consecutive 403 or 429 responses. Do not parallelize the
-  page fetches or lower its 500 ms minimum delay without a fresh, controlled
-  rate-limit check.
+- Use `npm run harvest:marvel` for the repeatable Marvel pipeline. It resolves
+  official pages and immediately harvests their covers, recording checkpoints
+  in `docs/research/marvel/` and skipping successes on later runs. Do not
+  parallelize the serialized cover fetches or lower their 500 ms minimum delay
+  without a fresh, controlled rate-limit check.
 - Marvel Database's `Special:FilePath` URLs and MediaWiki API were blocked by
   a Cloudflare challenge in command-line requests. Direct
   `static.wikia.nocookie.net` image URLs are more useful once their exact path

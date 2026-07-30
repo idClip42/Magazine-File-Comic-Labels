@@ -3,13 +3,14 @@ import path from "node:path";
 import { LabelConfig } from "../../core/types";
 import { writeCatalogJson } from "../../core/catalog-json";
 import { isCleanMarvelJpegUrl, normalizeMarvelJpegUrl } from "../../core/assets";
+import { marvelHarvestPaths } from "../research/marvel/plan";
 
 const labelsPath = path.join(process.cwd(), "config", "labels.json");
-const coversPath = path.join(process.cwd(), "docs", "research", "marvel", "MARVEL-COVER-URLS.json");
+const coversPath = marvelHarvestPaths.covers;
 
 type HarvestedCover = {
     labelId: string;
-    issue: string;
+    issue: string | number;
     status: string;
     cleanImageUrl?: string;
     sourceImageUrl?: string;
@@ -25,10 +26,10 @@ function usage(): never {
 
 function issueFromLegacyAsset(asset: string, covers: HarvestedCover[]): string | undefined {
     const direct = covers.find(cover => cover.cleanImageUrl === asset || cover.sourceImageUrl === asset);
-    if (direct) return direct.issue;
+    if (direct) return String(direct.issue);
     const issue = asset.match(/vol(?:ume)?[_-]?\d+[_-](\d+)(?:[_./?]|$)/i)?.[1]
         ?? asset.match(/(?:issue|_)(\d+)(?:[_./?]|$)/i)?.[1];
-    return issue && covers.some(cover => cover.issue === issue) ? issue : undefined;
+    return issue && covers.some(cover => String(cover.issue) === issue) ? issue : undefined;
 }
 
 function main(): void {
@@ -69,7 +70,7 @@ function main(): void {
         const selectedIssue = issueFromLegacyAsset(normalizeMarvelJpegUrl(label.art.asset), labelCovers);
         const selected = harvested.find(url => {
             const cover = labelCovers.find(entry => entry.cleanImageUrl === url);
-            return cover?.issue === selectedIssue;
+            return String(cover?.issue) === selectedIssue;
         }) ?? harvested[0];
         if (selectedIssue) directOrIssueSelections += 1;
         else fallbackSelections += 1;
