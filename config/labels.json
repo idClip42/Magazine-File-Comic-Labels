@@ -3909,10 +3909,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/648735ebac505/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5768,
+                    "y": 0.7797
                 },
-                "scale": 1
+                "scale": 3.856
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/648735ebac505/clean.jpg",
@@ -3942,10 +3942,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/4/10/6596e0f7d0718/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6175,
+                    "y": 0.3572
                 },
-                "scale": 1
+                "scale": 3.856
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/4/10/6596e0f7d0718/clean.jpg",
@@ -3987,13 +3987,13 @@
         "category": "marvel-specials",
         "logo": "ultimates",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/03/66634dc363119/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/68e6701447dcc/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6395,
+                    "y": 0.6743
                 },
-                "scale": 1
+                "scale": 3.856
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/8/03/66634dc363119/clean.jpg",
@@ -4131,19 +4131,49 @@
         "category": "dc-universe",
         "logo": "teen-titans-go",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg",
+            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/d/dd/Teen_Titans_Go%21_1.jpg/revision/latest?cb=20070207173919",
             "crop": {
                 "focus": {
-                    "x": 0.2611,
-                    "y": 0.5816
+                    "x": 0.2751,
+                    "y": 0.5611
                 },
-                "scale": 2.608,
+                "scale": 2.607,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1.3,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/dd/Teen_Titans_Go%21_1.jpg/revision/latest?cb=20070207173919",
+                "https://static.wikia.nocookie.net/marvel_dc/images/a/ad/Teen_Titans_Go%21_2.jpg/revision/latest?cb=20160331145457",
+                "https://static.wikia.nocookie.net/marvel_dc/images/1/1f/Teen_Titans_Go%21_3.jpg/revision/latest?cb=20070208162344",
+                "https://static.wikia.nocookie.net/marvel_dc/images/0/0e/Teen_Titans_Go%21_4.jpg/revision/latest?cb=20070208162408",
+                "https://static.wikia.nocookie.net/marvel_dc/images/5/5c/Teen_Titans_Go%21_5.jpg/revision/latest?cb=20160607174048",
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/dd/Teen_Titans_Go%21_6.jpg/revision/latest?cb=20160610182634",
+                "https://static.wikia.nocookie.net/marvel_dc/images/2/22/Teen_Titans_Go%21_7.jpg/revision/latest?cb=20070208171956",
+                "https://static.wikia.nocookie.net/marvel_dc/images/2/2e/Teen_Titans_Go%21_8.jpg/revision/latest?cb=20070208172019",
+                "https://static.wikia.nocookie.net/marvel_dc/images/a/a1/Teen_Titans_Go%21_9.jpg/revision/latest?cb=20070208172050",
+                "https://static.wikia.nocookie.net/marvel_dc/images/9/90/Teen_Titans_Go%21_10.jpg/revision/latest?cb=20070208172120",
+                "https://static.wikia.nocookie.net/marvel_dc/images/9/9d/Teen_Titans_Go%21_11.jpg/revision/latest?cb=20070208190420",
+                "https://static.wikia.nocookie.net/marvel_dc/images/2/25/Teen_Titans_Go%21_12.jpg/revision/latest?cb=20070208190440",
+                "https://static.wikia.nocookie.net/marvel_dc/images/7/70/Teen_Titans_Go%21_13.jpg/revision/latest?cb=20070208190507",
+                "https://static.wikia.nocookie.net/marvel_dc/images/e/ee/Teen_Titans_Go%21_14.jpg/revision/latest?cb=20070208190530",
+                "https://static.wikia.nocookie.net/marvel_dc/images/6/62/Teen_Titans_Go%21_15.jpg/revision/latest?cb=20070208190555",
+                "https://static.wikia.nocookie.net/marvel_dc/images/9/90/Teen_Titans_Go%21_16.jpg/revision/latest?cb=20070213155242",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/3f/Teen_Titans_Go%21_17.jpg/revision/latest?cb=20070213155308",
+                "https://static.wikia.nocookie.net/marvel_dc/images/2/2e/Teen_Titans_Go%21_18.jpg/revision/latest?cb=20070213160136",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/3e/Teen_Titans_Go%21_19.jpg/revision/latest?cb=20070213160202",
+                "https://static.wikia.nocookie.net/marvel_dc/images/0/0e/Teen_Titans_Go%21_20.jpg/revision/latest?cb=20070213160222",
+                "https://static.wikia.nocookie.net/marvel_dc/images/4/4d/Teen_Titans_Go%21_Vol_1_21.jpg/revision/latest?cb=20110521213209",
+                "https://static.wikia.nocookie.net/marvel_dc/images/5/59/Teen_Titans_Go%21_Vol_1_22.jpg/revision/latest?cb=20110521213210",
+                "https://static.wikia.nocookie.net/marvel_dc/images/c/c6/Teen_Titans_Go%21_Vol_1_23.jpg/revision/latest?cb=20110521213211",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/34/Teen_Titans_Go%21_Vol_1_24.jpg/revision/latest?cb=20110521213212",
+                "https://static.wikia.nocookie.net/marvel_dc/images/c/c9/Teen_Titans_Go%21_Vol_1_25.jpg/revision/latest?cb=20110521213212",
+                "https://static.wikia.nocookie.net/marvel_dc/images/4/47/Teen_Titans_Go%21_Vol_1_26.jpg/revision/latest?cb=20110521213213",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/37/Teen_Titans_Go%21_Vol_1_27.jpg/revision/latest?cb=20110521213214",
+                "https://static.wikia.nocookie.net/marvel_dc/images/e/e4/Teen_Titans_Go%21_Vol_1_28.jpg/revision/latest?cb=20110521213214"
+            ]
         },
         "contents": [
             {
@@ -4158,19 +4188,48 @@
         "category": "dc-universe",
         "logo": "teen-titans-go",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/teentitans/images/7/7b/GraduationDay.jpg",
+            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/7/73/Teen_Titans_Go%21_Vol_1_49.jpg/revision/latest?cb=20110521214502",
             "crop": {
                 "focus": {
-                    "x": 0.4814,
-                    "y": 0.3264
+                    "x": 0.1218,
+                    "y": 0.5318
                 },
-                "scale": 2.258,
+                "scale": 1.568,
                 "legacy": {
                     "topInches": -1.75,
                     "leftInches": -1.1,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marvel_dc/images/e/e1/Teen_Titans_Go%21_Vol_1_29.jpg/revision/latest?cb=20110521213215",
+                "https://static.wikia.nocookie.net/marvel_dc/images/c/c4/Teen_Titans_Go%21_Vol_1_30.jpg/revision/latest?cb=20110521213216",
+                "https://static.wikia.nocookie.net/marvel_dc/images/1/1c/Teen_Titans_Go%21_Vol_1_31.jpg/revision/latest?cb=20110521213540",
+                "https://static.wikia.nocookie.net/marvel_dc/images/c/ca/Teen_Titans_Go%21_Vol_1_32.jpg/revision/latest?cb=20110521213541",
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/df/Teen_Titans_Go%21_Vol_1_33.jpg/revision/latest?cb=20110521213542",
+                "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Teen_Titans_Go%21_Vol_1_34.jpg/revision/latest?cb=20100920144008",
+                "https://static.wikia.nocookie.net/marvel_dc/images/6/64/Teen_Titans_Go%21_Vol_1_35.jpg/revision/latest?cb=20110521213542",
+                "https://static.wikia.nocookie.net/marvel_dc/images/c/cb/Teen_Titans_Go%21_Vol_1_36.jpg/revision/latest?cb=20110521213543",
+                "https://static.wikia.nocookie.net/marvel_dc/images/2/2f/Teen_Titans_Go%21_Vol_1_37.png/revision/latest?cb=20180726182043",
+                "https://static.wikia.nocookie.net/marvel_dc/images/6/63/Teen_Titans_Go%21_Vol_1_38.jpg/revision/latest?cb=20110521213544",
+                "https://static.wikia.nocookie.net/marvel_dc/images/b/ba/Teen_Titans_Go%21_Vol_1_39.jpg/revision/latest?cb=20110521213544",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/30/Teen_Titans_Go%21_Vol_1_40.jpg/revision/latest?cb=20110521213545",
+                "https://static.wikia.nocookie.net/marvel_dc/images/a/ad/Teen_Titans_Go%21_Vol_1_41.jpg/revision/latest?cb=20110521213546",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/3d/Teen_Titans_Go%21_Vol_1_42.jpg/revision/latest?cb=20110521213546",
+                "https://static.wikia.nocookie.net/marvel_dc/images/7/7c/Teen_Titans_Go%21_Vol_1_43.png/revision/latest?cb=20110522205815",
+                "https://static.wikia.nocookie.net/marvel_dc/images/9/9c/Teen_Titans_Go%21_Vol_1_44.jpg/revision/latest?cb=20110521213851",
+                "https://static.wikia.nocookie.net/marvel_dc/images/6/68/Teen_Titans_Go%21_Vol_1_45.png/revision/latest?cb=20110522213019",
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/d0/Teen_Titans_Go%21_Vol_1_46.jpg/revision/latest?cb=20110521213852",
+                "https://static.wikia.nocookie.net/marvel_dc/images/6/6d/Teen_Titans_Go%21_Vol_1_47.jpg/revision/latest?cb=20110521213853",
+                "https://static.wikia.nocookie.net/marvel_dc/images/4/43/Teen_Titans_Go%21_Vol_1_48.jpg/revision/latest?cb=20110521213854",
+                "https://static.wikia.nocookie.net/marvel_dc/images/7/73/Teen_Titans_Go%21_Vol_1_49.jpg/revision/latest?cb=20110521214502",
+                "https://static.wikia.nocookie.net/marvel_dc/images/e/ec/Teen_Titans_Go%21_Vol_1_50.jpg/revision/latest?cb=20110521213854",
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/d5/Teen_Titans_Go%21_Vol_1_51.jpg/revision/latest?cb=20110521213855",
+                "https://static.wikia.nocookie.net/marvel_dc/images/9/9d/Teen_Titans_Go%21_Vol_1_52.jpg/revision/latest?cb=20110520213058",
+                "https://static.wikia.nocookie.net/marvel_dc/images/3/3b/Teen_Titans_Go%21_Vol_1_53.jpg/revision/latest?cb=20110521214427",
+                "https://static.wikia.nocookie.net/marvel_dc/images/8/8f/Teen_Titans_Go%21_Vol_1_54.jpg/revision/latest?cb=20110521213856",
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/d3/Teen_Titans_Go%21_Vol_1_55.jpg/revision/latest?cb=20110520212023"
+            ]
         },
         "contents": [
             {
@@ -4185,19 +4244,43 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/b/b9/Young_Justice_6.jpg",
+            "asset": "https://www.coverbrowser.com/image/young-justice/6-1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3749,
-                    "y": 0.8042
+                    "x": 0.482,
+                    "y": 0.5921
                 },
-                "scale": 2.858,
+                "scale": 1.568,
                 "legacy": {
                     "topInches": -1.4,
                     "leftInches": -1.1,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://www.coverbrowser.com/image/young-justice/1-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/2-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/3-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/4-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/5-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/6-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/7-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/8-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/9-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/10-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/11-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/12-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/13-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/14-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/15-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/16-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/17-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/18-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/19-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/20-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/21-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/22-1.jpg"
+            ]
         },
         "contents": [
             {
@@ -4212,19 +4295,45 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/6/6f/Young_Justice_Vol_1_54.jpg",
+            "asset": "https://www.coverbrowser.com/image/young-justice/23-1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5586,
-                    "y": 1
+                    "x": 0.5149,
+                    "y": 0
                 },
-                "scale": 1.721,
+                "scale": 1.568,
                 "legacy": {
                     "topInches": -2,
                     "leftInches": -1.1,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://www.coverbrowser.com/image/young-justice/23-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/24-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/25-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/26-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/27-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/28-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/29-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/30-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/31-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/32-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/33-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/34-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/35-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/36-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/37-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/38-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/39-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/40-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/41-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/42-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/43-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/44-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/45-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/46-1.jpg"
+            ]
         },
         "contents": [
             {
@@ -4239,19 +4348,30 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Young+Justice",
+            "asset": "https://www.coverbrowser.com/image/young-justice/54-1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5563,
+                    "y": 0.7489
                 },
-                "scale": 1
-            }
+                "scale": 2.459
+            },
+            "options": [
+                "https://www.coverbrowser.com/image/young-justice/47-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/48-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/49-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/50-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/51-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/52-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/53-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/54-1.jpg",
+                "https://www.coverbrowser.com/image/young-justice/55-1.jpg"
+            ]
         },
         "contents": [
             {
                 "name": "Young Justice",
-                "issues": [23, 55],
+                "issues": [47, 55],
                 "years": [2002, 2003]
             },
             {
@@ -4382,7 +4502,33 @@
                     "leftInches": -1,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://m.media-amazon.com/images/I/911AwZ1zyqL._UF1000,1000_QL80_.jpg",
+                "https://img.hipcomic.com/p/79ff14cf426dc9a564ca3121766fa0e1.jpg",
+                "https://img.hipcomic.com/p/47a7248ec21933d865da5ff6f0dbc5d4.jpg",
+                "https://img.hipcomic.com/p/a30c31532dc7e76e7b2b471873dfb03a.jpg",
+                "https://img.hipcomic.com/p/1ae70651e3c754914cea7ea7409f9a99.jpg",
+                "https://img.hipcomic.com/p/5d5d247fc17e26599819f3709440061c.jpg",
+                "https://img.hipcomic.com/p/5f808ff6e1bd03b3840ec4cf7af6ac25.jpg",
+                "https://img.hipcomic.com/p/499f813a8f93bd3067047ff2d8893ca4.jpg",
+                "https://img.hipcomic.com/p/51540675d415c4fe09a4f1969612290f.jpg",
+                "https://img.hipcomic.com/p/39c915a2b5ec70fa0f4e6b7b1f7de202.jpg",
+                "https://img.hipcomic.com/p/a501a08889e03a133e38f574f94ade03.jpg",
+                "https://img.hipcomic.com/p/8bee210ca2c8c557fc338ff40dce5514.jpg",
+                "https://img.hipcomic.com/p/da5ce5c9d83ce00382288dd93019778c.jpg",
+                "https://img.hipcomic.com/p/030a9b42099cd60b85664641c46de714.jpg",
+                "https://img.hipcomic.com/p/7fff717c0275f3dcaf53e9ee538d521e.jpg",
+                "https://img.hipcomic.com/p/0682ef44e5a7f45b1b8048ff4f90097c.jpg",
+                "https://img.hipcomic.com/p/63c79b4fe585cff6b9769d2ad547e8b8.jpg",
+                "https://img.hipcomic.com/p/564f1012ccd0f7f5ba191850f81fe798.jpg",
+                "https://img.hipcomic.com/p/617e60635175cc29019753399ddae717.jpg",
+                "https://img.hipcomic.com/p/9231ec8d5cae24f621d55ac8d0efd5c5.jpg",
+                "https://img.hipcomic.com/p/412a61d6a5c157301bfd040cf2796e4a.jpg",
+                "https://img.hipcomic.com/p/9b5f00f68e3824e937e4047b2b58050e.jpg",
+                "https://img.hipcomic.com/p/7fe95d63c9637bbb788d40dd2e4a22c4.jpg",
+                "https://img.hipcomic.com/p/ca68ff28b8a9744998e6efaa416478a2.jpg"
+            ]
         },
         "contents": [
             {
@@ -4396,14 +4542,29 @@
         "category": "adventure-pulp",
         "logo": "indiana-jones",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Indy+DH",
+            "asset": "https://img.hipcomic.com/p/95cc11dea850eb13107e5431df3981a7.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5798,
+                    "y": 0.589
                 },
-                "scale": 1
-            }
+                "scale": 1.568
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Indy+DH",
+                "https://img.hipcomic.com/p/f5d84ee0bea3ee28ec0915bb171a99ab.jpg",
+                "https://img.hipcomic.com/p/95cc11dea850eb13107e5431df3981a7.jpg",
+                "https://img.hipcomic.com/p/505abbfbe1900a844d0c7a1758d06707.jpg",
+                "https://img.hipcomic.com/p/bdb411471615bd6f92a92bdda144788e.jpg",
+                "https://img.hipcomic.com/p/e1c3bf4971eb644a59b78343cb240c65.jpg",
+                "https://img.hipcomic.com/p/077c56dcea1c0cb2b3e6d1cc41a8a715.jpg",
+                "https://img.hipcomic.com/p/84a047d0680df5d32583e923500f1186.jpg",
+                "https://img.hipcomic.com/p/70a4d3535dc9a5d8ff0942fc2f370be3.jpg",
+                "https://img.hipcomic.com/p/eb19c822fd89a9ce05181524ffe55bd6.jpg",
+                "https://img.hipcomic.com/p/87cfa85652ba1faaeacd2f52b899ef8a.jpg",
+                "https://img.hipcomic.com/p/531dc7e3d9b5ee49838b6db1a9966c14.jpg",
+                "https://img.hipcomic.com/p/948e4a90a9a6b9f72f205566b5feb83b.jpg"
+            ]
         },
         "contents": [
             {
@@ -4417,19 +4578,30 @@
         "category": "adventure-pulp",
         "logo": "jonny-quest",
         "art": {
-            "asset": "https://storage.googleapis.com/hipcomic/p/b45353ad4a75ca648e5bd859220a47b0-800.jpg",
+            "asset": "https://static.wikia.nocookie.net/jonnyquest/images/1/18/JQ_%28Comico%29_issue_1_cover.jpg/revision/latest?cb=20171107144831",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.0542,
+                    "y": 0.706
                 },
-                "scale": 1,
+                "scale": 1.568,
                 "legacy": {
                     "topInches": -2.25,
                     "leftInches": -0.75,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://storage.googleapis.com/hipcomic/p/b45353ad4a75ca648e5bd859220a47b0-800.jpg",
+                "https://img.hipcomic.com/p/e0401d127db30385e447f01cffd9882e.jpg",
+                "https://img.hipcomic.com/p/b6d1597b29d2b4f5cde31e16bff32637.jpg",
+                "https://img.hipcomic.com/p/e62acbce5746bf5dc8df13db9ed7baa0.jpg",
+                "https://img.hipcomic.com/p/6c2159a5adf3c647e73549fa098ce1f3.jpg",
+                "https://img.hipcomic.com/p/78dd4503c41a63eaca34f0f0c0007b1c.jpg",
+                "https://img.hipcomic.com/p/3aab0617d44d67e53ca028d83dd34768.jpg",
+                "https://img.hipcomic.com/p/20a0edfa884a969561e97f9650108a43.jpg",
+                "https://static.wikia.nocookie.net/jonnyquest/images/1/18/JQ_%28Comico%29_issue_1_cover.jpg/revision/latest?cb=20171107144831"
+            ]
         },
         "contents": [
             {
@@ -4587,19 +4759,28 @@
         "category": "horror-dark-fantasy",
         "logo": "fatale",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fatale",
+            "asset": "https://img.hipcomic.com/p/afb0acd6ad17668e7ad8bf134a3fc556.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6046,
+                    "y": 0.5758
                 },
-                "scale": 1,
+                "scale": 1.568,
                 "legacy": {
                     "topInches": -1.75,
                     "leftInches": -0.75,
                     "zoom": 1
                 }
-            }
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Fatale",
+                "https://img.hipcomic.com/p/74d0aa1983239521458de88acdef7f67.jpg",
+                "https://img.hipcomic.com/p/a1019f91d82789341b53f3aa166cb139.jpg",
+                "https://img.hipcomic.com/p/afb0acd6ad17668e7ad8bf134a3fc556.jpg",
+                "https://img.hipcomic.com/p/a7da441649daf5307f3b8ec090a19797.jpg",
+                "https://img.hipcomic.com/p/94d26299330bff1cc50d4e96019f05ac.jpg",
+                "https://img.hipcomic.com/p/b0f2eb27260985d4a75a56319cb52b7e.jpg"
+            ]
         },
         "contents": [
             {

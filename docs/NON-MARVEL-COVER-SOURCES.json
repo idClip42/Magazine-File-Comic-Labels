@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-07-30",
+  "purpose": "Research inventory for acquiring cover options for prioritized non-Marvel labels. Source pages are catalogued separately from image URLs because several otherwise-complete catalogues block unattended fetching.",
+  "policy": {
+    "preferredImageMinimum": "Aim for at least 800 px tall when a higher-resolution original is available. The 400 x 612 DCU Guide files are acceptable fallbacks, but not print-quality first choices.",
+    "acquisitionOrder": [
+      "Use the listed issue index to establish the exact sequence and select the standard/direct cover where variants exist.",
+      "Use the primary acquisition host manually or with a conservative, resumable fetcher that caches successes.",
+      "Record the final direct image URL and its verified dimensions before adding it to art.options."
+    ],
+    "blockedForAutomation": [
+      {
+        "host": "www.comics.org",
+        "reason": "Cloudflare challenge blocks ordinary scripted requests. GCD remains the best cross-publisher bibliography and cover/variant verifier."
+      },
+      {
+        "host": "comicvine.gamespot.com",
+        "reason": "Cloudflare challenge blocks ordinary scripted requests. Its volume pages remain useful for issue counts and bibliography."
+      },
+      {
+        "host": "static.wikia.nocookie.net",
+        "reason": "Direct requests from this environment returned non-image challenge/error content despite existing catalog URLs. Treat Fandom as a browser/manual source, not an unattended batch source."
+      }
+    ]
+  },
+  "labels": [
+    {
+      "labelId": "teen-titans-go-001",
+      "series": "Teen Titans Go! (DC, 2004 series)",
+      "issues": [1, 28],
+      "primarySource": {
+        "kind": "issue-page gallery",
+        "urlTemplate": "https://dc.fandom.com/wiki/Teen_Titans_Go%21_Vol_1_{issue}",
+        "indexUrl": "https://dc.fandom.com/wiki/Teen_Titans_Go%21_Vol_1",
+        "coverage": "55 numbered issues; individual issue pages identify the standard cover and often a textless counterpart.",
+        "quality": "Original media files should be inspected in-browser before use; do not assume the static CDN URL is fetchable in bulk."
+      },
+      "verificationSource": {
+        "url": "https://www.comics.org/series/12199/covers/",
+        "coverage": "62 catalogued covers for the 55-issue run, including direct/newsstand distinctions."
+      },
+      "recommendedCoverVariant": "Standard/direct-sales cover; omit duplicate newsstand copies."
+    },
+    {
+      "labelId": "teen-titans-go-002",
+      "series": "Teen Titans Go! (DC, 2004 series)",
+      "issues": [29, 55],
+      "primarySource": {
+        "kind": "issue-page gallery",
+        "urlTemplate": "https://dc.fandom.com/wiki/Teen_Titans_Go%21_Vol_1_{issue}",
+        "indexUrl": "https://dc.fandom.com/wiki/Teen_Titans_Go%21_Vol_1",
+        "coverage": "Issues 29 through 55 are all listed on the series page."
+      },
+      "verificationSource": {
+        "url": "https://www.comics.org/series/12199/covers/",
+        "coverage": "Confirms publication/variant data through issue 55."
+      },
+      "recommendedCoverVariant": "Standard/direct-sales cover; omit duplicate newsstand copies."
+    },
+    {
+      "labelId": "young-justice-001",
+      "series": "Young Justice (DC, 1998 series)",
+      "issues": [1, 22],
+      "primarySource": {
+        "kind": "direct-image gallery",
+        "indexUrl": "https://dcuguide.com/w/Category:Images_-_Young_Justice_Covers",
+        "fileUrlPattern": "https://dcuguide.com/images/{hashPath}/Young_Justice_{issue}.png",
+        "coverage": "The gallery includes the regular series through issue 55. The verified issue #1 original is 400 x 612 PNG.",
+        "quality": "Reliable direct files, but marginal for a full-height print label; use as fallback or sourcing aid when no higher-resolution original is available."
+      },
+      "secondarySource": {
+        "kind": "issue-page/gallery",
+        "indexUrl": "https://dc.fandom.com/wiki/Young_Justice_Vol_1",
+        "coverage": "55 numbered issues plus specials; useful for higher-resolution manual originals."
+      },
+      "verificationSource": {
+        "url": "https://www.comics.org/series/10206/covers/",
+        "coverage": "60 covers for 56 issues, allowing the numbered run and variants to be distinguished."
+      },
+      "recommendedCoverVariant": "One standard cover for each numbered issue; do not add specials to this pure-run label."
+    },
+    {
+      "labelId": "young-justice-002",
+      "series": "Young Justice (DC, 1998 series)",
+      "issues": [23, 46],
+      "primarySource": {
+        "kind": "direct-image gallery",
+        "indexUrl": "https://dcuguide.com/w/Category:Images_-_Young_Justice_Covers",
+        "coverage": "Same stable gallery as young-justice-001."
+      },
+      "secondarySource": {
+        "kind": "issue-page/gallery",
+        "indexUrl": "https://dc.fandom.com/wiki/Young_Justice_Vol_1",
+        "coverage": "Use in-browser when a print-larger original is available."
+      },
+      "verificationSource": {
+        "url": "https://www.comics.org/series/10206/covers/",
+        "coverage": "Numbered-run and variant verification."
+      },
+      "recommendedCoverVariant": "One standard cover for each numbered issue; leave young-justice-003 unchanged because it mixes a run with miscellaneous material."
+    },
+    {
+      "labelId": "indiana-jones-003",
+      "series": "Indiana Jones (Dark Horse, 1991-1994 material)",
+      "scope": [
+        "Indiana Jones and the Fate of Atlantis #1-4 (1991)",
+        "The Young Indiana Jones Chronicles #1-12 (1992-1993)",
+        "Indiana Jones: Thunder in the Orient #1-6 (1993-1994)",
+        "Indiana Jones and the Shrine of the Sea Devil (1994 one-shot)",
+        "Indiana Jones and the Golden Fleece #1-2 (1994)",
+        "Indiana Jones and the Arms of Gold #1-4 (1994)"
+      ],
+      "primarySource": {
+        "kind": "bibliography and issue-page hub",
+        "indexUrl": "https://indianajones.fandom.com/wiki/Dark_Horse_Comics",
+        "coverage": "Complete Dark Horse title/issue bibliography, including the 1991-95 original line and 2008 revival."
+      },
+      "secondarySource": {
+        "kind": "series cover galleries",
+        "url": "https://www.comics.org/publisher/512/?page=10&sort=-covers",
+        "coverage": "GCD exposes cover galleries per Dark Horse mini-series and is the best check against missing or duplicate issues."
+      },
+      "recommendedCoverVariant": "One original U.S. cover per issue. For Shrine of the Sea Devil, use the 1994 one-shot rather than the four Dark Horse Comics anthology installments."
+    },
+    {
+      "labelId": "indiana-jones-004",
+      "series": "Indiana Jones (Dark Horse, 1994-2008 material)",
+      "scope": [
+        "Indiana Jones and the Iron Phoenix #1-4 (1994-1995)",
+        "Indiana Jones and the Spear of Destiny #1-4 (1995)",
+        "Indiana Jones and the Sargasso Pirates #1-4 (1995-1996)",
+        "Indiana Jones and the Kingdom of the Crystal Skull #1-2 (2008)",
+        "Indiana Jones Adventures Volume 1 and Volume 2 (2008-2009 digest originals)",
+        "Indiana Jones and the Tomb of the Gods #1-4 (2008-2009)"
+      ],
+      "primarySource": {
+        "kind": "bibliography and issue-page hub",
+        "indexUrl": "https://indianajones.fandom.com/wiki/Dark_Horse_Comics",
+        "coverage": "Confirms that the Dark Horse licence had a 1995-2008 gap and identifies the 2008 revival material."
+      },
+      "secondarySource": {
+        "kind": "series cover galleries",
+        "url": "https://www.comics.org/publisher/512/?page=10&sort=-covers",
+        "coverage": "GCD catalogue pages enumerate the mini-series and their covers."
+      },
+      "recommendedCoverVariant": "One original U.S. cover per issue/digest; omit non-comic cameo material and later collections."
+    },
+    {
+      "labelId": "jonny-quest-001",
+      "series": "Jonny Quest (Comico, 1986 series)",
+      "issues": [1, 31],
+      "primarySource": {
+        "kind": "cover gallery and issue bibliography",
+        "indexUrl": "https://jonnyquest.fandom.com/wiki/Jonny_Quest_(Comico)",
+        "coverage": "Confirms the 31-issue 1986-88 ongoing and identifies several wraparound covers that need a deliberate front-cover crop."
+      },
+      "verificationSource": {
+        "url": "https://www.comics.org/series/3257/covers/",
+        "coverage": "43 catalogue covers for the 31 issues, explicitly separating direct and newsstand editions."
+      },
+      "secondarySource": {
+        "url": "https://comicvine.gamespot.com/jonny-quest/4050-3701/",
+        "coverage": "31-issue volume record; use only as a browser/manual backup because it blocks scripted retrieval."
+      },
+      "recommendedCoverVariant": "Prefer direct-edition front covers. Treat known wraparounds as crop candidates, not automatically as full-spread art."
+    },
+    {
+      "labelId": "fatale-001",
+      "series": "Fatale (Image, 2012 series)",
+      "issues": [1, 24],
+      "primarySource": {
+        "kind": "volume issue list",
+        "url": "https://comicvine.gamespot.com/fatale/4050-44935/",
+        "coverage": "Complete 24-issue run and the five collected-story blocks: #1-5, #6-10, #11-14, #15-19, and #20-24."
+      },
+      "verificationSource": {
+        "url": "https://www.comics.org/issue/904216/",
+        "coverage": "Issue #1 demonstrates that variants and later printings exist; GCD issue navigation covers #1-24."
+      },
+      "recommendedCoverVariant": "Original first-printing Cover A/regular cover only. Do not silently mix in #1 variants, reprints, or the 2024 collection cover."
+    }
+  ]
+}
