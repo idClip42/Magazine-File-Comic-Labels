@@ -1920,13 +1920,13 @@
         "category": "fantastic-four",
         "logo": "thing",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/f0/5c87d939e38e9/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/5c87da1bae84f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5703,
-                    "y": 1
+                    "x": 0.4679,
+                    "y": 0.4707
                 },
-                "scale": 2.283,
+                "scale": 3.856,
                 "legacy": {
                     "topInches": -1.8,
                     "leftInches": -0.75,
