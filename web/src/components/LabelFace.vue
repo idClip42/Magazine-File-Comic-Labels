@@ -96,10 +96,13 @@ const coverSize = computed(() => {
 });
 
 const artStyle = computed(() => ({
+    // Logos belong on the visible file face, not the vinyl that folds around
+    // its edges. Logo percentages are therefore relative to the face width.
+    "--logo-max-width": `${catalog.layout!.face.widthInches
+        * (logo.value.maxWidthPercent ?? 94) / 100}in`,
     "--category-color": category.value.color,
     "--art-position": `${props.label.art.crop.focus.x * 100}% ${props.label.art.crop.focus.y * 100}%`,
     "--art-zoom": String(props.label.art.crop.scale),
-    "--logo-max-width": `${logo.value.maxWidthPercent ?? 94}%`,
     "--art-saturation": String(artTreatment.value.saturation),
     "--art-contrast": String(artTreatment.value.contrast),
     "--art-brightness": String(artTreatment.value.brightness),
