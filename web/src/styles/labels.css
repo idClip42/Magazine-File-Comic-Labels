@@ -225,7 +225,7 @@ body {
 .crop-controls {
   width: var(--total-width);
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto auto;
   align-items: center;
   gap: 0.12in;
   padding: 0.12in;

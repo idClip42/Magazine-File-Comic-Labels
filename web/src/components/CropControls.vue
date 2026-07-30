@@ -18,6 +18,11 @@ const zoom = computed(() => `${Math.round(props.label.art.crop.scale * 100)}%`);
     <output :aria-label="`Zoom ${zoom}`">{{ zoom }}</output>
     <button
       type="button"
+      :disabled="!catalog.isSaveAvailable || catalog.isSaving || catalog.isCropSaved(label.id)"
+      @click="catalog.saveArtwork(label.id)"
+    >Save</button>
+    <button
+      type="button"
       :disabled="catalog.isCropSaved(label.id)"
       @click="catalog.revertCrop(label.id)"
     >Revert</button>

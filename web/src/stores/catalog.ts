@@ -63,6 +63,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     const labels = computed(() => config.value?.labels ?? []);
     const layout = computed(() => config.value?.layout);
     const isSaveAvailable = computed(() => isLiveEditor());
+    const isSaving = computed(() => saveState.value === "saving");
     const pendingChangeCount = computed(() =>
         Object.keys(pendingArts.value).length
         + Object.keys(pendingLayout.value).length,
@@ -218,16 +219,53 @@ export const useCatalogStore = defineStore("catalog", () => {
         }
     }
 
+    async function saveArtwork(id: string): Promise<void> {
+        const art = pendingArts.value[id];
+        if (!art || !isSaveAvailable.value || isSaving.value) return;
+
+        const update: ArtUpdate = {
+            asset: art.asset,
+            crop: copyCrop(art.crop),
+        };
+        saveState.value = "saving";
+        try {
+            const response = await fetch("/api/edits", {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ arts: { [id]: update } } satisfies EditorUpdates),
+            });
+            const result = await response.json() as {
+                error?: string;
+                saved?: { arts: number; layout: number };
+            };
+            if (!response.ok) throw new Error(result.error ?? "Unable to save artwork changes.");
+
+            savedArts.value = { ...savedArts.value, [id]: update };
+            if (artsMatch(artForLabel(labelForId(id)), update)) {
+                const { [id]: _saved, ...remainingArts } = pendingArts.value;
+                pendingArts.value = remainingArts;
+            }
+            saveState.value = "saved";
+            saveMessage.value = `Saved cover and crop for ${id}.`;
+        } catch (error) {
+            saveState.value = "error";
+            const message = error instanceof Error ? error.message : "Unknown error";
+            saveMessage.value = `Save failed: ${message}`;
+        }
+    }
+
     return {
         config,
         labels,
         layout,
         view,
         isSaveAvailable,
+        isSaving,
         pendingChangeCount,
         hasPendingChanges,
         refreshFromServer,
         saveChanges,
+        saveArtwork,
         saveStatus,
         updateCrop,
         selectArtwork,
