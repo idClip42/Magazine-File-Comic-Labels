@@ -102,7 +102,9 @@ body {
     z-index: 4;
     border: 2px dashed rgba(255, 255, 255, 0.94);
     outline: 1px solid rgba(0, 0, 0, 0.72);
-    box-shadow: 0 0 0 999px rgba(0, 0, 0, 0.34);
+    /* Make the wrap material read as recessed/folded at a glance while
+       cropping, rather than competing visually with the finished face. */
+    box-shadow: 0 0 0 999px rgba(0, 0, 0, 0.62);
     opacity: 0;
     pointer-events: none;
     transition: opacity 120ms ease-out;
