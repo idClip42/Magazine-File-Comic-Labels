@@ -1,15 +1,8 @@
 export type Range = [number, number];
 
-export type LegacyCrop = {
-    topInches?: number;
-    leftInches?: number;
-    zoom?: number;
-};
-
 export type ArtCrop = {
     focus: { x: number; y: number };
     scale: number;
-    legacy?: LegacyCrop;
 };
 
 export type LabelContent = {
