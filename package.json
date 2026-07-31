@@ -24,7 +24,7 @@
     "serve": "npm run cache:migrate && node dist/src/editor-server/index.js",
     "start": "npm run build && npm run serve",
     "typecheck": "tsc --noEmit && vue-tsc --noEmit -p tsconfig.app.json",
-    "test": "npm run build:server && node --test dist/src/core/catalog-json.test.js dist/src/core/catalog-validation.test.js dist/src/core/crop.test.js dist/src/tools/research/shared/inventory.test.js",
+    "test": "npm run build:server && node --test dist/src/core/assets.test.js dist/src/core/catalog-json.test.js dist/src/core/catalog-validation.test.js dist/src/core/crop.test.js dist/src/core/layout.test.js dist/src/editor-server/artwork.test.js dist/src/editor-server/manual-artwork-flow.test.js dist/src/tools/research/shared/inventory.test.js",
     "validate:research": "ts-node src/tools/audit/validate-research.ts"
   },
   "devDependencies": {

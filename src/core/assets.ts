@@ -53,3 +53,27 @@ export function normalizeMarvelJpegUrl(value: string): string {
         return value;
     }
 }
+
+/**
+ * Validates a curator-supplied remote artwork URL. Marvel CDN previews are
+ * deliberately stored as their clean JPEG rendition, never as WebP previews.
+ */
+export function normalizeManualArtworkUrl(value: string): string {
+    let url: URL;
+    try {
+        url = new URL(value.trim());
+    } catch {
+        throw new Error("Enter a valid HTTP(S) cover URL.");
+    }
+    if (url.protocol !== "http:" && url.protocol !== "https:") {
+        throw new Error("Cover URLs must use HTTP or HTTPS.");
+    }
+    if (url.hostname === "cdn.marvel.com") {
+        const slash = url.pathname.lastIndexOf("/");
+        if (slash < 0) throw new Error("Enter a valid Marvel cover URL.");
+        url.pathname = `${url.pathname.slice(0, slash + 1)}clean.jpg`;
+        url.search = "";
+        url.hash = "";
+    }
+    return url.toString();
+}

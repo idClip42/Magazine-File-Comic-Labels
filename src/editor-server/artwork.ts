@@ -22,6 +22,11 @@ export const configuredArtworkAssets = new Set(
     labels.flatMap(label => [label.art.asset, ...(label.art.options ?? [])]),
 );
 
+/** Keeps editor additions usable until the next start rebuilds the configured set. */
+export function registerArtworkAssets(assets: Iterable<string>): void {
+    for (const asset of assets) configuredArtworkAssets.add(asset);
+}
+
 function wait(milliseconds: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
@@ -195,9 +200,11 @@ export function serveArtwork(
     if (isRemoteAsset(asset)) {
         const image = imageCache.get(asset);
         if (!image) {
-            sendJson(response, 503, {
-                error: "Artwork was not available when the editor started.",
+            response.writeHead(302, {
+                Location: asset,
+                "Cache-Control": "no-store",
             });
+            response.end();
             return true;
         }
         response.writeHead(200, {

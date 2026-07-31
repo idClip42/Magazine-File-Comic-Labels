@@ -1,4 +1,5 @@
 import { CROP_SCALE_MAX, CROP_SCALE_MIN } from "./crop";
+import { maximumMetadataBandHeight } from "./layout";
 import type { CategoriesConfig, LabelConfig, LayoutConfig } from "./types";
 
 function validRange(value: unknown): value is [number, number] {
@@ -28,6 +29,14 @@ export function validateCatalog(
     }
     if (layout.overwrapInches < 0) {
         errors.push("Layout overwrap cannot be negative.");
+    }
+    if (
+        layout.metadataBand.topInches + layout.metadataBand.heightInches >
+        layout.face.heightInches
+    ) {
+        errors.push(
+            `Metadata band cannot exceed the ${maximumMetadataBandHeight(layout)} inch height available below its top edge.`,
+        );
     }
 
     const ids = new Set<string>();

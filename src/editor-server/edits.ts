@@ -1,6 +1,8 @@
+import { normalizeManualArtworkUrl } from "../core/assets";
 import { writeCatalogJson } from "../core/catalog-json";
 import { configPaths, labels, layout } from "../core/config";
 import { CROP_SCALE_MAX, CROP_SCALE_MIN } from "../core/crop";
+import { maximumMetadataBandHeight } from "../core/layout";
 import type {
     ArtUpdate,
     CropUpdate,
@@ -34,8 +36,36 @@ function isArtUpdate(value: unknown): value is ArtUpdate {
         !!value &&
         typeof value === "object" &&
         typeof (value as ArtUpdate).asset === "string" &&
-        isCropUpdate((value as ArtUpdate).crop)
+        isCropUpdate((value as ArtUpdate).crop) &&
+        ((value as ArtUpdate).options === undefined ||
+            (Array.isArray((value as ArtUpdate).options) &&
+                (value as ArtUpdate).options!.every(
+                    option => typeof option === "string" && option.length > 0,
+                )))
     );
+}
+
+function normalizeArtworkUpdate(
+    art: ArtUpdate,
+    existingOptions: string[],
+    currentAsset: string,
+): ArtUpdate {
+    if (!art.options) return art;
+    const options = art.options.map((option, index) =>
+        index < existingOptions.length
+            || option === currentAsset
+            ? option
+            : normalizeManualArtworkUrl(option),
+    );
+    const selectedIndex = art.options.indexOf(art.asset);
+    return {
+        ...art,
+        asset:
+            selectedIndex >= existingOptions.length
+                ? options[selectedIndex]
+                : art.asset,
+        options,
+    };
 }
 
 function isIdentityBandHeight(value: unknown): value is number {
@@ -52,7 +82,7 @@ function isMetadataBandHeight(value: unknown): value is number {
         typeof value === "number" &&
         Number.isFinite(value) &&
         value >= 0.5 &&
-        value <= 2
+        value <= maximumMetadataBandHeight(layout)
     );
 }
 
@@ -158,7 +188,7 @@ function validateLayoutUpdate(update: LayoutUpdate): void {
         !isMetadataBandHeight(update.metadataBandHeightInches)
     ) {
         throw new Error(
-            "Metadata-band height must be between 0.5 and 2 inches.",
+            `Metadata-band height must be between 0.5 and ${maximumMetadataBandHeight(layout)} inches.`,
         );
     }
     if (update.typography !== undefined && !isTypography(update.typography)) {
@@ -209,7 +239,21 @@ export function saveChanges(updates: EditorUpdates): {
     layout: number;
 } {
     assertEditorUpdates(updates);
-    const arts = updates.arts ?? {};
+    const arts = Object.fromEntries(
+        Object.entries(updates.arts ?? {}).map(([id, art]) => {
+            const label = labelById.get(id);
+            return [
+                id,
+                label
+                    ? normalizeArtworkUpdate(
+                          art,
+                          label.art.options ?? [],
+                          label.art.asset,
+                      )
+                    : art,
+            ];
+        }),
+    );
     const layoutUpdate = updates.layout;
     if (layoutUpdate) validateLayoutUpdate(layoutUpdate);
 
@@ -219,7 +263,25 @@ export function saveChanges(updates: EditorUpdates): {
             throw new Error(`Invalid artwork values for ${id}`);
         const label = labelById.get(id)!;
         const candidates = label.art.options ?? [];
-        if (art.asset !== label.art.asset && !candidates.includes(art.asset)) {
+        const updatedCandidates = art.options ?? candidates;
+        if (
+            art.options !== undefined &&
+            (art.options.length < candidates.length ||
+                candidates.some(
+                    (candidate, index) => art.options![index] !== candidate,
+                ))
+        ) {
+            throw new Error(
+                `Artwork options for ${id} may only be appended in their existing order.`,
+            );
+        }
+        if (new Set(updatedCandidates).size !== updatedCandidates.length) {
+            throw new Error(`Artwork options for ${id} contain duplicates.`);
+        }
+        if (
+            art.asset !== label.art.asset &&
+            !updatedCandidates.includes(art.asset)
+        ) {
             throw new Error(`Artwork is not a configured option for ${id}`);
         }
     }
@@ -232,6 +294,7 @@ export function saveChanges(updates: EditorUpdates): {
             focus: { x: art.crop.focus.x, y: art.crop.focus.y },
             scale: art.crop.scale,
         };
+        if (art.options !== undefined) label.art.options = [...art.options];
     }
     if (Object.keys(arts).length > 0) writeCatalogJson(labelsPath, labels);
 

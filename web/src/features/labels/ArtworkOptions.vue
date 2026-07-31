@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import type { LabelConfig } from "../../../../src/core/types";
 import { useCatalogStore } from "../../stores/catalog";
 
 const props = defineProps<{ label: LabelConfig }>();
 const catalog = useCatalogStore();
+const coverUrl = ref("");
+const coverUrlError = ref("");
 
 const options = computed(() => {
     const configured = props.label.art.options ?? [];
@@ -23,10 +25,24 @@ const optionLabels = computed(() => {
         );
     });
 
-    return issues.length === options.value.length
-        ? issues.map(String)
-        : options.value.map((_, index) => String(index + 1));
+    if (issues.length === 0)
+        return options.value.map((_, index) => String(index + 1));
+    return options.value.map((_, index) =>
+        index < issues.length
+            ? String(issues[index])
+            : `New ${index - issues.length + 1}`,
+    );
 });
+
+function addCoverUrl(): void {
+    const error = catalog.addArtworkUrl(props.label.id, coverUrl.value);
+    if (error) {
+        coverUrlError.value = error;
+        return;
+    }
+    coverUrl.value = "";
+    coverUrlError.value = "";
+}
 </script>
 
 <template>
@@ -53,5 +69,27 @@ const optionLabels = computed(() => {
                 <span>{{ optionLabels[index] }}</span>
             </label>
         </div>
+        <form
+            class="artwork-url-form"
+            @submit.prevent="addCoverUrl"
+        >
+            <label>
+                <span class="visually-hidden">Cover URL</span>
+                <input
+                    v-model="coverUrl"
+                    type="url"
+                    inputmode="url"
+                    placeholder="Cover URL"
+                    aria-label="Cover URL"
+                />
+            </label>
+            <button type="submit">Add &amp; select</button>
+        </form>
+        <p
+            v-if="coverUrlError || catalog.artworkError(label.id)"
+            class="artwork-url-error"
+        >
+            {{ coverUrlError || catalog.artworkError(label.id) }}
+        </p>
     </section>
 </template>

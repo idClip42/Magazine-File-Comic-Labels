@@ -5,6 +5,8 @@ export type CropUpdate = Pick<ArtCrop, "focus" | "scale">;
 export type ArtUpdate = {
     asset: string;
     crop: CropUpdate;
+    /** Present only when the editor has appended artwork candidates. */
+    options?: string[];
 };
 
 /** The deliberately limited shared-layout settings editable from the browser. */

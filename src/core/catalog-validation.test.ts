@@ -15,3 +15,12 @@ test("catalog validation rejects duplicate artwork candidates", () => {
         new RegExp(`${draft[0].id}: artwork options contain duplicates`),
     );
 });
+
+test("catalog validation rejects a metadata band below the physical label", () => {
+    const draft = structuredClone(layout);
+    draft.metadataBand.heightInches = 1.51;
+    assert.match(
+        validateCatalog(draft, categories, labels).join("\n"),
+        /Metadata band cannot exceed the 1\.5 inch height available/,
+    );
+});

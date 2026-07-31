@@ -115,6 +115,11 @@ const years = computed(() => {
     }
     return [...new Set(ranges.map(format))].join(" · ");
 });
+
+function onArtworkLoaded(event: Event): void {
+    onArtworkLoad(event);
+    catalog.clearArtworkError(props.label.id, props.label.art.asset);
+}
 </script>
 
 <template>
@@ -143,7 +148,8 @@ const years = computed(() => {
                 :src="artworkUrl"
                 :style="artImageStyle"
                 draggable="false"
-                @load="onArtworkLoad"
+                @load="onArtworkLoaded"
+                @error="catalog.reportArtworkError(label.id, label.art.asset)"
             />
         </div>
         <div

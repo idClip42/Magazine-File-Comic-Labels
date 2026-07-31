@@ -4,7 +4,11 @@ import { buildEditorConfig } from "../build/editor-config";
 import { prepareLogos } from "../build/logo-prep";
 import { categories, labels, layout } from "../core/config";
 import type { EditorUpdates } from "../core/editor-updates";
-import { preloadRemoteImages, serveArtwork } from "./artwork";
+import {
+    preloadRemoteImages,
+    registerArtworkAssets,
+    serveArtwork,
+} from "./artwork";
 import { migrateLegacyArtworkCache, outputDirectory } from "./artwork-cache";
 import { saveChanges } from "./edits";
 import { sendJson } from "./http";
@@ -53,7 +57,17 @@ const server = http.createServer((request, response) => {
     request.on("end", () => {
         try {
             const updates = JSON.parse(body) as EditorUpdates;
-            sendJson(response, 200, { saved: saveChanges(updates) });
+            const saved = saveChanges(updates);
+            if (updates.arts) {
+                const changedAssets = Object.keys(updates.arts).flatMap(id => {
+                    const label = labels.find(candidate => candidate.id === id);
+                    return label
+                        ? [label.art.asset, ...(label.art.options ?? [])]
+                        : [];
+                });
+                registerArtworkAssets(changedAssets);
+            }
+            sendJson(response, 200, { saved });
         } catch (error) {
             sendJson(response, 400, {
                 error:

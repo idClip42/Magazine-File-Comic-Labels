@@ -1,8 +1,13 @@
 <script setup lang="ts">
+import { computed } from "vue";
+import { maximumMetadataBandHeight } from "../../../../src/core/layout";
 import type { ArtTreatment, LayoutConfig } from "../../../../src/core/types";
 import { useCatalogStore } from "../../stores/catalog";
 
 const catalog = useCatalogStore();
+const metadataBandHeightMaximum = computed(() =>
+    catalog.layout ? maximumMetadataBandHeight(catalog.layout) : 2,
+);
 
 function numberValue(event: Event): number | undefined {
     const value = Number((event.target as HTMLInputElement).value);
@@ -178,7 +183,7 @@ function updateLogoOutline(
                 <input
                     type="range"
                     min="0.5"
-                    max="2"
+                    :max="metadataBandHeightMaximum"
                     step="0.01"
                     :value="catalog.layout?.metadataBand.heightInches"
                     @input="

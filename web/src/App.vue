@@ -39,7 +39,7 @@ void catalog.refreshFromServer();
             aria-label="Comic magazine-file labels"
         >
             <LabelEditor
-                v-for="label in catalog.labels"
+                v-for="label in catalog.filteredLabels"
                 :key="label.id"
                 :label="label"
             />

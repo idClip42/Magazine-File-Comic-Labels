@@ -300,6 +300,38 @@ body {
     row-gap: 6px;
 }
 
+.artwork-url-form {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 6px;
+}
+
+.artwork-url-form input {
+    width: min(300px, calc(var(--total-width) - 1.8in));
+}
+
+.artwork-url-form button {
+    white-space: nowrap;
+}
+
+.artwork-url-error {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #a01818;
+    font-size: 12px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .artwork-option {
     display: flex;
     align-items: center;
@@ -397,6 +429,22 @@ body {
 .view-switcher button[aria-pressed="true"] {
     background: #222;
     color: #fff;
+}
+
+.category-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 4px;
+    padding-left: 8px;
+    border-left: 1px solid #ddd;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.category-filter select {
+    max-width: 145px;
+    font: inherit;
 }
 
 .shelf-view {
