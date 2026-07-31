@@ -18,6 +18,10 @@ export function lineEndingFor(source: string): string {
 export function writeCatalogJson(filePath: string, value: unknown): void {
     const source = fs.readFileSync(filePath, "utf8");
     const temporaryPath = `${filePath}.tmp`;
-    fs.writeFileSync(temporaryPath, formatCatalogJson(value, lineEndingFor(source)), "utf8");
+    fs.writeFileSync(
+        temporaryPath,
+        formatCatalogJson(value, lineEndingFor(source)),
+        "utf8",
+    );
     fs.renameSync(temporaryPath, filePath);
 }

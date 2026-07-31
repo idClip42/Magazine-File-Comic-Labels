@@ -33,7 +33,11 @@ type CropInteractionOptions = {
     updateCrop: (crop: CropUpdate) => void;
 };
 
-function roundedCrop(focusX: number, focusY: number, scale: number): CropUpdate {
+function roundedCrop(
+    focusX: number,
+    focusY: number,
+    scale: number,
+): CropUpdate {
     return {
         focus: {
             x: roundCropValue(clamp(focusX, 0, 1), 4),
@@ -118,7 +122,8 @@ export function useCropInteraction(options: CropInteractionOptions) {
 
     function measureArtwork(image: HTMLImageElement): void {
         if (image.naturalWidth === 0 || image.naturalHeight === 0) return;
-        options.imageAspectRatio.value = image.naturalWidth / image.naturalHeight;
+        options.imageAspectRatio.value =
+            image.naturalWidth / image.naturalHeight;
     }
 
     function onArtworkLoad(event: Event): void {
@@ -126,8 +131,13 @@ export function useCropInteraction(options: CropInteractionOptions) {
     }
 
     function startPan(event: PointerEvent): void {
-        if (!options.isEditor() || (event.button !== 0 && event.button !== 1)
-            || !event.isPrimary || !options.coverSize.value) return;
+        if (
+            !options.isEditor() ||
+            (event.button !== 0 && event.button !== 1) ||
+            !event.isPrimary ||
+            !options.coverSize.value
+        )
+            return;
         const label = event.currentTarget as HTMLElement;
         event.preventDefault();
         showCropGuides();
@@ -171,7 +181,8 @@ export function useCropInteraction(options: CropInteractionOptions) {
     function endPan(event: PointerEvent): void {
         if (panState.value?.pointerId !== event.pointerId) return;
         const label = event.currentTarget as HTMLElement;
-        if (label.hasPointerCapture(event.pointerId)) label.releasePointerCapture(event.pointerId);
+        if (label.hasPointerCapture(event.pointerId))
+            label.releasePointerCapture(event.pointerId);
         panState.value = undefined;
         hideCropGuides();
     }
@@ -185,9 +196,12 @@ export function useCropInteraction(options: CropInteractionOptions) {
         showCropGuides(true);
         const label = event.currentTarget as HTMLElement;
         const bounds = label.getBoundingClientRect();
-        const unit = event.deltaMode === WheelEvent.DOM_DELTA_LINE
-            ? 16
-            : event.deltaMode === WheelEvent.DOM_DELTA_PAGE ? bounds.height : 1;
+        const unit =
+            event.deltaMode === WheelEvent.DOM_DELTA_LINE
+                ? 16
+                : event.deltaMode === WheelEvent.DOM_DELTA_PAGE
+                  ? bounds.height
+                  : 1;
         const previousCrop = options.label().art.crop;
         const scale = clamp(
             previousCrop.scale * Math.exp(-event.deltaY * unit * 0.0015),
@@ -198,11 +212,27 @@ export function useCropInteraction(options: CropInteractionOptions) {
 
         const pointerX = clamp(event.clientX - bounds.left, 0, bounds.width);
         const pointerY = clamp(event.clientY - bounds.top, 0, bounds.height);
-        options.updateCrop(roundedCrop(
-            focusAnchoredAtPointer(previousCrop.focus.x, pointerX, bounds.width, bounds.width * baseSize.width, previousCrop.scale, scale),
-            focusAnchoredAtPointer(previousCrop.focus.y, pointerY, bounds.height, bounds.height * baseSize.height, previousCrop.scale, scale),
-            scale,
-        ));
+        options.updateCrop(
+            roundedCrop(
+                focusAnchoredAtPointer(
+                    previousCrop.focus.x,
+                    pointerX,
+                    bounds.width,
+                    bounds.width * baseSize.width,
+                    previousCrop.scale,
+                    scale,
+                ),
+                focusAnchoredAtPointer(
+                    previousCrop.focus.y,
+                    pointerY,
+                    bounds.height,
+                    bounds.height * baseSize.height,
+                    previousCrop.scale,
+                    scale,
+                ),
+                scale,
+            ),
+        );
     }
 
     onBeforeUnmount(hideCropGuides);

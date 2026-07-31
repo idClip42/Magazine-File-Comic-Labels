@@ -1,3 +1,4 @@
+import { staticAssetUrl } from "../core/assets";
 import {
     CategoriesConfig,
     EditorConfig,
@@ -5,7 +6,6 @@ import {
     LayoutConfig,
 } from "../core/types";
 import { PreparedLogos } from "./logo-prep";
-import { staticAssetUrl } from "../core/assets";
 
 /**
  * Resolves an asset from the generated document back to the project root.
@@ -16,12 +16,17 @@ export function buildEditorConfig(
     categories: CategoriesConfig,
     labels: LabelConfig[],
     preparedLogos: PreparedLogos,
-    artworkUrlForAsset: (asset: string) => string = asset => staticAssetUrl(layout, asset),
+    artworkUrlForAsset: (asset: string) => string = asset =>
+        staticAssetUrl(layout, asset),
 ): EditorConfig {
-    const artworkAssets = [...new Set(labels.flatMap(label => [
-        label.art.asset,
-        ...(label.art.options ?? []),
-    ]))];
+    const artworkAssets = [
+        ...new Set(
+            labels.flatMap(label => [
+                label.art.asset,
+                ...(label.art.options ?? []),
+            ]),
+        ),
+    ];
     return {
         layout,
         categories,

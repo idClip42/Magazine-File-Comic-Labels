@@ -1,6 +1,6 @@
 import path from "node:path";
-import { categories, layout } from "../../core/config";
 import { prepareLogos } from "../../build/logo-prep";
+import { categories, layout } from "../../core/config";
 
 const outputDirectory = path.join(process.cwd(), "dist", "v2");
 const prepared = prepareLogos(layout, categories, outputDirectory);

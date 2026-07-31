@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { categories, labels, layout } from "./config";
 import { validateCatalog } from "./catalog-validation";
+import { categories, labels, layout } from "./config";
 
 test("the checked-in V2 configuration satisfies its cross-file contract", () => {
     assert.deepEqual(validateCatalog(layout, categories, labels), []);

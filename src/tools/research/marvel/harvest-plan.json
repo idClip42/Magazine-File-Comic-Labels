@@ -1,99 +1,334 @@
 {
-  "description": "The single source of truth for Marvel cover research. Queue-backed targets preserve the existing handoff list; explicit runs are added here whenever a new title or bounded range should be harvested.",
-  "queue": {
-    "path": "docs/MARVEL-BROWSER-HARVEST.md",
-    "seriesByLabel": {
-      "fantastic-four-003": 2121,
-      "fantastic-four-004": 2121,
-      "fantastic-four-005": 2121,
-      "fantastic-four-006": 2121,
-      "fantastic-four-007": 2121,
-      "fantastic-four-008": 2121,
-      "fantastic-four-009": 2121,
-      "fantastic-four-010": 2121,
-      "fantastic-four-011": 2121,
-      "fantastic-four-012": 2121,
-      "fantastic-four-013": 2121,
-      "fantastic-four-015": 421,
-      "fantastic-four-016": 421,
-      "fantastic-four-017": 421,
-      "fantastic-four-018": 421,
-      "fantastic-four-035": 2121,
-      "fantastic-four-036": 2121,
-      "fantastic-four-037": 2121,
-      "fantastic-four-038": 2121,
-      "fantastic-four-039": 2121,
-      "fantastic-four-042": 421,
-      "fantastic-four-043": 421,
-      "fantastic-four-046": 24554,
-      "fantastic-four-047": 24554,
-      "fantastic-four-048": 34035,
-      "fantastic-four-049": 34035,
-      "fantastic-four-050": 42598,
-      "new-mutants-001": 2055,
-      "new-mutants-002": 2055,
-      "new-mutants-003": 2055,
-      "new-mutants-004": 2055,
-      "x-men-001": 2258,
-      "x-men-002": 2258,
-      "x-men-003": 2258,
-      "x-men-004": 2258,
-      "x-men-005": 2258,
-      "x-men-006": 2258,
-      "x-men-007": 2258,
-      "excalibur-001": 2011,
-      "excalibur-002": 2011,
-      "excalibur-003": 2011,
-      "earth-x-001": 378,
-      "ultimate-spider-man-001": 466,
-      "ultimates-001": 664
+    "description": "The single source of truth for Marvel cover research. Queue-backed targets preserve the existing handoff list; explicit runs are added here whenever a new title or bounded range should be harvested.",
+    "queue": {
+        "path": "docs/MARVEL-BROWSER-HARVEST.md",
+        "seriesByLabel": {
+            "fantastic-four-003": 2121,
+            "fantastic-four-004": 2121,
+            "fantastic-four-005": 2121,
+            "fantastic-four-006": 2121,
+            "fantastic-four-007": 2121,
+            "fantastic-four-008": 2121,
+            "fantastic-four-009": 2121,
+            "fantastic-four-010": 2121,
+            "fantastic-four-011": 2121,
+            "fantastic-four-012": 2121,
+            "fantastic-four-013": 2121,
+            "fantastic-four-015": 421,
+            "fantastic-four-016": 421,
+            "fantastic-four-017": 421,
+            "fantastic-four-018": 421,
+            "fantastic-four-035": 2121,
+            "fantastic-four-036": 2121,
+            "fantastic-four-037": 2121,
+            "fantastic-four-038": 2121,
+            "fantastic-four-039": 2121,
+            "fantastic-four-042": 421,
+            "fantastic-four-043": 421,
+            "fantastic-four-046": 24554,
+            "fantastic-four-047": 24554,
+            "fantastic-four-048": 34035,
+            "fantastic-four-049": 34035,
+            "fantastic-four-050": 42598,
+            "new-mutants-001": 2055,
+            "new-mutants-002": 2055,
+            "new-mutants-003": 2055,
+            "new-mutants-004": 2055,
+            "x-men-001": 2258,
+            "x-men-002": 2258,
+            "x-men-003": 2258,
+            "x-men-004": 2258,
+            "x-men-005": 2258,
+            "x-men-006": 2258,
+            "x-men-007": 2258,
+            "excalibur-001": 2011,
+            "excalibur-002": 2011,
+            "excalibur-003": 2011,
+            "earth-x-001": 378,
+            "ultimate-spider-man-001": 466,
+            "ultimates-001": 664
+        }
+    },
+    "runs": [
+        {
+            "id": "ff-legacy-401-416",
+            "labelId": "fantastic-four-014",
+            "seriesId": 2121,
+            "issues": [401, 416]
+        },
+        {
+            "id": "ff-1996-1-13",
+            "labelId": "fantastic-four-014",
+            "seriesId": 2123,
+            "issues": [1, 13]
+        },
+        {
+            "id": "ff-legacy-576-588",
+            "labelId": "fantastic-four-040",
+            "seriesId": 421,
+            "issues": [576, 588]
+        },
+        {
+            "id": "ff-2011-1-11",
+            "labelId": "fantastic-four-040",
+            "seriesId": 13440,
+            "issues": [1, 11]
+        },
+        {
+            "id": "ff-legacy-600",
+            "labelId": "fantastic-four-040",
+            "seriesId": 421,
+            "issues": [600, 600]
+        },
+        {
+            "id": "ff-legacy-601-611",
+            "labelId": "fantastic-four-041",
+            "seriesId": 421,
+            "issues": [601, 611]
+        },
+        {
+            "id": "ff-2011-12-23",
+            "labelId": "fantastic-four-041",
+            "seriesId": 13440,
+            "issues": [12, 23]
+        },
+        {
+            "id": "ff-2012-1-16",
+            "labelId": "fantastic-four-044",
+            "seriesId": 16557,
+            "issues": [1, 16]
+        },
+        {
+            "id": "ff-title-2012-1-16",
+            "labelId": "fantastic-four-044",
+            "seriesId": 16561,
+            "issues": [1, 16]
+        },
+        {
+            "id": "ff-2014-1-14",
+            "labelId": "fantastic-four-045",
+            "seriesId": 18700,
+            "issues": [1, 14]
+        },
+        {
+            "id": "ff-2014-642-645",
+            "labelId": "fantastic-four-045",
+            "seriesId": 18700,
+            "issues": [642, 645]
+        },
+        {
+            "id": "ff-2018-1-6",
+            "labelId": "fantastic-four-045",
+            "seriesId": 24554,
+            "issues": [1, 6]
+        },
+        {
+            "id": "marvel-2-in-one-2017-1-12",
+            "labelId": "fantastic-four-023",
+            "seriesId": 23771,
+            "issues": [1, 12]
+        },
+        {
+            "id": "thing-1983-1-36",
+            "labelId": "fantastic-four-024",
+            "seriesId": 3667,
+            "issues": [1, 36]
+        },
+        {
+            "id": "marvel-knights-4-1-30",
+            "labelId": "fantastic-four-022",
+            "seriesId": 725,
+            "issues": [1, 30]
+        },
+        {
+            "id": "ultimate-ff-1-35",
+            "labelId": "fantastic-four-019",
+            "seriesId": 702,
+            "issues": [1, 35]
+        },
+        {
+            "id": "ultimate-ff-36-60",
+            "labelId": "fantastic-four-020",
+            "seriesId": 702,
+            "issues": [36, 60]
+        },
+        {
+            "id": "new-mutants-2019-1-33",
+            "labelId": "new-mutants-006",
+            "seriesId": 27557,
+            "issues": [1, 33]
+        },
+        {
+            "id": "excalibur-1988-76-125",
+            "labelId": "excalibur-004",
+            "seriesId": 2011,
+            "issues": [76, 125]
+        },
+        {
+            "id": "secret-wars-1984-1-12",
+            "labelId": "secret-wars-001",
+            "seriesId": 2063,
+            "issues": [1, 12]
+        },
+        {
+            "id": "secret-wars-2015-1-9",
+            "labelId": "secret-wars-001",
+            "seriesId": 19648,
+            "issues": [1, 9]
+        },
+        {
+            "id": "ff-annual-1963-1-18",
+            "labelId": "fantastic-four-001",
+            "seriesId": 2012,
+            "issues": [1, 18],
+            "officialPageOverrides": {
+                "8": "https://www.marvel.com/comics/issue/8712/fantastic_four_annual_1963_8",
+                "9": "https://www.marvel.com/comics/issue/8713/fantastic_four_annual_1963_9",
+                "10": "https://www.marvel.com/comics/issue/8688/fantastic_four_annual_1963_10"
+            }
+        },
+        {
+            "id": "ff-annual-1963-19-27",
+            "labelId": "fantastic-four-002",
+            "seriesId": 2012,
+            "issues": [19, 27],
+            "officialPageOverrides": {
+                "26": "https://www.marvel.com/comics/issue/8705/fantastic_four_annual_1963_26"
+            }
+        },
+        {
+            "id": "ff-annual-1998",
+            "labelId": "fantastic-four-002",
+            "seriesId": 27301,
+            "issues": [1, 1]
+        },
+        {
+            "id": "ff-annual-1999",
+            "labelId": "fantastic-four-002",
+            "seriesId": 30508,
+            "issues": [1, 1]
+        },
+        {
+            "id": "ff-annual-2000",
+            "labelId": "fantastic-four-002",
+            "seriesId": 30509,
+            "issues": [1, 1]
+        },
+        {
+            "id": "ff-annual-2001",
+            "labelId": "fantastic-four-002",
+            "seriesId": 23002,
+            "issues": [1, 1]
+        },
+        {
+            "id": "ff-annual-2010",
+            "labelId": "fantastic-four-002",
+            "seriesId": 9892,
+            "issues": [32, 32]
+        },
+        {
+            "id": "ff-annual-2012",
+            "labelId": "fantastic-four-002",
+            "seriesId": 13403,
+            "issues": [33, 33]
+        },
+        {
+            "id": "ff-annual-2014",
+            "labelId": "fantastic-four-002",
+            "seriesId": 19078,
+            "issues": [1, 1]
+        },
+        {
+            "id": "ff-annual-2023",
+            "labelId": "fantastic-four-002",
+            "seriesId": 37690,
+            "issues": [1, 1]
+        },
+        {
+            "id": "new-mutants-annual-1-7",
+            "labelId": "new-mutants-005",
+            "seriesId": 2053,
+            "issues": [1, 7]
+        },
+        {
+            "id": "x-men-annual-1-15",
+            "labelId": "x-men-annual",
+            "seriesId": 2100,
+            "issues": [1, 15],
+            "officialPageOverrides": {
+                "1": "https://www.marvel.com/comics/issue/12355/x-men_annual_1970_1",
+                "2": "https://www.marvel.com/comics/issue/12362/x-men_annual_1970_2"
+            }
+        },
+        {
+            "id": "ultimate-ff-annual-1",
+            "labelId": "fantastic-four-019",
+            "seriesId": 1056,
+            "issues": [1, 1]
+        },
+        {
+            "id": "ultimate-ff-annual-2",
+            "labelId": "fantastic-four-020",
+            "seriesId": 1056,
+            "issues": [2, 2]
+        },
+        {
+            "id": "ultimate-spider-man-2024-1-24",
+            "labelId": "ultimate-spider-man-001",
+            "seriesId": 38809,
+            "issues": [1, 24],
+            "officialPageOverrides": {
+                "23": "https://www.marvel.com/comics/issue/113900/ultimate_spider-man_2024_23",
+                "24": "https://www.marvel.com/comics/issue/113901/ultimate_spider-man_2024_24"
+            }
+        },
+        {
+            "id": "ultimates-2024-1-24",
+            "labelId": "ultimates-001",
+            "seriesId": 38865,
+            "issues": [1, 24],
+            "officialPageOverrides": {
+                "18": "https://www.marvel.com/comics/issue/113935/ultimates_2024_18",
+                "19": "https://www.marvel.com/comics/issue/113936/ultimates_2024_19",
+                "20": "https://www.marvel.com/comics/issue/113937/ultimates_2024_20",
+                "21": "https://www.marvel.com/comics/issue/113938/ultimates_2024_21",
+                "22": "https://www.marvel.com/comics/issue/113939/ultimates_2024_22",
+                "23": "https://www.marvel.com/comics/issue/113940/ultimates_2024_23",
+                "24": "https://www.marvel.com/comics/issue/113941/ultimates_2024_24"
+            }
+        },
+        {
+            "id": "ultimate-invasion-2023-1-4",
+            "labelId": "ultimate-001",
+            "seriesId": 33281,
+            "issues": [1, 4]
+        },
+        {
+            "id": "ultimate-universe-2023-1",
+            "labelId": "ultimate-001",
+            "seriesId": 39482,
+            "issues": [1, 1],
+            "officialPageOverrides": {
+                "1": "https://www.marvel.com/comics/issue/112990/ultimate_universe_2023_1"
+            }
+        },
+        {
+            "id": "ultimate-endgame-2025-1-5",
+            "labelId": "ultimate-001",
+            "seriesId": 44292,
+            "issues": [1, 5],
+            "officialPageOverrides": {
+                "1": "https://www.marvel.com/comics/issue/129224/ultimate_endgame_2025_1",
+                "2": "https://www.marvel.com/comics/issue/129225/ultimate_endgame_2025_2",
+                "3": "https://www.marvel.com/comics/issue/129226/ultimate_endgame_2025_3",
+                "4": "https://www.marvel.com/comics/issue/129227/ultimate_endgame_2025_4",
+                "5": "https://www.marvel.com/comics/issue/129228/ultimate_endgame_2025_5"
+            }
+        }
+    ],
+    "coverRequestDelayMs": 500,
+    "outputs": {
+        "pages": "docs/research/marvel/MARVEL-ISSUE-PAGES.json",
+        "covers": "docs/research/marvel/MARVEL-COVER-URLS.json"
     }
-  },
-  "runs": [
-    { "id": "ff-legacy-401-416", "labelId": "fantastic-four-014", "seriesId": 2121, "issues": [401, 416] },
-    { "id": "ff-1996-1-13", "labelId": "fantastic-four-014", "seriesId": 2123, "issues": [1, 13] },
-    { "id": "ff-legacy-576-588", "labelId": "fantastic-four-040", "seriesId": 421, "issues": [576, 588] },
-    { "id": "ff-2011-1-11", "labelId": "fantastic-four-040", "seriesId": 13440, "issues": [1, 11] },
-    { "id": "ff-legacy-600", "labelId": "fantastic-four-040", "seriesId": 421, "issues": [600, 600] },
-    { "id": "ff-legacy-601-611", "labelId": "fantastic-four-041", "seriesId": 421, "issues": [601, 611] },
-    { "id": "ff-2011-12-23", "labelId": "fantastic-four-041", "seriesId": 13440, "issues": [12, 23] },
-    { "id": "ff-2012-1-16", "labelId": "fantastic-four-044", "seriesId": 16557, "issues": [1, 16] },
-    { "id": "ff-title-2012-1-16", "labelId": "fantastic-four-044", "seriesId": 16561, "issues": [1, 16] },
-    { "id": "ff-2014-1-14", "labelId": "fantastic-four-045", "seriesId": 18700, "issues": [1, 14] },
-    { "id": "ff-2014-642-645", "labelId": "fantastic-four-045", "seriesId": 18700, "issues": [642, 645] },
-    { "id": "ff-2018-1-6", "labelId": "fantastic-four-045", "seriesId": 24554, "issues": [1, 6] },
-    { "id": "marvel-2-in-one-2017-1-12", "labelId": "fantastic-four-023", "seriesId": 23771, "issues": [1, 12] },
-    { "id": "thing-1983-1-36", "labelId": "fantastic-four-024", "seriesId": 3667, "issues": [1, 36] },
-    { "id": "marvel-knights-4-1-30", "labelId": "fantastic-four-022", "seriesId": 725, "issues": [1, 30] },
-    { "id": "ultimate-ff-1-35", "labelId": "fantastic-four-019", "seriesId": 702, "issues": [1, 35] },
-    { "id": "ultimate-ff-36-60", "labelId": "fantastic-four-020", "seriesId": 702, "issues": [36, 60] },
-    { "id": "new-mutants-2019-1-33", "labelId": "new-mutants-006", "seriesId": 27557, "issues": [1, 33] },
-    { "id": "excalibur-1988-76-125", "labelId": "excalibur-004", "seriesId": 2011, "issues": [76, 125] },
-    { "id": "secret-wars-1984-1-12", "labelId": "secret-wars-001", "seriesId": 2063, "issues": [1, 12] },
-    { "id": "secret-wars-2015-1-9", "labelId": "secret-wars-001", "seriesId": 19648, "issues": [1, 9] },
-    { "id": "ff-annual-1963-1-18", "labelId": "fantastic-four-001", "seriesId": 2012, "issues": [1, 18], "officialPageOverrides": { "8": "https://www.marvel.com/comics/issue/8712/fantastic_four_annual_1963_8", "9": "https://www.marvel.com/comics/issue/8713/fantastic_four_annual_1963_9", "10": "https://www.marvel.com/comics/issue/8688/fantastic_four_annual_1963_10" } },
-    { "id": "ff-annual-1963-19-27", "labelId": "fantastic-four-002", "seriesId": 2012, "issues": [19, 27], "officialPageOverrides": { "26": "https://www.marvel.com/comics/issue/8705/fantastic_four_annual_1963_26" } },
-    { "id": "ff-annual-1998", "labelId": "fantastic-four-002", "seriesId": 27301, "issues": [1, 1] },
-    { "id": "ff-annual-1999", "labelId": "fantastic-four-002", "seriesId": 30508, "issues": [1, 1] },
-    { "id": "ff-annual-2000", "labelId": "fantastic-four-002", "seriesId": 30509, "issues": [1, 1] },
-    { "id": "ff-annual-2001", "labelId": "fantastic-four-002", "seriesId": 23002, "issues": [1, 1] },
-    { "id": "ff-annual-2010", "labelId": "fantastic-four-002", "seriesId": 9892, "issues": [32, 32] },
-    { "id": "ff-annual-2012", "labelId": "fantastic-four-002", "seriesId": 13403, "issues": [33, 33] },
-    { "id": "ff-annual-2014", "labelId": "fantastic-four-002", "seriesId": 19078, "issues": [1, 1] },
-    { "id": "ff-annual-2023", "labelId": "fantastic-four-002", "seriesId": 37690, "issues": [1, 1] },
-    { "id": "new-mutants-annual-1-7", "labelId": "new-mutants-005", "seriesId": 2053, "issues": [1, 7] },
-    { "id": "x-men-annual-1-15", "labelId": "x-men-annual", "seriesId": 2100, "issues": [1, 15], "officialPageOverrides": { "1": "https://www.marvel.com/comics/issue/12355/x-men_annual_1970_1", "2": "https://www.marvel.com/comics/issue/12362/x-men_annual_1970_2" } },
-    { "id": "ultimate-ff-annual-1", "labelId": "fantastic-four-019", "seriesId": 1056, "issues": [1, 1] },
-    { "id": "ultimate-ff-annual-2", "labelId": "fantastic-four-020", "seriesId": 1056, "issues": [2, 2] },
-    { "id": "ultimate-spider-man-2024-1-24", "labelId": "ultimate-spider-man-001", "seriesId": 38809, "issues": [1, 24], "officialPageOverrides": { "23": "https://www.marvel.com/comics/issue/113900/ultimate_spider-man_2024_23", "24": "https://www.marvel.com/comics/issue/113901/ultimate_spider-man_2024_24" } },
-    { "id": "ultimates-2024-1-24", "labelId": "ultimates-001", "seriesId": 38865, "issues": [1, 24], "officialPageOverrides": { "18": "https://www.marvel.com/comics/issue/113935/ultimates_2024_18", "19": "https://www.marvel.com/comics/issue/113936/ultimates_2024_19", "20": "https://www.marvel.com/comics/issue/113937/ultimates_2024_20", "21": "https://www.marvel.com/comics/issue/113938/ultimates_2024_21", "22": "https://www.marvel.com/comics/issue/113939/ultimates_2024_22", "23": "https://www.marvel.com/comics/issue/113940/ultimates_2024_23", "24": "https://www.marvel.com/comics/issue/113941/ultimates_2024_24" } },
-    { "id": "ultimate-invasion-2023-1-4", "labelId": "ultimate-001", "seriesId": 33281, "issues": [1, 4] },
-    { "id": "ultimate-universe-2023-1", "labelId": "ultimate-001", "seriesId": 39482, "issues": [1, 1], "officialPageOverrides": { "1": "https://www.marvel.com/comics/issue/112990/ultimate_universe_2023_1" } },
-    { "id": "ultimate-endgame-2025-1-5", "labelId": "ultimate-001", "seriesId": 44292, "issues": [1, 5], "officialPageOverrides": { "1": "https://www.marvel.com/comics/issue/129224/ultimate_endgame_2025_1", "2": "https://www.marvel.com/comics/issue/129225/ultimate_endgame_2025_2", "3": "https://www.marvel.com/comics/issue/129226/ultimate_endgame_2025_3", "4": "https://www.marvel.com/comics/issue/129227/ultimate_endgame_2025_4", "5": "https://www.marvel.com/comics/issue/129228/ultimate_endgame_2025_5" } }
-  ],
-  "coverRequestDelayMs": 500,
-  "outputs": {
-    "pages": "docs/research/marvel/MARVEL-ISSUE-PAGES.json",
-    "covers": "docs/research/marvel/MARVEL-COVER-URLS.json"
-  }
 }

@@ -1,5 +1,5 @@
-import { categories, labels, layout } from "../../core/config";
 import { validateCatalog } from "../../core/catalog-validation";
+import { categories, labels, layout } from "../../core/config";
 
 const errors = validateCatalog(layout, categories, labels);
 if (errors.length === 0) {

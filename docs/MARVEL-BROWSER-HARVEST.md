@@ -176,22 +176,22 @@ open long enough to confirm the cover and issue number.
 ### `fantastic-four-004` — Fantastic Four #26-50
 
 - [ ] #26 — [official issue page](https://www.marvel.com/comics/issue/13072/fantastic_four_1961_26)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13072/fantastic_four_1961_26
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13072/fantastic_four_1961_26>
   - Direct cover URL:
   - Notes:
 
 - [ ] #27 — [official issue page](https://www.marvel.com/comics/issue/13083/fantastic_four_1961_27)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13083/fantastic_four_1961_27
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13083/fantastic_four_1961_27>
   - Direct cover URL:
   - Notes:
 
 - [ ] #28 — [official issue page](https://www.marvel.com/comics/issue/13094/fantastic_four_1961_28)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13094/fantastic_four_1961_28
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13094/fantastic_four_1961_28>
   - Direct cover URL:
   - Notes:
 
 - [ ] #29 — [official issue page](https://www.marvel.com/comics/issue/13105/fantastic_four_1961_29)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13105/fantastic_four_1961_29
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13105/fantastic_four_1961_29>
   - Direct cover URL:
   - Notes:
 
@@ -216,1464 +216,1464 @@ open long enough to confirm the cover and issue number.
   - Notes:
 
 - [ ] #34 — [official issue page](https://www.marvel.com/comics/issue/13161/fantastic_four_1961_34)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13161/fantastic_four_1961_34
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13161/fantastic_four_1961_34>
   - Direct cover URL:
   - Notes:
 
 - [ ] #35 — [official issue page](https://www.marvel.com/comics/issue/13172/fantastic_four_1961_35)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13172/fantastic_four_1961_35
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13172/fantastic_four_1961_35>
   - Direct cover URL:
   - Notes:
 
 - [ ] #36 — [official issue page](https://www.marvel.com/comics/issue/13183/fantastic_four_1961_36)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13183/fantastic_four_1961_36
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13183/fantastic_four_1961_36>
   - Direct cover URL:
   - Notes:
 
 - [ ] #37 — [official issue page](https://www.marvel.com/comics/issue/13194/fantastic_four_1961_37)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13194/fantastic_four_1961_37
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13194/fantastic_four_1961_37>
   - Direct cover URL:
   - Notes:
 
 - [ ] #38 — [official issue page](https://www.marvel.com/comics/issue/13205/fantastic_four_1961_38)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13205/fantastic_four_1961_38
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13205/fantastic_four_1961_38>
   - Direct cover URL:
   - Notes:
 
 - [ ] #39 — [official issue page](https://www.marvel.com/comics/issue/13216/fantastic_four_1961_39)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13216/fantastic_four_1961_39
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13216/fantastic_four_1961_39>
   - Direct cover URL:
   - Notes:
 
 - [ ] #40 — [official issue page](https://www.marvel.com/comics/issue/13228/fantastic_four_1961_40)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13228/fantastic_four_1961_40
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13228/fantastic_four_1961_40>
   - Direct cover URL:
   - Notes:
 
 - [ ] #41 — [official issue page](https://www.marvel.com/comics/issue/13239/fantastic_four_1961_41)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13239/fantastic_four_1961_41
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13239/fantastic_four_1961_41>
   - Direct cover URL:
   - Notes:
 
 - [ ] #42 — [official issue page](https://www.marvel.com/comics/issue/13247/fantastic_four_1961_42)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13247/fantastic_four_1961_42
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13247/fantastic_four_1961_42>
   - Direct cover URL:
   - Notes:
 
 - [ ] #43 — [official issue page](https://www.marvel.com/comics/issue/13248/fantastic_four_1961_43)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13248/fantastic_four_1961_43
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13248/fantastic_four_1961_43>
   - Direct cover URL:
   - Notes:
 
 - [ ] #44 — [official issue page](https://www.marvel.com/comics/issue/13249/fantastic_four_1961_44)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13249/fantastic_four_1961_44
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13249/fantastic_four_1961_44>
   - Direct cover URL:
   - Notes:
 
 - [ ] #45 — [official issue page](https://www.marvel.com/comics/issue/13250/fantastic_four_1961_45)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13250/fantastic_four_1961_45
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13250/fantastic_four_1961_45>
   - Direct cover URL:
   - Notes:
 
 - [ ] #46 — [official issue page](https://www.marvel.com/comics/issue/13251/fantastic_four_1961_46)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13251/fantastic_four_1961_46
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13251/fantastic_four_1961_46>
   - Direct cover URL:
   - Notes:
 
 - [ ] #47 — [official issue page](https://www.marvel.com/comics/issue/13252/fantastic_four_1961_47)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13252/fantastic_four_1961_47
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13252/fantastic_four_1961_47>
   - Direct cover URL:
   - Notes:
 
 - [ ] #48 — [official issue page](https://www.marvel.com/comics/issue/13253/fantastic_four_1961_48)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13253/fantastic_four_1961_48
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13253/fantastic_four_1961_48>
   - Direct cover URL:
   - Notes:
 
 - [ ] #49 — [official issue page](https://www.marvel.com/comics/issue/13254/fantastic_four_1961_49)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13254/fantastic_four_1961_49
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13254/fantastic_four_1961_49>
   - Direct cover URL:
   - Notes:
 
 - [ ] #50 — [official issue page](https://www.marvel.com/comics/issue/13256/fantastic_four_1961_50)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13256/fantastic_four_1961_50
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13256/fantastic_four_1961_50>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-005` — Fantastic Four #51-75
 
 - [ ] #51 — [official issue page](https://www.marvel.com/comics/issue/13257/fantastic_four_1961_51)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13257/fantastic_four_1961_51
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13257/fantastic_four_1961_51>
   - Direct cover URL:
   - Notes:
 
 - [ ] #52 — [official issue page](https://www.marvel.com/comics/issue/13258/fantastic_four_1961_52)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13258/fantastic_four_1961_52
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13258/fantastic_four_1961_52>
   - Direct cover URL:
   - Notes:
 
 - [ ] #53 — [official issue page](https://www.marvel.com/comics/issue/13259/fantastic_four_1961_53)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13259/fantastic_four_1961_53
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13259/fantastic_four_1961_53>
   - Direct cover URL:
   - Notes:
 
 - [ ] #54 — [official issue page](https://www.marvel.com/comics/issue/13260/fantastic_four_1961_54)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13260/fantastic_four_1961_54
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13260/fantastic_four_1961_54>
   - Direct cover URL:
   - Notes:
 
 - [ ] #55 — [official issue page](https://www.marvel.com/comics/issue/13261/fantastic_four_1961_55)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13261/fantastic_four_1961_55
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13261/fantastic_four_1961_55>
   - Direct cover URL:
   - Notes:
 
 - [ ] #56 — [official issue page](https://www.marvel.com/comics/issue/13262/fantastic_four_1961_56)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13262/fantastic_four_1961_56
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13262/fantastic_four_1961_56>
   - Direct cover URL:
   - Notes:
 
 - [ ] #57 — [official issue page](https://www.marvel.com/comics/issue/13263/fantastic_four_1961_57)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13263/fantastic_four_1961_57
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13263/fantastic_four_1961_57>
   - Direct cover URL:
   - Notes:
 
 - [ ] #58 — [official issue page](https://www.marvel.com/comics/issue/13264/fantastic_four_1961_58)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13264/fantastic_four_1961_58
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13264/fantastic_four_1961_58>
   - Direct cover URL:
   - Notes:
 
 - [ ] #59 — [official issue page](https://www.marvel.com/comics/issue/13265/fantastic_four_1961_59)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13265/fantastic_four_1961_59
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13265/fantastic_four_1961_59>
   - Direct cover URL:
   - Notes:
 
 - [ ] #60 — [official issue page](https://www.marvel.com/comics/issue/13267/fantastic_four_1961_60)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13267/fantastic_four_1961_60
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13267/fantastic_four_1961_60>
   - Direct cover URL:
   - Notes:
 
 - [ ] #61 — [official issue page](https://www.marvel.com/comics/issue/13268/fantastic_four_1961_61)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13268/fantastic_four_1961_61
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13268/fantastic_four_1961_61>
   - Direct cover URL:
   - Notes:
 
 - [ ] #62 — [official issue page](https://www.marvel.com/comics/issue/13269/fantastic_four_1961_62)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13269/fantastic_four_1961_62
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13269/fantastic_four_1961_62>
   - Direct cover URL:
   - Notes:
 
 - [ ] #63 — [official issue page](https://www.marvel.com/comics/issue/13270/fantastic_four_1961_-_1998_63)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13270/fantastic_four_1961_-_1998_63
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13270/fantastic_four_1961_-_1998_63>
   - Direct cover URL:
   - Notes:
 
 - [ ] #64 — [official issue page](https://www.marvel.com/comics/issue/13271/fantastic_four_1961_64)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13271/fantastic_four_1961_64
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13271/fantastic_four_1961_64>
   - Direct cover URL:
   - Notes:
 
 - [ ] #65 — [official issue page](https://www.marvel.com/comics/issue/13272/fantastic_four_1961_65)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13272/fantastic_four_1961_65
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13272/fantastic_four_1961_65>
   - Direct cover URL:
   - Notes:
 
 - [ ] #66 — [official issue page](https://www.marvel.com/comics/issue/13273/fantastic_four_1961_66)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13273/fantastic_four_1961_66
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13273/fantastic_four_1961_66>
   - Direct cover URL:
   - Notes:
 
 - [ ] #67 — [official issue page](https://www.marvel.com/comics/issue/13274/fantastic_four_1961_67)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13274/fantastic_four_1961_67
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13274/fantastic_four_1961_67>
   - Direct cover URL:
   - Notes:
 
 - [ ] #68 — [official issue page](https://www.marvel.com/comics/issue/13275/slug)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13275/slug
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13275/slug>
   - Direct cover URL:
   - Notes:
 
 - [ ] #69 — [official issue page](https://www.marvel.com/comics/issue/13276/fantastic_four_1961_69)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13276/fantastic_four_1961_69
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13276/fantastic_four_1961_69>
   - Direct cover URL:
   - Notes:
 
 - [ ] #70 — [official issue page](https://www.marvel.com/comics/issue/13278/fantastic_four_1961_70)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13278/fantastic_four_1961_70
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13278/fantastic_four_1961_70>
   - Direct cover URL:
   - Notes:
 
 - [ ] #71 — [official issue page](https://www.marvel.com/comics/issue/13279/fantastic_four_1961_71)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13279/fantastic_four_1961_71
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13279/fantastic_four_1961_71>
   - Direct cover URL:
   - Notes:
 
 - [ ] #72 — [official issue page](https://www.marvel.com/comics/issue/13280/fantastic_four_1961_72)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13280/fantastic_four_1961_72
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13280/fantastic_four_1961_72>
   - Direct cover URL:
   - Notes:
 
 - [ ] #73 — [official issue page](https://www.marvel.com/comics/issue/13281)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13281
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13281>
   - Direct cover URL:
   - Notes:
 
 - [ ] #74 — [official issue page](https://www.marvel.com/comics/issue/13282/fantastic_four_1961_74)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13282/fantastic_four_1961_74
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13282/fantastic_four_1961_74>
   - Direct cover URL:
   - Notes:
 
 - [ ] #75 — [official issue page](https://www.marvel.com/comics/issue/13283/fantastic_four_1961_75)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13283/fantastic_four_1961_75
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13283/fantastic_four_1961_75>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-035` — Fantastic Four #76-100
 
 - [ ] #76 — [official issue page](https://www.marvel.com/comics/issue/13284/fantastic_four_1961_76)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13284/fantastic_four_1961_76
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13284/fantastic_four_1961_76>
   - Direct cover URL:
   - Notes:
 
 - [ ] #77 — [official issue page](https://www.marvel.com/comics/issue/13285/fantastic_four_1961_77)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13285/fantastic_four_1961_77
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13285/fantastic_four_1961_77>
   - Direct cover URL:
   - Notes:
 
 - [ ] #78 — [official issue page](https://www.marvel.com/comics/issue/13286/fantastic_four_1961_78)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13286/fantastic_four_1961_78
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13286/fantastic_four_1961_78>
   - Direct cover URL:
   - Notes:
 
 - [ ] #79 — [official issue page](https://www.marvel.com/comics/issue/13287/fantastic_four_1961_79)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13287/fantastic_four_1961_79
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13287/fantastic_four_1961_79>
   - Direct cover URL:
   - Notes:
 
 - [ ] #80 — [official issue page](https://www.marvel.com/comics/issue/13289/fantastic_four_1961_80)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13289/fantastic_four_1961_80
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13289/fantastic_four_1961_80>
   - Direct cover URL:
   - Notes:
 
 - [ ] #81 — [official issue page](https://www.marvel.com/comics/issue/13290/fantastic_four_1961_81)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13290/fantastic_four_1961_81
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13290/fantastic_four_1961_81>
   - Direct cover URL:
   - Notes:
 
 - [ ] #82 — [official issue page](https://www.marvel.com/comics/issue/13291/fantastic_four_1961_82)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13291/fantastic_four_1961_82
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13291/fantastic_four_1961_82>
   - Direct cover URL:
   - Notes:
 
 - [ ] #83 — [official issue page](https://www.marvel.com/comics/issue/13292/fantastic_four_1961_83)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13292/fantastic_four_1961_83
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13292/fantastic_four_1961_83>
   - Direct cover URL:
   - Notes:
 
 - [ ] #84 — [official issue page](https://www.marvel.com/comics/issue/13293/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13293/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13293/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #85 — [official issue page](https://www.marvel.com/comics/issue/13294/fantastic_four_1961_85)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13294/fantastic_four_1961_85
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13294/fantastic_four_1961_85>
   - Direct cover URL:
   - Notes:
 
 - [ ] #86 — [official issue page](https://www.marvel.com/comics/issue/13295/x)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13295/x
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13295/x>
   - Direct cover URL:
   - Notes:
 
 - [ ] #87 — [official issue page](https://www.marvel.com/comics/issue/13296/fantastic_four_1961_87)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13296/fantastic_four_1961_87
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13296/fantastic_four_1961_87>
   - Direct cover URL:
   - Notes:
 
 - [ ] #88 — [official issue page](https://www.marvel.com/comics/issue/13297/fantastic_four_1961_88)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13297/fantastic_four_1961_88
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13297/fantastic_four_1961_88>
   - Direct cover URL:
   - Notes:
 
 - [ ] #89 — [official issue page](https://www.marvel.com/comics/issue/13298/fantastic_four_1961_89)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13298/fantastic_four_1961_89
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13298/fantastic_four_1961_89>
   - Direct cover URL:
   - Notes:
 
 - [ ] #90 — [official issue page](https://www.marvel.com/comics/issue/13300/fantastic_four_1961_90)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13300/fantastic_four_1961_90
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13300/fantastic_four_1961_90>
   - Direct cover URL:
   - Notes:
 
 - [ ] #91 — [official issue page](https://www.marvel.com/comics/issue/13301/fantastic_four_1961_91)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13301/fantastic_four_1961_91
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13301/fantastic_four_1961_91>
   - Direct cover URL:
   - Notes:
 
 - [ ] #92 — [official issue page](https://www.marvel.com/comics/issue/13302/fantastic_four_1961_92)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13302/fantastic_four_1961_92
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13302/fantastic_four_1961_92>
   - Direct cover URL:
   - Notes:
 
 - [ ] #93 — [official issue page](https://www.marvel.com/comics/issue/13303/fantastic_four_1961_93)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13303/fantastic_four_1961_93
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13303/fantastic_four_1961_93>
   - Direct cover URL:
   - Notes:
 
 - [ ] #94 — [official issue page](https://www.marvel.com/comics/issue/13304/fantastic_four_1961_94)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13304/fantastic_four_1961_94
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13304/fantastic_four_1961_94>
   - Direct cover URL:
   - Notes:
 
 - [ ] #95 — [official issue page](https://www.marvel.com/comics/issue/13305/fantastic_four_1961_95)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13305/fantastic_four_1961_95
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13305/fantastic_four_1961_95>
   - Direct cover URL:
   - Notes:
 
 - [ ] #96 — [official issue page](https://www.marvel.com/comics/issue/13306/fantastic_four_1961_96)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13306/fantastic_four_1961_96
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13306/fantastic_four_1961_96>
   - Direct cover URL:
   - Notes:
 
 - [ ] #97 — [official issue page](https://www.marvel.com/comics/issue/13307/fantastic_four_1961_97)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13307/fantastic_four_1961_97
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13307/fantastic_four_1961_97>
   - Direct cover URL:
   - Notes:
 
 - [ ] #98 — [official issue page](https://www.marvel.com/comics/issue/13308/fantastic_four_1961_98)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13308/fantastic_four_1961_98
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13308/fantastic_four_1961_98>
   - Direct cover URL:
   - Notes:
 
 - [ ] #99 — [official issue page](https://www.marvel.com/comics/issue/13309/fantastic_four_1961_99)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13309/fantastic_four_1961_99
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13309/fantastic_four_1961_99>
   - Direct cover URL:
   - Notes:
 
 - [ ] #100 — [official issue page](https://www.marvel.com/comics/issue/12896/fantastic_four_1961_100)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12896/fantastic_four_1961_100
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12896/fantastic_four_1961_100>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-036` — Fantastic Four #101-125
 
 - [ ] #101 — [official issue page](https://www.marvel.com/comics/issue/12897)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12897
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12897>
   - Direct cover URL:
   - Notes:
 
 - [ ] #102 — [official issue page](https://www.marvel.com/comics/issue/12898/fantastic_four_1961_102)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12898/fantastic_four_1961_102
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12898/fantastic_four_1961_102>
   - Direct cover URL:
   - Notes:
 
 - [ ] #103 — [official issue page](https://www.marvel.com/comics/issue/12899/fantastic_four_1961_103)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12899/fantastic_four_1961_103
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12899/fantastic_four_1961_103>
   - Direct cover URL:
   - Notes:
 
 - [ ] #104 — [official issue page](https://www.marvel.com/comics/issue/12900/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12900/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12900/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #105 — [official issue page](https://www.marvel.com/comics/issue/12901/fantastic_four_1961_105)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12901/fantastic_four_1961_105
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12901/fantastic_four_1961_105>
   - Direct cover URL:
   - Notes:
 
 - [ ] #106 — [official issue page](https://www.marvel.com/comics/issue/12902/fantastic_four_1961_106)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12902/fantastic_four_1961_106
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12902/fantastic_four_1961_106>
   - Direct cover URL:
   - Notes:
 
 - [ ] #107 — [official issue page](https://www.marvel.com/comics/issue/12903/fantastic_four_1961_107)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12903/fantastic_four_1961_107
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12903/fantastic_four_1961_107>
   - Direct cover URL:
   - Notes:
 
 - [ ] #108 — [official issue page](https://www.marvel.com/comics/issue/12904/fantastic_four_1961_108)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12904/fantastic_four_1961_108
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12904/fantastic_four_1961_108>
   - Direct cover URL:
   - Notes:
 
 - [ ] #109 — [official issue page](https://www.marvel.com/comics/issue/12905/fantastic_four_1961_109)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12905/fantastic_four_1961_109
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12905/fantastic_four_1961_109>
   - Direct cover URL:
   - Notes:
 
 - [ ] #110 — [official issue page](https://www.marvel.com/comics/issue/12907/fantastic_four_1961_110)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12907/fantastic_four_1961_110
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12907/fantastic_four_1961_110>
   - Direct cover URL:
   - Notes:
 
 - [ ] #111 — [official issue page](https://www.marvel.com/comics/issue/12908/fantastic_four_1961_111)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12908/fantastic_four_1961_111
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12908/fantastic_four_1961_111>
   - Direct cover URL:
   - Notes:
 
 - [ ] #112 — [official issue page](https://www.marvel.com/comics/issue/12909/fantastic_four_1961_112)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12909/fantastic_four_1961_112
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12909/fantastic_four_1961_112>
   - Direct cover URL:
   - Notes:
 
 - [ ] #113 — [official issue page](https://www.marvel.com/comics/issue/12910/fantastic_four_1961_113)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12910/fantastic_four_1961_113
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12910/fantastic_four_1961_113>
   - Direct cover URL:
   - Notes:
 
 - [ ] #114 — [official issue page](https://www.marvel.com/comics/issue/12911/fantastic_four_1961_114)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12911/fantastic_four_1961_114
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12911/fantastic_four_1961_114>
   - Direct cover URL:
   - Notes:
 
 - [ ] #115 — [official issue page](https://www.marvel.com/comics/issue/12912/fantastic_four_1961_115)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12912/fantastic_four_1961_115
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12912/fantastic_four_1961_115>
   - Direct cover URL:
   - Notes:
 
 - [ ] #116 — [official issue page](https://www.marvel.com/comics/issue/12913/fantastic_four_1961_116)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12913/fantastic_four_1961_116
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12913/fantastic_four_1961_116>
   - Direct cover URL:
   - Notes:
 
 - [ ] #117 — [official issue page](https://www.marvel.com/comics/issue/12914/fantastic_four_1961_117)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12914/fantastic_four_1961_117
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12914/fantastic_four_1961_117>
   - Direct cover URL:
   - Notes:
 
 - [ ] #118 — [official issue page](https://www.marvel.com/comics/issue/12915/fantastic_four_1961_118)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12915/fantastic_four_1961_118
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12915/fantastic_four_1961_118>
   - Direct cover URL:
   - Notes:
 
 - [ ] #119 — [official issue page](https://www.marvel.com/comics/issue/12916/fantastic-four-1961-119)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12916/fantastic-four-1961-119
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12916/fantastic-four-1961-119>
   - Direct cover URL:
   - Notes:
 
 - [ ] #120 — [official issue page](https://www.marvel.com/comics/issue/12918/fantastic_four_1961_120)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12918/fantastic_four_1961_120
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12918/fantastic_four_1961_120>
   - Direct cover URL:
   - Notes:
 
 - [ ] #121 — [official issue page](https://www.marvel.com/comics/issue/12919/fantastic_four_1961_121)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12919/fantastic_four_1961_121
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12919/fantastic_four_1961_121>
   - Direct cover URL:
   - Notes:
 
 - [ ] #122 — [official issue page](https://www.marvel.com/comics/issue/12920/fantastic_four_1961_122)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12920/fantastic_four_1961_122
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12920/fantastic_four_1961_122>
   - Direct cover URL:
   - Notes:
 
 - [ ] #123 — [official issue page](https://www.marvel.com/comics/issue/12921/fantastic_four_1961_123)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12921/fantastic_four_1961_123
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12921/fantastic_four_1961_123>
   - Direct cover URL:
   - Notes:
 
 - [ ] #124 — [official issue page](https://www.marvel.com/comics/issue/12922/fantastic_four_1961_124)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12922/fantastic_four_1961_124
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12922/fantastic_four_1961_124>
   - Direct cover URL:
   - Notes:
 
 - [ ] #125 — [official issue page](https://www.marvel.com/comics/issue/12923/fantastic_four_1961_125)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12923/fantastic_four_1961_125
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12923/fantastic_four_1961_125>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-037` — Fantastic Four #126-150
 
 - [ ] #126 — [official issue page](https://www.marvel.com/comics/issue/12924/fantastic_four_1961_126)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12924/fantastic_four_1961_126
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12924/fantastic_four_1961_126>
   - Direct cover URL:
   - Notes:
 
 - [ ] #127 — [official issue page](https://www.marvel.com/comics/issue/12925/fantastic_four_1961_127)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12925/fantastic_four_1961_127
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12925/fantastic_four_1961_127>
   - Direct cover URL:
   - Notes:
 
 - [ ] #128 — [official issue page](https://www.marvel.com/comics/issue/12926/fantastic_four_1961_128)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12926/fantastic_four_1961_128
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12926/fantastic_four_1961_128>
   - Direct cover URL:
   - Notes:
 
 - [ ] #129 — [official issue page](https://www.marvel.com/comics/issue/12927/fantastic_four_1961_129)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12927/fantastic_four_1961_129
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12927/fantastic_four_1961_129>
   - Direct cover URL:
   - Notes:
 
 - [ ] #130 — [official issue page](https://www.marvel.com/comics/issue/12929/fantastic_four_1961_130)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12929/fantastic_four_1961_130
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12929/fantastic_four_1961_130>
   - Direct cover URL:
   - Notes:
 
 - [ ] #131 — [official issue page](https://www.marvel.com/comics/issue/12930/fantastic_four_1961_131)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12930/fantastic_four_1961_131
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12930/fantastic_four_1961_131>
   - Direct cover URL:
   - Notes:
 
 - [ ] #132 — [official issue page](https://www.marvel.com/comics/issue/12931/fantastic_four_1961_132)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12931/fantastic_four_1961_132
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12931/fantastic_four_1961_132>
   - Direct cover URL:
   - Notes:
 
 - [ ] #133 — [official issue page](https://www.marvel.com/comics/issue/12932/fantastic_four_1961_133)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12932/fantastic_four_1961_133
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12932/fantastic_four_1961_133>
   - Direct cover URL:
   - Notes:
 
 - [ ] #134 — [official issue page](https://www.marvel.com/comics/issue/12933/fantastic_four_1961_134)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12933/fantastic_four_1961_134
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12933/fantastic_four_1961_134>
   - Direct cover URL:
   - Notes:
 
 - [ ] #135 — [official issue page](https://www.marvel.com/comics/issue/12934)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12934
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12934>
   - Direct cover URL:
   - Notes:
 
 - [ ] #136 — [official issue page](https://www.marvel.com/comics/issue/12935/fantastic_four_1961_136)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12935/fantastic_four_1961_136
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12935/fantastic_four_1961_136>
   - Direct cover URL:
   - Notes:
 
 - [ ] #137 — [official issue page](https://www.marvel.com/comics/issue/12936/fantastic_four_1961_137)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12936/fantastic_four_1961_137
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12936/fantastic_four_1961_137>
   - Direct cover URL:
   - Notes:
 
 - [ ] #138 — [official issue page](https://www.marvel.com/comics/issue/12937/fantastic_four_1961_138)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12937/fantastic_four_1961_138
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12937/fantastic_four_1961_138>
   - Direct cover URL:
   - Notes:
 
 - [ ] #139 — [official issue page](https://www.marvel.com/comics/issue/12938/fantastic_four_1961_139)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12938/fantastic_four_1961_139
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12938/fantastic_four_1961_139>
   - Direct cover URL:
   - Notes:
 
 - [ ] #140 — [official issue page](https://www.marvel.com/comics/issue/12940/fantastic_four_1961_140)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12940/fantastic_four_1961_140
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12940/fantastic_four_1961_140>
   - Direct cover URL:
   - Notes:
 
 - [ ] #141 — [official issue page](https://www.marvel.com/comics/issue/12941/fantastic_four_1961_141)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12941/fantastic_four_1961_141
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12941/fantastic_four_1961_141>
   - Direct cover URL:
   - Notes:
 
 - [ ] #142 — [official issue page](https://www.marvel.com/comics/issue/12942/fantastic_four_1961_142)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12942/fantastic_four_1961_142
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12942/fantastic_four_1961_142>
   - Direct cover URL:
   - Notes:
 
 - [ ] #143 — [official issue page](https://www.marvel.com/comics/issue/12943/fantastic_four_1961_143)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12943/fantastic_four_1961_143
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12943/fantastic_four_1961_143>
   - Direct cover URL:
   - Notes:
 
 - [ ] #144 — [official issue page](https://www.marvel.com/comics/issue/12944/fantastic_four_1961_144)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12944/fantastic_four_1961_144
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12944/fantastic_four_1961_144>
   - Direct cover URL:
   - Notes:
 
 - [ ] #145 — [official issue page](https://www.marvel.com/comics/issue/12945/fantastic_four_1961_145)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12945/fantastic_four_1961_145
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12945/fantastic_four_1961_145>
   - Direct cover URL:
   - Notes:
 
 - [ ] #146 — [official issue page](https://www.marvel.com/comics/issue/12946/fantastic_four_1961_146)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12946/fantastic_four_1961_146
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12946/fantastic_four_1961_146>
   - Direct cover URL:
   - Notes:
 
 - [ ] #147 — [official issue page](https://www.marvel.com/comics/issue/12947/fantastic_four_1961_147)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12947/fantastic_four_1961_147
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12947/fantastic_four_1961_147>
   - Direct cover URL:
   - Notes:
 
 - [ ] #148 — [official issue page](https://www.marvel.com/comics/issue/12948/fantastic_four_1961_148)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12948/fantastic_four_1961_148
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12948/fantastic_four_1961_148>
   - Direct cover URL:
   - Notes:
 
 - [ ] #149 — [official issue page](https://www.marvel.com/comics/issue/12949/fantastic_four_1961_149)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12949/fantastic_four_1961_149
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12949/fantastic_four_1961_149>
   - Direct cover URL:
   - Notes:
 
 - [ ] #150 — [official issue page](https://www.marvel.com/comics/issue/12951)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12951
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12951>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-038` — Fantastic Four #151-175
 
 - [ ] #151 — [official issue page](https://www.marvel.com/comics/issue/12952/fantastic_four_1961_151)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12952/fantastic_four_1961_151
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12952/fantastic_four_1961_151>
   - Direct cover URL:
   - Notes:
 
 - [ ] #152 — [official issue page](https://www.marvel.com/comics/issue/12953/fantastic_four_1961_152)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12953/fantastic_four_1961_152
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12953/fantastic_four_1961_152>
   - Direct cover URL:
   - Notes:
 
 - [ ] #153 — [official issue page](https://www.marvel.com/comics/issue/12954/fantastic_four_1961_153)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12954/fantastic_four_1961_153
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12954/fantastic_four_1961_153>
   - Direct cover URL:
   - Notes:
 
 - [ ] #154 — [official issue page](https://www.marvel.com/comics/issue/12955/fantastic_four_1961_154)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12955/fantastic_four_1961_154
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12955/fantastic_four_1961_154>
   - Direct cover URL:
   - Notes:
 
 - [ ] #155 — [official issue page](https://www.marvel.com/comics/issue/12956/fantastic_four_1961_155)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12956/fantastic_four_1961_155
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12956/fantastic_four_1961_155>
   - Direct cover URL:
   - Notes:
 
 - [ ] #156 — [official issue page](https://www.marvel.com/comics/issue/12957/fantastic_four_1961_156)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12957/fantastic_four_1961_156
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12957/fantastic_four_1961_156>
   - Direct cover URL:
   - Notes:
 
 - [ ] #157 — [official issue page](https://www.marvel.com/comics/issue/12958/fantastic_four_1961_-_1998_157)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12958/fantastic_four_1961_-_1998_157
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12958/fantastic_four_1961_-_1998_157>
   - Direct cover URL:
   - Notes:
 
 - [ ] #158 — [official issue page](https://www.marvel.com/comics/issue/12959/fantastic_four_1961_158)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12959/fantastic_four_1961_158
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12959/fantastic_four_1961_158>
   - Direct cover URL:
   - Notes:
 
 - [ ] #159 — [official issue page](https://www.marvel.com/comics/issue/12960/fantastic_four_1961_159)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12960/fantastic_four_1961_159
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12960/fantastic_four_1961_159>
   - Direct cover URL:
   - Notes:
 
 - [ ] #160 — [official issue page](https://www.marvel.com/comics/issue/12962/fantastic_four_1961_160)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12962/fantastic_four_1961_160
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12962/fantastic_four_1961_160>
   - Direct cover URL:
   - Notes:
 
 - [ ] #161 — [official issue page](https://www.marvel.com/comics/issue/12963/fantastic_four_1961_161)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12963/fantastic_four_1961_161
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12963/fantastic_four_1961_161>
   - Direct cover URL:
   - Notes:
 
 - [ ] #162 — [official issue page](https://www.marvel.com/comics/issue/12964/fantastic_four_1961_162)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12964/fantastic_four_1961_162
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12964/fantastic_four_1961_162>
   - Direct cover URL:
   - Notes:
 
 - [ ] #163 — [official issue page](https://www.marvel.com/comics/issue/12965/fantastic_four_1961_163)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12965/fantastic_four_1961_163
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12965/fantastic_four_1961_163>
   - Direct cover URL:
   - Notes:
 
 - [ ] #164 — [official issue page](https://www.marvel.com/comics/issue/12966/fantastic_four_1961_164)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12966/fantastic_four_1961_164
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12966/fantastic_four_1961_164>
   - Direct cover URL:
   - Notes:
 
 - [ ] #165 — [official issue page](https://www.marvel.com/comics/issue/12967/fantastic_four_1961_165)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12967/fantastic_four_1961_165
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12967/fantastic_four_1961_165>
   - Direct cover URL:
   - Notes:
 
 - [ ] #166 — [official issue page](https://www.marvel.com/comics/issue/12968/fantastic_four_1961_166)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12968/fantastic_four_1961_166
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12968/fantastic_four_1961_166>
   - Direct cover URL:
   - Notes:
 
 - [ ] #167 — [official issue page](https://www.marvel.com/comics/issue/12969/fantastic_four_1961_167)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12969/fantastic_four_1961_167
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12969/fantastic_four_1961_167>
   - Direct cover URL:
   - Notes:
 
 - [ ] #168 — [official issue page](https://www.marvel.com/comics/issue/12970/fantastic_four_1961_168)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12970/fantastic_four_1961_168
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12970/fantastic_four_1961_168>
   - Direct cover URL:
   - Notes:
 
 - [ ] #169 — [official issue page](https://www.marvel.com/comics/issue/12971/fantastic_four_1961_169)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12971/fantastic_four_1961_169
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12971/fantastic_four_1961_169>
   - Direct cover URL:
   - Notes:
 
 - [ ] #170 — [official issue page](https://www.marvel.com/comics/issue/12973/fantastic_four_1961_170)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12973/fantastic_four_1961_170
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12973/fantastic_four_1961_170>
   - Direct cover URL:
   - Notes:
 
 - [ ] #171 — [official issue page](https://www.marvel.com/comics/issue/12974/fantastic_four_1961_171)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12974/fantastic_four_1961_171
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12974/fantastic_four_1961_171>
   - Direct cover URL:
   - Notes:
 
 - [ ] #172 — [official issue page](https://www.marvel.com/comics/issue/12975/fantastic_four_1961_172)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12975/fantastic_four_1961_172
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12975/fantastic_four_1961_172>
   - Direct cover URL:
   - Notes:
 
 - [ ] #173 — [official issue page](https://www.marvel.com/comics/issue/12976/fantastic_four_1961_173)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12976/fantastic_four_1961_173
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12976/fantastic_four_1961_173>
   - Direct cover URL:
   - Notes:
 
 - [ ] #174 — [official issue page](https://www.marvel.com/comics/issue/12977/fantastic_four_1961_174)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12977/fantastic_four_1961_174
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12977/fantastic_four_1961_174>
   - Direct cover URL:
   - Notes:
 
 - [ ] #175 — [official issue page](https://www.marvel.com/comics/issue/12978/fantastic_four_1961_175)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12978/fantastic_four_1961_175
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12978/fantastic_four_1961_175>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-039` — Fantastic Four #176-200
 
 - [ ] #176 — [official issue page](https://www.marvel.com/comics/issue/12979/fantastic_four_1961_176)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12979/fantastic_four_1961_176
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12979/fantastic_four_1961_176>
   - Direct cover URL:
   - Notes:
 
 - [ ] #177 — [official issue page](https://www.marvel.com/comics/issue/12980/fantastic_four_1961_177)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12980/fantastic_four_1961_177
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12980/fantastic_four_1961_177>
   - Direct cover URL:
   - Notes:
 
 - [ ] #178 — [official issue page](https://www.marvel.com/comics/issue/12981/fantastic_four_1961_178)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12981/fantastic_four_1961_178
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12981/fantastic_four_1961_178>
   - Direct cover URL:
   - Notes:
 
 - [ ] #179 — [official issue page](https://www.marvel.com/comics/issue/12982/fantastic_four_1961_179)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12982/fantastic_four_1961_179
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12982/fantastic_four_1961_179>
   - Direct cover URL:
   - Notes:
 
 - [ ] #180 — [official issue page](https://www.marvel.com/comics/issue/12984/fantastic_four_1961_180)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12984/fantastic_four_1961_180
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12984/fantastic_four_1961_180>
   - Direct cover URL:
   - Notes:
 
 - [ ] #181 — [official issue page](https://www.marvel.com/comics/issue/12985/fantastic_four_1961_181)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12985/fantastic_four_1961_181
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12985/fantastic_four_1961_181>
   - Direct cover URL:
   - Notes:
 
 - [ ] #182 — [official issue page](https://www.marvel.com/comics/issue/12986/fantastic_four_1961_182)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12986/fantastic_four_1961_182
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12986/fantastic_four_1961_182>
   - Direct cover URL:
   - Notes:
 
 - [ ] #183 — [official issue page](https://www.marvel.com/comics/issue/12987/fantastic_four_1961_183)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12987/fantastic_four_1961_183
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12987/fantastic_four_1961_183>
   - Direct cover URL:
   - Notes:
 
 - [ ] #184 — [official issue page](https://www.marvel.com/comics/issue/12988/fantastic_four_1961_184)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12988/fantastic_four_1961_184
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12988/fantastic_four_1961_184>
   - Direct cover URL:
   - Notes:
 
 - [ ] #185 — [official issue page](https://www.marvel.com/comics/issue/12989/fantastic_four_1961_185)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12989/fantastic_four_1961_185
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12989/fantastic_four_1961_185>
   - Direct cover URL:
   - Notes:
 
 - [ ] #186 — [official issue page](https://www.marvel.com/comics/issue/12990/fantastic_four_1961_186)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12990/fantastic_four_1961_186
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12990/fantastic_four_1961_186>
   - Direct cover URL:
   - Notes:
 
 - [ ] #187 — [official issue page](https://www.marvel.com/comics/issue/12991/fantastic_four_1961_187)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12991/fantastic_four_1961_187
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12991/fantastic_four_1961_187>
   - Direct cover URL:
   - Notes:
 
 - [ ] #188 — [official issue page](https://www.marvel.com/comics/issue/12992/fantastic_four_1961_188)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12992/fantastic_four_1961_188
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12992/fantastic_four_1961_188>
   - Direct cover URL:
   - Notes:
 
 - [ ] #189 — [official issue page](https://www.marvel.com/comics/issue/12993/fantastic_four_1961_189)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12993/fantastic_four_1961_189
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12993/fantastic_four_1961_189>
   - Direct cover URL:
   - Notes:
 
 - [ ] #190 — [official issue page](https://www.marvel.com/comics/issue/12995/fantastic_four_1961_190)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12995/fantastic_four_1961_190
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12995/fantastic_four_1961_190>
   - Direct cover URL:
   - Notes:
 
 - [ ] #191 — [official issue page](https://www.marvel.com/comics/issue/12996/fantastic_four_1961_191)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12996/fantastic_four_1961_191
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12996/fantastic_four_1961_191>
   - Direct cover URL:
   - Notes:
 
 - [ ] #192 — [official issue page](https://www.marvel.com/comics/issue/12997/fantastic_four_1961_192)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12997/fantastic_four_1961_192
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12997/fantastic_four_1961_192>
   - Direct cover URL:
   - Notes:
 
 - [ ] #193 — [official issue page](https://www.marvel.com/comics/issue/12998/fantastic_four_1961_193)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12998/fantastic_four_1961_193
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12998/fantastic_four_1961_193>
   - Direct cover URL:
   - Notes:
 
 - [ ] #194 — [official issue page](https://www.marvel.com/comics/issue/12999/fantastic_four_1961_194)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/12999/fantastic_four_1961_194
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/12999/fantastic_four_1961_194>
   - Direct cover URL:
   - Notes:
 
 - [ ] #195 — [official issue page](https://www.marvel.com/comics/issue/13000/fantastic_four_1961_195)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13000/fantastic_four_1961_195
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13000/fantastic_four_1961_195>
   - Direct cover URL:
   - Notes:
 
 - [ ] #196 — [official issue page](https://www.marvel.com/comics/issue/13001/fantastic_four_1961_196)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13001/fantastic_four_1961_196
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13001/fantastic_four_1961_196>
   - Direct cover URL:
   - Notes:
 
 - [ ] #197 — [official issue page](https://www.marvel.com/comics/issue/13002/fantastic_four_1961_197)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13002/fantastic_four_1961_197
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13002/fantastic_four_1961_197>
   - Direct cover URL:
   - Notes:
 
 - [ ] #198 — [official issue page](https://www.marvel.com/comics/issue/13003/fantastic_four_1961_198)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13003/fantastic_four_1961_198
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13003/fantastic_four_1961_198>
   - Direct cover URL:
   - Notes:
 
 - [ ] #199 — [official issue page](https://www.marvel.com/comics/issue/13004/fantastic_four_1961_199)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13004/fantastic_four_1961_199
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13004/fantastic_four_1961_199>
   - Direct cover URL:
   - Notes:
 
 - [ ] #200 — [official issue page](https://www.marvel.com/comics/issue/13007/fantastic_four_1961_200)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13007/fantastic_four_1961_200
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13007/fantastic_four_1961_200>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-006` — Fantastic Four #201-225
 
 - [ ] #201 — [official issue page](https://www.marvel.com/comics/issue/13008/fantastic_four_1961_201)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13008/fantastic_four_1961_201
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13008/fantastic_four_1961_201>
   - Direct cover URL:
   - Notes:
 
 - [ ] #202 — [official issue page](https://www.marvel.com/comics/issue/13009/fantastic_four_1961_202)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13009/fantastic_four_1961_202
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13009/fantastic_four_1961_202>
   - Direct cover URL:
   - Notes:
 
 - [ ] #203 — [official issue page](https://www.marvel.com/comics/issue/13010/fantastic_four_1961_203)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13010/fantastic_four_1961_203
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13010/fantastic_four_1961_203>
   - Direct cover URL:
   - Notes:
 
 - [ ] #204 — [official issue page](https://www.marvel.com/comics/issue/13011/fantastic_four_1961_204)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13011/fantastic_four_1961_204
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13011/fantastic_four_1961_204>
   - Direct cover URL:
   - Notes:
 
 - [ ] #205 — [official issue page](https://www.marvel.com/comics/issue/13012/fantastic_four_1961_205)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13012/fantastic_four_1961_205
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13012/fantastic_four_1961_205>
   - Direct cover URL:
   - Notes:
 
 - [ ] #206 — [official issue page](https://www.marvel.com/comics/issue/13013/fantastic_four_1961_206)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13013/fantastic_four_1961_206
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13013/fantastic_four_1961_206>
   - Direct cover URL:
   - Notes:
 
 - [ ] #207 — [official issue page](https://www.marvel.com/comics/issue/13014/fantastic_four_1961_207)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13014/fantastic_four_1961_207
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13014/fantastic_four_1961_207>
   - Direct cover URL:
   - Notes:
 
 - [ ] #208 — [official issue page](https://www.marvel.com/comics/issue/13015/fantastic_four_1961_208)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13015/fantastic_four_1961_208
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13015/fantastic_four_1961_208>
   - Direct cover URL:
   - Notes:
 
 - [ ] #209 — [official issue page](https://www.marvel.com/comics/issue/13016/fantastic_four_1961_209)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13016/fantastic_four_1961_209
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13016/fantastic_four_1961_209>
   - Direct cover URL:
   - Notes:
 
 - [ ] #210 — [official issue page](https://www.marvel.com/comics/issue/13018/fantastic_four_1961_210)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13018/fantastic_four_1961_210
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13018/fantastic_four_1961_210>
   - Direct cover URL:
   - Notes:
 
 - [ ] #211 — [official issue page](https://www.marvel.com/comics/issue/13019/fantastic_four_1961_211)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13019/fantastic_four_1961_211
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13019/fantastic_four_1961_211>
   - Direct cover URL:
   - Notes:
 
 - [ ] #212 — [official issue page](https://www.marvel.com/comics/issue/13020/fantastic_four_1961_212)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13020/fantastic_four_1961_212
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13020/fantastic_four_1961_212>
   - Direct cover URL:
   - Notes:
 
 - [ ] #213 — [official issue page](https://www.marvel.com/comics/issue/13021/fantastic_four_1961_213)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13021/fantastic_four_1961_213
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13021/fantastic_four_1961_213>
   - Direct cover URL:
   - Notes:
 
 - [ ] #214 — [official issue page](https://www.marvel.com/comics/issue/13022/fantastic_four_1961_214)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13022/fantastic_four_1961_214
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13022/fantastic_four_1961_214>
   - Direct cover URL:
   - Notes:
 
 - [ ] #215 — [official issue page](https://www.marvel.com/comics/issue/13023/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13023/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13023/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #216 — [official issue page](https://www.marvel.com/comics/issue/13024/fantastic_four_1961_216)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13024/fantastic_four_1961_216
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13024/fantastic_four_1961_216>
   - Direct cover URL:
   - Notes:
 
 - [ ] #217 — [official issue page](https://www.marvel.com/comics/issue/13025/fantastic_four_1961_217)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13025/fantastic_four_1961_217
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13025/fantastic_four_1961_217>
   - Direct cover URL:
   - Notes:
 
 - [ ] #218 — [official issue page](https://www.marvel.com/comics/issue/13026/fantastic_four_1961_218)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13026/fantastic_four_1961_218
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13026/fantastic_four_1961_218>
   - Direct cover URL:
   - Notes:
 
 - [ ] #219 — [official issue page](https://www.marvel.com/comics/issue/13027/fantastic_four_1961_219)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13027/fantastic_four_1961_219
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13027/fantastic_four_1961_219>
   - Direct cover URL:
   - Notes:
 
 - [ ] #220 — [official issue page](https://www.marvel.com/comics/issue/13029/fantastic_four_1961_220)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13029/fantastic_four_1961_220
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13029/fantastic_four_1961_220>
   - Direct cover URL:
   - Notes:
 
 - [ ] #221 — [official issue page](https://www.marvel.com/comics/issue/13030/fantastic_four_1961_221)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13030/fantastic_four_1961_221
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13030/fantastic_four_1961_221>
   - Direct cover URL:
   - Notes:
 
 - [ ] #222 — [official issue page](https://www.marvel.com/comics/issue/13031/fantastic_four_1961_222)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13031/fantastic_four_1961_222
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13031/fantastic_four_1961_222>
   - Direct cover URL:
   - Notes:
 
 - [ ] #223 — [official issue page](https://www.marvel.com/comics/issue/13032/fantastic_four_1961_223)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13032/fantastic_four_1961_223
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13032/fantastic_four_1961_223>
   - Direct cover URL:
   - Notes:
 
 - [ ] #224 — [official issue page](https://www.marvel.com/comics/issue/13033/fantastic_four_1961_224)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13033/fantastic_four_1961_224
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13033/fantastic_four_1961_224>
   - Direct cover URL:
   - Notes:
 
 - [ ] #225 — [official issue page](https://www.marvel.com/comics/issue/13034/fantastic_four_1961_225)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13034/fantastic_four_1961_225
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13034/fantastic_four_1961_225>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-007` — Fantastic Four #226-250
 
 - [ ] #226 — [official issue page](https://www.marvel.com/comics/issue/13035/fantastic_four_1961_226)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13035/fantastic_four_1961_226
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13035/fantastic_four_1961_226>
   - Direct cover URL:
   - Notes:
 
 - [ ] #227 — [official issue page](https://www.marvel.com/comics/issue/13036/fantastic_four_1961_227)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13036/fantastic_four_1961_227
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13036/fantastic_four_1961_227>
   - Direct cover URL:
   - Notes:
 
 - [ ] #228 — [official issue page](https://www.marvel.com/comics/issue/13037/fantastic_four_1961_228)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13037/fantastic_four_1961_228
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13037/fantastic_four_1961_228>
   - Direct cover URL:
   - Notes:
 
 - [ ] #229 — [official issue page](https://www.marvel.com/comics/issue/13038/fantastic_four_1961_229)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13038/fantastic_four_1961_229
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13038/fantastic_four_1961_229>
   - Direct cover URL:
   - Notes:
 
 - [ ] #230 — [official issue page](https://www.marvel.com/comics/issue/13040/fantastic_four_1961_230)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13040/fantastic_four_1961_230
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13040/fantastic_four_1961_230>
   - Direct cover URL:
   - Notes:
 
 - [ ] #231 — [official issue page](https://www.marvel.com/comics/issue/13041/fantastic_four_1961_231)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13041/fantastic_four_1961_231
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13041/fantastic_four_1961_231>
   - Direct cover URL:
   - Notes:
 
 - [ ] #232 — [official issue page](https://www.marvel.com/comics/issue/13042/fantastic_four_1961_232)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13042/fantastic_four_1961_232
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13042/fantastic_four_1961_232>
   - Direct cover URL:
   - Notes:
 
 - [ ] #233 — [official issue page](https://www.marvel.com/comics/issue/13043/fantastic_four_1961_233)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13043/fantastic_four_1961_233
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13043/fantastic_four_1961_233>
   - Direct cover URL:
   - Notes:
 
 - [ ] #234 — [official issue page](https://www.marvel.com/comics/issue/13044/fantastic_four_1961_234)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13044/fantastic_four_1961_234
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13044/fantastic_four_1961_234>
   - Direct cover URL:
   - Notes:
 
 - [ ] #235 — [official issue page](https://www.marvel.com/comics/issue/13045/fantastic-four-1961-235)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13045/fantastic-four-1961-235
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13045/fantastic-four-1961-235>
   - Direct cover URL:
   - Notes:
 
 - [ ] #236 — [official issue page](https://www.marvel.com/comics/issue/13046/fantastic_four_1961_236)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13046/fantastic_four_1961_236
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13046/fantastic_four_1961_236>
   - Direct cover URL:
   - Notes:
 
 - [ ] #237 — [official issue page](https://www.marvel.com/comics/issue/13047/fantastic_four_1961_237)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13047/fantastic_four_1961_237
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13047/fantastic_four_1961_237>
   - Direct cover URL:
   - Notes:
 
 - [ ] #238 — [official issue page](https://www.marvel.com/comics/issue/13048/fantastic_four_1961_238)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13048/fantastic_four_1961_238
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13048/fantastic_four_1961_238>
   - Direct cover URL:
   - Notes:
 
 - [ ] #239 — [official issue page](https://www.marvel.com/comics/issue/13049/fantastic_four_1961_239)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13049/fantastic_four_1961_239
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13049/fantastic_four_1961_239>
   - Direct cover URL:
   - Notes:
 
 - [ ] #240 — [official issue page](https://www.marvel.com/comics/issue/13051/fantastic_four_1961_240)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13051/fantastic_four_1961_240
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13051/fantastic_four_1961_240>
   - Direct cover URL:
   - Notes:
 
 - [ ] #241 — [official issue page](https://www.marvel.com/comics/issue/13052/fantastic_four_1961_241)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13052/fantastic_four_1961_241
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13052/fantastic_four_1961_241>
   - Direct cover URL:
   - Notes:
 
 - [ ] #242 — [official issue page](https://www.marvel.com/comics/issue/13053/fantastic-four-1961-242)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13053/fantastic-four-1961-242
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13053/fantastic-four-1961-242>
   - Direct cover URL:
   - Notes:
 
 - [ ] #243 — [official issue page](https://www.marvel.com/comics/issue/13054/fantastic_four_1961_243)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13054/fantastic_four_1961_243
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13054/fantastic_four_1961_243>
   - Direct cover URL:
   - Notes:
 
 - [ ] #244 — [official issue page](https://www.marvel.com/comics/issue/13055/fantastic_four_1961_244)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13055/fantastic_four_1961_244
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13055/fantastic_four_1961_244>
   - Direct cover URL:
   - Notes:
 
 - [ ] #245 — [official issue page](https://www.marvel.com/comics/issue/13056/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13056/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13056/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #246 — [official issue page](https://www.marvel.com/comics/issue/13057/fantastic_four_1961_246)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13057/fantastic_four_1961_246
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13057/fantastic_four_1961_246>
   - Direct cover URL:
   - Notes:
 
 - [ ] #247 — [official issue page](https://www.marvel.com/comics/issue/13058/fantastic_four_1961_247)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13058/fantastic_four_1961_247
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13058/fantastic_four_1961_247>
   - Direct cover URL:
   - Notes:
 
 - [ ] #248 — [official issue page](https://www.marvel.com/comics/issue/13059/fantastic_four_1961_248)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13059/fantastic_four_1961_248
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13059/fantastic_four_1961_248>
   - Direct cover URL:
   - Notes:
 
 - [ ] #249 — [official issue page](https://www.marvel.com/comics/issue/13060/fantastic_four_1961_249)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13060/fantastic_four_1961_249
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13060/fantastic_four_1961_249>
   - Direct cover URL:
   - Notes:
 
 - [ ] #250 — [official issue page](https://www.marvel.com/comics/issue/13062/fantastic_four_1961_250)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13062/fantastic_four_1961_250
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13062/fantastic_four_1961_250>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-008` — Fantastic Four #251-275
 
 - [ ] #251 — [official issue page](https://www.marvel.com/comics/issue/13063/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13063/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13063/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #252 — [official issue page](https://www.marvel.com/comics/issue/13064/fantastic_four_1961_252)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13064/fantastic_four_1961_252
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13064/fantastic_four_1961_252>
   - Direct cover URL:
   - Notes:
 
 - [ ] #253 — [official issue page](https://www.marvel.com/comics/issue/13065/fantastic_four_1961_253)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13065/fantastic_four_1961_253
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13065/fantastic_four_1961_253>
   - Direct cover URL:
   - Notes:
 
 - [ ] #254 — [official issue page](https://www.marvel.com/comics/issue/13066/fantastic_four_1961_254)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13066/fantastic_four_1961_254
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13066/fantastic_four_1961_254>
   - Direct cover URL:
   - Notes:
 
 - [ ] #255 — [official issue page](https://www.marvel.com/comics/issue/13067/fantastic_four_1961_255)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13067/fantastic_four_1961_255
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13067/fantastic_four_1961_255>
   - Direct cover URL:
   - Notes:
 
 - [ ] #256 — [official issue page](https://www.marvel.com/comics/issue/13068/fantastic_four_1961_256)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13068/fantastic_four_1961_256
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13068/fantastic_four_1961_256>
   - Direct cover URL:
   - Notes:
 
 - [ ] #257 — [official issue page](https://www.marvel.com/comics/issue/13069/fantastic_four_1961_257)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13069/fantastic_four_1961_257
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13069/fantastic_four_1961_257>
   - Direct cover URL:
   - Notes:
 
 - [ ] #258 — [official issue page](https://www.marvel.com/comics/issue/13070/fantastic_four_1961_258)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13070/fantastic_four_1961_258
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13070/fantastic_four_1961_258>
   - Direct cover URL:
   - Notes:
 
 - [ ] #259 — [official issue page](https://www.marvel.com/comics/issue/13071/fantastic_four_1961_259)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13071/fantastic_four_1961_259
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13071/fantastic_four_1961_259>
   - Direct cover URL:
   - Notes:
 
 - [ ] #260 — [official issue page](https://www.marvel.com/comics/issue/13073/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13073/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13073/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #261 — [official issue page](https://www.marvel.com/comics/issue/13074/fantastic_four_1961_261)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13074/fantastic_four_1961_261
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13074/fantastic_four_1961_261>
   - Direct cover URL:
   - Notes:
 
 - [ ] #262 — [official issue page](https://www.marvel.com/comics/issue/13075/fantastic_four_1961_262)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13075/fantastic_four_1961_262
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13075/fantastic_four_1961_262>
   - Direct cover URL:
   - Notes:
 
 - [ ] #263 — [official issue page](https://www.marvel.com/comics/issue/13076/fantastic_four_1961_263)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13076/fantastic_four_1961_263
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13076/fantastic_four_1961_263>
   - Direct cover URL:
   - Notes:
 
 - [ ] #264 — [official issue page](https://www.marvel.com/comics/issue/13077/read)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13077/read
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13077/read>
   - Direct cover URL:
   - Notes:
 
 - [ ] #265 — [official issue page](https://www.marvel.com/comics/issue/13078/fantastic_four_1961_265)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13078/fantastic_four_1961_265
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13078/fantastic_four_1961_265>
   - Direct cover URL:
   - Notes:
 
 - [ ] #266 — [official issue page](https://www.marvel.com/comics/issue/13079/fantastic_four_1961_266)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13079/fantastic_four_1961_266
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13079/fantastic_four_1961_266>
   - Direct cover URL:
   - Notes:
 
 - [ ] #267 — [official issue page](https://www.marvel.com/comics/issue/13080/fantastic_four_1961_267)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13080/fantastic_four_1961_267
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13080/fantastic_four_1961_267>
   - Direct cover URL:
   - Notes:
 
 - [ ] #268 — [official issue page](https://www.marvel.com/comics/issue/13081/fantastic_four_1961_268)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13081/fantastic_four_1961_268
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13081/fantastic_four_1961_268>
   - Direct cover URL:
   - Notes:
 
 - [ ] #269 — [official issue page](https://www.marvel.com/comics/issue/13082/fantastic_four_1961_269)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13082/fantastic_four_1961_269
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13082/fantastic_four_1961_269>
   - Direct cover URL:
   - Notes:
 
 - [ ] #270 — [official issue page](https://www.marvel.com/comics/issue/13084/fantastic_four_1961_270)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13084/fantastic_four_1961_270
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13084/fantastic_four_1961_270>
   - Direct cover URL:
   - Notes:
 
 - [ ] #271 — [official issue page](https://www.marvel.com/comics/issue/13085/fantastic_four_1961_271)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13085/fantastic_four_1961_271
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13085/fantastic_four_1961_271>
   - Direct cover URL:
   - Notes:
 
 - [ ] #272 — [official issue page](https://www.marvel.com/comics/issue/13086/fantastic_four_1961_272)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13086/fantastic_four_1961_272
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13086/fantastic_four_1961_272>
   - Direct cover URL:
   - Notes:
 
 - [ ] #273 — [official issue page](https://www.marvel.com/comics/issue/13087/fantastic_four_1961_273)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13087/fantastic_four_1961_273
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13087/fantastic_four_1961_273>
   - Direct cover URL:
   - Notes:
 
 - [ ] #274 — [official issue page](https://www.marvel.com/comics/issue/13088/fantastic_four_1961_274)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13088/fantastic_four_1961_274
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13088/fantastic_four_1961_274>
   - Direct cover URL:
   - Notes:
 
 - [ ] #275 — [official issue page](https://www.marvel.com/comics/issue/13089/fantastic_four_1961_275)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13089/fantastic_four_1961_275
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13089/fantastic_four_1961_275>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-009` — Fantastic Four #276-300
 
 - [ ] #276 — [official issue page](https://www.marvel.com/comics/issue/13090/fantastic_four_1961_276)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13090/fantastic_four_1961_276
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13090/fantastic_four_1961_276>
   - Direct cover URL:
   - Notes:
 
 - [ ] #277 — [official issue page](https://www.marvel.com/comics/issue/13091/fantastic_four_1961_277)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13091/fantastic_four_1961_277
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13091/fantastic_four_1961_277>
   - Direct cover URL:
   - Notes:
 
 - [ ] #278 — [official issue page](https://www.marvel.com/comics/issue/13092/fantastic_four_1961_278)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13092/fantastic_four_1961_278
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13092/fantastic_four_1961_278>
   - Direct cover URL:
   - Notes:
 
 - [ ] #279 — [official issue page](https://www.marvel.com/comics/issue/13093/fantastic_four_1961_279)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13093/fantastic_four_1961_279
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13093/fantastic_four_1961_279>
   - Direct cover URL:
   - Notes:
 
 - [ ] #280 — [official issue page](https://www.marvel.com/comics/issue/13095/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13095/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13095/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #281 — [official issue page](https://www.marvel.com/comics/issue/13096/fantastic_four_1961_281)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13096/fantastic_four_1961_281
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13096/fantastic_four_1961_281>
   - Direct cover URL:
   - Notes:
 
 - [ ] #282 — [official issue page](https://www.marvel.com/comics/issue/13097/fantastic_four_1961_282)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13097/fantastic_four_1961_282
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13097/fantastic_four_1961_282>
   - Direct cover URL:
   - Notes:
 
 - [ ] #283 — [official issue page](https://www.marvel.com/comics/issue/13098/fantastic_four_1961_283)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13098/fantastic_four_1961_283
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13098/fantastic_four_1961_283>
   - Direct cover URL:
   - Notes:
 
 - [ ] #284 — [official issue page](https://www.marvel.com/comics/issue/13099/fantastic_four_1961_284)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13099/fantastic_four_1961_284
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13099/fantastic_four_1961_284>
   - Direct cover URL:
   - Notes:
 
 - [ ] #285 — [official issue page](https://www.marvel.com/comics/issue/13100/fantastic_four_1961_285)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13100/fantastic_four_1961_285
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13100/fantastic_four_1961_285>
   - Direct cover URL:
   - Notes:
 
 - [ ] #286 — [official issue page](https://www.marvel.com/comics/issue/13101/fantastic_four_1961_286)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13101/fantastic_four_1961_286
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13101/fantastic_four_1961_286>
   - Direct cover URL:
   - Notes:
 
 - [ ] #287 — [official issue page](https://www.marvel.com/comics/issue/13102/fantastic_four_1961_287)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13102/fantastic_four_1961_287
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13102/fantastic_four_1961_287>
   - Direct cover URL:
   - Notes:
 
 - [ ] #288 — [official issue page](https://www.marvel.com/comics/issue/13103/fantastic_four_1961_288)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13103/fantastic_four_1961_288
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13103/fantastic_four_1961_288>
   - Direct cover URL:
   - Notes:
 
 - [ ] #289 — [official issue page](https://www.marvel.com/comics/issue/13104/fantastic_four_1961_289)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13104/fantastic_four_1961_289
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13104/fantastic_four_1961_289>
   - Direct cover URL:
   - Notes:
 
 - [ ] #290 — [official issue page](https://www.marvel.com/comics/issue/13106/fantastic_four_1961_290)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13106/fantastic_four_1961_290
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13106/fantastic_four_1961_290>
   - Direct cover URL:
   - Notes:
 
 - [ ] #291 — [official issue page](https://www.marvel.com/comics/issue/13107/fantastic_four_1961_291)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13107/fantastic_four_1961_291
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13107/fantastic_four_1961_291>
   - Direct cover URL:
   - Notes:
 
 - [ ] #292 — [official issue page](https://www.marvel.com/comics/issue/13108/fantastic_four_1961_292)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13108/fantastic_four_1961_292
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13108/fantastic_four_1961_292>
   - Direct cover URL:
   - Notes:
 
 - [ ] #293 — [official issue page](https://www.marvel.com/comics/issue/13109/fantastic_four_1961_293)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13109/fantastic_four_1961_293
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13109/fantastic_four_1961_293>
   - Direct cover URL:
   - Notes:
 
 - [ ] #294 — [official issue page](https://www.marvel.com/comics/issue/13110/fantastic_four_1961_294)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13110/fantastic_four_1961_294
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13110/fantastic_four_1961_294>
   - Direct cover URL:
   - Notes:
 
 - [ ] #295 — [official issue page](https://www.marvel.com/comics/issue/13111/fantastic_four_1961_295)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13111/fantastic_four_1961_295
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13111/fantastic_four_1961_295>
   - Direct cover URL:
   - Notes:
 
 - [ ] #296 — [official issue page](https://www.marvel.com/comics/issue/13112/fantastic_four_1961_296)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13112/fantastic_four_1961_296
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13112/fantastic_four_1961_296>
   - Direct cover URL:
   - Notes:
 
 - [ ] #297 — [official issue page](https://www.marvel.com/comics/issue/13113/fantastic_four_1961_297)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13113/fantastic_four_1961_297
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13113/fantastic_four_1961_297>
   - Direct cover URL:
   - Notes:
 
 - [ ] #298 — [official issue page](https://www.marvel.com/comics/issue/13114/fantastic_four_1961_298)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13114/fantastic_four_1961_298
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13114/fantastic_four_1961_298>
   - Direct cover URL:
   - Notes:
 
 - [ ] #299 — [official issue page](https://www.marvel.com/comics/issue/13115/fantastic_four_1961_299)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13115/fantastic_four_1961_299
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13115/fantastic_four_1961_299>
   - Direct cover URL:
   - Notes:
 
 - [ ] #300 — [official issue page](https://www.marvel.com/comics/issue/13118/fantastic_four_1961_300)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13118/fantastic_four_1961_300
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13118/fantastic_four_1961_300>
   - Direct cover URL:
   - Notes:
 
 ### `fantastic-four-010` — Fantastic Four #301-325
 
 - [ ] #301 — [official issue page](https://www.marvel.com/comics/issue/13119/fantastic_four_1961_301)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13119/fantastic_four_1961_301
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13119/fantastic_four_1961_301>
   - Direct cover URL:
   - Notes:
 
 - [ ] #302 — [official issue page](https://www.marvel.com/comics/issue/13120/fantastic_four_1961_302)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13120/fantastic_four_1961_302
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13120/fantastic_four_1961_302>
   - Direct cover URL:
   - Notes:
 
 - [ ] #303 — [official issue page](https://www.marvel.com/comics/issue/13121/)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13121/
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13121/>
   - Direct cover URL:
   - Notes:
 
 - [ ] #304 — [official issue page](https://www.marvel.com/comics/issue/13122/fantastic_four_1961_304)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13122/fantastic_four_1961_304
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13122/fantastic_four_1961_304>
   - Direct cover URL:
   - Notes:
 
 - [ ] #305 — [official issue page](https://www.marvel.com/comics/issue/13123/fantastic_four_1961_305)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13123/fantastic_four_1961_305
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13123/fantastic_four_1961_305>
   - Direct cover URL:
   - Notes:
 
 - [ ] #306 — [official issue page](https://www.marvel.com/comics/issue/13124/fantastic_four_1961_306)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13124/fantastic_four_1961_306
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13124/fantastic_four_1961_306>
   - Direct cover URL:
   - Notes:
 
 - [ ] #307 — [official issue page](https://www.marvel.com/comics/issue/13125/fantastic_four_1961_307)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13125/fantastic_four_1961_307
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13125/fantastic_four_1961_307>
   - Direct cover URL:
   - Notes:
 
 - [ ] #308 — [official issue page](https://www.marvel.com/comics/issue/13126/fantastic_four_1961_308)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13126/fantastic_four_1961_308
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13126/fantastic_four_1961_308>
   - Direct cover URL:
   - Notes:
 
 - [ ] #309 — [official issue page](https://www.marvel.com/comics/issue/13127/fantastic_four_1961_309)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13127/fantastic_four_1961_309
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13127/fantastic_four_1961_309>
   - Direct cover URL:
   - Notes:
 
 - [ ] #310 — [official issue page](https://www.marvel.com/comics/issue/13129/fantastic_four_1961_310)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13129/fantastic_four_1961_310
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13129/fantastic_four_1961_310>
   - Direct cover URL:
   - Notes:
 
 - [ ] #311 — [official issue page](https://www.marvel.com/comics/issue/13130/fantastic_four_1961_311)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13130/fantastic_four_1961_311
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13130/fantastic_four_1961_311>
   - Direct cover URL:
   - Notes:
 
 - [ ] #312 — [official issue page](https://www.marvel.com/comics/issue/13131/fantastic_four_1961_312)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13131/fantastic_four_1961_312
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13131/fantastic_four_1961_312>
   - Direct cover URL:
   - Notes:
 
 - [ ] #313 — [official issue page](https://www.marvel.com/comics/issue/13132/fantastic_four_1961_313)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13132/fantastic_four_1961_313
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13132/fantastic_four_1961_313>
   - Direct cover URL:
   - Notes:
 
 - [ ] #314 — [official issue page](https://www.marvel.com/comics/issue/13133/fantastic_four_1961_314)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13133/fantastic_four_1961_314
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13133/fantastic_four_1961_314>
   - Direct cover URL:
   - Notes:
 
 - [ ] #315 — [official issue page](https://www.marvel.com/comics/issue/13134/fantastic_four_1961_315)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13134/fantastic_four_1961_315
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13134/fantastic_four_1961_315>
   - Direct cover URL:
   - Notes:
 
 - [ ] #316 — [official issue page](https://www.marvel.com/comics/issue/13135/fantastic_four_1961_316)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13135/fantastic_four_1961_316
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13135/fantastic_four_1961_316>
   - Direct cover URL:
   - Notes:
 
 - [ ] #317 — [official issue page](https://www.marvel.com/comics/issue/13136/fantastic_four_1961_317)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13136/fantastic_four_1961_317
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13136/fantastic_four_1961_317>
   - Direct cover URL:
   - Notes:
 
 - [ ] #318 — [official issue page](https://www.marvel.com/comics/issue/13137/fantastic_four_1961_318)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13137/fantastic_four_1961_318
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13137/fantastic_four_1961_318>
   - Direct cover URL:
   - Notes:
 
 - [ ] #319 — [official issue page](https://www.marvel.com/comics/issue/13138)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13138
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13138>
   - Direct cover URL:
   - Notes:
 
 - [ ] #320 — [official issue page](https://www.marvel.com/comics/issue/13140/fantastic_four_1961_320)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13140/fantastic_four_1961_320
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13140/fantastic_four_1961_320>
   - Direct cover URL:
   - Notes:
 
 - [ ] #321 — [official issue page](https://www.marvel.com/comics/issue/13141/fantastic_four_1961_321)
-  - Official Marvel page URL: https://www.marvel.com/comics/issue/13141/fantastic_four_1961_321
+  - Official Marvel page URL: <https://www.marvel.com/comics/issue/13141/fantastic_four_1961_321>
   - Direct cover URL:
   - Notes:
 

@@ -20,7 +20,9 @@ const serializedConfig = JSON.stringify(config)
 const configPlaceholder = "window.__COMIC_LABELS_CONFIG__ = undefined;";
 const builtDocument = fs.readFileSync(outputPath, "utf8");
 if (!builtDocument.includes(configPlaceholder)) {
-    throw new Error("Vue configuration placeholder was not found in the Vite build.");
+    throw new Error(
+        "Vue configuration placeholder was not found in the Vite build.",
+    );
 }
 fs.writeFileSync(
     outputPath,

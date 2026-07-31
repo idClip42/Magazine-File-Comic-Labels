@@ -10,9 +10,25 @@ function formatRange(range: [number, number], prefix = ""): string {
 </script>
 
 <template>
-  <div v-for="(content, index) in label.contents" :key="index" class="content-row">
-    <span v-if="content.name" class="content-name">{{ content.name }}</span>
-    <span v-if="content.volume" class="content-volume">Vol. {{ content.volume }}</span>
-    <span v-if="content.issues" class="content-issues">{{ formatRange(content.issues, '#') }}</span>
-  </div>
+    <div
+        v-for="(content, index) in label.contents"
+        :key="index"
+        class="content-row"
+    >
+        <span
+            v-if="content.name"
+            class="content-name"
+            >{{ content.name }}</span
+        >
+        <span
+            v-if="content.volume"
+            class="content-volume"
+            >Vol. {{ content.volume }}</span
+        >
+        <span
+            v-if="content.issues"
+            class="content-issues"
+            >{{ formatRange(content.issues, "#") }}</span
+        >
+    </div>
 </template>

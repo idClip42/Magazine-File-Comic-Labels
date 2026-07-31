@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import { CategoriesConfig, LabelConfig, LayoutConfig } from "./types";
 import { isRemoteAsset } from "./assets";
+import { CategoriesConfig, LabelConfig, LayoutConfig } from "./types";
 
 export function auditAssets(
     layout: LayoutConfig,

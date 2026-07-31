@@ -18,19 +18,31 @@ const category = computed(() => {
 
 const logo = computed(() => {
     const value = category.value.logos[props.label.logo];
-    if (!value) throw new Error(`Unknown logo: ${props.label.category}/${props.label.logo}`);
+    if (!value)
+        throw new Error(
+            `Unknown logo: ${props.label.category}/${props.label.logo}`,
+        );
     return value;
 });
 
-const preparedLogo = computed(() =>
-    catalog.config?.preparedLogos[`${props.label.category}/${props.label.logo}`],
+const preparedLogo = computed(
+    () =>
+        catalog.config?.preparedLogos[
+            `${props.label.category}/${props.label.logo}`
+        ],
 );
-const artTreatment = computed(() => ({ ...catalog.layout!.artTreatment, ...category.value.artTreatment }));
+const artTreatment = computed(() => ({
+    ...catalog.layout!.artTreatment,
+    ...category.value.artTreatment,
+}));
 const artworkUrl = computed(() => catalog.artworkUrl(props.label.art.asset));
 
 const frameAspectRatio = computed(() => {
     const layout = catalog.layout!;
-    return (layout.face.widthInches + layout.overwrapInches * 2) / layout.face.heightInches;
+    return (
+        (layout.face.widthInches + layout.overwrapInches * 2) /
+        layout.face.heightInches
+    );
 });
 
 const imageAspectRatio = ref<number>();
@@ -69,7 +81,7 @@ onMounted(() => {
 });
 
 const artStyle = computed(() => ({
-    "--logo-max-width": `${catalog.layout!.face.widthInches * (logo.value.maxWidthPercent ?? 94) / 100}in`,
+    "--logo-max-width": `${(catalog.layout!.face.widthInches * (logo.value.maxWidthPercent ?? 94)) / 100}in`,
     "--category-color": category.value.color,
     "--art-position": `${props.label.art.crop.focus.x * 100}% ${props.label.art.crop.focus.y * 100}%`,
     "--art-zoom": String(props.label.art.crop.scale),
@@ -87,14 +99,17 @@ const logoStyle = computed(() => ({
         catalog.layout!.logoPalette.mutedSaturationMultiplier,
     ),
 }));
-const rasterLogoUrl = computed(() => staticAssetUrl(catalog.layout!, logo.value.asset));
+const rasterLogoUrl = computed(() =>
+    staticAssetUrl(catalog.layout!, logo.value.asset),
+);
 
 const years = computed(() => {
     const ranges = props.label.contents
         .map(content => content.years)
         .filter((range): range is [number, number] => range !== undefined);
     if (ranges.length === 0) return "";
-    const format = ([start, end]: [number, number]) => start === end ? String(start) : `${start}–${end}`;
+    const format = ([start, end]: [number, number]) =>
+        start === end ? String(start) : `${start}–${end}`;
     if (catalog.layout!.years.display === "condensed-range") {
         return format([ranges[0][0], ranges[ranges.length - 1][1]]);
     }
@@ -103,53 +118,78 @@ const years = computed(() => {
 </script>
 
 <template>
-  <article
-    class="label"
-    :class="{
-      'crop-is-interactive': catalog.view === 'editor',
-      'crop-is-panning': panState,
-      'crop-guides-active': cropGuidesActive,
-    }"
-    :style="artStyle"
-    :data-label-id="label.id"
-    @pointerdown="startPan"
-    @pointermove="panArtwork"
-    @pointerup="endPan"
-    @pointercancel="endPan"
-    @wheel="wheelZoom"
-  >
-    <div class="artwork" aria-hidden="true">
-      <img
-        ref="artworkImage"
-        class="artwork-image"
-        :src="artworkUrl"
-        :style="artImageStyle"
-        draggable="false"
-        @load="onArtworkLoad"
-      />
-    </div>
-    <div class="artwork-tint" aria-hidden="true" />
-    <div class="top-rule" aria-hidden="true" />
-    <div class="crop-boundary-guide" aria-hidden="true" />
+    <article
+        class="label"
+        :class="{
+            'crop-is-interactive': catalog.view === 'editor',
+            'crop-is-panning': panState,
+            'crop-guides-active': cropGuidesActive,
+        }"
+        :style="artStyle"
+        :data-label-id="label.id"
+        @pointerdown="startPan"
+        @pointermove="panArtwork"
+        @pointerup="endPan"
+        @pointercancel="endPan"
+        @wheel="wheelZoom"
+    >
+        <div
+            class="artwork"
+            aria-hidden="true"
+        >
+            <img
+                ref="artworkImage"
+                class="artwork-image"
+                :src="artworkUrl"
+                :style="artImageStyle"
+                draggable="false"
+                @load="onArtworkLoad"
+            />
+        </div>
+        <div
+            class="artwork-tint"
+            aria-hidden="true"
+        />
+        <div
+            class="top-rule"
+            aria-hidden="true"
+        />
+        <div
+            class="crop-boundary-guide"
+            aria-hidden="true"
+        />
 
-    <section class="identity-band" :style="logoStyle">
-      <div
-        v-if="preparedLogo"
-        class="logo inline-logo"
-        role="img"
-        :aria-label="`${category.name} logo`"
-        v-html="preparedLogo"
-      />
-      <img
-        v-else
-        class="logo raster-logo"
-        :src="rasterLogoUrl"
-        :alt="`${category.name} logo`"
-      />
-      <div v-if="years || catalog.layout?.years.reserveSpaceWhenEmpty" class="years">{{ years }}</div>
-    </section>
+        <section
+            class="identity-band"
+            :style="logoStyle"
+        >
+            <div
+                v-if="preparedLogo"
+                class="logo inline-logo"
+                role="img"
+                :aria-label="`${category.name} logo`"
+                v-html="preparedLogo"
+            />
+            <img
+                v-else
+                class="logo raster-logo"
+                :src="rasterLogoUrl"
+                :alt="`${category.name} logo`"
+            />
+            <div
+                v-if="years || catalog.layout?.years.reserveSpaceWhenEmpty"
+                class="years"
+            >
+                {{ years }}
+            </div>
+        </section>
 
-    <div class="finger-hole-guide" aria-hidden="true" />
-    <section class="metadata-band"><LabelContents :label="label" /></section>
-  </article>
+        <div
+            class="finger-hole-guide"
+            aria-hidden="true"
+        />
+        <section class="metadata-band">
+            <LabelContents :label="label" />
+        </section>
+    </article>
 </template>

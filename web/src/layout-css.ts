@@ -1,20 +1,23 @@
 import type { LayoutConfig } from "../../src/core/types";
 
 /** Produces the physical layout variables consumed by the print CSS. */
-export function layoutCssVariables(layout: LayoutConfig): Record<string, string> {
+export function layoutCssVariables(
+    layout: LayoutConfig,
+): Record<string, string> {
     const totalWidth = layout.face.widthInches + layout.overwrapInches * 2;
     // The vinyl wraps around the left and right edges only. Its height is the
     // file-face height; adding vertical overwrap would make it impossible to
     // apply as one continuous label.
     const totalHeight = layout.face.heightInches;
-    const identityTop = layout.identityBand.bottomInches
-        - layout.identityBand.heightInches;
+    const identityTop =
+        layout.identityBand.bottomInches - layout.identityBand.heightInches;
     const metadataTop = layout.metadataBand.topInches;
     const holeHeight = layout.fingerHole.diameterInches / 2;
-    const guideWidth = layout.fingerHole.diameterInches * layout.fingerHole.guideScale;
+    const guideWidth =
+        layout.fingerHole.diameterInches * layout.fingerHole.guideScale;
     const guideHeight = holeHeight * layout.fingerHole.guideScale;
-    const holeTop = layout.fingerHole.topInches
-        + (holeHeight - guideHeight) / 2;
+    const holeTop =
+        layout.fingerHole.topInches + (holeHeight - guideHeight) / 2;
 
     return {
         "--face-width": `${layout.face.widthInches}in`,

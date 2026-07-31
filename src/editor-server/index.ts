@@ -1,11 +1,11 @@
-import http from "node:http";
 import chalk from "chalk";
-import { categories, labels, layout } from "../core/config";
-import type { EditorUpdates } from "../core/editor-updates";
+import http from "node:http";
 import { buildEditorConfig } from "../build/editor-config";
 import { prepareLogos } from "../build/logo-prep";
-import { migrateLegacyArtworkCache, outputDirectory } from "./artwork-cache";
+import { categories, labels, layout } from "../core/config";
+import type { EditorUpdates } from "../core/editor-updates";
 import { preloadRemoteImages, serveArtwork } from "./artwork";
+import { migrateLegacyArtworkCache, outputDirectory } from "./artwork-cache";
 import { saveChanges } from "./edits";
 import { sendJson } from "./http";
 import { serveApplicationFile, serveLocalImage } from "./static-files";
@@ -32,9 +32,12 @@ const server = http.createServer((request, response) => {
         return;
     }
 
-    if (serveArtwork(request, response)
-        || serveApplicationFile(request, response, origin)
-        || serveLocalImage(request, response, origin)) return;
+    if (
+        serveArtwork(request, response) ||
+        serveApplicationFile(request, response, origin) ||
+        serveLocalImage(request, response, origin)
+    )
+        return;
 
     if (request.method !== "PUT" || request.url !== "/api/edits") {
         sendJson(response, 404, { error: "Not found." });
@@ -52,7 +55,10 @@ const server = http.createServer((request, response) => {
             const updates = JSON.parse(body) as EditorUpdates;
             sendJson(response, 200, { saved: saveChanges(updates) });
         } catch (error) {
-            sendJson(response, 400, { error: error instanceof Error ? error.message : "Invalid request." });
+            sendJson(response, 400, {
+                error:
+                    error instanceof Error ? error.message : "Invalid request.",
+            });
         }
     });
 });
@@ -60,7 +66,11 @@ const server = http.createServer((request, response) => {
 async function start(): Promise<void> {
     const migration = migrateLegacyArtworkCache();
     if (migration === "migrated") {
-        console.log(chalk.green("Moved artwork cache from dist/artwork-cache to .cache/artwork."));
+        console.log(
+            chalk.green(
+                "Moved artwork cache from dist/artwork-cache to .cache/artwork.",
+            ),
+        );
     }
     await preloadRemoteImages();
     server.listen(port, host, () => {

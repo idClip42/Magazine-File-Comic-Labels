@@ -1,4 +1,9 @@
-import { countStatuses, readJson, readOptionalResearchInventory, writeResearchJson } from "../shared/inventory";
+import {
+    countStatuses,
+    readJson,
+    readOptionalResearchInventory,
+    writeResearchJson,
+} from "../shared/inventory";
 import { nonMarvelResearchPaths } from "../shared/paths";
 
 const requestDelayMilliseconds = 500;
@@ -69,21 +74,28 @@ function assertArguments(args: string[]): void {
     const valueOptions = new Set(["--targets", "--out", "--label", "--limit"]);
     for (let index = 0; index < args.length; index += 1) {
         if (args[index] === "--refresh") continue;
-        if (!valueOptions.has(args[index]) || !args[index + 1] || args[index + 1].startsWith("--")) usage();
+        if (
+            !valueOptions.has(args[index]) ||
+            !args[index + 1] ||
+            args[index + 1].startsWith("--")
+        )
+            usage();
         index += 1;
     }
 }
 
 function expandTargets(ranges: TargetRange[]): Target[] {
-    return ranges.flatMap(range => Array.from(
-        { length: range.issues[1] - range.issues[0] + 1 },
-        (_, offset) => ({
-            labelId: range.labelId,
-            series: range.series,
-            issue: String(range.issues[0] + offset),
-            query: `${range.queryTitle} ${range.issues[0] + offset}`,
-        }),
-    ));
+    return ranges.flatMap(range =>
+        Array.from(
+            { length: range.issues[1] - range.issues[0] + 1 },
+            (_, offset) => ({
+                labelId: range.labelId,
+                series: range.series,
+                issue: String(range.issues[0] + offset),
+                query: `${range.queryTitle} ${range.issues[0] + offset}`,
+            }),
+        ),
+    );
 }
 
 function keyFor(entry: Pick<Target, "labelId" | "series" | "issue">): string {
@@ -91,15 +103,26 @@ function keyFor(entry: Pick<Target, "labelId" | "series" | "issue">): string {
 }
 
 function listingUrls(html: string): string[] {
-    return [...new Set([...html.matchAll(/href="(\/listing\/[^"]+)"/g)].map(match => `https://www.hipcomic.com${match[1]}`))];
+    return [
+        ...new Set(
+            [...html.matchAll(/href="(\/listing\/[^"]+)"/g)].map(
+                match => `https://www.hipcomic.com${match[1]}`,
+            ),
+        ),
+    ];
 }
 
 function imageUrl(html: string): string | undefined {
     return html.match(/https:\/\/img\.hipcomic\.com\/p\/[a-f0-9]+\.jpg/)?.[0];
 }
 
-async function fetchText(url: string): Promise<{ status: number; text: string }> {
-    const response = await fetch(url, { headers, signal: AbortSignal.timeout(30_000) });
+async function fetchText(
+    url: string,
+): Promise<{ status: number; text: string }> {
+    const response = await fetch(url, {
+        headers,
+        signal: AbortSignal.timeout(30_000),
+    });
     return { status: response.status, text: await response.text() };
 }
 
@@ -107,54 +130,93 @@ async function main(): Promise<void> {
     const args = process.argv.slice(2);
     if (args.includes("--help")) usage();
     assertArguments(args);
-    const targetsPath = singleValue(args, "--targets") ?? nonMarvelResearchPaths.hipComicTargets;
-    const outputPath = singleValue(args, "--out") ?? nonMarvelResearchPaths.covers;
+    const targetsPath =
+        singleValue(args, "--targets") ??
+        nonMarvelResearchPaths.hipComicTargets;
+    const outputPath =
+        singleValue(args, "--out") ?? nonMarvelResearchPaths.covers;
     const selectedLabels = new Set(valuesFor(args, "--label"));
     const limitText = singleValue(args, "--limit");
-    const limit = limitText === undefined ? Number.POSITIVE_INFINITY : Number(limitText);
-    if ((!Number.isFinite(limit) && limit !== Number.POSITIVE_INFINITY) || limit < 0 || !Number.isInteger(limit)) usage();
+    const limit =
+        limitText === undefined ? Number.POSITIVE_INFINITY : Number(limitText);
+    if (
+        (!Number.isFinite(limit) && limit !== Number.POSITIVE_INFINITY) ||
+        limit < 0 ||
+        !Number.isInteger(limit)
+    )
+        usage();
     const refresh = args.includes("--refresh");
 
-    const manifest = readJson<{ source?: string; targets?: TargetRange[] }>(targetsPath);
-    if (!Array.isArray(manifest.targets)) throw new Error(`${targetsPath} does not contain a targets array.`);
+    const manifest = readJson<{ source?: string; targets?: TargetRange[] }>(
+        targetsPath,
+    );
+    if (!Array.isArray(manifest.targets))
+        throw new Error(`${targetsPath} does not contain a targets array.`);
     const allTargets = expandTargets(manifest.targets);
-    const targets = allTargets.filter(target => !selectedLabels.size || selectedLabels.has(target.labelId));
+    const targets = allTargets.filter(
+        target => !selectedLabels.size || selectedLabels.has(target.labelId),
+    );
     const previous = readOptionalResearchInventory<CoverEntry>(outputPath);
-    const previousByKey = new Map((previous?.entries ?? []).map(entry => [keyFor(entry), entry]));
+    const previousByKey = new Map(
+        (previous?.entries ?? []).map(entry => [keyFor(entry), entry]),
+    );
     const targetKeys = new Set(allTargets.map(keyFor));
     const byKey = new Map(previousByKey);
     let attempts = 0;
     let requests = 0;
     let stoppedForBlocking = false;
 
-    const fetchWithDelay = async (url: string): Promise<{ status: number; text: string }> => {
-        if (requests > 0) await new Promise(resolve => setTimeout(resolve, requestDelayMilliseconds));
+    const fetchWithDelay = async (
+        url: string,
+    ): Promise<{ status: number; text: string }> => {
+        if (requests > 0)
+            await new Promise(resolve =>
+                setTimeout(resolve, requestDelayMilliseconds),
+            );
         requests += 1;
         return fetchText(url);
     };
     const allEntries = (): CoverEntry[] => [
-        ...allTargets.map(target => byKey.get(keyFor(target)) ?? { ...target, status: "pending" as const }),
-        ...(previous?.entries ?? []).filter(entry => !targetKeys.has(keyFor(entry))),
+        ...allTargets.map(
+            target =>
+                byKey.get(keyFor(target)) ?? {
+                    ...target,
+                    status: "pending" as const,
+                },
+        ),
+        ...(previous?.entries ?? []).filter(
+            entry => !targetKeys.has(keyFor(entry)),
+        ),
     ];
-    const persist = (): void => writeResearchJson(outputPath, {
-        generatedAt: new Date().toISOString(),
-        source: manifest.source ?? "HipComic public listing pages",
-        requestDelayMs: requestDelayMilliseconds,
-        stoppedForBlocking,
-        entries: allEntries(),
-    });
+    const persist = (): void =>
+        writeResearchJson(outputPath, {
+            generatedAt: new Date().toISOString(),
+            source: manifest.source ?? "HipComic public listing pages",
+            requestDelayMs: requestDelayMilliseconds,
+            stoppedForBlocking,
+            entries: allEntries(),
+        });
 
     for (const target of targets) {
         if (attempts >= limit || stoppedForBlocking) break;
         const key = keyFor(target);
         if (previousByKey.has(key) && !refresh) continue;
         attempts += 1;
-        process.stdout.write(`Searching ${target.labelId} ${target.series} #${target.issue}\n`);
+        process.stdout.write(
+            `Searching ${target.labelId} ${target.series} #${target.issue}\n`,
+        );
         try {
-            const search = await fetchWithDelay(`https://www.hipcomic.com/search?keywords=${encodeURIComponent(target.query)}`);
+            const search = await fetchWithDelay(
+                `https://www.hipcomic.com/search?keywords=${encodeURIComponent(target.query)}`,
+            );
             if (search.status === 403 || search.status === 429) {
                 stoppedForBlocking = true;
-                byKey.set(key, { ...target, status: "blocked", error: `HipComic returned HTTP ${search.status}`, fetchedAt: new Date().toISOString() });
+                byKey.set(key, {
+                    ...target,
+                    status: "blocked",
+                    error: `HipComic returned HTTP ${search.status}`,
+                    fetchedAt: new Date().toISOString(),
+                });
                 persist();
                 break;
             }
@@ -164,21 +226,44 @@ async function main(): Promise<void> {
                 const detail = await fetchWithDelay(listingUrl);
                 if (detail.status === 403 || detail.status === 429) {
                     stoppedForBlocking = true;
-                    result = { ...target, status: "blocked", listingUrl, error: `HipComic returned HTTP ${detail.status}`, fetchedAt: new Date().toISOString() };
+                    result = {
+                        ...target,
+                        status: "blocked",
+                        listingUrl,
+                        error: `HipComic returned HTTP ${detail.status}`,
+                        fetchedAt: new Date().toISOString(),
+                    };
                     break;
                 }
                 const cover = imageUrl(detail.text);
-                if (cover && new RegExp(`(?:^|[^0-9])${target.issue}(?:[^0-9]|$)`).test(listingUrl)) {
-                    result = { ...target, status: "found", listingUrl, imageUrl: cover, fetchedAt: new Date().toISOString(), source: manifest.source };
+                if (
+                    cover &&
+                    new RegExp(`(?:^|[^0-9])${target.issue}(?:[^0-9]|$)`).test(
+                        listingUrl,
+                    )
+                ) {
+                    result = {
+                        ...target,
+                        status: "found",
+                        listingUrl,
+                        imageUrl: cover,
+                        fetchedAt: new Date().toISOString(),
+                        source: manifest.source,
+                    };
                     break;
                 }
             }
-            byKey.set(key, result ?? {
-                ...target,
-                status: "not-found",
-                error: candidates.length ? "No matching listing with a cover image" : "No HipComic listings found",
-                fetchedAt: new Date().toISOString(),
-            });
+            byKey.set(
+                key,
+                result ?? {
+                    ...target,
+                    status: "not-found",
+                    error: candidates.length
+                        ? "No matching listing with a cover image"
+                        : "No HipComic listings found",
+                    fetchedAt: new Date().toISOString(),
+                },
+            );
         } catch (error) {
             byKey.set(key, {
                 ...target,
@@ -191,7 +276,9 @@ async function main(): Promise<void> {
     }
 
     persist();
-    console.log(`Wrote ${outputPath}: ${JSON.stringify(countStatuses(allEntries()))}${stoppedForBlocking ? " (stopped after blocking)" : ""}`);
+    console.log(
+        `Wrote ${outputPath}: ${JSON.stringify(countStatuses(allEntries()))}${stoppedForBlocking ? " (stopped after blocking)" : ""}`,
+    );
 }
 
 void main().catch(error => {

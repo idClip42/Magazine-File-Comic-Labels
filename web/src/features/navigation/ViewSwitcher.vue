@@ -10,16 +10,23 @@ function selectView(view: ViewMode): void {
 </script>
 
 <template>
-  <nav class="view-switcher" aria-label="Label views">
-    <button
-      type="button"
-      :aria-pressed="catalog.view === 'editor'"
-      @click="selectView('editor')"
-    >Edit labels</button>
-    <button
-      type="button"
-      :aria-pressed="catalog.view === 'shelves'"
-      @click="selectView('shelves')"
-    >Shelf overview</button>
-  </nav>
+    <nav
+        class="view-switcher"
+        aria-label="Label views"
+    >
+        <button
+            type="button"
+            :aria-pressed="catalog.view === 'editor'"
+            @click="selectView('editor')"
+        >
+            Edit labels
+        </button>
+        <button
+            type="button"
+            :aria-pressed="catalog.view === 'shelves'"
+            @click="selectView('shelves')"
+        >
+            Shelf overview
+        </button>
+    </nav>
 </template>

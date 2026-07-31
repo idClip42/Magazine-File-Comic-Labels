@@ -28,14 +28,28 @@ export type MarvelRun = {
     officialPageOverrides?: Record<string, string>;
 };
 
-export function marvelEntryKey(entry: Pick<MarvelIssuePageEntry, "labelId" | "issue" | "runId" | "targetId">): string {
-    return entry.targetId ?? (entry.runId ? `${entry.runId}#${entry.issue}` : `${entry.labelId}#${entry.issue}`);
+export function marvelEntryKey(
+    entry: Pick<
+        MarvelIssuePageEntry,
+        "labelId" | "issue" | "runId" | "targetId"
+    >,
+): string {
+    return (
+        entry.targetId ??
+        (entry.runId
+            ? `${entry.runId}#${entry.issue}`
+            : `${entry.labelId}#${entry.issue}`)
+    );
 }
 
 export function canonicalMarvelIssuePage(value: string): string | undefined {
     try {
         const url = new URL(value);
-        if (url.hostname !== "www.marvel.com" || !/^\/comics\/issue\/\d+(?:\/|$)/.test(url.pathname)) return undefined;
+        if (
+            url.hostname !== "www.marvel.com" ||
+            !/^\/comics\/issue\/\d+(?:\/|$)/.test(url.pathname)
+        )
+            return undefined;
         url.search = "";
         url.hash = "";
         return url.toString().replace(/\/$/, "");

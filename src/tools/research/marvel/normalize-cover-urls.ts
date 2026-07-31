@@ -5,11 +5,18 @@ import { marvelHarvestPaths } from "./plan";
 
 const coversPath = marvelHarvestPaths.covers;
 
-type CoverEntry = { cleanImageUrl?: string; sourceImageUrl?: string; status: string };
+type CoverEntry = {
+    cleanImageUrl?: string;
+    sourceImageUrl?: string;
+    status: string;
+};
 type CoverInventory = { entries?: CoverEntry[] };
 
-const inventory = JSON.parse(fs.readFileSync(coversPath, "utf8")) as CoverInventory;
-if (!Array.isArray(inventory.entries)) throw new Error(`${coversPath} does not contain an entries array.`);
+const inventory = JSON.parse(
+    fs.readFileSync(coversPath, "utf8"),
+) as CoverInventory;
+if (!Array.isArray(inventory.entries))
+    throw new Error(`${coversPath} does not contain an entries array.`);
 
 let updated = 0;
 for (const entry of inventory.entries) {

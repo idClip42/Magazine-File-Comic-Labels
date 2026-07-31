@@ -40,7 +40,10 @@ function updateLabelScale(): void {
     for (const slot of shelfSlots.value) {
         const label = slot.querySelector<HTMLElement>(".label");
         if (!label || !slot.clientWidth || !label.offsetWidth) continue;
-        slot.style.setProperty("--shelf-label-scale", String(slot.clientWidth / label.offsetWidth));
+        slot.style.setProperty(
+            "--shelf-label-scale",
+            String(slot.clientWidth / label.offsetWidth),
+        );
     }
 }
 
@@ -68,28 +71,38 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
 </script>
 
 <template>
-  <section class="shelf-view" aria-label="Bookshelf overview">
-    <div class="bookcase-wall">
-      <section
-        v-for="(bookcase, bookcaseIndex) in bookcases"
-        :key="bookcaseIndex"
-        class="bookcase"
-        :aria-label="`Bookcase ${bookcaseIndex + 1}`"
-      >
-        <div v-for="(shelf, shelfIndex) in bookcase" :key="shelfIndex" class="bookshelf-row">
-          <div class="shelf-labels">
-            <div
-              v-for="label in shelf"
-              :key="label.id"
-              :ref="setShelfSlot"
-              class="shelf-label-slot"
+    <section
+        class="shelf-view"
+        aria-label="Bookshelf overview"
+    >
+        <div class="bookcase-wall">
+            <section
+                v-for="(bookcase, bookcaseIndex) in bookcases"
+                :key="bookcaseIndex"
+                class="bookcase"
+                :aria-label="`Bookcase ${bookcaseIndex + 1}`"
             >
-              <LabelFace :label="label" />
-            </div>
-          </div>
-          <div class="shelf-spare-space" aria-hidden="true" />
+                <div
+                    v-for="(shelf, shelfIndex) in bookcase"
+                    :key="shelfIndex"
+                    class="bookshelf-row"
+                >
+                    <div class="shelf-labels">
+                        <div
+                            v-for="label in shelf"
+                            :key="label.id"
+                            :ref="setShelfSlot"
+                            class="shelf-label-slot"
+                        >
+                            <LabelFace :label="label" />
+                        </div>
+                    </div>
+                    <div
+                        class="shelf-spare-space"
+                        aria-hidden="true"
+                    />
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  </section>
+    </section>
 </template>

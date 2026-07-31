@@ -23,11 +23,16 @@ export function isMarvelCdnImage(asset: string): boolean {
 }
 
 /** A harvested Marvel CDN cover that is suitable for the catalog. */
-export function isCleanMarvelJpegUrl(value: string | undefined): value is string {
+export function isCleanMarvelJpegUrl(
+    value: string | undefined,
+): value is string {
     if (!value) return false;
     try {
         const url = new URL(value);
-        return url.hostname === "cdn.marvel.com" && /\/clean\.jpg$/i.test(url.pathname);
+        return (
+            url.hostname === "cdn.marvel.com" &&
+            /\/clean\.jpg$/i.test(url.pathname)
+        );
     } catch {
         return false;
     }
@@ -38,7 +43,10 @@ export function normalizeMarvelJpegUrl(value: string): string {
     try {
         const url = new URL(value);
         if (url.hostname === "cdn.marvel.com") {
-            url.pathname = url.pathname.replace(/\.(?:webp|png|jpe?g)$/i, ".jpg");
+            url.pathname = url.pathname.replace(
+                /\.(?:webp|png|jpe?g)$/i,
+                ".jpg",
+            );
         }
         return url.toString();
     } catch {

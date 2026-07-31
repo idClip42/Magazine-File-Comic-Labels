@@ -1,14 +1,14 @@
-import { computed, ref } from "vue";
 import { defineStore } from "pinia";
+import { computed, ref } from "vue";
+import type { ArtUpdate, CropUpdate } from "../../../src/core/editor-updates";
 import type { EditorConfig, LabelConfig } from "../../../src/core/types";
 import {
-    type EditorUpdates,
-    type LayoutUpdate,
     isLiveEditor,
     requestLiveConfig,
+    type EditorUpdates,
+    type LayoutUpdate,
     type ViewMode,
 } from "../config";
-import type { ArtUpdate, CropUpdate } from "../../../src/core/editor-updates";
 
 type SaveState = "idle" | "saving" | "saved" | "error";
 
@@ -34,9 +34,11 @@ function artsForConfig(config: EditorConfig): Record<string, ArtUpdate> {
 }
 
 function cropsMatch(left: CropUpdate, right: CropUpdate): boolean {
-    return left.focus.x === right.focus.x
-        && left.focus.y === right.focus.y
-        && left.scale === right.scale;
+    return (
+        left.focus.x === right.focus.x &&
+        left.focus.y === right.focus.y &&
+        left.scale === right.scale
+    );
 }
 
 function artsMatch(left: ArtUpdate, right: ArtUpdate): boolean {
@@ -63,9 +65,10 @@ export const useCatalogStore = defineStore("catalog", () => {
     const layout = computed(() => config.value?.layout);
     const isSaveAvailable = computed(() => isLiveEditor());
     const isSaving = computed(() => saveState.value === "saving");
-    const pendingChangeCount = computed(() =>
-        Object.keys(pendingArts.value).length
-        + Object.keys(pendingLayout.value).length,
+    const pendingChangeCount = computed(
+        () =>
+            Object.keys(pendingArts.value).length +
+            Object.keys(pendingLayout.value).length,
     );
     const hasPendingChanges = computed(() => pendingChangeCount.value > 0);
 
@@ -83,7 +86,9 @@ export const useCatalogStore = defineStore("catalog", () => {
     }
 
     function labelForId(id: string): LabelConfig {
-        const label = config.value?.labels.find(candidate => candidate.id === id);
+        const label = config.value?.labels.find(
+            candidate => candidate.id === id,
+        );
         if (!label) throw new Error(`Unknown label ID: ${id}`);
         return label;
     }
@@ -111,11 +116,14 @@ export const useCatalogStore = defineStore("catalog", () => {
         const label = labelForId(id);
         if (asset === label.art.asset) return;
         const candidates = label.art.options ?? [];
-        if (!candidates.includes(asset)) throw new Error(`Unknown artwork option for ${id}`);
+        if (!candidates.includes(asset))
+            throw new Error(`Unknown artwork option for ${id}`);
 
         const currentCrop = copyCrop(label.art.crop);
-        const nextCrop = sessionCrops.value[`${id}\u0000${asset}`]
-            ?? { focus: { x: 0.5, y: 0.5 }, scale: 1 };
+        const nextCrop = sessionCrops.value[`${id}\u0000${asset}`] ?? {
+            focus: { x: 0.5, y: 0.5 },
+            scale: 1,
+        };
         sessionCrops.value = {
             ...sessionCrops.value,
             [`${id}\u0000${label.art.asset}`]: currentCrop,
@@ -134,7 +142,9 @@ export const useCatalogStore = defineStore("catalog", () => {
 
     function isCropSaved(id: string): boolean {
         const savedArt = savedArts.value[id];
-        return savedArt ? artsMatch(artForLabel(labelForId(id)), savedArt) : true;
+        return savedArt
+            ? artsMatch(artForLabel(labelForId(id)), savedArt)
+            : true;
     }
 
     function artworkUrl(asset: string): string {
@@ -144,7 +154,8 @@ export const useCatalogStore = defineStore("catalog", () => {
     function updateLayout(update: LayoutUpdate): void {
         if (!config.value) return;
         const layout = config.value.layout;
-        if (update.artTreatment) layout.artTreatment = { ...update.artTreatment };
+        if (update.artTreatment)
+            layout.artTreatment = { ...update.artTreatment };
         if (update.identityBandHeightInches !== undefined) {
             layout.identityBand.heightInches = update.identityBandHeightInches;
         }
@@ -154,7 +165,10 @@ export const useCatalogStore = defineStore("catalog", () => {
         if (update.typography) layout.typography = { ...update.typography };
         if (update.logoPalette) layout.logoPalette = { ...update.logoPalette };
         if (update.logoOutline) layout.logoOutline = { ...update.logoOutline };
-        pendingLayout.value = { ...pendingLayout.value, ...structuredClone(update) };
+        pendingLayout.value = {
+            ...pendingLayout.value,
+            ...structuredClone(update),
+        };
         saveState.value = "idle";
     }
 
@@ -179,7 +193,8 @@ export const useCatalogStore = defineStore("catalog", () => {
             layout: pendingLayout.value,
         };
         if (Object.keys(updates.arts ?? {}).length === 0) delete updates.arts;
-        if (Object.keys(updates.layout ?? {}).length === 0) delete updates.layout;
+        if (Object.keys(updates.layout ?? {}).length === 0)
+            delete updates.layout;
 
         saveState.value = "saving";
         try {
@@ -188,22 +203,28 @@ export const useCatalogStore = defineStore("catalog", () => {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(updates),
             });
-            const result = await response.json() as {
+            const result = (await response.json()) as {
                 error?: string;
                 saved?: { arts: number; layout: number };
             };
-            if (!response.ok) throw new Error(result.error ?? "Unable to save configuration changes.");
+            if (!response.ok)
+                throw new Error(
+                    result.error ?? "Unable to save configuration changes.",
+                );
 
-            const savedCount = (result.saved?.arts ?? 0)
-                + (result.saved?.layout ?? 0);
+            const savedCount =
+                (result.saved?.arts ?? 0) + (result.saved?.layout ?? 0);
             if (updates.arts) {
                 savedArts.value = {
                     ...savedArts.value,
                     ...Object.fromEntries(
-                        Object.entries(updates.arts).map(([id, art]) => [id, {
-                            asset: art.asset,
-                            crop: copyCrop(art.crop),
-                        }]),
+                        Object.entries(updates.arts).map(([id, art]) => [
+                            id,
+                            {
+                                asset: art.asset,
+                                crop: copyCrop(art.crop),
+                            },
+                        ]),
                     ),
                 };
             }
@@ -213,7 +234,8 @@ export const useCatalogStore = defineStore("catalog", () => {
             saveMessage.value = `Saved ${savedCount} change${savedCount === 1 ? "" : "s"} to configuration.`;
         } catch (error) {
             saveState.value = "error";
-            const message = error instanceof Error ? error.message : "Unknown error";
+            const message =
+                error instanceof Error ? error.message : "Unknown error";
             saveMessage.value = `Save failed: ${message}`;
         }
     }
@@ -231,13 +253,18 @@ export const useCatalogStore = defineStore("catalog", () => {
             const response = await fetch("/api/edits", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ arts: { [id]: update } } satisfies EditorUpdates),
+                body: JSON.stringify({
+                    arts: { [id]: update },
+                } satisfies EditorUpdates),
             });
-            const result = await response.json() as {
+            const result = (await response.json()) as {
                 error?: string;
                 saved?: { arts: number; layout: number };
             };
-            if (!response.ok) throw new Error(result.error ?? "Unable to save artwork changes.");
+            if (!response.ok)
+                throw new Error(
+                    result.error ?? "Unable to save artwork changes.",
+                );
 
             savedArts.value = { ...savedArts.value, [id]: update };
             if (artsMatch(artForLabel(labelForId(id)), update)) {
@@ -248,7 +275,8 @@ export const useCatalogStore = defineStore("catalog", () => {
             saveMessage.value = `Saved cover and crop for ${id}.`;
         } catch (error) {
             saveState.value = "error";
-            const message = error instanceof Error ? error.message : "Unknown error";
+            const message =
+                error instanceof Error ? error.message : "Unknown error";
             saveMessage.value = `Save failed: ${message}`;
         }
     }

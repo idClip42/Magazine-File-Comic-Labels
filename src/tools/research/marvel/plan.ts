@@ -1,6 +1,6 @@
 import path from "node:path";
-import rawPlan from "./harvest-plan.json";
 import type { MarvelRun } from "../shared/marvel";
+import rawPlan from "./harvest-plan.json";
 
 export type MarvelHarvestPlan = {
     description: string;
@@ -17,7 +17,8 @@ export type MarvelHarvestPlan = {
 };
 
 export const marvelHarvestPlan = rawPlan as unknown as MarvelHarvestPlan;
-export const marvelHarvestPlanPath = "src/tools/research/marvel/harvest-plan.json";
+export const marvelHarvestPlanPath =
+    "src/tools/research/marvel/harvest-plan.json";
 
 function fromRepositoryRoot(filePath: string): string {
     return path.join(process.cwd(), filePath);
