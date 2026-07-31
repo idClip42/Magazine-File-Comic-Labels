@@ -46,7 +46,16 @@ type FandomApiProfile = {
     replace?: Record<string, string>;
     source: string;
 };
-type Profile = DirectImageProfile | FandomApiProfile;
+type DcUniverseInfiniteProfile = {
+    id: string;
+    kind: "dc-universe-infinite";
+    labelIds: string[];
+    seriesUrl: string;
+    pages: number;
+    issueTitlePrefix: string;
+    source: string;
+};
+type Profile = DirectImageProfile | FandomApiProfile | DcUniverseInfiniteProfile;
 
 function usage(): never {
     console.error(`Usage: npm run harvest:non-marvel-profile -- --profile <name> [options]
@@ -78,11 +87,29 @@ function optionValue(args: string[], name: string): string | undefined {
 }
 
 function matchesProfile(entry: CoverEntry, profile: Profile): boolean {
-    return profile.kind === "direct-image"
+    return profile.kind === "direct-image" || profile.kind === "dc-universe-infinite"
         ? profile.labelIds.includes(entry.labelId)
         : (profile.labelIds?.includes(entry.labelId) ?? false) ||
               (profile.labelPrefix !== undefined &&
                   entry.labelId.startsWith(profile.labelPrefix));
+}
+
+function escapeRegex(value: string): string {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** DCUI's query parameters are Imgix transformations; the path is the source JPEG. */
+function canonicalDcUniverseInfiniteImage(url: string): string {
+    const canonical = new URL(url.split("&amp;").join("&"));
+    if (
+        canonical.hostname !== "imgix-media.wbdndc.net" ||
+        !canonical.pathname.startsWith("/ingest/book/preview/") ||
+        !canonical.pathname.endsWith("/0.jpg")
+    )
+        throw new Error("DC Universe Infinite returned an unexpected cover URL.");
+    canonical.search = "";
+    canonical.hash = "";
+    return canonical.toString();
 }
 
 function applyReplacements(
@@ -179,6 +206,49 @@ async function fetchDirectCover(
     return { imageUrl, listingUrl: profile.listingUrl };
 }
 
+async function fetchDcUniverseInfiniteCovers(
+    profile: DcUniverseInfiniteProfile,
+): Promise<Map<string, { imageUrl: string; listingUrl: string }>> {
+    const title = escapeRegex(profile.issueTitlePrefix);
+    const covers = new Map<string, { imageUrl: string; listingUrl: string }>();
+    for (let page = 1; page <= profile.pages; page += 1) {
+        if (page > 1)
+            await new Promise(resolve =>
+                setTimeout(resolve, requestDelayMilliseconds),
+            );
+        const pageUrl = new URL(profile.seriesUrl);
+        pageUrl.searchParams.set("page", String(page));
+        const response = await fetch(pageUrl, {
+            headers,
+            signal: AbortSignal.timeout(30_000),
+        });
+        if (!response.ok)
+            throw new Error(
+                `DC Universe Infinite returned HTTP ${response.status} for page ${page}`,
+            );
+        const html = await response.text();
+        const matches = [
+            ...html.matchAll(
+                new RegExp(
+                    `href="([^\"]+)"[^>]*aria-label="${title} #(\\d+)"[\\s\\S]*?<img src="([^\"]+)"`,
+                    "g",
+                ),
+            ),
+        ];
+        for (const match of matches) {
+            const issue = match[2];
+            const imageUrl = canonicalDcUniverseInfiniteImage(match[3]);
+            covers.set(issue, {
+                imageUrl,
+                listingUrl: new URL(match[1], profile.seriesUrl).toString(),
+            });
+        }
+    }
+    if (covers.size === 0)
+        throw new Error("No DC Universe Infinite issue covers were found.");
+    return covers;
+}
+
 async function main(): Promise<void> {
     const args = process.argv.slice(2);
     if (args.includes("--help")) usage();
@@ -200,7 +270,7 @@ async function main(): Promise<void> {
     if (
         (!Number.isFinite(limit) && limit !== Number.POSITIVE_INFINITY) ||
         limit < 0 ||
-        !Number.isInteger(limit)
+        (Number.isFinite(limit) && !Number.isInteger(limit))
     )
         usage();
     const profileManifest = readJson<{ profiles?: Profile[] }>(
@@ -217,6 +287,10 @@ async function main(): Promise<void> {
     );
 
     const refresh = args.includes("--refresh");
+    const dcCovers =
+        profile.kind === "dc-universe-infinite"
+            ? await fetchDcUniverseInfiniteCovers(profile)
+            : undefined;
     let attempts = 0;
     let requests = 0;
     let stoppedForBlocking = false;
@@ -246,7 +320,13 @@ async function main(): Promise<void> {
             const result =
                 profile.kind === "fandom-api"
                     ? await fetchFandomCover(entry, profile)
-                    : await fetchDirectCover(entry, profile);
+                    : profile.kind === "direct-image"
+                      ? await fetchDirectCover(entry, profile)
+                      : dcCovers?.get(entry.issue) ?? (() => {
+                            throw new Error(
+                                `DC Universe Infinite has no matching cover for ${entry.labelId} #${entry.issue}.`,
+                            );
+                        })();
             entry.status = "found";
             entry.imageUrl = result.imageUrl;
             entry.listingUrl = result.listingUrl;

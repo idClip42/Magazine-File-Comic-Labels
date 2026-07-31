@@ -1,21 +1,17 @@
 {
     "profiles": [
         {
-            "id": "young-justice-coverbrowser",
-            "kind": "direct-image",
+            "id": "young-justice-dc-universe-infinite",
+            "kind": "dc-universe-infinite",
             "labelIds": [
                 "young-justice-001",
                 "young-justice-002",
                 "young-justice-003"
             ],
-            "extend": {
-                "labelId": "young-justice-003",
-                "series": "Young Justice (1998)",
-                "issues": [47, 55]
-            },
-            "imageUrlTemplate": "https://www.coverbrowser.com/image/young-justice/{issue}-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "seriesUrl": "https://www.dcuniverseinfinite.com/comics/series/young-justice-1998-2003/6d730999-91b4-453a-8c6c-2a038deb9cf5",
+            "pages": 3,
+            "issueTitlePrefix": "Young Justice (1998-)",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "id": "teen-titans-go-fandom",

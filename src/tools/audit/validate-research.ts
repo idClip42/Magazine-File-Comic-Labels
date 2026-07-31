@@ -30,6 +30,7 @@ type NonMarvelProfile = {
     source: string;
     labelIds?: string[];
     labelPrefix?: string;
+    pages?: number;
 };
 
 function pushUniqueError(
@@ -195,7 +196,7 @@ function validateNonMarvel(labelIds: Set<string>, errors: string[]): void {
             pushUniqueError(errors, ids, profile.id, "non-Marvel profile ID");
             if (
                 !profile.source ||
-                !["direct-image", "fandom-api"].includes(profile.kind)
+                !["direct-image", "fandom-api", "dc-universe-infinite"].includes(profile.kind)
             ) {
                 errors.push(`Non-Marvel profile ${profile.id} is invalid.`);
             }
@@ -205,6 +206,13 @@ function validateNonMarvel(labelIds: Set<string>, errors: string[]): void {
                         `Non-Marvel profile ${profile.id} references unknown label ${labelId}.`,
                     );
             }
+            if (
+                profile.kind === "dc-universe-infinite" &&
+                (!Number.isInteger(profile.pages) || (profile.pages ?? 0) < 1)
+            )
+                errors.push(
+                    `Non-Marvel profile ${profile.id} needs a positive DCUI page count.`,
+                );
         }
     }
 

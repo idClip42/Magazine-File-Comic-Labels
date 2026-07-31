@@ -62,11 +62,9 @@
             "series": "Young Justice (DC, 1998 series)",
             "issues": [1, 22],
             "primarySource": {
-                "kind": "direct-image gallery",
-                "indexUrl": "https://dcuguide.com/w/Category:Images_-_Young_Justice_Covers",
-                "fileUrlPattern": "https://dcuguide.com/images/{hashPath}/Young_Justice_{issue}.png",
-                "coverage": "The gallery includes the regular series through issue 55. The verified issue #1 original is 400 x 612 PNG.",
-                "quality": "Reliable direct files, but marginal for a full-height print label; use as fallback or sourcing aid when no higher-resolution original is available."
+                "kind": "DC Universe Infinite public series page",
+                "indexUrl": "https://www.dcuniverseinfinite.com/comics/series/young-justice-1998-2003/6d730999-91b4-453a-8c6c-2a038deb9cf5",
+                "coverage": "The paginated public catalog exposes every numbered issue and its official book page. The query-free Imgix 0.jpg resource is the full-resolution cover rendition."
             },
             "secondarySource": {
                 "kind": "issue-page/gallery",
@@ -84,9 +82,9 @@
             "series": "Young Justice (DC, 1998 series)",
             "issues": [23, 46],
             "primarySource": {
-                "kind": "direct-image gallery",
-                "indexUrl": "https://dcuguide.com/w/Category:Images_-_Young_Justice_Covers",
-                "coverage": "Same stable gallery as young-justice-001."
+                "kind": "DC Universe Infinite public series page",
+                "indexUrl": "https://www.dcuniverseinfinite.com/comics/series/young-justice-1998-2003/6d730999-91b4-453a-8c6c-2a038deb9cf5",
+                "coverage": "The paginated public catalog exposes the official book pages and full-resolution Imgix 0.jpg covers for issues 23 through 46."
             },
             "secondarySource": {
                 "kind": "issue-page/gallery",
@@ -97,7 +95,7 @@
                 "url": "https://www.comics.org/series/10206/covers/",
                 "coverage": "Numbered-run and variant verification."
             },
-            "recommendedCoverVariant": "One standard cover for each numbered issue; leave young-justice-003 unchanged because it mixes a run with miscellaneous material."
+            "recommendedCoverVariant": "One standard cover for each numbered issue."
         },
         {
             "labelId": "indiana-jones-003",

@@ -44,7 +44,21 @@ export function writeResearchJson(filePath: string, value: unknown): void {
         `${JSON.stringify(value, null, 4)}${lineEnding}`,
         "utf8",
     );
-    fs.renameSync(temporaryPath, filePath);
+    // Windows virus scanning can briefly lock a just-written durable inventory.
+    // Retry the atomic replacement rather than discarding a completed harvest.
+    let lastError: unknown;
+    for (let attempt = 0; attempt < 10; attempt += 1) {
+        try {
+            fs.renameSync(temporaryPath, filePath);
+            return;
+        } catch (error) {
+            lastError = error;
+            if (!(error instanceof Error) || !/^(EPERM|EACCES)$/.test((error as NodeJS.ErrnoException).code ?? ""))
+                throw error;
+            Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
+        }
+    }
+    throw lastError;
 }
 
 export function countStatuses(

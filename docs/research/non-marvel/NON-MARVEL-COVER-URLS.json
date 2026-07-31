@@ -1,6 +1,6 @@
 {
-    "generatedAt": "2026-07-30T18:45:13.097Z",
-    "source": "HipComic public listings with CoverBrowser Young Justice fallback",
+    "generatedAt": "2026-07-31T23:41:08.758Z",
+    "source": "Non-Marvel research profile: young-justice-dc-universe-infinite",
     "requestDelayMs": 500,
     "entries": [
         {
@@ -648,10 +648,10 @@
             "issue": "1",
             "query": "Young Justice 1998 1",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/1-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-1/c5833a53-d5db-459b-9e4a-2ad74f8ab007/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/c5833a53-d5db-459b-9e4a-2ad74f8ab007/ea2a60e3-00f6-4f21-b540-86cf165b5e86/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:40.944Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -659,10 +659,10 @@
             "issue": "2",
             "query": "Young Justice 1998 2",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/2-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-2/76e12a9c-53e5-4189-8dde-799f4c330fcb/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/76e12a9c-53e5-4189-8dde-799f4c330fcb/8eddd357-e043-450d-8533-b09527d0f28e/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:41.456Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -670,10 +670,10 @@
             "issue": "3",
             "query": "Young Justice 1998 3",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/3-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-3/95d1b6bd-a790-47f2-af76-39cc23fbce38/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/95d1b6bd-a790-47f2-af76-39cc23fbce38/d3885126-bed6-477d-83cf-037ca116d26d/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:41.972Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -681,11 +681,10 @@
             "issue": "4",
             "query": "Young Justice 1998 4",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/4-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:42.488Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/cbba2e24-6169-4bb4-ab3b-2a02feb8619e/4e5ad18a-8242-46e5-b9dc-d21d6ab6f12d/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-4/cbba2e24-6169-4bb4-ab3b-2a02feb8619e/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -693,11 +692,10 @@
             "issue": "5",
             "query": "Young Justice 1998 5",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/5-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:43.004Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/dd6ca85e-4379-42c2-86ec-85354e50a56b/9e910c85-b140-4837-b19f-c7baf24f4fde/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-5/dd6ca85e-4379-42c2-86ec-85354e50a56b/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -705,11 +703,10 @@
             "issue": "6",
             "query": "Young Justice 1998 6",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/6-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:43.523Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/53847b24-bff0-4d69-aa5e-535614b58fcf/fc91f061-8209-45a1-bfcf-953cbc909699/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-6/53847b24-bff0-4d69-aa5e-535614b58fcf/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -717,11 +714,10 @@
             "issue": "7",
             "query": "Young Justice 1998 7",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/7-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:44.028Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/dc3bbb80-f571-4356-bb1f-b3106dac2672/f7144ee1-b16c-4852-b485-cde0d5e4f9fc/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-7/dc3bbb80-f571-4356-bb1f-b3106dac2672/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -729,10 +725,10 @@
             "issue": "8",
             "query": "Young Justice 1998 8",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/8-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-8/adc3f94f-8985-4bc8-832f-46b5cdc8f696/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/adc3f94f-8985-4bc8-832f-46b5cdc8f696/4c3d487f-451a-451b-b998-5c76199c3b71/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:44.538Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -740,10 +736,10 @@
             "issue": "9",
             "query": "Young Justice 1998 9",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/9-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-9/66fa8144-1cfe-4dde-8717-819cd1d99a1a/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/66fa8144-1cfe-4dde-8717-819cd1d99a1a/1535cd2b-0eb8-46f0-9e23-501c8c154061/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:45.054Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -751,10 +747,10 @@
             "issue": "10",
             "query": "Young Justice 1998 10",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/10-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-10/5bc1c9c6-f05b-4451-8037-f9f13468363c/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/5bc1c9c6-f05b-4451-8037-f9f13468363c/5b59ee16-fdda-4b5b-b773-be1b5ef32c2b/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:45.572Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -762,11 +758,10 @@
             "issue": "11",
             "query": "Young Justice 1998 11",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/11-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:46.088Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/d2780f48-31e3-4939-be91-88267c1da65b/324130d3-af79-440c-97ad-e21a71b7db46/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-11/d2780f48-31e3-4939-be91-88267c1da65b/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -774,10 +769,10 @@
             "issue": "12",
             "query": "Young Justice 1998 12",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/12-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-12/06dd779c-4a08-41c8-a658-2f3563f31f23/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/06dd779c-4a08-41c8-a658-2f3563f31f23/6e1c43f4-1f39-45cb-987b-bae43fd34305/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:46.605Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -785,11 +780,10 @@
             "issue": "13",
             "query": "Young Justice 1998 13",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/13-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:47.122Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/96b8e355-cef4-410b-a1b2-0f1628e89683/5cebb7c0-8eba-4dba-919d-ca26bc21de02/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-13/96b8e355-cef4-410b-a1b2-0f1628e89683/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -797,10 +791,10 @@
             "issue": "14",
             "query": "Young Justice 1998 14",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/14-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-14/83ce2453-fb67-4d1b-8317-f5ee088a751b/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/83ce2453-fb67-4d1b-8317-f5ee088a751b/90bafd6d-58a2-4370-a7a0-a0087eb0793a/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:47.637Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -808,10 +802,10 @@
             "issue": "15",
             "query": "Young Justice 1998 15",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/15-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-15/5f1f0a77-3ca0-4c92-a175-a798dfc346be/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/5f1f0a77-3ca0-4c92-a175-a798dfc346be/5629a756-14de-4dc1-8246-0e705c36ded6/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:48.152Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -819,11 +813,10 @@
             "issue": "16",
             "query": "Young Justice 1998 16",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/16-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:48.670Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/59a3d583-efc1-402e-97ae-60779456bcb7/15020f02-4ee2-45ba-8bb0-09ae4f099020/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-16/59a3d583-efc1-402e-97ae-60779456bcb7/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -831,11 +824,10 @@
             "issue": "17",
             "query": "Young Justice 1998 17",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/17-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:49.188Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/27783b23-3e6c-4406-80a1-88178a63e86e/c2957829-c665-4674-9283-1f882ce84ed1/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-17/27783b23-3e6c-4406-80a1-88178a63e86e/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -843,11 +835,10 @@
             "issue": "18",
             "query": "Young Justice 1998 18",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/18-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:49.703Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/e795f081-ad9c-4626-bc83-be6c468a2689/472be6c3-7cd5-4f46-9301-8595ecd9136c/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-18/e795f081-ad9c-4626-bc83-be6c468a2689/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -855,11 +846,10 @@
             "issue": "19",
             "query": "Young Justice 1998 19",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/19-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:50.221Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/d1ce9823-81e3-4519-859d-850a8b04c146/abba5687-1886-4971-a294-a01b56342c3f/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-19/d1ce9823-81e3-4519-859d-850a8b04c146/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -867,11 +857,10 @@
             "issue": "20",
             "query": "Young Justice 1998 20",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/20-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:50.739Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/bbea069d-ff9b-4c9c-a75f-53085791af2e/63c9de0b-f0c3-4af8-bf17-1a8d2afca0ea/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-20/bbea069d-ff9b-4c9c-a75f-53085791af2e/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -879,11 +868,10 @@
             "issue": "21",
             "query": "Young Justice 1998 21",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/21-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:51.256Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/cea7a2f0-6df0-4732-b22b-b00782b3d099/bf974060-21c8-4bac-ab5d-f88e07bc6270/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-21/cea7a2f0-6df0-4732-b22b-b00782b3d099/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-001",
@@ -891,10 +879,10 @@
             "issue": "22",
             "query": "Young Justice 1998 22",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/22-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-22/baa30e53-8025-47e3-aa25-87a1bd71f42b/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/baa30e53-8025-47e3-aa25-87a1bd71f42b/0f5f4cbb-d84d-4432-8cfe-ca33faa44f76/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:51.772Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -902,10 +890,10 @@
             "issue": "23",
             "query": "Young Justice 1998 23",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/23-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-23/f4adcd27-9a39-4a6b-a0ea-14886ce2a7b5/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/f4adcd27-9a39-4a6b-a0ea-14886ce2a7b5/b5b30de7-8f43-4de7-802a-87103bab433e/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:52.288Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -913,11 +901,10 @@
             "issue": "24",
             "query": "Young Justice 1998 24",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/24-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:52.805Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/5f8315cc-9393-4394-b4df-53023bd38fa5/1c391e70-d2f1-444d-8c31-b4d7db7b4491/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-24/5f8315cc-9393-4394-b4df-53023bd38fa5/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -925,10 +912,10 @@
             "issue": "25",
             "query": "Young Justice 1998 25",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/25-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-25/3b345f8e-efdb-450c-89b1-d8d0b32e3cfe/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/3b345f8e-efdb-450c-89b1-d8d0b32e3cfe/cd5fedd2-479e-4d39-9ec5-c6d63f40fce6/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:53.318Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -936,10 +923,10 @@
             "issue": "26",
             "query": "Young Justice 1998 26",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/26-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-26/cc9a8a9f-ba7a-4744-9b77-f28a2e319922/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/cc9a8a9f-ba7a-4744-9b77-f28a2e319922/77ffd4bb-d6d6-4b62-a7aa-9e852822c438/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:53.822Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -947,10 +934,10 @@
             "issue": "27",
             "query": "Young Justice 1998 27",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/27-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-27/98d64a50-7e44-4982-9dd6-c715bbb8c054/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/98d64a50-7e44-4982-9dd6-c715bbb8c054/61a769f4-250c-439b-8763-66cfa645d1a8/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:54.338Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -958,10 +945,10 @@
             "issue": "28",
             "query": "Young Justice 1998 28",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/28-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-28/2769ba2e-ef82-4b34-920f-2a7a1d314e5e/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/2769ba2e-ef82-4b34-920f-2a7a1d314e5e/08b8c74b-7d0d-437c-9341-7ed62bc77520/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:54.854Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -969,11 +956,10 @@
             "issue": "29",
             "query": "Young Justice 1998 29",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/29-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:55.371Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/e239bfc5-420c-4434-a62f-dbc892b1fc9e/56755d11-b39e-47f6-94c3-0345ec43fa8f/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-29/e239bfc5-420c-4434-a62f-dbc892b1fc9e/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -981,10 +967,10 @@
             "issue": "30",
             "query": "Young Justice 1998 30",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/30-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-30/b3f428da-0d80-4fe4-b6c2-11f9d3eff3b5/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/b3f428da-0d80-4fe4-b6c2-11f9d3eff3b5/ec6567ec-5e5c-4092-9ec7-5143eb94f2bb/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:55.889Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -992,11 +978,10 @@
             "issue": "31",
             "query": "Young Justice 1998 31",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/31-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:56.405Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/2913543a-b0d7-47e9-8e30-2a4a12b49216/ee5364d8-806f-4a50-aa12-ee4e1d2a6c01/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-31/2913543a-b0d7-47e9-8e30-2a4a12b49216/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1004,11 +989,10 @@
             "issue": "32",
             "query": "Young Justice 1998 32",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/32-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:40:56.922Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/86ddbba5-b17e-4163-a7a6-60dc124ba450/275d7194-8257-4ade-9ca7-a881be5002f3/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-32/86ddbba5-b17e-4163-a7a6-60dc124ba450/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1016,10 +1000,10 @@
             "issue": "33",
             "query": "Young Justice 1998 33",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/33-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-33/c3e2fc3c-c7f9-48be-a766-9019393dbe6a/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/c3e2fc3c-c7f9-48be-a766-9019393dbe6a/07ef6efa-92ca-47c2-bb3c-6e21da00151c/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:57.435Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1027,10 +1011,10 @@
             "issue": "34",
             "query": "Young Justice 1998 34",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/34-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-34/0c1015c5-d943-4e66-8580-82106a6449cc/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/0c1015c5-d943-4e66-8580-82106a6449cc/cdd5ea98-e859-4753-8a9c-1e57c3c9e763/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:57.955Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1038,10 +1022,10 @@
             "issue": "35",
             "query": "Young Justice 1998 35",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/35-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-35/7393cfa8-1140-4e8e-a541-1a52570a8213/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/7393cfa8-1140-4e8e-a541-1a52570a8213/f1254350-4340-4f4d-8117-bb5a78f4c7ae/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:58.466Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1049,10 +1033,10 @@
             "issue": "36",
             "query": "Young Justice 1998 36",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/36-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-36/ce67ecfd-f4dc-4c28-9463-443823558a8e/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/ce67ecfd-f4dc-4c28-9463-443823558a8e/9098a7d4-0ff8-4f9d-a563-d71b04dea723/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:58.972Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1060,10 +1044,10 @@
             "issue": "37",
             "query": "Young Justice 1998 37",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/37-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-37/b0b641a8-0f34-4d99-8d1e-8a415cbe931a/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/b0b641a8-0f34-4d99-8d1e-8a415cbe931a/3b97660c-951e-4a01-aa1c-25c0d43e3c8b/0.jpg",
+            "fetchedAt": "2026-07-31T23:40:59.488Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1071,10 +1055,10 @@
             "issue": "38",
             "query": "Young Justice 1998 38",
             "status": "found",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/38-1.jpg",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "source": "CoverBrowser direct issue image"
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-38/975aef16-aa6f-4953-ba7b-ba2fa911c4ca/c",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/975aef16-aa6f-4953-ba7b-ba2fa911c4ca/37ef7646-ddff-4956-9337-6859d30eed88/0.jpg",
+            "fetchedAt": "2026-07-31T23:41:00.003Z",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1082,11 +1066,10 @@
             "issue": "39",
             "query": "Young Justice 1998 39",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/39-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:00.520Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/460c4673-0208-445b-9307-fd12a7ca7229/17c5ebef-e5bd-4cc3-bf5c-1626b100b516/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-39/460c4673-0208-445b-9307-fd12a7ca7229/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1094,11 +1077,10 @@
             "issue": "40",
             "query": "Young Justice 1998 40",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/40-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:01.038Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/79077bdf-cc27-4d9a-b746-eff6cb29679e/007551d7-1c8f-453a-b762-b1d0ea774901/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-40/79077bdf-cc27-4d9a-b746-eff6cb29679e/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1106,11 +1088,10 @@
             "issue": "41",
             "query": "Young Justice 1998 41",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/41-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:01.556Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/d0926bec-fc6f-4be9-b037-280e30125331/f63af8fb-5221-4809-bc8d-001541e6197a/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-41/d0926bec-fc6f-4be9-b037-280e30125331/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1118,11 +1099,10 @@
             "issue": "42",
             "query": "Young Justice 1998 42",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/42-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:02.071Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/55380c8e-dea3-4a8b-afbf-a4cf96018cb3/9fd12832-8e3f-46ed-aa91-5e0741b3620f/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-42/55380c8e-dea3-4a8b-afbf-a4cf96018cb3/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1130,11 +1110,10 @@
             "issue": "43",
             "query": "Young Justice 1998 43",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/43-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:02.587Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/a47cb6a0-77b7-4274-8d8d-e22990932607/d044471c-d45f-49f9-b6bd-fa93ce284c70/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-43/a47cb6a0-77b7-4274-8d8d-e22990932607/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1142,11 +1121,10 @@
             "issue": "44",
             "query": "Young Justice 1998 44",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/44-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:03.102Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/e66b36ce-3969-4984-929b-3acd7dde7a3f/b536afc7-ba07-4884-a46c-3caecbfc3b70/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-44/e66b36ce-3969-4984-929b-3acd7dde7a3f/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1154,11 +1132,10 @@
             "issue": "45",
             "query": "Young Justice 1998 45",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/45-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:03.606Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/43e18e97-f7b9-4ba5-a136-7834e798fd14/1ef00ea6-d19f-4bd5-9924-3329fa253640/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-45/43e18e97-f7b9-4ba5-a136-7834e798fd14/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "young-justice-002",
@@ -1166,11 +1143,10 @@
             "issue": "46",
             "query": "Young Justice 1998 46",
             "status": "found",
-            "error": "No HipComic listings found",
-            "fetchedAt": "2026-07-30T18:45:13.097Z",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/46-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image"
+            "fetchedAt": "2026-07-31T23:41:04.114Z",
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/5f4fe7a7-d5d9-4d30-b653-c096ef194c66/63f3837c-f6c6-492b-aed7-aeca67b31a06/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-46/5f4fe7a7-d5d9-4d30-b653-c096ef194c66/c",
+            "source": "DC Universe Infinite public series page"
         },
         {
             "labelId": "jonny-quest-001",
@@ -2138,90 +2114,91 @@
             "series": "Young Justice (1998)",
             "issue": "47",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/47-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/acf3024c-a8b5-4d7d-8d46-4e6f4a396459/9753953c-72f9-4f1b-9fa6-1eeb5ee63bd2/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-47/acf3024c-a8b5-4d7d-8d46-4e6f4a396459/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:04.620Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "48",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/48-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/7f687bcf-1d67-489d-b036-e2e0bb62ab9e/c0ecddb6-a76e-434c-9dc6-24f3dd99189a/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-48/7f687bcf-1d67-489d-b036-e2e0bb62ab9e/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:05.136Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "49",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/49-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/e9db5476-27bb-41bc-8dc8-9deb93a960de/1f6a3b41-66a2-49a5-9eeb-fb65278168a1/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-49/e9db5476-27bb-41bc-8dc8-9deb93a960de/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:05.653Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "50",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/50-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/cde8a30e-86de-48c0-bfa2-2ef7b7540a4f/4d759aed-aeb1-4961-8772-6d5c0828d46f/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-50/cde8a30e-86de-48c0-bfa2-2ef7b7540a4f/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:06.171Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "51",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/51-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/6d853df5-347c-47fb-a9a9-001927ba43d7/9beb52f8-8100-441c-ab01-dd6213657dfc/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-51/6d853df5-347c-47fb-a9a9-001927ba43d7/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:06.685Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "52",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/52-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/28b07515-bf37-446e-803c-9e1070e8b539/4c265b9b-d09b-4d02-9a18-0459fd9168bf/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-52/28b07515-bf37-446e-803c-9e1070e8b539/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:07.203Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "53",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/53-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/053eae9d-0556-46d4-9807-aa3eb1f3e718/1a7fa943-1b31-46e6-a800-39b302d27eeb/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-53/053eae9d-0556-46d4-9807-aa3eb1f3e718/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:07.719Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "54",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/54-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/5f0fd06f-1e35-448b-a740-b52851d04184/63072176-c451-4839-9cdb-dcec49018aba/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-54/5f0fd06f-1e35-448b-a740-b52851d04184/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:08.237Z"
         },
         {
             "labelId": "young-justice-003",
             "series": "Young Justice (1998)",
             "issue": "55",
             "status": "found",
-            "imageUrl": "https://www.coverbrowser.com/image/young-justice/55-1.jpg",
-            "listingUrl": "https://www.coverbrowser.com/covers/young-justice",
-            "source": "CoverBrowser direct issue image",
-            "fetchedAt": "2026-07-30T18:45:13.097Z"
+            "imageUrl": "https://imgix-media.wbdndc.net/ingest/book/preview/7608bb9c-b6a9-4336-a3b3-5d6724189795/c2024caa-1012-41cf-bb93-3b1fcf3af77f/0.jpg",
+            "listingUrl": "https://www.dcuniverseinfinite.com/comics/book/young-justice-1998-55/7608bb9c-b6a9-4336-a3b3-5d6724189795/c",
+            "source": "DC Universe Infinite public series page",
+            "fetchedAt": "2026-07-31T23:41:08.754Z"
         }
-    ]
+    ],
+    "stoppedForBlocking": false
 }
