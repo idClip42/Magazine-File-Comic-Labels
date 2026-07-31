@@ -900,10 +900,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/5ad0c29675ddf/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6348,
-                    "y": 0.4719
+                    "x": 0.6179,
+                    "y": 0.4319
                 },
-                "scale": 3.09
+                "scale": 4.099
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5ace3e23e5549/clean.jpg",
@@ -950,8 +950,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/d0/5acf9a9a00a2f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.1662,
-                    "y": 0.6442
+                    "x": 0.1386,
+                    "y": 0.6716
                 },
                 "scale": 1.441
             },
@@ -1094,10 +1094,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5ad770f71c6a5/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6303,
-                    "y": 0.1648
+                    "x": 0.6113,
+                    "y": 0.165
                 },
-                "scale": 1.682
+                "scale": 2.267
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/7/90/57e9737ed5b58/clean.jpg",
@@ -1143,10 +1143,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/90/5ada2dff10a81/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6447,
-                    "y": 0.7904
+                    "x": 0.6539,
+                    "y": 0.7595
                 },
-                "scale": 2.676
+                "scale": 3.064
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/51db2cd16e956/clean.jpg",
@@ -1252,13 +1252,13 @@
         "category": "fantastic-four",
         "logo": "fraction",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/b0/5280f99f8dfe6/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/5b2cfee8f1f29/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6878,
-                    "y": 0.5231
+                    "x": 0.5463,
+                    "y": 0.308
                 },
-                "scale": 2.158
+                "scale": 3.409
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Fantastic_Four_Vol_4_4.jpg",
@@ -1316,13 +1316,13 @@
         "category": "fantastic-four",
         "logo": "robinson",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/a0/5c1aa35534e3b/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/5be371766f20b/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4565,
-                    "y": 0.7304
+                    "x": 0.3739,
+                    "y": 0.8517
                 },
-                "scale": 2.078
+                "scale": 2.125
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/c/c9/Fantastic_Four_Vol_5_14.jpg",
@@ -1552,13 +1552,13 @@
         "category": "fantastic-four",
         "logo": "current-2025",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/685d4f1cb5451/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/68b9f0d0234bf/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.013,
-                    "y": 1
+                    "x": 0.5226,
+                    "y": 0.7457
                 },
-                "scale": 2.321
+                "scale": 2.666
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/685d4d10223ea/clean.jpg",
@@ -1686,14 +1686,18 @@
         "category": "fantastic-four",
         "logo": "marvels-greatest-comics",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/f0/5aaac0dd43121/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.1075,
+                    "x": 0.1056,
                     "y": 1
                 },
-                "scale": 2.73
-            }
+                "scale": 3.227
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/f0/5aaac0dd43121/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1706,13 +1710,13 @@
         "category": "fantastic-four",
         "logo": "marvel-two-in-one",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/60/5b281c6801f92/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5419,
+                    "x": 0.7257,
                     "y": 1
                 },
-                "scale": 1.903
+                "scale": 1.888
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Two-In-One_Vol_1_60.jpg",
@@ -1727,7 +1731,8 @@
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/5b7ed61c3e2b0/clean.jpg",
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/5b9ff7cc7c53a/clean.jpg",
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/b/40/5bd207b20bac5/clean.jpg",
-                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/d0/5bf477574b2a8/clean.jpg"
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/d0/5bf477574b2a8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/60/5b281c6801f92/clean.jpg"
             ]
         },
         "contents": [
@@ -1751,10 +1756,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/80/5c87da1bae84f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4679,
-                    "y": 0.4707
+                    "x": 0.4678,
+                    "y": 0.4569
                 },
-                "scale": 3.856
+                "scale": 3.872
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg",
@@ -1833,10 +1838,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Fantastic_Four_Unlimited_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.1771,
-                    "y": 0.465
+                    "x": 0.2148,
+                    "y": 0.383
                 },
-                "scale": 2.402
+                "scale": 3.976
             }
         },
         "contents": [
@@ -1854,11 +1859,15 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6867,
-                    "y": 0.7392
+                    "x": 0.6963,
+                    "y": 0.7966
                 },
                 "scale": 1.821
-            }
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/5ab51b1c28789/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1935,14 +1944,18 @@
         "category": "fantastic-four",
         "logo": "ff-fanfare",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/a0/6808f3d31c483/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.7078,
-                    "y": 0.2889
+                    "x": 0.4922,
+                    "y": 0.6779
                 },
-                "scale": 3.858
-            }
+                "scale": 3.304
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/a0/6808f3d31c483/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1956,14 +1969,18 @@
         "category": "fantastic-four",
         "logo": "planet-apes-ff",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/80/69a088649c6fe/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.0948,
-                    "y": 0.1369
+                    "x": 0.617,
+                    "y": 0.9744
                 },
-                "scale": 4.171
-            }
+                "scale": 1.787
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/7/80/69a088649c6fe/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -2157,14 +2174,18 @@
         "category": "fantastic-four",
         "logo": "classic",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/10/5ddd7e646724f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5047,
-                    "y": 0.1337
+                    "x": 0.3752,
+                    "y": 0.3176
                 },
-                "scale": 2.402
-            }
+                "scale": 2.417
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/a/10/5ddd7e646724f/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -2178,14 +2199,19 @@
         "category": "fantastic-four",
         "logo": "classic",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
+            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/Fantastic_Four_Road_Trip_Vol_1_1_Del_Mundo_Variant.jpg/revision/latest?cb=20201129004528",
             "crop": {
                 "focus": {
-                    "x": 0.4217,
-                    "y": 0.3004
+                    "x": 0.1442,
+                    "y": 0.2703
                 },
-                "scale": 8.193
-            }
+                "scale": 1.237
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/40/5e4c363e98466/clean.jpg",
+                "https://static.wikia.nocookie.net/marveldatabase/images/4/45/Fantastic_Four_Road_Trip_Vol_1_1_Del_Mundo_Variant.jpg/revision/latest?cb=20201129004528"
+            ]
         },
         "contents": [
             {
