@@ -34,25 +34,25 @@
                 "asset": "logos/ff-logo-north.svg"
             },
             "ultimate-fantastic-four": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Ultimate+Fantastic+Four+logo+needed"
+                "asset": "logos/uff-logo.svg"
             },
             "marvel-knights-4": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Marvel+Knights+4+logo+needed"
+                "asset": "logos/mk4-logo.svg"
             },
             "thing": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=The+Thing+logo+needed"
+                "asset": "logos/thing-logo.svg"
             },
             "marvel-two-in-one": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Marvel+Two-In-One+logo+needed"
+                "asset": "logos/2-in-1-logo.svg"
             },
             "current-2025": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=2025+Fantastic+Four+logo+needed"
+                "asset": "logos/ff-v8-logo.svg"
             },
             "movie-tie-ins": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Fantastic+Four+Movie+Tie-Ins+logo+needed"
+                "asset": "logos/fffs-logo.svg"
             },
             "marvels-greatest-comics": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Marvels+Greatest+Comics+logo+needed"
+                "asset": "logos/marvel-greatest-comics-logo.svg"
             },
             "miniseries-generic": {
                 "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Minisereis+logos+needed"
