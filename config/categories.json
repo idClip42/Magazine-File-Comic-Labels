@@ -88,7 +88,7 @@
                 "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+New+Mutants+logo+needed"
             },
             "new-mutants-second-logo": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Second+New+Mutants+logo+needed"
+                "asset": "logos/nm-2-logo.svg"
             },
             "x-men": {
                 "asset": "logos/xmen-logo.svg"
@@ -97,7 +97,7 @@
                 "asset": "logos/excalibur-logo.svg"
             },
             "excalibur-late": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Later+Excalibur+logo+needed"
+                "asset": "logos/excalibur-2-logo.svg"
             },
             "wolverine": {
                 "asset": "logos/wolverine-logo.svg"
@@ -124,13 +124,13 @@
                 "asset": "logos/im-logo.svg"
             },
             "daredevil-classic": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Classic+Daredevil+logo+needed"
+                "asset": "logos/dd-older-logo.svg"
             },
             "daredevil-modern": {
                 "asset": "logos/dd-logo.svg"
             },
             "she-hulk-modern": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+She-Hulk+logo+needed"
+                "asset": "logos/she-hulk-modern-logo.svg"
             },
             "amazing-spider-man": {
                 "asset": "logos/asm-logo.svg"
@@ -190,7 +190,7 @@
                 "asset": "logos/batman-logo.svg"
             },
             "batman-modern": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Modern+Batman+logo+needed"
+                "asset": "logos/batman-2-logo.svg"
             },
             "the-new-teen-titans": {
                 "asset": "logos/ntt-logo.svg"

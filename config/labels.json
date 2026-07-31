@@ -1736,13 +1736,18 @@
         "category": "fantastic-four",
         "logo": "movie-tie-ins",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fantastic+Four+Movie+Tie-Ins",
+            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.4217,
+                    "y": 0.3004
                 },
-                "scale": 1
+                "scale": 8.193,
+                "legacy": {
+                    "topInches": -1.1,
+                    "leftInches": -0.9,
+                    "zoom": 0.85
+                }
             }
         },
         "contents": [
