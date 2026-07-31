@@ -1319,8 +1319,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/a0/5c1aa35534e3b/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4413,
-                    "y": 0.7817
+                    "x": 0.4565,
+                    "y": 0.7304
                 },
                 "scale": 2.078
             },
@@ -1377,13 +1377,13 @@
         "category": "fantastic-four",
         "logo": "slott",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/5e67bd860ca13/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/a0/5f2da4ec98037/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.309,
-                    "y": 0.3698
+                    "x": 0.8252,
+                    "y": 0.8006
                 },
-                "scale": 2.732
+                "scale": 1.931
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/1/a0/5c6dda05eab2c/clean.jpg",
@@ -1552,19 +1552,21 @@
         "category": "fantastic-four",
         "logo": "current-2025",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/685d4d10223ea/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/685d4f1cb5451/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.013,
+                    "y": 1
                 },
-                "scale": 1
+                "scale": 2.321
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/685d4d10223ea/clean.jpg",
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/7/80/688a67b7dc559/clean.jpg",
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/68b9f0d0234bf/clean.jpg",
-                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/68e6707d1cc5a/clean.jpg"
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/68e6707d1cc5a/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/685d4f1cb5451/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/03/685d4f1406916/clean.jpg"
             ]
         },
         "contents": [
@@ -1581,14 +1583,18 @@
         "category": "fantastic-four",
         "logo": "movie-tie-ins",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/69aee03385b91/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4217,
-                    "y": 0.3004
+                    "x": 0.8147,
+                    "y": 0.9313
                 },
-                "scale": 8.193
-            }
+                "scale": 1.517
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/69aee03385b91/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -1602,13 +1608,13 @@
         "category": "fantastic-four",
         "logo": "classic",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/f0/5ad790a5a5116/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/b/80/5ad79a13aa41a/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.48,
-                    "y": 0.68
+                    "x": 0.9166,
+                    "y": 0.6139
                 },
-                "scale": 2.47
+                "scale": 3.766
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/9/f0/5ad769d1d8f70/clean.jpg",
@@ -1641,13 +1647,13 @@
         "category": "fantastic-four",
         "logo": "classic",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/5a25850114160/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/c0/5ad8f2865ddcc/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.4361,
+                    "y": 0.6343
                 },
-                "scale": 1
+                "scale": 1.588
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/4c365d7a150b1/clean.jpg",
@@ -1683,10 +1689,10 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4357,
-                    "y": 0.9154
+                    "x": 0.1075,
+                    "y": 1
                 },
-                "scale": 1.82
+                "scale": 2.73
             }
         },
         "contents": [
