@@ -51,6 +51,24 @@
     },
     "runs": [
         {
+            "id": "sensational-she-hulk-byrne-1-8",
+            "labelId": "she-hulk-001",
+            "seriesId": 22964,
+            "issues": [1, 8]
+        },
+        {
+            "id": "sensational-she-hulk-byrne-31-46",
+            "labelId": "she-hulk-001",
+            "seriesId": 22964,
+            "issues": [31, 46]
+        },
+        {
+            "id": "sensational-she-hulk-byrne-48-50",
+            "labelId": "she-hulk-001",
+            "seriesId": 22964,
+            "issues": [48, 50]
+        },
+        {
             "id": "ff-legacy-401-416",
             "labelId": "fantastic-four-014",
             "seriesId": 2121,

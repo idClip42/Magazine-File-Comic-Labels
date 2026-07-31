@@ -3306,14 +3306,43 @@
         "category": "marvel-characters",
         "logo": "she-hulk",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Sensational_She-Hulk_Vol_1_1.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/4/a0/5a0cab1cddde8/clean.jpg",
             "crop": {
                 "focus": {
                     "x": 0.5059,
                     "y": 0.5096
                 },
                 "scale": 1.628
-            }
+            },
+            "options": [
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/4/a0/5a0cab1cddde8/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/8/d0/5a0ca9e0970c1/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/50/5a0caa0b48fbc/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/40/5a0caa3f0bbe6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/b0/5a0ca8ccb8143/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/a0/5a0ca8a2a8cc5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/5a0ca8a613697/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/60/5a0ca8ec964b6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/80/5a73ad1e2eaac/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/f0/5a73ad343f243/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5a73af8180a9e/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/5a73af1e9ca1c/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/40/5a73af186e0dd/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/50/5a73aef19efa2/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/30/5a73aed9bbeea/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/5a73ab8ca8740/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/5a73abd9cbe83/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/30/5a73ab3a1ef9f/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/f0/5a73ab68389d5/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/5a73ab86dc3d9/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/f0/5a73abd9b3b70/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/f0/5a73ac91f33ca/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/5a73accf7f634/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/e0/5a73ac6987065/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/5a73ac570d558/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/60/5a73aca812687/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/5a73acc58bce7/clean.jpg"
+            ]
         },
         "contents": [
             {
