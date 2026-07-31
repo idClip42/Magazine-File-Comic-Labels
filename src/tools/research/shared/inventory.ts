@@ -41,7 +41,7 @@ export function writeResearchJson(filePath: string, value: unknown): void {
     const temporaryPath = `${filePath}.tmp`;
     fs.writeFileSync(
         temporaryPath,
-        `${JSON.stringify(value, null, 2)}${lineEnding}`,
+        `${JSON.stringify(value, null, 4)}${lineEnding}`,
         "utf8",
     );
     fs.renameSync(temporaryPath, filePath);
