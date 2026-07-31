@@ -3306,13 +3306,13 @@
         "category": "marvel-characters",
         "logo": "she-hulk",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/4/a0/5a0cab1cddde8/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/d0/5a0ca9e0970c1/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5059,
-                    "y": 0.5096
+                    "x": 0.7822,
+                    "y": 0.8194
                 },
-                "scale": 1.628
+                "scale": 1.822
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/4/a0/5a0cab1cddde8/clean.jpg",
