@@ -2608,7 +2608,7 @@
             "crop": {
                 "focus": {
                     "x": 0.5238,
-                    "y": 0.6689
+                    "y": 0.6985
                 },
                 "scale": 1.656
             },
@@ -2705,8 +2705,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/0/03/511417055a5e7/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3529,
-                    "y": 0.6922
+                    "x": 0.3475,
+                    "y": 0.6888
                 },
                 "scale": 3.152
             },
@@ -3144,14 +3144,18 @@
         "category": "x-family",
         "logo": "wolverine",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/535145fc17988/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.561,
-                    "y": 0.3365
+                    "x": 0.5414,
+                    "y": 0.3988
                 },
-                "scale": 2.488
-            }
+                "scale": 2.189
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Wolverine_Vol_2_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/535145fc17988/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3189,14 +3193,20 @@
         "category": "marvel-characters",
         "logo": "black-cat",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Black_Cat_Vol_2_5.jpg",
+            "asset": "https://www.alexrossart.com/cdn/shop/products/BLACKCAT.jpg?v=1675177792",
             "crop": {
                 "focus": {
-                    "x": 0.4966,
-                    "y": 0.3675
+                    "x": 0.3902,
+                    "y": 0.2922
                 },
-                "scale": 2.071
-            }
+                "scale": 1.223
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Black_Cat_Vol_2_5.jpg",
+                "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Black_Cat_Annual_Vol_1_1_Nauck_Variant.jpg/revision/latest/scale-to-width-down/1200?cb=20191107190245",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/10/60b793024d7b2/clean.jpg",
+                "https://www.alexrossart.com/cdn/shop/products/BLACKCAT.jpg?v=1675177792"
+            ]
         },
         "contents": [
             {
@@ -3253,14 +3263,20 @@
         "category": "marvel-characters",
         "logo": "dr-strange",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/65e885c281149/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4998,
-                    "y": 0.4426
+                    "x": 0.489,
+                    "y": 0.5572
                 },
-                "scale": 3.53
-            }
+                "scale": 2.643
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Doctor_Strange_Vol_6_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/654bb175064b6/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/20/65b7d7b5a2350/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/65e885c281149/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3338,13 +3354,13 @@
         "category": "marvel-characters",
         "logo": "she-hulk",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/d0/5a0ca9e0970c1/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/1/80/5a73ad1e2eaac/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.7822,
-                    "y": 0.8194
+                    "x": 0.5623,
+                    "y": 0.3309
                 },
-                "scale": 1.822
+                "scale": 3.267
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/4/a0/5a0cab1cddde8/clean.jpg",
@@ -3388,14 +3404,21 @@
         "category": "marvel-characters",
         "logo": "she-hulk-modern",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/b/20/62dab302b41ea/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5914,
-                    "y": 0.089
+                    "x": 0.4174,
+                    "y": 0.3745
                 },
-                "scale": 2.424
-            }
+                "scale": 1.555
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/She-Hulk_Vol_5_1_Cover_A.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/60/62017952b56ec/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/20/62dab302b41ea/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/e/80/6529919f65049/clean.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/65298f312ad56/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3409,14 +3432,18 @@
         "category": "marvel-characters",
         "logo": "spider-man",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Various+Series",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/2/04/5cffc7437ebe9/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6641,
+                    "y": 0.5269
                 },
-                "scale": 1
-            }
+                "scale": 2.042
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Various+Series",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/2/04/5cffc7437ebe9/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3429,14 +3456,18 @@
         "category": "marvel-characters",
         "logo": "spider-man",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Minis",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/b/03/537675a62a645/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.1654,
+                    "y": 0.6006
                 },
-                "scale": 1
-            }
+                "scale": 1.485
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Spider-Man+Minis",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/b/03/537675a62a645/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3449,13 +3480,13 @@
         "category": "marvel-specials",
         "logo": "earth-x",
         "art": {
-            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/50/5a95b26e97d8e/clean.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/5a95b2749a63c/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4063,
-                    "y": 0.6331
+                    "x": 0.4784,
+                    "y": 0.4158
                 },
-                "scale": 1.715
+                "scale": 1.863
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/e/d0/4bb7d2da504fc/clean.jpg",
@@ -3507,14 +3538,18 @@
         "category": "marvel-specials",
         "logo": "marvel-fanfare",
         "art": {
-            "asset": "https://marvel.fandom.com/wiki/Special:FilePath/Marvel_Fanfare_Vol_1_1.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/6100341bb85fd/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.2441,
+                    "y": 0.4797
                 },
-                "scale": 1
-            }
+                "scale": 1.757
+            },
+            "options": [
+                "https://marvel.fandom.com/wiki/Special:FilePath/Marvel_Fanfare_Vol_1_1.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/6100341bb85fd/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3580,14 +3615,18 @@
         "category": "marvel-specials",
         "logo": "what-if",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/What_If%3F_Vol_1_36.jpg",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5bd889b36c810/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4468,
-                    "y": 0.3204
+                    "x": 0.752,
+                    "y": 1
                 },
-                "scale": 1
-            }
+                "scale": 3.745
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marveldatabase/images/4/45/What_If%3F_Vol_1_36.jpg",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5bd889b36c810/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3637,8 +3676,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/4/10/6596e0f7d0718/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6175,
-                    "y": 0.3572
+                    "x": 0.6144,
+                    "y": 0.3562
                 },
                 "scale": 3.856
             },
@@ -3730,14 +3769,18 @@
         "category": "dc-universe",
         "logo": "batman",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
+            "asset": "https://static.wikia.nocookie.net/batman/images/f/f7/MovieSpecial.jpg/revision/latest?cb=20100928170136",
             "crop": {
                 "focus": {
-                    "x": 0.7238,
-                    "y": 0.5344
+                    "x": 0,
+                    "y": 0.9963
                 },
-                "scale": 3.722
-            }
+                "scale": 1.637
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
+                "https://static.wikia.nocookie.net/batman/images/f/f7/MovieSpecial.jpg/revision/latest?cb=20100928170136"
+            ]
         },
         "contents": [
             {
@@ -3750,14 +3793,18 @@
         "category": "dc-universe",
         "logo": "batman-modern",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Batman",
+            "asset": "https://static.dc.com/dc/files/default_images/BM89_01%2520%2528COVER%2529_610050217214a5.91852101.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5086,
+                    "y": 0.3589
                 },
-                "scale": 1
-            }
+                "scale": 6.819
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Batman",
+                "https://static.dc.com/dc/files/default_images/BM89_01%2520%2528COVER%2529_610050217214a5.91852101.jpg"
+            ]
         },
         "contents": [
             {
@@ -3773,10 +3820,10 @@
             "asset": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.516,
-                    "y": 0.7079
+                    "x": 0.5222,
+                    "y": 1
                 },
-                "scale": 2.046
+                "scale": 1.442
             }
         },
         "contents": [
@@ -3791,14 +3838,20 @@
         "category": "dc-universe",
         "logo": "superman",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/dc1cd8fe-b5ff-410f-b98c-72d728348f72/58b4388d-c5fb-4b5a-8376-88ea9870ea30/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3787,
-                    "y": 0.6951
+                    "x": 0.3794,
+                    "y": 0.5881
                 },
-                "scale": 1.746
-            }
+                "scale": 2.167
+            },
+            "options": [
+                "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_1_680.jpg",
+                "https://static.dc.com/dc/files/default_images/SM_78_CE%2520%2528Cover%2529_62c7c59bdce385.77808644.jpg",
+                "https://dccomicsnews.com/wp-content/uploads/2021/11/Superman-78-4-1-scaled.jpg",
+                "https://imgix-media.wbdndc.net/ingest/book/preview/dc1cd8fe-b5ff-410f-b98c-72d728348f72/58b4388d-c5fb-4b5a-8376-88ea9870ea30/0.jpg"
+            ]
         },
         "contents": [
             {
@@ -3811,13 +3864,13 @@
         "category": "dc-universe",
         "logo": "teen-titans-go",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/d/dd/Teen_Titans_Go%21_1.jpg/revision/latest?cb=20070207173919",
+            "asset": "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg/revision/latest?cb=20110503134236",
             "crop": {
                 "focus": {
-                    "x": 0.2751,
-                    "y": 0.5611
+                    "x": 0.2831,
+                    "y": 0.503
                 },
-                "scale": 2.607
+                "scale": 3.574
             },
             "options": [
                 "https://static.wikia.nocookie.net/marvel_dc/images/d/dd/Teen_Titans_Go%21_1.jpg/revision/latest?cb=20070207173919",
@@ -3847,7 +3900,8 @@
                 "https://static.wikia.nocookie.net/marvel_dc/images/c/c9/Teen_Titans_Go%21_Vol_1_25.jpg/revision/latest?cb=20110521213212",
                 "https://static.wikia.nocookie.net/marvel_dc/images/4/47/Teen_Titans_Go%21_Vol_1_26.jpg/revision/latest?cb=20110521213213",
                 "https://static.wikia.nocookie.net/marvel_dc/images/3/37/Teen_Titans_Go%21_Vol_1_27.jpg/revision/latest?cb=20110521213214",
-                "https://static.wikia.nocookie.net/marvel_dc/images/e/e4/Teen_Titans_Go%21_Vol_1_28.jpg/revision/latest?cb=20110521213214"
+                "https://static.wikia.nocookie.net/marvel_dc/images/e/e4/Teen_Titans_Go%21_Vol_1_28.jpg/revision/latest?cb=20110521213214",
+                "https://static.wikia.nocookie.net/teentitans/images/9/9d/Demo_pg_1.jpg/revision/latest?cb=20110503134236"
             ]
         },
         "contents": [
@@ -3863,13 +3917,13 @@
         "category": "dc-universe",
         "logo": "teen-titans-go",
         "art": {
-            "asset": "https://static.wikia.nocookie.net/marvel_dc/images/7/73/Teen_Titans_Go%21_Vol_1_49.jpg/revision/latest?cb=20110521214502",
+            "asset": "https://static.wikia.nocookie.net/teentitans/images/4/40/Legacy.jpg/revision/latest?cb=20191212191330",
             "crop": {
                 "focus": {
-                    "x": 0.1218,
-                    "y": 0.5318
+                    "x": 0.3627,
+                    "y": 0.7791
                 },
-                "scale": 1.568
+                "scale": 2.503
             },
             "options": [
                 "https://static.wikia.nocookie.net/marvel_dc/images/e/e1/Teen_Titans_Go%21_Vol_1_29.jpg/revision/latest?cb=20110521213215",
@@ -3898,7 +3952,8 @@
                 "https://static.wikia.nocookie.net/marvel_dc/images/9/9d/Teen_Titans_Go%21_Vol_1_52.jpg/revision/latest?cb=20110520213058",
                 "https://static.wikia.nocookie.net/marvel_dc/images/3/3b/Teen_Titans_Go%21_Vol_1_53.jpg/revision/latest?cb=20110521214427",
                 "https://static.wikia.nocookie.net/marvel_dc/images/8/8f/Teen_Titans_Go%21_Vol_1_54.jpg/revision/latest?cb=20110521213856",
-                "https://static.wikia.nocookie.net/marvel_dc/images/d/d3/Teen_Titans_Go%21_Vol_1_55.jpg/revision/latest?cb=20110520212023"
+                "https://static.wikia.nocookie.net/marvel_dc/images/d/d3/Teen_Titans_Go%21_Vol_1_55.jpg/revision/latest?cb=20110520212023",
+                "https://static.wikia.nocookie.net/teentitans/images/4/40/Legacy.jpg/revision/latest?cb=20191212191330"
             ]
         },
         "contents": [
@@ -3914,13 +3969,13 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://www.coverbrowser.com/image/young-justice/6-1.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/53847b24-bff0-4d69-aa5e-535614b58fcf/fc91f061-8209-45a1-bfcf-953cbc909699/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.482,
-                    "y": 0.5921
+                    "x": 0.5119,
+                    "y": 0.4734
                 },
-                "scale": 1.568
+                "scale": 1.508
             },
             "options": [
                 "https://www.coverbrowser.com/image/young-justice/1-1.jpg",
@@ -3944,7 +3999,8 @@
                 "https://www.coverbrowser.com/image/young-justice/19-1.jpg",
                 "https://www.coverbrowser.com/image/young-justice/20-1.jpg",
                 "https://www.coverbrowser.com/image/young-justice/21-1.jpg",
-                "https://www.coverbrowser.com/image/young-justice/22-1.jpg"
+                "https://www.coverbrowser.com/image/young-justice/22-1.jpg",
+                "https://imgix-media.wbdndc.net/ingest/book/preview/53847b24-bff0-4d69-aa5e-535614b58fcf/fc91f061-8209-45a1-bfcf-953cbc909699/0.jpg"
             ]
         },
         "contents": [
@@ -3960,13 +4016,13 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://www.coverbrowser.com/image/young-justice/23-1.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/79077bdf-cc27-4d9a-b746-eff6cb29679e/007551d7-1c8f-453a-b762-b1d0ea774901/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5149,
-                    "y": 0
+                    "x": 0.5286,
+                    "y": 0.0971
                 },
-                "scale": 1.568
+                "scale": 1.546
             },
             "options": [
                 "https://www.coverbrowser.com/image/young-justice/23-1.jpg",
@@ -3992,7 +4048,8 @@
                 "https://www.coverbrowser.com/image/young-justice/43-1.jpg",
                 "https://www.coverbrowser.com/image/young-justice/44-1.jpg",
                 "https://www.coverbrowser.com/image/young-justice/45-1.jpg",
-                "https://www.coverbrowser.com/image/young-justice/46-1.jpg"
+                "https://www.coverbrowser.com/image/young-justice/46-1.jpg",
+                "https://imgix-media.wbdndc.net/ingest/book/preview/79077bdf-cc27-4d9a-b746-eff6cb29679e/007551d7-1c8f-453a-b762-b1d0ea774901/0.jpg"
             ]
         },
         "contents": [
@@ -4008,13 +4065,13 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://www.coverbrowser.com/image/young-justice/54-1.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/5f0fd06f-1e35-448b-a740-b52851d04184/63072176-c451-4839-9cdb-dcec49018aba/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5563,
-                    "y": 0.7489
+                    "x": 0.5374,
+                    "y": 0.7207
                 },
-                "scale": 2.459
+                "scale": 2.468
             },
             "options": [
                 "https://www.coverbrowser.com/image/young-justice/47-1.jpg",
@@ -4025,7 +4082,8 @@
                 "https://www.coverbrowser.com/image/young-justice/52-1.jpg",
                 "https://www.coverbrowser.com/image/young-justice/53-1.jpg",
                 "https://www.coverbrowser.com/image/young-justice/54-1.jpg",
-                "https://www.coverbrowser.com/image/young-justice/55-1.jpg"
+                "https://www.coverbrowser.com/image/young-justice/55-1.jpg",
+                "https://imgix-media.wbdndc.net/ingest/book/preview/5f0fd06f-1e35-448b-a740-b52851d04184/63072176-c451-4839-9cdb-dcec49018aba/0.jpg"
             ]
         },
         "contents": [
