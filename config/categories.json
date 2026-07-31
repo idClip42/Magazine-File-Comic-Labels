@@ -54,8 +54,26 @@
             "marvels-greatest-comics": {
                 "asset": "logos/marvel-greatest-comics-logo.svg"
             },
-            "miniseries-generic": {
-                "asset": "https://placehold.co/1200x400/eeeeee/111111?text=Minisereis+logos+needed"
+            "4-first-family": {
+                "asset": "logos/4ff-logo.svg"
+            },
+            "1602-ff": {
+                "asset": "logos/1602-ff-logo.svg"
+            },
+            "worlds-greatest": {
+                "asset": "logos/ff-wgcm-logo.svg"
+            },
+            "ff-fanfare": {
+                "asset": "logos/fff-logo.svg"
+            },
+            "giant-size-ff": {
+                "asset": "logos/gs-ff-logo.svg"
+            },
+            "invisible-woman": {
+                "asset": "logos/iw-logo.svg"
+            },
+            "planet-apes-ff": {
+                "asset": "logos/planet-apes-ff-logo.svg"
             }
         }
     },

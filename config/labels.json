@@ -1981,7 +1981,7 @@
     {
         "id": "fantastic-four-025",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "giant-size-ff",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Official_Marvel_Index_to_Fantastic_Four_Vol_1_2.jpg",
             "crop": {
@@ -2007,7 +2007,7 @@
     {
         "id": "fantastic-four-026",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "classic",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Fantastic_Four_Unlimited_Vol_1_1.jpg",
             "crop": {
@@ -2033,7 +2033,7 @@
     {
         "id": "fantastic-four-027",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "worlds-greatest",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg",
             "crop": {
@@ -2059,7 +2059,7 @@
     {
         "id": "fantastic-four-028",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "4-first-family",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Fantastic_Four_First_Family_Vol_1_1.jpg",
             "crop": {
@@ -2078,14 +2078,14 @@
         "contents": [
             {
                 "name": "Miniseries",
-                "years": [2002, 2009]
+                "years": [2002, 2006]
             }
         ]
     },
     {
         "id": "fantastic-four-029",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "1602-ff",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/Marvel_1602_Fantastick_Four_Vol_1_1.jpg",
             "crop": {
@@ -2111,7 +2111,7 @@
     {
         "id": "fantastic-four-030",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "invisible-woman",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Invisible_Woman_Vol_1_3.jpg",
             "crop": {
@@ -2137,7 +2137,7 @@
     {
         "id": "fantastic-four-031",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "ff-fanfare",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
             "crop": {
@@ -2163,7 +2163,7 @@
     {
         "id": "fantastic-four-034",
         "category": "fantastic-four",
-        "logo": "miniseries-generic",
+        "logo": "planet-apes-ff",
         "art": {
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Fantastic_Four_Fanfare_Vol_1_3.jpg",
             "crop": {
