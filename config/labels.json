@@ -3133,14 +3133,18 @@
         "category": "marvel-characters",
         "logo": "amazing-spider-man",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Amazing+Spider-Man",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/d/10/595fe7b38c7ac/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5424,
+                    "y": 0.7683
                 },
-                "scale": 1
-            }
+                "scale": 3.321
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Amazing+Spider-Man",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/d/10/595fe7b38c7ac/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3193,14 +3197,18 @@
         "category": "marvel-characters",
         "logo": "daredevil-classic",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5b508b52cff26/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.4615,
+                    "y": 0.6834
                 },
-                "scale": 1
-            }
+                "scale": 3.906
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5b508b52cff26/clean.jpg"
+            ]
         },
         "contents": [
             {
@@ -3253,14 +3261,18 @@
         "category": "marvel-characters",
         "logo": "jessica-jones",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Jessica+Jones",
+            "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/d0/586ebb4ec2972/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.5357,
+                    "y": 0.5814
                 },
-                "scale": 1
-            }
+                "scale": 1.568
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Jessica+Jones",
+                "https://cdn.marvel.com/u/prod/marvel/i/mg/9/d0/586ebb4ec2972/clean.jpg"
+            ]
         },
         "contents": [
             {
