@@ -15,7 +15,7 @@
     },
     "identityBand": {
         "bottomInches": 9.15,
-        "heightInches": 1.9
+        "heightInches": 3
     },
     "fingerHole": {
         "diameterInches": 1.75,
@@ -24,12 +24,12 @@
     },
     "metadataBand": {
         "topInches": 10.25,
-        "heightInches": 1.15
+        "heightInches": 0.91
     },
     "typography": {
-        "yearsSizeInches": 0.29,
-        "metadataSizeInches": 0.13,
-        "bandGapInches": 0.045
+        "yearsSizeInches": 0.5,
+        "metadataSizeInches": 0.1,
+        "bandGapInches": 0.025
     },
     "years": {
         "display": "condensed-range",

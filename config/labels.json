@@ -595,8 +595,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/b/d0/55f0a434aac7d/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3572,
-                    "y": 0.4453
+                    "x": 0.357,
+                    "y": 0.4575
                 },
                 "scale": 4.594
             },
@@ -644,8 +644,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/50/4c365f92dcac3/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.8821,
-                    "y": 0.6725
+                    "x": 0.8834,
+                    "y": 0.7047
                 },
                 "scale": 2.555
             },
@@ -791,10 +791,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/52618127cccf7/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3205,
-                    "y": 0.9275
+                    "x": 0.3336,
+                    "y": 1
                 },
-                "scale": 1.353
+                "scale": 1.352
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/Fantastic_Four_Vol_2_1.jpg",
@@ -1045,8 +1045,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/57e975e070f06/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3597,
-                    "y": 0.2879
+                    "x": 0.3538,
+                    "y": 0.3562
                 },
                 "scale": 1.922
             },
@@ -1094,8 +1094,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5ad770f71c6a5/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6113,
-                    "y": 0.165
+                    "x": 0.6107,
+                    "y": 0.1575
                 },
                 "scale": 2.267
             },
@@ -1143,8 +1143,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/90/5ada2dff10a81/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6539,
-                    "y": 0.7595
+                    "x": 0.6531,
+                    "y": 0.791
                 },
                 "scale": 3.064
             },
@@ -1202,8 +1202,8 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/FF_Vol_1_12.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4186,
-                    "y": 0.621
+                    "x": 0.4189,
+                    "y": 0.6414
                 },
                 "scale": 3.235
             },
@@ -1381,7 +1381,7 @@
             "crop": {
                 "focus": {
                     "x": 0.8252,
-                    "y": 0.8006
+                    "y": 0.8289
                 },
                 "scale": 1.931
             },
@@ -1427,10 +1427,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/80/6305076df19d4/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.0913,
-                    "y": 0.3794
+                    "x": 0.0269,
+                    "y": 0.5039
                 },
-                "scale": 2.214
+                "scale": 1.726
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/2/03/6019700b46b57/clean.jpg",
@@ -1556,9 +1556,9 @@
             "crop": {
                 "focus": {
                     "x": 0.5226,
-                    "y": 0.7457
+                    "y": 0.7505
                 },
-                "scale": 2.666
+                "scale": 2.62
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/685d4d10223ea/clean.jpg",
@@ -1586,10 +1586,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/a0/69aee03385b91/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.8147,
-                    "y": 0.9313
+                    "x": 0.8148,
+                    "y": 0.9488
                 },
-                "scale": 1.517
+                "scale": 1.524
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
@@ -1650,8 +1650,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/c0/5ad8f2865ddcc/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4361,
-                    "y": 0.6343
+                    "x": 0.4584,
+                    "y": 0.78
                 },
                 "scale": 1.588
             },
@@ -1689,7 +1689,7 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/f0/5aaac0dd43121/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.1056,
+                    "x": 0.0948,
                     "y": 1
                 },
                 "scale": 3.227
@@ -1713,7 +1713,7 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/60/5b281c6801f92/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.7257,
+                    "x": 0.7317,
                     "y": 1
                 },
                 "scale": 1.888
@@ -1859,8 +1859,8 @@
             "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Fantastic_Four_1_2_3_4_Vol_1_2.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6963,
-                    "y": 0.7966
+                    "x": 0.696,
+                    "y": 0.7969
                 },
                 "scale": 1.821
             },
@@ -1972,8 +1972,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/80/69a088649c6fe/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.617,
-                    "y": 0.9744
+                    "x": 0.6164,
+                    "y": 1
                 },
                 "scale": 1.787
             },
@@ -2177,10 +2177,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/10/5ddd7e646724f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.3752,
-                    "y": 0.3176
+                    "x": 0.372,
+                    "y": 0.3594
                 },
-                "scale": 2.417
+                "scale": 2.679
             },
             "options": [
                 "https://static.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_The_Movie_Vol_1_1.jpg",
@@ -2277,10 +2277,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/57d86b4217a30/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.7475,
+                    "x": 0.7299,
                     "y": 1
                 },
-                "scale": 1.481
+                "scale": 1.705
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/4bb4f73b171d2/clean.jpg",
@@ -2424,8 +2424,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/5bfc671f9112d/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.2312,
-                    "y": 0.3592
+                    "x": 0.2649,
+                    "y": 0.4426
                 },
                 "scale": 1.381
             },
@@ -3020,10 +3020,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/20/5d0b89b79f61f/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5726,
-                    "y": 0.2329
+                    "x": 0.5596,
+                    "y": 0.2386
                 },
-                "scale": 3.856
+                "scale": 4.12
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/9/b0/5d0a9d7691a9b/clean.jpg",
@@ -3435,8 +3435,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/2/04/5cffc7437ebe9/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6641,
-                    "y": 0.5269
+                    "x": 0.6567,
+                    "y": 0.5842
                 },
                 "scale": 2.042
             },
@@ -3541,8 +3541,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/6100341bb85fd/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.2441,
-                    "y": 0.4797
+                    "x": 0.2627,
+                    "y": 0.4829
                 },
                 "scale": 1.757
             },
@@ -3566,8 +3566,8 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/569040820cfb9/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5191,
-                    "y": 0.5895
+                    "x": 0.519,
+                    "y": 0.682
                 },
                 "scale": 2.337
             },
@@ -3617,7 +3617,7 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5bd889b36c810/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.752,
+                    "x": 0.7533,
                     "y": 1
                 },
                 "scale": 3.745
@@ -3642,10 +3642,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/648735ebac505/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5768,
-                    "y": 0.7797
+                    "x": 0.5794,
+                    "y": 0.8903
                 },
-                "scale": 3.856
+                "scale": 2.619
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/648735ebac505/clean.jpg",
@@ -3675,10 +3675,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/4/10/6596e0f7d0718/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6144,
-                    "y": 0.3562
+                    "x": 0.6151,
+                    "y": 0.3679
                 },
-                "scale": 3.856
+                "scale": 3.321
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/4/10/6596e0f7d0718/clean.jpg",
@@ -3723,10 +3723,10 @@
             "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/68e6701447dcc/clean.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6395,
-                    "y": 0.6743
+                    "x": 0.648,
+                    "y": 0.7178
                 },
-                "scale": 3.856
+                "scale": 3.152
             },
             "options": [
                 "https://cdn.marvel.com/u/prod/marvel/i/mg/8/03/66634dc363119/clean.jpg",
@@ -3772,9 +3772,9 @@
             "crop": {
                 "focus": {
                     "x": 0,
-                    "y": 0.9963
+                    "y": 0.9291
                 },
-                "scale": 1.637
+                "scale": 1.662
             },
             "options": [
                 "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
@@ -3971,8 +3971,8 @@
             "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/53847b24-bff0-4d69-aa5e-535614b58fcf/fc91f061-8209-45a1-bfcf-953cbc909699/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.4698,
-                    "y": 0.5373
+                    "x": 0.4785,
+                    "y": 0.4102
                 },
                 "scale": 1.494
             },
@@ -4017,8 +4017,8 @@
             "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/79077bdf-cc27-4d9a-b746-eff6cb29679e/007551d7-1c8f-453a-b762-b1d0ea774901/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5361,
-                    "y": 0.0708
+                    "x": 0.5368,
+                    "y": 0.1137
                 },
                 "scale": 1.584
             },
@@ -4292,8 +4292,8 @@
             "asset": "https://static.wikia.nocookie.net/jonnyquest/images/5/53/JQ_%28Comico%29_issue_3_cover.jpg/revision/latest?cb=20171107145306",
             "crop": {
                 "focus": {
-                    "x": 0.592,
-                    "y": 1
+                    "x": 0.5938,
+                    "y": 0.9948
                 },
                 "scale": 1.244
             },
@@ -4351,7 +4351,7 @@
             "asset": "https://borg.com/wp-content/uploads/2013/02/shadow-year-one-alex-ross-cover.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6116,
+                    "x": 0.5806,
                     "y": 1
                 },
                 "scale": 1.216
@@ -4526,7 +4526,7 @@
             "crop": {
                 "focus": {
                     "x": 0.6123,
-                    "y": 0.5415
+                    "y": 0.5411
                 },
                 "scale": 1.448
             },
