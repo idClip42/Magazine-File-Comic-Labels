@@ -3969,13 +3969,13 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/c5833a53-d5db-459b-9e4a-2ad74f8ab007/ea2a60e3-00f6-4f21-b540-86cf165b5e86/0.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/53847b24-bff0-4d69-aa5e-535614b58fcf/fc91f061-8209-45a1-bfcf-953cbc909699/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5119,
-                    "y": 0.4734
+                    "x": 0.4698,
+                    "y": 0.5373
                 },
-                "scale": 1.508
+                "scale": 1.494
             },
             "options": [
                 "https://imgix-media.wbdndc.net/ingest/book/preview/c5833a53-d5db-459b-9e4a-2ad74f8ab007/ea2a60e3-00f6-4f21-b540-86cf165b5e86/0.jpg",
@@ -4015,13 +4015,13 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/f4adcd27-9a39-4a6b-a0ea-14886ce2a7b5/b5b30de7-8f43-4de7-802a-87103bab433e/0.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/79077bdf-cc27-4d9a-b746-eff6cb29679e/007551d7-1c8f-453a-b762-b1d0ea774901/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5286,
-                    "y": 0.0971
+                    "x": 0.5361,
+                    "y": 0.0708
                 },
-                "scale": 1.546
+                "scale": 1.584
             },
             "options": [
                 "https://imgix-media.wbdndc.net/ingest/book/preview/f4adcd27-9a39-4a6b-a0ea-14886ce2a7b5/b5b30de7-8f43-4de7-802a-87103bab433e/0.jpg",
@@ -4063,13 +4063,13 @@
         "category": "dc-universe",
         "logo": "young-justice",
         "art": {
-            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/acf3024c-a8b5-4d7d-8d46-4e6f4a396459/9753953c-72f9-4f1b-9fa6-1eeb5ee63bd2/0.jpg",
+            "asset": "https://imgix-media.wbdndc.net/ingest/book/preview/5f0fd06f-1e35-448b-a740-b52851d04184/63072176-c451-4839-9cdb-dcec49018aba/0.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5374,
-                    "y": 0.7207
+                    "x": 0.5513,
+                    "y": 0.7358
                 },
-                "scale": 2.468
+                "scale": 2.39
             },
             "options": [
                 "https://imgix-media.wbdndc.net/ingest/book/preview/acf3024c-a8b5-4d7d-8d46-4e6f4a396459/9753953c-72f9-4f1b-9fa6-1eeb5ee63bd2/0.jpg",
@@ -4444,14 +4444,18 @@
         "category": "horror-dark-fantasy",
         "logo": "army-of-darkness",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Army+of+Darkness+2",
+            "asset": "https://static.wikia.nocookie.net/evildead/images/1/1a/AshInSpaceHQ.jpg/revision/latest?cb=20160628234846",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.4258,
+                    "y": 0.72
                 },
-                "scale": 1
-            }
+                "scale": 1.657
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Army+of+Darkness+2",
+                "https://static.wikia.nocookie.net/evildead/images/1/1a/AshInSpaceHQ.jpg/revision/latest?cb=20160628234846"
+            ]
         },
         "contents": [
             {
@@ -4495,14 +4499,18 @@
         "category": "horror-dark-fantasy",
         "logo": "fables",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Fables",
+            "asset": "https://m.media-amazon.com/images/I/71Woqb9Y82L._AC_UF1000,1000_QL80_.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.6123,
+                    "y": 0.5415
                 },
-                "scale": 1
-            }
+                "scale": 1.448
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Fables",
+                "https://m.media-amazon.com/images/I/71Woqb9Y82L._AC_UF1000,1000_QL80_.jpg"
+            ]
         },
         "contents": [
             {
@@ -4515,14 +4523,18 @@
         "category": "horror-dark-fantasy",
         "logo": "universal-monsters",
         "art": {
-            "asset": "https://placehold.co/1200x1800/eeeeee/111111?text=Universal+Monsters",
+            "asset": "https://imagecomics.com/files/releases/0723IM809-hires.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.3392,
+                    "y": 0.7054
                 },
-                "scale": 1
-            }
+                "scale": 1.465
+            },
+            "options": [
+                "https://placehold.co/1200x1800/eeeeee/111111?text=Universal+Monsters",
+                "https://imagecomics.com/files/releases/0723IM809-hires.jpg"
+            ]
         },
         "contents": [
             {
