@@ -215,6 +215,9 @@
             },
             "the-shadow": {
                 "asset": "logos/shadow-logo.svg"
+            },
+            "tomb-raider": {
+                "asset": "logos/tr-logo.svg"
             }
         }
     },

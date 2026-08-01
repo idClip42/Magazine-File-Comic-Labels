@@ -4371,6 +4371,31 @@
         ]
     },
     {
+        "id": "tomb-raider",
+        "category": "adventure-pulp",
+        "logo": "tomb-raider",
+        "art": {
+            "asset": "https://m.media-amazon.com/images/I/71DxVMQbMIL._AC_UF1000,1000_QL80_.jpg",
+            "crop": {
+                "focus": {
+                    "x": 0.5193,
+                    "y": 0.6908
+                },
+                "scale": 1.174
+            },
+            "options": [
+                "https://www.wikiraider.com/images/e/ed/Tr01a.jpg",
+                "https://m.media-amazon.com/images/I/71DxVMQbMIL._AC_UF1000,1000_QL80_.jpg",
+                "https://www.tombraiderchronicles.com/i/news-tomb-raider-comics-dark-horse-top-cow-5035.jpg"
+            ]
+        },
+        "contents": [
+            {
+                "name": "Tomb Raider"
+            }
+        ]
+    },
+    {
         "id": "aliens-001",
         "category": "horror-dark-fantasy",
         "logo": "aliens",
