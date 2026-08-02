@@ -452,11 +452,11 @@ body {
 .shelf-view {
     display: none;
     min-height: 100vh;
-    padding: 28px;
+    padding: 20px;
 }
 
 .shelves-view {
-    background: #a5a5a5;
+    background: #f3f3f1;
 }
 .shelves-view .label-grid {
     display: none;
@@ -465,43 +465,30 @@ body {
     display: block;
 }
 
-.bookcase-wall {
+.shelf-wall {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: start;
-    gap: 8px;
+    gap: 20px;
     max-width: 1500px;
     margin: 0 auto;
 }
 
-.bookcase {
-    aspect-ratio: 29.1 / 72;
+.shelf-stack {
+    /* Seven visible faces across by six flush rows.  Side wraps are omitted
+       here because they fold around the file and cannot be seen head-on. */
+    aspect-ratio: 27.125 / 70.5;
     display: grid;
     grid-template-rows: repeat(6, minmax(0, 1fr));
-    gap: 5px;
-    padding: 7px;
-    background: #fff;
-    box-shadow:
-        0 7px 18px rgba(0, 0, 0, 0.32),
-        inset 0 0 0 2px #e8e8e8;
+    gap: 0;
 }
 
-.bookshelf-row {
-    display: flex;
+.shelf-row {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     min-width: 0;
     min-height: 0;
     overflow: hidden;
-    padding: 2px 3px 5px;
-    background: linear-gradient(#f8f8f8 0 76%, #d6d6d6 76% 100%);
-    box-shadow: inset 0 -1px 0 #a9a9a9;
-}
-
-.shelf-labels {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    flex: 1 1 auto;
-    min-width: 0;
-    min-height: 0;
 }
 
 .shelf-label-slot {
@@ -512,13 +499,10 @@ body {
 }
 
 .shelf-label-slot .label {
-    transform: scale(var(--shelf-label-scale, 0.1));
+    transform: scale(var(--shelf-label-scale, 0.1))
+        translateX(calc(-1 * var(--overwrap)));
     transform-origin: top left;
     box-shadow: none;
-}
-
-.shelf-spare-space {
-    flex: 0 0 6.67%;
 }
 
 .loading-state {
