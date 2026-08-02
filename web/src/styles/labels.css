@@ -15,6 +15,7 @@
     --years-size: 0.29in;
     --metadata-size: 0.13in;
     --band-gap: 0.045in;
+    --identity-logo-top-padding: 0.06in;
     --logo-outline-color: #000;
     --logo-outline-width: 0;
     --logo-outline-linejoin: round;
@@ -149,6 +150,7 @@ body.artwork-browser-open {
 .identity-band {
     top: var(--identity-top);
     height: var(--identity-height);
+    padding-top: var(--identity-logo-top-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,13 +164,17 @@ body.artwork-browser-open {
 }
 
 .raster-logo {
-    max-height: calc(var(--identity-height) - 0.62in);
+    max-height: calc(
+        var(--identity-height) - 0.62in - var(--identity-logo-top-padding)
+    );
     object-fit: contain;
 }
 
 .inline-logo {
     width: var(--logo-max-width);
-    height: calc(var(--identity-height) - 0.62in);
+    height: calc(
+        var(--identity-height) - 0.62in - var(--identity-logo-top-padding)
+    );
     padding: var(--logo-outline-width);
     color: var(--logo-primary);
 }
