@@ -1,11 +1,15 @@
 <script setup lang="ts">
-import { computed, nextTick, ref } from "vue";
+import { computed, nextTick, ref, watch } from "vue";
 import type { LabelConfig } from "../../../../src/core/types";
 import { useCatalogStore } from "../../stores/catalog";
 
 // All label editors share one open browser so the page stays compact while
 // comparing covers.
 const openArtworkBrowserId = ref<string>();
+
+watch(openArtworkBrowserId, labelId => {
+    document.body.classList.toggle("artwork-browser-open", Boolean(labelId));
+});
 
 const props = defineProps<{ label: LabelConfig }>();
 const catalog = useCatalogStore();
