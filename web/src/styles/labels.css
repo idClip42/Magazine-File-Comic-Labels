@@ -281,7 +281,7 @@ body {
 .artwork-options {
     width: var(--total-width);
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
     gap: 0.1in;
     padding: 0.1in 0.12in;
@@ -293,6 +293,23 @@ body {
 
 .artwork-options-title {
     font-weight: 700;
+}
+
+.artwork-option-navigation {
+    display: flex;
+    gap: 3px;
+}
+
+.artwork-option-navigation button {
+    min-width: 25px;
+    padding: 1px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.artwork-option-navigation button:disabled {
+    cursor: default;
 }
 
 .artwork-options-list {

@@ -34,6 +34,16 @@ const optionLabels = computed(() => {
     );
 });
 
+const currentOptionIndex = computed(() =>
+    options.value.indexOf(props.label.art.asset),
+);
+
+function selectRelativeArtwork(direction: -1 | 1): void {
+    const nextIndex = currentOptionIndex.value + direction;
+    const nextAsset = options.value[nextIndex];
+    if (nextAsset) catalog.selectArtwork(props.label.id, nextAsset);
+}
+
 function addCoverUrl(): void {
     const error = catalog.addArtworkUrl(props.label.id, coverUrl.value);
     if (error) {
@@ -52,6 +62,30 @@ function addCoverUrl(): void {
         :aria-label="`Artwork options for ${label.id}`"
     >
         <span class="artwork-options-title">Cover</span>
+        <div
+            v-if="options.length > 1"
+            class="artwork-option-navigation"
+            aria-label="Cover navigation"
+        >
+            <button
+                type="button"
+                :disabled="currentOptionIndex <= 0"
+                aria-label="Previous cover"
+                title="Previous cover"
+                @click="selectRelativeArtwork(-1)"
+            >
+                ←
+            </button>
+            <button
+                type="button"
+                :disabled="currentOptionIndex >= options.length - 1"
+                aria-label="Next cover"
+                title="Next cover"
+                @click="selectRelativeArtwork(1)"
+            >
+                →
+            </button>
+        </div>
         <div class="artwork-options-list">
             <label
                 v-for="(asset, index) in options"
