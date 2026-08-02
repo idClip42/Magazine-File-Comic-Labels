@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, nextTick, ref } from "vue";
 import type { LabelConfig } from "../../../../src/core/types";
 import { useCatalogStore } from "../../stores/catalog";
 
@@ -11,6 +11,7 @@ const props = defineProps<{ label: LabelConfig }>();
 const catalog = useCatalogStore();
 const coverUrl = ref("");
 const coverUrlError = ref("");
+const artworkBrowser = ref<HTMLElement>();
 
 const options = computed(() => {
     const configured = props.label.art.options ?? [];
@@ -51,15 +52,19 @@ function selectRelativeArtwork(direction: -1 | 1): void {
     if (nextAsset) catalog.selectArtwork(props.label.id, nextAsset);
 }
 
-function toggleArtworkBrowser(): void {
-    openArtworkBrowserId.value = isArtworkBrowserOpen.value
-        ? undefined
-        : props.label.id;
+async function openArtworkBrowser(): Promise<void> {
+    openArtworkBrowserId.value = props.label.id;
+    await nextTick();
+    artworkBrowser.value?.focus();
+}
+
+function closeArtworkBrowser(): void {
+    openArtworkBrowserId.value = undefined;
 }
 
 function selectArtworkFromBrowser(asset: string): void {
     catalog.selectArtwork(props.label.id, asset);
-    openArtworkBrowserId.value = undefined;
+    closeArtworkBrowser();
 }
 
 function addCoverUrl(): void {
@@ -127,33 +132,10 @@ function addCoverUrl(): void {
             class="artwork-browser-toggle"
             :aria-expanded="isArtworkBrowserOpen"
             :aria-controls="`artwork-browser-${label.id}`"
-            @click="toggleArtworkBrowser"
+            @click="openArtworkBrowser"
         >
-            {{ isArtworkBrowserOpen ? "Hide covers" : "Browse covers" }}
+            Browse covers
         </button>
-        <div
-            v-if="isArtworkBrowserOpen"
-            :id="`artwork-browser-${label.id}`"
-            class="artwork-browser"
-            aria-label="Cover thumbnails"
-        >
-            <button
-                v-for="(asset, index) in options"
-                :key="asset"
-                type="button"
-                class="artwork-browser-option"
-                :class="{ selected: asset === label.art.asset }"
-                :aria-label="`Select cover ${optionLabels[index]}`"
-                :aria-pressed="asset === label.art.asset"
-                @click="selectArtworkFromBrowser(asset)"
-            >
-                <img
-                    :src="catalog.artworkUrl(asset)"
-                    :alt="`Cover ${optionLabels[index]}`"
-                />
-                <span>{{ optionLabels[index] }}</span>
-            </button>
-        </div>
         <form
             class="artwork-url-form"
             @submit.prevent="addCoverUrl"
@@ -177,4 +159,60 @@ function addCoverUrl(): void {
             {{ coverUrlError || catalog.artworkError(label.id) }}
         </p>
     </section>
+    <Teleport to="body">
+        <div
+            v-if="isArtworkBrowserOpen"
+            class="artwork-browser-backdrop"
+            @click.self="closeArtworkBrowser"
+        >
+            <section
+                ref="artworkBrowser"
+                :id="`artwork-browser-${label.id}`"
+                class="artwork-browser"
+                role="dialog"
+                aria-modal="true"
+                :aria-label="`Choose cover for ${label.id}`"
+                tabindex="-1"
+                @keydown.esc="closeArtworkBrowser"
+            >
+                <header class="artwork-browser-header">
+                    <h2>Choose a cover</h2>
+                    <button
+                        type="button"
+                        aria-label="Close cover picker"
+                        @click="closeArtworkBrowser"
+                    >
+                        ×
+                    </button>
+                </header>
+                <div
+                    class="artwork-browser-grid"
+                    :class="{
+                        'artwork-browser-grid-medium':
+                            options.length > 15 && options.length <= 25,
+                        'artwork-browser-grid-compact':
+                            options.length > 25 && options.length <= 35,
+                        'artwork-browser-grid-dense': options.length > 35,
+                    }"
+                >
+                    <button
+                        v-for="(asset, index) in options"
+                        :key="asset"
+                        type="button"
+                        class="artwork-browser-option"
+                        :class="{ selected: asset === label.art.asset }"
+                        :aria-label="`Select cover ${optionLabels[index]}`"
+                        :aria-pressed="asset === label.art.asset"
+                        @click="selectArtworkFromBrowser(asset)"
+                    >
+                        <img
+                            :src="catalog.artworkUrl(asset)"
+                            :alt="`Cover ${optionLabels[index]}`"
+                        />
+                        <span>{{ optionLabels[index] }}</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </Teleport>
 </template>
