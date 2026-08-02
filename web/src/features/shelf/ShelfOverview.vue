@@ -88,14 +88,20 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
                     :key="shelfIndex"
                     class="shelf-row"
                 >
-                    <div
-                        v-for="label in shelf"
-                        :key="label.id"
-                        :ref="setShelfSlot"
-                        class="shelf-label-slot"
-                    >
-                        <LabelFace :label="label" />
+                    <div class="shelf-labels">
+                        <div
+                            v-for="label in shelf"
+                            :key="label.id"
+                            :ref="setShelfSlot"
+                            class="shelf-label-slot"
+                        >
+                            <LabelFace :label="label" />
+                        </div>
                     </div>
+                    <div
+                        class="shelf-spare-space"
+                        aria-hidden="true"
+                    />
                 </div>
             </section>
         </div>

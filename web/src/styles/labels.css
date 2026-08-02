@@ -648,20 +648,34 @@ body.artwork-browser-open {
 .shelf-stack {
     /* Seven visible faces across by six front-flush rows. Side wraps are
        omitted because they fold around the file and cannot be seen head-on.
-       Five 2/3-inch shelf boards separate the six 11.75-inch label rows. */
-    aspect-ratio: 27.125 / 73.833;
+       Five 2/3-inch shelf boards separate the six 11.75-inch label rows.
+       The 5/8-inch outer frame and half-file open bay are visible too. */
+    aspect-ratio: 30.3125 / 75.083;
     display: grid;
     grid-template-rows: repeat(6, minmax(0, 1fr));
     row-gap: 0.903%;
+    padding: 2.062%;
     background: #fff;
+    box-shadow:
+        inset 1px 0 #d9d9d9,
+        inset -1px 0 #d9d9d9,
+        inset 0 1px #d9d9d9,
+        inset 0 -1px #d9d9d9;
 }
 
 .shelf-row {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    display: flex;
     min-width: 0;
     min-height: 0;
     overflow: hidden;
+}
+
+.shelf-labels {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
 }
 
 .shelf-label-slot {
@@ -676,6 +690,10 @@ body.artwork-browser-open {
         translateX(calc(-1 * var(--overwrap)));
     transform-origin: top left;
     box-shadow: none;
+}
+
+.shelf-spare-space {
+    flex: 0 0 6.667%;
 }
 
 .loading-state {
