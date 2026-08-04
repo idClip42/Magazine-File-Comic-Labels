@@ -145,7 +145,7 @@
     },
     "marvel-specials": {
         "name": "Marvel specials",
-        "color": "#C65E32",
+        "color": "#D06B38",
         "logos": {
             "ultimate": {
                 "asset": "logos/ultimate-universe-logo.svg"
