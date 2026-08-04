@@ -1,4 +1,9 @@
-import type { ArtCrop, ArtTreatment, LayoutConfig } from "./types";
+import type {
+    ArtCrop,
+    ArtTreatment,
+    DesignVariant,
+    LayoutConfig,
+} from "./types";
 
 export type CropUpdate = Pick<ArtCrop, "focus" | "scale">;
 
@@ -21,5 +26,5 @@ export type LayoutUpdate = {
 
 export type EditorUpdates = {
     arts?: Record<string, ArtUpdate>;
-    layout?: LayoutUpdate;
+    layout?: { variant: DesignVariant; changes: LayoutUpdate };
 };

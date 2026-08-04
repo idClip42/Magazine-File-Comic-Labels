@@ -663,6 +663,49 @@ body.artwork-browser-open {
         inset 0 -1px #d9d9d9;
 }
 
+.design-variant-switcher {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 4px;
+    padding-left: 8px;
+    border-left: 1px solid #ddd;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.design-variant-switcher span {
+    margin-right: 2px;
+}
+
+.design-variant-switcher button {
+    min-width: 27px;
+    padding-inline: 7px;
+}
+
+.design-variant-control {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.design-variant-control button {
+    min-width: 28px;
+    padding: 4px 8px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #fff;
+    font: inherit;
+}
+
+.design-variant-control button[aria-pressed="true"] {
+    border-color: #222;
+    background: #222;
+    color: #fff;
+}
+
 .shelf-row {
     display: flex;
     min-width: 0;

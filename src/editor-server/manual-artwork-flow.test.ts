@@ -192,6 +192,27 @@ test(
         editor = startEditor(fixtureRoot, editorPort);
         await waitForEditor(editorPort, editor);
 
+        const designSaved = await request(editorPort, "/api/edits", "PUT", {
+            layout: {
+                variant: "B",
+                changes: {
+                    artTreatment: {
+                        ...layout.designVariants.B.artTreatment,
+                        contrast: 1.11,
+                    },
+                },
+            },
+        });
+        assert.equal(designSaved.status, 200);
+        const persistedLayout = JSON.parse(
+            fs.readFileSync(
+                path.join(fixtureRoot, "config", "layout.json"),
+                "utf8",
+            ),
+        );
+        assert.equal(persistedLayout.designVariants.A.artTreatment.contrast, 1.06);
+        assert.equal(persistedLayout.designVariants.B.artTreatment.contrast, 1.11);
+
         const crop = { focus: { x: 0.25, y: 0.75 }, scale: 1.5 };
         const saved = await request(editorPort, "/api/edits", "PUT", {
             arts: {

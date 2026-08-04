@@ -255,7 +255,15 @@ export function saveChanges(updates: EditorUpdates): {
         }),
     );
     const layoutUpdate = updates.layout;
-    if (layoutUpdate) validateLayoutUpdate(layoutUpdate);
+    if (layoutUpdate) {
+        if (
+            (layoutUpdate.variant !== "A" && layoutUpdate.variant !== "B") ||
+            !layoutUpdate.changes
+        ) {
+            throw new Error("Expected a design variant and its layout changes.");
+        }
+        validateLayoutUpdate(layoutUpdate.changes);
+    }
 
     for (const [id, art] of Object.entries(arts)) {
         if (!labelById.has(id)) throw new Error(`Unknown label ID: ${id}`);
@@ -299,27 +307,26 @@ export function saveChanges(updates: EditorUpdates): {
     if (Object.keys(arts).length > 0) writeCatalogJson(labelsPath, labels);
 
     if (layoutUpdate) {
-        if (layoutUpdate.artTreatment)
-            layout.artTreatment = layoutUpdate.artTreatment;
-        if (layoutUpdate.identityBandHeightInches !== undefined) {
-            layout.identityBand.heightInches =
-                layoutUpdate.identityBandHeightInches;
+        const variant = layout.designVariants[layoutUpdate.variant];
+        const changes = layoutUpdate.changes;
+        if (changes.artTreatment)
+            variant.artTreatment = changes.artTreatment;
+        if (changes.identityBandHeightInches !== undefined) {
+            variant.identityBand.heightInches =
+                changes.identityBandHeightInches;
         }
-        if (layoutUpdate.metadataBandHeightInches !== undefined) {
-            layout.metadataBand.heightInches =
-                layoutUpdate.metadataBandHeightInches;
+        if (changes.metadataBandHeightInches !== undefined) {
+            variant.metadataBand.heightInches =
+                changes.metadataBandHeightInches;
         }
-        if (layoutUpdate.typography)
-            layout.typography = layoutUpdate.typography;
-        if (layoutUpdate.logoPalette)
-            layout.logoPalette = layoutUpdate.logoPalette;
-        if (layoutUpdate.logoOutline)
-            layout.logoOutline = layoutUpdate.logoOutline;
+        if (changes.typography) variant.typography = changes.typography;
+        if (changes.logoPalette) variant.logoPalette = changes.logoPalette;
+        if (changes.logoOutline) variant.logoOutline = changes.logoOutline;
         writeCatalogJson(layoutPath, layout);
     }
 
     return {
         arts: Object.keys(arts).length,
-        layout: layoutUpdate ? Object.keys(layoutUpdate).length : 0,
+        layout: layoutUpdate ? Object.keys(layoutUpdate.changes).length : 0,
     };
 }

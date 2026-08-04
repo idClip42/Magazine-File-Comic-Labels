@@ -72,7 +72,41 @@ export type LayoutConfig = {
         lineJoin: "round" | "miter" | "bevel";
     };
     showCutGuide: boolean;
+    /** Two independently editable presentations of the shared label design. */
+    designVariants: Record<DesignVariant, LayoutDesign>;
 };
+
+export type DesignVariant = "A" | "B";
+
+/** The global presentation settings that can be compared without duplicating the catalog. */
+export type LayoutDesign = Pick<
+    LayoutConfig,
+    | "artTreatment"
+    | "identityBand"
+    | "metadataBand"
+    | "typography"
+    | "years"
+    | "logoPalette"
+    | "logoOutline"
+    | "showCutGuide"
+>;
+
+/** Resolves one test variant onto the fixed physical layout. */
+export function layoutForVariant(
+    layout: LayoutConfig,
+    variant: DesignVariant,
+): LayoutConfig {
+    // The editor passes Vue-reactive objects here. Do not structured-clone the
+    // selected design: browser structuredClone rejects Vue proxies and would
+    // leave label components without a resolved physical layout.
+    const design = layout.designVariants?.[variant];
+    if (!design) return layout;
+    return {
+        ...layout,
+        ...design,
+        designVariants: layout.designVariants,
+    };
+}
 
 export type ArtTreatment = {
     saturation: number;

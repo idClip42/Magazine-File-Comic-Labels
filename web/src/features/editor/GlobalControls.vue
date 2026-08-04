@@ -86,6 +86,27 @@ function updateLogoOutline(
         aria-label="Global label controls"
         aria-live="polite"
     >
+        <div
+            class="design-variant-control"
+            role="group"
+            aria-label="Design comparison"
+        >
+            <span>Editing design</span>
+            <button
+                type="button"
+                :aria-pressed="catalog.activeDesignVariant === 'A'"
+                @click="catalog.selectDesignVariant('A')"
+            >
+                A
+            </button>
+            <button
+                type="button"
+                :aria-pressed="catalog.activeDesignVariant === 'B'"
+                @click="catalog.selectDesignVariant('B')"
+            >
+                B
+            </button>
+        </div>
         <details>
             <summary>Artwork treatment</summary>
             <label>

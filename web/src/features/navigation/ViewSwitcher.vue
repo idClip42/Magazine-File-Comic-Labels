@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import type { ViewMode } from "../../config";
+import type { DesignVariant } from "../../../../src/core/types";
 import { useCatalogStore } from "../../stores/catalog";
 
 const catalog = useCatalogStore();
@@ -17,6 +18,10 @@ function selectView(view: ViewMode): void {
 
 function selectCategory(event: Event): void {
     catalog.categoryFilter = (event.target as HTMLSelectElement).value;
+}
+
+function selectDesignVariant(variant: DesignVariant): void {
+    catalog.selectDesignVariant(variant);
 }
 </script>
 
@@ -58,5 +63,26 @@ function selectCategory(event: Event): void {
                 </option>
             </select>
         </label>
+        <div
+            class="design-variant-switcher"
+            role="group"
+            aria-label="Design comparison"
+        >
+            <span>Design</span>
+            <button
+                type="button"
+                :aria-pressed="catalog.activeDesignVariant === 'A'"
+                @click="selectDesignVariant('A')"
+            >
+                A
+            </button>
+            <button
+                type="button"
+                :aria-pressed="catalog.activeDesignVariant === 'B'"
+                @click="selectDesignVariant('B')"
+            >
+                B
+            </button>
+        </div>
     </nav>
 </template>

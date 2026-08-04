@@ -2,7 +2,12 @@ import { defineStore } from "pinia";
 import { computed, ref } from "vue";
 import { normalizeManualArtworkUrl } from "../../../src/core/assets";
 import type { ArtUpdate, CropUpdate } from "../../../src/core/editor-updates";
-import type { EditorConfig, LabelConfig } from "../../../src/core/types";
+import {
+    layoutForVariant,
+    type DesignVariant,
+    type EditorConfig,
+    type LabelConfig,
+} from "../../../src/core/types";
 import {
     isLiveEditor,
     requestLiveConfig,
@@ -78,7 +83,11 @@ export const useCatalogStore = defineStore("catalog", () => {
     );
     const pendingArts = ref<Record<string, ArtUpdate>>({});
     const sessionCrops = ref<Record<string, CropUpdate>>({});
-    const pendingLayout = ref<LayoutUpdate>({});
+    const activeDesignVariant = ref<DesignVariant>("A");
+    const pendingLayouts = ref<Record<DesignVariant, LayoutUpdate>>({
+        A: {},
+        B: {},
+    });
     const saveState = ref<SaveState>("idle");
     const saveMessage = ref("");
     const artworkErrors = ref<Record<string, string>>({});
@@ -91,13 +100,17 @@ export const useCatalogStore = defineStore("catalog", () => {
                   label => label.category === categoryFilter.value,
               ),
     );
-    const layout = computed(() => config.value?.layout);
+    const layout = computed(() =>
+        config.value
+            ? layoutForVariant(config.value.layout, activeDesignVariant.value)
+            : undefined,
+    );
     const isSaveAvailable = computed(() => isLiveEditor());
     const isSaving = computed(() => saveState.value === "saving");
     const pendingChangeCount = computed(
         () =>
             Object.keys(pendingArts.value).length +
-            Object.keys(pendingLayout.value).length,
+            Object.keys(pendingLayouts.value[activeDesignVariant.value]).length,
     );
     const hasPendingChanges = computed(() => pendingChangeCount.value > 0);
 
@@ -106,7 +119,7 @@ export const useCatalogStore = defineStore("catalog", () => {
         savedArts.value = artsForConfig(config.value);
         pendingArts.value = {};
         sessionCrops.value = {};
-        pendingLayout.value = {};
+        pendingLayouts.value = { A: {}, B: {} };
         artworkErrors.value = {};
     }
 
@@ -222,7 +235,7 @@ export const useCatalogStore = defineStore("catalog", () => {
 
     function updateLayout(update: LayoutUpdate): void {
         if (!config.value) return;
-        const layout = config.value.layout;
+        const layout = config.value.layout.designVariants[activeDesignVariant.value];
         if (update.artTreatment)
             layout.artTreatment = { ...update.artTreatment };
         if (update.identityBandHeightInches !== undefined) {
@@ -234,10 +247,18 @@ export const useCatalogStore = defineStore("catalog", () => {
         if (update.typography) layout.typography = { ...update.typography };
         if (update.logoPalette) layout.logoPalette = { ...update.logoPalette };
         if (update.logoOutline) layout.logoOutline = { ...update.logoOutline };
-        pendingLayout.value = {
-            ...pendingLayout.value,
-            ...structuredClone(update),
+        pendingLayouts.value = {
+            ...pendingLayouts.value,
+            [activeDesignVariant.value]: {
+                ...pendingLayouts.value[activeDesignVariant.value],
+                ...structuredClone(update),
+            },
         };
+        saveState.value = "idle";
+    }
+
+    function selectDesignVariant(variant: DesignVariant): void {
+        activeDesignVariant.value = variant;
         saveState.value = "idle";
     }
 
@@ -259,10 +280,13 @@ export const useCatalogStore = defineStore("catalog", () => {
 
         const updates: EditorUpdates = {
             arts: pendingArts.value,
-            layout: pendingLayout.value,
+            layout: {
+                variant: activeDesignVariant.value,
+                changes: pendingLayouts.value[activeDesignVariant.value],
+            },
         };
         if (Object.keys(updates.arts ?? {}).length === 0) delete updates.arts;
-        if (Object.keys(updates.layout ?? {}).length === 0)
+        if (Object.keys(pendingLayouts.value[activeDesignVariant.value]).length === 0)
             delete updates.layout;
 
         saveState.value = "saving";
@@ -295,7 +319,10 @@ export const useCatalogStore = defineStore("catalog", () => {
                 };
             }
             pendingArts.value = {};
-            pendingLayout.value = {};
+            pendingLayouts.value = {
+                ...pendingLayouts.value,
+                [activeDesignVariant.value]: {},
+            };
             saveState.value = "saved";
             saveMessage.value = `Saved ${savedCount} change${savedCount === 1 ? "" : "s"} to configuration.`;
         } catch (error) {
@@ -352,6 +379,7 @@ export const useCatalogStore = defineStore("catalog", () => {
         labels,
         filteredLabels,
         layout,
+        activeDesignVariant,
         view,
         categoryFilter,
         isSaveAvailable,
@@ -372,5 +400,6 @@ export const useCatalogStore = defineStore("catalog", () => {
         clearArtworkError,
         artworkError,
         updateLayout,
+        selectDesignVariant,
     };
 });
