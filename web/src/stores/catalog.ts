@@ -17,6 +17,7 @@ import {
 } from "../config";
 
 type SaveState = "idle" | "saving" | "saved" | "error";
+export type PrintLayout = "single" | "two" | "three" | "all";
 
 function cloneConfig(config: EditorConfig): EditorConfig {
     return structuredClone(config);
@@ -78,6 +79,9 @@ export const useCatalogStore = defineStore("catalog", () => {
     );
     const view = ref<ViewMode>("editor");
     const categoryFilter = ref("all");
+    // Print arrangement is intentionally session-only: it controls PDF output,
+    // not the physical label design stored in layout.json.
+    const printLayout = ref<PrintLayout>("single");
     const savedArts = ref<Record<string, ArtUpdate>>(
         config.value ? artsForConfig(config.value) : {},
     );
@@ -262,6 +266,10 @@ export const useCatalogStore = defineStore("catalog", () => {
         saveState.value = "idle";
     }
 
+    function selectPrintLayout(layout: PrintLayout): void {
+        printLayout.value = layout;
+    }
+
     function saveStatus(): string {
         if (!isSaveAvailable.value) {
             return "Start the local editor with npm start to save configuration changes.";
@@ -382,6 +390,7 @@ export const useCatalogStore = defineStore("catalog", () => {
         activeDesignVariant,
         view,
         categoryFilter,
+        printLayout,
         isSaveAvailable,
         isSaving,
         pendingChangeCount,
@@ -401,5 +410,6 @@ export const useCatalogStore = defineStore("catalog", () => {
         artworkError,
         updateLayout,
         selectDesignVariant,
+        selectPrintLayout,
     };
 });

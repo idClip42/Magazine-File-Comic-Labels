@@ -2,6 +2,7 @@
 import { computed } from "vue";
 import { maximumMetadataBandHeight } from "../../../../src/core/layout";
 import type { ArtTreatment, LayoutConfig } from "../../../../src/core/types";
+import type { PrintLayout } from "../../stores/catalog";
 import { useCatalogStore } from "../../stores/catalog";
 
 const catalog = useCatalogStore();
@@ -77,6 +78,16 @@ function updateLogoOutline(
     catalog.updateLayout({
         logoOutline: { ...layout.logoOutline, [field]: value },
     });
+}
+
+function updatePrintLayout(event: Event): void {
+    catalog.selectPrintLayout(
+        (event.target as HTMLSelectElement).value as PrintLayout,
+    );
+}
+
+function printPdf(): void {
+    window.print();
 }
 </script>
 
@@ -334,6 +345,32 @@ function updateLogoOutline(
                     <option value="bevel">Bevel</option>
                 </select>
             </label>
+        </details>
+
+        <details>
+            <summary>Print PDF</summary>
+            <label>
+                Labels per page
+                <select
+                    :value="catalog.printLayout"
+                    @change="updatePrintLayout"
+                >
+                    <option value="single">1 — full size</option>
+                    <option value="two">2 — exact-size custom page</option>
+                    <option value="three">3 — exact-size custom page</option>
+                    <option value="all">All shown — one custom page</option>
+                </select>
+            </label>
+            <p class="print-help">
+                Labels stay at their exact print size and touch edge-to-edge.
+                The category filter determines which labels are shown and printed.
+            </p>
+            <button
+                type="button"
+                @click="printPdf"
+            >
+                Print / save PDF
+            </button>
         </details>
 
         <button

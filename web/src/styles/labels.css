@@ -27,6 +27,13 @@
     margin: 0;
 }
 
+/* Multi-label PDF layouts preserve the exact label dimensions. The named page
+   expands to the selected batch width instead of scaling labels to a sheet. */
+@page label-sheet {
+    size: var(--print-page-width) var(--print-page-height);
+    margin: 0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -663,6 +670,13 @@ body.artwork-browser-open {
         inset 0 -1px #d9d9d9;
 }
 
+.print-help {
+    margin: 0;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
 .design-variant-switcher {
     display: flex;
     align-items: center;
@@ -763,6 +777,30 @@ body.artwork-browser-open {
         page-break-after: always;
     }
     .label-editor:last-child {
+        break-after: auto;
+        page-break-after: auto;
+    }
+    .app.print-two .label-grid,
+    .app.print-three .label-grid,
+    .app.print-all .label-grid {
+        page: label-sheet;
+        display: grid !important;
+        grid-template-columns: repeat(
+            var(--print-columns),
+            var(--print-label-width)
+        );
+        grid-auto-rows: var(--print-label-height);
+        align-content: start;
+        gap: 0;
+    }
+    .app.print-two .label-editor,
+    .app.print-three .label-editor,
+    .app.print-all .label-editor {
+        width: var(--print-label-width);
+        height: var(--print-label-height);
+        overflow: visible;
+        break-inside: avoid;
+        page-break-inside: avoid;
         break-after: auto;
         page-break-after: auto;
     }
