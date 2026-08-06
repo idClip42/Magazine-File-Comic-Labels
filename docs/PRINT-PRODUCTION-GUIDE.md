@@ -291,6 +291,53 @@ price. If the decision is broadly made and the retailer provides normal return
 rights, buying during the sale is rational; do not rush past a quick check of
 physical footprint, return policy, and warranty registration terms.
 
+### Reliability: treat reviews as evidence, not noise
+
+The ET-15000 is an older, capable wide-format all-in-one, but it is not a
+proven zero-risk purchase. Negative owner reviews commonly center on the
+standard inkjet failure modes: nozzle clogs after irregular use, paper-feed
+problems, connectivity/software irritation, and a bad experience when a
+particular unit fails. Independent testing also finds it better at everyday
+documents than at photo color accuracy, fine photo detail, or fine-detail
+scanning.
+
+Store reviews naturally overrepresent people whose purchase went wrong, but a
+cluster of the same complaint is still a **yellow flag**. The conclusion is
+not "ignore the reviews"; it is: do not buy this exact model from a seller with
+a poor return process, and do not count a short sale deadline as proof that it
+is right. Prefer a retailer with an uncomplicated return window, register the
+two-year warranty immediately, test ordinary paper, a scan, and a few sheets
+of the intended vinyl at once, and return it during that window if it shows
+banding, feed trouble, or unreliable connectivity.
+
+### Amazon listing: useful review signal, check the actual seller
+
+The investigated Amazon product page for the ET-15000 had **4.2 / 5 stars from
+2,532 ratings** on 2026-08-06. That is a meaningful counterweight to a
+negative-looking slice of reviews on Epson's own store: it supports the view
+that many owners are satisfied, without proving that a specific unit will be
+trouble-free. Still read the most recent one- to three-star reviews and look
+for one repeated defect rather than reacting only to the average.
+
+The same Amazon page showed a price around **$545**, but the active offer was
+sold and shipped by the third-party seller **SLI Cloud**, not Amazon.com. The
+listing showed Amazon's 30-day refund/replacement framework, yet a third-party
+sale is not automatically the same support experience as a direct retailer.
+Seller and price can change by location and minute.
+
+For this particular purchase, use this rule:
+
+- A new ET-15000 at about $545, sold by Amazon.com or a known authorized
+  retailer with an ordinary return process, is a strong buy.
+- If the $545 offer is only from an unfamiliar marketplace seller, paying about
+  $55 more for Epson or another clearly established retailer is reasonable.
+  The lower-risk initial return and warranty-paperwork path is worth more than
+  a small fraction of the printer price.
+
+Keep the invoice. Epson's coverage is one year/50,000 sheets and extends to two
+years/50,000 sheets with product registration; warranty service requires proof
+of original purchase.
+
 ### What this printer is not
 
 The ET-15000 is not a laser printer and should not be expected to behave like a
