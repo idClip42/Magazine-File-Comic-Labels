@@ -147,6 +147,8 @@ config/
 
 `labels.json` retains only ordered editorial facts, while `label-art.json` owns selected art, candidates, and crop state. Their label IDs must match exactly.
 
+Use [LABEL-NAMING-GUIDE.md](LABEL-NAMING-GUIDE.md) for every displayed content name and collection-bucket label.
+
 Crop coordinates use a normalized focal point plus scale instead of printed-inch `top`/`left` offsets. This is easier to understand and survives layout changes. The shared design dials—overwrap, header/rule thickness, band positions and exact heights, hole geometry/guide scale, artwork saturation/contrast/brightness/tint/blend mode, and type sizes—live in `layout.json`. A category may override the shared artwork treatment only when there is a deliberate reason.
 
 ## Local asset library

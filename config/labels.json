@@ -915,7 +915,7 @@
         "logo": "amazing-spider-man",
         "contents": [
             {
-                "name": "Amazing Spider-Man"
+                "name": "The Amazing Spider-Man"
             }
         ]
     },
@@ -955,7 +955,7 @@
         "logo": "dr-strange",
         "contents": [
             {
-                "name": "Dr. Strange"
+                "name": "Doctor Strange"
             }
         ]
     },
@@ -1018,7 +1018,7 @@
         "logo": "spider-man",
         "contents": [
             {
-                "name": "Spider-Man (Various Series)"
+                "name": "Spider-Man Misc."
             }
         ]
     },
@@ -1177,7 +1177,7 @@
         "logo": "teen-titans-go",
         "contents": [
             {
-                "name": "Teen Titans Go",
+                "name": "Teen Titans Go!",
                 "issues": [1, 28],
                 "years": [2003, 2006]
             }
@@ -1189,7 +1189,7 @@
         "logo": "teen-titans-go",
         "contents": [
             {
-                "name": "Teen Titans Go",
+                "name": "Teen Titans Go!",
                 "issues": [29, 55],
                 "years": [2006, 2008]
             }
@@ -1296,7 +1296,7 @@
         "logo": "jonny-quest",
         "contents": [
             {
-                "name": "Jonny Quest (Comico)",
+                "name": "Jonny Quest",
                 "issues": [1, 31],
                 "years": [1986, 1988]
             }
