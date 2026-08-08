@@ -194,12 +194,9 @@ test(
 
         const designSaved = await request(editorPort, "/api/edits", "PUT", {
             layout: {
-                variant: "B",
-                changes: {
-                    artTreatment: {
-                        ...layout.designVariants.B.artTreatment,
-                        contrast: 1.11,
-                    },
+                artTreatment: {
+                    ...layout.artTreatment,
+                    contrast: 1.11,
                 },
             },
         });
@@ -210,8 +207,8 @@ test(
                 "utf8",
             ),
         );
-        assert.equal(persistedLayout.designVariants.A.artTreatment.contrast, 1.06);
-        assert.equal(persistedLayout.designVariants.B.artTreatment.contrast, 1.11);
+        assert.equal(persistedLayout.artTreatment.contrast, 1.11);
+        assert.equal(persistedLayout.designVariants, undefined);
 
         const crop = { focus: { x: 0.25, y: 0.75 }, scale: 1.5 };
         const saved = await request(editorPort, "/api/edits", "PUT", {

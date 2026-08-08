@@ -256,13 +256,7 @@ export function saveChanges(updates: EditorUpdates): {
     );
     const layoutUpdate = updates.layout;
     if (layoutUpdate) {
-        if (
-            (layoutUpdate.variant !== "A" && layoutUpdate.variant !== "B") ||
-            !layoutUpdate.changes
-        ) {
-            throw new Error("Expected a design variant and its layout changes.");
-        }
-        validateLayoutUpdate(layoutUpdate.changes);
+        validateLayoutUpdate(layoutUpdate);
     }
 
     for (const [id, art] of Object.entries(arts)) {
@@ -307,26 +301,25 @@ export function saveChanges(updates: EditorUpdates): {
     if (Object.keys(arts).length > 0) writeCatalogJson(labelsPath, labels);
 
     if (layoutUpdate) {
-        const variant = layout.designVariants[layoutUpdate.variant];
-        const changes = layoutUpdate.changes;
+        const changes = layoutUpdate;
         if (changes.artTreatment)
-            variant.artTreatment = changes.artTreatment;
+            layout.artTreatment = changes.artTreatment;
         if (changes.identityBandHeightInches !== undefined) {
-            variant.identityBand.heightInches =
+            layout.identityBand.heightInches =
                 changes.identityBandHeightInches;
         }
         if (changes.metadataBandHeightInches !== undefined) {
-            variant.metadataBand.heightInches =
+            layout.metadataBand.heightInches =
                 changes.metadataBandHeightInches;
         }
-        if (changes.typography) variant.typography = changes.typography;
-        if (changes.logoPalette) variant.logoPalette = changes.logoPalette;
-        if (changes.logoOutline) variant.logoOutline = changes.logoOutline;
+        if (changes.typography) layout.typography = changes.typography;
+        if (changes.logoPalette) layout.logoPalette = changes.logoPalette;
+        if (changes.logoOutline) layout.logoOutline = changes.logoOutline;
         writeCatalogJson(layoutPath, layout);
     }
 
     return {
         arts: Object.keys(arts).length,
-        layout: layoutUpdate ? Object.keys(layoutUpdate.changes).length : 0,
+        layout: layoutUpdate ? Object.keys(layoutUpdate).length : 0,
     };
 }

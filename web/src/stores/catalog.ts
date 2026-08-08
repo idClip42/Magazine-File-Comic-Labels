@@ -3,10 +3,9 @@ import { computed, ref } from "vue";
 import { normalizeManualArtworkUrl } from "../../../src/core/assets";
 import type { ArtUpdate, CropUpdate } from "../../../src/core/editor-updates";
 import {
-    layoutForVariant,
-    type DesignVariant,
     type EditorConfig,
     type LabelConfig,
+    type LayoutConfig,
 } from "../../../src/core/types";
 import {
     isLiveEditor,
@@ -18,9 +17,72 @@ import {
 
 type SaveState = "idle" | "saving" | "saved" | "error";
 export type PrintLayout = "single" | "two" | "three" | "all";
+export type DesignVariant = "A" | "B";
+
+/** Browser-only working copies for temporary A/B comparison. */
+type RuntimeDesign = Pick<
+    LayoutConfig,
+    | "artTreatment"
+    | "identityBand"
+    | "metadataBand"
+    | "typography"
+    | "years"
+    | "logoPalette"
+    | "logoOutline"
+    | "showCutGuide"
+>;
 
 function cloneConfig(config: EditorConfig): EditorConfig {
     return structuredClone(config);
+}
+
+function designFromLayout(layout: LayoutConfig): RuntimeDesign {
+    return {
+        artTreatment: { ...layout.artTreatment },
+        identityBand: { ...layout.identityBand },
+        metadataBand: { ...layout.metadataBand },
+        typography: { ...layout.typography },
+        years: { ...layout.years },
+        logoPalette: { ...layout.logoPalette },
+        logoOutline: { ...layout.logoOutline },
+        showCutGuide: layout.showCutGuide,
+    };
+}
+
+function comparisonDesigns(
+    layout: LayoutConfig,
+): Record<DesignVariant, RuntimeDesign> {
+    const design = designFromLayout(layout);
+    return { A: structuredClone(design), B: structuredClone(design) };
+}
+
+function applyLayoutUpdate(
+    design: RuntimeDesign,
+    update: LayoutUpdate,
+): RuntimeDesign {
+    return {
+        ...design,
+        ...(update.artTreatment
+            ? { artTreatment: { ...update.artTreatment } }
+            : {}),
+        identityBand: {
+            ...design.identityBand,
+            ...(update.identityBandHeightInches !== undefined
+                ? { heightInches: update.identityBandHeightInches }
+                : {}),
+        },
+        metadataBand: {
+            ...design.metadataBand,
+            ...(update.metadataBandHeightInches !== undefined
+                ? { heightInches: update.metadataBandHeightInches }
+                : {}),
+        },
+        ...(update.typography ? { typography: { ...update.typography } } : {}),
+        ...(update.logoPalette
+            ? { logoPalette: { ...update.logoPalette } }
+            : {}),
+        ...(update.logoOutline ? { logoOutline: { ...update.logoOutline } } : {}),
+    };
 }
 
 function copyCrop(crop: CropUpdate): CropUpdate {
@@ -87,7 +149,12 @@ export const useCatalogStore = defineStore("catalog", () => {
     );
     const pendingArts = ref<Record<string, ArtUpdate>>({});
     const sessionCrops = ref<Record<string, CropUpdate>>({});
-    const activeDesignVariant = ref<DesignVariant>("A");
+    // A and B are temporary browser drafts. layout.json remains the source of
+    // truth and is updated from whichever draft the curator saves.
+    const activeDesignVariant = ref<DesignVariant>("B");
+    const runtimeDesigns = ref<Record<DesignVariant, RuntimeDesign> | undefined>(
+        config.value ? comparisonDesigns(config.value.layout) : undefined,
+    );
     const pendingLayouts = ref<Record<DesignVariant, LayoutUpdate>>({
         A: {},
         B: {},
@@ -106,7 +173,10 @@ export const useCatalogStore = defineStore("catalog", () => {
     );
     const layout = computed(() =>
         config.value
-            ? layoutForVariant(config.value.layout, activeDesignVariant.value)
+            ? {
+                  ...config.value.layout,
+                  ...(runtimeDesigns.value?.[activeDesignVariant.value] ?? {}),
+              }
             : undefined,
     );
     const isSaveAvailable = computed(() => isLiveEditor());
@@ -123,6 +193,8 @@ export const useCatalogStore = defineStore("catalog", () => {
         savedArts.value = artsForConfig(config.value);
         pendingArts.value = {};
         sessionCrops.value = {};
+        runtimeDesigns.value = comparisonDesigns(config.value.layout);
+        activeDesignVariant.value = "B";
         pendingLayouts.value = { A: {}, B: {} };
         artworkErrors.value = {};
     }
@@ -238,19 +310,15 @@ export const useCatalogStore = defineStore("catalog", () => {
     }
 
     function updateLayout(update: LayoutUpdate): void {
-        if (!config.value) return;
-        const layout = config.value.layout.designVariants[activeDesignVariant.value];
-        if (update.artTreatment)
-            layout.artTreatment = { ...update.artTreatment };
-        if (update.identityBandHeightInches !== undefined) {
-            layout.identityBand.heightInches = update.identityBandHeightInches;
-        }
-        if (update.metadataBandHeightInches !== undefined) {
-            layout.metadataBand.heightInches = update.metadataBandHeightInches;
-        }
-        if (update.typography) layout.typography = { ...update.typography };
-        if (update.logoPalette) layout.logoPalette = { ...update.logoPalette };
-        if (update.logoOutline) layout.logoOutline = { ...update.logoOutline };
+        const designs = runtimeDesigns.value;
+        if (!designs) return;
+        runtimeDesigns.value = {
+            ...designs,
+            [activeDesignVariant.value]: applyLayoutUpdate(
+                designs[activeDesignVariant.value],
+                update,
+            ),
+        };
         pendingLayouts.value = {
             ...pendingLayouts.value,
             [activeDesignVariant.value]: {
@@ -288,10 +356,7 @@ export const useCatalogStore = defineStore("catalog", () => {
 
         const updates: EditorUpdates = {
             arts: pendingArts.value,
-            layout: {
-                variant: activeDesignVariant.value,
-                changes: pendingLayouts.value[activeDesignVariant.value],
-            },
+            layout: pendingLayouts.value[activeDesignVariant.value],
         };
         if (Object.keys(updates.arts ?? {}).length === 0) delete updates.arts;
         if (Object.keys(pendingLayouts.value[activeDesignVariant.value]).length === 0)
@@ -323,6 +388,15 @@ export const useCatalogStore = defineStore("catalog", () => {
                             id,
                             copyArtUpdate(art),
                         ]),
+                    ),
+                };
+            }
+            if (updates.layout && config.value) {
+                config.value.layout = {
+                    ...config.value.layout,
+                    ...applyLayoutUpdate(
+                        designFromLayout(config.value.layout),
+                        updates.layout,
                     ),
                 };
             }

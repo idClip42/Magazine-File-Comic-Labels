@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import type { ViewMode } from "../../config";
-import type { DesignVariant } from "../../../../src/core/types";
-import { useCatalogStore } from "../../stores/catalog";
+import { type DesignVariant, useCatalogStore } from "../../stores/catalog";
 
 const catalog = useCatalogStore();
 const categories = computed(() =>

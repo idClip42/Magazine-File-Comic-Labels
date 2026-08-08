@@ -1,7 +1,6 @@
 import type {
     ArtCrop,
     ArtTreatment,
-    DesignVariant,
     LayoutConfig,
 } from "./types";
 
@@ -26,5 +25,5 @@ export type LayoutUpdate = {
 
 export type EditorUpdates = {
     arts?: Record<string, ArtUpdate>;
-    layout?: { variant: DesignVariant; changes: LayoutUpdate };
+    layout?: LayoutUpdate;
 };
