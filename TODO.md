@@ -1,5 +1,22 @@
 # TODO
 
+## Working recommendations
+
+- Treat the top-level `layout.json` design as the single persisted design. Seed
+  it with the current B values. A/B comparison should be two browser-only
+  working copies initialized from that design; saving the active copy replaces
+  the one persisted design, and a reload resets both copies from it.
+- Split the catalog by responsibility: retain the ordered, manually maintained
+  physical-label facts in `labels.json`, and put UI-managed `asset`, `options`,
+  and `crop` data in an ID-keyed art config. Keep the selected `asset` with the
+  art data: it is a UI/harvest decision, not a bibliographic fact. Validate that
+  the two configs have an exact one-to-one label-ID match.
+- Set naming policy before doing a cleanup pass. Preserve published titles,
+  including an initial "The" where it belongs; do not remove articles
+  mechanically. Define the collection-bucket suffixes (`Annual`, `Miniseries`,
+  `One-Shots`, `Misc.`), and use a publisher parenthetical only when it resolves
+  meaningful shelf ambiguity or identifies a materially distinct publishing era.
+
 - [ ] A and B design variants shouldn't be saved in the config
   - Only one design config should be in the config file
   - A and B should exist only in the browser at runtime, and the save button saves whatever's active to the config design
