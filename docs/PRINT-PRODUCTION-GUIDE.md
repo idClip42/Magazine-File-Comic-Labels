@@ -99,11 +99,44 @@ professional quote when buying a printer solely for these labels.
 4. A rotary trimmer or a metal ruler and fresh craft knife.
 5. A clean, flat work surface.
 
-One researched example was a 100-sheet, 11 x 17 in matte removable printable
-vinyl pack at $76.63. At two labels per sheet, it supplies the 58 production
-sheets plus 42 sheets for proofs, errors, and replacements. This is a current
-price example, not a required product or an endorsement of its specific
-adhesive.
+The selected V2 material is **Uinkit Matte Pro White printable vinyl**, 11 x
+17 in, 200 sheets (Amazon ASIN `B0GGQR8SZ4`), observed at **$57.59** on
+2026-08-07. This is opaque white matte stock, not the separate Glossy Pro 100%
+Clear option on the same product family. The white face is essential: ordinary
+inkjet printers cannot print the white identity and metadata bands onto clear
+vinyl.
+
+At about 29 cents per sheet, the bulk price is plausible and substantially
+better than smaller craft packs. It supplies the 58 production sheets plus 142
+sheets for proofs, errors, replacements, and later catalog additions.
+
+The adhesive appears to be a stronger/permanent-style adhesive rather than the
+earlier preferred removable option. That is acceptable for V2 if the cardboard
+files are treated as a stable interim substrate: a future V3 can use new files
+or cover a flat, well-adhered V2 label. It is not a claim that the unlaminated
+print face has final-product abrasion resistance.
+
+### Immediate V2 shopping list (after buying the printer)
+
+1. **One 200-sheet pack of Uinkit Matte Pro White 11 x 17 in printable vinyl**
+   (Amazon ASIN `B0GGQR8SZ4`). Select the opaque **Matte Pro White** variation,
+   not Glossy Pro 100% Clear. This is the selected V2 material. Do not
+   substitute heat-transfer vinyl, ordinary paper sticker stock, laser-only
+   media, or a clear/translucent option.
+2. **An 18 in paper trimmer.** A 17 in cutting length is the absolute minimum
+   for a tabloid sheet; 18 in is more comfortable. Buy a sturdy guillotine,
+   bypass, or rotary trimmer with a firm alignment guide. Cut one vinyl sheet
+   at a time. A small 12 in craft trimmer is not suitable for this job.
+3. **A 4–6 in felt-edge squeegee or vinyl application card.** This applies the
+   label smoothly from one edge and avoids bubbles or finger dents.
+4. **A small pack or ream of ordinary 11 x 17 plain paper.** Use it to prove
+   the two-up layout and 100% print scaling before using vinyl.
+5. **Optional backup tools:** a metal ruler plus fresh craft knife/blades, and
+   a dry microfiber cloth for removing loose cardboard dust.
+
+Do not buy extra printer ink for the initial run: a new ET-15000 includes its
+initial black, cyan, magenta, and yellow ink bottles. Do not buy cold laminate,
+a Cricut/Silhouette, or spray adhesive for V2.
 
 ### Adhesive choice for V2
 
@@ -142,7 +175,7 @@ protect side edges somewhat because files are normally pressed together.
 
 | Item | Working budget |
 | --- | ---: |
-| 100 11 x 17 printable-vinyl sheets | about $77 |
+| Uinkit Matte Pro White, 200 11 x 17 sheets | about $58 |
 | Ink used for this project | roughly $15–$35 |
 | Squeegee/trimmer/blades, if needed | roughly $20–$40 |
 | **V2 consumables total** | **about $110–$150** |
@@ -150,6 +183,9 @@ protect side edges somewhat because files are normally pressed together.
 This route leaves the printed surface exposed. It should still look good on a
 shelf, but it will be more vulnerable to scuffs, fingerprints, moisture, and
 ink abrasion than a laminated label.
+
+With the 200-sheet Uinkit pack at the observed price, the revised V2 consumables
+estimate is **about $95–$135**, depending mostly on cutter cost and ink use.
 
 ## Matte laminate: retain this for V3 or a later home-print run
 
@@ -225,8 +261,10 @@ this project: it contains about 191 sq ft of material for a set needing roughly
 | Tools and test waste | roughly $20–$40 |
 | **Consumables total** | **about $145–$185** |
 
-## Printer decision: requirements and current shortlist
+## Printer decision: selected machine and research record
 
+The selected printer is a **new Epson EcoTank ET-15000**, purchased on
+2026-08-07 from a retailer with an acceptable new-unit return/warranty path.
 Do not buy a printer *solely* to produce V2; the professional vinyl order is
 still less expensive than buying one. The case for ownership is the ability to
 make a replacement, correction, or new label at any time, plus ordinary home
