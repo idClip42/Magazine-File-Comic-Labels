@@ -1,7 +1,17 @@
 import { validateCatalog } from "../../core/catalog-validation";
-import { categories, labels, layout } from "../../core/config";
+import { validateLabelConfigSplit } from "../../core/label-config";
+import {
+    categories,
+    editorialLabels,
+    labelArt,
+    labels,
+    layout,
+} from "../../core/config";
 
-const errors = validateCatalog(layout, categories, labels);
+const errors = [
+    ...validateLabelConfigSplit(editorialLabels, labelArt),
+    ...validateCatalog(layout, categories, labels),
+];
 if (errors.length === 0) {
     console.log(`Catalog validation passed for ${labels.length} labels.`);
 } else {

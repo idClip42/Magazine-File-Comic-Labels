@@ -4,8 +4,9 @@
 
 This is the durable work ledger for finding better cover-art candidates for the
 label system. It records what to research, what has been learned, and what is
-complete independently of any chat. `config/labels.json` remains the source of
-truth for selected artwork, candidate URLs, crops, and label contents.
+complete independently of any chat. `config/label-art.json` remains the source
+of truth for selected artwork, candidate URLs, and crops; `config/labels.json`
+holds the matching label facts and print order.
 
 The initial source-research scope is Marvel only. The active checklist includes
 only current labels with one clearly bounded, contiguous run of 25 issues or
@@ -16,7 +17,7 @@ high-resolution source workflow.
 ## Research workflow
 
 1. Choose one unchecked label below. Its label ID identifies the record to
-   update in `config/labels.json`.
+   update in `config/label-art.json`.
 2. Confirm the contents and issue span in that record. Every item currently in
    the active checklist is one contiguous run of no more than 25 issues. Keep
    broad labels, several-series boxes, annuals, and unspecified miscellany out
@@ -32,12 +33,12 @@ high-resolution source workflow.
 5. If neither primary source yields a usable image, search for another stable,
    reviewable source. Record that exception in the research notes so later
    passes know what worked.
-6. Add the chosen candidate URLs to that label's `art.options` list in
-   `config/labels.json`, preserving issue order where it is known. Keep the
+6. Add the chosen candidate URLs to that label's `options` list in
+   `config/label-art.json`, preserving issue order where it is known. Keep the
    current selected `art.asset` in the list.
 7. Start the editor, compare the candidates, and choose/crop the winner. The
    local server caches every configured candidate at startup.
-8. **Only when the candidate URLs have been added to `config/labels.json`,
+8. **Only when the candidate URLs have been added to `config/label-art.json`,
    check off the item in this document.** Add a brief note below if a source,
    title, or scope decision taught us something reusable.
 

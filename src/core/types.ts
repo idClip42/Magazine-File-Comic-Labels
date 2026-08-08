@@ -26,18 +26,27 @@ export type Category = {
 
 export type CategoriesConfig = Record<string, Category>;
 
-export type LabelConfig = {
+/** UI-managed artwork state for one physical label. */
+export type LabelArtConfig = {
+    asset: string;
+    /** Optional, ordered alternatives shown only in the local crop editor. */
+    options?: string[];
+    crop: ArtCrop;
+};
+
+/** The manually maintained, print-ordered facts for one physical label. */
+export type LabelEditorialConfig = {
     id: string;
     category: string;
     logo: string;
-    art: {
-        asset: string;
-        /** Optional, ordered alternatives shown only in the local crop editor. */
-        options?: string[];
-        crop: ArtCrop;
-    };
     contents: LabelContent[];
 };
+
+/** Artwork state keyed by its matching editorial label ID. */
+export type LabelArtConfigById = Record<string, LabelArtConfig>;
+
+/** The joined configuration consumed by rendering, editing, and asset tools. */
+export type LabelConfig = LabelEditorialConfig & { art: LabelArtConfig };
 
 export type LayoutConfig = {
     localAssetRoot: string;

@@ -22,12 +22,12 @@
   - A and B should exist only in the browser at runtime, and the save button saves whatever's active to the config design
     - There's no reason to save multiple versions of the design - A/B testing is for in-the-moment runtime design work.
   - Right now, the correct version should be design B, which should match the normal config version
-- [ ] Break out labels into two configs?
+- [x] Break out labels into two configs
   - One that is written manually
     - The actual series label information - names, volumes, years, issues, category, logo
   - One that is edited by the UI
     - Art options, crop info
-  - Probably the final art selection should be on the UI-edited one? I just feel slightly tempted to treat it as basic info... but the way we've set it up, it's not, is it?
+  - Final art selection is in the UI-edited config with options and crop data.
   - The idea is I want to be able to easily scroll the basic label information, and all the art shit clutters it up.
 - [ ] Establish a style guide for how things are named/labeled, in order to name them consistently?
   - "[SERIES NAME] Miniseries"

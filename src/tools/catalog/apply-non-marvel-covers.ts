@@ -1,10 +1,9 @@
 import fs from "node:fs";
-import path from "node:path";
 import { writeCatalogJson } from "../../core/catalog-json";
-import { LabelConfig } from "../../core/types";
+import { configPaths, labels } from "../../core/config";
 import { nonMarvelResearchPaths } from "../research/shared/paths";
 
-const labelsPath = path.join(process.cwd(), "config", "labels.json");
+const labelArtPath = configPaths.labelArt;
 const coversPath = nonMarvelResearchPaths.covers;
 type Cover = {
     labelId: string;
@@ -16,8 +15,6 @@ function main(): void {
     const write = process.argv.slice(2).includes("--write");
     if (process.argv.slice(2).some(arg => arg !== "--write"))
         throw new Error("Usage: npm run apply:non-marvel-covers -- [--write]");
-    const original = fs.readFileSync(labelsPath, "utf8");
-    const labels = JSON.parse(original) as LabelConfig[];
     const covers = JSON.parse(fs.readFileSync(coversPath, "utf8")) as {
         entries?: Cover[];
     };
@@ -72,6 +69,10 @@ function main(): void {
     console.log(
         `${write ? "Applying" : "Would apply"} verified non-Marvel cover options to ${changed} label(s).`,
     );
-    if (write) writeCatalogJson(labelsPath, labels);
+    if (write)
+        writeCatalogJson(
+            labelArtPath,
+            Object.fromEntries(labels.map(label => [label.id, label.art])),
+        );
 }
 main();

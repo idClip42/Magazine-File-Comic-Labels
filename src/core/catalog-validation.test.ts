@@ -1,10 +1,28 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { validateCatalog } from "./catalog-validation";
-import { categories, labels, layout } from "./config";
+import { validateLabelConfigSplit } from "./label-config";
+import {
+    categories,
+    editorialLabels,
+    labelArt,
+    labels,
+    layout,
+} from "./config";
 
 test("the checked-in V2 configuration satisfies its cross-file contract", () => {
+    assert.deepEqual(validateLabelConfigSplit(editorialLabels, labelArt), []);
     assert.deepEqual(validateCatalog(layout, categories, labels), []);
+});
+
+test("label art must match the editorial catalog exactly", () => {
+    const draftArt = structuredClone(labelArt);
+    delete draftArt[editorialLabels[0].id];
+    draftArt["unknown-label"] = structuredClone(labelArt[editorialLabels[0].id]);
+    assert.deepEqual(validateLabelConfigSplit(editorialLabels, draftArt), [
+        `${editorialLabels[0].id}: missing artwork configuration.`,
+        "unknown-label: artwork configuration has no matching label.",
+    ]);
 });
 
 test("catalog validation rejects duplicate artwork candidates", () => {

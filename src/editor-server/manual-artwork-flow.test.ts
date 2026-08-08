@@ -170,10 +170,6 @@ test(
                         id: "test-label",
                         category: "test",
                         logo: "test",
-                        art: {
-                            asset: originalAsset,
-                            crop: { focus: { x: 0.5, y: 0.5 }, scale: 1 },
-                        },
                         contents: [
                             {
                                 name: "Test",
@@ -183,6 +179,19 @@ test(
                         ],
                     },
                 ],
+                null,
+                4,
+            )}\n`,
+        );
+        fs.writeFileSync(
+            path.join(fixtureRoot, "config", "label-art.json"),
+            `${JSON.stringify(
+                {
+                    "test-label": {
+                        asset: originalAsset,
+                        crop: { focus: { x: 0.5, y: 0.5 }, scale: 1 },
+                    },
+                },
                 null,
                 4,
             )}\n`,
@@ -222,15 +231,22 @@ test(
         });
         assert.equal(saved.status, 200);
 
-        const persisted = JSON.parse(
+        const persistedEditorial = JSON.parse(
             fs.readFileSync(
                 path.join(fixtureRoot, "config", "labels.json"),
                 "utf8",
             ),
         )[0];
-        assert.equal(persisted.art.asset, coverUrl);
-        assert.deepEqual(persisted.art.crop, crop);
-        assert.deepEqual(persisted.art.options, [originalAsset, coverUrl]);
+        assert.equal(persistedEditorial.art, undefined);
+        const persistedArt = fs.readFileSync(
+            path.join(fixtureRoot, "config", "label-art.json"),
+            "utf8",
+        );
+        const persisted = JSON.parse(persistedArt)["test-label"];
+        assert.ok(persisted, persistedArt);
+        assert.equal(persisted.asset, coverUrl);
+        assert.deepEqual(persisted.crop, crop);
+        assert.deepEqual(persisted.options, [originalAsset, coverUrl]);
 
         const refreshedConfig = JSON.parse(
             (await request(editorPort, "/api/config")).body.toString("utf8"),

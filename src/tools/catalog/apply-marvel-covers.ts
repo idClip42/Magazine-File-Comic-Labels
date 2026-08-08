@@ -1,14 +1,13 @@
 import fs from "node:fs";
-import path from "node:path";
 import {
     isCleanMarvelJpegUrl,
     normalizeMarvelJpegUrl,
 } from "../../core/assets";
 import { writeCatalogJson } from "../../core/catalog-json";
-import { LabelConfig } from "../../core/types";
+import { configPaths, labels } from "../../core/config";
 import { marvelHarvestPaths } from "../research/marvel/plan";
 
-const labelsPath = path.join(process.cwd(), "config", "labels.json");
+const labelArtPath = configPaths.labelArt;
 const coversPath = marvelHarvestPaths.covers;
 
 type HarvestedCover = {
@@ -24,7 +23,7 @@ type CoverInventory = { entries?: HarvestedCover[] };
 function usage(): never {
     console.error("Usage: npm run apply:harvested-covers -- --write");
     console.error(
-        "Without --write, reports the catalog changes without modifying config/labels.json.",
+        "Without --write, reports the artwork changes without modifying config/label-art.json.",
     );
     process.exit(1);
 }
@@ -51,8 +50,6 @@ function main(): void {
     if (args.includes("--help")) usage();
     if (args.some(arg => arg !== "--write")) usage();
     const write = args.includes("--write");
-    const original = fs.readFileSync(labelsPath, "utf8");
-    const labels = JSON.parse(original) as LabelConfig[];
     const inventory = JSON.parse(
         fs.readFileSync(coversPath, "utf8"),
     ) as CoverInventory;
@@ -118,7 +115,11 @@ function main(): void {
     console.log(
         `${write ? "Applying" : "Would apply"} exact harvested option lists for ${touchedLabels} label(s) (${additions} URL(s)); selected covers: ${directOrIssueSelections} matched by URL/issue, ${fallbackSelections} first-issue fallback.`,
     );
-    if (write) writeCatalogJson(labelsPath, labels);
+    if (write)
+        writeCatalogJson(
+            labelArtPath,
+            Object.fromEntries(labels.map(label => [label.id, label.art])),
+        );
 }
 
 main();

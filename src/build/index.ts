@@ -2,13 +2,26 @@ import fs from "node:fs";
 import path from "node:path";
 import { auditAssets } from "../core/audit";
 import { assertValidCatalog } from "../core/catalog-validation";
-import { categories, labels, layout } from "../core/config";
+import { validateLabelConfigSplit } from "../core/label-config";
+import {
+    categories,
+    editorialLabels,
+    labelArt,
+    labels,
+    layout,
+} from "../core/config";
 import { buildEditorConfig } from "./editor-config";
 import { prepareLogos } from "./logo-prep";
 
 const outputDirectory = path.join(process.cwd(), "dist", "v2");
 fs.mkdirSync(outputDirectory, { recursive: true });
 
+const splitErrors = validateLabelConfigSplit(editorialLabels, labelArt);
+if (splitErrors.length > 0) {
+    throw new Error(
+        `Label configuration split failed:\n- ${splitErrors.join("\n- ")}`,
+    );
+}
 assertValidCatalog(layout, categories, labels);
 const preparedLogos = prepareLogos(layout, categories, outputDirectory);
 const outputPath = path.join(outputDirectory, "index.html");

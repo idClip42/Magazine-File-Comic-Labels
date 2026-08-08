@@ -11,7 +11,7 @@ npm run check             # TypeScript/Vue checks, core tests, catalog/research 
 npm run build             # Produce the self-contained preview in dist/v2/
 ```
 
-Use `npm start` for crop or shared-layout changes. The editor saves approved artwork/crop changes to `config/labels.json` and permitted shared settings to `config/layout.json`; rebuild after saving before print proofing.
+Use `npm start` for crop or shared-layout changes. The editor saves approved artwork/crop changes to `config/label-art.json` and permitted shared settings to `config/layout.json`; rebuild after saving before print proofing.
 
 ## Repository guide
 
@@ -29,7 +29,7 @@ docs/history/        Historical snapshots; not the current catalog
 docs/research/       Durable Marvel and non-Marvel cover-research inventories
 ```
 
-`config/labels.json` order is the intended label and print order. Keep its changes intentional.
+`config/labels.json` order is the intended label and print order; `config/label-art.json` holds matching UI-managed artwork state. Keep both changes intentional.
 
 ## Artwork cache
 

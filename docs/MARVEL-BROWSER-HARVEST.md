@@ -38,7 +38,7 @@ actual Marvel page URL below it.
    cover URL**. If a Marvel CDN URL ends in `portrait_uncanny.jpg`, also try a
    copy ending in `clean.jpg`; preserve the rest of the URL exactly.
 3. Leave the checkbox alone. Codex will cache-test, visually confirm, add the
-   candidate to `config/labels.json`, and then check off the durable research
+   candidate to `config/label-art.json`, and then check off the durable research
    checklist.
 
 A working image URL is not proof of the correct issue—please keep the page

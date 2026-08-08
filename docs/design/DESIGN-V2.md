@@ -97,13 +97,14 @@ SVG source files use a deliberately constrained preparation rule: one black fill
 
 ## Configuration model
 
-Split the collection into two human-editable catalog files plus one global production file:
+Split the collection into three human-editable catalog files plus one global production file:
 
 ```
 config/
   layout.json       # physical size, hole guide, fixed bands, art treatment, typography
   categories.json   # category identity, color, named logo variants and logo options
-  labels.json       # one ordered record per physical magazine file
+  labels.json       # one ordered, manually maintained record per physical magazine file
+  label-art.json    # UI-managed artwork selection, candidate URLs, and crops keyed by label ID
 ```
 
 `categories.json` defines reusable identity. `labels.json` describes individual boxes in print order. This removes duplicate “series” entries created only to select a different Fantastic Four logo, but keeps contents directly on the physical label where they are easiest to edit.
@@ -128,15 +129,23 @@ config/
   "id": "ff-1961-001-025",
   "category": "fantastic-four",
   "logo": "classic",
-  "art": {
-    "asset": "covers/fantastic-four/ff-v1-003.jpg",
-    "crop": { "focus": { "x": 0.44, "y": 0.28 }, "scale": 1.08 }
-  },
   "contents": [
     { "name": "Fantastic Four", "issues": [1, 25], "years": [1961, 1964] }
   ]
 }
 ```
+
+```json
+// label-art.json
+{
+  "ff-1961-001-025": {
+    "asset": "covers/fantastic-four/ff-v1-003.jpg",
+    "crop": { "focus": { "x": 0.44, "y": 0.28 }, "scale": 1.08 }
+  }
+}
+```
+
+`labels.json` retains only ordered editorial facts, while `label-art.json` owns selected art, candidates, and crop state. Their label IDs must match exactly.
 
 Crop coordinates use a normalized focal point plus scale instead of printed-inch `top`/`left` offsets. This is easier to understand and survives layout changes. The shared design dials—overwrap, header/rule thickness, band positions and exact heights, hole geometry/guide scale, artwork saturation/contrast/brightness/tint/blend mode, and type sizes—live in `layout.json`. A category may override the shared artwork treatment only when there is a deliberate reason.
 

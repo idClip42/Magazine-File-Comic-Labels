@@ -11,7 +11,7 @@ import type {
 } from "../core/editor-updates";
 import type { ArtTreatment, LayoutConfig } from "../core/types";
 
-const labelsPath = configPaths.labels;
+const labelArtPath = configPaths.labelArt;
 const layoutPath = configPaths.layout;
 const labelById = new Map(labels.map(label => [label.id, label]));
 
@@ -298,7 +298,11 @@ export function saveChanges(updates: EditorUpdates): {
         };
         if (art.options !== undefined) label.art.options = [...art.options];
     }
-    if (Object.keys(arts).length > 0) writeCatalogJson(labelsPath, labels);
+    if (Object.keys(arts).length > 0)
+        writeCatalogJson(
+            labelArtPath,
+            Object.fromEntries(labels.map(label => [label.id, label.art])),
+        );
 
     if (layoutUpdate) {
         const changes = layoutUpdate;
