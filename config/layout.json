@@ -10,7 +10,7 @@
         "saturation": 0.32,
         "contrast": 1.06,
         "brightness": 1,
-        "tintOpacity": 0.48,
+        "tintOpacity": 0.42,
         "tintBlendMode": "color"
     },
     "identityBand": {
@@ -27,9 +27,9 @@
         "heightInches": 0.91
     },
     "typography": {
-        "yearsSizeInches": 0.5,
-        "metadataSizeInches": 0.1,
-        "bandGapInches": 0.025
+        "yearsSizeInches": 0.44,
+        "metadataSizeInches": 0.2,
+        "bandGapInches": 0.035
     },
     "years": {
         "display": "condensed-range",
@@ -54,15 +54,26 @@
                 "tintOpacity": 0.48,
                 "tintBlendMode": "color"
             },
-            "identityBand": { "bottomInches": 9.15, "heightInches": 2.5 },
-            "metadataBand": { "topInches": 10.25, "heightInches": 0.91 },
+            "identityBand": {
+                "bottomInches": 9.15,
+                "heightInches": 2.5
+            },
+            "metadataBand": {
+                "topInches": 10.25,
+                "heightInches": 0.91
+            },
             "typography": {
                 "yearsSizeInches": 0.5,
                 "metadataSizeInches": 0.1,
                 "bandGapInches": 0.025
             },
-            "years": { "display": "condensed-range", "reserveSpaceWhenEmpty": true },
-            "logoPalette": { "mutedSaturationMultiplier": 0.35 },
+            "years": {
+                "display": "condensed-range",
+                "reserveSpaceWhenEmpty": true
+            },
+            "logoPalette": {
+                "mutedSaturationMultiplier": 0.35
+            },
             "logoOutline": {
                 "enabled": false,
                 "color": "#000000",
@@ -76,18 +87,29 @@
                 "saturation": 0.32,
                 "contrast": 1.06,
                 "brightness": 1,
-                "tintOpacity": 0.48,
+                "tintOpacity": 0.42,
                 "tintBlendMode": "color"
             },
-            "identityBand": { "bottomInches": 9.15, "heightInches": 2.5 },
-            "metadataBand": { "topInches": 10.25, "heightInches": 0.91 },
-            "typography": {
-                "yearsSizeInches": 0.5,
-                "metadataSizeInches": 0.1,
-                "bandGapInches": 0.025
+            "identityBand": {
+                "bottomInches": 9.15,
+                "heightInches": 2.5
             },
-            "years": { "display": "condensed-range", "reserveSpaceWhenEmpty": true },
-            "logoPalette": { "mutedSaturationMultiplier": 0.35 },
+            "metadataBand": {
+                "topInches": 10.25,
+                "heightInches": 0.91
+            },
+            "typography": {
+                "yearsSizeInches": 0.44,
+                "metadataSizeInches": 0.2,
+                "bandGapInches": 0.035
+            },
+            "years": {
+                "display": "condensed-range",
+                "reserveSpaceWhenEmpty": true
+            },
+            "logoPalette": {
+                "mutedSaturationMultiplier": 0.35
+            },
             "logoOutline": {
                 "enabled": false,
                 "color": "#000000",

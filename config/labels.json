@@ -1830,7 +1830,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [1974, 1987]
             }
         ]
@@ -1851,7 +1851,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [1992, 2000]
             }
         ]
@@ -1876,7 +1876,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [2000, 2002]
             }
         ]
@@ -1897,7 +1897,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [2002, 2006]
             }
         ]
@@ -1918,7 +1918,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [2006, 2010]
             }
         ]
@@ -1939,7 +1939,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [2019, 2021]
             }
         ]
@@ -1964,7 +1964,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [2021, 2025]
             }
         ]
@@ -1989,7 +1989,7 @@
         },
         "contents": [
             {
-                "name": "Miniseries",
+                "name": "Fantastic Four Miniseries",
                 "years": [2026, 2026]
             }
         ]
@@ -3476,7 +3476,7 @@
         },
         "contents": [
             {
-                "name": "Spider-Man Minis"
+                "name": "Spider-Man Miniseries"
             }
         ]
     },
@@ -3824,10 +3824,10 @@
             "asset": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/New_Teen_Titans_Vol_1_1.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.5202,
-                    "y": 1
+                    "x": 0.5042,
+                    "y": 0.7237
                 },
-                "scale": 1.442
+                "scale": 1.98
             }
         },
         "contents": [
@@ -4527,17 +4527,22 @@
         "category": "horror-dark-fantasy",
         "logo": "fables",
         "art": {
-            "asset": "https://m.media-amazon.com/images/I/71Woqb9Y82L._AC_UF1000,1000_QL80_.jpg",
+            "asset": "https://cdn2.penguin.com.au/covers/original/9781779504548.jpg",
             "crop": {
                 "focus": {
-                    "x": 0.6123,
-                    "y": 0.5411
+                    "x": 0.3811,
+                    "y": 0.6367
                 },
-                "scale": 1.448
+                "scale": 2.146
             },
             "options": [
                 "https://placehold.co/1200x1800/eeeeee/111111?text=Fables",
-                "https://m.media-amazon.com/images/I/71Woqb9Y82L._AC_UF1000,1000_QL80_.jpg"
+                "https://m.media-amazon.com/images/I/71Woqb9Y82L._AC_UF1000,1000_QL80_.jpg",
+                "https://dreamworldcomicbooks.com/cdn/shop/files/fablesvol19.jpg?v=1709335829",
+                "https://m.media-amazon.com/images/I/91l1LD0liCL._AC_UF1000,1000_QL80_.jpg",
+                "https://neighborhoodcomics.com/cdn/shop/files/E4BA1CC8-60FE-4EFC-A959-BFEADBB1A1DC.jpg?v=1718035058",
+                "https://cdn2.penguin.com.au/covers/original/9781779504548.jpg",
+                "https://images.booksense.com/images/569/202/9781401202569.jpg"
             ]
         },
         "contents": [
