@@ -2881,7 +2881,7 @@
         ]
     },
     "indiana-jones-001": {
-        "asset": "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/7-1.jpg",
+        "asset": "imgs/further_adventures_indiana_jones_07_300dpi.jpg",
         "crop": {
             "focus": {
                 "x": 0.6703,
@@ -2896,6 +2896,7 @@
             "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/4-1.jpg",
             "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/5-1.jpg",
             "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/7-1.jpg",
+            "imgs/further_adventures_indiana_jones_07_300dpi.jpg",
             "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/8-1.jpg",
             "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/9-1.jpg",
             "https://www.coverbrowser.com/image/further-adventures-of-indiana-jones/10-1.jpg",
