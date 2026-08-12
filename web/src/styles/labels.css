@@ -231,6 +231,8 @@ body.artwork-browser-open {
     color: #171717;
     font-size: var(--metadata-size);
     line-height: 1.05;
+    max-width: var(--face-width);
+    margin: auto;
 }
 
 .content-name {
