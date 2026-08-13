@@ -1147,13 +1147,13 @@
         ]
     },
     "fantastic-four-050": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/68b9f0d0234bf/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/20/019e4beee256/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.5222,
-                "y": 0.8635
+                "x": 0.7434,
+                "y": 1
             },
-            "scale": 2.06
+            "scale": 1.233
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/5/e0/685d4d10223ea/clean.jpg",
@@ -1161,7 +1161,8 @@
             "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/68b9f0d0234bf/clean.jpg",
             "https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/68e6707d1cc5a/clean.jpg",
             "https://cdn.marvel.com/u/prod/marvel/i/mg/6/70/685d4f1cb5451/clean.jpg",
-            "https://cdn.marvel.com/u/prod/marvel/i/mg/d/03/685d4f1406916/clean.jpg"
+            "https://cdn.marvel.com/u/prod/marvel/i/mg/d/03/685d4f1406916/clean.jpg",
+            "https://cdn.marvel.com/u/prod/marvel/i/mg/6/20/019e4beee256/clean.jpg"
         ]
     },
     "fantastic-four-movie-tie-ins-001": {
