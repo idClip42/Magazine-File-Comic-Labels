@@ -103,8 +103,9 @@ body.artwork-browser-open {
     user-select: none;
 }
 
-/* Shown only while changing a crop: the shaded sides are vinyl that wraps
-   around the file, and the outlined rectangle is the visible front face. */
+/* Shown while hovering or changing a crop in the editor: the shaded sides
+   are vinyl that wraps around the file, and the outlined rectangle is the
+   visible front face. */
 .crop-boundary-guide {
     position: absolute;
     top: 0;
@@ -122,6 +123,7 @@ body.artwork-browser-open {
     transition: opacity 120ms ease-out;
 }
 
+.label.crop-is-interactive:hover .crop-boundary-guide,
 .label.crop-guides-active .crop-boundary-guide {
     opacity: 1;
 }
