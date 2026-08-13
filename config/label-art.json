@@ -183,7 +183,7 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.7389,
+                "x": 0.7598,
                 "y": 0.6111
             },
             "scale": 1.741
@@ -193,8 +193,8 @@
         "asset": "imgs/ff-129.jpg",
         "crop": {
             "focus": {
-                "x": 0.0356,
-                "y": 0.8871
+                "x": 0.017,
+                "y": 0.8883
             },
             "scale": 2.207
         },
@@ -259,8 +259,8 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.3664,
-                "y": 0.6546
+                "x": 0.3686,
+                "y": 0.6527
             },
             "scale": 2.364
         }
@@ -297,8 +297,8 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.6201,
-                "y": 0.4108
+                "x": 0.6492,
+                "y": 0.4011
             },
             "scale": 4.516
         }
@@ -307,8 +307,8 @@
         "asset": "imgs/ff-220.jpg",
         "crop": {
             "focus": {
-                "x": 0.0101,
-                "y": 0.9619
+                "x": 0.0359,
+                "y": 0.9813
             },
             "scale": 1.74
         },
@@ -346,8 +346,8 @@
         "asset": "imgs/ff-247.jpg",
         "crop": {
             "focus": {
-                "x": 0.3386,
-                "y": 0.641
+                "x": 0.371,
+                "y": 0.6383
             },
             "scale": 1.466
         },
@@ -384,10 +384,10 @@
         "asset": "imgs/ff-262.jpg",
         "crop": {
             "focus": {
-                "x": 0.485,
-                "y": 0.2624
+                "x": 0.4933,
+                "y": 0.2489
             },
-            "scale": 2.723
+            "scale": 2.93
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/9/70/5abe90e13559d/clean.jpg",
@@ -422,7 +422,7 @@
         "asset": "imgs/ff-281.jpg",
         "crop": {
             "focus": {
-                "x": 0.4958,
+                "x": 0.5097,
                 "y": 0.7443
             },
             "scale": 1.356
@@ -460,10 +460,10 @@
         "asset": "imgs/ff-309.jpg",
         "crop": {
             "focus": {
-                "x": 0.1893,
-                "y": 0.8838
+                "x": 0.1976,
+                "y": 0.9119
             },
-            "scale": 1.857
+            "scale": 1.791
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/537a585bafdeb/clean.jpg",
@@ -498,8 +498,8 @@
         "asset": "imgs/ff-341.jpg",
         "crop": {
             "focus": {
-                "x": 0.9533,
-                "y": 0.7593
+                "x": 0.9579,
+                "y": 0.7574
             },
             "scale": 2.089
         },
@@ -536,8 +536,8 @@
         "asset": "imgs/ff-352.jpg",
         "crop": {
             "focus": {
-                "x": 0.6902,
-                "y": 0.6491
+                "x": 0.6977,
+                "y": 0.579
             },
             "scale": 1.575
         },
@@ -574,7 +574,7 @@
         "asset": "imgs/ff-396.jpg",
         "crop": {
             "focus": {
-                "x": 0.5491,
+                "x": 0.5505,
                 "y": 1
             },
             "scale": 1.802
@@ -1183,7 +1183,7 @@
         "crop": {
             "focus": {
                 "x": 0.9022,
-                "y": 0.6167
+                "y": 0.6166
             },
             "scale": 3.766
         },
@@ -1239,10 +1239,10 @@
         "asset": "imgs/marvel-greatest-comics-23.jpg",
         "crop": {
             "focus": {
-                "x": 0.09,
+                "x": 0.1217,
                 "y": 1
             },
-            "scale": 3.212
+            "scale": 3.264
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Marvel%27s_Greatest_Comics_Vol_1_23.jpg",
@@ -1254,7 +1254,7 @@
         "asset": "imgs/two-in-one-86.jpg",
         "crop": {
             "focus": {
-                "x": 0.7464,
+                "x": 0.7693,
                 "y": 1
             },
             "scale": 1.888
@@ -1281,10 +1281,10 @@
         "asset": "imgs/thing-1.jpg",
         "crop": {
             "focus": {
-                "x": 0.4649,
-                "y": 0.4675
+                "x": 0.4921,
+                "y": 0.569
             },
-            "scale": 3.419
+            "scale": 2.268
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Thing_Vol_1_1.jpg",
@@ -1560,8 +1560,8 @@
         "asset": "imgs/fantastic-four-roast.jpg",
         "crop": {
             "focus": {
-                "x": 0.372,
-                "y": 0.3594
+                "x": 0.3771,
+                "y": 0.3583
             },
             "scale": 2.679
         },
@@ -1590,8 +1590,8 @@
         "asset": "imgs/new-mutants-01.jpg",
         "crop": {
             "focus": {
-                "x": 0.1672,
-                "y": 1
+                "x": 0.172,
+                "y": 0.9964
             },
             "scale": 1.952
         },
@@ -1628,8 +1628,8 @@
         "asset": "imgs/new-mutants-27.jpg",
         "crop": {
             "focus": {
-                "x": 0.7878,
-                "y": 0.9902
+                "x": 0.8384,
+                "y": 1
             },
             "scale": 2.08
         },
@@ -1666,8 +1666,8 @@
         "asset": "imgs/new-mutants-58.jpg",
         "crop": {
             "focus": {
-                "x": 0.2434,
-                "y": 0.4746
+                "x": 0.2748,
+                "y": 0.4744
             },
             "scale": 2.837
         },
@@ -1704,8 +1704,8 @@
         "asset": "imgs/new-mutants-77.jpg",
         "crop": {
             "focus": {
-                "x": 0.0678,
-                "y": 0.8537
+                "x": 0.0119,
+                "y": 0.8577
             },
             "scale": 1.644
         },
@@ -1742,8 +1742,8 @@
         "asset": "imgs/new-mutants-annual-1.jpg",
         "crop": {
             "focus": {
-                "x": 0.2649,
-                "y": 0.4426
+                "x": 0.256,
+                "y": 0.4433
             },
             "scale": 1.381
         },
@@ -1808,8 +1808,8 @@
         "asset": "imgs/uxm-annual-9.jpg",
         "crop": {
             "focus": {
-                "x": 0.3982,
-                "y": 0.945
+                "x": 0.4606,
+                "y": 0.9153
             },
             "scale": 1.818
         },
@@ -1912,10 +1912,10 @@
         "asset": "imgs/uxm-200.jpg",
         "crop": {
             "focus": {
-                "x": 0.4381,
-                "y": 0.6233
+                "x": 0.425,
+                "y": 0.7862
             },
-            "scale": 1.238
+            "scale": 1.109
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/b/70/51117bc6abdd1/clean.jpg",
@@ -1950,10 +1950,10 @@
         "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/10/50ad58c3e74c0/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.3649,
-                "y": 0.9662
+                "x": 0.286,
+                "y": 1
             },
-            "scale": 1.656
+            "scale": 1.586
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/4d94d71508ae7/clean.jpg",
@@ -1987,7 +1987,7 @@
         "asset": "imgs/uxm-237.jpg",
         "crop": {
             "focus": {
-                "x": 0.8909,
+                "x": 0.9196,
                 "y": 1
             },
             "scale": 1.775
@@ -2025,10 +2025,10 @@
         "asset": "imgs/uxm-251.jpg",
         "crop": {
             "focus": {
-                "x": 0.5156,
-                "y": 0.7962
+                "x": 0.5744,
+                "y": 0.8495
             },
-            "scale": 1.491
+            "scale": 1.395
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/5/70/50b4031c7e4d0/clean.jpg",
@@ -2063,8 +2063,8 @@
         "asset": "imgs/uxm-290.jpg",
         "crop": {
             "focus": {
-                "x": 0.6497,
-                "y": 0.7369
+                "x": 0.6596,
+                "y": 0.5239
             },
             "scale": 1.325
         },
@@ -2107,8 +2107,8 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.6185,
-                "y": 1
+                "x": 0.7257,
+                "y": 0.9282
             },
             "scale": 1.222
         }
@@ -2117,8 +2117,8 @@
         "asset": "imgs/excalibur-01.jpg",
         "crop": {
             "focus": {
-                "x": 0.7833,
-                "y": 0.5956
+                "x": 0.7848,
+                "y": 0.5938
             },
             "scale": 2.655
         },
@@ -2155,8 +2155,8 @@
         "asset": "imgs/excalibur-42.jpg",
         "crop": {
             "focus": {
-                "x": 0.5167,
-                "y": 0.3169
+                "x": 0.5107,
+                "y": 0.3109
             },
             "scale": 2.429
         },
@@ -2193,8 +2193,8 @@
         "asset": "imgs/excalibur-52.jpg",
         "crop": {
             "focus": {
-                "x": 0.5705,
-                "y": 0.2726
+                "x": 0.5573,
+                "y": 0.2508
             },
             "scale": 2.511
         },
@@ -2294,8 +2294,8 @@
         "asset": "imgs/wolverine-1.jpg",
         "crop": {
             "focus": {
-                "x": 0.5434,
-                "y": 0.5702
+                "x": 0.5793,
+                "y": 0.4842
             },
             "scale": 1.531
         },
@@ -2309,8 +2309,8 @@
         "asset": "imgs/asm-194.jpg",
         "crop": {
             "focus": {
-                "x": 0.5343,
-                "y": 0.8854
+                "x": 0.5353,
+                "y": 0.8672
             },
             "scale": 2.378
         },
@@ -2337,10 +2337,9 @@
         ]
     },
     "daredevil-001": {
-        "asset": "imgs/daredevil-232.jpg",
+        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
         "options": [
-            "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg",
-            "imgs/daredevil-232.jpg"
+            "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Daredevil_Vol_2_41.jpg"
         ],
         "crop": {
             "focus": {
@@ -2351,17 +2350,18 @@
         }
     },
     "daredevil-002": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5b508b52cff26/clean.jpg",
+        "asset": "imgs/daredevil-232.jpg",
         "crop": {
             "focus": {
-                "x": 0.4628,
-                "y": 0.7197
+                "x": 0.4944,
+                "y": 0.7077
             },
             "scale": 3.359
         },
         "options": [
             "https://placehold.co/1200x1800/eeeeee/111111?text=Daredevil",
-            "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5b508b52cff26/clean.jpg"
+            "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5b508b52cff26/clean.jpg",
+            "imgs/daredevil-232.jpg"
         ]
     },
     "dr-strange-001": {
@@ -2422,8 +2422,8 @@
         "asset": "imgs/sensational-she-hulk-31.jpg",
         "crop": {
             "focus": {
-                "x": 0.5461,
-                "y": 0.3795
+                "x": 0.6001,
+                "y": 0.378
             },
             "scale": 1.907
         },
@@ -2479,8 +2479,8 @@
         "asset": "imgs/spectacular-spider-man-24.jpg",
         "crop": {
             "focus": {
-                "x": 0.6853,
-                "y": 0.7598
+                "x": 0.6762,
+                "y": 0.6618
             },
             "scale": 1.601
         },
@@ -2701,21 +2701,22 @@
         ]
     },
     "batman-001": {
-        "asset": "https://static.wikia.nocookie.net/batman/images/f/f7/MovieSpecial.jpg/revision/latest?cb=20100928170136",
+        "asset": "imgs/batman-1989-1.jpg",
         "crop": {
             "focus": {
                 "x": 0,
-                "y": 1
+                "y": 0.9994
             },
             "scale": 1.516
         },
         "options": [
             "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Batman_407.jpg",
-            "https://static.wikia.nocookie.net/batman/images/f/f7/MovieSpecial.jpg/revision/latest?cb=20100928170136"
+            "https://static.wikia.nocookie.net/batman/images/f/f7/MovieSpecial.jpg/revision/latest?cb=20100928170136",
+            "imgs/batman-1989-1.jpg"
         ]
     },
     "batman-002": {
-        "asset": "imgs/batman-1989-1.jpg",
+        "asset": "https://static.dc.com/dc/files/default_images/BM89_01%2520%2528COVER%2529_610050217214a5.91852101.jpg",
         "crop": {
             "focus": {
                 "x": 0.5098,
@@ -2725,8 +2726,7 @@
         },
         "options": [
             "https://placehold.co/1200x1800/eeeeee/111111?text=Batman",
-            "https://static.dc.com/dc/files/default_images/BM89_01%2520%2528COVER%2529_610050217214a5.91852101.jpg",
-            "imgs/batman-1989-1.jpg"
+            "https://static.dc.com/dc/files/default_images/BM89_01%2520%2528COVER%2529_610050217214a5.91852101.jpg"
         ]
     },
     "the-new-teen-titans-001": {
@@ -2737,8 +2737,8 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.5042,
-                "y": 0.7237
+                "x": 0.5245,
+                "y": 0.7163
             },
             "scale": 1.98
         }
@@ -2747,8 +2747,8 @@
         "asset": "imgs/superman-680.jpg",
         "crop": {
             "focus": {
-                "x": 0.3794,
-                "y": 0.5881
+                "x": 0.3725,
+                "y": 0.5865
             },
             "scale": 2.167
         },
