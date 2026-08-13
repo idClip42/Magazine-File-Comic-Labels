@@ -156,19 +156,63 @@ Clean loose dust from the files, let them dry completely, and apply at normal
 room temperature. Evaluate them after one week. The shelf arrangement will
 protect side edges somewhat because files are normally pressed together.
 
+### First-sheet print and application procedure
+
+Use the first 11 x 17 in sheet as an end-to-end proof: two labels, two actual
+files, and the same printing, cutting, and application process intended for
+the production run.
+
+1. Print the layout on plain 11 x 17 in paper first. Confirm that it is at
+   100% scale, the two labels fit the sheet, and the artwork, guides, and
+   margins look right.
+2. Print one vinyl sheet through the rear feed, one sheet at a time, printable
+   side up and short edge first. Use the intended high-quality matte/photo
+   media setting. Do not use duplex printing.
+3. Leave the print flat and uncovered for at least 1--2 hours before cutting
+   or applying it; overnight is the conservative choice. The ink may feel dry
+   earlier, but extra time reduces the chance of scuffing or transfer while
+   handling it. Do not stack freshly printed sheets face-to-face.
+4. Cut the two labels to their full finished dimensions: 4.875 x 11.75 in.
+   The extra 0.5 in on each side is intentional overwrap, not waste. Cut one
+   vinyl sheet at a time.
+5. Wipe each magazine file's front and outer edges with a clean, dry
+   microfiber cloth. Do not use spray adhesive, wet cleaner, or a damp cloth.
+   Let the cardboard come fully to room temperature and dry before applying.
+6. Dry-fit the label before exposing adhesive. Center it on the front face,
+   confirm the top and bottom position, and make sure the two side wraps will
+   reach their edges cleanly.
+7. Put the file on a hard, flat surface. Peel only 1--2 in of backing from the
+   label's top edge and fold that backing sharply out of the way. Align the
+   exposed strip carefully; once it is stuck, it is the registration point for
+   the whole label.
+8. Squeegee that top strip down, then work gradually downward: peel the backing
+   away a few inches at a time while pressing from the center outward. This
+   drives air toward the edges rather than trapping bubbles. Do not stretch the
+   vinyl.
+9. Once the front is applied, squeegee each 0.5 in side wrap around its edge.
+   Burnish the front and every edge once more, especially the wraps.
+10. Apply the label over the finger-hole opening first. Locate the opening by
+    touch, make a small X from its center with the craft knife, fold the flaps
+    inward, and trim gradually to the actual opening. Start undersized: an
+    oversized cut cannot be undone.
+11. Handle the file gently for the rest of the day. The adhesive's grip will
+    improve over roughly 24 hours. Check the result after a week for edge lift,
+    scratches, ink rub-off, and shelf-clearance scuffing before printing the
+    full set.
+
 ### Workflow
 
 1. Create a two-up 11 x 17 in print PDF, with each finished label at 4.875 x
    11.75 in. This needs proper 100%-scale output; do not silently shrink labels
    to fit a page.
-2. Print a handful of representative sheets first, at the intended quality and
-   on the actual vinyl.
+2. Follow the first-sheet procedure above, then print a handful of additional
+   representative sheets at the intended quality and on the actual vinyl.
 3. Inspect image sharpness at the real label size. A vendor preview or a
    zoomed-out giant PDF preview is not a reliable resolution test.
 4. Apply the test labels to actual files and wait one week.
 5. Print the remaining sheets only if the tests pass.
-6. Cut labels precisely and apply them from one edge downward, pressing with a
-   card to avoid bubbles.
+6. Cut labels precisely and apply them using the same top-edge registration and
+   center-outward squeegee method proved by the test.
 7. Keep the unused sheets for future replacements or catalog additions.
 
 ### V2 home-print budget (excluding printer)
