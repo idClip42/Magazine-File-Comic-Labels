@@ -2099,7 +2099,7 @@
         ]
     },
     "x-men-misc": {
-        "asset": "imgs/nightcrawler-1.jpg",
+        "asset": "imgs/kp-and-wolverine-1.jpg",
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Nightcrawler_Vol_1_1.jpg",
             "imgs/kp-and-wolverine-1.jpg",
@@ -2108,10 +2108,10 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.7257,
-                "y": 0.9282
+                "x": 0.7751,
+                "y": 0.6033
             },
-            "scale": 1.222
+            "scale": 1.97
         }
     },
     "excalibur-001": {
@@ -2229,11 +2229,11 @@
         ]
     },
     "excalibur-004": {
-        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Excalibur_Special_Edition_Vol_1_1.jpg",
+        "asset": "imgs/excalibur-special-1.jpg",
         "crop": {
             "focus": {
-                "x": 0.6408,
-                "y": 0.7524
+                "x": 0.6549,
+                "y": 0.7527
             },
             "scale": 2.785
         },
@@ -2288,7 +2288,8 @@
             "https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/656503e76f38b/clean.jpg",
             "https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/656503e7883ea/clean.jpg",
             "https://cdn.marvel.com/u/prod/marvel/i/mg/c/03/656503e7c2647/clean.jpg",
-            "https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/656503e81aa73/clean.jpg"
+            "https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/656503e81aa73/clean.jpg",
+            "imgs/excalibur-special-1.jpg"
         ]
     },
     "wolverine-001": {
