@@ -193,10 +193,10 @@
         "asset": "imgs/ff-129.jpg",
         "crop": {
             "focus": {
-                "x": 0.017,
-                "y": 0.8883
+                "x": 0.0433,
+                "y": 0.7839
             },
-            "scale": 2.207
+            "scale": 2.495
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/5ab94821064a7/clean.jpg",
