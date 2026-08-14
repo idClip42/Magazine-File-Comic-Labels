@@ -19,11 +19,11 @@
     },
     "fingerHole": {
         "diameterInches": 1.75,
-        "topInches": 9.25,
+        "topInches": 9.375,
         "guideScale": 0.9
     },
     "metadataBand": {
-        "topInches": 10.25,
+        "topInches": 10.475,
         "heightInches": 0.91
     },
     "typography": {
