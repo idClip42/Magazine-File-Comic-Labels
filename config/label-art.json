@@ -757,13 +757,13 @@
         ]
     },
     "fantastic-four-017": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/5ad500d9c42ec/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/60/5ad5ee5c0761f/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.4547,
-                "y": 0.7541
+                "x": 0.5243,
+                "y": 1
             },
-            "scale": 2.285
+            "scale": 1.358
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5ad10f916956e/clean.jpg",
@@ -942,13 +942,13 @@
         ]
     },
     "fantastic-four-044": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/5b2cfee8f1f29/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/30/51646f52a1a48/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.5478,
-                "y": 0.2921
+                "x": 0.5566,
+                "y": 1
             },
-            "scale": 3.409
+            "scale": 1.228
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Fantastic_Four_Vol_4_4.jpg",
@@ -1427,13 +1427,13 @@
         ]
     },
     "fantastic-four-022": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/5841c25d8f47b/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/f0/5ae0f13c71635/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.4793,
-                "y": 0.8493
+                "x": 0.0704,
+                "y": 0.9078
             },
-            "scale": 1.52
+            "scale": 1.846
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/4_Vol_1_5.jpg",
@@ -1470,13 +1470,13 @@
         ]
     },
     "fantastic-four-019": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/80/5a94337e9ff94/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/1/b0/5a941ed0ebada/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.5567,
-                "y": 0.972
+                "x": 0.4224,
+                "y": 0.9705
             },
-            "scale": 2.127
+            "scale": 1.356
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Ultimate_Fantastic_Four_Vol_1_1.jpg",
@@ -1519,13 +1519,13 @@
         ]
     },
     "fantastic-four-020": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/1/b0/5aa15feec1b1f/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/6/40/5a982ad1550b8/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.6236,
-                "y": 1
+                "x": 0.5447,
+                "y": 0.9806
             },
-            "scale": 2.337
+            "scale": 1.531
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/d/d4/Ultimate_Fantastic_Four_Vol_1_49.jpg",
@@ -1573,13 +1573,13 @@
         ]
     },
     "fantastic-four-033": {
-        "asset": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/Fantastic_Four_Road_Trip_Vol_1_1_Del_Mundo_Variant.jpg/revision/latest?cb=20201129004528",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/4/40/5e4c363e98466/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.1442,
-                "y": 0.2703
+                "x": 0.1433,
+                "y": 1
             },
-            "scale": 1.237
+            "scale": 1.345
         },
         "options": [
             "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Fantastic_Four_First_Steps_Vol_1_1.jpg",
@@ -2108,8 +2108,8 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.7751,
-                "y": 0.6033
+                "x": 0.77,
+                "y": 0.6046
             },
             "scale": 1.97
         }
@@ -2345,10 +2345,10 @@
         ],
         "crop": {
             "focus": {
-                "x": 0.3927,
-                "y": 0.2706
+                "x": 0.397,
+                "y": 0.2873
             },
-            "scale": 3.588
+            "scale": 2.955
         }
     },
     "daredevil-002": {
@@ -2396,8 +2396,8 @@
         "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/d0/586ebb4ec2972/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.5596,
-                "y": 1
+                "x": 0.559,
+                "y": 0.9269
             },
             "scale": 1.282
         },
