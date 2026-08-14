@@ -20,7 +20,7 @@ const logo = computed(() => {
     const value = category.value.logos[props.label.logo];
     if (!value)
         throw new Error(
-            `Unknown logo: ${props.label.category}/${props.label.logo}`,
+            `Unknown logo: ${props.label.category}/${props.label.logo}`
         );
     return value;
 });
@@ -29,7 +29,7 @@ const preparedLogo = computed(
     () =>
         catalog.config?.preparedLogos[
             `${props.label.category}/${props.label.logo}`
-        ],
+        ]
 );
 const artTreatment = computed(() => ({
     ...catalog.layout!.artTreatment,
@@ -81,7 +81,7 @@ onMounted(() => {
 });
 
 const artStyle = computed(() => ({
-    "--logo-max-width": `${(catalog.layout!.face.widthInches * (logo.value.maxWidthPercent ?? 94)) / 100}in`,
+    "--logo-max-width": `${(catalog.layout!.face.widthInches * (logo.value.maxWidthPercent ?? 85)) / 100}in`,
     "--category-color": category.value.color,
     "--art-position": `${props.label.art.crop.focus.x * 100}% ${props.label.art.crop.focus.y * 100}%`,
     "--art-zoom": String(props.label.art.crop.scale),
@@ -96,11 +96,11 @@ const logoStyle = computed(() => ({
     "--logo-primary": category.value.color,
     "--logo-secondary": deriveMutedCategoryColor(
         category.value.color,
-        catalog.layout!.logoPalette.mutedSaturationMultiplier,
+        catalog.layout!.logoPalette.mutedSaturationMultiplier
     ),
 }));
 const rasterLogoUrl = computed(() =>
-    staticAssetUrl(catalog.layout!, logo.value.asset),
+    staticAssetUrl(catalog.layout!, logo.value.asset)
 );
 
 const years = computed(() => {
