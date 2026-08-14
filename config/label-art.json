@@ -688,13 +688,13 @@
         ]
     },
     "fantastic-four-016": {
-        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/5ad0c29675ddf/clean.jpg",
+        "asset": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/60/5ace58020bd11/clean.jpg",
         "crop": {
             "focus": {
-                "x": 0.6409,
-                "y": 0.4714
+                "x": 0.6623,
+                "y": 0.8354
             },
-            "scale": 2.682
+            "scale": 2.262
         },
         "options": [
             "https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/5ace3e23e5549/clean.jpg",
