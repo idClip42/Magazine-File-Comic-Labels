@@ -3117,10 +3117,10 @@
         "asset": "imgs/ts-01-cov-1.jpg",
         "crop": {
             "focus": {
-                "x": 0,
-                "y": 0
+                "x": 0.4172,
+                "y": 0.9036
             },
-            "scale": 1
+            "scale": 1.913
         },
         "options": [
             "imgs/ts-01-cov-1.jpg",
@@ -3137,13 +3137,13 @@
         ]
     },
     "tom-strong-002": {
-        "asset": "imgs/ts-01-cov-1.jpg",
+        "asset": "imgs/ts-16-int.jpg",
         "crop": {
             "focus": {
-                "x": 0,
-                "y": 0
+                "x": 0.8039,
+                "y": 0.0394
             },
-            "scale": 1
+            "scale": 1.155
         },
         "options": [
             "imgs/ts-01-cov-1.jpg",
