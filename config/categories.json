@@ -207,6 +207,12 @@
             "the-league-of-extraordinary-gentlemen": {
                 "asset": "logos/lxg-logo.svg"
             },
+            "tom-strong-1": {
+                "asset": "logos/ts-logo-1.svg"
+            },
+            "tom-strong-2": {
+                "asset": "logos/ts-logo-2.svg"
+            },
             "jonny-quest": {
                 "asset": "logos/quest-logo.svg"
             },

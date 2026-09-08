@@ -1314,6 +1314,18 @@
         ]
     },
     {
+        "id": "tom-strong-001",
+        "category": "adventure-pulp",
+        "logo": "tom-strong-1",
+        "contents": [{ "name": "Tom Strong" }]
+    },
+    {
+        "id": "tom-strong-002",
+        "category": "adventure-pulp",
+        "logo": "tom-strong-2",
+        "contents": [{ "name": "Tom Strong" }]
+    },
+    {
         "id": "the-shadow-001",
         "category": "adventure-pulp",
         "logo": "the-shadow",

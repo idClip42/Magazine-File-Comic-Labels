@@ -3113,6 +3113,52 @@
             "https://imgix-media.wbdndc.net/ingest/book/preview/7cb733b1-2c20-4186-a5f9-fb4e6e6a2b35/6dccf975-2bf9-41ee-b163-0a779e63f238/0.jpg"
         ]
     },
+    "tom-strong-001": {
+        "asset": "imgs/ts-01-cov-1.jpg",
+        "crop": {
+            "focus": {
+                "x": 0,
+                "y": 0
+            },
+            "scale": 1
+        },
+        "options": [
+            "imgs/ts-01-cov-1.jpg",
+            "imgs/ts-01-cov-2.jpg",
+            "imgs/ts-01-int.jpg",
+            "imgs/ts-02-cov-2.jpg",
+            "imgs/ts-07-int.jpg",
+            "imgs/ts-16-int.jpg",
+            "imgs/ts-36-cov.webp",
+            "imgs/ts-b1-1.jpg",
+            "imgs/ts-b2-1.jpg",
+            "imgs/ts-b2-2.webp",
+            "imgs/ts-o-1.webp"
+        ]
+    },
+    "tom-strong-002": {
+        "asset": "imgs/ts-01-cov-1.jpg",
+        "crop": {
+            "focus": {
+                "x": 0,
+                "y": 0
+            },
+            "scale": 1
+        },
+        "options": [
+            "imgs/ts-01-cov-1.jpg",
+            "imgs/ts-01-cov-2.jpg",
+            "imgs/ts-01-int.jpg",
+            "imgs/ts-02-cov-2.jpg",
+            "imgs/ts-07-int.jpg",
+            "imgs/ts-16-int.jpg",
+            "imgs/ts-36-cov.webp",
+            "imgs/ts-b1-1.jpg",
+            "imgs/ts-b2-1.jpg",
+            "imgs/ts-b2-2.webp",
+            "imgs/ts-o-1.webp"
+        ]
+    },
     "the-shadow-001": {
         "asset": "https://borg.com/wp-content/uploads/2013/02/shadow-year-one-alex-ross-cover.jpg",
         "crop": {
